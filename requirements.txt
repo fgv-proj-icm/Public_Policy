@@ -1,0 +1,9 @@
+requests
+pandas
+python-dotenv
+pyyaml
+rapidfuzz
+networkx
+matplotlib
+pyarrow
+tenacity
