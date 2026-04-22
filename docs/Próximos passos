@@ -1,0 +1,35 @@
+Rode:
+
+python src/pipelines/02d_review_openalex_refined.py
+
+5. Subir essa melhoria para o GitHub
+
+Se estiver tudo certo:
+
+git add .
+git commit -m "refina coleta openalex e reduz ruído temático"
+git push origin main
+O que esperamos agora
+
+Na versão refinada:
+
+cair bastante o número total de linhas
+sumirem várias fontes ruins
+melhorar muito os top periódicos
+os top artigos ficarem mais ligados ao seu tema
+Depois disso
+
+O próximo passo será montar o Scopus individual, usando a mesma lógica:
+
+query pack mais preciso
+salvar CSV próprio
+revisar resultado
+
+Rode agora nesta ordem:
+
+Remove-Item .git\index.lock
+git status
+python src/pipelines/02c_collect_openalex_refined.py
+python src/pipelines/02d_review_openalex_refined.py
+
+Me manda o resumo da revisão refinada que eu te passo o 03_collect_scopus.py.
