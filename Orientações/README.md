@@ -1,5 +1,3 @@
-# Políticas Públicas
-Pesquisas sobre Políticas Públicas
 # 1. Descompacte o zip e entre na pasta
 cd judicial_review
 
