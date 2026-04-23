@@ -5,20 +5,19 @@ BASE_DIR = Path(__file__).resolve().parents[2]
 FINAL_DIR = BASE_DIR / "data" / "final"
 
 STRICT_FILE = FINAL_DIR / "focus_corpus_strict.csv"
-TOP_FILE = FINAL_DIR / "focus_corpus_strict_top200.csv"
+TOP200_FILE = FINAL_DIR / "focus_corpus_strict_top200.csv"
 
 strict = pd.read_csv(STRICT_FILE, low_memory=False)
-top = pd.read_csv(TOP_FILE, low_memory=False)
+top200 = pd.read_csv(TOP200_FILE, low_memory=False)
 
 print("\n=== FOCUS CORPUS STRICT ===")
 print(f"Linhas: {len(strict)}")
 
 print("\n=== TOP200 STRICT ===")
-print(f"Linhas: {len(top)}")
+print(f"Linhas: {len(top200)}")
 
 print("\n=== PRIMARY TYPE | STRICT ===")
-if "primary_type" in strict.columns:
-    print(strict["primary_type"].value_counts().to_string())
+print(strict["primary_type"].value_counts().to_string())
 
 print("\n=== FONTES | STRICT ===")
 if "source_file" in strict.columns:
@@ -29,18 +28,10 @@ if "query_term_clean" in strict.columns:
     print(strict["query_term_clean"].value_counts().head(20).to_string())
 
 print("\n=== TOP 20 PERIÓDICOS | STRICT ===")
-if "journal" in strict.columns:
-    print(strict["journal"].fillna("N/D").value_counts().head(20).to_string())
+print(strict["journal"].fillna("N/D").value_counts().head(20).to_string())
 
 print("\n=== TOP 20 ARTIGOS POR CITAÇÕES | STRICT ===")
-cols = [
-    "title",
-    "publication_year",
-    "journal",
-    "citation_count_unified",
-    "query_term_clean",
-]
-cols = [c for c in cols if c in strict.columns]
+cols = ["title", "publication_year", "journal", "citation_count_unified", "query_term_clean"]
 print(
     strict.sort_values("citation_count_unified", ascending=False)[cols]
     .head(20)
