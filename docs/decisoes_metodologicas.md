@@ -216,3 +216,65 @@ O Semantic Scholar entra no mesmo fluxo das demais bases:
 3. refinar, se necessário;
 4. só então unificar.
 
+## 10. Aprendizados com a revisão do Semantic Scholar
+
+A coleta no Semantic Scholar funcionou tecnicamente, mas retornou uma base ampla demais para entrar diretamente no corpus unificado.
+
+### Resultado observado
+- 13.368 registros após deduplicação inicial;
+- forte concentração nas queries:
+  - `"judicial review"`
+  - `"access to justice"`
+  - `"judicial reform"`
+- grande volume de registros sem periódico identificado (`journal = N/D`);
+- presença de obras muito amplas ou periféricas ao objeto central.
+
+### Problemas identificados
+- excesso de resultados gerais em teoria política, desenvolvimento e governança;
+- ruído gerado principalmente por `"access to justice"` e por usos amplos de `"judicial review"`;
+- grande número de registros sem metadados completos de periódico.
+
+### Decisão metodológica
+O Semantic Scholar passará por uma etapa adicional de refino antes da unificação, com:
+1. filtros por âncoras temáticas;
+2. exclusão de títulos e periódicos claramente periféricos;
+3. nova revisão exploratória do CSV refinado.
+
+### Regra operacional
+O arquivo `semantic_scholar_results.csv` não entra diretamente na base unificada.
+A unificação deve usar apenas `semantic_scholar_results_refined.csv`.
+
+### Revisão final do Semantic Scholar (core)
+Após o segundo refino conservador, o Semantic Scholar foi reduzido para 2754 registros.
+
+Características observadas:
+- predominância de `judicial review` e `judicial reform`;
+- presença de periódicos mais aderentes ao tema;
+- permanência de registros sem periódico identificado (`N/D`), mas em volume aceitável para entrada controlada na base unificada.
+
+Decisão:
+- usar `semantic_scholar_results_core.csv` na unificação;
+- não usar `semantic_scholar_results.csv` bruto nem a versão apenas `refined`.
+
+## 11. Unificação final das bases
+
+Foram unificadas as bases refinadas de:
+- OpenAlex
+- Crossref
+- Scopus
+- Semantic Scholar (versão core)
+
+### Resultado da unificação
+- total bruto unificado: 7161
+- total final deduplicado: 6893
+
+### Regra de deduplicação usada
+1. DOI normalizado
+2. título + ano + periódico
+
+### Situação da pesquisa
+A pipeline foi interrompida nesta etapa para permitir:
+- inspeção qualitativa da base consolidada;
+- avaliação dos registros mais citados;
+- definição da próxima fase de triagem e análise.
+
