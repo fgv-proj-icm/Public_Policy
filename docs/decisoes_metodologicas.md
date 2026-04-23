@@ -278,3 +278,183 @@ A pipeline foi interrompida nesta etapa para permitir:
 - avaliação dos registros mais citados;
 - definição da próxima fase de triagem e análise.
 
+## 12. Base final pronta para análise (v1)
+
+Após auditoria, normalização forte de DOI, deduplicação e construção da camada analítica, foi gerada a base:
+
+`data/final/unified_base_analysis_ready.csv`
+
+### Resultado final da v1
+- linhas: 5968
+- colunas: 43
+
+### Transformações aplicadas
+- normalização forte de DOI;
+- deduplicação por DOI limpo;
+- fallback por título + ano + periódico para registros sem DOI;
+- harmonização inicial de `type`;
+- criação de campos analíticos:
+  - `record_id`
+  - `doi_clean`
+  - `title_clean`
+  - `journal_clean`
+  - `type_clean`
+  - `language_clean`
+  - `citation_count_log1p`
+  - flags de completude
+
+### Situação da v1
+A base `analysis_ready` passou a funcionar como versão analítica inicial, adequada para:
+- auditoria reprodutível;
+- inspeção de cobertura por fonte;
+- cálculo de duplicatas;
+- preparação da etapa seguinte de curadoria.
+
+### Ressalvas registradas
+Mesmo após a limpeza principal, permaneceram pontos que justificaram nova rodada de melhoria:
+- `journal = N/D` ainda elevado;
+- `language_clean = nd` predominante;
+- `type_clean` ainda com categorias compostas;
+- necessidade de uma camada explícita de relevância temática.
+
+## 13. Auditoria reprodutível e limpeza documentada
+
+Após a geração da base `unified_base.csv`, foi implementada uma etapa formal de auditoria reprodutível e limpeza final.
+
+### 13.1. Auditoria da base unificada
+Foram criados relatórios automáticos para:
+- missingness por coluna;
+- distribuição por fonte;
+- duplicatas por DOI limpo;
+- duplicatas sem DOI;
+- cobertura de metadados por fonte.
+
+Arquivos gerados:
+- `data/final/audit/overview.csv`
+- `data/final/audit/missingness_by_column.csv`
+- `data/final/audit/rows_by_source_file.csv`
+- `data/final/audit/duplicate_doi_candidates.csv`
+- `data/final/audit/duplicate_no_doi_candidates.csv`
+- `data/final/audit/duplicates_summary.csv`
+- `data/final/audit/coverage_by_source.csv`
+
+### 13.2. Resultado da auditoria
+A auditoria confirmou que o principal problema residual da base unificada estava na duplicação por DOI mal normalizado.
+
+Resultado observado:
+- base unificada antes da limpeza final: 6893 linhas;
+- registros com DOI: 5819;
+- DOIs limpos únicos: 4894;
+- registros em grupos duplicados por DOI: 1850;
+- registros em grupos duplicados sem DOI no fallback `title + year + journal`: 0.
+
+### 13.3. Limpeza final documentada
+A limpeza final foi implementada com a seguinte regra:
+
+1. normalização forte de DOI;
+2. escolha do “melhor registro” por DOI, usando:
+   - maior `completeness_score`;
+   - maior `source_priority`;
+   - maior `citation_count_unified`;
+3. fallback por `title + year + journal` apenas para registros sem DOI.
+
+### 13.4. Resultado da limpeza final
+A base caiu de 6893 para 5968 registros.
+
+Resumo:
+- total inicial: 6893
+- removidos por DOI limpo: 925
+- removidos por fallback sem DOI: 0
+- total final: 5968
+
+### 13.5. Leitura metodológica
+A limpeza confirmou que a deduplicação principal do projeto deveria ser ancorada em DOI limpo, e não apenas em identificadores internos de cada base.
+
+## 14. Segunda camada de curadoria da base analítica
+
+Após a geração da `unified_base_analysis_ready.csv`, foi implementada uma nova camada de melhoria para tornar a base mais estável para análise substantiva.
+
+### 14.1. Deduplicação final de registros sem DOI
+Foi criada uma regra adicional para registros sem DOI:
+- agrupamento por `title_clean + year_clean`;
+- manutenção da linha mais informativa, usando:
+  - `completeness_score`
+  - presença de `journal`
+  - presença de `url`
+  - `source_priority`
+  - `citation_count_unified`
+
+### 14.2. Normalização editorial de `query_term`
+Foi criada a coluna `query_term_clean`, com padronização das queries oriundas de diferentes bases.
+
+Objetivo:
+- eliminar diferenças meramente editoriais;
+- estabilizar tabelas e gráficos por termo de busca;
+- reduzir a heterogeneidade entre strings como `TITLE-ABS-KEY(...)` e termos simples entre aspas.
+
+### 14.3. Harmonização de tipo documental
+Foi criada a coluna `primary_type`, derivada de `type_clean`, além de flags auxiliares:
+- `is_article`
+- `is_review`
+- `is_book_chapter`
+- `is_conference`
+
+A regra adotada foi determinística e priorizou categorias centrais:
+- `review` quando presente;
+- `article` para variantes de journal article;
+- `book_chapter`, `conference`, `editorial`, `book`, `note`, `erratum` quando aplicável.
+
+### 14.4. Motivação metodológica
+Essa etapa foi necessária porque a base ainda apresentava:
+- queries heterogêneas;
+- tipos compostos;
+- ruído editorial remanescente;
+- necessidade de uma camada mais adequada para estatística descritiva.
+
+## 15. Camada de relevância temática rastreável
+
+A etapa final desta rodada consistiu na criação de uma camada explícita de relevância temática, sem exclusão automática dos registros.
+
+### 15.1. Regra adotada
+Foram criadas as colunas:
+- `relevance_flag`
+- `relevance_reason`
+
+A lógica foi:
+
+- `relevance_flag = 1` quando o registro apresentava âncoras temáticas em `title` ou `journal`;
+- `relevance_flag = 1` também quando os `concepts` continham termos core do campo jurídico-judicial;
+- `relevance_flag = 0` quando não havia âncora suficiente ou quando havia sinal claro de periódico irrelevante.
+
+### 15.2. Motivo da escolha
+A estratégia adotada foi de marcação, e não de exclusão automática, por três razões:
+
+1. parte do ruído pode representar interseções legítimas com temas vizinhos;
+2. a decisão final de inclusão substantiva ainda depende de leitura analítica;
+3. a rastreabilidade da decisão é mais importante do que uma filtragem excessivamente agressiva nesta fase.
+
+### 15.3. Resultado metodológico
+Com isso, a base passou a ter duas camadas:
+- uma camada estrutural, voltada à identidade e limpeza dos registros;
+- uma camada temática, voltada à relevância analítica.
+
+### 15.4. Situação atual da pesquisa
+A base resultante desta etapa passa a ser:
+
+`data/final/unified_base_analysis_ready_v2.csv`
+
+Ela representa a versão mais avançada do corpus até o momento, pronta para:
+- triagem temática fina;
+- estatísticas descritivas;
+- preparação de corpus final de leitura;
+- construção do funil analítico final.
+
+## 16. Próxima etapa planejada
+
+A próxima fase do projeto não é mais de coleta, mas de redução analítica do corpus.
+
+Os passos previstos são:
+1. revisão da distribuição de `primary_type`;
+2. uso combinado de `relevance_flag` e `query_term_clean`;
+3. eventual exclusão ou reclassificação de periódicos claramente periféricos;
+4. construção de um corpus final reduzido e defendável para leitura substantiva.
