@@ -458,3 +458,123 @@ Os passos previstos são:
 2. uso combinado de `relevance_flag` e `query_term_clean`;
 3. eventual exclusão ou reclassificação de periódicos claramente periféricos;
 4. construção de um corpus final reduzido e defendável para leitura substantiva.
+
+Recomendação prática
+
+# O 12b mostra que não vale mais apertar pela query sozinha.
+Agora o filtro principal deve usar:
+
+sinal no título
+tipo documental
+periódico não suspeito
+e, no corpus estrito, presença de periódico
+Minha sugestão de rota
+
+Vamos seguir assim:
+
+criar 13a_build_focus_corpus_strict.py
+criar 13b_review_focus_corpus_strict.py
+criar 13c_cluster_focus_corpus.py
+criar 13d_review_focus_clusters.py
+
+Assim você passa a ter:
+
+um corpus amplo focal
+um corpus estrito
+e um corpus focal já classificado por subtema
+
+O 12b justifica totalmente esse passo, porque a concentração em query_only ainda está alta e os top citados mostram ruído
+
+## 17. Construção do corpus focal temático
+
+Após a consolidação da base mestre e do corpus amplo, foi criada uma camada adicional de foco substantivo, voltada ao núcleo de políticas judiciárias, administração judicial, governança judicial e reforma judicial.
+
+### 17.1. Objetivo
+Reduzir o corpus amplo para um subconjunto mais coerente com o objeto principal da pesquisa, sem ainda chegar ao corpus estrito final.
+
+### 17.2. Arquivos gerados
+- `data/final/focus_corpus_policy_admin.csv`
+- `data/final/focus_corpus_policy_admin_journal.csv`
+
+### 17.3. Resultado
+- `focus_corpus_policy_admin.csv`: 3581 registros
+- `focus_corpus_policy_admin_journal.csv`: 3167 registros
+
+### 17.4. Distribuição por tipo documental
+No corpus focal:
+- `article`: 3377
+- `review`: 204
+
+### 17.5. Distribuição por fonte
+No corpus focal:
+- `openalex_results_refined.csv`: 2067
+- `crossref_results_refined.csv`: 859
+- `semantic_scholar_results_core.csv`: 567
+- `scopus_results_refined.csv`: 88
+
+No corpus focal com periódico:
+- `openalex_results_refined.csv`: 1731
+- `crossref_results_refined.csv`: 859
+- `semantic_scholar_results_core.csv`: 489
+- `scopus_results_refined.csv`: 88
+
+### 17.6. Termos de consulta predominantes
+Os termos mais frequentes no corpus focal foram:
+- `judicial reform`
+- `court administration`
+- `judicial administration`
+- `judicial policies`
+- `judicial governance`
+
+Os termos `judicial review` e `access to justice` praticamente deixaram de estruturar o corpus focal, o que indica melhora de aderência ao objeto principal.
+
+### 17.7. Diagnóstico metodológico
+A variável `focus_reason` mostrou que:
+- 2290 registros entraram por `query_only`
+- 1286 registros entraram por `query_and_title`
+- 5 registros entraram por `title_only`
+
+Isso indica que o corpus focal ainda depende fortemente da query de origem, e não apenas dos sinais substantivos presentes em título e periódico.
+
+### 17.8. Implicação
+O corpus focal representa uma melhora importante, mas ainda não constitui o corpus estrito final para análise substantiva.
+
+A etapa seguinte deverá:
+- exigir foco substantivo mais explícito em título/periódico;
+- derivar um corpus estrito;
+- separar melhor os subtemas do corpus focal.
+
+## 18. Construção da agenda de leitura
+
+A partir do corpus focal temático, foi derivada uma agenda de leitura priorizada.
+
+### 18.1. Arquivos gerados
+- `data/final/reading_agenda_top.csv`
+- `data/final/reading_agenda_top50.csv`
+
+### 18.2. Resultado
+- `reading_agenda_top.csv`: 3272 registros
+- `reading_agenda_top50.csv`: 50 registros
+
+### 18.3. Distribuição do score
+- score 8: 416
+- score 7: 915
+- score 6: 1279
+- score 5: 662
+
+### 18.4. Bucket da agenda
+- `supporting`: 1929
+- `priority`: 1331
+- `foundational`: 12
+
+### 18.5. Diagnóstico metodológico
+A agenda de leitura funcionou como ranking interno, mas apresentou concentração excessiva em uma única fonte no topo da priorização.
+
+No `top50`:
+- `semantic_scholar_results_core.csv`: 50 registros
+
+Isso indica que a heurística de score ainda privilegia em excesso registros com maior riqueza de metadados oriundos do Semantic Scholar.
+
+### 18.6. Implicação
+A agenda de leitura atual deve ser tratada como agenda preliminar, e não como seleção final equilibrada entre fontes.
+
