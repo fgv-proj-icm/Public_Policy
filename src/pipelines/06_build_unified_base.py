@@ -9,7 +9,8 @@ FINAL_DIR.mkdir(parents=True, exist_ok=True)
 files = [
     RAW_DIR / "openalex_results_refined.csv",
     RAW_DIR / "crossref_results_refined.csv",
-    RAW_DIR / "scopus_results.csv",
+    RAW_DIR / "scopus_results_refined.csv",
+    RAW_DIR / "semantic_scholar_results_core.csv",
 ]
 
 dfs = []
@@ -18,24 +19,34 @@ for file in files:
         df = pd.read_csv(file)
         df["source_file"] = file.name
         dfs.append(df)
+    else:
+        print(f"Aviso: arquivo não encontrado -> {file.name}")
 
 if not dfs:
     raise RuntimeError("Nenhuma base encontrada para unificação.")
 
 df = pd.concat(dfs, ignore_index=True)
 
-for col in ["doi", "title", "journal", "publication_year", "cited_by_count"]:
+for col in ["doi", "title", "journal", "publication_year", "cited_by_count", "citation_count"]:
     if col not in df.columns:
         df[col] = ""
+
+# unificar nomes de coluna de citações
+if "cited_by_count" in df.columns and "citation_count" in df.columns:
+    df["cited_by_count"] = pd.to_numeric(df["cited_by_count"], errors="coerce")
+    df["citation_count"] = pd.to_numeric(df["citation_count"], errors="coerce")
+    df["citation_count_unified"] = df["cited_by_count"].fillna(df["citation_count"])
+elif "cited_by_count" in df.columns:
+    df["citation_count_unified"] = pd.to_numeric(df["cited_by_count"], errors="coerce").fillna(0)
+else:
+    df["citation_count_unified"] = pd.to_numeric(df["citation_count"], errors="coerce").fillna(0)
 
 df["doi_norm"] = df["doi"].fillna("").astype(str).str.strip().str.lower()
 df["title_norm"] = df["title"].fillna("").astype(str).str.strip().str.lower()
 df["journal_norm"] = df["journal"].fillna("").astype(str).str.strip().str.lower()
 df["year_norm"] = df["publication_year"].fillna("").astype(str).str.strip()
 
-df["cited_by_count"] = pd.to_numeric(df["cited_by_count"], errors="coerce").fillna(0)
-
-df = df.sort_values("cited_by_count", ascending=False)
+df = df.sort_values("citation_count_unified", ascending=False)
 
 df_with_doi = df[df["doi_norm"] != ""].copy()
 df_without_doi = df[df["doi_norm"] == ""].copy()

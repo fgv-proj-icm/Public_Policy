@@ -151,3 +151,68 @@ Próximos passos:
 - revisar Scopus;
 - criar base unificada;
 - pausar para análise.
+
+## 8. Aprendizados com a revisão do Scopus
+
+A coleta inicial do Scopus, já em formato de queries curtas por termo, funcionou corretamente após abandonar a string única longa que gerava erro 400.
+
+### Resultado obtido
+- 687 registros após deduplicação;
+- predominância das queries:
+  - `judicial review`
+  - `judicial reform`
+  - `judicial governance`
+  - `judicial administration`
+  - `access to justice`
+
+### Principais achados da revisão
+- o Scopus respondeu bem a queries curtas e separadas;
+- a estratégia por query individual foi mais estável que uma string grande;
+- ainda houve ruído temático, especialmente em resultados ligados a “governance” de forma ampla;
+- alguns periódicos relevantes apareceram com força, como:
+  - *International Journal for Court Administration*
+  - *German Law Journal*
+  - *Access to Justice in Eastern Europe*
+- também apareceram fontes menos centrais ao objeto principal, indicando necessidade de uma segunda filtragem do resultado do Scopus antes da unificação.
+
+### Decisão metodológica
+O corpus do Scopus não deve ir diretamente para a base unificada. Antes, deve passar por:
+1. filtragem temática por âncoras;
+2. remoção de termos e periódicos ruidosos;
+3. nova revisão exploratória do CSV refinado.
+
+### Aprendizado prático
+No Scopus, a melhor abordagem até aqui foi:
+- queries curtas;
+- uma por vez;
+- revisão por `query_term`;
+- refinamento posterior em Python.
+
+# Antes de unificar a base...
+
+## 9. Inclusão do Semantic Scholar
+
+Antes da unificação das bases, foi adicionada uma coleta independente via Semantic Scholar API.
+
+### Motivo
+A inclusão do Semantic Scholar amplia a cobertura bibliográfica e permite comparar:
+- resultados por base;
+- comportamento das strings de busca;
+- presença de metadados como resumo, citações e DOI.
+
+### Estratégia adotada
+A coleta no Semantic Scholar foi implementada com:
+- API key via header `x-api-key`;
+- queries curtas por termo;
+- uso do endpoint de busca em lote (`paper/search/bulk`);
+- paginação por `token`;
+- limitação de campos retornados;
+- pausa entre requisições para respeitar a taxa da API.
+
+### Regra metodológica
+O Semantic Scholar entra no mesmo fluxo das demais bases:
+1. coletar;
+2. revisar;
+3. refinar, se necessário;
+4. só então unificar.
+
