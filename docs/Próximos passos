@@ -1,35 +1,266 @@
+Etapa C — Scopus individual
+
+Crie este arquivo:
+
+src/pipelines/03_collect_scopus.py
+
+Cole isto:
+
+from pathlib import Path
+import os
+import time
+
+import pandas as pd
+import requests
+from dotenv import load_dotenv
+
+load_dotenv()
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+RAW_DIR = BASE_DIR / "data" / "raw"
+RAW_DIR.mkdir(parents=True, exist_ok=True)
+
+API_KEY = os.getenv("SCOPUS_API_KEY", "").strip()
+
+QUERY = """
+TITLE-ABS-KEY(
+    "judicial policy"
+    OR "judicial policies"
+    OR "judicial governance"
+    OR "judicial administration"
+    OR "court administration"
+    OR "court governance"
+    OR "judicial reform"
+    OR "política judiciária"
+    OR "políticas judiciárias"
+    OR "governança judicial"
+    OR "administração judiciária"
+    OR "reforma do judiciário"
+    OR "reforma judicial"
+    OR "Conselho Nacional de Justiça"
+)
+AND PUBYEAR > 1999
+AND PUBYEAR < 2027
+"""
+
+def main():
+    if not API_KEY:
+        raise RuntimeError("SCOPUS_API_KEY não encontrada no .env")
+
+    headers = {
+        "X-ELS-APIKey": API_KEY,
+        "Accept": "application/json",
+    }
+
+    params = {
+        "query": QUERY,
+        "count": 200,
+        "start": 0,
+    }
+
+    url = "https://api.elsevier.com/content/search/scopus"
+    response = requests.get(url, headers=headers, params=params, timeout=60)
+    response.raise_for_status()
+
+    entries = response.json().get("search-results", {}).get("entry", [])
+    rows = []
+
+    for item in entries:
+        rows.append(
+            {
+                "source": "scopus",
+                "title": item.get("dc:title", ""),
+                "doi": item.get("prism:doi", ""),
+                "publication_year": item.get("prism:coverDate", "")[:4],
+                "journal": item.get("prism:publicationName", ""),
+                "type": item.get("subtypeDescription", ""),
+                "language": item.get("language", ""),
+                "cited_by_count": item.get("citedby-count", 0),
+                "scopus_id": item.get("dc:identifier", ""),
+                "query_term": "SCOPUS_MAIN_QUERY",
+            }
+        )
+
+    df = pd.DataFrame(rows)
+
+    output_csv = RAW_DIR / "scopus_results.csv"
+    df.to_csv(output_csv, index=False, encoding="utf-8-sig")
+
+    print(f"Arquivo salvo em: {output_csv}")
+    print(f"Total bruto coletado: {len(df)}")
+
+    time.sleep(1)
+
+if __name__ == "__main__":
+    main()
+Etapa D — revisar o Scopus
+
+Crie este arquivo:
+
+src/pipelines/03b_review_scopus.py
+
+Cole isto:
+
+from pathlib import Path
+import pandas as pd
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+RAW_FILE = BASE_DIR / "data" / "raw" / "scopus_results.csv"
+
+df = pd.read_csv(RAW_FILE)
+
+print("\n=== VISÃO GERAL ===")
+print(f"Total de linhas: {len(df)}")
+print(f"Total de colunas: {len(df.columns)}")
+
+print("\n=== POR IDIOMA ===")
+if "language" in df.columns:
+    print(df["language"].fillna("N/D").value_counts().head(15).to_string())
+
+print("\n=== TOP 15 PERIÓDICOS ===")
+print(df["journal"].fillna("N/D").value_counts().head(15).to_string())
+
+print("\n=== TOP 20 ARTIGOS POR CITAÇÕES ===")
+top = df.sort_values("cited_by_count", ascending=False)[
+    ["title", "publication_year", "journal", "cited_by_count"]
+].head(20)
+print(top.to_string(index=False))
+
 Rode:
 
-python src/pipelines/02d_review_openalex_refined.py
+python src/pipelines/03_collect_scopus.py
+python src/pipelines/03b_review_scopus.py
+Etapa E — base unificada
 
-5. Subir essa melhoria para o GitHub
+Crie este arquivo:
 
-Se estiver tudo certo:
+src/pipelines/04_build_unified_base.py
 
-git add .
-git commit -m "refina coleta openalex e reduz ruído temático"
-git push origin main
-O que esperamos agora
+Cole isto:
 
-Na versão refinada:
+from pathlib import Path
+import pandas as pd
 
-cair bastante o número total de linhas
-sumirem várias fontes ruins
-melhorar muito os top periódicos
-os top artigos ficarem mais ligados ao seu tema
-Depois disso
+BASE_DIR = Path(__file__).resolve().parents[2]
+RAW_DIR = BASE_DIR / "data" / "raw"
+FINAL_DIR = BASE_DIR / "data" / "final"
+FINAL_DIR.mkdir(parents=True, exist_ok=True)
 
-O próximo passo será montar o Scopus individual, usando a mesma lógica:
+files = [
+    RAW_DIR / "openalex_results_refined.csv",
+    RAW_DIR / "crossref_results_refined.csv",
+    RAW_DIR / "scopus_results.csv",
+]
 
-query pack mais preciso
-salvar CSV próprio
-revisar resultado
+dfs = []
+for file in files:
+    if file.exists():
+        df = pd.read_csv(file)
+        df["source_file"] = file.name
+        dfs.append(df)
 
-Rode agora nesta ordem:
+if not dfs:
+    raise RuntimeError("Nenhuma base encontrada para unificação.")
 
-Remove-Item .git\index.lock
-git status
-python src/pipelines/02c_collect_openalex_refined.py
-python src/pipelines/02d_review_openalex_refined.py
+df = pd.concat(dfs, ignore_index=True)
 
-Me manda o resumo da revisão refinada que eu te passo o 03_collect_scopus.py.
+for col in ["doi", "title", "journal", "publication_year", "cited_by_count"]:
+    if col not in df.columns:
+        df[col] = ""
+
+df["doi_norm"] = df["doi"].fillna("").astype(str).str.strip().str.lower()
+df["title_norm"] = df["title"].fillna("").astype(str).str.strip().str.lower()
+df["journal_norm"] = df["journal"].fillna("").astype(str).str.strip().str.lower()
+df["year_norm"] = df["publication_year"].fillna("").astype(str).str.strip()
+
+df["cited_by_count"] = pd.to_numeric(df["cited_by_count"], errors="coerce").fillna(0)
+
+df = df.sort_values("cited_by_count", ascending=False)
+
+df_with_doi = df[df["doi_norm"] != ""].copy()
+df_without_doi = df[df["doi_norm"] == ""].copy()
+
+df_with_doi = df_with_doi.drop_duplicates(subset=["doi_norm"], keep="first")
+df_without_doi = df_without_doi.drop_duplicates(
+    subset=["title_norm", "year_norm", "journal_norm"],
+    keep="first",
+)
+
+df_final = pd.concat([df_with_doi, df_without_doi], ignore_index=True)
+
+output_csv = FINAL_DIR / "unified_base.csv"
+df_final.to_csv(output_csv, index=False, encoding="utf-8-sig")
+
+print(f"Arquivo salvo em: {output_csv}")
+print(f"Total bruto unificado: {len(df)}")
+print(f"Total final deduplicado: {len(df_final)}")
+
+Rode:
+
+python src/pipelines/04_build_unified_base.py
+Etapa F — automação até a base unificada
+
+Agora sim, a “query” que automatiza o resto na prática vai ser um script orquestrador.
+
+Crie este arquivo:
+
+src/pipelines/99_run_until_unified.py
+
+Cole isto:
+
+from pathlib import Path
+import subprocess
+import sys
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+SCRIPTS = [
+    "src/pipelines/01b_collect_crossref_refined.py",
+    "src/pipelines/01c_review_crossref_refined.py",
+    "src/pipelines/03_collect_scopus.py",
+    "src/pipelines/03b_review_scopus.py",
+    "src/pipelines/04_build_unified_base.py",
+]
+
+for script in SCRIPTS:
+    print(f"\n>>> Rodando {script}")
+    result = subprocess.run([sys.executable, str(BASE_DIR / script)], check=False)
+    if result.returncode != 0:
+        raise SystemExit(f"Falha em {script} (código {result.returncode})")
+
+print("\nPipeline concluída até a base unificada.")
+print("Pausa aqui para análise manual.")
+
+Rode assim:
+
+python src/pipelines/99_run_until_unified.py
+O que isso resolve
+
+Agora você passa a ter:
+
+documentação metodológica
+OpenAlex refinado já feito
+Crossref refeito com o aprendizado
+revisão do Crossref
+Scopus individual
+revisão do Scopus
+base unificada
+pausa para análise
+Ordem exata para você seguir agora
+criar docs/decisoes_metodologicas.md
+criar 01b_collect_crossref_refined.py
+criar 01c_review_crossref_refined.py
+rodar os dois
+me mandar o resultado da revisão do Crossref
+criar 03_collect_scopus.py
+criar 03b_review_scopus.py
+rodar os dois
+criar 04_build_unified_base.py
+criar 99_run_until_unified.py
+
+Seu próximo comando agora é este:
+
+python src/pipelines/01b_collect_crossref_refined.py
+python src/pipelines/01c_review_crossref_refined.py
+
+Quando você trouxer a revisão do Crossref, eu ajusto a string antes de irmos para o Scopus.
