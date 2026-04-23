@@ -4,62 +4,72 @@ import pandas as pd
 BASE_DIR = Path(__file__).resolve().parents[2]
 FINAL_DIR = BASE_DIR / "data" / "final"
 
-INPUT_FILE = FINAL_DIR / "focus_corpus_policy_admin.csv"
-OUTPUT_FILE = FINAL_DIR / "focus_corpus_policy_clustered.csv"
+INPUT_FILE = FINAL_DIR / "reading_agenda_top.csv"
+OUTPUT_FILE = FINAL_DIR / "reading_agenda_rebalanced.csv"
+OUTPUT_TOP50 = FINAL_DIR / "reading_agenda_rebalanced_top50.csv"
 
 df = pd.read_csv(INPUT_FILE, low_memory=False)
 
-for col in ["title_clean", "journal_clean", "query_term_clean"]:
+for col in ["agenda_score", "citation_count_unified", "publication_year"]:
     if col not in df.columns:
-        df[col] = ""
+        df[col] = 0
 
-df["title_clean"] = df["title_clean"].fillna("").astype(str).str.strip().str.lower()
-df["journal_clean"] = df["journal_clean"].fillna("").astype(str).str.strip().str.lower()
-df["query_term_clean"] = df["query_term_clean"].fillna("nd").astype(str).str.strip().str.lower()
+df["agenda_score"] = pd.to_numeric(df["agenda_score"], errors="coerce").fillna(0)
+df["citation_count_unified"] = pd.to_numeric(df["citation_count_unified"], errors="coerce").fillna(0)
+df["publication_year"] = pd.to_numeric(df["publication_year"], errors="coerce")
 
-def classify_cluster(row) -> str:
-    text = " ".join([row["title_clean"], row["journal_clean"], row["query_term_clean"]])
+# ranking interno por fonte
+df = df.sort_values(
+    by=["agenda_score", "citation_count_unified", "publication_year"],
+    ascending=[False, False, False],
+).copy()
 
-    if any(x in text for x in [
-        "conselho nacional de justiça", "cnj", "política judiciária",
-        "políticas judiciárias", "governança judicial", "administração judiciária"
-    ]):
-        return "cnj_brazil"
+df["rank_within_source"] = (
+    df.groupby("source_file")
+      .cumcount()
+      .add(1)
+)
 
-    if any(x in text for x in [
-        "judicial administration", "court administration", "court management",
-        "judicial management", "case management", "judicial performance",
-        "court performance", "judicial efficiency", "court efficiency",
-        "e-justice", "digital justice"
-    ]):
-        return "policy_admin_governance"
+# penalização suave para domínio excessivo da fonte
+def source_penalty(rank: int) -> int:
+    if rank <= 10:
+        return 0
+    if rank <= 25:
+        return 1
+    return 2
 
-    if any(x in text for x in [
-        "judicial governance", "court governance", "judicial policy",
-        "judicial policies", "policy"
-    ]):
-        return "policy_admin_governance"
+df["source_penalty"] = df["rank_within_source"].apply(source_penalty)
+df["agenda_score_rebalanced"] = df["agenda_score"] - df["source_penalty"]
 
-    if any(x in text for x in [
-        "judicial reform", "reforma judicial", "reforma do judiciário"
-    ]):
-        return "reform"
+df = df.sort_values(
+    by=["agenda_score_rebalanced", "agenda_score", "citation_count_unified", "publication_year"],
+    ascending=[False, False, False, False],
+)
 
-    if any(x in text for x in [
-        "judicial review", "constitutional court", "supreme court",
-        "constitutional law", "checks and balances"
-    ]):
-        return "judicial_review_constitutional"
+top50 = []
+source_limits = {
+    "semantic_scholar_results_core.csv": 15,
+    "openalex_results_refined.csv": 15,
+    "crossref_results_refined.csv": 10,
+    "scopus_results_refined.csv": 10,
+}
+counts = {k: 0 for k in source_limits}
 
-    if any(x in text for x in [
-        "access to justice", "legal aid", "dispute resolution", "adr", "mediation"
-    ]):
-        return "access_to_justice"
+for _, row in df.iterrows():
+    source = row.get("source_file", "")
+    limit = source_limits.get(source, 5)
+    if counts.get(source, 0) < limit:
+        top50.append(row)
+        counts[source] = counts.get(source, 0) + 1
+    if len(top50) >= 50:
+        break
 
-    return "other_focus"
+top50_df = pd.DataFrame(top50)
 
-df["focus_cluster"] = df.apply(classify_cluster, axis=1)
 df.to_csv(OUTPUT_FILE, index=False, encoding="utf-8-sig")
+top50_df.to_csv(OUTPUT_TOP50, index=False, encoding="utf-8-sig")
 
 print(f"Arquivo salvo em: {OUTPUT_FILE}")
-print(df["focus_cluster"].value_counts().to_string())
+print(f"Arquivo salvo em: {OUTPUT_TOP50}")
+print("Distribuição no top50:")
+print(top50_df["source_file"].value_counts().to_string())
