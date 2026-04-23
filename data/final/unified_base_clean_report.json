@@ -1,0 +1,13 @@
+{
+  "input_file": "/workspaces/Public_Policy/data/final/unified_base.csv",
+  "output_file": "/workspaces/Public_Policy/data/final/unified_base_clean.csv",
+  "n_initial": 6893,
+  "n_with_doi": 5819,
+  "n_unique_doi_clean": 4894,
+  "n_removed_by_doi_clean": 925,
+  "n_without_doi": 1074,
+  "n_unique_title_year_journal_no_doi": 1074,
+  "n_removed_by_title_year_journal_no_doi": 0,
+  "n_final": 5968,
+  "n_total_removed": 925
+}

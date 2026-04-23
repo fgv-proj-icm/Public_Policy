@@ -1,0 +1,7 @@
+﻿metric,value
+n_total,6893
+n_with_doi,5819
+n_unique_doi_clean,4894
+n_records_in_duplicate_doi_groups,1850
+n_without_doi,1074
+n_records_in_duplicate_no_doi_groups,0
