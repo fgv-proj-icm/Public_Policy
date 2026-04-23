@@ -1,4 +1,5 @@
 from pathlib import Path
+import numpy as np
 import pandas as pd
 
 BASE_DIR = Path(__file__).resolve().parents[2]
@@ -13,7 +14,9 @@ if "citation_count_unified" not in df.columns:
     df["citation_count_unified"] = 0
 
 df["citation_count_unified"] = pd.to_numeric(df["citation_count_unified"], errors="coerce").fillna(0)
-df["citation_count_log1p"] = (df["citation_count_unified"] + 1).map(lambda x: pd.np.log(x) if x > 0 else 0)
+
+import numpy as np
+df["citation_count_log1p"] = np.log1p(df["citation_count_unified"])
 
 df["has_doi"] = df["doi_clean"].fillna("").astype(str).str.strip() != ""
 df["has_abstract"] = df["abstract"].fillna("").astype(str).str.strip() != ""
