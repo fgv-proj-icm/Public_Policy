@@ -320,23 +320,207 @@ As principais limitações desta metodologia são:
 
 ---
 
-## 19. Decisão metodológica consolidada
+## 19. Integração da curadoria assistida por IA
 
-A decisão metodológica final desta fase é a seguinte:
+Após a construção do corpus bibliométrico automático (`bibliometric_corpus_final_v2.csv`), foi realizada uma etapa adicional de curadoria assistida por IA, a partir da leitura do arquivo `reading_corpus_final_curated` por um modelo externo, sem uso de PDFs e com base exclusivamente nos metadados disponíveis.
 
-1. a base mestre está congelada;
-2. o corpus bibliométrico final está suficientemente robusto para início das análises;
-3. o corpus de leitura ainda depende de uma triagem manual final;
-4. a próxima etapa do projeto já não é mais de coleta ampla, mas de análise bibliométrica e leitura substantiva orientada.
+Essa curadoria gerou o arquivo:
+
+- `data/final/corpus_curated_v3_claude.csv`
+
+O objetivo dessa etapa foi produzir uma triagem fina dos registros, classificando-os em três grupos:
+- manter;
+- revisar;
+- excluir.
+
+A integração entre o corpus automático e a curadoria do Claude foi operacionalizada por meio de uma pipeline específica de integração final, resultando em uma nova camada híbrida de decisão, combinando:
+- limpeza e deduplicação automáticas;
+- curadoria temática assistida por IA;
+- preservação da rastreabilidade metodológica.
 
 ---
 
-## 20. Próxima transição do projeto
+## 20. Fechamento do corpus bibliométrico final
 
-O projeto entra agora em uma nova fase:
+A integração da curadoria do Claude produziu o corpus bibliométrico final oficial do projeto:
 
-- **fase anterior**: construção, limpeza, auditoria e curadoria do corpus;
-- **fase atual**: validação curta do corpus de leitura;
-- **fase seguinte**: análises bibliométricas e leitura analítica dos textos centrais.
+- `data/final/bibliometric_corpus_final_v3.csv`
 
-Essa transição marca o encerramento da fase de preparação do corpus e o início da fase analítica propriamente dita.
+Também foram gerados os seguintes arquivos auxiliares:
+
+- `data/final/bibliometric_corpus_review_queue.csv`
+- `data/final/bibliometric_corpus_excluded.csv`
+- `data/final/reading_corpus_final_v3.csv`
+- `data/final/reading_corpus_final_v3_top80.csv`
+
+### 20.1. Resultado da integração
+A integração final produziu:
+
+- `bibliometric_corpus_final_v3.csv`: 1604 registros
+- `bibliometric_corpus_review_queue.csv`: 95 registros
+- `bibliometric_corpus_excluded.csv`: 165 registros
+
+A distribuição temática do corpus final v3 ficou assim:
+- `policy_admin_governance`: 725
+- `reform`: 637
+- `cnj_brazil`: 242
+
+A distribuição por fonte ficou assim:
+- `crossref_results_refined.csv`: 700
+- `openalex_results_refined.csv`: 499
+- `semantic_scholar_results_core.csv`: 385
+- `scopus_results_refined.csv`: 20
+
+### 20.2. Padrões de exclusão
+As exclusões ficaram concentradas principalmente em:
+- `judicial_review_periférico`
+- `tema_tangencial`
+- `provável_ruído`
+- `provável_duplicata`
+
+Isso indica que a curadoria final conseguiu reduzir o ruído residual que ainda permanecia após a limpeza automática.
+
+### 20.3. Decisão metodológica
+A partir desta etapa, o arquivo oficial para análise bibliométrica passa a ser:
+
+- `data/final/bibliometric_corpus_final_v3.csv`
+
+O arquivo `v2` permanece apenas como baseline automático e referência metodológica do estágio anterior.
+
+---
+
+## 21. Situação da fila de revisão
+
+Os 95 registros classificados como `revisar` foram preservados em:
+
+- `data/final/bibliometric_corpus_review_queue.csv`
+
+Essa fila cumpre duas funções metodológicas:
+
+1. registrar explicitamente a zona residual de incerteza do corpus;
+2. evitar que a definição do corpus final dependa de exclusões automáticas excessivamente rígidas.
+
+Esses registros não integram o corpus bibliométrico final oficial, mas permanecem disponíveis para eventual reavaliação posterior.
+
+---
+
+## 22. Situação do corpus de leitura
+
+A integração final também produziu:
+
+- `data/final/reading_corpus_final_v3.csv`
+- `data/final/reading_corpus_final_v3_top80.csv`
+
+### 22.1. Natureza do corpus de leitura
+O `reading_corpus_final_v3.csv` representa o universo curado de leitura derivado do corpus final.
+
+Já o `reading_corpus_final_v3_top80.csv` representa uma agenda priorizada de leitura, construída para orientar a etapa substantiva da pesquisa.
+
+### 22.2. Limite metodológico do top80
+Embora o `top80` tenha sido útil para organizar a leitura prioritária, ele não deve ser tratado automaticamente como corpus substantivo final fechado.
+
+Isso se deve ao fato de que:
+- sua composição por fonte ainda é assimétrica;
+- alguns itens de fronteira temática permanecem entre os primeiros colocados;
+- a definição do corpus de leitura ainda depende de uma triagem humana curta.
+
+### 22.3. Decisão metodológica
+Assim, o `reading_corpus_final_v3_top80.csv` deve ser tratado como:
+
+- agenda priorizada de leitura;
+- não como corpus substantivo final definitivo.
+
+---
+
+## 23. Situação consolidada do projeto
+
+Neste ponto, o projeto passa a operar com a seguinte arquitetura final:
+
+### 23.1. Base mestre estrutural
+- `data/final/unified_base_analysis_ready_v3.csv`
+
+### 23.2. Corpus bibliométrico final oficial
+- `data/final/bibliometric_corpus_final_v3.csv`
+
+### 23.3. Zona de incerteza documentada
+- `data/final/bibliometric_corpus_review_queue.csv`
+
+### 23.4. Excluídos rastreados
+- `data/final/bibliometric_corpus_excluded.csv`
+
+### 23.5. Corpus de leitura curado
+- `data/final/reading_corpus_final_v3.csv`
+
+### 23.6. Agenda priorizada de leitura
+- `data/final/reading_corpus_final_v3_top80.csv`
+
+Essa estrutura encerra a fase de preparação do corpus bibliográfico e estabelece, de forma metodologicamente defensável, os arquivos oficiais a serem usados na fase analítica.
+
+---
+
+## 24. Decisão metodológica final desta fase
+
+A fase de definição do corpus pode ser considerada encerrada.
+
+A decisão metodológica consolidada é:
+
+1. congelar a base mestre estrutural;
+2. adotar `bibliometric_corpus_final_v3.csv` como corpus bibliométrico oficial;
+3. preservar a fila de revisão e os excluídos como documentação metodológica;
+4. tratar o `reading_corpus_final_v3_top80.csv` como agenda provisória de leitura;
+5. iniciar a fase bibliométrica a partir do corpus final v3.
+
+---
+
+## 25. Próximos passos
+
+A próxima fase da pesquisa deixa de ser uma fase de coleta e curadoria ampla e passa a ser uma fase analítica.
+
+Os próximos passos são:
+
+1. realizar as análises bibliométricas sobre `bibliometric_corpus_final_v3.csv`;
+2. fazer uma triagem humana curta do `reading_corpus_final_v3_top80.csv`;
+3. derivar, a partir dessa triagem, o corpus substantivo final de leitura;
+4. iniciar a redação dos resultados bibliométricos e da síntese analítica da literatura.
+
+---
+
+## 26. Análises bibliométricas previstas a partir do corpus final v3
+
+As análises bibliométricas a serem realizadas a partir de `bibliometric_corpus_final_v3.csv` incluem:
+
+### 26.1. Estatísticas descritivas
+- publicações por ano;
+- distribuição por tipo documental;
+- distribuição por fonte;
+- distribuição por periódicos;
+- distribuição por idioma, quando houver metadados suficientes.
+
+### 26.2. Análises temáticas
+- frequência de termos;
+- distribuição por subtemas;
+- comparação entre:
+  - reforma judicial;
+  - administração judicial;
+  - governança judicial;
+  - políticas judiciárias;
+  - experiências brasileiras/CNJ.
+
+### 26.3. Análises de impacto
+- artigos mais citados;
+- periódicos mais recorrentes;
+- literatura fundacional;
+- produção recente.
+
+### 26.4. Análises relacionais
+- coocorrência de termos;
+- relações entre periódicos;
+- relações entre temas e anos;
+- redes de autores e instituições, quando os metadados permitirem.
+
+### 26.5. Função da bibliometria nesta pesquisa
+A bibliometria será utilizada para:
+- mapear o estado da arte;
+- identificar núcleos temáticos e editoriais;
+- apoiar a seleção dos trabalhos centrais para leitura aprofundada;
+- subsidiar a construção da agenda de pesquisa final.

@@ -1,0 +1,563 @@
+---
+title: "Relatório bibliométrico do corpus sobre políticas judiciárias"
+subtitle: "Resultados do corpus FULL, CORE e rol final de leitura"
+author: "Projeto Public_Policy"
+date: today
+lang: pt-BR
+jupyter: python3
+format:
+  html:
+    toc: true
+    number-sections: true
+    code-fold: false
+    df-print: paged
+    theme: cosmo
+  docx:
+    toc: true
+    number-sections: true
+execute:
+  echo: false
+  warning: false
+  message: false
+editor: visual
+---
+
+```{python}
+from pathlib import Path
+import json
+import re
+from collections import Counter
+import pandas as pd
+import matplotlib.pyplot as plt
+from IPython.display import display, Markdown
+
+BASE_DIR = Path(".")
+FINAL_DIR = BASE_DIR / "data" / "final"
+
+FULL_FILE = FINAL_DIR / "bibliometric_corpus_full_v1.csv"
+CORE_FILE = FINAL_DIR / "bibliometric_corpus_core_v1.csv"
+V3_FILE = FINAL_DIR / "bibliometric_corpus_final_v3.csv"
+REVIEW_FILE = FINAL_DIR / "bibliometric_corpus_review_queue.csv"
+EXCLUDED_FILE = FINAL_DIR / "bibliometric_corpus_excluded.csv"
+FUNNEL_FILE = FINAL_DIR / "funnel_impact_table.csv"
+CLEANING_FILE = FINAL_DIR / "cleaning_impact_table.csv"
+READING_TOP60_FILE = FINAL_DIR / "reading_list_final_top60.csv"
+
+STOPWORDS = {
+    "the", "of", "and", "in", "on", "for", "to", "a", "an", "with", "from", "by", "at", "or",
+    "de", "da", "do", "das", "dos", "e", "em", "para", "por", "com", "na", "no", "nas", "nos",
+    "la", "el", "en", "del", "y", "con", "los", "las",
+    "judicial", "court", "courts", "justice", "policy", "policies", "reform", "governance",
+    "administration"
+}
+
+def read_csv_safe(path: Path) -> pd.DataFrame:
+    if path.exists():
+        try:
+            return pd.read_csv(path, low_memory=False)
+        except Exception:
+            return pd.DataFrame()
+    return pd.DataFrame()
+
+def fmt_int(value):
+    if pd.isna(value):
+        return "N/D"
+    try:
+        return f"{int(value):,}".replace(",", ".")
+    except Exception:
+        return str(value)
+
+def tokenize(text: str) -> list[str]:
+    text = str(text).lower()
+    text = re.sub(r"[^a-záàâãéèêíïóôõöúçñ0-9\s-]", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    tokens = []
+    for token in text.split():
+        if len(token) < 3:
+            continue
+        if token in STOPWORDS:
+            continue
+        tokens.append(token)
+    return tokens
+
+def ensure_columns(df: pd.DataFrame) -> pd.DataFrame:
+    for col in [
+        "title", "journal", "source_file", "primary_type", "thematic_bucket",
+        "publication_year", "citation_count_unified", "title_clean"
+    ]:
+        if col not in df.columns:
+            df[col] = "" if col not in ["publication_year", "citation_count_unified"] else 0
+    df["publication_year"] = pd.to_numeric(df["publication_year"], errors="coerce")
+    df["citation_count_unified"] = pd.to_numeric(df["citation_count_unified"], errors="coerce").fillna(0)
+    if "title_clean" not in df.columns or df["title_clean"].astype(str).str.strip().eq("").all():
+        df["title_clean"] = df["title"].fillna("").astype(str)
+    return df
+
+v3_df = ensure_columns(read_csv_safe(V3_FILE))
+full_df = read_csv_safe(FULL_FILE)
+core_df = read_csv_safe(CORE_FILE)
+
+if full_df.empty:
+    full_df = v3_df.copy()
+
+if core_df.empty:
+    core_df = v3_df.copy()
+    if "claude_curated_relevance_level" in core_df.columns:
+        core_df["claude_curated_relevance_level"] = (
+            core_df["claude_curated_relevance_level"].fillna("").astype(str).str.lower()
+        )
+        core_df = core_df[core_df["claude_curated_relevance_level"].eq("central")].copy()
+
+full_df = ensure_columns(full_df)
+core_df = ensure_columns(core_df)
+
+review_df = read_csv_safe(REVIEW_FILE)
+excluded_df = read_csv_safe(EXCLUDED_FILE)
+funnel_df = read_csv_safe(FUNNEL_FILE)
+cleaning_df = read_csv_safe(CLEANING_FILE)
+reading_top60_df = read_csv_safe(READING_TOP60_FILE)
+
+full_overview = {
+    "n_rows": len(full_df),
+    "n_columns": len(full_df.columns),
+    "total_citations": float(full_df["citation_count_unified"].sum()) if len(full_df) else 0,
+    "mean_citations": float(full_df["citation_count_unified"].mean()) if len(full_df) else 0,
+    "median_citations": float(full_df["citation_count_unified"].median()) if len(full_df) else 0,
+}
+
+core_overview = {
+    "n_rows": len(core_df),
+    "n_columns": len(core_df.columns),
+    "total_citations": float(core_df["citation_count_unified"].sum()) if len(core_df) else 0,
+    "mean_citations": float(core_df["citation_count_unified"].mean()) if len(core_df) else 0,
+    "median_citations": float(core_df["citation_count_unified"].median()) if len(core_df) else 0,
+}
+```
+
+# Resumo executivo
+
+```{python}
+v3_n = len(v3_df)
+review_n = len(review_df)
+excluded_n = len(excluded_df)
+full_n = len(full_df)
+core_n = len(core_df)
+top60_n = len(reading_top60_df)
+
+bucket_v3 = (
+    v3_df.groupby("thematic_bucket")
+    .size()
+    .reset_index(name="n")
+    .sort_values("n", ascending=False)
+    if len(v3_df) else pd.DataFrame(columns=["thematic_bucket", "n"])
+)
+
+top_bucket_text = "; ".join(
+    [f"{row.thematic_bucket}: {fmt_int(row.n)}" for row in bucket_v3.itertuples(index=False)]
+) if len(bucket_v3) else "N/D"
+
+display(Markdown(
+f"""
+Este relatório apresenta os resultados da fase bibliométrica do projeto *Public_Policy*, tomando como referência o **corpus bibliométrico final v3** e seus desdobramentos analíticos.
+
+Em seu estado atual, o projeto opera com:
+
+- **corpus bibliométrico final v3**: **{fmt_int(v3_n)}** registros;
+- **fila de revisão**: **{fmt_int(review_n)}** registros;
+- **excluídos documentados**: **{fmt_int(excluded_n)}** registros;
+- **base FULL operacional**: **{fmt_int(full_n)}** registros;
+- **base CORE operacional**: **{fmt_int(core_n)}** registros;
+- **rol final inicial de leitura**: **{fmt_int(top60_n)}** registros.
+
+Na base v3, os principais eixos temáticos ficaram distribuídos assim: **{top_bucket_text}**.
+"""
+))
+```
+
+# 1. Delimitação do corpus e desenho analítico
+
+A fase de preparação do corpus foi encerrada com a definição de uma **base bibliométrica oficial** (`bibliometric_corpus_final_v3.csv`) e com a separação entre dois níveis de análise:
+
+- **FULL**: universo bibliométrico final completo;
+- **CORE**: subconjunto mais estrito, voltado às análises temáticas e relacionais mais fortes.
+
+Esse desenho permite comparar estabilidade e variação dos resultados entre um recorte mais amplo e um recorte mais central.
+
+## 1.1. Comparação geral entre FULL e CORE
+
+```{python}
+compare_df = pd.DataFrame([
+    {
+        "base": "FULL",
+        "n_registros": full_overview["n_rows"],
+        "n_colunas": full_overview["n_columns"],
+        "total_citacoes": round(full_overview["total_citations"], 2),
+        "media_citacoes": round(full_overview["mean_citations"], 2),
+        "mediana_citacoes": round(full_overview["median_citations"], 2),
+    },
+    {
+        "base": "CORE",
+        "n_registros": core_overview["n_rows"],
+        "n_colunas": core_overview["n_columns"],
+        "total_citacoes": round(core_overview["total_citations"], 2),
+        "media_citacoes": round(core_overview["mean_citations"], 2),
+        "mediana_citacoes": round(core_overview["median_citations"], 2),
+    },
+])
+compare_df
+```
+
+# 2. Funil metodológico e impacto da limpeza
+
+## 2.1. Funil de redução do corpus
+
+```{python}
+if len(funnel_df):
+    funnel_df
+else:
+    display(Markdown("Tabela de funil ainda não encontrada. Rode a pipeline correspondente para gerar `funnel_impact_table.csv`."))
+```
+
+## 2.2. Impacto das operações finais de curadoria
+
+```{python}
+if len(cleaning_df):
+    cleaning_df
+else:
+    display(Markdown("Tabela de impacto da limpeza ainda não encontrada. Rode a pipeline correspondente para gerar `cleaning_impact_table.csv`."))
+```
+
+# 3. Evolução temporal das publicações
+
+## 3.1. FULL
+
+```{python}
+full_year = (
+    full_df.dropna(subset=["publication_year"])
+    .assign(publication_year=lambda x: x["publication_year"].astype(int))
+    .groupby("publication_year")
+    .size()
+    .reset_index(name="n_publications")
+    .sort_values("publication_year")
+)
+
+plt.figure(figsize=(12, 5))
+plt.plot(full_year["publication_year"], full_year["n_publications"], marker="o")
+plt.title("Publicações por ano — FULL")
+plt.xlabel("Ano")
+plt.ylabel("Número de publicações")
+plt.grid(alpha=0.3)
+plt.tight_layout()
+plt.show()
+```
+
+## 3.2. CORE
+
+```{python}
+core_year = (
+    core_df.dropna(subset=["publication_year"])
+    .assign(publication_year=lambda x: x["publication_year"].astype(int))
+    .groupby("publication_year")
+    .size()
+    .reset_index(name="n_publications")
+    .sort_values("publication_year")
+)
+
+plt.figure(figsize=(12, 5))
+plt.plot(core_year["publication_year"], core_year["n_publications"], marker="o", color="darkorange")
+plt.title("Publicações por ano — CORE")
+plt.xlabel("Ano")
+plt.ylabel("Número de publicações")
+plt.grid(alpha=0.3)
+plt.tight_layout()
+plt.show()
+```
+
+## 3.3. Anos mais recentes
+
+```{python}
+recent_compare = pd.merge(
+    full_year.rename(columns={"n_publications": "full"}),
+    core_year.rename(columns={"n_publications": "core"}),
+    on="publication_year",
+    how="outer"
+).fillna(0).sort_values("publication_year")
+
+recent_compare.tail(15)
+```
+
+# 4. Distribuição por fonte, tipo documental e eixo temático
+
+## 4.1. Distribuição por fonte
+
+```{python}
+full_source = full_df.groupby("source_file").size().reset_index(name="n_records").sort_values("n_records", ascending=False)
+core_source = core_df.groupby("source_file").size().reset_index(name="n_records").sort_values("n_records", ascending=False)
+
+display(Markdown("### FULL"))
+display(full_source)
+
+plt.figure(figsize=(10, 5))
+plt.bar(full_source["source_file"], full_source["n_records"])
+plt.title("Registros por fonte — FULL")
+plt.xticks(rotation=45, ha="right")
+plt.ylabel("Número de registros")
+plt.tight_layout()
+plt.show()
+
+display(Markdown("### CORE"))
+display(core_source)
+
+plt.figure(figsize=(10, 5))
+plt.bar(core_source["source_file"], core_source["n_records"], color="darkorange")
+plt.title("Registros por fonte — CORE")
+plt.xticks(rotation=45, ha="right")
+plt.ylabel("Número de registros")
+plt.tight_layout()
+plt.show()
+```
+
+## 4.2. Distribuição por tipo documental
+
+```{python}
+full_type = full_df.groupby("primary_type").size().reset_index(name="n_records").sort_values("n_records", ascending=False)
+core_type = core_df.groupby("primary_type").size().reset_index(name="n_records").sort_values("n_records", ascending=False)
+
+display(Markdown("### FULL"))
+display(full_type)
+
+display(Markdown("### CORE"))
+display(core_type)
+```
+
+## 4.3. Distribuição por eixo temático
+
+```{python}
+full_bucket = full_df.groupby("thematic_bucket").size().reset_index(name="n_records").sort_values("n_records", ascending=False)
+core_bucket = core_df.groupby("thematic_bucket").size().reset_index(name="n_records").sort_values("n_records", ascending=False)
+
+display(Markdown("### FULL"))
+display(full_bucket)
+
+plt.figure(figsize=(8, 5))
+plt.bar(full_bucket["thematic_bucket"], full_bucket["n_records"])
+plt.title("Eixos temáticos — FULL")
+plt.ylabel("Número de registros")
+plt.xticks(rotation=30, ha="right")
+plt.tight_layout()
+plt.show()
+
+display(Markdown("### CORE"))
+display(core_bucket)
+
+plt.figure(figsize=(8, 5))
+plt.bar(core_bucket["thematic_bucket"], core_bucket["n_records"], color="darkorange")
+plt.title("Eixos temáticos — CORE")
+plt.ylabel("Número de registros")
+plt.xticks(rotation=30, ha="right")
+plt.tight_layout()
+plt.show()
+```
+
+# 5. Periódicos mais recorrentes
+
+## 5.1. FULL
+
+```{python}
+full_top_journals = (
+    full_df.assign(journal=full_df["journal"].fillna("N/D"))
+    .groupby("journal")
+    .agg(
+        n_records=("journal", "size"),
+        total_citations=("citation_count_unified", "sum"),
+        mean_citations=("citation_count_unified", "mean"),
+    )
+    .reset_index()
+    .sort_values(["n_records", "total_citations"], ascending=[False, False])
+    .head(20)
+)
+
+full_top_journals
+```
+
+## 5.2. CORE
+
+```{python}
+core_top_journals = (
+    core_df.assign(journal=core_df["journal"].fillna("N/D"))
+    .groupby("journal")
+    .agg(
+        n_records=("journal", "size"),
+        total_citations=("citation_count_unified", "sum"),
+        mean_citations=("citation_count_unified", "mean"),
+    )
+    .reset_index()
+    .sort_values(["n_records", "total_citations"], ascending=[False, False])
+    .head(20)
+)
+
+core_top_journals
+```
+
+# 6. Artigos de maior impacto
+
+## 6.1. Top 20 por citações — FULL
+
+```{python}
+full_top_articles = (
+    full_df.sort_values(["citation_count_unified", "publication_year"], ascending=[False, False])
+    [["title", "publication_year", "journal", "citation_count_unified", "thematic_bucket", "source_file"]]
+    .head(20)
+)
+
+full_top_articles
+```
+
+## 6.2. Top 20 por citações — CORE
+
+```{python}
+core_top_articles = (
+    core_df.sort_values(["citation_count_unified", "publication_year"], ascending=[False, False])
+    [["title", "publication_year", "journal", "citation_count_unified", "thematic_bucket", "source_file"]]
+    .head(20)
+)
+
+core_top_articles
+```
+
+# 7. Termos mais frequentes nos títulos
+
+## 7.1. FULL
+
+```{python}
+full_term_counter = Counter()
+for text in full_df["title_clean"].fillna("").astype(str):
+    full_term_counter.update(tokenize(text))
+
+full_terms_df = pd.DataFrame(
+    [{"term": term, "count": count} for term, count in full_term_counter.most_common(30)]
+)
+full_terms_df
+```
+
+## 7.2. CORE
+
+```{python}
+core_term_counter = Counter()
+for text in core_df["title_clean"].fillna("").astype(str):
+    core_term_counter.update(tokenize(text))
+
+core_terms_df = pd.DataFrame(
+    [{"term": term, "count": count} for term, count in core_term_counter.most_common(30)]
+)
+core_terms_df
+```
+
+# 8. Comparação interpretativa entre FULL e CORE
+
+```{python}
+full_bucket_named = full_bucket.rename(columns={"n_records": "full_n"})
+core_bucket_named = core_bucket.rename(columns={"n_records": "core_n"})
+
+bucket_compare = pd.merge(
+    full_bucket_named,
+    core_bucket_named,
+    on="thematic_bucket",
+    how="outer"
+).fillna(0)
+
+bucket_compare["core_share_of_full_pct"] = (
+    bucket_compare.apply(
+        lambda row: (row["core_n"] / row["full_n"] * 100) if row["full_n"] > 0 else 0,
+        axis=1
+    )
+)
+
+bucket_compare
+```
+
+```{python}
+display(Markdown(
+"""
+A comparação entre FULL e CORE permite observar:
+
+1. o que permanece estável quando o corpus é tornado mais estrito;
+2. quais eixos temáticos concentram mais centralidade substantiva;
+3. em que medida a literatura de fronteira é reduzida no recorte CORE.
+"""
+))
+```
+
+# 9. Rol final de artigos para leitura
+
+A leitura final não é derivada do corpus inteiro, mas de um recorte de alto impacto e maior centralidade temática, construído para orientar a busca e leitura aprofundada dos textos mais relevantes.
+
+## 9.1. Tamanho do rol final
+
+```{python}
+if len(reading_top60_df):
+    display(Markdown(f"O rol final inicial de leitura contém **{fmt_int(len(reading_top60_df))}** registros."))
+    reading_top60_df.head(10)
+else:
+    display(Markdown("Arquivo `reading_list_final_top60.csv` ainda não encontrado. Rode a pipeline correspondente para gerar a lista final de leitura."))
+```
+
+## 9.2. Distribuição por eixo temático
+
+```{python}
+if len(reading_top60_df):
+    reading_bucket = (
+        reading_top60_df.groupby("thematic_bucket")
+        .size()
+        .reset_index(name="n_records")
+        .sort_values("n_records", ascending=False)
+    )
+    reading_bucket
+```
+
+## 9.3. Distribuição por fonte
+
+```{python}
+if len(reading_top60_df):
+    reading_source = (
+        reading_top60_df.groupby("source_file")
+        .size()
+        .reset_index(name="n_records")
+        .sort_values("n_records", ascending=False)
+    )
+    reading_source
+```
+
+## 9.4. Top 30 do rol final de leitura
+
+```{python}
+if len(reading_top60_df):
+    reading_top60_df.head(30)
+```
+
+# 10. Síntese dos resultados
+
+```{python}
+display(Markdown(
+f"""
+Os resultados desta etapa permitem registrar, de forma sintética, quatro conclusões principais.
+
+**Primeiro**, o corpus bibliométrico oficial do projeto encontra-se consolidado em uma base final com **{fmt_int(v3_n)}** registros, acompanhada por uma fila de revisão de **{fmt_int(review_n)}** registros e por um conjunto de **{fmt_int(excluded_n)}** registros excluídos com rastreabilidade metodológica.
+
+**Segundo**, a comparação entre FULL e CORE permite distinguir o universo final completo da literatura central do campo, reforçando a robustez do desenho metodológico e permitindo análises mais prudentes sobre centralidade temática e impacto.
+
+**Terceiro**, as análises descritivas e de impacto mostram a distribuição temporal, editorial e temática do corpus, permitindo identificar seus eixos dominantes, seus periódicos mais recorrentes e seus trabalhos mais citados.
+
+**Quarto**, a definição do rol final de leitura transforma a bibliometria em agenda de leitura orientada, conectando a fase quantitativa da pesquisa à etapa substantiva de interpretação da literatura.
+"""
+))
+```
+
+# 11. Próximos passos analíticos
+
+A partir deste relatório, os próximos movimentos da pesquisa são:
+
+1. aprofundar a leitura do rol final de textos;
+2. produzir fichamentos analíticos por subtema;
+3. redigir a seção de resultados bibliométricos;
+4. integrar a síntese da leitura à discussão do estado da arte e à agenda de pesquisa.

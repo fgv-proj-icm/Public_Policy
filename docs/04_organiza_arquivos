@@ -1,0 +1,7 @@
+bibliometric_corpus_final_v2.csv              # baseline automático
+corpus_curated_v3_claude.csv                  # curadoria Claude
+bibliometric_corpus_final_v3.csv              # corpus final integrado
+bibliometric_corpus_review_queue.csv          # registros "revisar"
+bibliometric_corpus_excluded.csv              # registros "excluir"
+reading_corpus_final_v3.csv                   # corpus final de leitura
+reading_corpus_final_v3_top80.csv             # seleção prioritária

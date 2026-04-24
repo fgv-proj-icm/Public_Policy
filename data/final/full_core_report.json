@@ -1,0 +1,13 @@
+{
+  "input_rows": 1604,
+  "full_rows": 1604,
+  "core_rows": 1595,
+  "allowed_buckets": [
+    "cnj_brazil",
+    "policy_admin_governance",
+    "reform"
+  ],
+  "allowed_relevance": [
+    "central"
+  ]
+}

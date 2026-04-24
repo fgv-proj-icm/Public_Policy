@@ -1,0 +1,9 @@
+{
+  "input_bibliometric_rows": 1887,
+  "biblio_v2_rows_after_dedup": 1874,
+  "biblio_curated_rows": 1864,
+  "removed_rows": 10,
+  "reading_rows": 1864,
+  "reading_top100_rows": 100,
+  "citation_q3_reading": 1.0
+}

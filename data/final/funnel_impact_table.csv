@@ -1,0 +1,7 @@
+﻿step_name,file_name,n_records,removed_from_previous,retained_pct_from_previous
+base_mestre_v3,unified_base_analysis_ready_v3.csv,5963,,
+focus_corpus,focus_corpus_policy_admin.csv,3581,2382.0,60.05366426295489
+strict_corpus,focus_corpus_strict.csv,1071,2510.0,29.907846970120076
+biblio_v2,bibliometric_corpus_final_v2.csv,1864,-793.0,174.04295051353876
+biblio_v3,bibliometric_corpus_final_v3.csv,1604,260.0,86.05150214592274
+biblio_core_v1,bibliometric_corpus_core_v1.csv,1595,9.0,99.43890274314214

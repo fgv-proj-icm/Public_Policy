@@ -1,0 +1,4 @@
+﻿operation,file_name,n_records
+curadoria_claude_manter,bibliometric_corpus_final_v3.csv,1604
+curadoria_claude_revisar,bibliometric_corpus_review_queue.csv,95
+curadoria_claude_excluir,bibliometric_corpus_excluded.csv,165

@@ -1,0 +1,10 @@
+{
+  "automatic_input_rows": 1864,
+  "claude_input_rows": 1864,
+  "keep_rows_final": 1604,
+  "review_rows": 95,
+  "excluded_rows": 165,
+  "reading_rows": 1604,
+  "reading_top80_rows": 80,
+  "claude_file_used": "C:\\Users\\Adm\\OneDrive\\Documentos\\GitHub\\Public_Policy\\data\\final\\corpus_curated_v3_claude.csv"
+}
