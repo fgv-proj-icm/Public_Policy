@@ -1,18 +1,31 @@
-# 1. Descompacte o zip e entre na pasta
-cd judicial_review
+# Public_Policy
 
-# 2. Instale dependências
-pip install requests pandas rapidfuzz networkx matplotlib pyyaml pyarrow tenacity
+Projeto de pesquisa bibliométrica sobre **políticas judiciárias**, com foco em:
 
-# 3. Configure .env com as chaves das APIs
-# (OpenAlex é gratuito; Scopus e WoS requerem acesso institucional)
+- reforma judicial;
+- administração judicial;
+- governança judicial;
+- gestão de tribunais;
+- experiências institucionais do Poder Judiciário;
+- recortes brasileiros, incluindo CNJ, quando pertinentes.
 
-# 4. Execute os pipelines com os dados reais
-PYTHONPATH=. python src/pipelines/01_collect.py
-PYTHONPATH=. python src/pipelines/02_normalize_dedup.py
-PYTHONPATH=. python src/pipelines/03_audit.py
-PYTHONPATH=. python src/pipelines/04_score_agenda.py
-PYTHONPATH=. python src/pipelines/05_bibliometrics_full.py
+O projeto foi desenvolvido em Python, com coleta multibase, auditoria reprodutível, limpeza progressiva do corpus e construção de camadas analíticas até a definição de um corpus bibliométrico final.
 
-# 5. Gere o Word
-quarto render politicas_judiciarias_bibliometria_v2.qmd --to docx
+---
+
+## Estrutura principal
+
+```text
+Public_Policy/
+├── data/
+│   ├── raw/
+│   ├── interim/
+│   └── final/
+├── docs/
+│   ├── 01_metodologia.md
+│   ├── 02_uso_da_ia_na_pesquisa.md
+│   └── 03_proximos_passos.md
+├── src/
+│   └── pipelines/
+├── requirements.txt
+└── README.md
