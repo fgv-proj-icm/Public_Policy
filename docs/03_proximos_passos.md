@@ -1,42 +1,102 @@
-## 11. Fase analítica imediata
+# Próximos passos da pesquisa
 
-A próxima fase da pesquisa será estruturada em torno de dois recortes bibliométricos:
+## 1. Situação atual
 
-### 11.1. Base FULL
-A base FULL corresponde ao corpus bibliométrico final oficial do projeto:
+A pesquisa já dispõe de uma nova etapa de unificação e triagem baseada em PRISMA, estruturada em dois anéis:
 
-- `data/final/bibliometric_corpus_final_v3.csv`
+- `CORE_EX`
+- `ADJ`
 
-Ela será usada para:
-- estatísticas descritivas;
-- distribuição por fonte;
-- distribuição por periódicos;
-- distribuição temporal;
-- transparência metodológica sobre o universo final do corpus.
+A partir deste ponto, a linha principal do projeto deixa de buscar um corpus único e passa a trabalhar com:
 
-### 11.2. Base CORE
-A base CORE será derivada da FULL por critérios mais estritos de centralidade temática, com o objetivo de sustentar:
-- análises relacionais;
-- comparação entre subtemas;
-- redes e coocorrências;
-- seleção de literatura central do campo.
+- um núcleo explícito, pequeno e diretamente alinhado à pergunta;
+- um anel adjacente, maior, útil para contextualização e comparação.
 
-### 11.3. Funil metodológico
-Antes da bibliometria principal, serão produzidas tabelas com:
-- o funil de redução do corpus;
-- o impacto das etapas de limpeza e curadoria.
+---
 
-### 11.4. Bibliometria
-As análises bibliométricas serão executadas em duas escalas:
-- FULL;
-- CORE.
+## 2. O que foi decidido
 
-Esse desenho permite mostrar o que permanece estável e o que muda quando o corpus é tornado mais estrito.
+Foi decidido que o objeto principal da pesquisa é:
 
-### 11.5. Leitura final
-A leitura final não será feita a partir de todo o corpus, mas de uma seleção estratificada de artigos de maior impacto, construída a partir da base CORE.
+- o campo que se nomeia explicitamente como política judiciária, política judicial ou judicial policy.
 
-O objetivo é produzir:
-- uma lista final de leitura com prioridade explícita;
-- equilíbrio entre os principais subtemas do corpus;
-- seleção metodologicamente defensável dos textos a serem procurados e lidos.
+Também foi decidido que:
+
+- a literatura cognata não será descartada;
+- mas ela será tratada como anel adjacente, e não como corpus principal automático.
+
+---
+
+## 3. O que será mantido
+
+Serão mantidos como base da nova fase:
+
+- a consolidação cross-base;
+- a deduplicação global;
+- a classificação PRISMA em `CORE_EX`, `ADJ` e `EXCLUDE`;
+- os logs de screening;
+- os motivos de exclusão.
+
+---
+
+## 4. O que será removido
+
+Serão removidos da linha principal:
+
+- a antiga estratégia `explicit_policy_unified_*`;
+- os arquivos e scripts experimentais dessa etapa intermediária;
+- outputs que não correspondem à nova lógica PRISMA.
+
+---
+
+## 5. Próxima sequência de trabalho
+
+### Etapa 06
+Consolidar a nova base unificada PRISMA e sua documentação.
+
+### Etapa 07
+Gerar o fluxo PRISMA completo com:
+- identificados;
+- deduplicados;
+- triados;
+- excluídos com motivo;
+- incluídos no núcleo;
+- incluídos no anel adjacente.
+
+### Etapa 08
+Preparar o corpus `CORE_EX` para:
+- revisão metodológica;
+- descrição bibliométrica;
+- eventual leitura integral dos itens centrais.
+
+### Etapa 09
+Produzir a bibliometria principal do `CORE_EX`.
+
+### Etapa 10
+Produzir análises comparativas e relacionais com o `ADJ`.
+
+### Etapa 11
+Derivar a lista final de leitura a partir do `CORE_EX`, eventualmente com apoio do `ADJ` para textos-ponte.
+
+---
+
+## 6. Resultado esperado
+
+Ao final da nova fase, a pesquisa deverá dispor de:
+
+- um protocolo PRISMA transparente;
+- um corpus nuclear coerente com a pergunta;
+- um anel adjacente útil para comparação;
+- uma bibliometria principal focada;
+- uma lista final de leitura diretamente derivada do núcleo.
+
+---
+
+## 7. Próximo passo prático imediato
+
+O próximo passo prático imediato é:
+
+1. remover a linha antiga `explicit_policy_unified_*`;
+2. atualizar a metodologia e os próximos passos;
+3. comitar essa reorganização no GitHub;
+4. seguir para as próximas pipelines da linha PRISMA.
