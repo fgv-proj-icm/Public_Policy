@@ -1,8 +1,0 @@
-1. Congelar a base atual
-2. Gerar auditoria reprodutível
-3. Normalizar DOI/title/journal/type/language
-4. Deduplicar com regra documentada
-5. Gerar base clean
-6. Revisar a base clean
-7. Gerar base analysis-ready
-8. Só então partir para análise bibliométrica e substantiva
