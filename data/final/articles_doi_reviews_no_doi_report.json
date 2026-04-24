@@ -1,0 +1,9 @@
+{
+  "input_rows": 1604,
+  "output_rows_total": 1291,
+  "output_rows_articles_with_doi": 1288,
+  "output_rows_reviews_without_doi": 3,
+  "top50_rows": 50,
+  "n_unique_article_doi": 1288,
+  "n_unique_buckets": 3
+}
