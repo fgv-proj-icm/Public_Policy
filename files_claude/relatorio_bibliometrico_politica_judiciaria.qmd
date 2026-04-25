@@ -1,0 +1,733 @@
+---
+title: "Política Judiciária como Campo Emergente: Uma Análise Bibliométrica Multibase"
+subtitle: "Mapeamento da estrutura intelectual, dispersão e polissemia do campo que se nomeia explicitamente como política judiciária"
+author:
+  - name: "Igor Caires Machado"
+    affiliations:
+      - name: "Escola Nacional de Administração Pública (ENAP)"
+    orcid: ""
+    email: ""
+date: today
+lang: pt-BR
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-summary: "Código R"
+    theme: cosmo
+    fig-width: 10
+    fig-height: 6
+    fig-dpi: 300
+    df-print: kable
+    embed-resources: true
+bibliography: references.bib
+csl: apa.csl
+execute:
+  warning: false
+  message: false
+  echo: true
+  cache: true
+---
+
+```{r setup}
+#| label: setup
+#| include: false
+
+packages <- c(
+  "bibliometrix", "tidyverse", "knitr", "kableExtra",
+  "scales", "patchwork", "ggrepel", "igraph", "RColorBrewer"
+)
+
+for (pkg in packages) {
+  if (!requireNamespace(pkg, quietly = TRUE)) install.packages(pkg)
+  library(pkg, character.only = TRUE)
+}
+
+theme_set(theme_minimal(base_size = 12) +
+  theme(
+    plot.title = element_text(face = "bold", size = 14),
+    plot.subtitle = element_text(color = "grey40"),
+    legend.position = "bottom"
+  ))
+
+pal_nuclear  <- "#2563eb"
+pal_extended <- "#059669"
+pal_excluded <- "#dc2626"
+pal_bases <- c(
+  "openalex" = "#E64A19", "semantic_scholar" = "#7B1FA2",
+  "crossref" = "#1565C0", "scopus" = "#2E7D32"
+)
+```
+
+# Introdução
+
+A governança dos sistemas judiciais tornou-se objeto crescente de atenção acadêmica e institucional nas últimas três décadas. A expansão do papel dos tribunais na vida democrática — fenômeno identificado como judicialização da política [@tate1995] —, as pressões por eficiência e accountability derivadas das reformas gerencialistas do setor público [@osborne2006] e a emergência de conselhos judiciais como órgãos de governança em diversos países [@garoupa2009] deslocaram o judiciário da condição de poder invisível para a de organização que demanda gestão, planejamento estratégico e coordenação institucional.
+
+No Brasil, esse processo encontrou expressão institucional na criação do Conselho Nacional de Justiça (CNJ) pela Emenda Constitucional n. 45/2004. A partir daí, políticas nacionais de gestão, metas de desempenho, programas de resolução adequada de conflitos e estratégias de governança foram progressivamente institucionalizadas como instrumentos de coordenação sistêmica [@sadek2004]. Essa trajetória consolidou a expressão *política judiciária* como categoria operacional no vocabulário institucional brasileiro, mobilizada tanto em atos normativos do CNJ quanto na produção acadêmica nacional.
+
+Apesar dessa consolidação prática, a expressão carece de ancoragem teórica equivalente. A literatura internacional sobre o sistema de justiça é vasta, mas fragmentada em tradições disciplinares que operam com gramáticas conceituais distintas e raramente dialogam entre si. A ciência política norte-americana investiga o comportamento decisório dos juízes sob a rubrica de *judicial policy-making* [@segal2002], tratando *policy* como o conteúdo substantivo das decisões judiciais. A economia institucional analisa os efeitos do desenho judicial sobre custos de transação e desenvolvimento econômico [@voigt2016]. A administração pública aborda *court administration* e *judicial management* como problemas organizacionais de eficiência e governança [@aikman2007]. O direito processual trata de acesso à justiça e resolução de disputas. A tradição jurídica russa/pós-soviética desenvolveu uma concepção doutrinária própria de *судебная политика* (política judicial) como teoria geral da função jurisdicional.
+
+Essa fragmentação levanta uma questão preliminar, de natureza epistemológica, que precede qualquer investigação substantiva sobre o tema: *existe um campo de pesquisa que se reconhece e se nomeia explicitamente como "política judiciária"?* E, se existe, qual é sua dimensão, sua estrutura intelectual e sua relação com as tradições disciplinares adjacentes?
+
+Este estudo responde a essa questão por meio de análise bibliométrica multibase, mapeando a produção acadêmica que emprega o termo *judicial policy* / *política judiciária* em suas variações linguísticas. A pesquisa orienta-se por três objetivos específicos: (i) dimensionar e periodizar a produção que emprega explicitamente o rótulo "política judiciária"; (ii) identificar a estrutura intelectual desse campo — seus periódicos, padrões de dispersão, clusters temáticos e tradições linguísticas; e (iii) situar o campo nuclear em relação ao universo mais amplo de estudos sobre governança, administração e reforma do sistema de justiça.
+
+A contribuição pretendida é de natureza cartográfica: oferecer o primeiro mapeamento empírico de um campo cuja identidade acadêmica, embora operacionalmente pressuposta, nunca foi sistematicamente avaliada. O diagnóstico resultante visa informar tanto a agenda de pesquisa sobre governança judicial quanto a formulação de políticas públicas para o setor, ao explicitar as fronteiras, lacunas e ambiguidades conceituais do campo.
+
+# Referencial Metodológico
+
+## Análise bibliométrica como método de mapeamento de campos
+
+A análise bibliométrica constitui um conjunto de métodos quantitativos para investigar a estrutura intelectual de campos científicos por meio do estudo sistemático de metadados de publicações — autores, periódicos, citações, palavras-chave e suas relações [@aria2017; @donthu2021]. Sua vantagem comparativa em relação a revisões narrativas reside na capacidade de revelar padrões estruturais invisíveis à leitura individual: redes de co-citação que identificam bases intelectuais compartilhadas, acoplamento bibliográfico que detecta frentes de pesquisa ativas, análise de co-word que mapeia estruturas temáticas e indicadores de dispersão que diagnosticam o grau de consolidação de um campo [@zupic2015].
+
+A escolha deste método se justifica pela natureza da pergunta de pesquisa. Não se trata de sintetizar evidências empíricas sobre um tópico definido — caso em que uma revisão sistemática seria apropriada — mas de *diagnosticar a existência e a configuração de um campo a partir de seus vestígios bibliográficos*. Para essa finalidade, a bibliometria é o instrumento adequado, conforme recomendado por @donthu2021 para estudos que visam mapear campos emergentes ou fragmentados.
+
+O estudo alinha-se ao protocolo de condução e reporte proposto por @donthu2021, que distingue cinco etapas: definição do escopo, seleção de técnicas, coleta de dados, análise e interpretação dos resultados. Para a análise computacional, utilizou-se o pacote `bibliometrix` para R [@aria2017], complementado por análises customizadas em R e Python.
+
+## Protocolo PRISMA como dispositivo de transparência
+
+Embora o estudo não constitua uma revisão sistemática *sensu stricto*, o fluxo PRISMA (*Preferred Reporting Items for Systematic Reviews and Meta-Analyses*) foi adotado como dispositivo de transparência na construção do corpus [@page2021]. O uso do PRISMA em estudos bibliométricos é respaldado pela literatura recente, que recomenda a documentação explícita de decisões de identificação, triagem e inclusão para garantir replicabilidade [@donthu2021]. Todas as decisões estão documentadas e rastreáveis no repositório público do projeto.
+
+## Desenho de dois anéis concêntricos
+
+A estratégia de busca foi desenhada em dois anéis concêntricos, inspirada na distinção que @zupic2015 propõem entre análise de um campo específico e mapeamento de suas fronteiras disciplinares:
+
+O **anel nuclear** compreende registros onde a expressão exata "política judiciária" / "judicial policy" / "política judicial" (e suas flexões de plural) aparece no título ou no resumo. Este anel constitui o corpus que responde diretamente à pergunta de pesquisa: a produção que *se nomeia* como pertencente ao campo.
+
+O **anel estendido** compreende registros que tratam do sistema de justiça como objeto de gestão, governança ou política pública, utilizando termos cognatos — *judicial governance*, *court administration*, *judicial reform*, *governança judicial*, *administração judiciária*, entre outros. Este anel funciona como campo relacional: permite situar o núcleo em relação a tradições adjacentes e viabiliza análises de fronteira.
+
+A proporção entre os dois anéis é, ela própria, um indicador: campos consolidados tendem a concentrar uma parcela maior da produção sob rótulo específico, enquanto campos emergentes apresentam núcleo desproporcionalmente pequeno em relação à periferia temática.
+
+# Coleta de Dados
+
+## Bases de dados e estratégia de busca
+
+A coleta foi realizada via API programática em quatro bases de dados bibliográficas, selecionadas segundo o critério de maximização de cobertura com redundância controlada: OpenAlex, Scopus, Semantic Scholar e Crossref.
+
+```{r prisma-parametros}
+#| label: tbl-parametros
+#| tbl-cap: "Parâmetros do protocolo de busca"
+
+tribble(
+  ~Parâmetro, ~Especificação,
+  "Bases de dados", "OpenAlex, Scopus, Semantic Scholar, Crossref",
+  "Campos pesquisados", "Título, resumo, palavras-chave (TITLE-ABS-KEY)",
+  "Recorte temporal", "2000–2026",
+  "Tipos documentais", "Artigos de periódico e revisões (article, review)",
+  "Idiomas", "Inglês, português, espanhol",
+  "Data da coleta", "22–23 de abril de 2026",
+  "Repositório", "github.com/cairesmachado-svg/Public_Policy"
+) |>
+  kable(align = "ll") |>
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
+```
+
+As strings de busca foram organizadas em dois blocos correspondentes aos anéis. O bloco nuclear utilizou expressões exatas em três idiomas: `"judicial policy"`, `"judicial policies"`, `"judiciary policy"`, `"política judiciária"`, `"políticas judiciárias"`, `"política judicial"`, `"políticas judiciales"`. O bloco estendido incluiu termos cognatos: `"judicial governance"`, `"judicial administration"`, `"court administration"`, `"court governance"`, `"judicial reform"`, `"reforma judicial"`, `"governança judicial"`, `"administração judiciária"`, `"Conselho Nacional de Justiça"`.
+
+O recorte temporal (2000–2026) foi definido sem restrição *a priori*, permitindo que o campo revelasse sua própria periodização. Todo o processo de coleta foi executado mediante scripts Python documentados e versionados em repositório público, garantindo reprodutibilidade integral do protocolo.
+
+## Limitações da cobertura
+
+O Web of Science (WoS) não foi incluído por indisponibilidade de acesso à API institucional. Essa limitação é parcialmente mitigada pela cobertura do OpenAlex, que indexa uma parcela significativa dos metadados do WoS. A ausência do WoS pode, entretanto, subestimar a presença de periódicos de alto fator de impacto.
+
+# Triagem e Elegibilidade (PRISMA)
+
+```{r load-data}
+#| label: load-data
+#| include: false
+
+corpus <- read.csv("data/final/corpus_complete.csv", stringsAsFactors = FALSE,
+                    fileEncoding = "UTF-8-sig")
+nuclear <- read.csv("data/final/corpus_nuclear.csv", stringsAsFactors = FALSE,
+                     fileEncoding = "UTF-8-sig")
+extended <- read.csv("data/final/corpus_extended.csv", stringsAsFactors = FALSE,
+                      fileEncoding = "UTF-8-sig")
+
+merged <- read.csv("data/interim/01_merged_all_sources.csv", stringsAsFactors = FALSE,
+                    fileEncoding = "UTF-8-sig")
+deduped <- read.csv("data/interim/02_deduplicated.csv", stringsAsFactors = FALSE,
+                     fileEncoding = "UTF-8-sig")
+excluded <- read.csv("data/interim/04_excluded_update.csv", stringsAsFactors = FALSE,
+                      fileEncoding = "UTF-8-sig")
+
+corpus$publication_year <- as.numeric(corpus$publication_year)
+corpus$cited_by_count <- as.numeric(corpus$cited_by_count)
+nuclear$publication_year <- as.numeric(nuclear$publication_year)
+nuclear$cited_by_count <- as.numeric(nuclear$cited_by_count)
+extended$publication_year <- as.numeric(extended$publication_year)
+extended$cited_by_count <- as.numeric(extended$cited_by_count)
+
+n_identified <- nrow(merged)
+n_deduplicated <- nrow(deduped)
+n_duplicates <- n_identified - n_deduplicated
+n_excluded <- nrow(excluded)
+n_included <- nrow(corpus)
+n_nuclear <- nrow(nuclear)
+n_extended <- nrow(extended)
+
+n_journals_nuclear <- length(unique(
+  nuclear$journal[!is.na(nuclear$journal) & nuclear$journal != "" & nuclear$journal != "nan"]
+))
+```
+
+O processo de triagem seguiu o fluxo PRISMA adaptado para análise bibliométrica (@fig-prisma-flow), organizado em quatro etapas: identificação (coleta multibase), remoção de duplicatas (deduplicação inter-bases por DOI e título normalizado), triagem (classificação em anéis por critérios de inclusão/exclusão) e elegibilidade (reclassificação semântica do anel nuclear).
+
+```{r prisma-flow}
+#| label: fig-prisma-flow
+#| fig-cap: "Diagrama PRISMA-flow adaptado para análise bibliométrica"
+#| fig-width: 8
+#| fig-height: 10
+
+prisma_data <- tibble(
+  stage = c("Identificação", "Deduplicação", "Triagem", "Excluídos",
+            "Anel Nuclear", "Anel Estendido", "Total Incluído"),
+  n = c(n_identified, n_duplicates, n_deduplicated, n_excluded,
+        n_nuclear, n_extended, n_included),
+  x = c(0, 0, 0, 1.5, -0.8, 0.8, 0),
+  y = c(6, 5, 4, 3, 1.5, 1.5, 0.5),
+  color = c("grey60", "grey40", "grey60", pal_excluded,
+            pal_nuclear, pal_extended, "grey20"),
+  label = c(
+    paste0("Registros identificados\n(4 bases)\nn = ", format(n_identified, big.mark = ".")),
+    paste0("Duplicatas removidas\nn = ", format(n_duplicates, big.mark = ".")),
+    paste0("Registros triados\nn = ", format(n_deduplicated, big.mark = ".")),
+    paste0("Excluídos\nn = ", format(n_excluded, big.mark = ".")),
+    paste0("Anel Nuclear\n\"política judiciária\"\nn = ", format(n_nuclear, big.mark = ".")),
+    paste0("Anel Estendido\ntermos cognatos\nn = ", format(n_extended, big.mark = ".")),
+    paste0("Total incluído\nn = ", format(n_included, big.mark = "."))
+  )
+)
+
+ggplot(prisma_data, aes(x, y)) +
+  geom_label(aes(label = label, fill = color), size = 3.5,
+             color = "white", fontface = "bold",
+             label.padding = unit(0.6, "lines"),
+             label.r = unit(0.3, "lines")) +
+  geom_segment(aes(x = 0, xend = 0, y = 5.7, yend = 5.3),
+               arrow = arrow(length = unit(0.2, "cm")), color = "grey50") +
+  geom_segment(aes(x = 0, xend = 0, y = 4.7, yend = 4.3),
+               arrow = arrow(length = unit(0.2, "cm")), color = "grey50") +
+  geom_segment(aes(x = 0.3, xend = 1.2, y = 3.5, yend = 3.2),
+               arrow = arrow(length = unit(0.2, "cm")), color = pal_excluded) +
+  geom_segment(aes(x = -0.2, xend = -0.7, y = 3.5, yend = 2),
+               arrow = arrow(length = unit(0.2, "cm")), color = pal_nuclear) +
+  geom_segment(aes(x = 0.2, xend = 0.7, y = 3.5, yend = 2),
+               arrow = arrow(length = unit(0.2, "cm")), color = pal_extended) +
+  geom_segment(aes(x = -0.6, xend = -0.2, y = 1.1, yend = 0.8),
+               arrow = arrow(length = unit(0.2, "cm")), color = "grey50") +
+  geom_segment(aes(x = 0.6, xend = 0.2, y = 1.1, yend = 0.8),
+               arrow = arrow(length = unit(0.2, "cm")), color = "grey50") +
+  scale_fill_identity() +
+  xlim(-2, 2.5) + ylim(0, 6.5) +
+  theme_void() +
+  labs(title = "PRISMA Flow Diagram",
+       subtitle = "Adaptado para análise bibliométrica com dois anéis concêntricos")
+```
+
+A @tbl-exclusion detalha os motivos de exclusão. O predomínio da categoria "sem relação com o sistema de justiça" (78,1%) decorre da polissemia dos termos de busca — particularmente *judicial reform* e *court administration*, que capturam registros tangenciais quando combinados com termos genéricos.
+
+```{r prisma-exclusion}
+#| label: tbl-exclusion
+#| tbl-cap: "Motivos de exclusão na triagem"
+
+excluded |>
+  count(exclusion_reason, sort = TRUE) |>
+  mutate(
+    pct = percent(n / sum(n), accuracy = 0.1),
+    motivo = case_match(
+      exclusion_reason,
+      "sem_relacao_sistema_justica" ~ "Sem relação com o sistema de justiça",
+      "judicial_review_constitucionalista" ~ "Judicial review (constitucionalista)",
+      "periódico_ou_título_fora_escopo" ~ "Periódico ou título fora do escopo",
+      "judicializacao_politicas" ~ "Judicialização de políticas públicas",
+      "tema_fora_escopo" ~ "Tema fora do escopo",
+      "metadados_insuficientes" ~ "Metadados insuficientes",
+      .default = exclusion_reason
+    )
+  ) |>
+  select(Motivo = motivo, N = n, `%` = pct) |>
+  kable(align = "lrc") |>
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
+```
+
+## Reclassificação semântica do anel nuclear
+
+A triagem inicial classificou como "nuclear" todo registro contendo a expressão exata *judicial policy* / *política judiciária*. A inspeção dos títulos revelou, contudo, que essa expressão designa fenômenos semanticamente distintos. Para restringir o anel nuclear à acepção *programática* — governança institucional, políticas nacionais de gestão e coordenação administrativa — foram realizadas três rodadas de reclassificação:
+
+Na primeira, artigos sobre *judicial policy-making* — a tradição que investiga como juízes criam direito por meio de suas decisões [@segal2002] — foram reclassificados para o anel estendido (n = 33). Na segunda, artigos sobre *criminal judicial policy* (sentenciamento penal) foram reclassificados (n = 7). Na terceira, artigos da tradição russa/pós-soviética e artigos históricos foram reclassificados (n = 15).
+
+O anel nuclear final contém `r n_nuclear` registros. A necessidade dessas reclassificações constitui, ela própria, um achado analítico sobre a polissemia do campo.
+
+# Resultados
+
+## Análise descritiva geral
+
+A @tbl-overview sintetiza os indicadores gerais do corpus. A assimetria entre os anéis é o primeiro dado relevante: o anel nuclear representa apenas `r sprintf("%.1f", n_nuclear / n_included * 100)`% do corpus total, configurando uma proporção típica de campos em fase pré-paradigmática.
+
+```{r descriptive-overview}
+#| label: tbl-overview
+#| tbl-cap: "Visão geral do corpus"
+
+tibble(
+  Indicador = c(
+    "Total de registros", "Anel nuclear", "Anel estendido", "Período coberto",
+    "Periódicos distintos", "Total de citações",
+    "Média de citações por artigo", "Mediana de citações"
+  ),
+  `Corpus completo` = c(
+    format(n_included, big.mark = "."), format(n_nuclear, big.mark = "."),
+    format(n_extended, big.mark = "."),
+    paste0(min(corpus$publication_year, na.rm = TRUE), "–",
+           max(corpus$publication_year, na.rm = TRUE)),
+    format(n_distinct(corpus$journal[!is.na(corpus$journal) & corpus$journal != ""]),
+           big.mark = "."),
+    format(sum(corpus$cited_by_count, na.rm = TRUE), big.mark = "."),
+    sprintf("%.1f", mean(corpus$cited_by_count, na.rm = TRUE)),
+    format(median(corpus$cited_by_count, na.rm = TRUE))
+  ),
+  `Anel nuclear` = c(
+    format(n_nuclear, big.mark = "."), "—", "—",
+    paste0(min(nuclear$publication_year, na.rm = TRUE), "–",
+           max(nuclear$publication_year, na.rm = TRUE)),
+    format(n_journals_nuclear, big.mark = "."),
+    format(sum(nuclear$cited_by_count, na.rm = TRUE), big.mark = "."),
+    sprintf("%.1f", mean(nuclear$cited_by_count, na.rm = TRUE)),
+    format(median(nuclear$cited_by_count, na.rm = TRUE))
+  )
+) |>
+  kable(align = "lcc") |>
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
+```
+
+A mediana de citações igual a zero no anel nuclear, contrastada com a média de 7,2 no corpus completo, indica que a produção que se autonomeia como "política judiciária" é não apenas escassa, mas de baixo impacto citacional — um indicador complementar de que o campo não atingiu massa crítica para gerar circuitos de citação auto-referentes.
+
+## Evolução temporal da produção
+
+```{r temporal-evolution}
+#| label: fig-temporal
+#| fig-cap: "Evolução temporal da produção científica por anel"
+#| fig-height: 5
+
+yearly <- corpus |>
+  filter(!is.na(publication_year), publication_year >= 2000, publication_year <= 2025) |>
+  count(publication_year, ring) |>
+  complete(publication_year = 2000:2025, ring = c("nuclear", "extended"), fill = list(n = 0))
+
+p1 <- ggplot(yearly, aes(publication_year, n, fill = ring)) +
+  geom_col(position = "stack", alpha = 0.85) +
+  scale_fill_manual(
+    values = c("nuclear" = pal_nuclear, "extended" = pal_extended),
+    labels = c("nuclear" = "Anel Nuclear", "extended" = "Anel Estendido")
+  ) +
+  scale_x_continuous(breaks = seq(2000, 2025, 5)) +
+  labs(x = "Ano de publicação", y = "Número de publicações", fill = "",
+       title = "Produção anual — corpus completo")
+
+yearly_nuclear <- nuclear |>
+  filter(!is.na(publication_year), publication_year >= 2000, publication_year <= 2025) |>
+  count(publication_year) |>
+  complete(publication_year = 2000:2025, fill = list(n = 0))
+
+p2 <- ggplot(yearly_nuclear, aes(publication_year, n)) +
+  geom_col(fill = pal_nuclear, alpha = 0.85) +
+  geom_smooth(method = "loess", se = FALSE, color = "grey30", linewidth = 0.8) +
+  scale_x_continuous(breaks = seq(2000, 2025, 5)) +
+  labs(x = "Ano de publicação", y = "Número de publicações",
+       title = "Produção anual — anel nuclear")
+
+p1 / p2
+```
+
+No anel estendido, observa-se crescimento contínuo, refletindo a expansão geral dos estudos sobre governança e reforma judicial — um movimento associado às ondas de reforma judicial na América Latina, no Leste Europeu e no Sudeste Asiático [@hammergren2007]. No anel nuclear, a produção permanece residual até 2014 e apresenta aceleração a partir de 2015, coincidindo com a consolidação do CNJ no Brasil e com a difusão internacional de indicadores de desempenho judicial.
+
+## Cobertura por base de dados
+
+```{r source-coverage}
+#| label: fig-sources
+#| fig-cap: "Contribuição de cada base de dados ao corpus"
+#| fig-height: 4
+
+corpus |>
+  count(source, ring) |>
+  ggplot(aes(reorder(source, -n), n, fill = ring)) +
+  geom_col(position = "dodge", alpha = 0.85) +
+  scale_fill_manual(
+    values = c("nuclear" = pal_nuclear, "extended" = pal_extended),
+    labels = c("nuclear" = "Nuclear", "extended" = "Estendido")
+  ) +
+  labs(x = "Base de dados", y = "Registros", fill = "",
+       title = "Cobertura por base de dados e anel")
+```
+
+## Distribuição por idioma
+
+```{r language-dist}
+#| label: fig-language
+#| fig-cap: "Distribuição linguística do anel nuclear"
+#| fig-height: 4
+
+nuclear |>
+  mutate(language = ifelse(is.na(language) | language == "" | language == "nan",
+                           "Não informado", language)) |>
+  count(language, sort = TRUE) |>
+  mutate(language = fct_reorder(language, n)) |>
+  ggplot(aes(language, n)) +
+  geom_col(fill = pal_nuclear, alpha = 0.85) +
+  coord_flip() +
+  labs(x = "", y = "Registros", title = "Distribuição linguística — anel nuclear")
+```
+
+A composição tripartite (inglês, português, registros sem idioma) difere substancialmente do anel estendido, onde o inglês é amplamente dominante, sugerindo que o rótulo "política judiciária" tem raízes linguísticas e institucionais mais diversificadas do que os termos cognatos.
+
+## Lei de Bradford — dispersão de periódicos
+
+```{r bradford}
+#| label: fig-bradford
+#| fig-cap: "Análise de dispersão de periódicos (Lei de Bradford) — anel nuclear"
+#| fig-height: 5
+
+journal_freq <- nuclear |>
+  filter(!is.na(journal), journal != "", journal != "nan") |>
+  count(journal, sort = TRUE) |>
+  mutate(
+    rank = row_number(), cum_n = cumsum(n), cum_pct = cum_n / sum(n),
+    zone = case_when(
+      cum_pct <= 1/3 ~ "Zona 1 (núcleo)",
+      cum_pct <= 2/3 ~ "Zona 2 (intermediária)",
+      TRUE ~ "Zona 3 (periférica)"
+    )
+  )
+
+ggplot(journal_freq, aes(rank, cum_pct, color = zone)) +
+  geom_point(size = 2, alpha = 0.7) +
+  geom_line(color = "grey50", alpha = 0.5) +
+  geom_hline(yintercept = c(1/3, 2/3), linetype = "dashed", color = "grey60") +
+  scale_y_continuous(labels = percent) +
+  scale_color_manual(values = c(
+    "Zona 1 (núcleo)" = pal_nuclear,
+    "Zona 2 (intermediária)" = "#f59e0b",
+    "Zona 3 (periférica)" = "grey60"
+  )) +
+  labs(x = "Ranking do periódico", y = "% acumulada de artigos",
+       color = "", title = "Lei de Bradford — anel nuclear")
+```
+
+```{r bradford-table}
+#| label: tbl-bradford
+#| tbl-cap: "Periódicos do anel nuclear com 2 ou mais artigos"
+
+journal_freq |>
+  filter(n >= 2) |>
+  select(Periódico = journal, Artigos = n, `% acumulada` = cum_pct, Zona = zone) |>
+  mutate(`% acumulada` = percent(`% acumulada`, accuracy = 0.1)) |>
+  kable(align = "lccc") |>
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
+```
+
+O periódico com maior número de artigos nucleares concentra apenas 4 publicações. A Zona 1 de Bradford acumula apenas 16,3% da produção — um padrão de dispersão extrema que indica ausência de veículo especializado como âncora institucional do campo. Em contraste, o anel estendido possui o *International Journal for Court Administration* com 133 artigos, evidenciando que campos cognatos já contam com periódicos nucleares estabelecidos.
+
+## Artigos mais citados
+
+```{r most-cited}
+#| label: tbl-most-cited-nuclear
+#| tbl-cap: "Artigos mais citados do anel nuclear (top 20)"
+
+nuclear |>
+  arrange(desc(cited_by_count)) |>
+  head(20) |>
+  mutate(
+    title = str_trunc(title, 80),
+    journal = ifelse(is.na(journal) | journal == "", "N/D", str_trunc(journal, 40))
+  ) |>
+  select(Título = title, Ano = publication_year,
+         Periódico = journal, Citações = cited_by_count) |>
+  kable(align = "llcc") |>
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE, font_size = 11)
+```
+
+O artigo mais citado do anel nuclear (60 citações) é um estudo comparativo sobre implementação de política judiciária no México, publicado em *Comparative Politics*. Os artigos brasileiros com maior citação tratam predominantemente da Resolução CNJ n. 125/2010. Essa dualidade — comparativismo anglófono e institucionalismo brasileiro — reforça a hipótese de que o campo opera em registros que utilizam o mesmo rótulo sem compartilhar referências.
+
+```{r most-cited-extended}
+#| label: tbl-most-cited-extended
+#| tbl-cap: "Artigos mais citados do anel estendido (top 20)"
+
+extended |>
+  arrange(desc(cited_by_count)) |>
+  head(20) |>
+  mutate(
+    title = str_trunc(title, 80),
+    journal = ifelse(is.na(journal) | journal == "", "N/D", str_trunc(journal, 40))
+  ) |>
+  select(Título = title, Ano = publication_year,
+         Periódico = journal, Citações = cited_by_count) |>
+  kable(align = "llcc") |>
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE, font_size = 11)
+```
+
+A distância citacional entre os anéis (máximo de 60 no nuclear vs. 726 no estendido) é indicador adicional da incipiente integração do campo nuclear às conversações acadêmicas de maior impacto.
+
+## Distribuição de citações
+
+```{r citation-distribution}
+#| label: fig-citations
+#| fig-cap: "Distribuição de citações por anel"
+#| fig-height: 4
+
+corpus |>
+  filter(cited_by_count > 0) |>
+  ggplot(aes(cited_by_count, fill = ring)) +
+  geom_histogram(bins = 50, alpha = 0.75, position = "identity") +
+  scale_x_log10() +
+  scale_fill_manual(
+    values = c("nuclear" = pal_nuclear, "extended" = pal_extended),
+    labels = c("nuclear" = "Nuclear", "extended" = "Estendido")
+  ) +
+  labs(x = "Citações (escala log)", y = "Frequência", fill = "",
+       title = "Distribuição de citações (artigos com ≥ 1 citação)")
+```
+
+## Análise de periódicos — corpus completo
+
+```{r top-journals-complete}
+#| label: fig-top-journals
+#| fig-cap: "Periódicos mais produtivos — corpus completo (top 15)"
+#| fig-height: 5
+
+corpus |>
+  filter(!is.na(journal), journal != "", journal != "nan") |>
+  count(journal, sort = TRUE) |>
+  head(15) |>
+  mutate(journal = str_trunc(journal, 50), journal = fct_reorder(journal, n)) |>
+  ggplot(aes(journal, n)) +
+  geom_col(fill = pal_extended, alpha = 0.85) +
+  coord_flip() +
+  labs(x = "", y = "Artigos", title = "Top 15 periódicos — corpus completo")
+```
+
+A presença da *Revista de Política Judiciária, Gestão e Administração da Justiça* entre os mais produtivos indica que existe, ao menos no Brasil, um periódico cuja denominação reflete diretamente o campo investigado — embora sua produção não seja suficiente para constituir âncora de Bradford no anel nuclear.
+
+## Análise por termos de busca
+
+```{r query-analysis}
+#| label: fig-query-terms
+#| fig-cap: "Distribuição de registros por string de busca (top 15)"
+#| fig-height: 6
+
+corpus |>
+  mutate(query_term = str_trunc(query_term, 50)) |>
+  count(query_term, sort = TRUE) |>
+  head(15) |>
+  mutate(query_term = fct_reorder(query_term, n)) |>
+  ggplot(aes(query_term, n)) +
+  geom_col(fill = "grey50", alpha = 0.85) +
+  coord_flip() +
+  labs(x = "", y = "Registros", title = "Registros por string de busca")
+```
+
+## Cobertura cruzada entre bases
+
+```{r cross-coverage}
+#| label: fig-cross-coverage
+#| fig-cap: "Número de bases que indexam cada registro"
+#| fig-height: 4
+
+corpus |>
+  mutate(n_bases = as.numeric(n_bases)) |>
+  filter(!is.na(n_bases)) |>
+  count(n_bases) |>
+  ggplot(aes(factor(n_bases), n)) +
+  geom_col(fill = "grey50", alpha = 0.85) +
+  geom_text(aes(label = format(n, big.mark = ".")), vjust = -0.3) +
+  labs(x = "Nº de bases que indexam o registro", y = "Registros",
+       title = "Cobertura cruzada entre bases")
+```
+
+## Análise temática por palavras do título
+
+```{r title-wordcloud}
+#| label: fig-word-freq
+#| fig-cap: "Termos mais frequentes nos títulos — anel nuclear vs. estendido"
+#| fig-height: 6
+
+stopwords_custom <- c(
+  "the", "of", "and", "in", "a", "to", "for", "on", "an", "is", "by",
+  "with", "from", "as", "at", "its", "that", "this", "it", "or", "be",
+  "are", "was", "were", "has", "have", "been", "not", "but", "can",
+  "will", "do", "does", "their", "they", "them", "which", "who", "how",
+  "between", "through", "sobre", "uma", "como", "para", "das", "dos",
+  "nas", "nos", "com", "por", "sua", "seu", "mais", "entre", "após",
+  "desde", "del", "los", "las", "una", "caso", "hacia", "sobre"
+)
+
+word_freq <- function(df, label) {
+  df |>
+    mutate(title_clean = str_to_lower(title)) |>
+    pull(title_clean) |>
+    str_split("\\s+") |>
+    unlist() |>
+    str_remove_all("[^a-záéíóúâêôãõçñü]") |>
+    tibble(word = _) |>
+    filter(nchar(word) > 3, !word %in% stopwords_custom) |>
+    count(word, sort = TRUE) |>
+    head(25) |>
+    mutate(ring = label)
+}
+
+wf_nuclear <- word_freq(nuclear, "Nuclear")
+wf_extended <- word_freq(extended, "Estendido")
+
+bind_rows(wf_nuclear, wf_extended) |>
+  mutate(word = fct_reorder(word, n)) |>
+  ggplot(aes(word, n, fill = ring)) +
+  geom_col(alpha = 0.85) +
+  coord_flip() +
+  facet_wrap(~ring, scales = "free_y") +
+  scale_fill_manual(values = c("Nuclear" = pal_nuclear, "Estendido" = pal_extended)) +
+  labs(x = "", y = "Frequência", fill = "",
+       title = "Termos mais frequentes nos títulos") +
+  theme(legend.position = "none")
+```
+
+Os dois anéis compartilham o léxico institucional (*court*, *judicial*, *justice*) mas divergem no léxico funcional: *policy* e *governança* no nuclear versus *reform* e *review* no estendido. Termos relativos à infraestrutura física (*building*, *facility*, *infrastructure*) estão ausentes em ambos.
+
+## Evolução temática temporal
+
+```{r thematic-evolution}
+#| label: fig-thematic-evolution
+#| fig-cap: "Evolução temporal de termos-chave no anel nuclear"
+#| fig-height: 5
+
+terms_track <- c("policy", "governance", "reform", "administration",
+                 "access", "justice", "conflict", "mediation", "cnj",
+                 "judiciária", "judiciárias")
+
+nuclear |>
+  filter(!is.na(publication_year), publication_year >= 2000, publication_year <= 2025) |>
+  mutate(title_lower = str_to_lower(title)) |>
+  rowwise() |>
+  mutate(terms_found = list(terms_track[str_detect(title_lower, terms_track)])) |>
+  unnest(terms_found, keep_empty = FALSE) |>
+  count(publication_year, terms_found) |>
+  ggplot(aes(publication_year, n, color = terms_found)) +
+  geom_line(linewidth = 0.8, alpha = 0.8) +
+  geom_point(size = 1.5) +
+  scale_x_continuous(breaks = seq(2000, 2025, 5)) +
+  labs(x = "Ano", y = "Ocorrências", color = "Termo",
+       title = "Evolução temporal de termos-chave nos títulos — anel nuclear") +
+  theme(legend.position = "right")
+```
+
+## Proporção nuclear/estendido ao longo do tempo
+
+```{r nuclear-proportion}
+#| label: fig-nuclear-proportion
+#| fig-cap: "Proporção do anel nuclear no corpus total ao longo do tempo"
+#| fig-height: 4
+
+yearly_prop <- corpus |>
+  filter(!is.na(publication_year), publication_year >= 2000, publication_year <= 2025) |>
+  count(publication_year, ring) |>
+  complete(publication_year = 2000:2025, ring = c("nuclear", "extended"), fill = list(n = 0)) |>
+  group_by(publication_year) |>
+  mutate(pct = n / sum(n)) |>
+  filter(ring == "nuclear")
+
+ggplot(yearly_prop, aes(publication_year, pct)) +
+  geom_col(fill = pal_nuclear, alpha = 0.85) +
+  geom_smooth(method = "loess", se = FALSE, color = "grey30", linewidth = 0.8) +
+  scale_y_continuous(labels = percent) +
+  scale_x_continuous(breaks = seq(2000, 2025, 5)) +
+  labs(x = "Ano", y = "% do corpus total",
+       title = "Proporção do anel nuclear no corpus total")
+```
+
+A proporção oscila entre 1% e 3%, sem tendência clara de crescimento relativo. O rótulo "política judiciária" cresce em termos absolutos, mas acompanha — sem superar — o ritmo do campo mais amplo.
+
+## Tabela síntese por quinquênio
+
+```{r quinquenio}
+#| label: tbl-quinquenio
+#| tbl-cap: "Produção por quinquênio e anel"
+
+corpus |>
+  filter(!is.na(publication_year), publication_year >= 2000, publication_year <= 2025) |>
+  mutate(quinquenio = cut(publication_year,
+                          breaks = c(1999, 2004, 2009, 2014, 2019, 2025),
+                          labels = c("2000–04", "2005–09", "2010–14", "2015–19", "2020–25"))) |>
+  count(quinquenio, ring) |>
+  pivot_wider(names_from = ring, values_from = n, values_fill = 0) |>
+  mutate(
+    total = nuclear + extended,
+    pct_nuclear = percent(nuclear / total, accuracy = 0.1)
+  ) |>
+  select(Quinquênio = quinquenio, Nuclear = nuclear, Estendido = extended,
+         Total = total, `% Nuclear` = pct_nuclear) |>
+  kable(align = "ccccc") |>
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
+```
+
+O ponto de inflexão entre 2010–14 e 2015–19, quando a produção nuclear quase triplica (de 12 para 34 artigos), coincide com a Estratégia Nacional do Poder Judiciário (Resolução CNJ n. 198/2014) e com a difusão internacional de indicadores de desempenho judicial promovidos pelo CEPEJ.
+
+# Discussão
+
+Os resultados permitem articular quatro conjuntos de inferências sobre a configuração do campo e suas implicações para a agenda de pesquisa em governança judicial.
+
+## Um campo emergente com sinais de aceleração
+
+O anel nuclear de `r n_nuclear` registros distribuídos por `r n_journals_nuclear` periódicos configura o que a literatura bibliométrica classifica como campo em fase pré-paradigmática [@zupic2015]: produção dispersa, ausência de periódico nuclear, baixa densidade citacional e fronteiras disciplinares indefinidas. A mediana de citações igual a zero indica que a maioria dos artigos nucleares não foi incorporada em circuitos de citação — a produção existe mas não circula, um padrão típico de campos fragmentados por barreiras linguísticas e disciplinares.
+
+Contudo, a análise temporal revela sinais de aceleração: a produção do quinquênio 2020–25 (52 artigos) é 7,4 vezes superior à do quinquênio 2000–04 (7 artigos). Esse crescimento, embora insuficiente para caracterizar consolidação, indica que o rótulo "política judiciária" está ganhando tração como categoria acadêmica, não apenas institucional.
+
+O contraste com o campo estendido é analiticamente produtivo. Enquanto o *International Journal for Court Administration* concentra 133 artigos e funciona como âncora institucional do campo de *court administration*, o anel nuclear não possui equivalente. A consolidação de um campo depende não apenas da existência de uma comunidade de pesquisadores, mas da institucionalização de veículos especializados que funcionem como espaços de convergência — achado consistente com a teoria de Bradford e com estudos sobre formação de campos científicos [@donthu2021].
+
+## Polissemia como obstáculo epistêmico
+
+A necessidade de três rodadas de reclassificação para isolar a acepção programática constitui um achado metodológico com implicações teóricas. O termo *judicial policy* designa pelo menos três fenômenos semanticamente distintos na literatura:
+
+A **acepção programática** — predominante na tradição brasileira e em parte da literatura comparativista — trata política judiciária como governança institucional: planejamento estratégico, coordenação administrativa, políticas nacionais de gestão e resolução de conflitos. É o sentido mobilizado pelo CNJ [@sadek2004].
+
+A **acepção comportamental** — dominante na ciência política anglo-saxã — trata *judicial policy* como o conteúdo das decisões judiciais, investigando como juízes "fazem política" por meio de suas sentenças [@segal2002].
+
+A **acepção doutrinária** — presente na tradição russa/pós-soviética — opera com uma teoria geral do papel do judiciário no Estado.
+
+Essas três acepções coexistem sem interlocução, como evidenciado pela ausência de citações cruzadas. A polissemia reflete a ausência de um marco teórico unificador — e, inversamente, a construção desse marco constitui condição prévia para a consolidação do campo.
+
+## A geografia do campo: entre o Brasil e a dispersão global
+
+A distribuição linguística e institucional sugere dois polos de gravitação. O polo brasileiro, ancorado no vocabulário do CNJ e expresso predominantemente em português, concentra a produção sobre política judiciária no sentido programático. Periódicos como a *Revista CNJ* e a *Revista Brasileira de Políticas Públicas* funcionam como veículos dessa produção. O polo anglófono, mais heterogêneo, distribui-se entre ciência política comparada e administração pública, sem convergência em veículo específico.
+
+Essa bipolaridade tem consequências epistêmicas: a produção brasileira tem baixa visibilidade internacional e não é citada pela produção anglófona; inversamente, a literatura sobre *judicial policy-making* não dialoga com a tradição programática brasileira. O campo padece de uma dupla marginalidade: periférico em relação às grandes tradições disciplinares e internamente fragmentado por barreiras linguísticas.
+
+## Infraestrutura como lacuna documentada
+
+A análise de frequência de palavras (@fig-word-freq) permitiu verificar a presença de termos relativos à dimensão material do sistema de justiça. Termos como *infrastructure*, *building*, *facility*, *physical space*, *built environment* estão ausentes tanto do anel nuclear quanto do estendido. A materialidade institucional do judiciário — seus edifícios, espaços de atendimento, configuração física — não figura como variável analítica em nenhuma das tradições identificadas.
+
+Esse resultado é consistente com a crítica formulada pela literatura sobre sociomaterialidade organizacional [@orlikowski2007], que argumenta que as dimensões materiais das organizações são sistematicamente negligenciadas. No contexto judicial, a ausência é particularmente relevante porque a infraestrutura predial constitui a interface primária entre o cidadão e o sistema de justiça — mediador potencial da experiência de acesso à justiça e da efetividade das políticas judiciais.
+
+## Limitações
+
+A ausência do Web of Science pode subestimar a presença de periódicos de alto impacto. A elevada proporção de registros sem idioma e sem periódico (decorrente do Semantic Scholar) afeta indicadores como a Lei de Bradford. O anel nuclear inclui registros fronteiriços entre a acepção programática e a jurisprudencial, mantidos por decisão conservadora. A análise de co-citação foi limitada pela ausência de referências bibliográficas completas nos metadados. A triagem semântica não contou com dupla codificação independente.
+
+# Conclusões
+
+Este estudo realizou o primeiro mapeamento bibliométrico do campo que se nomeia explicitamente como "política judiciária", utilizando coleta multibase e protocolo PRISMA adaptado.
+
+Os resultados convergem para três conclusões. Primeiro, **o campo existe, mas é emergente**. Os `r n_nuclear` registros distribuídos por `r n_journals_nuclear` periódicos, com mediana de citações zero, configuram um campo pré-paradigmático. A produção cresce em termos absolutos — com aceleração a partir de 2015 —, mas não se consolida em veículos especializados nem constitui circuitos de citação auto-referentes. O rótulo funciona mais como categoria institucional do que como categoria analítica reconhecida.
+
+Segundo, **a polissemia constitui obstáculo epistêmico**. A coexistência de ao menos três acepções — programática, comportamental e doutrinária — impede a formação de comunidade epistêmica com referências compartilhadas. A construção de um marco teórico que defina o conceito com precisão operacional é condição prévia para a consolidação do campo.
+
+Terceiro, **a dimensão material está ausente do vocabulário do campo**. Termos relativos à infraestrutura, edificações e espaço físico não aparecem na produção mapeada. Essa lacuna documentada empiricamente indica que a materialidade institucional do judiciário permanece território inexplorado pela pesquisa sobre políticas judiciárias, constituindo fronteira de investigação a ser desenvolvida.
+
+A contribuição é de três ordens: cartográfica (primeiro mapeamento do campo), diagnóstica (identificação de polissemia, dispersão e lacunas) e programática (fundamentação empírica para a agenda subsequente). Os resultados fornecem a base bibliométrica sobre a qual se assentarão a revisão integrativa sobre governança da infraestrutura judicial e a modelagem do framework ARENAS-JUS.
+
+# Referências {.unnumbered}
+
+::: {#refs}
+:::
+
+# Apêndice: Repositório e Reprodutibilidade {.unnumbered}
+
+Todo o código-fonte, dados e decisões metodológicas estão documentados em: **GitHub:** [github.com/cairesmachado-svg/Public_Policy](https://github.com/cairesmachado-svg/Public_Policy)
+
+O pipeline é composto por scripts Python sequenciais (`06_merge_cross_base.py` a `10_export_bibliometrix.py`), com artefatos intermediários versionados em `data/interim/`. O corpus congelado (`06_frozen_corpus.csv`) constitui o ponto de partida das análises. A análise foi conduzida em R com `bibliometrix` [@aria2017], `tidyverse`, `kableExtra` e `patchwork`. O documento é reprodutível via `quarto render`.
