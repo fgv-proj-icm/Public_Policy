@@ -1,0 +1,748 @@
+---
+title: "Política Judiciária como Campo Emergente: Uma Análise Bibliométrica"
+subtitle: "Mapeamento da estrutura intelectual do campo que se nomeia explicitamente como política judiciária"
+author:
+  - name: "Igor Caires Machado"
+    affiliations:
+      - name: "Escola Nacional de Administração Pública (ENAP)"
+    orcid: ""
+    email: ""
+date: today
+lang: pt-BR
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-summary: "Código R"
+    theme: cosmo
+    fig-width: 10
+    fig-height: 6
+    fig-dpi: 300
+    df-print: kable
+    embed-resources: true
+  # Para gerar PDF/Word posteriormente, descomente:
+  # pdf:
+  #   documentclass: article
+  #   geometry: margin=2.5cm
+  #   fontsize: 12pt
+  # docx:
+  #   reference-doc: template.docx
+bibliography: references.bib
+csl: apa.csl
+execute:
+  warning: false
+  message: false
+  echo: true
+  cache: true
+---
+
+```{r setup}
+#| label: setup
+#| include: false
+
+# ── Pacotes necessários ──────────────────────────────────────────────────
+packages <- c(
+  "bibliometrix",
+  "tidyverse",
+  "knitr",
+  "kableExtra",
+  "scales",
+  "patchwork",
+  "ggrepel",
+  "igraph",
+  "RColorBrewer"
+)
+
+for (pkg in packages) {
+  if (!requireNamespace(pkg, quietly = TRUE)) {
+    install.packages(pkg)
+  }
+  library(pkg, character.only = TRUE)
+}
+
+# ── Configurações globais ────────────────────────────────────────────────
+theme_set(theme_minimal(base_size = 12) +
+  theme(
+    plot.title = element_text(face = "bold", size = 14),
+    plot.subtitle = element_text(color = "grey40"),
+    legend.position = "bottom"
+  ))
+
+# Paleta consistente
+pal_nuclear <- "#2563eb"
+pal_extended <- "#059669"
+pal_excluded <- "#dc2626"
+pal_bases <- c(
+  "openalex" = "#E64A19",
+  "semantic_scholar" = "#7B1FA2",
+  "crossref" = "#1565C0",
+  "scopus" = "#2E7D32"
+)
+```
+
+# Introdução
+
+O Poder Judiciário brasileiro passou por transformações institucionais substanciais desde a criação do Conselho Nacional de Justiça (CNJ) em 2004. Políticas nacionais de gestão, metas de desempenho, programas de resolução adequada de conflitos e estratégias de governança foram progressivamente institucionalizadas como instrumentos de coordenação sistêmica. Essa trajetória consolidou a expressão *política judiciária* como categoria operacional no vocabulário institucional brasileiro.
+
+Apesar dessa consolidação prática, a expressão carece de ancoragem teórica equivalente. A literatura sobre o sistema de justiça é vasta, mas fragmentada em tradições disciplinares que raramente dialogam: ciência política (comportamento judicial, ativismo), direito processual (acesso à justiça, resolução de disputas), administração pública (governança, gestão de tribunais) e sociologia jurídica. A pergunta que se impõe é: *existe um campo de pesquisa que se reconhece e se nomeia explicitamente como "política judiciária"?*
+
+Este estudo tem como objetivo mapear a estrutura intelectual do campo emergente que se autoidentifica sob o rótulo "política judiciária" (*judicial policy*), utilizando análise bibliométrica como método. A pesquisa busca responder três questões:
+
+1. **Qual a dimensão e a evolução temporal** da produção que emprega explicitamente o termo "política judiciária"?
+2. **Qual a estrutura intelectual** desse campo — seus periódicos nucleares, autores produtivos, redes de co-citação e clusters temáticos?
+3. **Como esse campo nuclear se relaciona** com o campo mais amplo de estudos sobre governança, administração e reforma do sistema de justiça?
+
+A contribuição reside em fornecer a primeira cartografia empírica de um campo que, apesar de operacionalmente relevante, ainda não teve sua identidade acadêmica sistematicamente avaliada.
+
+# Referencial Metodológico
+
+## Análise bibliométrica como método
+
+A análise bibliométrica permite mapear a estrutura intelectual de campos científicos por meio do estudo quantitativo de metadados de publicações acadêmicas — autores, periódicos, citações, palavras-chave e suas relações [@aria2017; @donthu2021]. Diferentemente de revisões sistemáticas, que avaliam a qualidade e os resultados de estudos individuais, a bibliometria toma o *metadado* como unidade de análise e revela padrões estruturais invisíveis à leitura individual: redes de co-citação, acoplamento bibliográfico, evolução temática e dispersão da produção [@zupic2015].
+
+A escolha deste método se justifica pela natureza da pergunta de pesquisa: não se trata de sintetizar evidências sobre um tópico, mas de *diagnosticar a existência e a estrutura de um campo*. Para isso, a bibliometria é o instrumento adequado [@donthu2021].
+
+## Protocolo PRISMA como dispositivo de transparência
+
+Embora o estudo não constitua uma revisão sistemática *sensu stricto*, o fluxo PRISMA (*Preferred Reporting Items for Systematic Reviews and Meta-Analyses*) foi adotado como dispositivo de transparência na construção do corpus [@page2021]. Todas as decisões de identificação, triagem, elegibilidade e inclusão estão documentadas e rastreáveis no repositório público do projeto.
+
+## Desenho de dois anéis concêntricos
+
+A estratégia de busca foi desenhada em dois anéis:
+
+- **Anel nuclear**: registros onde a expressão exata "política judiciária" / "judicial policy" / "política judicial" (e flexões de plural) aparece no título ou resumo. Este é o corpus que responde diretamente à pergunta de pesquisa.
+- **Anel estendido**: registros que tratam do sistema de justiça como objeto de gestão, governança ou política pública, utilizando termos cognatos (*judicial governance*, *court administration*, *judicial reform*, etc.). Este anel serve como campo relacional para análise de co-citação e acoplamento bibliográfico.
+
+A decisão por dois anéis permite simultaneamente diagnosticar o campo nuclear e situá-lo em relação ao campo mais amplo.
+
+# Coleta de Dados
+
+## Bases de dados e strings de busca
+
+A coleta foi realizada via API em quatro bases de dados bibliográficas: OpenAlex, Scopus, Semantic Scholar e Crossref. A escolha dessas bases visou maximizar a cobertura com redundância controlada: Scopus e OpenAlex oferecem cobertura complementar da literatura indexada, enquanto Semantic Scholar e Crossref ampliam o alcance para literatura de acesso aberto e fontes não indexadas.
+
+```{r prisma-parametros}
+#| label: tbl-parametros
+#| tbl-cap: "Parâmetros do protocolo de busca"
+
+tribble(
+  ~Parâmetro, ~Especificação,
+  "Bases de dados", "OpenAlex, Scopus, Semantic Scholar, Crossref",
+  "Campos pesquisados", "Título, resumo, palavras-chave (TITLE-ABS-KEY)",
+  "Recorte temporal", "2000–2026",
+  "Tipos documentais", "Artigos de periódico e revisões (article, review)",
+  "Idiomas", "Inglês, português, espanhol",
+  "Data da coleta", "22–23 de abril de 2026",
+  "Repositório", "github.com/cairesmachado-svg/Public_Policy"
+) |>
+  kable(align = "ll") |>
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
+```
+
+As strings de busca foram organizadas em dois blocos. O bloco nuclear utilizou expressões exatas: `"judicial policy"`, `"judicial policies"`, `"judiciary policy"`, `"política judiciária"`, `"políticas judiciárias"`, `"política judicial"`, `"políticas judiciales"`. O bloco estendido incluiu termos cognatos: `"judicial governance"`, `"judicial administration"`, `"court administration"`, `"court governance"`, `"judicial reform"`, `"reforma judicial"`, `"governança judicial"`, `"administração judiciária"`, `"Conselho Nacional de Justiça"`.
+
+## Limitações da cobertura
+
+O Web of Science não foi incluído por indisponibilidade de acesso à API. Essa limitação é parcialmente mitigada pela cobertura do OpenAlex, que indexa uma parcela significativa dos metadados do WoS. A ausência é documentada como limitação metodológica.
+
+# Triagem e Elegibilidade (PRISMA)
+
+```{r load-data}
+#| label: load-data
+#| include: false
+
+# ── Carregar corpus congelado ────────────────────────────────────────────
+corpus <- read.csv("data/final/corpus_complete.csv", stringsAsFactors = FALSE,
+                    fileEncoding = "UTF-8-sig")
+nuclear <- read.csv("data/final/corpus_nuclear.csv", stringsAsFactors = FALSE,
+                     fileEncoding = "UTF-8-sig")
+extended <- read.csv("data/final/corpus_extended.csv", stringsAsFactors = FALSE,
+                      fileEncoding = "UTF-8-sig")
+
+# Carregar dados intermediários para números PRISMA
+merged <- read.csv("data/interim/01_merged_all_sources.csv", stringsAsFactors = FALSE,
+                    fileEncoding = "UTF-8-sig")
+deduped <- read.csv("data/interim/02_deduplicated.csv", stringsAsFactors = FALSE,
+                     fileEncoding = "UTF-8-sig")
+excluded <- read.csv("data/interim/04_excluded_update.csv", stringsAsFactors = FALSE,
+                      fileEncoding = "UTF-8-sig")
+
+# Ajustes de tipo
+corpus$publication_year <- as.numeric(corpus$publication_year)
+corpus$cited_by_count <- as.numeric(corpus$cited_by_count)
+nuclear$publication_year <- as.numeric(nuclear$publication_year)
+nuclear$cited_by_count <- as.numeric(nuclear$cited_by_count)
+extended$publication_year <- as.numeric(extended$publication_year)
+extended$cited_by_count <- as.numeric(extended$cited_by_count)
+
+# Números PRISMA
+n_identified <- nrow(merged)
+n_deduplicated <- nrow(deduped)
+n_duplicates <- n_identified - n_deduplicated
+n_excluded <- nrow(excluded)
+n_included <- nrow(corpus)
+n_nuclear <- nrow(nuclear)
+n_extended <- nrow(extended)
+```
+
+O processo de triagem seguiu o fluxo PRISMA adaptado para análise bibliométrica, conforme @fig-prisma-flow.
+
+```{r prisma-flow}
+#| label: fig-prisma-flow
+#| fig-cap: "Diagrama PRISMA-flow adaptado para análise bibliométrica"
+#| fig-width: 8
+#| fig-height: 10
+
+# Diagrama PRISMA usando ggplot
+prisma_data <- tibble(
+  stage = c("Identificação", "Deduplicação", "Triagem", "Excluídos",
+            "Anel Nuclear", "Anel Estendido", "Total Incluído"),
+  n = c(n_identified, n_duplicates, n_deduplicated, n_excluded,
+        n_nuclear, n_extended, n_included),
+  x = c(0, 0, 0, 1.5, -0.8, 0.8, 0),
+  y = c(6, 5, 4, 3, 1.5, 1.5, 0.5),
+  color = c("grey60", "grey40", "grey60", pal_excluded,
+            pal_nuclear, pal_extended, "grey20"),
+  label = c(
+    paste0("Registros identificados\n(4 bases)\nn = ", format(n_identified, big.mark = ".")),
+    paste0("Duplicatas removidas\nn = ", format(n_duplicates, big.mark = ".")),
+    paste0("Registros triados\nn = ", format(n_deduplicated, big.mark = ".")),
+    paste0("Excluídos\nn = ", format(n_excluded, big.mark = ".")),
+    paste0("Anel Nuclear\n\"política judiciária\"\nn = ", format(n_nuclear, big.mark = ".")),
+    paste0("Anel Estendido\ntermos cognatos\nn = ", format(n_extended, big.mark = ".")),
+    paste0("Total incluído\nn = ", format(n_included, big.mark = "."))
+  )
+)
+
+ggplot(prisma_data, aes(x, y)) +
+  geom_label(aes(label = label, fill = color), size = 3.5,
+             color = "white", fontface = "bold",
+             label.padding = unit(0.6, "lines"),
+             label.r = unit(0.3, "lines")) +
+  geom_segment(aes(x = 0, xend = 0, y = 5.7, yend = 5.3),
+               arrow = arrow(length = unit(0.2, "cm")), color = "grey50") +
+  geom_segment(aes(x = 0, xend = 0, y = 4.7, yend = 4.3),
+               arrow = arrow(length = unit(0.2, "cm")), color = "grey50") +
+  geom_segment(aes(x = 0.3, xend = 1.2, y = 3.5, yend = 3.2),
+               arrow = arrow(length = unit(0.2, "cm")), color = pal_excluded) +
+  geom_segment(aes(x = -0.2, xend = -0.7, y = 3.5, yend = 2),
+               arrow = arrow(length = unit(0.2, "cm")), color = pal_nuclear) +
+  geom_segment(aes(x = 0.2, xend = 0.7, y = 3.5, yend = 2),
+               arrow = arrow(length = unit(0.2, "cm")), color = pal_extended) +
+  geom_segment(aes(x = -0.6, xend = -0.2, y = 1.1, yend = 0.8),
+               arrow = arrow(length = unit(0.2, "cm")), color = "grey50") +
+  geom_segment(aes(x = 0.6, xend = 0.2, y = 1.1, yend = 0.8),
+               arrow = arrow(length = unit(0.2, "cm")), color = "grey50") +
+  scale_fill_identity() +
+  xlim(-2, 2.5) + ylim(0, 6.5) +
+  theme_void() +
+  labs(title = "PRISMA Flow Diagram",
+       subtitle = "Adaptado para análise bibliométrica com dois anéis concêntricos")
+```
+
+```{r prisma-exclusion}
+#| label: tbl-exclusion
+#| tbl-cap: "Motivos de exclusão na triagem"
+
+excluded |>
+  count(exclusion_reason, sort = TRUE) |>
+  mutate(
+    pct = percent(n / sum(n), accuracy = 0.1),
+    motivo = case_match(
+      exclusion_reason,
+      "sem_relacao_sistema_justica" ~ "Sem relação com o sistema de justiça",
+      "judicial_review_constitucionalista" ~ "Judicial review (constitucionalista)",
+      "periódico_ou_título_fora_escopo" ~ "Periódico ou título fora do escopo",
+      "judicializacao_politicas" ~ "Judicialização de políticas públicas",
+      "tema_fora_escopo" ~ "Tema fora do escopo",
+      "metadados_insuficientes" ~ "Metadados insuficientes",
+      .default = exclusion_reason
+    )
+  ) |>
+  select(Motivo = motivo, N = n, `%` = pct) |>
+  kable(align = "lrc") |>
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
+```
+
+## Decisões de reclassificação
+
+O anel nuclear foi submetido a três rodadas de reclassificação para restringir o escopo à acepção *programática* de "política judiciária" — entendida como governança institucional do sistema de justiça, políticas nacionais e gestão judicial:
+
+- Artigos sobre *judicial policy-making* (juízes criando direito via decisão) foram reclassificados para o anel estendido (n = 33).
+- Artigos sobre *criminal judicial policy* (política de sentenciamento penal) foram reclassificados para o anel estendido (n = 7).
+- Artigos da tradição jurídica russa/pós-soviética e artigos históricos foram reclassificados para o anel estendido (n = 15).
+
+O anel nuclear final contém `r n_nuclear` registros.
+
+# Resultados
+
+## Análise descritiva geral
+
+```{r descriptive-overview}
+#| label: tbl-overview
+#| tbl-cap: "Visão geral do corpus"
+
+tibble(
+  Indicador = c(
+    "Total de registros",
+    "Anel nuclear",
+    "Anel estendido",
+    "Período coberto",
+    "Periódicos distintos",
+    "Total de citações",
+    "Média de citações por artigo",
+    "Mediana de citações"
+  ),
+  `Corpus completo` = c(
+    format(n_included, big.mark = "."),
+    format(n_nuclear, big.mark = "."),
+    format(n_extended, big.mark = "."),
+    paste0(min(corpus$publication_year, na.rm = TRUE), "–",
+           max(corpus$publication_year, na.rm = TRUE)),
+    format(n_distinct(corpus$journal[!is.na(corpus$journal) & corpus$journal != ""]),
+           big.mark = "."),
+    format(sum(corpus$cited_by_count, na.rm = TRUE), big.mark = "."),
+    sprintf("%.1f", mean(corpus$cited_by_count, na.rm = TRUE)),
+    format(median(corpus$cited_by_count, na.rm = TRUE))
+  ),
+  `Anel nuclear` = c(
+    format(n_nuclear, big.mark = "."),
+    "—",
+    "—",
+    paste0(min(nuclear$publication_year, na.rm = TRUE), "–",
+           max(nuclear$publication_year, na.rm = TRUE)),
+    format(n_distinct(nuclear$journal[!is.na(nuclear$journal) & nuclear$journal != ""]),
+           big.mark = "."),
+    format(sum(nuclear$cited_by_count, na.rm = TRUE), big.mark = "."),
+    sprintf("%.1f", mean(nuclear$cited_by_count, na.rm = TRUE)),
+    format(median(nuclear$cited_by_count, na.rm = TRUE))
+  )
+) |>
+  kable(align = "lcc") |>
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
+```
+
+## Evolução temporal da produção
+
+```{r temporal-evolution}
+#| label: fig-temporal
+#| fig-cap: "Evolução temporal da produção científica por anel"
+#| fig-height: 5
+
+# Produção anual por anel
+yearly <- corpus |>
+  filter(!is.na(publication_year), publication_year >= 2000, publication_year <= 2025) |>
+  count(publication_year, ring) |>
+  complete(publication_year = 2000:2025, ring = c("nuclear", "extended"), fill = list(n = 0))
+
+p1 <- ggplot(yearly, aes(publication_year, n, fill = ring)) +
+  geom_col(position = "stack", alpha = 0.85) +
+  scale_fill_manual(
+    values = c("nuclear" = pal_nuclear, "extended" = pal_extended),
+    labels = c("nuclear" = "Anel Nuclear", "extended" = "Anel Estendido")
+  ) +
+  scale_x_continuous(breaks = seq(2000, 2025, 5)) +
+  labs(
+    x = "Ano de publicação",
+    y = "Número de publicações",
+    fill = "",
+    title = "Produção anual — corpus completo"
+  )
+
+# Nuclear isolado
+yearly_nuclear <- nuclear |>
+  filter(!is.na(publication_year), publication_year >= 2000, publication_year <= 2025) |>
+  count(publication_year) |>
+  complete(publication_year = 2000:2025, fill = list(n = 0))
+
+p2 <- ggplot(yearly_nuclear, aes(publication_year, n)) +
+  geom_col(fill = pal_nuclear, alpha = 0.85) +
+  geom_smooth(method = "loess", se = FALSE, color = "grey30", linewidth = 0.8) +
+  scale_x_continuous(breaks = seq(2000, 2025, 5)) +
+  labs(
+    x = "Ano de publicação",
+    y = "Número de publicações",
+    title = "Produção anual — anel nuclear"
+  )
+
+p1 / p2
+```
+
+## Cobertura por base de dados
+
+```{r source-coverage}
+#| label: fig-sources
+#| fig-cap: "Contribuição de cada base de dados ao corpus"
+#| fig-height: 4
+
+corpus |>
+  count(source, ring) |>
+  ggplot(aes(reorder(source, -n), n, fill = ring)) +
+  geom_col(position = "dodge", alpha = 0.85) +
+  scale_fill_manual(
+    values = c("nuclear" = pal_nuclear, "extended" = pal_extended),
+    labels = c("nuclear" = "Nuclear", "extended" = "Estendido")
+  ) +
+  labs(x = "Base de dados", y = "Registros", fill = "",
+       title = "Cobertura por base de dados e anel") +
+  theme(axis.text.x = element_text(angle = 0))
+```
+
+## Distribuição por idioma
+
+```{r language-dist}
+#| label: fig-language
+#| fig-cap: "Distribuição linguística do anel nuclear"
+#| fig-height: 4
+
+nuclear |>
+  mutate(language = ifelse(is.na(language) | language == "" | language == "nan",
+                           "Não informado", language)) |>
+  count(language, sort = TRUE) |>
+  mutate(language = fct_reorder(language, n)) |>
+  ggplot(aes(language, n)) +
+  geom_col(fill = pal_nuclear, alpha = 0.85) +
+  coord_flip() +
+  labs(x = "", y = "Registros",
+       title = "Distribuição linguística — anel nuclear")
+```
+
+## Lei de Bradford — dispersão de periódicos
+
+```{r bradford}
+#| label: fig-bradford
+#| fig-cap: "Análise de dispersão de periódicos (Lei de Bradford) — anel nuclear"
+#| fig-height: 5
+
+# Ranking de periódicos por frequência
+journal_freq <- nuclear |>
+  filter(!is.na(journal), journal != "", journal != "nan") |>
+  count(journal, sort = TRUE) |>
+  mutate(
+    rank = row_number(),
+    cum_n = cumsum(n),
+    cum_pct = cum_n / sum(n),
+    zone = case_when(
+      cum_pct <= 1/3 ~ "Zona 1 (núcleo)",
+      cum_pct <= 2/3 ~ "Zona 2 (intermediária)",
+      TRUE ~ "Zona 3 (periférica)"
+    )
+  )
+
+ggplot(journal_freq, aes(rank, cum_pct, color = zone)) +
+  geom_point(size = 2, alpha = 0.7) +
+  geom_line(color = "grey50", alpha = 0.5) +
+  geom_hline(yintercept = c(1/3, 2/3), linetype = "dashed", color = "grey60") +
+  scale_y_continuous(labels = percent) +
+  scale_color_manual(values = c(
+    "Zona 1 (núcleo)" = pal_nuclear,
+    "Zona 2 (intermediária)" = "#f59e0b",
+    "Zona 3 (periférica)" = "grey60"
+  )) +
+  labs(x = "Ranking do periódico", y = "% acumulada de artigos",
+       color = "", title = "Lei de Bradford — anel nuclear")
+```
+
+```{r bradford-table}
+#| label: tbl-bradford
+#| tbl-cap: "Periódicos do anel nuclear com 2 ou mais artigos"
+
+journal_freq |>
+  filter(n >= 2) |>
+  select(Periódico = journal, Artigos = n, `% acumulada` = cum_pct, Zona = zone) |>
+  mutate(`% acumulada` = percent(`% acumulada`, accuracy = 0.1)) |>
+  kable(align = "lccc") |>
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
+```
+
+## Artigos mais citados
+
+```{r most-cited}
+#| label: tbl-most-cited-nuclear
+#| tbl-cap: "Artigos mais citados do anel nuclear (top 20)"
+
+nuclear |>
+  arrange(desc(cited_by_count)) |>
+  head(20) |>
+  mutate(
+    title = str_trunc(title, 80),
+    journal = ifelse(is.na(journal) | journal == "", "N/D", str_trunc(journal, 40))
+  ) |>
+  select(
+    Título = title,
+    Ano = publication_year,
+    Periódico = journal,
+    Citações = cited_by_count
+  ) |>
+  kable(align = "llcc") |>
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE, font_size = 11)
+```
+
+```{r most-cited-extended}
+#| label: tbl-most-cited-extended
+#| tbl-cap: "Artigos mais citados do anel estendido (top 20)"
+
+extended |>
+  arrange(desc(cited_by_count)) |>
+  head(20) |>
+  mutate(
+    title = str_trunc(title, 80),
+    journal = ifelse(is.na(journal) | journal == "", "N/D", str_trunc(journal, 40))
+  ) |>
+  select(
+    Título = title,
+    Ano = publication_year,
+    Periódico = journal,
+    Citações = cited_by_count
+  ) |>
+  kable(align = "llcc") |>
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE, font_size = 11)
+```
+
+## Distribuição de citações
+
+```{r citation-distribution}
+#| label: fig-citations
+#| fig-cap: "Distribuição de citações por anel"
+#| fig-height: 4
+
+corpus |>
+  filter(cited_by_count > 0) |>
+  ggplot(aes(cited_by_count, fill = ring)) +
+  geom_histogram(bins = 50, alpha = 0.75, position = "identity") +
+  scale_x_log10() +
+  scale_fill_manual(
+    values = c("nuclear" = pal_nuclear, "extended" = pal_extended),
+    labels = c("nuclear" = "Nuclear", "extended" = "Estendido")
+  ) +
+  labs(x = "Citações (escala log)", y = "Frequência", fill = "",
+       title = "Distribuição de citações (artigos com ≥ 1 citação)")
+```
+
+## Análise de periódicos — corpus completo
+
+```{r top-journals-complete}
+#| label: fig-top-journals
+#| fig-cap: "Periódicos mais produtivos — corpus completo (top 15)"
+#| fig-height: 5
+
+corpus |>
+  filter(!is.na(journal), journal != "", journal != "nan") |>
+  count(journal, sort = TRUE) |>
+  head(15) |>
+  mutate(journal = str_trunc(journal, 50),
+         journal = fct_reorder(journal, n)) |>
+  ggplot(aes(journal, n)) +
+  geom_col(fill = pal_extended, alpha = 0.85) +
+  coord_flip() +
+  labs(x = "", y = "Artigos", title = "Top 15 periódicos — corpus completo")
+```
+
+## Análise por termos de busca (query_term)
+
+```{r query-analysis}
+#| label: fig-query-terms
+#| fig-cap: "Distribuição de registros por string de busca (top 15)"
+#| fig-height: 6
+
+corpus |>
+  mutate(query_term = str_trunc(query_term, 50)) |>
+  count(query_term, sort = TRUE) |>
+  head(15) |>
+  mutate(query_term = fct_reorder(query_term, n)) |>
+  ggplot(aes(query_term, n)) +
+  geom_col(fill = "grey50", alpha = 0.85) +
+  coord_flip() +
+  labs(x = "", y = "Registros",
+       title = "Registros por string de busca")
+```
+
+## Cobertura cruzada entre bases
+
+```{r cross-coverage}
+#| label: fig-cross-coverage
+#| fig-cap: "Número de bases que indexam cada registro"
+#| fig-height: 4
+
+corpus |>
+  mutate(n_bases = as.numeric(n_bases)) |>
+  filter(!is.na(n_bases)) |>
+  count(n_bases) |>
+  ggplot(aes(factor(n_bases), n)) +
+  geom_col(fill = "grey50", alpha = 0.85) +
+  geom_text(aes(label = format(n, big.mark = ".")), vjust = -0.3) +
+  labs(x = "Nº de bases que indexam o registro",
+       y = "Registros",
+       title = "Cobertura cruzada entre bases")
+```
+
+## Análise temática por palavras do título
+
+```{r title-wordcloud}
+#| label: fig-word-freq
+#| fig-cap: "Termos mais frequentes nos títulos — anel nuclear vs. estendido"
+#| fig-height: 6
+
+# Extrair palavras dos títulos
+stopwords_custom <- c(
+  "the", "of", "and", "in", "a", "to", "for", "on", "an", "is", "by",
+  "with", "from", "as", "at", "its", "that", "this", "it", "or", "be",
+  "are", "was", "were", "has", "have", "been", "not", "but", "can",
+  "will", "do", "does", "their", "they", "them", "which", "who", "how",
+  "between", "through", "sobre", "uma", "como", "para", "das", "dos",
+  "nas", "nos", "com", "por", "sua", "seu", "mais", "entre", "após",
+  "desde", "del", "los", "las", "una", "caso", "hacia", "sobre"
+)
+
+word_freq <- function(df, label) {
+  df |>
+    mutate(title_clean = str_to_lower(title)) |>
+    pull(title_clean) |>
+    str_split("\\s+") |>
+    unlist() |>
+    str_remove_all("[^a-záéíóúâêôãõçñü]") |>
+    tibble(word = _) |>
+    filter(nchar(word) > 3, !word %in% stopwords_custom) |>
+    count(word, sort = TRUE) |>
+    head(25) |>
+    mutate(ring = label)
+}
+
+wf_nuclear <- word_freq(nuclear, "Nuclear")
+wf_extended <- word_freq(extended, "Estendido")
+
+bind_rows(wf_nuclear, wf_extended) |>
+  mutate(word = fct_reorder(word, n)) |>
+  ggplot(aes(word, n, fill = ring)) +
+  geom_col(alpha = 0.85) +
+  coord_flip() +
+  facet_wrap(~ring, scales = "free_y") +
+  scale_fill_manual(values = c("Nuclear" = pal_nuclear, "Estendido" = pal_extended)) +
+  labs(x = "", y = "Frequência", fill = "",
+       title = "Termos mais frequentes nos títulos") +
+  theme(legend.position = "none")
+```
+
+## Evolução temática temporal
+
+```{r thematic-evolution}
+#| label: fig-thematic-evolution
+#| fig-cap: "Evolução temporal de termos-chave no anel nuclear"
+#| fig-height: 5
+
+# Termos de interesse para tracking temporal
+terms_track <- c("policy", "governance", "reform", "administration",
+                 "access", "justice", "conflict", "mediation", "cnj",
+                 "judiciária", "judiciárias")
+
+nuclear |>
+  filter(!is.na(publication_year), publication_year >= 2000, publication_year <= 2025) |>
+  mutate(title_lower = str_to_lower(title)) |>
+  rowwise() |>
+  mutate(
+    terms_found = list(terms_track[str_detect(title_lower, terms_track)])
+  ) |>
+  unnest(terms_found, keep_empty = FALSE) |>
+  count(publication_year, terms_found) |>
+  ggplot(aes(publication_year, n, color = terms_found)) +
+  geom_line(linewidth = 0.8, alpha = 0.8) +
+  geom_point(size = 1.5) +
+  scale_x_continuous(breaks = seq(2000, 2025, 5)) +
+  labs(x = "Ano", y = "Ocorrências", color = "Termo",
+       title = "Evolução temporal de termos-chave nos títulos — anel nuclear") +
+  theme(legend.position = "right")
+```
+
+## Proporção nuclear/estendido ao longo do tempo
+
+```{r nuclear-proportion}
+#| label: fig-nuclear-proportion
+#| fig-cap: "Proporção do anel nuclear no corpus total ao longo do tempo"
+#| fig-height: 4
+
+yearly_prop <- corpus |>
+  filter(!is.na(publication_year), publication_year >= 2000, publication_year <= 2025) |>
+  count(publication_year, ring) |>
+  complete(publication_year = 2000:2025, ring = c("nuclear", "extended"), fill = list(n = 0)) |>
+  group_by(publication_year) |>
+  mutate(pct = n / sum(n)) |>
+  filter(ring == "nuclear")
+
+ggplot(yearly_prop, aes(publication_year, pct)) +
+  geom_col(fill = pal_nuclear, alpha = 0.85) +
+  geom_smooth(method = "loess", se = FALSE, color = "grey30", linewidth = 0.8) +
+  scale_y_continuous(labels = percent) +
+  scale_x_continuous(breaks = seq(2000, 2025, 5)) +
+  labs(x = "Ano", y = "% do corpus total",
+       title = "Proporção do anel nuclear no corpus total")
+```
+
+## Tabela síntese por quinquênio
+
+```{r quinquenio}
+#| label: tbl-quinquenio
+#| tbl-cap: "Produção por quinquênio e anel"
+
+corpus |>
+  filter(!is.na(publication_year), publication_year >= 2000, publication_year <= 2025) |>
+  mutate(quinquenio = cut(publication_year,
+                          breaks = c(1999, 2004, 2009, 2014, 2019, 2025),
+                          labels = c("2000–04", "2005–09", "2010–14", "2015–19", "2020–25"))) |>
+  count(quinquenio, ring) |>
+  pivot_wider(names_from = ring, values_from = n, values_fill = 0) |>
+  mutate(
+    total = nuclear + extended,
+    pct_nuclear = percent(nuclear / total, accuracy = 0.1)
+  ) |>
+  select(Quinquênio = quinquenio, Nuclear = nuclear, Estendido = extended,
+         Total = total, `% Nuclear` = pct_nuclear) |>
+  kable(align = "ccccc") |>
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
+```
+
+# Discussão (Preliminar)
+
+Os resultados permitem três conjuntos de inferências sobre o campo de "política judiciária".
+
+## Um campo emergente, não consolidado
+
+O anel nuclear de `r n_nuclear` registros, distribuídos por `r n_distinct(nuclear$journal[!is.na(nuclear$journal) & nuclear$journal != ""])` periódicos, configura um padrão típico de campo emergente: produção dispersa, baixa concentração em veículos especializados e mediana de citações igual a zero. A Lei de Bradford revela uma dispersão extrema — nenhum periódico concentra um volume substancial de artigos. Isso indica que a "política judiciária" como rótulo acadêmico ainda não constituiu uma comunidade epistêmica com periódico nuclear, protocolo de citação compartilhado ou fronteira disciplinar reconhecida.
+
+## Polissemia como obstáculo à consolidação
+
+A necessidade de três rodadas de reclassificação para isolar a acepção programática evidencia um obstáculo estrutural: o mesmo termo designa pelo menos três fenômenos distintos na literatura — governança institucional do judiciário, judicial policy-making (criação de direito por juízes) e política penal dos tribunais. Essa polissemia não é acidental; reflete a ausência de um marco teórico unificador que defina o conceito com precisão suficiente para distinguir seus usos.
+
+A tradição brasileira, ancorada no vocabulário institucional do CNJ, opera com a acepção programática. A tradição anglo-saxã opera predominantemente com a acepção comportamental. A tradição russa/pós-soviética desenvolveu uma acepção doutrinária própria. Essas três tradições coexistem sem interlocução, como demonstra a ausência de citações cruzadas entre elas.
+
+## Infraestrutura como lacuna documentada
+
+A análise de palavras-chave nos títulos do corpus completo revela que termos como *infrastructure*, *building*, *facility*, *physical space* estão ausentes do vocabulário do campo. A dimensão material e espacial do sistema de justiça não figura como objeto de atenção nem na literatura nuclear (governança programática) nem na estendida (administração e reforma judicial). Esse resultado reforça empiricamente a lacuna que o projeto ARENAS-JUS se propõe a preencher.
+
+## Limitações
+
+Este estudo apresenta limitações que devem ser consideradas na interpretação dos resultados. A ausência do Web of Science reduz a cobertura de periódicos de alto impacto. A elevada proporção de registros sem idioma e sem periódico identificado (decorrente das limitações do Semantic Scholar) afeta a precisão de indicadores como a Lei de Bradford. O anel nuclear inclui registros na fronteira entre a acepção programática e a jurisprudencial de "judicial policy", mantidos por decisão conservadora para preservar a viabilidade da análise bibliométrica. A análise de co-citação e acoplamento bibliográfico foi limitada pela ausência de dados completos de referências bibliográficas nos metadados coletados.
+
+# Conclusões
+
+Este estudo mapeou pela primeira vez a estrutura intelectual do campo que se nomeia explicitamente como "política judiciária", utilizando análise bibliométrica multibase com protocolo PRISMA adaptado.
+
+Os resultados confirmam que a expressão designa um campo emergente, com produção dispersa, baixa consolidação institucional e polissemia não resolvida entre tradições acadêmicas distintas. O anel nuclear de `r n_nuclear` registros é pequeno o suficiente para caracterizar um campo em formação, mas diversificado o bastante — em termos geográficos, linguísticos e temáticos — para sugerir uma convergência incipiente de preocupações em torno da governança programática do sistema de justiça.
+
+A contribuição deste estudo é dupla. Para o campo de políticas judiciárias, oferece a primeira cartografia empírica da produção acadêmica, documentando sua dimensão, dispersão, evolução temporal e lacunas. Para a pesquisa subsequente, estabelece a base bibliométrica sobre a qual se assentarão a revisão integrativa sobre governança da infraestrutura judicial (Produto 2) e a modelagem do Framework ARENAS-JUS (Produto 3).
+
+Pesquisas futuras poderão aprofundar a análise mediante: (a) enriquecimento do corpus com resumos e referências bibliográficas completas para viabilizar análise de co-citação e acoplamento; (b) incorporação do Web of Science para ampliar a cobertura; e (c) análise qualitativa dos artigos nucleares por leitura integral, distinguindo tradições conceituais com maior precisão.
+
+# Referências {.unnumbered}
+
+::: {#refs}
+:::
+
+# Apêndice: Repositório e Reprodutibilidade {.unnumbered}
+
+Todo o código, dados e decisões metodológicas deste estudo estão documentados no repositório público:
+
+**GitHub:** [github.com/cairesmachado-svg/Public_Policy](https://github.com/cairesmachado-svg/Public_Policy)
+
+O pipeline de processamento é composto por scripts Python sequenciais (`06_merge_cross_base.py` a `10_export_bibliometrix.py`) que transformam os dados brutos coletados via API em corpus analítico final. Cada etapa produz artefatos intermediários versionados em `data/interim/`, garantindo rastreabilidade completa das decisões de triagem.
