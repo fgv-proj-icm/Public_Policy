@@ -1,4 +1,11 @@
-# dados e outputs
+# Quarto outputs
+*_files/
+*_cache/
+.quarto/
+.quarto_cache/
+*.html
+
+# Dados e outputs (não versionar)
 data/raw/*
 data/interim/*
 data/final/*
@@ -6,18 +13,21 @@ data/final/*
 !data/interim/.gitkeep
 !data/final/.gitkeep
 
-# logs (mantém template)
+# Logs (mantém template)
 logs/*
 !logs/runlog.md
 !logs/.gitkeep
 
-# segredos / env
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Env / segredos
 .env
 .env.*
 *.key
 *.pem
 
-# python
-__pycache__/
-*.pyc
-.venv/
+# Backups/arquivos soltos
+*.tgz
