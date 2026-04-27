@@ -1,11 +1,23 @@
-.venv/
+# dados e outputs
+data/raw/*
+data/interim/*
+data/final/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/final/.gitkeep
+
+# logs (mantém template)
+logs/*
+!logs/runlog.md
+!logs/.gitkeep
+
+# segredos / env
 .env
+.env.*
+*.key
+*.pem
+
+# python
 __pycache__/
 *.pyc
-.ipynb_checkpoints/
-
-data/raw/
-data/interim/
-outputs/
-
-APIs Igor
+.venv/

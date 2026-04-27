@@ -7,3 +7,5 @@ networkx
 matplotlib
 pyarrow
 tenacity
+requests
+beautifulsoup4
