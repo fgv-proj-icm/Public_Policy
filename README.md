@@ -86,18 +86,20 @@ Public_Policy/
 ├── abnt.csl
 └── README.md
 
-Arquivos e documentos importantes
+##  Arquivos e documentos importantes
 Documentação
 docs/01_data_card.md — definição da unidade, variáveis, chaves e ética
 docs/07_search_strings.md — strings e rodadas (PRISMA / identificação)
 docs/06_metodologia_fontes_complementares.md — SciELO (ArticleMeta) e PoP/Scholar
 logs/runlog.md — log de execuções (data/commit/contagens/arquivos)
-Relatório
+
+## Relatório
 relatorio_bibliometrico_politica_judiciaria.qmd
 Render:
 quarto render relatorio_bibliometrico_politica_judiciaria.qmd --to docx
-Como reproduzir
-0) Instalação
+
+## Como reproduzir
+### 0) Instalação
 pip install -r requirements.txt
 
 Se usar .env (opcional), configure chaves conforme scripts:
@@ -105,24 +107,26 @@ Se usar .env (opcional), configure chaves conforme scripts:
 OPENALEX_API_KEY (opcional)
 SEMANTIC_SCHOLAR_API_KEY (necessário para coleta via API)
 SCOPUS_API_KEY (necessário para Scopus)
-1) Coleta SciELO (ArticleMeta)
+
+### 1) Coleta SciELO (ArticleMeta)
 
 Exemplo com ISSNs selecionados:
 
 python src/pipelines/13_collect_scielo.py --issn 0034-7612 --max-articles 500 --sleep 0.05
 python src/pipelines/13b_review_scielo.py
-2) Google Scholar via PoP (importação)
+
+### 2) Google Scholar via PoP (importação)
 
 Após rodar PoP e exportar o Results CSV:
 
-Nuclear
+### Nuclear
 
 python src/pipelines/04_import_pop_scholar.py \
   --input data/raw/google_scholar_pop_nuclear_results.csv \
   --query-term pop_nuclear \
   --output google_scholar_pop_nuclear.csv
 
-Extended
+### Extended
 
 python src/pipelines/04_import_pop_scholar.py \
   --input data/raw/google_scholar_pop_extended_results.csv \
@@ -139,9 +143,11 @@ out=pd.concat([a,b], ignore_index=True)
 out.to_csv("data/raw/google_scholar_pop_results.csv", index=False, encoding="utf-8-sig")
 print("OK total:", len(out), "nuclear:", len(a), "extended:", len(b))
 PY
-3) Merge multibase (Identification)
+
+### 3) Merge multibase (Identification)
 python src/pipelines/06_merge_cross_base.py
-4) Pipeline principal (unified → clean → analysis-ready → corpora)
+
+### 4) Pipeline principal (unified → clean → analysis-ready → corpora)
 python src/pipelines/06_build_unified_base.py
 python src/pipelines/06b_review_unified_base.py
 
@@ -161,14 +167,16 @@ python src/pipelines/11b_review_core_corpus.py
 
 python src/pipelines/12a_build_focus_corpus.py
 python src/pipelines/12b_review_focus_corpus.py
-Dados e versionamento
+
+### Dados e versionamento
 Não versionar data/raw, data/interim, data/final (apenas .gitkeep).
 Versionar:
 scripts (src/pipelines)
 documentação (docs/)
 logs/runlog.md
 relatório (.qmd), referências (.bib) e estilo (.csl)
-Uso de inteligência artificial
+
+### Uso de inteligência artificial
 
 Ferramentas de IA foram utilizadas como apoio técnico/metodológico em tarefas como:
 
@@ -178,7 +186,7 @@ revisão técnica e padronização.
 
 Decisões substantivas (problema de pesquisa, critérios de triagem, delimitação do corpus e interpretação) permanecem sob responsabilidade do pesquisador.
 
-Situação atual
+### Situação atual
 Integração SciELO via ArticleMeta concluída (com ISSNs selecionados).
 Integração Google Scholar via PoP em andamento (nuclear concluído; estendido em execução).
 Merge multibase (06_merge_cross_base.py) atualizado para incluir SciELO e PoP.
