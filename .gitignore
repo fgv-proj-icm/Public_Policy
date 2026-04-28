@@ -17,6 +17,8 @@ data/final/*
 logs/*
 !logs/runlog.md
 !logs/.gitkeep
+!logs/prisma_flow.csv
+!logs/dedup_impact.csv
 
 # Python
 __pycache__/

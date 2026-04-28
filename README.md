@@ -2,7 +2,7 @@
 
 Repositório da pesquisa sobre **política judiciária como campo emergente**, com foco na **identificação, triagem e análise bibliométrica** da produção acadêmica que se nomeia explicitamente como *política judiciária*, *política judicial* ou *judicial policy*.
 
-O projeto combina **coleta multibase**, **deduplicação cross-base**, **triagem inspirada em PRISMA**, organização do corpus em **dois anéis** (nuclear e estendido) e produção de relatório final em **Quarto**.
+O projeto combina **coleta multibase**, **deduplicação cross-base**, **triagem inspirada em PRISMA**, organização do corpus em **dois anéis** (nuclear e estendido), suplemento brasileiro rastreável e produção de relatório final em **Quarto**.
 
 ---
 
@@ -54,8 +54,7 @@ Como **fonte complementar**, para capturar produção não indexada nas bases gl
 
 ## Status dos resultados
 
-Os totais variam por rodada (dependem de credenciais para Scopus, ISSNs selecionados no SciELO e resultados do PoP).  
-Os números consolidados do relatório anterior (quatro bases) foram:
+Os números consolidados da rodada principal reproduzida em 28/04/2026 (quatro bases, modo offline, sem incorporação automática do suplemento brasileiro) são:
 
 - **7.161** registros identificados
 - **1.193** duplicatas removidas
@@ -65,7 +64,7 @@ Os números consolidados do relatório anterior (quatro bases) foram:
   - **115** no **anel nuclear**
   - **4.811** no **anel estendido**
 
-Com a inclusão de SciELO e PoP/Scholar, a etapa de **identificação** tende a aumentar e deve ser recalculada no PRISMA.
+O suplemento brasileiro é comparado separadamente em `outputs/tables/brazil_supplement_comparison.csv`. Na rodada atual, ele identifica 285 candidatos rastreáveis, 284 ainda ausentes do corpus congelado; esses itens exigem curadoria antes de alterar as estatísticas principais.
 
 ---
 
@@ -100,8 +99,18 @@ Render:
 quarto render relatorio_bibliometrico_politica_judiciaria.qmd --to docx
 
 ## Como reproduzir
+
+### Requisitos verificados
+
+- Python 3.14.4
+- Quarto 1.9.37
+- R com pacotes usados no QMD (`bibliometrix`, `tidyverse`, `knitr`, `scales`, `patchwork`, `ggrepel`, `igraph`, `RColorBrewer`)
+
 ### 0) Instalação
+
+```powershell
 pip install -r requirements.txt
+```
 
 Se usar .env (opcional), configure chaves conforme scripts:
 
@@ -145,29 +154,39 @@ out.to_csv("data/raw/google_scholar_pop_results.csv", index=False, encoding="utf
 print("OK total:", len(out), "nuclear:", len(a), "extended:", len(b))
 PY
 
-### 3) Merge multibase (Identification)
-python src/pipelines/06_merge_cross_base.py
+### 3) Pipeline principal em comando único
 
-### 4) Pipeline principal (unified → clean → analysis-ready → corpora)
-python src/pipelines/06_build_unified_base.py
-python src/pipelines/06b_review_unified_base.py
+```powershell
+$env:PYTHONIOENCODING='utf-8'
+python src\pipelines\14_rebuild_full_pipeline.py --offline --skip-enrich
+```
 
-python src/pipelines/08_clean_unified_base.py
-python src/pipelines/08b_review_unified_base_clean.py
+Esse comando executa:
 
-python src/pipelines/09_build_analysis_ready_base.py
-python src/pipelines/09b_review_analysis_ready_base.py
+`06_merge_cross_base.py` → `07_dedup_cross_base.py` → `08_screen_prisma.py` → `08b_clean_and_enrich.py` → `08c_reclassify_nuclear.py` → `08d_final_nuclear_adjustment.py` → `09_prisma_flow.py` → `10_export_bibliometrix.py` → `16_brazil_supplement_compare.py` → `12_metadata_completeness.py`.
 
-python src/pipelines/10a_finalize_no_doi_dedup.py
-python src/pipelines/10b_normalize_query_and_type.py
-python src/pipelines/10c_build_relevance_flags.py
-python src/pipelines/10d_review_analysis_ready_v2.py
+Seed documentada: `42`.
 
-python src/pipelines/11a_build_core_corpus.py
-python src/pipelines/11b_review_core_corpus.py
+Logs principais:
 
-python src/pipelines/12a_build_focus_corpus.py
-python src/pipelines/12b_review_focus_corpus.py
+- `logs/prisma_flow.csv`
+- `logs/dedup_impact.csv`
+- `data/interim/06_frozen_corpus.csv`
+- `outputs/tables/brazil_supplement_comparison.csv`
+
+### 4) Render do relatório
+
+```powershell
+quarto render relatorio_bibliometrico_politica_judiciaria.qmd --to docx
+```
+
+Para incluir Google Scholar/PoP no corpus principal, rode explicitamente:
+
+```powershell
+python src\pipelines\14_rebuild_full_pipeline.py --offline --with-pop --skip-enrich
+```
+
+Use essa opção apenas após curadoria dos candidatos, pois PoP/Scholar é snapshot manual e pode conter literatura cinzenta ou duplicatas bibliográficas imperfeitas.
 
 ### Dados e versionamento
 Não versionar data/raw, data/interim, data/final (apenas .gitkeep).
@@ -188,7 +207,5 @@ revisão técnica e padronização.
 Decisões substantivas (problema de pesquisa, critérios de triagem, delimitação do corpus e interpretação) permanecem sob responsabilidade do pesquisador.
 
 ### Situação atual
-Integração SciELO via ArticleMeta concluída (com ISSNs selecionados).
-Integração Google Scholar via PoP em andamento (nuclear concluído; estendido em execução).
-Merge multibase (06_merge_cross_base.py) atualizado para incluir SciELO e PoP.
-Próximo passo após concluir PoP (extended): consolidar google_scholar_pop_results.csv, rodar merge e reconstruir corpora/relatório.
+
+Pipeline principal reproduzido com snapshots locais das quatro bases globais. SciELO/PoP/Scholar permanecem como suplemento brasileiro rastreável e comparação externa, documentada no método e em `docs/REPRO_AUDIT.md`.

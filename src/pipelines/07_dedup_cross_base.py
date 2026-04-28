@@ -15,12 +15,16 @@ Uso:
 
 from pathlib import Path
 import pandas as pd
+from datetime import datetime, timezone
 
 BASE_DIR = Path(__file__).resolve().parents[2]
 INTERIM_DIR = BASE_DIR / "data" / "interim"
+LOGS_DIR = BASE_DIR / "logs"
+LOGS_DIR.mkdir(parents=True, exist_ok=True)
 
 INPUT_FILE = INTERIM_DIR / "01_merged_all_sources.csv"
 OUTPUT_FILE = INTERIM_DIR / "02_deduplicated.csv"
+OUTPUT_IMPACT = LOGS_DIR / "dedup_impact.csv"
 
 
 def compute_metadata_score(row) -> int:
@@ -104,6 +108,37 @@ def main():
     total_apos = len(df_final)
 
     df_final.to_csv(OUTPUT_FILE, index=False, encoding="utf-8-sig")
+    now = datetime.now(timezone.utc).isoformat()
+    impact = pd.DataFrame([
+        {
+            "passo": "entrada",
+            "regra": "registros identificados multibase",
+            "linhas_removidas": 0,
+            "linhas_restantes": total_antes,
+            "motivo": "base antes da deduplicacao",
+            "timestamp": now,
+            "script": "src/pipelines/07_dedup_cross_base.py",
+        },
+        {
+            "passo": "deduplicacao_doi",
+            "regra": "doi_norm",
+            "linhas_removidas": removed_by_doi,
+            "linhas_restantes": len(dedup_doi) + len(df_without_doi),
+            "motivo": "mesmo DOI normalizado em uma ou mais bases",
+            "timestamp": now,
+            "script": "src/pipelines/07_dedup_cross_base.py",
+        },
+        {
+            "passo": "deduplicacao_sem_doi",
+            "regra": "title_norm + publication_year + journal_norm",
+            "linhas_removidas": removed_by_title,
+            "linhas_restantes": total_apos,
+            "motivo": "fallback para registros sem DOI",
+            "timestamp": now,
+            "script": "src/pipelines/07_dedup_cross_base.py",
+        },
+    ])
+    impact.to_csv(OUTPUT_IMPACT, index=False, encoding="utf-8-sig")
 
     # ── Relatório ──────────────────────────────────────────────────────────
     print(f"\n{'='*60}")
@@ -114,6 +149,7 @@ def main():
     print(f"Duplicatas removidas por título:    {removed_by_title:>7,}")
     print(f"Total duplicatas removidas:         {total_duplicatas:>7,}")
     print(f"Total após deduplicação:            {total_apos:>7,}")
+    print(f"Relatório de impacto:               {OUTPUT_IMPACT}")
     print(f"\nCobertura cruzada (registros com DOI):")
     if "n_bases" in df_final.columns:
         print(df_final["n_bases"].value_counts().sort_index().to_string())

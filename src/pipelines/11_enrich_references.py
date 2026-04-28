@@ -32,6 +32,7 @@ from itertools import combinations
 import pandas as pd
 import requests
 from dotenv import load_dotenv
+import networkx as nx
 
 load_dotenv()
 
@@ -39,12 +40,18 @@ BASE_DIR = Path(__file__).resolve().parents[2]
 FINAL_DIR = BASE_DIR / "data" / "final"
 INTERIM_DIR = BASE_DIR / "data" / "interim"
 INTERIM_DIR.mkdir(parents=True, exist_ok=True)
+NETWORK_DIR = BASE_DIR / "outputs" / "network"
+NETWORK_DIR.mkdir(parents=True, exist_ok=True)
 
 INPUT_FILE = FINAL_DIR / "corpus_nuclear.csv"
 OUTPUT_REFS = INTERIM_DIR / "07_nuclear_references.csv"
 OUTPUT_ENRICHED = INTERIM_DIR / "07_nuclear_enriched.csv"
 OUTPUT_COCITATION = INTERIM_DIR / "07_cocitation_matrix_edges.csv"
 OUTPUT_REPORT = INTERIM_DIR / "07_enrichment_report.txt"
+OUTPUT_NETWORK_EDGES = NETWORK_DIR / "cocitation_edges.csv"
+OUTPUT_NETWORK_REFS = NETWORK_DIR / "nuclear_references.csv"
+OUTPUT_NETWORK_GRAPHML = NETWORK_DIR / "cocitation_graph.graphml"
+OUTPUT_ENRICH_LOG = NETWORK_DIR / "openalex_enrichment_log.csv"
 
 API_KEY = os.getenv("OPENALEX_API_KEY", "").strip()
 EMAIL = os.getenv("EMAIL_POLITE", "").strip()
@@ -193,6 +200,7 @@ def main():
     all_ref_rows = []
     enriched_rows = []
     all_cited_ids = set()
+    enrich_log_rows = []
 
     for idx, row in queryable.iterrows():
         doi = row["doi_clean"]
@@ -205,6 +213,14 @@ def main():
 
         if work is None:
             print("não encontrado")
+            enrich_log_rows.append({
+                "citing_title": row.get("title", ""),
+                "doi": row.get("doi", ""),
+                "openalex_id_query": oa_id,
+                "found_in_openalex": False,
+                "n_references": 0,
+                "status": "not_found_or_rate_limited",
+            })
             enriched_rows.append({
                 "title": row.get("title", ""),
                 "doi": row.get("doi", ""),
@@ -222,6 +238,15 @@ def main():
         refs = work.get("referenced_works", []) or []
         ref_ids = [r.split("/")[-1] for r in refs if r]
         all_cited_ids.update(ref_ids)
+        enrich_log_rows.append({
+            "citing_title": row.get("title", ""),
+            "doi": row.get("doi", ""),
+            "openalex_id_query": oa_id,
+            "openalex_id_found": work.get("id", "").split("/")[-1],
+            "found_in_openalex": True,
+            "n_references": len(ref_ids),
+            "status": "ok",
+        })
 
         print(f"{len(ref_ids)} refs" + (" +abstract" if abstract else ""))
 
@@ -294,6 +319,7 @@ def main():
     # ── Salvar ─────────────────────────────────────────────────────────
     df_refs = pd.DataFrame(all_ref_rows)
     df_refs.to_csv(OUTPUT_REFS, index=False, encoding="utf-8-sig")
+    df_refs.to_csv(OUTPUT_NETWORK_REFS, index=False, encoding="utf-8-sig")
 
     df_enriched = pd.DataFrame(enriched_rows)
     df_enriched.to_csv(OUTPUT_ENRICHED, index=False, encoding="utf-8-sig")
@@ -302,6 +328,14 @@ def main():
     if len(df_cocit) > 0:
         df_cocit = df_cocit.sort_values("weight", ascending=False)
     df_cocit.to_csv(OUTPUT_COCITATION, index=False, encoding="utf-8-sig")
+    df_cocit.to_csv(OUTPUT_NETWORK_EDGES, index=False, encoding="utf-8-sig")
+    pd.DataFrame(enrich_log_rows).to_csv(OUTPUT_ENRICH_LOG, index=False, encoding="utf-8-sig")
+
+    if len(df_cocit) > 0:
+        graph = nx.Graph()
+        for row in cocitation_rows:
+            graph.add_edge(row["source"], row["target"], weight=int(row["weight"]))
+        nx.write_graphml(graph, OUTPUT_NETWORK_GRAPHML)
 
     # ── Relatório ──────────────────────────────────────────────────────
     n_found = sum(1 for r in enriched_rows if r["found_in_openalex"])
@@ -338,6 +372,9 @@ Arquivos salvos:
   Referências:     {OUTPUT_REFS}
   Enriquecido:     {OUTPUT_ENRICHED}
   Co-citação:      {OUTPUT_COCITATION}
+  Rede CSV:        {OUTPUT_NETWORK_EDGES}
+  Rede GraphML:    {OUTPUT_NETWORK_GRAPHML}
+  Log OpenAlex:    {OUTPUT_ENRICH_LOG}
 """
 
     print(report)

@@ -1,0 +1,4 @@
+﻿passo,regra,linhas_removidas,linhas_restantes,motivo,timestamp,script
+entrada,registros identificados multibase,0,7161,base antes da deduplicacao,2026-04-28T20:47:12.783013+00:00,src/pipelines/07_dedup_cross_base.py
+deduplicacao_doi,doi_norm,1192,5969,mesmo DOI normalizado em uma ou mais bases,2026-04-28T20:47:12.783013+00:00,src/pipelines/07_dedup_cross_base.py
+deduplicacao_sem_doi,title_norm + publication_year + journal_norm,1,5968,fallback para registros sem DOI,2026-04-28T20:47:12.783013+00:00,src/pipelines/07_dedup_cross_base.py

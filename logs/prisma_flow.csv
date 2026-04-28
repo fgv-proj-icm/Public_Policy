@@ -1,0 +1,14 @@
+﻿step,n,rule,timestamp,script
+identified,7161,registros identificados nos snapshots data/raw,2026-04-28T20:47:19.703164+00:00,src/pipelines/09_prisma_flow.py
+duplicates_removed,1193,doi_norm; fallback title_norm + publication_year + journal_norm,2026-04-28T20:47:19.703164+00:00,src/pipelines/09_prisma_flow.py
+screened,5968,registros pos-deduplicacao triados por titulo/resumo,2026-04-28T20:47:19.703164+00:00,src/pipelines/09_prisma_flow.py
+excluded,1042,fora do escopo ou metadados insuficientes,2026-04-28T20:47:19.703164+00:00,src/pipelines/09_prisma_flow.py
+included_total,4926,anel nuclear + anel estendido,2026-04-28T20:47:19.703164+00:00,src/pipelines/09_prisma_flow.py
+included_core_ex,115,expressao exata/reclassificacao programatica,2026-04-28T20:47:19.703164+00:00,src/pipelines/09_prisma_flow.py
+included_adj,4811,campos cognatos de governanca/administracao/reforma judicial,2026-04-28T20:47:19.703164+00:00,src/pipelines/09_prisma_flow.py
+excluded_sem_relacao_sistema_justica,814,sem_relacao_sistema_justica,2026-04-28T20:47:19.703164+00:00,src/pipelines/09_prisma_flow.py
+excluded_judicial_review_constitucionalista,84,judicial_review_constitucionalista,2026-04-28T20:47:19.703164+00:00,src/pipelines/09_prisma_flow.py
+excluded_periódico_ou_título_fora_escopo,63,periódico_ou_título_fora_escopo,2026-04-28T20:47:19.703164+00:00,src/pipelines/09_prisma_flow.py
+excluded_judicializacao_politicas,55,judicializacao_politicas,2026-04-28T20:47:19.703164+00:00,src/pipelines/09_prisma_flow.py
+excluded_tema_fora_escopo,20,tema_fora_escopo,2026-04-28T20:47:19.703164+00:00,src/pipelines/09_prisma_flow.py
+excluded_metadados_insuficientes,6,metadados_insuficientes,2026-04-28T20:47:19.703164+00:00,src/pipelines/09_prisma_flow.py

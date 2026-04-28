@@ -173,16 +173,16 @@ São excluídos do corpus principal registros que:
 
 ## 9. Situação empírica atual da triagem
 
-Na rodada atual da triagem PRISMA:
+Na rodada consolidada de 28/04/2026 (quatro bases globais, modo offline, sem integração do suplemento brasileiro):
 
 - foram identificados **7.161** registros;
-- após filtro documental, restaram **6.064**;
-- após deduplicação, restaram **5.370**;
-- desses, **60** foram incluídos no `CORE_EX`;
-- **3.909** foram classificados como `ADJ`;
-- **1.401** foram excluídos. 
+- **1.193** duplicatas removidas (DOI normalizado; fallback título + ano + periódico);
+- após deduplicação, restaram **5.968** registros triados;
+- desses, **115** foram incluídos no `CORE_EX`;
+- **4.811** foram classificados como `ADJ`;
+- **1.042** foram excluídos.
 
-Esses resultados reforçam a hipótese de que o núcleo explícito do campo é pequeno e distinto do universo mais amplo da literatura sobre justiça e Judiciário. 
+Esses resultados reforçam a hipótese de que o núcleo explícito do campo é pequeno e distinto do universo mais amplo da literatura sobre justiça e Judiciário.
 
 ---
 
@@ -220,11 +220,9 @@ Assim, a contribuição central do estudo será mostrar:
 
 ## 12. Próxima fase
 
-A próxima fase da pesquisa consiste em:
+Com o corpus congelado em 28/04/2026, a próxima fase consiste em:
 
-1. consolidar a nova documentação metodológica;
-2. manter a unificação PRISMA em dois anéis;
-3. revisar as próximas pipelines a partir da linha `06_build_prisma_unified_base.py`;
-4. gerar as tabelas do fluxo PRISMA;
-5. iniciar a bibliometria do `CORE_EX`;
-6. usar o `ADJ` como camada relacional e contextual.
+1. curadoria do suplemento brasileiro (285 candidatos identificados, 284 ainda ausentes do corpus);
+2. análise bibliométrica do `CORE_EX` (evolução temporal, periódicos, autores, instituições);
+3. análise relacional do `ADJ` (co-citação, acoplamento bibliográfico);
+4. integração dos resultados no relatório Quarto.

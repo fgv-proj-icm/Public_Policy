@@ -2,37 +2,35 @@
 
 ## Identification
 
-Registros identificados nas bases: **9,143**
+Registros identificados nas bases: **7,161**
 
   - openalex: 2,797
   - semantic_scholar: 2,754
-  - google_scholar_pop: 1,984
-  - crossref: 1,027
+  - crossref: 1,030
   - scopus: 580
-  - scielo: 1
 
 ## Duplicates removed
 
-Duplicatas removidas: **1,226**
+Duplicatas removidas: **1,193**
 
-Registros após deduplicação: **7,917**
+Registros após deduplicação: **5,968**
 
 ## Screening
 
-Registros triados (título + abstract): **7,917**
+Registros triados (título + abstract): **5,968**
 
-Excluídos: **2,184**
+Excluídos: **1,042**
 
-  - sem_relacao_sistema_justica: 1,916
+  - sem_relacao_sistema_justica: 814
   - judicial_review_constitucionalista: 84
-  - periódico_ou_título_fora_escopo: 71
-  - judicializacao_politicas: 63
-  - tema_fora_escopo: 41
-  - metadados_insuficientes: 9
+  - periódico_ou_título_fora_escopo: 63
+  - judicializacao_politicas: 55
+  - tema_fora_escopo: 20
+  - metadados_insuficientes: 6
 
 ## Included
 
-Total incluídos: **5,733**
+Total incluídos: **4,926**
 
-- Anel nuclear (expressão exata "judicial policy" / "política judiciária"): **637**
-- Anel estendido (termos cognatos — governance, administration, reform): **5,067**
+- Anel nuclear (expressão exata "judicial policy" / "política judiciária"): **115**
+- Anel estendido (termos cognatos — governance, administration, reform): **4,811**

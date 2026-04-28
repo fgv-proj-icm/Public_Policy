@@ -22,14 +22,18 @@ Uso:
 
 from pathlib import Path
 import pandas as pd
+from datetime import datetime, timezone
 
 BASE_DIR = Path(__file__).resolve().parents[2]
 INTERIM_DIR = BASE_DIR / "data" / "interim"
 DOCS_DIR = BASE_DIR / "docs"
 DOCS_DIR.mkdir(parents=True, exist_ok=True)
+LOGS_DIR = BASE_DIR / "logs"
+LOGS_DIR.mkdir(parents=True, exist_ok=True)
 
 OUTPUT_MD = DOCS_DIR / "04_prisma_flow.md"
 OUTPUT_HTML = INTERIM_DIR / "prisma_flow.html"
+OUTPUT_LOG = LOGS_DIR / "prisma_flow.csv"
 
 
 def count_lines(path: Path) -> int:
@@ -146,6 +150,21 @@ Total incluídos: **{n_included:,}**
     OUTPUT_MD.write_text(md, encoding="utf-8")
     print(f"\nMarkdown salvo em: {OUTPUT_MD}")
 
+    now = datetime.now(timezone.utc).isoformat()
+    log_rows = [
+        {"step": "identified", "n": n_identified, "rule": "registros identificados nos snapshots data/raw", "timestamp": now, "script": "src/pipelines/09_prisma_flow.py"},
+        {"step": "duplicates_removed", "n": n_duplicates, "rule": "doi_norm; fallback title_norm + publication_year + journal_norm", "timestamp": now, "script": "src/pipelines/09_prisma_flow.py"},
+        {"step": "screened", "n": n_after_dedup, "rule": "registros pos-deduplicacao triados por titulo/resumo", "timestamp": now, "script": "src/pipelines/09_prisma_flow.py"},
+        {"step": "excluded", "n": n_excluded, "rule": "fora do escopo ou metadados insuficientes", "timestamp": now, "script": "src/pipelines/09_prisma_flow.py"},
+        {"step": "included_total", "n": n_included, "rule": "anel nuclear + anel estendido", "timestamp": now, "script": "src/pipelines/09_prisma_flow.py"},
+        {"step": "included_core_ex", "n": n_nuclear, "rule": "expressao exata/reclassificacao programatica", "timestamp": now, "script": "src/pipelines/09_prisma_flow.py"},
+        {"step": "included_adj", "n": n_extended, "rule": "campos cognatos de governanca/administracao/reforma judicial", "timestamp": now, "script": "src/pipelines/09_prisma_flow.py"},
+    ]
+    for reason, cnt in exclusion_reasons.items():
+        log_rows.append({"step": f"excluded_{reason}", "n": cnt, "rule": reason, "timestamp": now, "script": "src/pipelines/09_prisma_flow.py"})
+    pd.DataFrame(log_rows).to_csv(OUTPUT_LOG, index=False, encoding="utf-8-sig")
+    print(f"Log PRISMA salvo em: {OUTPUT_LOG}")
+
     # ── HTML ───────────────────────────────────────────────────────────
     reasons_html = "".join(
         f"<div style='font-size:12px;color:#666;margin-left:10px;'>{reason}: {cnt:,}</div>"
@@ -177,7 +196,7 @@ body {{ font-family: Arial, sans-serif; max-width: 700px; margin: 40px auto; bac
 <div class="box">
     <h3>Identification</h3>
     <div class="n">{n_identified:,}</div>
-    <div class="detail">registros identificados em 4 bases</div>
+    <div class="detail">registros identificados nos snapshots ativos</div>
 </div>
 <div class="arrow">▼</div>
 

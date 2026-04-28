@@ -124,27 +124,33 @@ Coleta de referências bibliográficas (referenced_works) e abstracts via OpenAl
 | 13 | Coleta SciELO | API SciELO | `data/raw/scielo_results.csv` |
 | 13b | Review SciELO | `data/raw/scielo_results.csv` | Console |
 | 06 | Merge cross-base | `data/raw/*_refined.csv` + SciELO | `data/interim/01_merged_all_sources.csv` |
-| 07 | Deduplicação inter-bases | 01_merged | `data/interim/02_deduplicated.csv` |
+| 07 | Deduplicação inter-bases | 01_merged | `data/interim/02_deduplicated.csv` + `logs/dedup_impact.csv` |
 | 08 | Triagem PRISMA | 02_deduplicated | `data/interim/03_screened.csv` + `03_excluded.csv` |
 | 08b | Limpeza pós-triagem | 03_screened | `data/interim/04_cleaned.csv` |
 | 08c | Reclassificação nuclear | 04_cleaned | `data/interim/05_reclassified.csv` |
 | 08d | Ajuste final | 05_reclassified | `data/interim/06_frozen_corpus.csv` |
-| 09 | PRISMA flow diagram | Todos os interim | `docs/04_prisma_flow.md` |
+| 09 | PRISMA flow diagram | Todos os interim | `docs/04_prisma_flow.md` + `logs/prisma_flow.csv` |
 | 10 | Exportação bibliometrix | 06_frozen | `data/final/corpus_*.csv` |
 | 11 | Enriquecimento de referências | corpus_nuclear | `data/interim/07_nuclear_*.csv` |
 | 12 | Completude de metadados | 06_frozen + 07_enriched | `data/interim/08_metadata_*.csv` |
+| 14 | Orquestrador (pipeline completo) | `data/raw/` | Executa 06→07→08→08b→08c→08d→09→10→16→12 |
+| 16 | Comparação suplemento brasileiro | `data/brazil_supplement.csv` + corpus | `outputs/tables/brazil_supplement_comparison.csv` |
+| 17 | Exportação snapshot de rede | corpus_nuclear | `outputs/network/` |
 
 ## 7. Situação atual
+
+Rodada principal executada em 28/04/2026 (quatro bases globais, modo offline):
 
 | Etapa | Status |
 |---|---|
 | Coleta OpenAlex, Scopus, Crossref, Semantic Scholar | Concluída |
-| Coleta SciELO | Em execução |
-| Merge e deduplicação | Reprocessar após SciELO |
-| Triagem e reclassificação | Reprocessar após SciELO |
-| Enriquecimento (referências/abstracts) | Reprocessar para nuclear final |
-| Completude de metadados | Reprocessar |
-| Análise bibliométrica (QMD) | Reprocessar com corpus atualizado |
+| Coleta SciELO | Suplemento opcional — não integrado ao corpus principal |
+| Merge e deduplicação | Concluída — 7.161 identificados → 5.968 após dedup |
+| Triagem e reclassificação | Concluída — 115 nuclear / 4.811 estendido / 1.042 excluídos |
+| Enriquecimento (referências/abstracts) | Concluída — 31/115 registros nucleares com referências OpenAlex |
+| Suplemento brasileiro | Comparação externa — 285 candidatos, 284 ausentes do corpus congelado |
+| Completude de metadados | Concluída |
+| Análise bibliométrica (QMD) | Relatório renderizado (DOCX) — corpus congelado em `06_frozen_corpus.csv` |
 
 ## 8. Repositório
 
