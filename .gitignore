@@ -31,6 +31,20 @@ __pycache__/
 *.key
 *.pem
 
+# Manuscritos (não publicar antes da submissão ao periódico)
+relatorio_bibliometrico*.qmd
+relatorio_bibliometrico*.docx
+*_revisado.qmd
+*_revisado.docx
+*_copy.qmd
+*_copy.docx
+enapad_reference.docx
+artigo_*.md
+artigo_*.qmd
+artigo_*.docx
+Review_GPT/
+files_claude/
+
 # Backups/arquivos soltos
 *.tgz
 
