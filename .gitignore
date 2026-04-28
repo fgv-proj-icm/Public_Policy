@@ -31,3 +31,6 @@ __pycache__/
 
 # Backups/arquivos soltos
 *.tgz
+
+# Claude Code (configurações locais)
+.claude/
