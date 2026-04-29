@@ -8,13 +8,17 @@ pipeline:
 
 paths:
   frozen_corpus: data/interim/06_frozen_corpus.csv
+  frozen_corpus_v2: data/interim/07_frozen_corpus_v2.csv
   prisma_log: logs/prisma_flow.csv
+  prisma_log_v2: logs/prisma_flow_v2.csv
   dedup_impact: logs/dedup_impact.csv
   brazil_supplement_report: outputs/tables/brazil_supplement_comparison.csv
   network_dir: outputs/network
 
 brazil_supplement:
   curated_file: data/brazil_supplement.csv
+  candidates_file: data/brazil_supplement_candidates.csv
+  decisions_file: data/manual/brazil_curation_decisions.csv
   raw_files:
     - data/raw/scielo_results.csv
     - data/raw/google_scholar_pop_nuclear_results.csv

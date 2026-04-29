@@ -36,6 +36,8 @@ PIPELINE_STEPS = [
     ("17_export_network_snapshot.py", "Exportacao offline da rede de co-citacao"),
 ]
 
+BRAZIL_STEP = ("18_brazil_curation_merge.py", "Curadoria e merge do suplemento Brasil")
+
 ENRICH_STEPS = [
     ("11_enrich_references.py", "Enriquecimento de referencias OpenAlex"),
     ("12_metadata_completeness.py", "Completude de metadados"),
@@ -137,6 +139,22 @@ def main() -> None:
     for script, desc in PIPELINE_STEPS:
         run_script(script, desc)
 
+    # Step 18 — curadoria do suplemento Brasil (condicional)
+    include_brazil = bool(
+        config.get("pipeline", {}).get("include_brazil_supplement", False)
+    )
+    if include_brazil:
+        run_script(*BRAZIL_STEP)
+    else:
+        print(f"\n  [skip] {BRAZIL_STEP[1]} (pipeline.include_brazil_supplement=false)")
+
+    # Detectar corpus ativo (v2 se existir, senão v1)
+    frozen_v2 = BASE_DIR / "data" / "interim" / "07_frozen_corpus_v2.csv"
+    if frozen_v2.exists():
+        print(f"  Corpus ativo: {frozen_v2.name} (suplemento Brasil incorporado)")
+    else:
+        print(f"  Corpus ativo: 06_frozen_corpus.csv (v1)")
+
     if args.skip_enrich or not config.get("pipeline", {}).get("refresh_openalex_references", False):
         run_script("12_metadata_completeness.py", "Completude de metadados")
     else:
@@ -145,6 +163,7 @@ def main() -> None:
 
     print("\nPipeline concluido.")
     print("Render final: quarto render relatorio_bibliometrico_politica_judiciaria.qmd --to docx")
+    print("Comando 1-linha: make pipeline")
 
 
 if __name__ == "__main__":
