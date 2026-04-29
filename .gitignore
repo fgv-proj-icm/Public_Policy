@@ -9,9 +9,11 @@
 data/raw/*
 data/interim/*
 data/final/*
+data/cache/
 !data/raw/.gitkeep
 !data/interim/.gitkeep
 !data/final/.gitkeep
+# data/manual/ e data/brazil_supplement_candidates.csv SÃO versionados (decisões humanas)
 
 # Logs (mantém template)
 logs/*
