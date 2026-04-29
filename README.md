@@ -1,5 +1,11 @@
 # Public_Policy
 
+> **Reprodução em 1 linha:**
+>
+> ```bash
+> pip install -r requirements.txt && make pipeline
+> ```
+
 Repositório da pesquisa sobre **política judiciária como campo emergente**, com foco na **identificação, triagem e análise bibliométrica** da produção acadêmica que se nomeia explicitamente como *política judiciária*, *política judicial* ou *judicial policy*.
 
 O projeto combina **coleta multibase**, **deduplicação cross-base**, **triagem inspirada em PRISMA**, organização do corpus em **dois anéis** (nuclear e estendido), suplemento brasileiro rastreável e produção de relatório final em **Quarto**.
@@ -98,113 +104,161 @@ relatorio_bibliometrico_politica_judiciaria.qmd
 Render:
 quarto render relatorio_bibliometrico_politica_judiciaria.qmd --to docx
 
-## Como reproduzir
+## Como reproduzir do zero
 
-### Requisitos verificados
+### Requisitos
 
-- Python 3.14.4
-- Quarto 1.9.37
-- R com pacotes usados no QMD (`bibliometrix`, `tidyverse`, `knitr`, `scales`, `patchwork`, `ggrepel`, `igraph`, `RColorBrewer`)
+- Python 3.11+
+- Quarto 1.9+ (apenas para renderizar o relatório)
+- R com `bibliometrix`, `tidyverse`, `knitr`, `ggplot2`, `igraph` (apenas para o relatório)
 
-### 0) Instalação
+### Instalação
 
-```powershell
+```bash
 pip install -r requirements.txt
 ```
 
-Se usar .env (opcional), configure chaves conforme scripts:
+Configure chaves de API opcionais copiando `.env.example` → `.env`:
 
-OPENALEX_API_KEY (opcional)
-SEMANTIC_SCHOLAR_API_KEY (necessário para coleta via API)
-SCOPUS_API_KEY (necessário para Scopus)
+```env
+OPENALEX_API_KEY=...        # opcional
+SEMANTIC_SCHOLAR_API_KEY=... # para coleta via API
+SCOPUS_API_KEY=...           # para Scopus
+EMAIL_POLITE=seu@email.com  # polite pool OpenAlex
+```
 
-### 1) Coleta SciELO (ArticleMeta)
+### Pipeline principal
 
-Exemplo com ISSNs selecionados:
+```bash
+make pipeline
+# equivalente a: python src/pipelines/14_rebuild_full_pipeline.py --offline --skip-enrich
+```
 
+Executa os steps 06–17 em sequência (merge → dedup → PRISMA → limpeza → nuclear → freeze → export → brasil compare). Seed fixo: `42`.
+
+### Testes e validação
+
+```bash
+make test       # 47 testes unitários (sem dados reais)
+make validate   # valida schema + PRISMA do corpus congelado
+```
+
+### Render do relatório
+
+```bash
+make report
+# equivalente a: quarto render relatorio_bibliometrico_politica_judiciaria.qmd --to docx
+```
+
+### Todos os alvos disponíveis
+
+| Alvo | O que faz |
+|------|-----------|
+| `make setup` | `pip install -r requirements.txt` |
+| `make pipeline` | pipeline offline (06–17) |
+| `make brazil` | curadoria do suplemento Brasil (step 18) |
+| `make enrich` | enriquece metadados via OpenAlex (requer rede) |
+| `make report` | renderiza relatório Quarto |
+| `make test` | pytest (47 testes) |
+| `make validate` | schema + PRISMA do corpus |
+| `make all` | setup + pipeline + validate + test |
+
+---
+
+## Outputs principais
+
+| Arquivo | Descrição | Gerado por |
+|---------|-----------|------------|
+| `data/interim/06_frozen_corpus.csv` | Corpus congelado (4.926 registros) | 08d_final_nuclear_adjustment.py |
+| `data/interim/07_frozen_corpus_v2.csv` | Corpus v2 com suplemento Brasil | 18_brazil_curation_merge.py |
+| `data/final/corpus_nuclear.csv` | Anel nuclear (115 registros) | 10_export_bibliometrix.py |
+| `data/final/corpus_complete.csv` | Corpus completo (nuclear + estendido) | 10_export_bibliometrix.py |
+| `logs/prisma_flow.csv` | Contagens PRISMA | 09_prisma_flow.py |
+| `logs/prisma_flow_v2.csv` | Contagens PRISMA com suplemento Brasil | 18_brazil_curation_merge.py |
+| `outputs/tables/brazil_supplement_candidates.csv` | 285 candidatos Brasil | 16_brazil_supplement_compare.py |
+| `outputs/tables/brazil_supplement_comparison.csv` | Comparação corpus × suplemento | 16_brazil_supplement_compare.py |
+| `outputs/tables/brazil_inclusion_summary.csv` | Resumo da curadoria Brasil | 18_brazil_curation_merge.py |
+| `outputs/tables/metadata_coverage_before_after.csv` | Cobertura antes/depois enrich | 19_enrich_metadata.py |
+| `outputs/network/cocitation_graph.graphml` | Rede de co-citação (nuclear) | 17_export_network_snapshot.py |
+| `data/manual/brazil_curation_decisions.csv` | Decisões humanas Brasil (versionado) | humano + 18_brazil_curation_merge.py |
+
+---
+
+## Curadoria do suplemento Brasil
+
+O suplemento Brasil identificou **285 candidatos** (284 novos, 214 com anel nuclear sugerido) não presentes no corpus principal. Para incorporá-los:
+
+**Passo 1 — Gerar planilha de revisão** (já gerada automaticamente pelo pipeline):
+
+```bash
+python src/pipelines/18_brazil_curation_merge.py
+```
+
+Abre/cria `data/manual/brazil_curation_decisions.csv` com colunas:
+`id_local, doi, title, year, journal, source, match_status, suggested_ring, decision, reason`
+
+**Passo 2 — Preencher decisões:**
+Para cada linha com `match_status=new`, preencher:
+
+- `decision`: `include` ou `exclude`
+- `reason`: breve justificativa
+
+**Passo 3 — Aplicar e gerar corpus v2:**
+
+```bash
+python src/pipelines/18_brazil_curation_merge.py
+```
+
+Gera `data/interim/07_frozen_corpus_v2.csv`, `logs/prisma_flow_v2.csv` e `outputs/tables/brazil_inclusion_summary.csv`.
+
+**Passo 4 — Ativar no config** (se quiser que o pipeline principal use v2):
+
+```yaml
+# config.yml
+pipeline:
+  include_brazil_supplement: true
+```
+
+---
+
+### Coleta SciELO (ArticleMeta)
+
+```bash
 python src/pipelines/13_collect_scielo.py --issn 0034-7612 --max-articles 500 --sleep 0.05
 python src/pipelines/13b_review_scielo.py
+```
 
-### 2) Google Scholar via PoP (importação)
+### Google Scholar via Publish or Perish
 
-Após rodar PoP e exportar o Results CSV:
+Após exportar o Results CSV do PoP:
 
-### Nuclear
-
+```bash
 python src/pipelines/04_import_pop_scholar.py \
   --input data/raw/google_scholar_pop_nuclear_results.csv \
   --query-term pop_nuclear \
   --output google_scholar_pop_nuclear.csv
-
-### Extended
-
-python src/pipelines/04_import_pop_scholar.py \
-  --input data/raw/google_scholar_pop_extended_results.csv \
-  --query-term pop_extended \
-  --output google_scholar_pop_extended.csv
-
-Opcional (recomendado): consolidar em um único arquivo:
-
-python - <<'PY'
-import pandas as pd
-a=pd.read_csv("data/raw/google_scholar_pop_nuclear.csv")
-b=pd.read_csv("data/raw/google_scholar_pop_extended.csv")
-out=pd.concat([a,b], ignore_index=True)
-out.to_csv("data/raw/google_scholar_pop_results.csv", index=False, encoding="utf-8-sig")
-print("OK total:", len(out), "nuclear:", len(a), "extended:", len(b))
-PY
-
-### 3) Pipeline principal em comando único
-
-```powershell
-$env:PYTHONIOENCODING='utf-8'
-python src\pipelines\14_rebuild_full_pipeline.py --offline --skip-enrich
 ```
 
-Esse comando executa:
+Para incluir PoP no corpus principal:
 
-`06_merge_cross_base.py` → `07_dedup_cross_base.py` → `08_screen_prisma.py` → `08b_clean_and_enrich.py` → `08c_reclassify_nuclear.py` → `08d_final_nuclear_adjustment.py` → `09_prisma_flow.py` → `10_export_bibliometrix.py` → `16_brazil_supplement_compare.py` → `12_metadata_completeness.py`.
-
-Seed documentada: `42`.
-
-Logs principais:
-
-- `logs/prisma_flow.csv`
-- `logs/dedup_impact.csv`
-- `data/interim/06_frozen_corpus.csv`
-- `outputs/tables/brazil_supplement_comparison.csv`
-
-### 4) Render do relatório
-
-```powershell
-quarto render relatorio_bibliometrico_politica_judiciaria.qmd --to docx
+```bash
+python src/pipelines/14_rebuild_full_pipeline.py --offline --with-pop --skip-enrich
 ```
 
-Para incluir Google Scholar/PoP no corpus principal, rode explicitamente:
-
-```powershell
-python src\pipelines\14_rebuild_full_pipeline.py --offline --with-pop --skip-enrich
-```
-
-Use essa opção apenas após curadoria dos candidatos, pois PoP/Scholar é snapshot manual e pode conter literatura cinzenta ou duplicatas bibliográficas imperfeitas.
+---
 
 ### Dados e versionamento
-Não versionar data/raw, data/interim, data/final (apenas .gitkeep).
-Versionar:
-scripts (src/pipelines)
-documentação (docs/)
-logs/runlog.md
-relatório (.qmd), referências (.bib) e estilo (.csl)
+
+Não versionados: `data/raw/`, `data/interim/`, `data/final/`, `data/cache/`
+
+Versionados: `src/`, `docs/`, `tests/`, `logs/prisma_flow.csv`, `logs/dedup_impact.csv`,
+`data/manual/`, `data/brazil_supplement_candidates.csv`, `config.yml`, `requirements.txt`
+
+---
 
 ### Uso de inteligência artificial
 
-Ferramentas de IA foram utilizadas como apoio técnico/metodológico em tarefas como:
-
-depuração e organização de pipelines,
-estruturação documental,
-revisão técnica e padronização.
-
-Decisões substantivas (problema de pesquisa, critérios de triagem, delimitação do corpus e interpretação) permanecem sob responsabilidade do pesquisador.
+Ferramentas de IA foram utilizadas como apoio técnico/metodológico (depuração e organização de pipelines, estruturação documental, revisão técnica). Decisões substantivas (problema de pesquisa, critérios de triagem, delimitação do corpus e interpretação) permanecem sob responsabilidade do pesquisador.
 
 ### Situação atual
 
