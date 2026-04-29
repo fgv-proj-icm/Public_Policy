@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: Testes unitários e validação de imports
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Verificar imports dos módulos utils e validation
+        run: |
+          python -c "
+          import sys; sys.path.insert(0, 'src')
+          from utils.normalize import (
+              normalize_doi, normalize_title, normalize_journal,
+              extract_year, compute_metadata_score, dedup_key,
+          )
+          from validation.schema_check import (
+              validate_schema, check_duplicates, check_prisma_consistency,
+          )
+          print('Imports OK')
+          "
+
+      - name: Rodar testes pytest
+        run: python -m pytest tests/ -v --tb=short --cov=src --cov-report=term-missing
+
+      - name: Verificar import do orquestrador
+        run: |
+          python -c "
+          import ast, sys
+          # Valida sintaxe dos scripts principais sem executá-los
+          scripts = [
+              'src/pipelines/18_brazil_curation_merge.py',
+              'src/pipelines/19_enrich_metadata.py',
+              'src/utils/normalize.py',
+              'src/validation/schema_check.py',
+          ]
+          for s in scripts:
+              with open(s, encoding='utf-8') as f:
+                  ast.parse(f.read())
+              print(f'Sintaxe OK: {s}')
+          "
