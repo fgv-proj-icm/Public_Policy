@@ -14,10 +14,13 @@ Uso:
 """
 
 from pathlib import Path
+import sys
 import pandas as pd
 from datetime import datetime, timezone
 
 BASE_DIR = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(BASE_DIR / "src"))
+from utils.normalize import compute_metadata_score as _compute_metadata_score
 INTERIM_DIR = BASE_DIR / "data" / "interim"
 LOGS_DIR = BASE_DIR / "logs"
 LOGS_DIR.mkdir(parents=True, exist_ok=True)
@@ -28,19 +31,7 @@ OUTPUT_IMPACT = LOGS_DIR / "dedup_impact.csv"
 
 
 def compute_metadata_score(row) -> int:
-    """Pontua completude de metadados para decidir qual registro manter."""
-    score = 0
-    if row.get("doi_norm", "") not in ("", "nan"):
-        score += 3
-    if row.get("abstract", "") not in ("", "nan"):
-        score += 2
-    if row.get("authors", "") not in ("", "nan"):
-        score += 1
-    if row.get("journal_norm", "") not in ("", "nan"):
-        score += 1
-    if row.get("language", "") not in ("", "nan"):
-        score += 1
-    return score
+    return _compute_metadata_score(row)
 
 
 def main():

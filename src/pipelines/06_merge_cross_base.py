@@ -1,7 +1,10 @@
 from pathlib import Path
+import sys
 import pandas as pd
 
 BASE_DIR = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(BASE_DIR / "src"))
+from utils.normalize import normalize_doi, normalize_title, normalize_journal, extract_year
 RAW_DIR = BASE_DIR / "data" / "raw"
 INTERIM_DIR = BASE_DIR / "data" / "interim"
 INTERIM_DIR.mkdir(parents=True, exist_ok=True)
@@ -96,16 +99,10 @@ def main():
 
     merged = pd.concat(frames, ignore_index=True)
 
-    merged["doi_norm"] = (
-        merged["doi"].fillna("").astype(str).str.strip().str.lower()
-        .str.replace(r"^https?://doi\.org/", "", regex=True)
-    )
-    merged["title_norm"] = merged["title"].fillna("").astype(str).str.strip().str.lower()
-    merged["journal_norm"] = merged["journal"].fillna("").astype(str).str.strip().str.lower()
-    merged["publication_year"] = (
-    merged["publication_year"].fillna("").astype(str).str.strip()
-    .str.extract(r"((?:19|20)\d{2})", expand=False).fillna("")
-)
+    merged["doi_norm"] = merged["doi"].apply(normalize_doi)
+    merged["title_norm"] = merged["title"].apply(normalize_title)
+    merged["journal_norm"] = merged["journal"].apply(normalize_journal)
+    merged["publication_year"] = merged["publication_year"].apply(extract_year)
     output = INTERIM_DIR / "01_merged_all_sources.csv"
     merged.to_csv(output, index=False, encoding="utf-8-sig")
 

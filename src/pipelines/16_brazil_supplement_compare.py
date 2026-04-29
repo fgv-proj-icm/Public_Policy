@@ -10,10 +10,13 @@ titulo+ano+periodico e reporta quantos itens ja estavam no corpus congelado.
 
 from pathlib import Path
 import re
+import sys
 import pandas as pd
 import yaml
 
 BASE_DIR = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(BASE_DIR / "src"))
+from utils.normalize import normalize_doi, normalize_title, normalize_journal, extract_year
 CONFIG_FILE = BASE_DIR / "config.yml"
 INTERIM_DIR = BASE_DIR / "data" / "interim"
 OUTPUT_TABLES = BASE_DIR / "outputs" / "tables"
@@ -49,18 +52,14 @@ def ensure_cols(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def norm_text(value) -> str:
-    if pd.isna(value):
-        return ""
-    text = str(value).strip().lower()
-    text = re.sub(r"https?://doi\.org/", "", text)
-    return text
+    return normalize_doi(value) if not pd.isna(value) else ""
 
 
 def norm_key(df: pd.DataFrame) -> pd.Series:
-    doi = df["doi"].fillna("").map(norm_text)
-    title = df["title"].fillna("").map(norm_text)
-    year = df["publication_year"].fillna("").astype(str).str.extract(r"((?:19|20)\d{2})", expand=False).fillna("")
-    journal = df["journal"].fillna("").map(norm_text)
+    doi = df["doi"].apply(normalize_doi)
+    title = df["title"].apply(normalize_title)
+    year = df["publication_year"].apply(extract_year)
+    journal = df["journal"].apply(normalize_journal)
     fallback = title + "::" + year + "::" + journal
     return doi.where(doi != "", fallback)
 
@@ -156,9 +155,14 @@ def main() -> None:
     supplement.to_csv(supplement_out, index=False, encoding="utf-8-sig")
     comparison.to_csv(comparison_out, index=False, encoding="utf-8-sig")
 
+    # Copia candidatos para data/ para servir de entrada ao step 18
+    data_candidates = BASE_DIR / "data" / "brazil_supplement_candidates.csv"
+    supplement.to_csv(data_candidates, index=False, encoding="utf-8-sig")
+
     print("Suplemento Brasil")
     print(comparison.to_string(index=False))
     print(f"Arquivos: {comparison_out}, {supplement_out}")
+    print(f"Candidatos (entrada curadoria): {data_candidates}")
 
 
 if __name__ == "__main__":
