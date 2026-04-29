@@ -7,5 +7,6 @@ networkx
 matplotlib
 pyarrow
 tenacity
-requests
 beautifulsoup4
+pytest>=8.0
+pytest-cov
