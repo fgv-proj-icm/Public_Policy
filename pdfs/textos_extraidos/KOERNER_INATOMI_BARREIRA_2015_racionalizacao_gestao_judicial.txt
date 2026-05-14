@@ -1,0 +1,1869 @@
+326 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+	  
+	  
+	  
+	  
+Dez	  anos	  de	  racionalização	  da	  gestão	  judicial	  no	  
+Brasil:	  efeitos	  e	  perspectivas	  
+Ten	  years	  of	  rationalization	  of	  judicial	  management	  in	  Brazil:	  effects	  and	  perspectives	  
+	  
+	  
+Andrei	  Koerner	  
+Professor	  de	  ciência	  política	  na	  Unicamp,	  coordenador	  do	  GPD/Ceipoc	  e	  pesquisador	  
+do	  Cedec	  e	  do	  INCT/Ineu.	  E-­‐mail:	  andreik@uol.com.br	  	  
+	  
+Celly	  Cook	  Inatomi	  
+Doutoranda	  no	  Programa	  de	  Pós-­‐Graduação	  em	  Ciência	  Política	  do	  IFCH/Unicamp.	  
+	  
+Karen	  Sakalauska	  Barreira	  
+Doutoranda	  no	  Programa	  de	  Pós-­‐Graduação	  em	  Ciência	  Política	  do	  IFCH/Unicamp.	  
+	  
+Artigo	  recebido	  em	  4	  de	  agosto	  de	  2015	  e	  aceito	  em	  setembro	  de	  2015	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+
+327 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+Resumo	  	  
+O	   artigo	   analisa	   as	   reformas	   do	   Judiciário	   brasileiro	   de	   2005	   a	   2014,	  
+atualizando	  trabalho	  realizado	  em	  2010.	  As	  reformas,	  voltadas	  à	  racionalização	  
+da	  gestão,	  por	  meio	  de	  medidas	  simplificadoras	  dos	  processos	  judiciais	  e	  de	  
+novos	   instrumentos	   gerenciais	   para	   o	   acompanhamento	   dos	   processos	   e	   da	  
+atividade	   dos	   juízes,	   parecem	   bem-­‐sucedidas.	   Exploram-­‐se	   as	   perspectivas	  
+dessas	  reformas,	  considerando	  seus	  efeitos	  e	  seus	  limites,	  do	  ponto	  de	  vista	  da	  
+efetividade	  dos	  direitos	  e	  da	  democratização	  do	  Judiciário.	  
+Palavras-­‐chave:	  Reforma	  do	  Judiciário;	  Conselho	  Nacional	  de	  Justiça;	  Judiciário	  
+e	  democracia	  
+	  
+Abstract	  
+The	  article	  analyzes	  the	  Brazilian	  Judicial	  reforms	  from	  2005	  to	  2014,	  updating	  
+work	   done	   in	   2010.	   The	   article	   analyzes	   the	   Brazilian	   judiciary	   reforms	   from	  
+2005	  to	  2014,	  updating	  work	  done	  in	  2010.	  The	  reforms,	  aimed	  at	  streamlining	  
+the	  management,	  through	  simplifying	  measures	  of	  judicial	  processes	  and	  new	  
+management	   tools	   for	   monitoring	   processes	   and	   activity	   of	   judges	   seem	  
+successful.	  The	  article	  explores	  the	  perspectives	  of	  these	  reforms,	  considering	  
+its	  effects	  and	  its	  limits,	  from	  the	  point	  of	  view	  of	  effectiveness	  of	  rights	  and	  
+the	  judiciary	  democratization.	  
+Key-­‐words:	   Judicial	   reform;	   National	   Council	   of	   Justice;	   Judiciary	   and	  
+democracy	  
+	  
+	  
+	  
+
+328 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+Para	  a	  Clarinha	  
+	  
+Introdução1	  
+	  
+O	   artigo	   apresenta	   uma	   análise	   preliminar	   das	   tendências	   e	   limites	   das	  
+reformas	   do	   Poder	   Judiciário,	   a	   partir	   de	   levantamento	   de	   dados	   sobre	   as	  
+medidas	  adotadas	  de	  2005	  a	  2014.	  São	  analisadas	  as	  medidas	  tomadas	  pelo	  
+Conselho	  Nacional	  de	  Justiça	  (CNJ),	  a	  Secretaria	  de	  Reforma	  do	  Judiciário	  (SRJ)	  
+e	   os	   tribunais,	   a	   variação	   no	   número	   de	   processos	   ingressados	   e	   julgados,	  
+assim	   como	   os	   debates	   políticos	   sobre	   o	   modelo	   institucional	   do	   CNJ	   e	   do	  
+Judiciário.	  Atualiza-­‐se	  a	  análise	  realizada	  em	  2010,	  que	  considerou	  as	  reformas	  
+implementadas	  de	  2004	  a	  2009	  (Koerner,	  Inatomi	  e	  Baratto,	  2010).	  Também	  se	  
+retoma	  discussão	  anterior	  sobre	  reforma	  do	  Judiciário	  e	  democracia	  no	  Brasil	  
+(Koerner,	  1999).	  	  
+A	   análise	   de	   2010	   permitiu	   traçar	   considerações	   importantes	   tanto	  
+sobre	   os	   resultados	   quanto	   sobre	   os	   objetivos	   das	   reformas.	   As	   reformas	  
+implantadas	   após	   2004	   alcançaram	   alguns	   resultados	   esperados:	   os	   juízes	  
+tiveram	  sua	  atividade	  intensificada,	  julgando	  um	  maior	  número	  de	  processos	  
+por	  ano;	  a	  tendência	  ao	  aumento	  explosivo	  dos	  processos	  em	  andamento	  foi	  
+contida;	   e	   a	   conciliação	   ou	   o	   arquivamento	   por	   motivos	   processuais	  
+permitiram	  a	  rejeição	  prévia	  ou	  a	  rápida	  solução	  de	  muitos	  processos.	  Ou	  seja,	  
+havia	   passado	   a	   percepção	   de	   que	   o	   sistema	   judicial	   estava	   próximo	   de	   um	  
+colapso.	  Ao	  mesmo	  tempo,	  contudo,	  os	  dados	  mostraram	  que	  se	  mantinham	  o	  
+déficit	   entre	   processos	   ingressados	   e	   julgados,	   dado	   o	   alto	   número	   de	  
+processos	  novos,	  e	  o	  alto	  patamar	  de	  processos	  em	  andamento.	  
+De	   modo	   geral,	   as	   reformas	   têm	   sido	   voltadas	   à	   racionalização	   da	  
+gestão	   do	   Poder	   Judiciário,	   por	   meio	   de	   novos	   instrumentos	   gerenciais	   de	  
+acompanhamento	  dos	  processos	  e	  da	  atividade	  dos	  juízes.	  Elas	  promovem	  a	  
+ 
+1	   Versão	   preliminar	   apresentada	   no	   Congresso	   “A	   Sociologia	   do	   Direito	   em	   Movimento:	  
+Perspectivas	  da	  América	  Latina”,	  em	  Canoas	  (RS),	  de	  5	  a	  8/05/2015,	  do	  Research	  Committee	  on	  
+Sociology	  of	  Law,	  da	  International	  Sociological	  Association	  (ISA/RCSL),	  com	  organização	  local	  da	  
+Associação	   Brasileira	   de	   Pesquisadores	   em	   Sociologia	   do	   Direito	   (ABRASD)	   e	   os	   cursos	   de	  
+mestrado	  
+em	  
+Direito	  
+do	  
+Unilasalle	  
+e	  
+da	  
+UFRJ.	  
+http://sociologyoflaw2015.com.br/portugues#home.	   Agradecemos	   a	   Angelica	   Cuellar	   Vazquez,	  
+Maria	  Inês	  Bergoglio	  e	  Rodrigo	  G;	  de	  Azevedo	  pelos	  comentários.	  	  
+
+329 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+simplificação	   processual	   e	   formas	   consensuais	   para	   aumentar	   a	   rapidez	   da	  
+tramitação,	   reduzir	   os	   custos	   e	   diminuir	   o	   número	   de	   processos.	   A	   justiça	  
+consensual	  aparece	  como	  panaceia,	  orientando	  inclusive	  as	  políticas	  voltadas	  à	  
+ampliação	  do	  acesso	  ao	  Judiciário	  e	  à	  efetividade	  dos	  direitos.	  	  
+A	   análise	   sublinhou	   o	   fato	   de	   que	   a	   simplificação	   dos	   processos	   cria	  
+problemas	   para	   a	   efetividade	   dos	   direitos	   constitucionais	   dos	   cidadãos.	   A	  
+reformas	   incentivam	   juízes	   e	   partes	   a	   encerrar	   os	   litígios	   na	   primeira	  
+oportunidade,	  e	  com	  isso	  acabam	  por	  implicar	  a	  limitação	  das	  oportunidades	  
+de	  os	  cidadãos	  poderem	  explicitar	  suas	  concepções	  de	  justiça	  e	  de	  efetivarem	  
+seus	  direitos	  no	  curso	  dos	  processos.	  Elas	  suprimem	  as	  oportunidades	  de	  os	  
+litigantes	  enfrentarem	  preconceitos	  de	  senso	  comum	  por	  meio	  da	  exposição	  
+de	   suas	   experiências	   e	   pontos	   de	   vista,	   a	   produção	   de	   provas,	   de	   modo	   a	  
+receberem	   a	   atenção	   de	   todos	   os	   participantes	   às	   suas	   compreensões	  
+normativas	  sobre	  a	  justiça.	  Elas	  limitam	  a	  oportunidade	  de	  focar	  a	  atenção	  nas	  
+questões	  sociais	  e	  normativas	  subjacentes	  aos	  litígios.	  Por	  isso,	  eles	  tendem	  a	  
+reforçar	   a	   indiferença	   às	   desigualdades	   sociais,	   além	   de	   reproduzir	   as	  
+distorções	  para	  as	  oportunidades	  de	  ação	  geradas	  pelas	  condições	  precárias	  
+nas	  quais	  os	  cidadãos	  exercem	  seus	  direitos.	  Enfim,	  as	  reformas	  acabam	  por	  
+reforçar	   a	   baixa	   efetividade	   dos	   direitos	   dos	   cidadãos,	   embora	   aumente	   o	  
+número	  de	  litígios	  ingressados	  e	  julgados	  no	  Judiciário.	  	  
+O	  artigo	  de	  2010	  traçava	  um	  cenário	  no	  qual	  haveria	  intensa	  atividade	  
+dos	   juízes,	   com	   amplo	   acesso	   dos	   cidadãos	   à	   justiça	   e	   gestão	   eficiente	   dos	  
+processos	  judiciais.	  Estimava-­‐se	  que	  o	  número	  de	  novos	  processos	  se	  manteria	  
+em	  altos	  patamares	  e	  os	  processos	  tenderiam	  a	  serem	  julgados	  ou	  encerrados	  
+de	  forma	  muito	  rápida.	  Porém,	  apesar	  das	  reformas,	  o	  resultado	  dos	  processos	  
+judiciais	  apresentaria	  graves	  insuficiências	  do	  ponto	  de	  vista	  da	  efetividade	  dos	  
+direitos	  constitucionais.	  Concluía-­‐se	  que	  as	  reformas	  eram	  insuficientes	  porque	  
+elas	   eram	   cegas	   para	   os	   problemas	   para	   os	   problemas	   de	   efetividade	   dos	  
+direitos	  numa	  sociedade	  desigual	  e	  conflituosa.	  Propunha-­‐se	  que,	  para	  evitar	  a	  
+reprodução	   das	   desigualdades,	   a	   reforma	   deveria	   ampliar	   os	   espaços	   de	  
+deliberação	   nos	   processos,	   nos	   quais	   poderiam	   ser	   expressas	   as	   distintas	  
+experiências	  dos	  sujeitos,	  e	  as	  suas	  próprias	  compreensões	  de	  justiça	  e	  de	  vida	  
+
+330 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+boa.	  Os	  juízes	  deveriam	  realizar	  o	  exame	  dos	  casos	  de	  forma	  mais	  cuidadosa	  e	  
+atenta	   à	   diversidade	   de	   formas	   de	   vida,	   às	   múltiplas	   dimensões	   das	  
+desigualdades	  e	  as	  violações	  sobrepostas	  de	  direitos.	  
+Outro	  ponto	  analisado	  foi	  o	  das	  relações	  entre	  os	  juízes	  e	  os	  dirigentes	  
+dos	   tribunais.	   O	   Conselho	   Nacional	   de	   Justiça	   (CNJ)	   promoveu	   mudanças	  
+administrativas	   profundas	   no	   Judiciário.	   No	   entanto,	   o	   CNJ	   tem	   pouca	  
+capacidade	  de	  implementar	  as	  reformas,	  porque	  elas	  dependem	  dos	  dirigentes	  
+de	  cada	  tribunal.	  Além	  disso,	  os	  novos	  instrumentos	  de	  gestão	  ampliavam	  os	  
+controles	   mais	   estritos	   sobre	   o	   desempenho	   dos	   juízes,	   o	   que	   alterou	   as	  
+relações	   entre	   eles	   e	   os	   seus	   dirigentes,	   e	   colocou	   a	   questão	   da	   própria	  
+legitimidade	  dos	  órgãos	  de	  direção	  do	  Poder	  Judiciário.	  Deste	  modo,	  os	  novos	  
+instrumentos	  de	  gestão	  recolocavam	  na	  pauta	  o	  problema	  da	  democratização	  
+interna	  do	  Judiciário,	  e	  suas	  relações	  com	  a	  participação	  cidadã.	  	  
+O	  presente	  artigo	  atualiza	  os	  dados	  daquele	  artigo	  em	  três	  pontos2:	  a	  
+análise	  das	  recomendações	  do	  CNJ	  para	  os	  tribunais	  implementarem	  a	  reforma	  
+e	   as	   medidas	   adotadas	   pela	   Secretaria	   da	   Reforma	   do	   Judiciário	   (SRJ);	   o	  
+número	  de	  processos	  ingressados	  e	  julgados	  pelos	  tribunais,	  complementados	  
+com	   uma	   apreciação	   dos	   possíveis	   efeitos	   da	   vigência	   do	   Novo	   Código	   de	  
+Processo	  Civil	  (NCPC);	  e,	  enfim,	  a	  atuação	  do	  CNJ	  no	  que	  tange	  às	  políticas	  de	  
+gestão	   estratégica	   do	   Judiciário,	   e	   suas	   relações	   com	   os	   dirigentes	   dos	  
+tribunais	  e	  os	  juízes.	  	  
+Depois	   de	   2009	   verificam-­‐se	   algumas	   inflexões	   importantes	   nas	  
+medidas	  de	  reforma:	  primeiro,	  a	  ênfase	  em	  ações	  voltadas	  à	  efetividade	  dos	  
+direitos	   no	   âmbito	   dos	   serviços	   auxiliares,	   a	   promoção	   da	   consciência	   dos	  
+direitos	  dos	  cidadãos	  e	  a	  ampliação	  do	  acesso	  ao	  Judiciário,	  por	  modalidades	  
+informais	  por	  parte	  do	  CNJ	  e	  da	  SRJ.	  Segundo,	  a	  relativa	  ineficácia	  das	  medidas	  
+voltadas	  à	  diminuição	  do	  déficit	  de	  processos	  julgados	  face	  aos	  ingressados	  e	  à	  
+redução	   do	   acervo	   de	   processos	   em	   andamento,	   com	   exceção	   dos	   tribunais	  
+superiores	  (STF	  e	  STJ).	  As	  reformas	  do	  NCPC,	  com,	  entre	  outras,	  a	  regulação	  
+ 
+2	  O	  artigo	  inicial	  analisou	  três	  temas	  que	  provocam	  alto	  número	  de	  litígios:	  as	  cobranças	  dos	  
+devedores	  do	  Estado	  (executivo	  fiscal);	  os	  direitos	  dos	  consumidores	  em	  tribunais	  de	  pequenas	  
+causas	  (juizados	  especiais);	  e	  os	  litígios	  sobre	  aposentadorias	  (direitos	  previdenciários)	  na	  justiça	  
+federal.	  Esses	  temas	  específicos	  não	  serão	  retomados	  neste	  artigo.	  
+
+331 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+dos	   processos	   repetitivos	   e	   o	   reforço	   do	   caráter	   vinculante	   de	   julgados	   de	  
+tribunais	  superiores,	  deverão	  produzir	  efeitos	  importantes.	  Terceiro,	  depois	  da	  
+tentativa	   frustrada	   de	   impor	   o	   cumprimento	   de	   metas	   em	   2009,	   o	   CNJ	   e	   as	  
+Presidências	   dos	   tribunais	   institucionalizaram	   modalidades	   públicas	   e	  
+consensuais	   para	   a	   adoção	   das	   metas	   de	   reformas	   e	   de	   desempenho,	   cujo	  
+cumprimento	  é	  agora	  expressamente	  de	  caráter	  indicativo.	  Recentemente,	  o	  
+CNJ	  passou	  a	  tomar	  o	  cumprimento	  das	  metas	  como	  indicadores	  para	  decisões	  
+sobre	   a	   avaliação	   dos	   programas	   elaborados	   pelos	   tribunais.	   Esses	   dados	  
+indicam	  a	  institucionalização	  do	  papel	  do	  CNJ	  como	  órgão	  de	  planejamento	  e	  
+gestão	  do	  Judiciário	  a	  nível	  nacional	  e	  tendências	  não	  isentas	  de	  tensões.	  
+Pode-­‐se	   entrever	   a	   permanência	   de	   problemas,	   relacionados	   a	   duas	  
+questões	   centrais	   não	   tematizadas	   pelas	   políticas	   de	   reforma.	   Primeiro,	   o	  
+número	   de	   processos	   tenderá	   a	   continuar	   aumentando,	  pois	   as	   reformas	   se	  
+dão	   num	   quadro	   de	   democracia	   e	   de	   participação	   política,	   mas	   com	  
+desigualdades	   sociais	   e	   frágeis	   ações	   pela	   efetividade	   dos	   direitos.	   Dada	   a	  
+conflitualidade	   das	   relações	   sociais	   e	   violações	   sobrepostas	   de	   direitos	   em	  
+nosso	   país,	   os	   cidadãos	   continuarão	   a	   buscar	   o	   reconhecimento	   dos	   seus	  
+direitos	   pelas	   vias	   institucionalizadas	   que	   lhes	   sejam	   acessíveis,	   sem	   excluir	  
+outras	  formas	  de	  ação	  individual	  ou	  coletiva.	  O	  acesso	  ao	  Judiciário	  tem	  sido	  
+promovido	   e	   facilitado	   por	   políticas	   estatais,	   em	   particular	   campanhas	   de	  
+conscientização	  e	  a	  expansão	  dos	  serviços	  de	  defensoria.	  A	  melhoria	  relativa	  
+da	  eficiência	  do	  Judiciário	  produzirá	  um	  “efeito-­‐demonstração”	  para	  potenciais	  
+usuários,	  que	  passarão	  a	  vê-­‐lo	  como	  viável	  contra	  violações	  de	  seus	  direitos.	  
+Enfim,	   as	   reformas	   serão	   insuficientes	   para	   alterar	   o	   cálculo	   de	   grandes	  
+corporações	   a	   transferirem	   aos	   usuários	   o	   ônus	   de	   tornar	   efetivos	   seus	  
+direitos,	  no	  Judiciário	  ou	  noutro	  lócus	  de	  negociação.	  Elas	  tendem,	  inclusive	  a	  
+serem	  incentivadas	  a	  continuarem	  nessa	  via,	  na	  medida	  em	  que	  as	  reformas	  
+enfatizam	  o	  discurso	  do	  consenso	  e	  da	  transigência,	  baseadas	  no	  inadequado	  
+diagnóstico	  de	  uma	  cultura	  da	  litigação	  no	  país3.	  	  
+ 
+3	  A	  cultura	  da	  litigação	  estaria	  na	  raiz	  do	  número	  excessivo	  de	  processos	  porque	  os	  indivíduos	  
+prefeririam	  provocar	  a	  autoridade	  judicial	  para	  os	  seus	  conflitos,	  deixando	  de	  exercer	  a	  
+negociação	  e	  a	  resolução	  consensual.	  
+
+332 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+Segundo,	   os	   problemas	   administrativos	   e	   as	   tensões	   internas	   do	  
+Judiciário	   continuarão	   presentes,	   suas	   respostas	   às	   demandas	   sociais	  
+permanecerão	  inadequadas	  e	  os	  espaços	  de	  participação	  cidadã	  manter-­‐se-­‐ão	  
+bastante	  limitados.	  Embora	  tenha	  promovido	  a	  integração	  dos	  tribunais,	  o	  seu	  
+planejamento	  estratégico	  e	  controle	  de	  suas	  atividades,	  a	  reforma	  fortaleceu	  o	  
+fechamento	  da	  instituição	  sobre	  si	  mesma.	  A	  resposta	  às	  tensões	  internas,	  com	  
+o	   aumento	   da	   intensidade	   do	   trabalho	   e	   dos	   controles	   sobre	   os	   juízes	   e	  
+servidores,	  
+tem	  
+sido	  
+uma	  
+limitada	  
+ampliação	  
+da	  
+participação	  
+de	  
+representantes	   internos	   nas	   decisões	   e	   o	   atendimento	   de	   demandas	  
+“sindicais”,	   por	   melhores	   condições	   de	   trabalho	   e	   de	   remuneração.	   Os	  
+dirigentes	  do	  Judiciário	  tenderão	  –	  ainda	  mais	  se	  for	  aprovada	  a	  emenda	  das	  
+eleições	   diretas	   para	   a	   direção	   dos	   tribunais	   –	   a	   se	   tornarem	   porta-­‐vozes	  
+perante	  os	  representantes	  das	  demandas	  organizadas	  de	  juízes	  e	  servidores,	  
+justificadas	   pela	   melhoria	   dos	   serviços	   jurisdicionais.	   Porém,	   na	   ausência	   de	  
+participação	   externa,	   e	   dada	   a	   permeabilidade	   da	   direção	   dos	   tribunais	   a	  
+demandas	   internas	   de	   distribuição	   de	   recursos,	   as	   decisões	   tenderão	   a	  
+priorizar	  benefícios	  para	  os	  seus	  membros,	  em	  detrimento	  de	  investimentos	  
+para	   ampliar	   a	   capacidade	   e	   a	   qualidade	   dos	   serviços.	   Desse	   modo,	   o	  
+diagnóstico	   focado	   em	   questões	   internas	   combina	   reformas	   gerenciais	   e	  
+insulamento	   institucional	   do	   Judiciário,	   tendendo	   a	   reforçar	   os	   problemas	  
+existentes.	  	  
+Em	   resumo,	   o	   presente	   artigo	   é	   crítico	   em	   relação	   às	   políticas	   de	  
+reforma	   porque	   considera	   que	   partem	   de	   um	   diagnóstico	   inadequado	   e	  
+adotam	  medidas	  insuficientes	  e	  contraditórias.	  Considera-­‐se	  que	  os	  problemas	  
+do	  Judiciário	  são	  de	  gestão	  e	  complexidade	  dos	  procedimentos,	  e	  que	  existiria	  
+em	   nossa	   sociedade	   uma	   “cultura	   da	   litigação”	   a	   ser	   substituída	   por	   uma	  
+cultura	  do	  consenso.	  Omite-­‐se	  o	  caráter	  estrutural	  dos	  conflitos	  sociais,	  que	  
+resultaram	  numa	  sociedade	  desigual	  e	  violenta,	  com	  precárias	  condições	  para	  
+o	  exercício	  dos	  direitos.	  Elude-­‐se	  a	  dimensão	  institucional	  dos	  problemas,	  que	  
+dizem	   respeito	   à	   inexistência	   de	   espaços	   para	   a	   participação	   cidadã	   no	  
+exercício	  da	  jurisdição	  e	  na	  sua	  administração.	  
+
+333 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+As	   medidas	   são	   contraditórias	   porque,	   por	   um	   lado,	   elas	   partem	   do	  
+insulamento	  completo	  do	  Judiciário	  e,	  por	  outro,	  elas	  se	  esforçam	  em	  eliminar	  
+um	   estoque	   de	   processos	   cujo	   aumento	   é	   incentivado	   pelas	   suas	   próprias	  
+ações.	  O	  insulamento	  resulta	  da	  trajetória	  histórica	  de	  construção	  do	  Estado	  
+no	   Brasil,	   sustentada	   atualmente	   por	   políticos	   conservadores	   e	   os	   próprios	  
+juízes.	   A	   partir	   dela	   foram	   derrotadas	   as	   propostas	   de	   participação	   cidadã	  
+durante	  a	  Constituinte	  e,	  mais	  tarde,	  na	  reforma	  do	  Judiciário.	  Com	  isso,	  tem-­‐
+se	   uma	   visão	   unilateral	   e	   tecnicizada	   dos	   problemas,	   para	   a	   definição	   das	  
+políticas	   sobre	   a	   estrutura	   e	   gestão	   dos	   órgãos	   judiciais,	   e	   a	   condução	   dos	  
+processos	  judiciais.	  Por	  sua	  vez,	  o	  discurso	  da	  reforma,	  patrocinado	  pelo	  CNJ,	  a	  
+SRJ,	  os	  tribunais,	  MP	  e	  defensorias	  é	  o	  da	  promoção	  do	  acesso	  à	  justiça	  e	  da	  
+efetividade	   dos	   direitos.	   No	   entanto,	   eles	   são	   acompanhados	   por	   medidas	  
+constantes	  em	  direção	  oposta:	  o	  enxugamento	  do	  estoque	  pela	  eliminação	  de	  
+processos	  pelos	  meios	  mais	  rápidos	  possíveis	  e	  a	  promoção	  de	  uma	  ‘cultura	  do	  
+consenso’	  que	  tem	  como	  destinatários	  principais	  aqueles	  que	  historicamente	  
+têm	  os	  seus	  direitos	  violados.	  
+O	  artigo	  tem	  três	  partes:	  a	  primeira	  apresenta	  as	  medidas	  de	  reforma	  
+adotadas	   pelo	   CNJ	   e	   a	   SRJ;	   a	   segunda,	   as	   tendências	   dos	   números	   de	  
+processos,	  com	  uma	  apreciação	  das	  inovações	  trazidas	  pelo	  NCPC;	  a	  terceira	  
+analisa	  as	  políticas	  de	  gestão	  do	  CNJ.	  
+	  
+	  
+As	  medidas	  de	  reforma	  do	  poder	  judiciário	  
+	  
+O	   artigo	   original	   analisou	   as	   reformas	   adotadas	   por	   um	   conjunto	   amplo	   de	  
+órgãos	  do	  Estado	  federal:	  o	  CNJ,	  a	  SRJ,	  a	  Advocacia	  Geral	  da	  União	  (AGU)	  e	  
+iniciativas	   de	   juízes	   individuais.	   Para	   o	   período	   posterior	   2009	   serão	  
+apresentados	  dados	  sobre	  a	  atuação	  do	  CNJ	  e	  informações	  sobre	  as	  linhas	  de	  
+ação	  da	  SRJ.	  
+Para	  analisar	  a	  reforma	  judicial	  brasileira	  no	  período	  de	  2004	  a	  2008,	  
+levantou-­‐se	   um	   total	   de	   222	   medidas,	   que	   foram	   classificadas	   segundo	   seus	  
+domínios,	  meios	  e	  objetivos.	  A	  característica	  apresentada	  pelas	  reformas	  foi	  a	  
+
+334 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+racionalização	  e	  modernização	  da	  gestão	  do	  Judiciário,	  na	  linha	  da	  agenda	  que	  
+se	  formou	  a	  partir	  de	  meados	  dos	  anos	  noventa4.	  Foram	  adotadas	  mudanças	  
+administrativas	  
+nos	  
+tribunais,	  
+a	  
+informatização,	  
+a	  
+simplificação	  
+de	  
+procedimentos,	  a	  uniformização	  do	  entendimento	  sobre	  a	  aplicação	  das	  leis	  e	  
+a	   conciliação.	   As	   reformas	   voltadas	   a	   tornar	   mais	   efetivos	   os	   direitos	  
+resultavam	  de	  iniciativas	  individuais	  da	  AGU	  e	  de	  juízes	  isolados.	  Elas	  eram	  a	  
+prevenção	  de	  litígios,	  a	  ampliação	  do	  acesso,	  o	  reconhecimento	  de	  direitos	  e	  o	  
+fortalecimento	  da	  cidadania.	  Para	  a	  ampliação	  do	  acesso	  ao	  Judiciário	  foram	  
+utilizados,	   sobretudo,	   os	   meios	   informais	   de	   atuação,	   como	   a	   conciliação,	  
+simplificação	   e	   oralidade.	   A	   especialização	   dos	   tribunais	   foi	   negligenciada.	   O	  
+artigo	  indagava	  se	  o	  perfil	  das	  reformas	  seria	  mantido:	  se	  as	  reformas	  futuras	  
+iriam	  combinar	  a	  maior	  eficiência	  do	  Judiciário	  com	  a	  efetividade	  dos	  direitos	  e	  
+garantias	   constitucionais;	   se	   as	   medidas	   simplificadoras	   do	   processo	   judicial	  
+continuariam	  a	  ser	  centrais	  ou	  se	  seria	  redefinido	  o	  conceito	  de	  eficiência	  do	  
+Judiciário,	   considerando-­‐se	   outros	   objetivos	   além	   da	   modernização	   e	  
+racionalização	  da	  gestão.	  	  
+	  
+Para	  o	  período	  2009-­‐2014	  foram	  analisadas	  39	  recomendações	  do	  CNJ	  
+e	  as	  ações	  da	  SRJ	  (BRASIL.	  CNJ,	  2015a	  e	  2015b).	  Em	  termos	  de	  meios	  utilizados,	  
+as	   recomendações	   do	   CNJ	   contêm	   45	   medidas,	   que	   compreendem	   as	   de	  
+melhoria	   de	   infraestrutura	   do	   Poder	   Judiciário,	   como	   a	   uniformização,	   a	  
+simplificação	  e	  a	  conciliação.	  Diminuem	  as	  iniciativas	  para	  a	  informatização	  e	  
+aumentam	  medidas	  para	  a	  especialização	  de	  varas	  e	  tribunais.	  	  
+	  
+Quanto	  aos	  objetivos	  visados	  pelas	  recomendações,	  foram	  isolados	  59	  
+pontos.	   Permanecem	   as	   medidas	   de	   racionalização	   do	   Poder	   Judiciário	   e	  
+modernização	   de	   gestão.	   Mas	   aparecem	   também	   medidas	   para	   o	  
+fortalecimento	  da	  cidadania,	  a	  ampliação	  do	  acesso	  e	  a	  produção	  de	  normas	  
+gerais	   com	   diretrizes	   para	   a	   ação	   conjunta	   dos	   órgãos	   públicos.	   Então,	   as	  
+medidas	   confirmam	   o	   novo	   foco	   da	   atuação	   do	   CNJ	   voltada	   para	   além	   da	  
+eficiência	   e	   da	   gestão.	   A	   questão	   é	   saber	   se	   elas	   chegam	   a	   se	   refletir	   no	  
+número	   de	   processos	   ingressados	   nos	   tribunais,	   e	   se	   melhoram	   a	   qualidade	  
+das	  decisões	  e	  efetividade	  dos	  direitos.	  	  
+ 
+4	  Ver,	  por	  exemplo,	  José	  Renato	  Nalini,	  “A	  reengenharia	  do	  Judiciário”,	  FSP	  de	  26/6/94,	  p.	  4-­‐2.	  
+
+335 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+A	   SRJ	   atua	   como	   órgão	   de	   articulação	   entre	   os	   poderes	   públicos	   no	  
+âmbito	  federal	  e	  estadual,	  o	  Ministério	  Público,	  entidades	  da	  sociedade	  civil	  e	  
+organismos	   internacionais,	   com	   o	   objetivo	   para	   ações	   de	   reforma	   do	  
+Judiciário5.	   Da	   articulação	   resultam	   propostas	   de	   modernização	   da	   gestão,	  
+alterações	   legislativas	   e	   mudanças	   constitucionais.	   Também	   promove	   ações	  
+para	   facilitar	   o	   exercício	   dos	   direitos	   e	   ampliar	   o	   acesso	   à	   justiça	   para	   as	  
+populações	   mais	   pobres.	   A	   partir	   de	   2008,	   realizou	   ações	   como	   o	   Programa	  
+Nacional	  de	  Segurança	  com	  Cidadania	  (Pronasci),	  para	  promover	  a	  inclusão	  de	  
+cidadãos	   que	   se	   encontram	   à	   margem	   do	   sistema	   de	   justiça,	   as	   Casas	   de	  
+Direitos,	  que	  disponibilizam	  serviços	  públicos	  de	  acesso	  à	  Justiça	  e	  à	  cidadania	  
+em	  comunidades	  pobres,	  e	  o	  fortalecimento	  da	  Defensoria	  Pública	  da	  União	  e	  
+dos	   Estados.	   O	   projeto	   Atlas	   de	   Acesso	   à	   Justiça	   faz	   o	   mapeamento	   dos	  
+serviços	  no	  país.	  O	  seu	  secretário,	  Flávio	  Crocce	  Caetano,	  defende	  a	  assessoria	  
+jurídica	   dos	   mais	   pobres	   em	   processos	   judiciais	   pelo	   fortalecimento	   da	  
+Defensoria	  Pública	  e	  da	  ‘advocacia	  solidária’6.	  	  
+Outras	  ações	  voltam-­‐se	  para	  a	  promoção	  de	  diversas	  formas	  de	  justiça	  
+consensual,	   como	   os	   juizados	   especiais,	   juizados	   itinerantes,	   centros	   de	  
+mediação	   e	   justiça	   comunitária,	   considerados	   como	   “importante	   ferramenta	  
+para	  a	  construção	  de	  uma	  autêntica	  política	  de	  democratização	  do	  sistema	  de	  
+Justiça”.	   Elaborada	   e	   financiada	   pela	   SRJ,	   em	   conjunto	   com	   os	   tribunais	   de	  
+justiça,	  a	  justiça	  comunitária	  é	  implantada	  à	  margem	  do	  Judiciário	  comum,	  por	  
+meio	   de	   núcleos	   instalados	   nas	   comunidades,	   compostos	   de	   agentes	   de	  
+mediação	   treinados	   por	   programas	   da	   SRJ	   e	   dos	   tribunais.	   A	   capacitação	   é	  
+realizada	   por	   equipes	   multidisciplinares,	   e	   seu	   conteúdo	   abrange	   noções	  
+básicas	  de	  Direito,	  técnicas	  de	  mediação,	  animação	  de	  redes	  sociais,	  terapia	  
+comunitária,	  direitos	  humanos,	  e	  aulas	  de	  cultura	  cidadã.	  
+Assim,	   a	   ampliação	   do	   acesso	   ao	   Judiciário	   tem	   dois	   focos.	   Por	   um	  
+lado,	  a	  disponibilização	  de	  profissionais	  e	  serviços	  que	  visam	  tornar	  os	  direitos	  
+mais	  efetivos	  e,	  por	  outro,	  a	  promoção	  da	  justiça	  consensual.	  A	  combinação	  é	  
+ 
+5	   As	   informações	   foram	   retiradas	   de	   http://www.justica.gov.br/sua-­‐protecao/reforma-­‐do-­‐
+judiciario/institucional.	  	  
+6	   Secretário	   defende	   política	   nacional	   de	   acesso	   à	   Justiça,	   publicado	   em	   17/12/2014	   17h13.	  
+Disponível	  
+em	  
+http://www.brasil.gov.br/cidadania-­‐e-­‐justica/2014/12/secretario-­‐defende-­‐
+politica-­‐nacional-­‐de-­‐acesso-­‐a-­‐justica	  
+
+336 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+central	  nesse	  conjunto	  de	  ações,	  porque	  a	  ampliação	  do	  acesso	  é	  inseparável	  
+do	  imperativo	  de	  se	  desafogar	  o	  Judiciário,	  e	  daí	  a	  ênfase	  em	  substituir	  o	  litígio	  
+pelo	  consenso.	  Em	  dezembro	  de	  2014,	  Flávio	  Crocce	  Caetano	  afirmava	  que	  a	  
+Secretaria	   se	   atuava	   para	   implantar	   o	   processo	   eletrônico,	   universalizar	   o	  
+atendimento	   pela	   Defensoria	   Pública,	   e	   promover	   a	   mediação	   e	   conciliação	  
+“para	  substituir	  a	  cultura	  do	  litígio	  pela	  cultura	  do	  diálogo	  e	  do	  consenso”7.	  	  
+O	   CNJ	   também	   passou	   a	   promover	   campanhas	   visando	   a	   maior	  
+efetividade	  dos	  direitos	  de	  cidadania	  e	  à	  coordenação	  de	  ações	  do	  Judiciário	  
+com	   outros	   entes	   públicos,	   envolvendo	   instituições	   judiciais	   e	   setores	   da	  
+administração	  pública.	  Definiu	  a	  justiça	  consensual	  como	  uma	  das	  prioridades	  
+da	   Política	   Judiciária	   Nacional,	   e	   criou	   em	   setembro	   de	   2014	   um	   conselho	  
+consultivo	  para	  apoiar	  os	  tribunais	  a	  adotarem-­‐na8.	  No	  VIII	  Encontro	  Nacional	  
+do	   Poder	   Judiciário,	   realizado	   em	   novembro	   de	   2014,	   os	   presidentes	   dos	  
+tribunais	   estabeleceram	   dentre	   as	   metas	   para	   2015	   a	   de	   promover	   mais	  
+conciliações,	  com	  ênfase	  nos	  processos	  dos	  principais	  litigantes	  e	  os	  recursos	  
+repetitivos,	  o	  governo	  federal	  e	  os	  bancos9.	  Outra	  saída	  é	  a	  justiça	  restaurativa,	  
+para	  buscar	  soluções	  pacíficas	  por	  meio	  de	  diálogo	  entre	  as	  partes10.	  	  
+A	   Semana	   Nacional	   de	   Conciliação	   (SNC)	   sintetiza	   os	   esforços	   dos	  
+dirigentes	   de	   tribunais	   para	   a	   justiça	   consensual11.	   O	   evento,	   promovido	  
+anualmente	  pelo	  CNJ	  desde	  2006,	  mobiliza	  milhares	  de	  pessoas:	  em	  2013,	  o	  
+maior	  evento,	  foram	  atendidos	  mais	  de	  600	  mil	  litigantes,	  com	  a	  participação	  
+de	  mais	  de	  seis	  mil	  magistrados,	  cinco	  mil	  juízes	  leigos	  e	  conciliadores	  e	  oito	  
+mil	   colaboradores.	   O	   CNJ	   e	   os	   tribunais	   divulgam	   a	   semana	   nos	   meios	   de	  
+ 
+7	  Ministério	  da	  Justiça	  comemora	  10	  anos	  da	  Reforma	  do	  Judiciário,	  publicado	  em	  18/12/2014	  
+17h15.	   http://www.brasil.gov.br/cidadania-­‐e-­‐justica/2014/12/ministerio-­‐da-­‐justica-­‐comemora-­‐
+10-­‐anos-­‐da-­‐reforma-­‐do-­‐judiciario	  
+8	  Conselho	  consultivo	  vai	  auxiliar	  na	  adoção	  de	  mecanismos	  alternativos	  para	  solução	  de	  litígios	  
+26/09/2014.	   Disponível	   em:	   http://www.cnj.jus.br/noticias/cnj/62118-­‐conselho-­‐consultivo-­‐vai-­‐
+auxiliar-­‐na-­‐adocao-­‐de-­‐mecanismos-­‐alternativos-­‐para-­‐solucao-­‐de-­‐litigios.	  
+9	  Justiça	  priorizará	  conciliações,	  processos	  dos	  maiores	  litigantes	  e	  recursos	  repetitivos	  Publicado	  
+em:	  
+11/11/2014.	  
+Disponível	  
+em	  
+http://www.cnj.jus.br/noticias/cnj/62236-­‐justica-­‐se-­‐
+compromete-­‐a-­‐priorizar-­‐conciliacoes-­‐processos-­‐dos-­‐maiores-­‐litigantes-­‐e-­‐recursos-­‐repetitivos.	  
+10	   Judiciário	   buscará	   mais	   agilidade	   com	   aplicação	   da	   Justiça	   Restaurativa.	   Publicado	   em	  
+12/05/15.	   Disponível	   em:	   http://www.ebc.com.br/noticias/2015/05/judiciario-­‐buscara-­‐mais-­‐
+agilidade-­‐com-­‐aplicacao-­‐da-­‐justica-­‐restaurativa.	  	  
+11	  
+Ver	  
+http://www.cnj.jus.br/programas-­‐e-­‐acoes/conciliacao-­‐mediacao/semana-­‐nacional-­‐de-­‐
+conciliacao.	  
+
+337 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+comunicação,	  promovem	  eventos	  e	  atuam	  para	  convencer	  entidades	  públicas	  
+e	  grandes	  litigantes	  a	  participarem.	  Seu	  objetivo	  é	  conciliar	  o	  maior	  número	  
+possível	   de	   processos,	   o	   que	   é	   valorizado	   quando	   da	   divulgação	   dos	   seus	  
+resultados,	  que	  sublinham	  o	  número	  de	  acordos	  alcançados,	  o	  grau	  de	  sucesso	  
+das	  audiências	  e	  os	  valores	  acordados.	  Mas	  ela	  se	  propõe	  também	  à	  difusão	  de	  
+valores	   da	   negociação	   e	   do	   consenso,	   à	   formação	   de	   mediadores	   e	  
+conciliadores	  e	  à	  divulgação	  de	  informações	  sobre	  direitos	  para	  os	  cidadãos.	  
+No	  entanto,	  os	  resultados	  não	  parecem	  muito	  animadores	  para	  a	  diminuição	  
+do	  estoque	  de	  processos.	  O	  número	  de	  acordos	  passou	  de	  cerca	  de	  47	  mil	  em	  
+2006	  para	  135	  mil	  em	  2008	  e	  172	  mil	  em	  2010,	  com	  aproximadamente	  50%	  de	  
+sucesso	   das	   audiências.	   Em	   2013	   foram	   efetuados	   181	   mil	   acordos,	   o	   maior	  
+número,	  e	  foram	  cerca	  de	  150	  mil	  em	  2014.	  Apesar	  de	  altos,	  esses	  números	  
+representam	   uma	   parcela	   diminuta,	   de	   no	   máximo	   0,2%,	   dos	   processos	   em	  
+andamento	  nos	  tribunais	  do	  país.	  	  
+Desse	   modo,	   tanto	   a	   SRJ	   como	   o	   CNJ	   tomaram	   a	   partir	   de	   2008	  
+promoveram	  a	  ampliação	  do	  acesso	  ao	  Judiciário	  para	  maior	  efetividade	  dos	  
+direitos,	  por	  ações	  que	  assumem	  a	  forma	  de	  justiça	  consensual,	  para	  não	  fazer	  
+aumentar	  os	  litígios	  e,	  se	  possível,	  diminuir	  os	  processos	  em	  andamento.	  	  
+	  
+	  
+A	  atuação	  dos	  juízes	  e	  tribunais12	  
+	  	  
+As	  medidas	  de	  reforma	  melhoraram	  a	  eficiência	  do	  Judiciário,	  aumentando	  o	  
+total	  de	  processos	  julgados	  anualmente	  e	  o	  número	  de	  processos	  julgados	  por	  
+juiz.	  Essas	  mudanças	  foram	  capazes	  de	  minimizar	  ou	  quase	  eliminar	  o	  déficit	  
+anual	  entre	  o	  número	  de	  processos	  distribuídos	  e	  julgados,	  mas	  não	  diminuem	  
+o	   estoque	   total	   de	   processos	   em	   andamento.	   Pelo	   contrário,	   ele	   continua	   a	  
+aumentar,	   ainda	   que	   numa	   tendência	   menos	   acentuada	   que	   anteriormente.	  
+Face	   à	   divulgação	   dessas	   tendências,	   os	   dirigentes	   propõem	   a	   repetição	   da	  
+dose,	   mais	   simplificação	   processual,	   gestão	   mais	   eficiente	   dos	   processos,	  
+ 
+12	  Todos	  os	  dados	  apresentados	  nesta	  seção	  foram	  extraídos	  dos	  relatórios	  Justiça	  em	  números,	  
+do	  CNJ	  e	  dos	  bancos	  de	  dados	  do	  site	  do	  STF,	  citados	  na	  bibliografia	  e	  fontes.	  
+
+338 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+adoção	   de	   mecanismos	   consensuais.	   A	   vigência	   do	   NCPC	   a	   partir	   de	   2016	  
+deverá	   ter	   efeitos	   importantes	   para	   o	   estoque	   de	   processos.	   A	   questão	   é	  
+examinar	  se	  as	  regras	  que	  alteram	  a	  produção	  normativa	  pelos	  tribunais	  serão	  
+praticadas	  com	  a	  mesma	  ênfase	  que	  as	  de	  redução	  do	  número	  de	  processos.	  
+Além	  disso,	  deve-­‐se	  estimar	  se	  elas	  terão	  efeitos	  sobre	  o	  comportamento	  de	  
+entidades	   estatais,	   empresas	   e	   indivíduos	   suficientes	   para	   deter	   número	  
+crescente	  de	  processos	  ingressados.	  	  
+	  
+	  
+Tendências	  dos	  processos	  
+	  
+O	  STF	  recebeu,	  desde	  os	  anos	  1990	  até	  2008,	  mais	  de	  um	  milhão	  de	  processos,	  
+assistindo	   a	   um	   progressivo	   aumento	   ao	   longo	   dos	   anos.	   O	   número	   de	  
+processos	   distribuídos	   tendeu	   a	   se	   estabilizar	   a	   partir	   de	   1999	   num	   número	  
+muito	  elevado	  de	  cerca	  de	  90	  mil	  por	  ano.	  	  
+Um	  dos	  objetivos	  da	  Reforma	  Judiciária	  de	  2004	  foi	  reduzir	  o	  número	  
+de	   processos	   julgados	   pelo	   STF.	   Ela	   adotou	   duas	   mudanças	   importantes,	   a	  
+Súmula	   de	   Efeito	   Vinculante	   e	   o	   requisito	   da	   repercussão	   geral	   para	   a	  
+admissão	   do	   recurso	   extraordinário.	   O	   número	   de	   processos	   distribuídos	   no	  
+STF	  entre	  2002	  e	  2008	  mostrou	  variação	  anual	  acentuada	  entre	  cerca	  de	  110	  
+mil	  (2003	  e	  2006)	  e	  70	  mil	  (2004	  e	  2008),	  sem	  tendência	  estável	  no	  período.	  	  
+	  
+No	   período	   a	   partir	   de	   2009	   houve	   a	   diminuição	   dos	   processos	  
+distribuídos	  para	  um	  patamar	  de	  cerca	  de	  40	  mil	  por	  ano.	  O	  papel	  dos	  filtros	  
+criados	  pela	  reforma	  é	  mostrado	  pela	  diferença	  com	  o	  número	  de	  processos	  
+protocolados,	  que	  são	  da	  ordem	  dos	  70	  mil	  por	  ano.	  A	  ampliação	  das	  decisões	  
+monocráticas,	  em	  número	  superior	  aos	  processos	  protocolados,	  indica	  que	  o	  
+Tribunal	   apresentou	   tendência	   ao	   superávit	   de	   decisões	   em	   relação	   aos	  
+processos	   distribuídos.	   Porém,	   o	   número	   total	   de	   julgamentos	   ainda	   se	  
+encontra	   em	   patamar	   bastante	   elevado,	   entre	   dez	   e	   quinze	   mil	   decisões	  
+colegiadas	  por	  ano,	  ou	  seja	  mais	  de	  mil	  por	  ministro.	  	  
+No	  período	  de	  2004	  a	  2008	  os	  recursos	  extraordinários	  e	  os	  agravos	  
+eram	   os	   mais	   numerosos.	   No	   início	   dos	   anos	   2000,	   antes	   da	   reforma,	   os	  
+
+339 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+recursos	  extraordinários	  distribuídos	  estavam	  num	  patamar	  entre	  30	  e	  40	  mil	  
+por	  ano.	  A	  reforma	  não	  inverteu	  imediatamente	  a	  tendência,	  pois	  esse	  número	  
+se	  manteve	  na	  ordem	  de	  50	  mil	  por	  ano	  em	  2006	  e	  2007.	  Em	  2008	  verifica-­‐se	  a	  
+forte	  variação,	  o	  que	  pode	  ser	  um	  efeito	  das	  reformas	  de	  2004.	  
+Os	  recursos	  extraordinários	  distribuídos	  reduziram-­‐se	  para	  cerca	  de	  8	  
+mil	  em	  2009.	  Entre	  2010	  e	  2013,	  a	  média	  anual	  foi	  de	  6	  mil.	  O	  número	  voltou	  a	  
+aumentar	  em	  2014,	  para	  mais	  de	  9	  mil.	  O	  número	  de	  recursos	  extraordinários	  
+julgados	  caiu	  de	  mais	  de	  20	  mil	  por	  ano	  em	  2009,	  2010	  e	  2011	  para	  a	  ordem	  de	  
+12	   mil	   a	   cada	   um	   dos	   anos	   seguintes.	   O	   número	   julgamentos	   permanece	  
+superior	   ao	   de	   distribuições,	   o	   que	   significa	   a	   redução	   dos	   processos	   em	  
+andamento.	  	  
+O	  Superior	  Tribunal	  de	  Justiça	  passou,	  a	  partir	  de	  sua	  implantação	  em	  
+1989,	   a	   receber	   volume	   crescente	   de	   processos,	   atingindo	   mais	   de	   300	   mil	  
+processos	  em	  2007.	  A	  partir	  de	  2001	  ocorrem	  oscilações	  no	  número	  total	  de	  
+processos	   distribuídos,	   mas	   a	   tendência	   continuou	   crescente.	   Ela	   não	   foi	  
+interrompida	  nos	  primeiros	  anos	  depois	  da	  Reforma	  do	  Judiciário,	  que	  passou	  
+de	  um	  patamar	  de	  210	  mil	  processos	  em	  2004	  e	  2005	  para	  mais	  de	  310	  mil	  em	  
+2007.	  	  
+No	  período	  de	  2009	  a	  2014,	  o	  número	  de	  processos	  distribuídos	  no	  STJ	  
+continuou	  na	  casa	  dos	  300	  mil	  por	  ano.	  Houve	  tendência	  ao	  aumento	  gradual	  
+ao	   longo	   dos	   anos.	   Ao	   mesmo	   tempo,	   o	   número	   julgamentos	   mantém-­‐se	  
+superior	   ao	   de	   distribuições,	   o	   que	   indica	   a	   redução	   da	   carga	   de	   processos	  
+pendentes.	  	  	  
+Até	   2003,	   predominavam	   os	   recursos	   especiais	   e	   a	   partir	   de	   2006	  
+passaram	   a	   predominar	   os	   agravos.	   Em	   2003,	   os	   Recursos	   Especiais13	  
+representavam	  56%	  e	  os	  agravos	  35%	  do	  total	  de	  processos	  distribuídos.	  Em	  
+2008,	  a	  participação	  relativa	  se	  inverteu	  para	  32%	  e	  50%.	  	  
+	  
+Desde	  2001,	  o	  número	  de	  recursos	  especiais	  distribuídos	  manteve-­‐se	  
+estável	   na	   casa	   de	   cem	   mil	   por	   ano.	   A	   situação	   não	   foi	   alterada	   depois	   da	  
+instituição	  da	  Súmula	  Impeditiva	  de	  Recursos	  em	  2004,	  com	  a	  qual	  o	  STJ	  passa	  
+ 
+13	   Recurso	   apresentado	   ao	   STJ	   contra	   decisão	   de	   segunda	   instância	   para	   a	   uniformização	   da	  
+interpretação	  e	  garantir	  a	  aplicação	  de	  lei	  federal.	  
+
+340 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+a	   impedir	   que	   novos	   recursos	   sejam	   impetrados	   contra	   decisões	   já	  
+reiteradamente	   decididas.	   Por	   sua	   vez,	   o	   aumento	   do	   número	   de	   agravos	  
+indica	   que	   a	   demanda	   de	   revisão	   das	   decisões	   de	   apelação	   permanece	   alta,	  
+que	   agora	   aparece	   como	   agravos	   de	   decisões	   de	   não	   recebimento	   dos	  
+recursos.	  	  
+	  
+No	  período	  2009	  a	  2014,	  o	  número	  de	  recursos	  especiais	  distribuídos	  
+diminui	  para	  um	  patamar	  mais	  baixo.	  Ele	  oscilou	  de	  cerca	  de	  70	  mil	  processos	  
+(2009	   e	   2014)	   para	   cerca	   de	   55	   mil	   (2010	   e	   2012).	   O	   número	   de	   agravos	  
+permaneceu	  acima	  dos	  cem	  mil	  por	  ano	  até	  2010,	  caindo	  para	  65	  mil	  em	  2011.	  
+Nos	   anos	   mais	   recentes,	   há	   equilíbrio	   entre	   recursos	   especiais	   e	   agravos	  
+julgados	  e	  distribuídos,	  estabilizando-­‐se	  o	  número	  de	  processos	  pendentes.	  	  
+Quanto	  à	  Justiça	  Federal	  de	  primeira	  instância,	  a	  Constituição	  de	  1988	  
+estabeleceu	  que	  os	  juízes	  federais	  deveriam	  processar	  e	  julgar	  diversos	  tipos	  
+de	  conflitos,	  como	  as	  causas	  que	  envolvem	  a	  União,	  entidade	  autárquica	  ou	  
+empresa	   pública	   federal	   que	   não	   sejam	   atribuídas	   à	   justiça	   especializada	  
+(falência,	   acidentes	   de	   trabalho,	   eleitoral	   e	   trabalho);	   crimes	   políticos	   e	   os	  
+crimes	   praticados	   contra	   bens	   públicos,	   interesses	   da	   União	   ou	   do	   poder	  
+público	  federal,	  mandados	  contra	  atos	  de	  autoridade	  federal	  inferior,	  e	  causas	  
+sobre	  direitos	  indígenas.	  	  
+Desde	   1988,	   vem	   ocorrendo	   grande	   mudança	   no	   perfil	   da	   justiça	  
+federal.	  Ela	  se	  expandiu,	  com	  o	  número	  de	  juízes	  federais	  passando	  de	  277	  no	  
+ano	  de	  1987	  para	  1486,	  em	  2003.	  As	  mudanças	  processuais	  e	  de	  métodos	  de	  
+trabalho	  permitiram	  ampliar	  sua	  capacidade	  de	  processamento	  e	  tomada	  de	  
+decisão.	  	  
+O	   número	   de	   processos	   distribuídos	   na	   1ª	   instância	   aumentou	   de	  
+forma	   acentuada.	   Em	   1999,	   ela	   recebia	   cerca	   de	   1	   milhão	   de	   processos	   por	  
+ano.	  Desde	  2003,	  esse	  número	  se	  mantém	  acima	  da	  marca	  de	  2	  milhões	  de	  
+processos	  por	  ano.	  A	  marca	  de	  2,5	  milhões	  de	  processos	  foi	  ultrapassada	  em	  
+2004,	   ano	   em	   que	   os	   JEFs	   (juizados	   especiais	   federais)	   se	   mostraram	  
+responsáveis	  por	  quase	  60%	  dos	  processos	  entrados	  na	  Justiça	  Federal	  de	  1º	  
+Grau.	  
+
+341 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+	  
+O	  número	  anual	  de	  processos	  julgados	  quase	  quadruplicou	  entre	  2000	  
+e	  2005.	  Em	  2008,	  ainda	  era	  quase	  o	  triplo	  do	  número	  do	  início	  da	  década.	  A	  
+média	  anual	  de	  processos	  julgados	  por	  juiz	  a	  partir	  de	  2004	  variou	  entre	  1300	  
+e	   2000	   por	   ano,	   aumento	   que	   se	   deve	   à	   implantação	   dos	   JEFs.	   A	   média	  
+continuou	  alta	  nos	  anos	  seguintes	  e,	  se	  abaixou	  em	  2007	  e	  2008,	  ainda	  é	  quase	  
+o	  dobro	  do	  início	  da	  década.	  Vê-­‐se,	  então,	  as	  modificações	  de	  grande	  alcance	  
+no	   seu	   perfil	   institucional	   e	   padrão	   de	   atuação.	   De	   modo	   geral,	   o	   número	  
+absoluto	  de	  processos	  ingressados	  apresenta	  tendência	  de	  diminuição	  gradual	  
+a	  partir	  de	  2004,	  mas	  o	  número	  se	  situa	  num	  patamar	  bastante	  alto.	  O	  mesmo	  
+se	  verifica	  com	  o	  número	  de	  processos	  julgados	  e	  a	  média	  de	  julgamentos	  por	  
+juiz.	  	  
+No	  período	  posterior	  a	  2009	  o	  número	  de	  casos	  ingressados	  na	  justiça	  
+federal	  de	  primeira	  instância	  é	  estável,	  entre	  2,1	  e	  2,3	  milhões	  de	  processos	  
+por	   ano.	   Os	   juízes	   federais	   julgam	   anualmente	   entre	   1,8	   e	   2	   milhões	   de	  
+processos	   por	   ano.	   Isso	   significa	   que	   há	   um	   déficit	   de	   cerca	   de	   10%,	   com	  
+tendência	   de	   aumento	   dos	   processos	   pendentes.	   O	   número	   de	   processos	  
+julgados	  por	  juiz	  mantém-­‐se	  entre	  1,5	  e	  1,8	  mil	  por	  ano,	  um	  patamar	  elevado,	  
+mas	  estável.	  	  
+No	   ano	   de	   início	   da	   Reforma	   Judiciária	   de	   2004,	   a	   Justiça	   Estadual	  
+recebeu	  mais	  de	  14	  milhões	  de	  processos,	  dentre	  os	  quais	  quase	  70%	  estavam	  
+na	   Justiça	   Comum	   de	   1ª	   Instância	   e	   nos	   Juizados	   Especiais.	   O	   número	   de	  
+processos	   distribuídos	   passou	   de	   14	   milhões	   em	   2004	   para	   19	   milhões	   em	  
+2008.	  Embora	  o	  número	  de	  juízes	  tenha	  aumentado	  de	  9,7	  mil	  para	  11,1	  mil,	  a	  
+carga	   de	   trabalho	   de	   cada	   juiz	   também	   aumentou	   em	   20%.	   O	   número	   de	  
+processos	  distribuídos	  por	  juiz	  aumentou	  de	  1454	  a	  1678	  nos	  mesmos	  anos.	  
+No	   período,	   aumentou	   30%	   o	   número	   de	   processos	   julgados	   anualmente,	   e	  
+20%	  a	  média	  anual	  de	  processos	  julgados	  por	  juiz.	  	  
+	  
+No	  período	  2009	  a	  2014,	  o	  número	  de	  casos	  novos	  na	  justiça	  estadual	  
+continuou	  num	  patamar	  alto,	  entre	  16	  e	  17,5	  milhões	  de	  processos	  por	  ano.	  
+Esse	  número	  representa	  uma	  redução	  em	  relação	  ao	  pico	  de	  2008	  e,	  portanto,	  
+uma	  diminuição	  relativa	  da	  carga	  de	  trabalho.	  O	  número	  de	  casos	  julgados	  por	  
+ano	  é	  cerca	  de	  15%	  inferior	  ao	  número	  de	  casos	  distribuídos,	  o	  que	  significa	  o	  
+
+342 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+acréscimo	  de	  quase	  2	  milhões	  de	  processos	  pendentes	  por	  ano.	  O	  número	  de	  
+processos	   julgados	   por	   juiz	   aumentou	   no	   último	   período,	   pois	   entre	   2004	   e	  
+2009	  foram	  entre	  1,1	  e	  1,4	  mil	  julgamentos	  por	  ano	  e	  no	  período	  mais	  recente	  
+passou	  para	  de	  1,5	  a	  1,7	  mil.	  
+	  
+	  
+95	  milhões	  de	  processos	  em	  andamento!	  
+	  
+A	  divulgação	  dos	  relatórios	  “Justiça	  em	  números”	  tornou-­‐se	  um	  evento	  anual	  
+relevante	   para	   os	   responsáveis	   pela	   reforma	   do	   Judiciário,	   que	   ressaltam	   a	  
+crescente	   qualidade	   dos	   dados	   e	   novas	   possibilidades	   de	   gerenciamento.	   O	  
+aumento	  do	  estoque	  de	  processos	  é	  tomado	  como	  um	  indicador	  negativo,	  que	  
+demanda	  explicações	  e	  o	  anúncio	  de	  novas	  medidas.	  O	  perfil	  dos	  processos	  em	  
+andamento	  mantém-­‐se	  estável	  desde	  o	  início	  da	  década	  de	  noventa.	  
+	  
+O	   levantamento	   de	   dados	   sobre	   os	   tribunais	   do	   país	   tem	   permitido	  
+conhecer	  com	  detalhes	  as	  tendências	  no	  Judiciário,	  relacionando	  dados	  sobre	  
+o	   uso	   de	   recursos,	   o	   número	   de	   juízes	   em	   atuação,	   o	   número	   de	   processos	  
+distribuídos	   e	   julgados.	   Para	   os	   dirigentes	   dos	   tribunais,	   as	   informações	   são	  
+instrumentos	   importantes	   para	   a	   avaliação	   do	   desempenho	   dos	   tribunais,	  
+permitindo	  preparar	  reformas	  e	  estabelecer	  o	  planejamento	  de	  longo	  prazo14.	  	  
+	  
+	  Os	   dados	   mostram	   um	   crescimento	   constante	   do	   número	   de	  
+processos	   em	   andamento,	   enquanto	   os	   outros	   indicadores	   de	   produtividade	  
+traziam	  dados	  mitigados.	  A	  cada	  anúncio,	  as	  reações	  não	  se	  fazem	  esperar	  e	  os	  
+dirigentes	   defendem	   a	   continuação	   das	   reformas,	   no	   mesmo	   sentido	   das	  
+apontadas	  anteriormente:	  melhoria	  da	  gestão,	  simplificação	  processual,	  justiça	  
+consensual,	   uniformização	   das	   decisões,	   combate	   pedagógico	   à	   cultura	   da	  
+litigiosidade15.	  	  
+ 
+14	   Ministra	   Nancy	   Andrighi	   abre	   evento	   do	   CNJ	   para	   divulgação	   do	   Justiça	   em	   Números,	  
+23/09/2014,	   disponível	   em:	   http://www.cnj.jus.br/noticias/cnj/62104-­‐ministra-­‐nancy-­‐andrighi-­‐
+abre-­‐evento-­‐do-­‐cnj-­‐para-­‐divulgacao-­‐do-­‐justica-­‐em-­‐numeros	  
+15	  Judiciário	  não	  vive	  crise	  de	  confiança,	  diz	  ministra	  Carmen	  Lúcia,	  publicada	  em	  13/05/2015.	  
+Disponível	  
+em:	  
+http://www1.folha.uol.com.br/poder/2015/05/1628444-­‐judiciario-­‐nao-­‐vive-­‐
+crise-­‐de-­‐confianca-­‐diz-­‐ministra-­‐carmen-­‐lucia.shtml.	  Cultura	  da	  litigiosidade"	  pode	  sobrecarregar	  
+Justiça	   com	   114	   milhões	   de	   processos	   em	   2020,	   publicado	   em	   10/11/2014.	   Disponível	   em:	  
+
+343 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+Desde	  o	  início	  dos	  anos	  noventa,	  quando	  se	  iniciou	  o	  debate	  sobre	  a	  
+reforma	  do	  Judiciário,	  já	  se	  conhecia,	  de	  modo	  genérico,	  o	  perfil	  dos	  processos	  
+em	  andamento	  e	  o	  número	  limitado	  de	  juízes	  profissionais,	  vieram	  confirmar	  
+informações	   já	   conhecidas.	   Em	   1990,	   os	   processos	   em	   andamento	   eram	  
+estimados	  em	  cinco	  milhões,	  dos	  quais	  o	  usuário	  principal	  era	  o	  Estado,	  e	  25%	  
+dos	   cargos	   de	   juiz	   não	   estavam	   preenchidos.	   Dados	   semelhantes	   eram	  
+divulgados	   nos	   anos	   seguintes16.	   Por	   sua	   vez,	   em	   2012	   havia	   92	   milhões	   de	  
+processos	  em	  andamento,	  dos	  quais	  51%	  dos	  processos	  são	  do	  setor	  público,	  
+nas	  três	  esferas	  de	  poder,	  outros	  37%	  têm	  como	  parte	  o	  sistema	  financeiro	  e	  
+6%,	  as	  empresas	  de	  telefonia.	  Os	  cidadãos	  eram	  responsáveis	  por	  cerca	  de	  5%	  
+dos	   processos,	   e	   a	   maioria	   dos	   lesados	   em	   algum	   direito	   não	   recorria	   à	  
+Justiça17.	  	  
+O	  (auto)conhecimento	  da	  instituição	  é	  um	  ganho	  importante	  para	  seu	  
+planejamento	  e	  reforma,	  mas	  parece	  que	  os	  temas	  que	  saturam	  o	  Judiciário	  
+continuam	   os	   mesmos	   e	   não	   foram	   enfrentados	   até	   o	   momento	   pelas	  
+reformas.	  	  
+	  
+	  
+O	  Novo	  Código	  de	  Processo	  Civil	  (NCPC)	  
+	  
+Ao	  longo	  da	  década	  foram	  realizadas	  diversas	  mudanças	  parciais	  na	  legislação	  
+processual,	  e	  o	  NCPC	  é	  resultado	  dessas	  iniciativas.	  Em	  2009,	  o	  presidente	  do	  
+Senado,	   José	   Sarney,	   nomeou	   uma	   comissão	   de	   12	   juristas,	   presidida	   pelo	  
+então	  ministro	  do	  STJ	  Luiz	  Fux.	  O	  anteprojeto	  da	  Comissão	  resultou	  no	  projeto	  
+de	   lei	   do	   Senado	   (PLS)	   166/2010,	   que	   foi	   aprovado	   pelo	   Congresso	   e	  
+sancionado	   pela	   Presidente	   Dilma	   em	   16	   de	   março	   de	   2015,	   o	   NCPC	   (Lei	   n°	  
+13.105/15)	  entrando	  em	  vigor	  um	  ano	  depois.	  	  	  
+ 
+http://www.cnj.jus.br/noticias/cnj/62232-­‐qcultura-­‐da-­‐litigiosidadeq-­‐pode-­‐sobrecarregar-­‐justica-­‐
+com-­‐114-­‐milhoes-­‐de-­‐processos-­‐em-­‐2020.	  
+16	   “Processos	   na	   Justiça	   passam	   de	   cinco	   milhões,	   diz	   ministro	   do	   STF”,	   FSP,	  25/9/90,	   p.	   A-­‐4.	  
+“União	  emperra	  STF	  com	  causas	  perdidas”.	  FSP,	  24/12/96,	  p.	  1-­‐8;	  “Governo	  é	  autor	  de	  65%	  das	  
+ações	  em	  SP”,	  FSP	  de	  15/12/97,	  p.	  1-­‐5;	  	  
+17	   Ministério	   da	   Justiça	   aponta	   três	   principais	   problemas	   do	   Judiciário,	   publicado	   em	  
+17/02/2014.	   Disponível	   em	   http://www.cnj.jus.br/noticias/cnj/61341-­‐ministerio-­‐da-­‐justica-­‐
+aponta-­‐tres-­‐principais-­‐problemas-­‐do-­‐judiciario	  
+
+344 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+O	  novo	  Código	  foi	  recebido	  com	  expectativas	  favoráveis	  da	  parte	  de	  
+dirigentes	   políticos,	   juízes,	   advogados	   e	   juristas,	   que	   o	   veem	   como	   atual	   e	  
+adequado	  para	  os	  problemas	  do	  foro,	  em	  especial	  a	  lentidão	  do	  Judiciário	  e	  a	  
+certeza	   jurídica.	   Ele	   incorpora	   princípios	   constitucionais,	   como	   o	   do	  
+contraditório,	  do	  direito	  de	  defesa	  e	  ao	  tempo	  razoável	  do	  processo.	  Procura	  
+dar	   organicidade	   ao	   sistema	   processual,	   e	   traz	   inovações	   que	   poderão	   ter	  
+efeitos	  imediatos,	  em	  particular	  a	  redução	  de	  grande	  número	  de	  processos	  em	  
+andamento18.	  
+Para	  a	  presente	  discussão	  destacam-­‐se	  dois	  pontos	  complementares,	  
+um	   relativo	   aos	   procedimentos	   e	   outro	   à	   produção	   normativa19.	   O	   código	  
+muda	   os	   procedimentos	   para	   objetivo	   dar	   mais	   celeridade	   às	   ações,	   com	   o	  
+estímulo	  à	  solução	  consensual	  de	  conflitos	  e	  a	  simplificação	  dos	  processos	  e	  
+recursos.	  A	  solução	  consensual	  é	  prevista	  como	  prioridade	  do	  Estado	  e	  dever	  
+dos	   juízes,	   advogados	   e	   outros	   profissionais	   do	   direito	   (art.	   3°).	   Ela	   é	   uma	  
+etapa	  preliminar	  aos	  processos,	  destinada	  à	  conciliação	  ou	  à	  mediação,	  e	  se	  
+prevê	  a	  instalação	  de	  centros	  especializados	  de	  solução	  de	  conflitos	  (art.	  334	  
+ss.).	  Nos	  casos	  de	  família,	  será	  realizada	  mediação	  com	  pessoal	  de	  formação	  
+multidisciplinar.	  Prevê	  a	  criação	  de	  câmaras	  de	  mediação	  e	  conciliação	  pelos	  
+entes	  públicos	  nos	  três	  níveis,	  com	  atribuições	  no	  âmbito	  administrativo.	  
+Sobre	   a	   simplificação,	   uniformizam-­‐se	   procedimentos	   e	   eliminam-­‐se	  
+certos	   tipos	   de	   recurso.	   Foram	   criados	   ou	   fortalecidos	   instrumentos	   para	  
+antecipar	  decisões,	  generalizar	  seu	  alcance	  ou	  seus	  efeitos,	  bloquear	  processos	  
+contrários	  aos	  precedentes	  e	  desestimular	  recursos	  meramente	  protelatórios.	  
+Assim,	   a	   título	   de	   ilustração,	   o	   réu	   apresentará	   suas	   exceções,	   respostas	   e	  
+demandas	   num	   único	   instrumento	   de	   contestação.	   A	   tutela	   de	   evidência	  
+poderá	   ser	   concedida	   independentemente	   da	   demonstração	   de	   perigo	   da	  
+demora,	  associando	  a	  probabilidade	  de	  certeza	  ou	  evidência	  do	  direito	  alegado	  
+ 
+18	   Por	   exemplo:	   Novo	   Código	   de	   Processo	   Civil	   abre	   portas	   para	   uma	   Justiça	   mais	   ágil	   e	  
+descomplicada,	  
+publicada	  
+em	  
+20/03/2015,	  
+disponível	  
+em:	  
+http://www12.senado.gov.br/noticias/materias/2015/03/20/novo-­‐codigo-­‐de-­‐processo-­‐civil-­‐
+abre-­‐portas-­‐para-­‐uma-­‐justica-­‐mais-­‐agil-­‐e-­‐descomplicada.	  
+19	  A	  exposição	  que	  segue	  baseou-­‐se	  em	  grande	  parte	  em	  Giannico,	  Maurício.	  O	  Novo	  Código	  de	  
+Processo	   Civil	   (Lei	   federal	   n.	   13.105,	   de	   16	   de	   março	   de	   2015),	   disponível	   em	  
+http://pt.slideshare.net/gusmao_labrunie/o-­‐novo-­‐cdigo-­‐de-­‐processo-­‐civil.	  
+Ver	  
+também	  
+em	  
+Theodoro	  Jr.	  et	  al.	  (2015).	  
+
+345 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+com	  outros	  requisitos,	  como	  o	  manifesto	  propósito	  protelatório	  da	  outra	  parte	  
+ou	  tese	  firmada	  em	  incidente	  de	  casos	  repetitivo	  ou	  súmula	  vinculante,	  entre	  
+outros	  (art.	  311).	  	  
+Para	  a	  generalização	  do	  alcance	  das	  ações,	  prevê-­‐se	  a	  possibilidade	  de	  
+julgamento	   coletivo	   de	   ações	   que	   tenham	   o	   mesmo	   objeto,	   ou	   a	  
+transformação	   de	   ação	   individual	   em	   coletiva.	   Recursos	   meramente	  
+protelatórios	  poderão	  receber	  multa	  do	  juiz	  da	  causa	  (Art.	  81).	  O	  Incidente	  de	  
+Resolução	  de	  Demandas	  Repetitivas	  (IRDR)	  permite	  a	  generalização	  do	  efeito	  
+normativo	   da	   decisão	   quando	   há	   grande	   número	   de	   processos	   sobre	   as	  
+mesmas	   questões	   de	   direito.	   Suscitado	   o	   IRDR,	   são	   suspensos	   todos	   os	  
+processos	   que	   versam	   sobre	   o	   tema	   até	   a	   decisão	   da	   questão,	   que	   deve	  
+ocorrer	   no	   prazo	   de	   um	   ano.	   A	   decisão	   deverá	   ser	   aplicada	   aos	   demais	  
+processos	  sobre	  o	  mesmo	  tema	  na	  jurisdição	  do	  tribunal	  que	  o	  decidiu.	  Ela	  é	  
+aplicável	  aos	  futuros	  processos,	  que	  poderão	  ser	  resolvidos	  liminarmente	  (art.	  
+332)	  e,	  caso	  não	  seja	  observada,	  caberá	  reclamação.	  O	  Poder	  Executivo	  deverá	  
+observar	   a	   decisão	   em	   casos	   de	   prestação	   de	   serviços	   públicos	   concedidos,	  
+com	  fiscalização	  da	  agência	  reguladora.	  Há	  procedimentos	  semelhantes	  para	  
+recursos	  extraordinários	  e	  recursos	  especiais	  repetitivos.	  	  
+O	   regramento	   dos	   precedentes	   foi	   inovação	   importante,	   em	   que	   os	  
+tribunais	  devem	  uniformizar	  a	  sua	  jurisprudência	  de	  modo	  a	  mantê-­‐la	  estável,	  
+íntegra	   e	   coerente	   (art.	   926).	   Os	   juízes	   e	   tribunais	   deverão	   observar	  
+orientações	  de	  grau	  superior	  e	  as	  anteriores:	  as	  decisões	  do	  STF	  em	  controle	  
+concentrado	  da	  constitucionalidade,	  os	  enunciados	  de	  súmula	  vinculante,	  os	  
+acórdãos	   em	   incidentes	   de	   demandas	   repetitivas	   e	   outros	   incidentes,	   os	  
+enunciados	  de	  súmula	  e	  a	  orientação	  do	  plenário	  ou	  do	  órgão	  especial	  a	  que	  
+estiverem	  vinculados	  (art.	  927)20.	  	  
+Sobre	  a	  produção	  normativa,	  o	  NCPC	  tem	  dispositivos	  para	  promover	  a	  
+melhoria	  da	  qualidade	  da	  instrução	  e	  a	  fundamentação	  das	  decisões.	  A	  parte	  
+ 
+20	  Outros	  pontos	  a	  destacar	  são:	  a	  regra	  de	  que	  os	  processos	  deverão	  ser	  julgados	  segundo	  a	  
+ordem	  em	  que	  foram	  conclusos	  para	  julgamento	  e	  a	  lista	  de	  processos	  ficará	  disponível	  para	  
+consulta	  pública	  (art.	  12).	  A	  garantia	  da	  execução	  da	  sentença	  por	  meio	  da	  inclusão	  do	  nome	  do	  
+devedor	   em	   cadastros	   de	   inadimplentes;	   a	   limitação	   dos	   prazos	   especiais	   e	   os	   recursos	  
+obrigatórios	  dos	  processos	  que	  envolvam	  entes	  públicos.	  	  
+	  
+
+346 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+geral	  traz	  princípios	  para	  a	  boa-­‐fé	  e	  lealdade	  processual	  (art.	  5°),	  a	  cooperação	  
+para	   a	   decisão	   de	   mérito	   justa	   e	   efetiva	   em	   tempo	   razoável	   (art.	   6°),	   e	   o	  
+tratamento	   equitativo,	   direito	   de	   defesa	   e	   exercício	   do	   contraditório	   pelas	  
+partes	  (art.	  7°).	  Ao	  aplicar	  o	  ordenamento	  jurídico,	  os	  juízes	  deverão	  atender	  
+princípios	  constitucionais,	  o	  respeito	  à	  dignidade	  humana	  e	  a	  atenção	  aos	  fins	  
+sociais	  e	  o	  bem	  comum	  (art.	  8°).	  	  Os	  juízes	  terão	  que	  detalhar	  as	  bases	  das	  suas	  
+decisões,	   demonstrando	   explicitamente	   os	   motivos	   determinantes	   com	   os	  
+quais	   relacionam	   os	   elementos	   do	   caso	   sob	   julgamento	   à	   aplicação	   do	  
+dispositivo	   legal.	   Eles	   não	   poderão	   apenas	  transcrever	   a	   legislação,	   usar	  
+conceitos	   jurídicos	   indeterminados,	   alegar	   motivos	   genéricos	   ou	   deixar	   de	  
+aplicar	   precedente	   ou	   enunciado	   sem	   demonstrar	   a	   distinção	   do	   caso	   ou	   a	  
+superação	  do	  entendimento	  (art.	  489).	  	  
+Sobre	  a	  deliberação	  para	  os	  precedentes	  e	  orientações	  normativas,	  o	  
+código	   ampliou	   a	   intervenção	   de	   amicus	   curiae	   em	   causas	   controversas	   e	  
+relevantes,	   previu	   a	   oitiva	   de	   especialistas	   assim	   como	   a	   realização	   de	  
+audiências	   públicas	   nos	   casos	   de	   decisão	   do	   IRDR	   e	   nos	   recursos	  
+extraordinários	  com	  repercussão	  geral.	  	  
+	  
+Deste	  modo,	  o	  NCPC	  comporta	  um	  conjunto	  de	  inovações	  que	  deverão	  
+ter	   efeitos	   importantes	   para	   a	   redução	   do	   estoque	   de	   processos	   em	  
+andamento	  no	  Judiciário	  e	  a	  resolução	  mais	  rápida	  dos	  litígios.	  Uma	  questão	  é	  
+se	  as	  inovações	  da	  produção	  normativa	  não	  sucumbirão	  às	  práticas	  vigentes	  e	  
+aos	  imperativos	  de	  solução	  rápida	  dos	  processos.	  É	  duvidoso	  que	  as	  inovações	  
+produzam	   efeitos	   sobre	   o	   número	   de	   processos	   ingressados,	   porque	   a	  
+simplificação	   processual	   e	   a	   prevenção	   ou	   eliminação	   de	   litígios	   pela	   justiça	  
+consensual	   não	   serão	   capazes	   de	   dissuadir	   práticas	   alegais	   das	   grandes	  
+corporações	   no	   seu	   relacionamento	   com	   os	   seus	   usuários	   e	   clientes.	   Além	  
+disso,	   a	   demanda	   pela	   proteção	   judicial	   dos	   direitos	   tenderá	   a	   se	   manter,	   e	  
+mesmo	  crescer,	  dadas	  as	  nossas	  condições	  sociais.	  	  
+	  
+O	   NCPC	   mantém	   uma	   característica	   central:	   a	   dissociação	   entre	   os	  
+espaços	  de	  consenso	  e	  os	  de	  decisão.	  Os	  momentos	  de	  discussão,	  negociação	  
+e	  argumentação	  aberta	  dos	  protagonistas	  e	  a	  deliberação	  são	  colocados	  fora	  
+do	   processo,	   e	   longe	   da	   presença	   do	   juiz,	   perante	   o	   qual	   se	   dá	   a	   produção	  
+
+347 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+regrada	  de	  provas	  com	  base	  em	  procedimentos	  e	  linguagem	  técnico-­‐jurídica.	  
+Nessa	   etapa	   são	   limitadas	   as	   oportunidades	   de	   debate,	   excluída	   mesmo	   a	  
+cross-­‐examination	  de	  provas	  documentais,	  perícias	  e	  versões	  das	  partes.	  Além	  
+disso,	  se	  terceiros	  intervêm,	  como	  nas	  audiências	  públicas,	  é	  na	  condição	  de	  
+informantes	  do	  juízo	  e	  nunca	  como	  participantes	  de	  um	  processo	  de	  discussão,	  
+mesmo	  que	  sejam	  implicados	  pela	  questão	  em	  causa.	  
+	  
+	  
+O	  CNJ	  
+	  
+Sob	   qualquer	   ângulo	   que	   se	   adote,	   o	   Judiciário	   brasileiro	   é	   mais	   insulado	   e	  
+monopolizado	   pelos	   juristas	   em	   comparação	   com	   os	   seus	   congêneres	   em	  
+outros	  países.	  Neles,	  cidadãos	  leigos	  ou	  especialistas	  atuam	  como	  juízes,	  não	  
+só	   em	   pequenas	   causas,	   mas	   em	   vários	   tribunais,	   inclusive	   de	   segunda	  
+instância.	   Para	   evitar	   a	   homogeneização	   dos	   magistrados,	   adotam-­‐se	   várias	  
+formas	  de	  seleção,	  em	  várias	  fases	  da	  carreira,	  bem	  como	  reservas	  de	  vagas	  e	  
+representantes	   de	   comunidades,	   movimentos	   políticos	   ou	   associações	  
+profissionais.	  Visam	  diminuir	  a	  competição	  interna	  entre	  os	  juízes	  e	  aumentar	  
+o	  tempo	  de	  sua	  permanência	  nas	  varas.	  
+Os	   conselhos	   da	   magistratura	   foram	   moldados	   para	   assegurar	   a	  
+autonomia	   jurisdicional	   do	   juiz	   e	   evitar	   ingerências	   dos	   outros	   poderes.	   Eles	  
+concentram	  as	  funções	  de	  política	  judiciária	  (administração	  da	  justiça,	  governo	  
+dos	   juízes),	   mas	   não	   têm	   funções	   judiciais	   (segunda	   instância,	   controle	   do	  
+governo	  e	  do	  legislativo).	  No	  Brasil	  ocorre	  o	  contrário,	  pois	  a	  direção	  concentra	  
+poderes	  e	  é	  controlada	  externamente	  apenas	  pelos	  efeitos	  de	  sua	  atuação.	  	  
+Como	  se	  sabe,	  a	  criação	  do	  CNJ	  foi	  precedida	  de	  intenso	  debate	  público	  
+a	  respeito	  do	  chamado	  “controle	  externo”	  do	  Judiciário.	  Como	  afirmamos	  em	  
+artigo	  recente	  (Koerner	  &	  Fragale,	  2015),	  o	  tema	  do	  “controle	  externo”	  foi	  a	  
+forma	   que	   assumiu	   o	   debate	   sobre	   a	   democratização	   do	   Poder	   Judiciário,	  
+desde	  o	  período	  da	  Constituinte.	  Deu-­‐se	  a	  polarização	  sobre	  o	  tema,	  porque	  
+atingiria	  a	  independência	  no	  exercício	  da	  função	  jurisdicional,	  a	  autonomia	  do	  
+Judiciário	  e,	  por	  fim,	  a	  própria	  democracia	  constitucional.	  Alguns	  ministros	  dos	  
+
+348 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+tribunais	  superiores	  defendiam	  a	  criação	  de	  um	  órgão	  central	  de	  planejamento	  
+do	   Judiciário,	   para	   unificar	   a	   gestão	   dos	   tribunais	   de	   todo	   o	   país21.	   Sem	  
+controle	  externo,	  comandada	  pela	  cúpula	  federal,	  voltada	  a	  questões	  internas	  
+de	  administração	  dos	  tribunais,	  esse	  seria	  o	  formato	  do	  CNJ.	  Outros	  defendiam	  
+inovações	   que	   não	   afetariam	   as	   atividades	   jurisdicionais,	   mas	   abririam	   as	  
+questões	   de	   planejamento,	   gestão	   e	   controle	   a	   outros	   olhares	   que	   os	   dos	  
+juízes.	  	  
+Além	   disso,	   o	   debate	   sobre	   a	   criação	   do	   CNJ	   se	   deu	   em	   um	   contexto	  
+identificado	  como	  “crise	  de	  governabilidade	  e	  reforma	  neoliberal	  do	  Estado”	  
+associado	  à	  própria	  “crise	  do	  Judiciário”	  (Koerner,	  1999;	  Fragale	  Filho,	  2007).	  O	  
+modelo	  institucional	  existente	  não	  admitia	  questionamentos	  e	  as	  propostas	  de	  
+reforma,	  simplificadas	  como	  “controle	  externo”,	  apareciam	  como	  ameaças	  à	  
+autonomia	  do	  Judiciário	  e	  dos	  juízes.	  No	  final	  dos	  anos	  noventa,	  os	  dirigentes	  
+do	  Judiciário	  deslocam-­‐se	  da	  posição	  defensiva	  e	  assumem	  para	  si	  o	  discurso	  
+da	  modernização	  e	  racionalização	  da	  gestão,	  que	  veio	  a	  pautar	  as	  reformas	  dos	  
+anos	   seguintes.	   Esse	   discurso	   assumia	   o	   programa	   da	   nova	   administração	  
+pública,	  adotada	  pelo	  governo	  Fernando	  Henrique	  para	  a	  reforma	  gerencial	  do	  
+Estado,	  e	  o	  promovia	  em	  relação	  às	  pautas	  internas	  de	  mudança	  dos	  métodos	  
+de	  organização	  e	  de	  trabalho	  do	  próprio	  Judiciário.	  	  
+A	   EC	   45	   representa	   a	   vitória	   dos	   dirigentes	   dos	   tribunais,	   que	  
+mantiveram	  o	  CNJ	  na	  estrutura	  do	  Poder	  Judiciário,	  sob	  a	  presidência	  do	  STF,	  e	  
+com	  maioria	  absoluta	  de	  juízes	  dentre	  os	  seus	  membros	  (Paiva,	  2012).	  Mas	  a	  
+disputa	  política	  sobre	  o	  papel	  do	  Conselho	  ainda	  se	  mantém,	  pois	  os	  ministros	  
+dos	  tribunais	  superiores	  priorizam	  o	  planejamento	  e	  a	  gestão	  estratégica	  do	  
+Judiciário,	  outros	  sublinham	  a	  defesa	  da	  independência	  da	  instituição.	  Outros	  
+priorizam	  o	  controle	  externo	  contra	  os	  desvios	  disciplinares	  e	  administrativos	  
+praticados	  por	  juízes	  e	  dirigentes22.	  	  
+Instalado	   em	   junho	   de	   2005,	   o	   CNJ	   voltou-­‐se	   inicialmente	   ao	  
+recebimento	   de	   reclamações	   sobre	   juízes	   e	   tribunais,	   à	   verificação	   da	  
+ 
+21	  Folha	  de	  São	  Paulo	  de	  11/09/94	  –	  Caderno	  Especial:	  É	  possível	  reinventar	  o	  Estado	  brasileiro?;	  
+FSP,	  11/04/99,	  p.	  1-­‐,	  “Lentidão	  Judicial	  é	  consenso	  em	  comissão”	  
+22	   Essas	   diferenças	   são	   visíveis	   nos	   capítulos	   da	   coletânea	   organizada	   por	   Stocco	   &	   Penalva,	  
+2015.	  
+
+349 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+conformidade	   dos	   atos	   administrativos	   dos	   tribunais	   com	   os	   princípios	   da	  
+administração	   pública	   e	   ao	   controle	   disciplinar	   sobre	   juízes.	   Promoveu	   a	  
+informatização	  dos	  tribunais,	  o	  aprimoramento	  de	  estatísticas	  e	  relatórios,	  e	  
+semanas	  de	  conciliação	  para	  agilizar	  processos.	  Sua	  primeira	  queda-­‐de-­‐braço	  
+com	  os	  tribunais	  foi	  ao	  determinar	  a	  aplicação	  imediata	  da	  regra	  da	  eleição	  
+para	  os	  órgãos	  dirigentes	  (art.	  93-­‐XI,	  com	  prevista	  pela	  EC-­‐45),	  contra	  os	  que	  a	  
+consideravam	   como	   não	   autoaplicável.	   Em	   seguida,	   coibiu	   o	   nepotismo	   e	   o	  
+desperdício	   de	   recursos	   públicos.	   A	   partir	   de	   2008,	   passou	   a	   provocar	  
+mudanças	  na	  gestão,	  promovendo	  o	  planejamento	  estratégico	  e	  a	  melhoraria	  
+da	  eficiência	  dos	  serviços.	  	  
+Em	  2009	  o	  CNJ	  tentou	  forçar	  os	  tribunais	  a	  implementarem	  metas	  para	  a	  
+gestão	   do	   Judiciário,	   mas	   foi	   apenas	   parcialmente	   bem-­‐sucedido,	   face	   às	  
+resistências	  dos	  dirigentes	  dos	  tribunais.	  Esse	  episódio	  evidenciou	  que	  o	  CNJ	  
+tem	  instrumentos	  limitados	  para	  controlar	  a	  atuação	  dos	  tribunais.	  Diante	  das	  
+resistências,	   procurou	   estabelecer	   metas	   menos	   ambiciosas,	   de	   caráter	  
+indicativo	  e	  não	  obrigatório,	  formuladas	  em	  concertação	  com	  representantes	  
+dos	   tribunais,	   que	   definem	   o	   seu	   conteúdo	   e	   alcance.	   Mais	   recentemente,	  
+estabeleceu	  indicadores	  de	  desempenho	  para	  avaliar	  os	  planos	  plurianuais	  e	  as	  
+propostas	  orçamentárias	  dos	  tribunais23.	  	  
+Em	   análise	   sobre	   a	   atuação	   do	   CNJ,	   Roberto	   Fragale	   (2010a,	   2010b,	  
+2013)24	  apresenta	  suas	  limitações.	  Ele	  pesquisa	  as	  lógicas	  de	  ação	  que	  indicam	  
+a	  captura	  e	  neutralização	  do	  órgão	  pela	  cúpula	  dos	  poderes	  em	  Brasília,	  no	  que	  
+foi	   uma	   reduzida	   abertura	   à	   participação	   e	   o	   controle	   externo.	   Dos	  
+representantes	   de	   juízes,	   apenas	   os	   da	   justiça	   federal	   são	   indicados	   pelo	  
+movimento	   associativo,	   enquanto	   os	   demais	   apresentam	   vínculos	   com	   a	  
+cúpula	   do	   judiciário	   federal.	   Os	   representantes	   da	   sociedade	   civil	   –	   eles	  
+mesmos	   bacharéis	   em	   direito	   –	   vieram	   de	   serviços	   técnicos	   de	   assessoria	  
+ 
+23	   A	   Resolução	   CNJ	   n.	   184/2013,	   que	   regula	   os	   pareceres	   do	   CNJ	   sobre	   anteprojetos	   de	   lei	  
+visando	  à	  criação	  de	  cargos	  ou	  unidades	  judiciárias,	  estabelece	  que	  só	  poderão	  ampliar	  os	  seus	  
+quadros	  os	  tribunais	  que	  obtiverem	  no	  mínimo	  75%	  no	  IPC-­‐Jus.	  Este	  índice	  permite	  comparar	  a	  
+produtividade	  de	  tribunais	  de	  um	  mesmo	  porte,	  levando	  em	  conta	  os	  recursos	  disponíveis	  e	  o	  
+número	  de	  processos	  baixados.	  	  
+24	  	  
+
+350 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+parlamentar	   e	   consultoria	   legislativa.	   Na	   prática,	   a	   sociedade	   civil	   não	   tem	  
+qualquer	  representação	  no	  CNJ.	  
+O	  modelo	  institucional	  do	  CNJ	  admitiria,	  teoricamente,	  que	  os	  temas	  e	  
+as	  decisões	  do	  órgão	  fossem	  abertos	  à	  participação	  de	  agentes	  externos.	  Mas	  
+sua	   agenda	   é	   gerada	   endogenamente,	   e	   nela	   o	   Presidente	   desempenha	   o	  
+papel	  mais	  relevante,	  ele	  mesmo	  o	  Presidente	  do	  STF.	  O	  processo	  decisório	  do	  
+Conselho	  é	  controlado	  pelos	  representantes	  dos	  órgãos	  centrais	  do	  Judiciário.	  	  
+O	   CNJ	   mantém	   intactas	   as	   estruturas	   de	   poder	   que	   se	   exercem	   no	  
+interior	  de	  cada	  tribunal.	  Como	  Fragale	  mostra,	  as	  decisões	  do	  CNJ	  sobre	  os	  
+juízes	   revelam	   uma	   concepção	   burocrática,	   individual	   e	   isolada	   da	   função	  
+judicial.	   Elas	   tendem	   a	   encapsular	   o	   magistrado,	   criando	   obstáculos	   a	   sua	  
+participação	  mais	  ativa	  em	  espaços	  associativos	  profissionais	  ou	  da	  sociedade	  
+em	  geral.	  O	  foco	  dos	  debates	  sobre	  o	  CNJ	  deslocou-­‐se,	  ao	  longo	  da	  década,	  do	  
+controle	   externo	   e	   políticas	   judiciais	   para	   o	   controle	   disciplinar	   e	   a	   gestão	  
+administrativa.	  
+Os	  presidentes	  promovem	  a	  atuação	  do	  CNJ	  segundo	  suas	  preferências.	  
+O	   pertencimento	   à	   magistratura	   de	   carreira	   (Ellen	   Gracie,	   César	   Peluzzo	   e	  
+Ricardo	  Lewandowski,	  mas	  também	  Gilmar	  Mendes)	  parece	  ser	  relevante	  para	  
+o	  enfoque	  em	  questões	  internas,	  como	  o	  aprimoramento	  dos	  processos	  e	  das	  
+estatísticas,	   o	   planejamento	   e	   gestão	   do	   Judiciário,	   em	   detrimento	   do	   papel	  
+investigativo.	   Em	   seu	   discurso	   de	   posse,	   o	   atual	   presidente,	   Ricardo	  
+Lewandowski,	  enfatizou	  suas	  relações	  com	  os	  magistrados	  ao	  afirmar	  que	  iria	  
+redirecionar	  a	  atuação	  do	  CNJ	  para	  resgatar	  a	  sua	  concepção	  original	  de	  órgão	  
+central	  de	  planejamento	  estratégico,	  com	  uma	  visão	  sistêmica	  dos	  problemas	  
+que	  afetam	  o	  Judiciário,	  para	  torna-­‐lo	  “forte,	  unido	  e	  prestigiado”	  e	  valorizar	  
+seus	  integrantes	  para	  construírem	  “uma	  sociedade	  mais	  livre,	  mais	  justa	  e	  mais	  
+solidária”25.	  	  
+Os	   presidentes	   oriundos	   de	   outras	   carreiras	   têm	   outras	   prioridades.	  
+Ayres	  Britto	  (2012)	  promoveu	  o	  julgamento	  dos	  casos	  de	  desvio	  de	  conduta	  no	  
+Judiciário,	   para	   combater	   o	   patrimonialismo.	   As	   tensões	   entre	   o	   CNJ	   e	   os	  
+ 
+25	  Novo	  presidente	  do	  CNJ	  defende	  maior	  celeridade	  processual	  e	  incentivo	  à	  conciliação,	  CNJ,	  
+10/09/2014,	   disponível	   em:	   http://www.cnj.jus.br/noticias/cnj/62068-­‐novo-­‐presidente-­‐do-­‐cnj-­‐
+defende-­‐maior-­‐celeridade-­‐processual-­‐e-­‐incentivo-­‐a-­‐conciliacao.	  
+
+351 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+dirigentes	  dos	  tribunais	  tornaram-­‐se	  agudas	  a	  respeito	  do	  tema	  do	  controle	  do	  
+nepotismo	   e	   da	   corrupção	   no	   Judiciário.	   Recebia	   reclamações	   individuais	  
+contra	   juízes,	   mas	   quando	   passou	   a	   exercer	   o	   controle	   mais	   sistemático,	  
+enfrentou	   a	   oposição	   dos	   dirigentes	   dos	   tribunais.	   Eles	   procuraram	   impedir	  
+que	   o	   CNJ	   viesse	   a	   exercer	   seus	   poderes	   independentemente	   dos	   controles	  
+internos	  (corregedorias),	  no	  que	  tiveram	  apoio	  do	  próprio	  presidente	  do	  CNJ	  e	  
+do	  STF,	  César	  Peluzzo.	  Por	  sua	  vez,	  Joaquim	  Barbosa	  focou	  o	  controle	  sobre	  
+serviços	  auxiliares	  e	  se	  preocupou	  com	  a	  ampliação	  do	  acesso,	  fortalecendo	  os	  
+juizados	  de	  1°	  grau	  sob	  o	  aspecto	  material	  e	  pessoal.	  	  	  
+O	   CNJ,	   criado	   para	   o	   controle	   e	   planejamento	   do	   Judiciário,	   tem	  
+ampliado	  de	  moto	  próprio	  o	  escopo	  de	  suas	  ações	  visando	  voluntaristicamente	  
+promover	  mudanças	  em	  outras	  instituições	  e	  espaços	  sociais.	  Sua	  atuação	  visa	  
+o	   próprio	   Judiciário,	   as	   relações	   entre	   o	   Judiciário	   e	   seus	   usuários	   e	   atua	  
+também	   “para	   fora”	   do	   sistema	   judicial.	   Promove	   cursos	   de	   capacitação	   de	  
+servidores,	   por	   exemplo,	   para	   atuarem	   com	   os	   processos	   eletrônicos.	   Nas	  
+relações	   com	   os	   usuários,	   promove	   a	   Semana	   Nacional	   de	   Conciliação,	   e	  
+Semana	  Nacional	  do	  Tribunal	  do	  Júri,	  para	  estimular	  a	  solução	  de	  processos,	  
+além	  de	  eventos	  pontuais	  em	  parcerias	  com	  os	  tribunais	  e	  outras	  entidades.	  
+Enfim	   realiza	   eventos	   de	   conscientização	   e	   capacitação	   sobre	   temas	   como	  
+conflitos	  fundiários,	  liberdade	  religiosa,	  maiores	  litigantes	  da	  Justiça,	  execução	  
+penal,	   direito	   à	   saúde,	   tráfico	   de	   pessoas,	   habitação,	   violência	   doméstica,	  
+encarceramento,	   alternativas	   penais26.	   Parece	   que,	   diante	   da	   dificuldade	   em	  
+realizar	  o	  planejamento	  estratégico	  e	  de	  controlar	  os	  malfeitos	  dos	  tribunais,	  o	  
+CNJ	   constrói	   sua	   legitimidade	   por	   campanhas	   de	   impacto	   junto	   à	   opinião	  
+pública.	   Sua	   fala	   é	   construída	   a	   partir	   de	   dentro	   do	   Judiciário	   e	   procura	   se	  
+projetar	  para	  fora,	  para	  outros	  âmbitos,	  invocando	  o	  caráter	  cívico	  dos	  seus	  
+engajamentos	  pela	  construção	  da	  cidadania.	  	  
+Vários	  dirigentes	  justificam	  a	  atuação	  como	  a	  missão	  dos	  tribunais	  na	  
+sociedade	  atual.	  O	  Judiciário	  viria	  em	  substituição	  aos	  demais	  poderes	  e	  seria	  
+ 
+26	   A	   campanha	   Pai	   Presente	   visou	   fomentar	   o	   reconhecimento	   de	   paternidade	   voluntário.	  A	  
+iniciativa	  faz	  parte	  do	  programa	  Pai	  Presente,	  realizado	  pela	  Corregedoria	  Nacional	  de	  Justiça,	  
+em	  parceria	  com	  os	  Tribunais	  de	  Justiça,	  para	  reduzir	  o	  número	  de	  pessoas	  que	  não	  possuem	  o	  
+nome	  do	  pai	  na	  certidão	  de	  nascimento.	  
+
+352 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+privilegiada	   sua	   atuação	   para	   resolver	   conflitos	   coletivos	   fora	   do	   processo	  
+judicial	  com	  a	  função	  tradicional	  de	  resolução	  de	  conflitos	  interindividuais.	  Em	  
+palestra	   na	   Escola	   Paulista	   da	   Magistratura,	   em	   maio	   de	   2013,	   o	   atual	  
+presidente	   do	   STF,	   o	   ministro	   Ricardo	   Lewandowski	   afirmou	   que	   o	  
+protagonismo	   do	   Judiciário	   era	   o	   seu	   papel	   neste	   novo	   século.	   O	   século	   XIX	  
+teria	  sido	  o	  da	  proeminência	  do	  Poder	  Legislativo,	  o	  séc.	  XX,	  do	  Executivo	  e	  
+que	   o	   século	   XXI	   seria	   o	   do	   Judiciário.	   Sua	   tarefa	   seria	   controlar	   os	   demais	  
+poderes	   e	   substituir	  sua	  inação	  para	  a	  proteção	  e	  promoção	  dos	  direitos.	  O	  
+papel	  do	  juiz	  não	  seria	  o	  de	  se	  deter	  em	  casos	  individuais	  de	  baixa	  relevância,	  
+mas	  incidir	  na	  promoção	  de	  políticas	  públicas	  para	  a	  promoção	  dos	  direitos.	  	  
+Não	   se	   trata,	   pois,	   de	   ativismo	   de	   juízes	   individuais,	   mas	   de	   política	  
+institucional,	   gerada	   e	   conduzida	   pela	   própria	   presidência	   do	   STF	   e	   do	   CNJ.	  
+Esse	   propósito	   tutelar	   acentua	   as	   insuficiências	   de	   participação	   cidadã	   do	  
+modelo	   do	   Judiciário	   brasileiro.	   Mesmo	   o	   CNJ	   não	   permite	   a	   participação,	  
+mesmo	  que	  mínima,	  de	  representantes	  de	  cidadãos	  em	  decisões	  sobre	  gestão	  
+nem	   a	   supervisão	   das	   estruturas	   decisórias	   centralizadas	   e	   opacas	   dos	  
+tribunais.	  Daí	  que	  se	  aumentam	  as	  reservas	  quanto	  aos	  propósitos	  políticos	  do	  
+seu	  atual	  presidente.	  	  
+Uma	  análise	  detalhada	  da	  construção	  institucional	  do	  CNJ	  deveria	  levar	  
+em	   consideração	   o	   caráter	   cumulativo	   das	   mudanças	   no	   período.	   Elas	  
+compreendem	  construção	  de	  suas	  bases	  materiais	  e	  organizacionais,	  um	  staff	  
+próprio,	  de	  caráter	  permanente	  e	  especializado,	  a	  elaboração	  de	  instrumentos	  
+e	   procedimentos	   de	   análise	   e	   avaliação,	   e	   o	   aprendizado	   no	   exercício	   das	  
+funções	  disciplinares	  sobre	  magistrados,	  de	  regulamentação	  e	  controle	  sobre	  
+os	  tribunais.	  A	  expertise	  e	  o	  aprendizado	  comuns	  com	  os	  tribunais	  permitiram	  
+consolidar	  uma	  determinada	  forma	  de	  atuação,	  e	  dar	  prioridade	  ao	  exercício	  
+de	   certas	   funções	   sobre	   outras.	   Este	   parece	   ser	   o	   caso	   do	   papel	   de	  
+planejamento	  estratégico	  e	  gestão	  dos	  tribunais,	  para	  além	  da	  pauta	  pessoal	  
+do	  seu	  atual	  presidente,	  Ricardo	  Lewandowski.	  	  
+Recentemente,	   o	   CNJ	   lançou	   um	   ambicioso	   projeto	   de,	   em	   conjunto	  
+com	  os	  tribunais	  de	  justiça,	  formular	  um	  plano	  sexenal	  para	  o	  período	  2015-­‐
+2020,	  que	  terá	  como	  prioridades	  o	  aumento	  da	  produtividade	  e	  o	  combate	  à	  
+
+353 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+corrupção27.	   A	   base	   da	   iniciativa	   foi	   a	   Rede	   de	   Governança	   Colaborativa	   do	  
+Judiciário,	  criada	  pela	  Portaria	  n°	  138,	  para	  realizar	  o	  debate	  entre	  os	  diversos	  
+segmentos	   do	   Judiciário	   e	   a	   formulação	   de	   propostas	   para	   o	   planejamento.	  
+Nesse	   quadro,	   há	   novo	   investimento	   no	   discurso	   da	   democratização	   e	  
+participação,	   colocado	   agora	   no	   quadro	   da	   colaboração	   dos	   que	   atuam	   na	  
+prestação	  jurisdicional.	  A	  “governança	  democrática”	  se	  daria	  com	  a	  criação	  de	  
+grupos	   de	   discussão	   para	   apontarem	   mudanças	   em	   cada	   unidade,	   medidas	  
+para	   a	   satisfação	   no	   ambiente	   de	   trabalho,	   compreendendo	   o	   incentivo	   à	  
+participação,	   além	   de	   capacitação	   e	   boa	   remuneração.	   A	   participação	   dos	  
+usuários	   se	   daria	   por	   meio	   de	   ouvidorias,	   consultas	   públicas	   e	   pesquisas	   de	  
+satisfação28.	  Especialistas	  externos	  são	  convidados	  para	  os	  Encontros	  Nacionais	  
+de	   elaboração	   dos	   planos	   estratégicos	   plurianuais	   ou	   as	   audiências	   públicas	  
+para	  os	  planos	  específicos	  (Res.	  n°	  194/2014,	  que	  institui	  a	  Política	  Nacional	  de	  
+Atenção	   Prioritária	   ao	   Primeiro	   Grau	   de	   Jurisdição).	   Deste	   modo,	   se	   a	  
+participação	   externa	   foi	   rejeitada	   quando	   da	   criação	   do	   CNJ,	   era	   porque	  
+assumia	  a	  forma	  institucionalizada	  de	  representação	  da	  sociedade	  na	  principal	  
+instância	   decisória,	   o	   próprio	   Conselho.	   Uma	   vez	   instituído	   e	   consolidado,	   a	  
+participação	   passa	   a	   ser	   estimulada,	   agora	   no	   registro	   da	   cooperação	   de	  
+intervenientes	  nas	  decisões	  ou	  usuários	  nos	  processos	  de	  gestão.	  	  
+As	   políticas	   do	   CNJ	   têm	   sido	   criticadas	   pelas	   associações	   de	  
+magistrados,	   por	   efeitos	   sobre	   as	   condições	   de	   trabalho	   dos	   juízes,	   por	  
+implicarem	   o	   aumento	   dos	   controles	   dos	   dirigentes	   sobre	   a	   sua	   atuação	   e	  
+desempenho.	  Em	  reação	  às	  metas	  fixadas	  em	  2009,	  a	  AMB	  voltou	  a	  defender	  a	  
+gestão	  democrática	  do	  Judiciário,	  tema	  do	  Encontro	  Nacional	  de	  Magistrados,	  
+realizado	  no	  final	  de	  outubro	  de	  200929.	  Seria	  necessário	  “estimular	  juízes	  e	  
+serventuários	  a	  participar	  da	  elaboração	  e	  gestão	  do	  Orçamento	  da	  Justiça”,	  
+dado	   que	   as	   prioridades	   “são	   estabelecidas	   pelos	   tribunais,	   resultando	  
+ 
+27	  Presidentes	  vão	  definir	  planejamento	  estratégico	  para	  melhorar	  serviços	  ao	  cidadão	  
+13/11/2013.	   Disponível	   em:	   http://www.cnj.jus.br/noticias/cnj/60429-­‐presidentes-­‐vao-­‐definir-­‐
+planejamento-­‐estrategico-­‐para-­‐melhorar-­‐servicos-­‐ao-­‐cidadao.	  
+28	  Judiciário	  quer	  democratizar	  políticas	  de	  gestão,	  diz	  conselheiro	  do	  CNJ	  
+17/11/2014	  
+http://www.cnj.jus.br/noticias/judiciario/76932-­‐judiciario-­‐quer-­‐democratizar-­‐
+politicas-­‐de-­‐gestao.	  
+29	  http://www.amb.com.br/gestaodemocratica/apresentacao.asp.	  Acesso	  em	  18/2/2010.	  
+
+354 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+“distorções	  na	  aplicação	  dos	  recursos”	  e	  problemas	  nos	  fóruns”.	  O	  Presidente	  
+do	  STF,	  Gilmar	  Mendes30	  apoiou	  o	  tema	  e	  o	  CNJ	  acolheu	  a	  campanha	  “com	  
+entusiasmo”31,	   pois	   convergiria	   com	   sua	   política	   de	   controle	   de	   recursos	  
+orçamentários32.	  	  
+Mas	  o	  discurso	  da	  democracia	  interna	  pode	  assumir	  diversas	  facetas.	  
+As	  associações	  de	  magistrados,	  criticam	  a	  política	  de	  gestão	  promovida	  pelo	  
+CNJ	   e	   os	   tribunais,	   centrada	   na	   produtividade	   e	   na	   resolução	   dos	   conflitos	  
+individuais33.	  Mobilizam-­‐se	  contra	  as	  críticas	  aos	  privilégios	  dos	  magistrados,	  
+defendendo	   a	   legitimidade	   dos	   benefícios	   que	   vêm	   sendo	   distribuídos	   pelos	  
+tribunais	   ou	   que	   são	   demandados	   ao	   Congresso34.	   Lideradas	   pela	   AMB,	  
+promoveram	  a	  campanha	  para	  eleições	  diretas	  para	  os	  dirigentes	  do	  Judiciário,	  
+a	   serem	   votados	   por	   todos	   os	   juízes.	   A	   campanha	   resultou	   no	   Projeto	   de	  
+Emenda	  Constitucional	  PEC	  n°	  187/2012,	  em	  exame	  por	  comissão	  especial	  da	  
+Câmara	  dos	  Deputados.	  A	  reforma	  é	  vista	  como	  um	  avanço,	  por	  promover	  a	  
+democratização	  interna	  do	  Judiciário,	  pois	  os	  dirigentes	  serão	  escolhidos	  por	  
+todos	  (leia-­‐se	  os	  juízes)	  os	  responsáveis	  pela	  prestação	  jurisdicional35.	  	  
+É	  de	  se	  discutir	  os	  efeitos	  da	  eletividade	  dos	  dirigentes	  dos	  tribunais	  
+sem	   o	   contrapeso	   do	   controle	   externo	   sobre	   o	   Judiciário.	   Apontávamos	   em	  
+nosso	   artigo	   de	   2010	   a	   possibilidade	   de	   formação	   de	   uma	   espécie	   de	  
+presidencialismo	  –	  um	  populismo	  de	  juízes,	  acrescentamos	  agora	  –	  em	  que	  os	  
+dirigentes	   dos	   tribunais	   eleitos	   por	   seus	   pares	   atuariam	   para	   promover	   os	  
+ 
+30	   Gilmar	   Mendes:	   é	   fundamental	   a	   participação	   dos	   juízes	   no	   planejamento	   estratégico	   do	  
+Judiciário.	  
+09.07.2009	  
+(http://www.amb.com.br/index.asp?secao=mostranoticia&mat_id=18211).	  
+Acesso	  
+em	  
+18/2/2010.	  
+31	  
+AMB	  
+apresenta	  
+campanha	  
+para	  
+o	  
+CNJ.	  
+14/12/2009.	  
+Disponível	  
+em	  
+http://www.amb.com.br/gestaodemocratica/mostranoticia.asp?mat_id=19734.	  
+Acesso	  
+em	  
+18/2/2010.	  	  
+32	  CNJ	  movimenta	  judiciário	  com	  metas	  e	  novas	  regras	  para	  magistrados	  e	  servidores,	  disponível	  
+em	  
+http://clipping.tse.gov.br/noticias/2010/Jan/1/ultimo-­‐segundo-­‐cnj-­‐movimenta-­‐judiciario-­‐
+com-­‐metas	  
+33	   Relatório	   do	   CNJ	   aponta	   aumento	   de	   processos	   na	   Justiça	   |	   AMB	   emite	   nota	   pública.	  
+Publicado	  em	  24	  de	  setembro	  de	  2014.	  Disponível	  em	  http://acmag.org.br/2014/09/relatorio-­‐
+do-­‐cnj-­‐aponta-­‐aumento-­‐de-­‐processos-­‐na-­‐justica/	  
+34	  Nota	  Pública	  da	  Ajufe,	  AMB	  e	  Anamatra	  sobre	  o	  auxílio-­‐moradia.	  Publicada	  em	  08/10/2014.	  
+Disponível	   em:	   http://www.ajufe.org/imprensa/notas-­‐publicas/nota-­‐publica-­‐da-­‐ajufe-­‐amb-­‐e-­‐
+anamatra-­‐sobre-­‐o-­‐auxilio-­‐moradia/.	  
+35	  Câmara	  instala	  comissão	  especial	  das	  eleições	  diretas	  nos	  tribunais.	  Publicado	  em	  1	  de	  julho	  
+de	   2015.	   Disponível	   em:	   http://acmag.org.br/2015/07/camara-­‐instala-­‐comissao-­‐especial-­‐das-­‐
+eleicoes-­‐diretas-­‐nos-­‐tribunais/	  ez(es);	  Oficio	  para	  presidentes	  TJs	  -­‐	  TRFs	  -­‐	  TRTs	  –	  2013.	  Publicado	  
+em	  30/10/2013.	  Disponível	  em:	  http://www.ajd.org.br/documentos_ver.php?idConteudo=143	  
+
+355 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+interesses	  particulares	  da	  sua	  própria	  coletividade	  –	  os	  juízes	  e	  servidores.	  Isso	  
+viria	  acentuar	  uma	  tendência	  que	  já	  se	  verifica,	  a	  de	  os	  dirigentes	  do	  Judiciário	  
+colocarem-­‐se	  como	  vocalizadores	  de	  demandas	  da	  coletividade	  do	  Judiciário	  
+perante	   os	   representantes	   eleitos,	   por	   meio	   da	   solicitação	   de	   recursos	   e	   de	  
+novas	   franquias	   e	   poderes,	   bem	   como	   a	   defesa	   de	   seus	   membros	   face	   a	  
+agressões	   e	   críticas.	   No	   plano	   interior,	   colocam-­‐se	   como	   patrocinadores	   e	  
+facilitadores	   da	   promoção	   de	   demandas	   internas,	   que	   se	   traduzem	   em	  
+melhoria	   da	   remuneração	   e	   das	   condições	   de	   trabalho,	   em	   detrimento	   de	  
+outras	   prioridades	   para	   o	   aprimoramento	   dos	   serviços.	   Essas	   tendências	  
+parecem	   se	   evidenciar	   em	   notícias	   sobre	   benefícios	   remuneratórios	   que	   são	  
+aprovados	  disfarçados	  na	  forma	  de	  auxílios	  e	  adicionais	  a	  juízes	  e	  servidores,	  
+além	  de	  se	  ver	  os	  Presidentes	  de	  tribunais	  vocalizarem	  demandas	  de	  aumentos	  
+salariais	  e	  de	  recursos	  para	  o	  Judiciário	  (Caros	  Amigos,	  2015).	  Os	  benefícios	  do	  
+projeto	  de	  estatuto	  da	  magistratura,	  encaminhado	  pela	  presidência	  do	  STF	  ao	  
+Congresso,	   suscitaram	   surpresa	   e	   indignação	   pública,	   pela	   imaginativa	  
+variedade	   de	   auxílios	   e	   adicionais	   previstos	   para	   magistrados	   e	   seus	  
+familiares36.	   O	   aumento	   dos	   salários	   do	   Judiciário,	   recentemente	   aprovado	  
+pelo	  Congresso,	  faz	  parte	  desse	  movimento,	  em	  que	  o	  poder	  de	  pressão	  dos	  
+juízes	   é	   um	   fator	   tão	   importante	   quanto	   a	   vontade	   dos	   parlamentares	  
+contrariarem	  as	  políticas	  de	  ajuste	  da	  presidenta	  Dilma	  Rousseff37.	  	  
+A	  criação	  do	  CNJ	  assegurou	  o	  espaço	  institucional	  para	  a	  consolidação	  
+da	  direção	  política	  de	  uma	  coalizão	  de	  juízes	  e	  políticos	  situados	  nos	  tribunais	  
+superiores	  e	  promotores	  de	  uma	  agenda	  voltada	  à	  racionalização	  da	  gestão	  e	  
+ao	  controle	  de	  resultados	  sobre	  os	  juízes	  e	  tribunais	  (Cintra	  Jr.,	  1995).	  A	  essa	  
+coalizão	  aderiram	  os	  dirigentes	  dos	  tribunais,	  com	  o	  apoio	  parcial	  de	  juízes	  e	  
+servidores,	   que	   estão	   divididos	   diante	   da	   intensificação	   dos	   controles	   e	   a	  
+vocalização	  de	  demandas	  por	  benefícios	  salariais	  e	  melhoria	  das	  condições	  de	  
+trabalho.	  A	  agenda	  da	  racionalização	  da	  gestão	  se	  conformou	  ao	  modelo	  de	  
+Estado	  neoliberal	  promovido	  pelas	  reformas	  dos	  anos	  noventa,	  que	  tem	  em	  
+seu	   bojo	   a	   busca	   pela	   eficiência	   da	   instituição	   como	   um	   todo,	   e	   apresenta	  
+ 
+36	  Rodízio	  de	  juiz	  gera	  gratificação	  em	  massa	  no	  tribunal,	  Folha	  de	  São	  Paulo,	  13/07/2015.	  
+37	  Senado	  aprova	  reajuste	  médio	  de	  60%	  ao	  Judiciário,	  Folha	  de	  São	  Paulo,	  1°/07/2015.	  
+
+356 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+como	  benefício	  para	  os	  usuários	  a	  melhoria	  dos	  serviços	  em	  termos	  de	  custo	  e	  
+tempo.	   Os	   efeitos	   sociais	   desse	   padrão	   são	   postos	   como	   subproduto,	   em	  
+termos	   de	   ampliação	   do	   acesso	   pela	   redução	   dos	   custos,	   ou	   a	   adoção	   de	  
+mecanismos	  simplificados	  de	  caráter	  consensual	  que	  permitem	  uma	  resposta	  
+imediata	  –	  proporcionada	  pelos	  mecanismos	  de	  conciliação	  prévia	  –	  para	  os	  
+demandantes	  de	  baixa	  renda,	  incapazes	  de	  arcar	  com	  um	  processo.	  	  	  
+Porém,	   ao	   longo	   da	   década	   não	   se	   apagaram	   as	   demandas	   de	  
+democratização	   do	   Judiciário	   com	   ênfase	   na	   abertura	   da	   instituição	   para	   a	  
+participação	   cidadã,	   em	   que	   haja	   espaço	   para	   o	   protagonismo	   dos	   sujeitos	  
+coletivos	   e	   a	   pluralidade	   social.	   Pelo	   contrário,	   vêm	   sendo	   retomadas	   nos	  
+últimos	  anos	  por	  redes	  de	  juristas	  engajados	  em	  movimentos	  de	  cidadania	  e	  
+ampliação	   dos	   direitos38.	   As	   demandas	   colocam-­‐se	   não	   só	   no	   registro	   dos	  
+modelos	  do	  Judiciário	  na	  Europa	  do	  pós-­‐guerra,	  mas	  também	  do	  discurso	  da	  
+democracia	  participativa	  e	  do	  constitucionalismo	  pós-­‐colonial	  de	  países	  latino-­‐
+americanos,	  como	  a	  Bolívia	  e	  o	  Equador	  (Baratto,	  2014).	  Eles	  são	  promovidos	  
+por	   coletivos	   como	   o	   Terra	   de	   Direitos	   e	   a	   Articulação	   Justiça	   e	   Direitos	  
+Humanos-­‐	  JusDh.	  Sob	  esse	  aspecto,	  para	  além	  da	  agenda	  dos	  direitos	  coletivos	  
+e	  da	  igualdade	  social,	  estão	  em	  questão	  o	  reconhecimento	  das	  diferenças	  e	  a	  
+organização	   de	   formas	   autônomas	   de	   vida.	   Isso	   implica	   a	   diversificação	   dos	  
+espaços	  de	  decisão,	  a	  abertura	  a	  novas	  oportunidades	  de	  diálogo	  e	  negociação	  
+e	   o	   reconhecimento	   da	   complexidade	   das	   formas	   de	   argumentação,	  
+construção	   de	   evidências	   e	   produção	   de	   decisões	   aceitáveis.	   Para	   além	   do	  
+neoliberalismo	  ou	  da	  socialdemocracia,	  colocam	  novos	  desafios	  à	  organização	  
+do	  Estado	  brasileiro.	  Diante	  delas,	  o	  processo	  de	  reforma	  judiciária	  em	  curso	  é	  
+indiferente	  e	  tem	  objetivos	  opostos.	  
+	  
+	  
+Conclusão	  
+ 
+38	  Reforma	  do	  Judiciário	  precisa	  de	  participação	  popular.	  Publicado	  em	  19/12/2014.	  Disponível	  
+em:	  
+http://terradedireitos.org.br/2014/12/19/reforma-­‐do-­‐judiciario-­‐precisa-­‐de-­‐participacao-­‐
+popular/;	  Necessidade	  de	  transformações	  estruturais	  e	  do	  Sistema	  de	  Justiça	  são	  discutidas	  em	  
+Seminário	  
+Nacional.	  
+Publicado	  
+em	  
+25/06/15;	  
+Disponível	  
+em:	  
+http://terradedireitos.org.br/2015/06/25/necessidade-­‐de-­‐transformacoes-­‐estruturais-­‐e-­‐do-­‐
+sistema-­‐de-­‐justica-­‐sao-­‐discutidas-­‐em-­‐seminario-­‐nacional/.	  
+Ver	  
+http://www.jusdh.org.br 
+e 
+http://www.forumjustica.com.br 
+
+357 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+	  
+Os	   dados	   e	   informações	   apresentados	   indicam	   que	   a	   reforma	   do	   Judiciário	  
+vem	  produzindo	  efeitos	  positivos	  ao	  afastar	  a	  imagem	  de	  um	  poder	  do	  Estado	  
+próximo	   ao	   colapso	   e	   incapaz	   de	   gerir	   seu	   próprio	   trabalho.	   Adotou-­‐se	   um	  
+enfoque	   interno	   à	   organização,	   a	   partir	   do	   qual	   se	   colocam	   os	   desafios	   de	  
+encontrar	   a	   maneira	   mais	   eficiente	   de	   dar	   respostas	   às	   demandas.	  
+Racionalizaram-­‐se	   os	   processos	   internos,	   tanto	   de	   gestão	   como	   de	   decisão	  
+judicial,	   aumentando	   com	   isso	   a	   sua	   capacidade	   de	   resposta	   e	   a	   sua	  
+estabilidade	   face	   às	   pressões	   do	   ambiente.	   A	   readequação	   se	   dá	   pela	  
+ampliação	   dos	   filtros	   para	   o	   ingresso,	   pela	   simplificação	   de	   procedimentos,	  
+pela	  padronização	  de	  processos	  e	  decisões,	  e	  o	  controle	  dos	  resultados,	  além	  
+da	   qualificação	   e	   motivação	   dos	   seus	   profissionais.	   O	   conjunto	   de	   reformas	  
+indica	  a	  plena	  implementação	  de	  um	  programa,	  que	  vem	  sendo	  realizado	  de	  
+forma	   consistente	   ao	   longo	   de	   uma	   década	   e	   tem	   por	   escopo	   todos	   os	  
+tribunais	   do	   país,	   o	   que	   é	   uma	   absoluta	   novidade	   no	   campo	   das	   políticas	  
+judiciais.	  	  
+Essa	  consistência	  indica	  a	  consolidação	  de	  uma	  coalizão	  dirigente	  no	  
+campo	  das	  políticas	  para	  o	  Judiciário,	  que	  se	  constituiu	  ao	  longo	  da	  década	  de	  
+noventa,	  e	  que	  encontra	  alianças	  junto	  às	  políticas	  no	  governo	  e	  no	  Congresso	  
+e	  com	  respaldo	  junto	  aos	  juízes	  e	  servidores.	  Ela	  prevaleceu	  sobre	  propostas	  
+alternativas,	   que	   tinham	   concepções	   distintas	   do	   Judiciário	   enquanto	   poder	  
+político,	  das	  suas	  relações	  com	  a	  participação	  cidadã	  e	  da	  maneira	  pela	  qual	  se	  
+relacionam	  o	  processo	  judicial	  e	  a	  efetivação	  social	  dos	  direitos.	  Por	  um	  lado,	  
+foi	   superado	   um	   modelo	   formal,	   legalista	   e	   burocrático,	   que	   adotou	   uma	  
+atitude	   defensiva	   face	   às	   demandas	   por	   reformas,	   contrário	   a	   qualquer	  
+participação	  de	  cidadãos	  ou	  de	  profissionais	  de	  outras	  carreiras	  jurídicas	  nas	  
+decisões	   administrativas	   ou	   jurisdicionais	   e	   indiferente	   quanto	   às	   relações	  
+entre	  decisões	  judiciais	  e	  os	  processos	  sociais	  mais	  amplos	  de	  efetivação	  dos	  
+direitos.	   Por	   outro	   lado,	   foram	   desconsideradas	   concepções	   que	   pensam	   o	  
+Judiciário	   como	   um	   poder	   político,	   com	   participação	   cidadã	   e	   a	   pluralização	  
+dos	   julgadores,	   composto	   por	   indivíduos	   com	   outros	   perfis	   do	   que	   os	   juízes	  
+togados	  ou	  profissionais,	  e	  que	  busca	  compromissos	  efetivos	  com	  a	  efetivação	  
+
+358 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+dos	   direitos	   sociais,	   em	   cooperação	   com	   outras	   agências	   do	   Estado,	   com	   as	  
+outras	  organizações	  jurídicas	  e	  com	  organizações	  e	  movimentos	  da	  sociedade.	  	  
+O	  programa	  atual	  conforma-­‐se	  com	  o	  discurso	  de	  um	  serviço	  público,	  
+gerido	   segundo	   uma	   racionalidade	   de	   eficiência	   administrativa	   e	   prestado	  
+exclusivamente	   por	   um	   corpo	   de	   profissionais	   qualificados	   para	   os	   seus	  
+usuários.	  O	  seu	  compromisso	  com	  a	  efetividade	  social	  dos	  direitos	  se	  conclui	  
+com	   a	   ‘entrega’	   do	   serviço	   demandado,	   ou	   seja,	   a	   decisão	   judicial,	   segundo	  
+parâmetros	  de	  previsibilidade,	  com	  prazo	  e	  custos	  razoáveis.	  	  
+Quanto	  aos	  seus	  propósitos	  manifestos,	  os	  resultados	  da	  reforma	  são	  
+mitigados	  em	  relação	  à	  carga	  de	  processos	  e	  à	  produtividade	  dos	  juízes.	  Nos	  
+tribunais	   superiores	   (STF	   e	   STJ),	   houve	   a	   diminuição	   ou	   estabilização	   do	  
+número	   de	   processos	   distribuídos.	   Os	   tribunais	   puderam	   realizar	   a	   seleção	  
+prévia	   dos	   casos	   ingressados,	   o	   que	   aumentou	   o	   número	   de	   decisões	  
+monocráticas	  ou	  tornou	  mais	  ágil	  e	  fácil	  o	  processo	  de	  decisão.	  Desse	  modo,	  
+eles	   apresentam	   tendências	   superavitárias	   e	   a	   indicação	   de	   diminuição	   do	  
+número	  de	  processos	  pendentes	  de	  julgamento.	  No	  caso	  da	  justiça	  federal	  e	  
+estadual	  de	  primeira	  instância,	  o	  número	  de	  processos	  distribuídos	  permanece	  
+estável	  ou	  em	  leve	  redução.	  O	  número	  de	  processos	  julgados	  por	  juiz	  manteve-­‐
+se	  estável	  na	  justiça	  federal	  e	  aumentou	  em	  cerca	  de	  20%	  na	  justiça	  estadual.	  
+Mesmo	  assim,	  o	  déficit	  de	  casos	  julgados	  em	  relação	  aos	  ingressados	  é,	  nos	  
+dois	  casos,	  de	  mais	  de	  10%.	  	  
+O	  NCPC	  deverá	  alterar	  substantivamente	  o	  estoque	  de	  processos	  em	  
+andamento	   no	   Judiciário,	   com	   a	   eliminação	   de	   processos	   repetitivos,	   a	  
+resolução	  mais	  rápida	  de	  conflitos	  de	  massa	  e	  o	  bloqueio	  de	  muitos	  litígios	  em	  
+virtude	   da	   generalização	   dos	   efeitos	   normativos	   das	   decisões	   individuais.	  
+Outros	  aspectos	  positivos	  são	  as	  mudanças	  nas	  formas	  de	  produção	  normativa	  
+nas	   sentenças,	   precedentes	   e	   súmulas.	   Porém,	   é	   de	   se	   indagar	   se	   essas	  
+inovações	  resistirão	  aos	  imperativos	  de	  rapidez	  e	  simplicidade	  que	  informam	  
+as	  reformas,	  e	  que	  estiveram	  presentes	  na	  elaboração	  do	  novo	  Código.	  Outro	  
+ponto	   é	   o	   dos	   seus	   efeitos	   mitigados	   para	   os	   novos	   litígios,	   seja	   por	   não	  
+incidirem	  no	  cálculo	  das	  corporações	  seja	  por	  não	  terem	  cuidado	  da	  litigação	  
+emergente	  dos	  conflitos	  sociais,	  que	  continuará	  a	  crescer	  ao	  longo	  dos	  anos.	  	  
+
+359 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+É	   esse	   o	   aspecto	   mais	   criticável	   das	   reformas	   do	   Judiciário,	   pois	   o	  
+enfoque	  é	  dado	  pelos	  imperativos	  internos	  da	  organização:	  a	  informalização	  
+dos	   procedimentos	   e	   os	   incentivos	   à	   conciliação	   tornam-­‐se	   bloqueios	   às	  
+oportunidades	  de	  fala	  para	  os	  litigantes	  poderem	  expor	  seus	  pontos	  de	  vista,	  
+as	  suas	  experiências	  e	  formas	  de	  vida	  e	  concepções	  de	  justiça.	  São	  validadas	  
+disparidades	   na	   capacidade	   de	   produção	   de	   provas,	   silêncios	   sobre	   as	  
+dificuldades	  de	  implementação	  dos	  acordos;	  a	  indiferença	  quanto	  a	  renúncias	  
+de	  direitos	  realizadas	  em	  acordos	  malconduzidos.	  Reproduz-­‐se	  uma	  espécie	  de	  
+coalizão	  de	  profissionais	  do	  direito	  que	  não	  se	  interessam	  pelos	  problemas	  e	  
+conflitos	   enfrentados	   pelos	   cidadãos,	   mas	   têm	   suas	   preocupações	  
+exclusivamente	   centradas	   na	   própria	   organização.	   Em	   suma,	   elas	   bloqueiam	  
+qualquer	  foco	  nas	  questões	  normativas	  e	  sociais	  subjacentes	  aos	  litígios	  e,	  por	  
+isso,	   tendem	   a	   tornar	   os	   processos	   indiferentes	   às	   desigualdades	   sociais	   e	  
+reproduzem	   distorções	   geradas	   pelas	   condições	   precárias	   nas	   quais	   os	  
+cidadãos	  exercem	  seus	  direitos.	  Enfim,	  acabam	  por	  não	  ampliar	  a	  efetividade	  
+dos	  direitos	  dos	  cidadãos,	  embora	  aumente	  o	  número	  de	  litígios	  ingressados	  e	  
+julgados	  no	  Judiciário.	  	  
+A	   desigualdade	   de	   recursos,	   informação	   e	   oportunidades	   permite	  
+arranjos	  e	  estratégias	  de	  exploração	  e	  dominação,	  que	  maximizam	  formas	  de	  
+vida,	   concepções	   de	   justiça	   e	   oportunidades	   de	   uns	   em	   detrimento	   dos	  
+demais.	   A	   expressão	   “violação	   sobreposta	   de	   direitos”	   parece	   sintetizar	   a	  
+situação	   da	   grande	   maioria	   da	   população,	   que	   não	   teve	   historicamente	  
+condições	   de	   elaborar	   e	   vocalizar	   suas	   demandas,	   e	   menos	   ainda	   de	  
+transformá-­‐las	   em	   litígios	   judiciais.	   A	   situação	   social	   representa	   um	   enorme	  
+potencial	  de	  demandas	  por	  igualdade	  social	  e	  melhoria	  das	  potencialidades	  de	  
+vida,	  que	  se	  expressam	  de	  diversas	  maneiras	  na	  arena	  política.	  As	  estratégias	  e	  
+repertórios	   de	   ação	   de	   partidos,	   movimentos	   sociais,	   advogados	   de	   causas	  
+coletivas	   e	   dos	   próprios	   indivíduos	   lesados	   colocam-­‐se	   sob	   a	   forma	   de	  
+demandas	   por	   direitos,	   pelo	   seu	   reconhecimento	   e	   efetivação,	   por	   meio	   de	  
+políticas	   estatais	   que	   viabilizem	   o	   seu	   exercício	   e	   garantam-­‐nos	   face	   a	  
+terceiros.	   Essa	   é	   a	   dinâmica	   de	   reivindicações	   de	   uma	   democracia	  
+
+360 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+constitucional	  com	  participação	  aberta	  e	  ampliada	  dos	  seus	  cidadãos,	  da	  qual	  
+fazem	  parte	  os	  instrumentos,	  agentes	  e	  arenas	  judiciais.	  	  
+Outro	  aspecto	  das	  reformas	  é	  o	  papel	  ambíguo	  e	  limitado	  que	  o	  CNJ	  
+nelas	   desempenha.	   Suas	   pretensões	   a	   elaborar	   planos	   estratégicos	   e	   a	  
+controlar	  os	  tribunais	  encontram	  como	  limites	  a	  necessidade	  de	  adesão	  dos	  
+próprios	   dirigentes	   dos	   tribunais	   e	   a	   necessidade	   de	   assegurar	   o	   apoio	   de	  
+juízes	  e	  servidores,	  submetidos	  a	  condições	  mais	  estressantes	  de	  trabalho	  e	  a	  
+controles	  mais	  estritos.	  Em	  relação	  à	  participação	  externa,	  para	  além	  dos	  dois	  
+representantes	  da	  sociedade	  indicados	  por	  cooptação	  pelo	  Congresso	  para	  o	  
+CNJ,	   não	   há	   representação	   institucionalizada,	   ou	   seja,	   não	   é	   reconhecido	   o	  
+direito	   de	   voz	   e	   de	   voto	   sobre	   as	   questões	   concernentes	   à	   gestão	   da	  
+instituição.	  Isso	  pode	  tornar	  problemáticas	  as	  tendências	  de	  a	  democratização	  
+interna	   tornar-­‐se	   uma	   forma	   de	   sindicalização	   em	   que	   prevalecem	   nas	  
+decisões	  os	  interesses	  privados	  dos	  seus	  membros.	  Por	  sua	  vez,	  a	  atuação	  de	  
+cidadãos,	   na	   condição	   de	   juízes	   leigos	   ou	   especialistas	   de	   outras	   áreas	  
+permanece	  excluída	  do	  horizonte	  das	  políticas	  judiciais	  neste	  momento.	  	  
+Enfim,	  a	  realização	  do	  programa	  gerencial	  e	  racionalizador	  da	  reforma	  
+do	  Judiciário	  supera	  muitas	  questões	  urgentes	  postas	  num	  passado	  recente	  e	  
+ainda	   presentes	   em	   muitos	   setores,	   e	   aponta	   para	   inovações	   relevantes	   no	  
+papel	   do	   Judiciário.	   Porém,	   não	   atende	   a	   demandas	   antigas,	   a	   projetos	  
+alternativos	  e	  coloca	  problemas	  novos,	  sobre	  os	  quais	  será	  reaberto	  o	  debate	  
+público.	  	  
+	  
+	  
+Referências	  
+	  
+BARATTO,	  Marcia	  (2014).	  Os	  direitos,	  os	  indígenas	  e	  as	  cortes:	  a	  demarcação	  
+das	  terras	  indígenas	  no	  Brasil,	  Colômbia	  e	  Bolívia.	  X	  Encontro	  ABCP,	  4	  a	  7	  de	  
+agosto,	  
+Brasília.	  
+Disponível	  
+em:	  
+http://www.encontroabcp2014.cienciapolitica.org.br/resources/anais/14/140
+3750806_ARQUIVO_ARTIGO.pdf.	  
+	  
+
+361 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+BELL,	  J.	  (2006).	  Judiciaries	  within	  Europe:	  A	  Comparative	  Review.	  Cambridge:	  
+Cambridge	  U.P.	  
+	  
+BRASIL.	  MJ.	  (2010).	  Banco	  de	  Iniciativa	  do	  Ministério	  da	  Justiça.	  Disponível	  em:	  	  
+http://portal.mj.gov.br/data/Pages/MJB162128BITEMID25CE44F18ED64E3AA
+C01F48EE83F72D2PTBRNN.htm.	  Acesso	  em:	  17	  jan.	  2010.	  
+	  
+BRASIL.	   MJ.	   (2010).	   Projetos	   de	   Lei	   da	   Secretaria	   de	   Reforma	   Judiciária.	  
+Disponível	  em:	  http://portal.mj.gov.br/main.asp?View={32F24490-­‐858D-­‐43EF-­‐
+9618-­‐B8A6FE5B23B3}&BrowserType=IE&LangID=pt-­‐
+br&params=itemID%3D%7B1A707B26-­‐47BF-­‐4A34-­‐91B5-­‐
+861BBB91BA8A%7D%3B&UIPartUID=%7B2868BA3C-­‐1C72-­‐4347-­‐BE11-­‐
+A26F70F4CB26%7D.	  Acesso	  em:	  17	  jan.	  2010.	  
+	  
+BRASIL.	   CNJ.	   (2014).	   Novo	   presidente	   do	   CNJ	   defende	   maior	   celeridade	  
+processual	  
+e	  
+incentivo	  
+à	  
+conciliação.	  
+Disponível	  
+em:	  
+http://www.cnj.jus.br/noticias/cnj/62068-­‐novo-­‐presidente-­‐do-­‐cnj-­‐defende-­‐
+maior-­‐celeridade-­‐processual-­‐e-­‐incentivo-­‐a-­‐conciliacao.	   Acesso	   em:	   23	   jul.	  
+2015.	  
+	  
+BRASIL.	  AGU.	  (2015).	  Atos	  normativos	  da	  Advocacia	  Geral	  da	  União.	  Disponível	  
+em:	  http://www.agu.gov.br/page/content/detail/id_conteudo/245005.	  Acesso	  
+em:	  02	  jul.	  de	  2015.	  
+	  
+BRASIL.	   CNJ.	   (2015a).	   Programas	   e	   ações	   do	   Conselho	   Nacional	   de	   Justiça.	  
+Disponível	   em:	   http://www.cnj.jus.br/programas-­‐e-­‐acoes.	   Acesso	   em	   02	   jul.	  
+2015.	  
+	  
+BRASIL.	   CNJ.	   (2015b).	   Atos	   normativos	   do	   Conselho	   Nacional	   de	   Justiça.	  
+Disponível	  em:	  http://cnj.jus.br/atos-­‐normativos.	  Acesso	  em	  26	  abr.	  2015.	  
+	  
+
+362 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+BRASIL.	   CNJ.	   (2015c).	   Dados	   da	   Justiça	   Federal	   e	   Estadual.	   Disponível	   em:	  
+http://www.cnj.jus.br/programas-­‐e-­‐acoes/pj-­‐justica-­‐em-­‐numeros.	   Acesso	   em:	  
+26	  abr.	  2015.	  
+	  
+BRASIL.	  STF.	  (2015).	  Estatísticas	  do	  Supremo	  Tribunal	  Federal.	  Disponível	  em:	  
+http://www.stf.jus.br/portal/cms/vertexto.asp?servico=estatistica.	  Acesso	  em:	  
+26	  abr.	  2015.	  
+	  
+BRASIL.	   STJ.	   (2015).	   Relatórios	   estatísticos	   do	   Superior	   Tribunal	   de	   Justiça.	  
+Disponível	  
+em:	  
+http://www.stj.jus.br/webstj/Processo/Boletim/?vPortalAreaPai=183&vPortal
+Area=584.	  Acesso	  em:	  26	  abr.	  2015.	  
+	  
+CHARBONNIER,	   G.	   (2008).	   Panorama	   des	   Systèmes	   Judiciaires	   dans	   l´Union	  
+Européenne.	  Bruxelas:	  Bruylant.	  
+	  
+CINTRA	   JUNIOR,	   D.A.	   (1995).	   A	   fiscalização	   do	   Poder	   Judiciário	   por	   órgão	  
+externo.	  Revista	  dos	  Tribunais,	  n.719,	  pp.	  329-­‐342.	  
+	  
+FRAGALE	  FILHO,	  R.	  (2010a).	  Reconfigurações	  profissionais	  da	  magistratura:	  um	  
+exercício	   (preliminar)	   a	   partir	   da	   jurisprudência	   do	   Conselho	   Nacional	   de	  
+Justiça.	  In:	  CUNHA,	  J.	  R.	  (Org.).	  Poder	  Judiciário.	  Novos	  olhares	  sobre	  gestão	  e	  
+jurisdição.	  Rio	  de	  Janeiro:	  FGV.	  
+	  
+_______	   (2010b).	   Democratização	   dos	   tribunais:	   uma	   nova	   agenda	   para	   o	  
+movimento	   associativo.	   7°	   Encontro	   da	   Associação	   Brasileira	   de	   Ciência	  
+Política.	  Recife:	  ABCP.	  
+	  
+_______	   (2013).	   Conselho	   Nacional	   de	   Justiça:	   desenho	   institucional,	  
+construção	   de	   agenda	   e	   processo	   decisório.	   Dados	   –	   Revista	   de	   Ciências	  
+Sociais,	  
+v.	  
+56,	  
+n°	  
+4,	  
+p.	  
+975-­‐1007.	  
+Disponível	  
+em:	  
+
+363 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+http://www.scielo.br/pdf/dados/v56n4/v56n4a08.pdf.	   Acesso	   em:	   30	   nov.	  
+2014.	  
+	  
+GENOÍNO,	  J.	  (1999).	  O	  Controle	  Externo	  do	  Judiciário	  e	  a	  questão	  democrática.	  
+In:	  KREBS,	  F.	  A.	  (Org.).	  A	  Reforma	  do	  Poder	  Judiciário.	  Curitiba:	  Juruá,	  pp.	  167-­‐
+183.	  
+	  
+GUERREIRO,	   G.	   (2015).	   Senado	   aprova	   reajuste	   médio	   de	   60%	   ao	   Judiciário.	  
+Folha	  
+de	  
+São	  
+Paulo,	  
+1°	  
+jul.	  
+2015.	  
+Disponível	  
+em:	  
+http://www1.folha.uol.com.br/fsp/poder/224617-­‐senado-­‐aprova-­‐reajuste-­‐
+medio-­‐de-­‐60-­‐ao-­‐judiciario.shtml.	  Acesso	  em:	  23	  jul.	  2015.	  
+	  
+KOERNER,	  A.	  (2013).	  Judiciário	  e	  moralização	  da	  política:	  três	  reflexões	  sobre	  
+as	  tendências	  recentes	  no	  Brasil.	  Revista	  Pensar	  (UNIFOR),	  v.18,	  pp.	  708-­‐738.	  
+	  
+KOERNER,	   A.	   (1999).	   O	   debate	   sobre	   a	   reforma	   judiciária.	   Novos	   Estudos	  
+CEBRAP,	  n°	  54,	  pp.	  11-­‐26.	  
+	  
+KOERNER,	  A.	  e	  FRAGALE	  FILHO	  R.	  (2015).	  Do	  Controle	  Externo	  à	  participação	  
+cidadã:	   por	   uma	   revisão	   do	   modelo	   do	   Judiciário	   Brasileiro.	   In:	   STOCO,	   R.	   e	  
+PENALVA,	   J.	   (Org.).	   Dez	   Anos	   de	   Reforma	   do	   Judiciário	   e	   o	   Nascimento	   do	  
+Conselho	  Nacional	  de	  Justiça.	  São	  Paulo:	  Revista	  dos	  Tribunais,	  pp.	  61-­‐68.	  
+	  
+_______,	  INATOMI,	  C.	  C.,	  BARATTO,	  M.	  (2010)	  Judiciário,	  Reformas	  e	  Cidadania	  
+no	   Brasil.	   In:	   Estado,	   Instituições	   e	   Democracia:	   República,	   v.	   9-­‐1.	   Brasilia:	  
+IPEA,	  pp.	  131-­‐174.	  
+	  
+LIMA,	  J.	  (1999).	  A	  Reforma	  do	  Poder	  Judiciário	  na	  Câmara	  dos	  Deputados.	  In:	  
+KREBS,	  F.	  A.	  (Org.).	  A	  Reforma	  do	  Poder	  Judiciário.	  Curitiba:	  Juruá,	  p.127-­‐166.	  
+	  
+
+364 
+ 
+ 
+	  
+Rio	  de	  Janeiro,	  Vol.	  07,	  N.	  12,	  2015,	  p.	  326-­‐364.	  
+Andrei	  Koerner,	  Celly	  Cook	  Inatomi,	  Karen	  Sakalauska	  Barreira	  
+DOI:	  10.12957/dep.2015.18009|	  ISSN:	  2179-­‐8966	  
+ 
+ 
+ 
+ 
+OAB.	   (1997).	   Proposta	   de	   Reforma	   do	   Judiciário.	   Revista	   do	   Instituto	   dos	  
+Advogados	  Brasileiros,	  ano	  XVIII,	  n°	  81,	  p.144ss.	  
+	  
+PAIVA,	  Grazielle	  Albuquerque	  Moura	  (2012).	  A	  reforma	  do	  judiciário	  no	  Brasil:	  
+o	  processo	  político	  de	  tramitação	  da	  emenda	  45.	  Dissertação	  de	  mestrado	  em	  
+Políticas	  Públicas,	  Universidade	  Estadual	  do	  Ceará.	  
+	  	  
+PRIMI,	  L.	  (2015).	  Mordomias	  sem	  controle.	  Caros	  Amigos,	  ano	  XIX,	  n°	  220,	  pp.	  
+24-­‐27,	  jul.	  
+	  
+ROCHA,	  G.	  (2015).	  Rodízio	  de	  juiz	  gera	  gratificação	  em	  massa	  no	  tribunal.	  Folha	  
+de	  
+São	  
+Paulo,	  
+13	  
+jul.	  
+2015.	  
+Disponível	  
+em:	  
+http://www1.folha.uol.com.br/fsp/poder/225960-­‐rodizio-­‐de-­‐juiz-­‐gera-­‐
+gratificacao-­‐em-­‐massa-­‐em-­‐tribunal.shtml.	  Acesso	  em:	  23	  jul.	  2015.	  
+	  
+THEODORO	   JÚNIOR,	   H.	   et	   allii.	   (2015).	   Novo	   CPC	   –	   Fundamentos	   e	  
+Sistematização	  –	  lei	  13.105,	  de	  16.03.2015.	  Rio	  de	  Janeiro:	  Forense.	  	  
+	  
+ZAFFARONI,	  E.	  R.	  (1995).	  Poder	  Judiciário,	  Crises,	  Acertos	  e	  Desacertos.	  São	  
+Paulo:	  Ed.	  Revista	  dos	  Tribunais.	  
+	  
+Sites	  consultados	  
+	  
+www.ajd.org.br	  
+www.ajufe.org.br	  
+www.amb.com.br	  
+www.agu.gov.br	  
+www.cnj.jus.br	  
+www.mj.gov.br	  
+www.cjf.jus.br

@@ -1,0 +1,1376 @@
+Indictments, Myths, and 
+Citizen MobiZization in Argentina: 
+A Discourse Anulysis 
+Ariel C. Armony 
+Victor Armony 
+ABSTRACT 
+Most accounts of the turmoil that shook Argentina in 2001-2 
+focused on the harmful impact of the financial environment, impru- 
+dent policymaking, and institutional weaknesses. These explana- 
+tions paid little attention to the cultural frames and cognitive pat- 
+terns that underlie the connection between civil society and 
+political society. Based on a discourse analysis of Internet forums 
+and presidential speeches, this article argues that the Argentine 
+crisis cannot be fully grasped without considering the link between 
+collective behavior and ingrained conceptions of national identity. 
+The analysis finds that national myths and definitional questions of 
+national purpose are key factors in the way citizens behave in the 
+context of an economic and political crisis. 
+he recent economic and political crisis in Argentina has raised many 
+T 
+questions regarding its causes, its distinctive characteristics, and its 
+consequences. One of its most interesting aspects is that it exposed a 
+profound gap between the citizenry and the ‘‘ruling class.” Not surpris- 
+ingly, most economists, political scientists, and media pundits have 
+explained Argentina’s crisis and the ensuing “social explosion” by refer- 
+ring to adverse macroeconomic factors, ill-advised policymaking, and 
+institutional dysfunction. Less attention has been given to culturally 
+framed explanations that explore how cognitive patterns influence 
+people’s behavior. 
+This article argues that the Argentine crisis of 2001-2 cannot be fully 
+understood without considering how citizen mobilization and the 
+“indictment” of the political class are connected to longstanding con- 
+ceptions of national identity, particularly to national myths. The Argen- 
+tine case offers a valuable opportunity to explore the ways that citizens 
+react to definitional questions of national purpose-what 
+kind of coun- 
+try citizens believe they can, should, and want to have-in 
+the midst of 
+an economic and political crisis. 
+This exploration employs cultural and discursive analysis and, in 
+doing so, represents a different perspective with respect to traditional 
+explanations based on the weakness of a “civic culture’’-still 
+an 
+27 
+
+28 
+LATIN AMERICAN POLITICS AND SOCIETY 
+47: 4 
+account even for those claiming to conduct a “scientific” study of Latin 
+America. The article will analyze, quantitatively and qualitatively, nearly 
+a thousand contributions to Internet forums and a large collection of 
+presidential discourses, which are untapped sources of information and 
+rich data for understanding the complex meanings of the “people’s 
+indictment” in Argentina. In this respect the article proposes, method- 
+ologically speaking, to go beyond the useful but limited world of survey 
+research and elite interviewing. 
+As we will see, the “indictment” has valid explanations, focused on 
+economic and political factors. This study does not intend to underestimate 
+the impact of socioeconomic structures and political institutions on social 
+behavior. If one agrees that protest movements are not fundamentally irra- 
+tional-in 
+the sense of an angry or desperate crowd resorting to random 
+acts of disruption-but 
+rather based on the actors’ shared subjective 
+assessment of the situation, then it is worthwhile to search for other fac- 
+tors that could complement economic and political approaches. Accord- 
+ingly, the main objective here is to look inside the “black box” of partici- 
+pants in order to understand the perceptions that structure the behavior of 
+these actors. This has been a missing piece in the Argentine puzzle. 
+From this perspective, cultural traditions, collective memories, 
+values, and symbols play a significant role in determining how actors 
+represent themselves in society. More important, the phenomenon of 
+actors collectively crossing the threshold of social conventions openly to 
+defy the established authorities is mainly explained by their shared 
+anticipation of certain or probable gains and losses compared to real or 
+idealized, past or current conditions. In other words, people act ration- 
+ally, but their points of reference are strongly influenced by cognitive 
+patterns that are psychologically and culturally framed. Therefore, we 
+must keep in mind that the Argentines’ embittered mobilization was 
+linked not only to deficits of political representation, weak institutional- 
+ization, or a dramatic economic downturn, but also to a crisis of national 
+conceptions of identity that preceded-and 
+will surely outlast-the 
+events of December 2001. 
+ECONOMIC 
+AND Pomm EXPLANATIONS 
+The economic argument dominated most foreign media accounts of 
+Argentina’s collapse. While many economists agreed that politicians 
+should bear some responsibility for Argentina’s meltdown, most tended 
+to stress-not 
+surprisingly-the macroeconomic factors at play (see, for 
+example, Mahon and Corrales 2002). Although he concedes that the cor- 
+ruption of public officials was a pernicious trend in Argentina, Joseph 
+Stiglitz (2002) proposes that the fixed exchange rate led to a vicious 
+circle of heightened risks of devaluation and debt default. He specifi- 
+
+ARMONY AND ARMONY: CITIZEN MOBILIZATION 
+27 
+cally blames the International Monetary Fund for supporting the dollar 
+peg and imposing contractionary fiscal policies during an economic 
+downturn. Anne Krueger (20023, the IMF’s first deputy managing direc- 
+tor, obviously disagrees with this analysis; but she shares the notion that 
+“Argentina became caught in a vicious cycle of desk activity, overvalu- 
+ation, and mounting debt.” 
+Most political analysts have concurred with this type of explanation. 
+Indeed, they are reluctant to see the local political class as the sole or 
+main culprit. These analysts argue that the Argentine crisis was triggered 
+by at least one of the following factors: the vulnerability of Argentina’s 
+economy in a context of global recession, the role played by the IMF 
+technocrats, and the economic policies implemented by the Carlos 
+Menem administration and continued by Fernando De la Rila. Accord- 
+ing to this perspective, the crisis unfolded from the economic realm: 
+economic instability created social turbulence, which provoked a polit- 
+ical implosion. 
+Through the prism of this analysis, the crisis is seen as the result of 
+“impersonal” forces (such as volatile financial markets) and poor deci- 
+sionmaking (by IMF experts, global investors, or Argentina’s economic 
+planners). In the accounts that give preeminence to the role of the IMF, 
+the “toughen as you sink” approach is deemed central to the worsening 
+of Argentina’s 1999 recession and the outbreak of the depression in 
+2001-2 (Corrales 2002). Some analysts view the crisis as the result of a 
+cycle of “debt-boom-bust” that had a particularly negative impact on 
+emerging economies because of their high vulnerability to capital flight. 
+According to this perspective, Argentina’s economy was too closed and 
+dollarized to weather the effects of the Russian recession of the late 
+1990s (see Armony and Schamis 2003, 4-6). Thus a highly volatile inter- 
+national financial context intensified the harmful effects of the convert- 
+ibility regime and the bloated foreign debt burden on the Argentine 
+economy (Levitsky and Murillo 2003; Hanke 2002). The De la Rila gov- 
+ernment’s failure to abandon the exchange rate and monetary regime of 
+the Menem administration were seen as key pieces of the puzzle. 
+Ironically, many analysts from the Marxist left share this structural- 
+ist approach, although in this perspective, the impersonal forces were 
+not “innocent”-they responded to capitalist constraints-and 
+the pow- 
+erful did not make “bad” decisions but rather “good” decisions that were 
+coherent with their agenda (of economic and political domination). As 
+a vocal opponent of the so-called Washington Consensus puts it, the 
+crisis in Argentina expressed a “structural weakening of neoliberalism” 
+on the global stage (Taddei 2002). 
+In spite of its obvious economic aspects, Argentina’s crisis was also 
+political. This perspective focuses on the question of governance, taking 
+into account factors such as the role played by a corrupt, unresponsive, 
+
+30 
+LATIN AMERICAN POLITICS AND SOCIETY 
+47: 4 
+and undisciplined political class and the preeminence of informal rules 
+in the realm of policymaking. Political accounts of the crisis center pri- 
+marily on three dimensions: the party system, democratic institutions 
+(their strength, legitimacy, and capacity to represent the interests of the 
+electorate), and the executive’s style of rule. 
+Some accounts point to the crisis in the political parties as a funda- 
+mental explanation for the events of December 2001; they emphasize 
+the fragmentation and polarization in the political system (Ollier 2003a). 
+The atomization of political groups helped to shape a landscape of 
+political competition marked by bitter animosity, lack of cooperation, 
+and inability to cater to the demands of the electorate. This level of frag- 
+mentation also affected the internal politics of the ruling coalition. The 
+weakness of the Alianza was manifest in its inability to evolve from a 
+purely electoral coalition to an organization responsible for managing 
+the state apparatus, its fragile power at the federal level, and its lack of 
+a cohesive and supportive congressional wing (Ollier 2003a). Attention 
+is also given to the unending conflict between the president, his own 
+party, and the rest of the ruling coalition; his dissociation from political 
+society in general; and his decision to seek inexperienced advisers (such 
+as relatives and friends), who contributed to his political isolation (Cor- 
+rales 2002; Schamis 2002). While the coalition that brought De la RGa to 
+office demonstrated a weak capacity to rule, the excessive rapacious- 
+ness of the Peronist opposition intensified political instability. Both the 
+Alianza and the Peronists are viewed as decisive forces in the making 
+of the crisis (Ollier 2003b). 
+Some political explanations place most of the weight on the “crisis 
+of political representation” in Argentina. There are at least two ways to 
+explain the character of this crisis. One stresses that political authorities 
+failed to respond to a key dimension of the democratic contract: the 
+accountability of public officials. The crisis of representation occurred 
+when the demands for accountability advanced by a highly mobilized 
+sector of civil society clashed with an unresponsive political class that 
+clung to Argentina’s longstanding populist tradition, according to which 
+the electorate was expected to subordinate itself to the leader’s deci- 
+sions until the next election (Peruzzotti 2002). In this sense, the links 
+that traditionally legitimated the connection between civil society and 
+political society were severed, which triggered a political crisis. 
+Other political explanations highlight the need to consider the 
+impact of M m b m c + a s a way of doing politics-in 
+Argentina (Jozami 
+2003; Schamis 2002). Menembmo entailed a set of political practices that 
+simultaneously called for reform of the country’s economy, constitution, 
+and institutions (in order to update them to the new national and inter- 
+national conditions) and bolstered subnational authoritarianism (provin- 
+cial caudillos financed by the federal government) and all-encompass- 
+
+ARMONY AND ARMONY: CITIZEN MOBILIZATION 
+31 
+ing nepotism, corruption, and frivolity. This type of presidential rule 
+(which defined a form of “delegative” democracy, according to 
+Guillermo O’Donnell 1994) was marked by a strong reliance on execu- 
+tive decrees, an autocratic style of policymaking, and general disregard 
+for Congress, the judiciary, and civil society. To practice Menemismo 
+became synonymous with a drive to monopolize power at any cost 
+(Mocca 2002). 
+For some scholars, however, President Carlos Menem only deep- 
+ened a process of “deinstitutionalization of politics” that had shaped 
+Argentina since the return to democracy (Tedesco 2002). Therefore, De 
+la Rua’s decision to continue practicing Menemismo represented a major 
+blow to the functioning of institutions. In a context of widespread citi- 
+zen disaffection and lack of trust in political institutions, De la Rua’s 
+embrace of Menem’s “delegative” legacy carried the political crisis to a 
+point of no return (Corrales 2002). At that point, the time was ripe to 
+change the players. Indeed, some analysts argue, this pattern was not 
+new for a country that had failed to develop clear and sound rules to 
+institutionalize the democratic political game (Levitsky and Murillo 
+2003). The Argentine case conforms in an interesting way to a broader 
+regional pattern (Brazil, Venezuela, Guatemala, Ecuador, Paraguay, and 
+Peru), in which political instability and mass popular protests resulted 
+in presidential crises but not in the breakdown of the democratic 
+regimes (Perez-LifiPn 2003). 
+SOCIAL 
+EXPLANATIONS 
+The social roots of the crisis have received comparatively less attention. 
+Indeed, most explanations assume that the actors’ interests and identi- 
+ties were defined by economic and institutional structures. Therefore it 
+is important to explore in more detail voluntarist approaches that 
+emphasize the choices and subjective goals of actors. The few analyses 
+that do look at the crisis from this perspective yield three types of 
+explanations. 
+First is the notion that the upsurge of popular protest constituted a 
+reaction to social exclusion and a defensive behavior in the context of 
+a severe economic crisis. Indeed, some of these accounts view the rise 
+in mass mobilization as a popular response to the social problems 
+caused by the neoliberal economic reforms of the 1990s. A second per- 
+spective places the emphasis on the general decline in trust in political 
+institutions and frustration with politics among the population. Third, 
+some accounts of the crisis view the events of December 2001 as a 
+climax in a broader cycle of contentious mobilization. 
+Following the first approach, a number of analyses give popular 
+protest a central role in the political events that led to the collapse of 
+
+32 
+LATIN AMERICAN POLITICS AND SOCIETY 
+47: 4 
+the De la Rtia government. Some accounts describe the rise of middle- 
+class mobilization as a form of defensive action in a context of a rapidly 
+decreasing social distance between this sector and the working class. 
+This explanation considers the mobilization of middle-class citizens an 
+effort “to protect themselves as individuals as opposed to acting in sol- 
+idarity with each other” (Ollier 2003a, 182). To explain why the upsurge 
+of protest did not occur earlier, analysts argue that the worsening eco- 
+nomic conditions eliminated the possibility for the middle class to ben- 
+efit from the “politics of informality” that had spread to everyday life 
+interactions, thereby severing ties between this sector of society ind the 
+government (Tedesco 2002, 479-80). For some scholars, a similar logic 
+applies to the working class, which finally reacted to economic policies 
+that had brought far-flung social exclusion (Levitsky and Murillo 2003). 
+In terms of the second approach, although public trust had been 
+low since the onset of democracy, successive corruption scandals, polit- 
+ical mischief, and the general lack of accountability in the 1990s brought 
+the state-society tension to a critical point at the turn of the century. Fur- 
+thermore, some social scientists interpret the lack of trust as rooted in a 
+general frustration with politics in Argentina. These accounts see the 
+rebellion of the middle class as an emotional response to the gap 
+between what this societal sector demanded from politics and what pol- 
+itics actually delivered (Portantiero 2002). The expansion of an inde- 
+pendent citizenry progressively disengaged from the political system is 
+viewed as a critical development of the 1990s. Unlike previous social 
+movements in Argentina, some analysts argue, the new wave of mobi- 
+lization emphasized the autonomy of participants from traditional forms 
+of leadership (Cheresky 2002). 
+A different reading emphasizes the role of social movements as key 
+forces in provoking the presidential crisis of late 2001. One perspective 
+focuses on the middle class, viewing the upsurge of protest not as a 
+sudden social uproar but as a third wave of a broader cycle of citizen 
+participation. This cycle of mobilization, initiated with Argentina’s return 
+to democracy, sought to improve the mechanisms of representation and 
+accountability (Cheresky 2003). It began with the human rights move- 
+ment, followed by the emergence of citizen organizations and a new 
+“journalism of exposi.” oriented to respond to police violence, govern- 
+ment corruption, and social exclusion in the 1990s. The third wave took 
+shape as a reaction to the crisis in the Senate in 2000 (when it was 
+revealed that a number of legislators had been bribed to vote for a labor 
+reform promoted by the De la Rtia administratipn). It deepened with the 
+massive denunciation of political parties and “politics as usual” in the 
+legislative elections of October 2001, and it exploded with the “pots and 
+pans” mobilization of thousands of middle-class citizens (the Cucerola- 
+zos) at the end of 2001 and beginning of 2002 (Peruzzotti 2002).* 
+
+ARMOW AND ARMONY: CITIZEN MOBILIZATION 
+33 
+A similar analysis centers on the contentious mobilization that had 
+mounted since the end of the 1980s, but it assigns a primary role to the 
+working class (both employed and unemployed workers). According to 
+this perspective, the events of December 2001 represented a culmina- 
+tion in a process of social struggles against the socially regressive poli- 
+cies of neoliberalism. The so-called Santiagiiefiazo, the riots in Santiago 
+del Estero in December 1993, marked the end of the “social isolation of 
+the working class” and the beginning of a new wave of mobilization 
+against neoliberal policies (Iiiigo Carrera and Cotarelo 2003, 205). These 
+observers trace the rejection of politicians, political parties, and tradi- 
+tional political mediations to the grassroots practices (such as popular 
+assemblies) developed in the flourish of strikes and protests in Jujuy, 
+Santiago del Estero, NeuquCn (the Cutralcazo), Tierra del Fuego, C6r- 
+doba (Cruz del Eje), Santa Fe (Capitan Bermitdez), Rio Negro (Catriel), 
+Greater Buenos Aires (La Matanza, Florencio Varela, and Quilmes), Salta 
+(Tartagal-General Mosconi), and other parts of the country (Oviedo 
+2001; Auyero 2002). These protests set the grounds for the emergence 
+of the Piquetero movement, which became a major player at the 
+national level in 1998, when thousands of protesters set roadblocks on 
+the bridges and highways connecting Buenos Aires to its depressed 
+industrial belt. This movement soon became the symbol of resistance to 
+the structural adjustment program. 
+Some explanations reject the idea that the December 2001 social 
+protest resulted either from a working-class rebellion against unem- 
+ployment and poverty or from the reaction of an alienated middle class. 
+Focusing on the repertoires of contention and the participants in the 
+protests, this approach highlights a shared culture of protest across the 
+working and middle classes. This culture was shaped by structural 
+changes that had an impact across society: the dramatic increase in 
+unemployment, the withdrawal of the welfare state, and the decentral- 
+ization of health care and education. The resulting interests, opportuni- 
+ties for mobilization, and organizational patterns cut across classes. In 
+this context, the mobilization of teachers, students, and municipal 
+employees along with union leaders, retirees, unemployed industrial 
+workers, and other groups, all under the rubric of autoconvocados (self- 
+assembled), gradually defined a form of protest based on the notion of 
+“the people against the political class” (Auyero 2002). 
+In sharp contrast to these accounts, some analysts react against the 
+idea of a “victimized” society. They argue that Argentine society itself 
+was responsible for the deterioration of democracy and the worsening 
+of socioeconomic conditions. For a large number of Argentines, they 
+claim, the tendency to project an image of a society oppressed by a 
+minority (for example, the military, the “financial oligarchy,” the politi- 
+cal class) produced a collective self-representation much more positive 
+
+34 
+LATIN AMERICAN POLITICS AND SOCIETY 
+47: 4 
+than what the country’s actual history reveals. Thus, they argue, Argen- 
+tine society has been predisposed to believe that the responsibility for 
+the deficits of democracy or even its collapse “always rests in somebody 
+else” (de Ipola 2002; Altamirano 2002). 
+Social explanations of the crisis have an underlying common 
+denominator: they all imply the existence of a crisis of social cohesion. 
+While the political crisis in Argentina was, at least in part, a result of a 
+gridlocked political system without the ability to mediate between soci- 
+ety’s demands and policy outputs, we have to take into consideration 
+that at a more fundamental level, Argentina’s social fabric was facing a 
+steady corrosion (see A. Armony 2004). A society that is breaking down 
+seems unable to “get its act together” and “restart the engine,” to use 
+Stiglitz’s telling metaphors about Argentina. The 1990s were a decade of 
+deep transformation in Argentina, one that bred a “winner take all” eco- 
+nomic logic; generated, in a short period, inordinate numbers of losers 
+(in terms of downward mobility for some and deprivation of minimal 
+resources for others); and furthered a dramatic wave of “interindividual 
+competitiveness” in a context in which the spectacle of the furandulu 
+(a mix of politics, money, sports, and show business) helped to dis- 
+connect even more the elites from the average citizen (Svampa 2002; de 
+Ipola 2002; V. Armony 2001a). 
+Simultaneously, as democracy gained in experience, the rule of 
+law-at 
+the level of institutions, state-society relations, and interactions 
+among citizens-seriously weakened. Increased levels of criminal activ- 
+ity, fueled by economic and social problems, as well as by an emerging 
+world of organized crime with significant ties to corrupt police forces 
+and local politicians, led to the rise of inseguridud, a combination of 
+real-life criminality, media-driven hyperrealism, and middle-class fears 
+in a context of diminishing social distances (Guemureman 2002). These 
+factors contributed to a deepening social fragmentation, in which vast 
+numbers of people withdrew into their private lives (Gayol and Kessler 
+2002). The combination of fragmentation in society with increased cyn- 
+icism about the virtues of politics and the role of the law reinforced a 
+sense of anomie and disorientation, captured in a number of studies and 
+polls (see, for example, Filmus 1999; Braun 2000). 
+To put it bluntly, society itself became nearly “unrepresentable.” 
+The question of respresentation brings us to a key aspect of the crisis 
+that has been neglected by most scholarly analyses: the specific ways 
+that people construed the reality of Argentina’s “crisis of political repre- 
+sentation” and the ways that citizens responded to widely shared con- 
+ceptions of national identity in the midst of an economic and political 
+crisis. These two issues are related because the “indictment” of the polit- 
+ical class is defined in reference to a given conception of the national 
+essence-grounded in an “Argentine Dream” of greatness-while 
+the 
+
+ARMONY AND ARMONY: CITIZEN MOBILIZATION 
+35 
+problem of identity, which we read in terms of national myths, pertains 
+to that very essence; that is, definitional questions that refer to the kind 
+of country Argentines believe they can, should, and want to have. 
+THE PEOPLE’S 
+INDICTMENT 
+By people’s indictment, we mean the manner in which the actors them- 
+selves frame their actions in a meaningful way. We have seen that the 
+latest protest wave that shook Argentina was clearly fueled by anger and 
+frustration, and all its expressions shared a negativity toward a per- 
+ceived common enemy: the “political class,” and in a larger perspective, 
+the “ruling class,” which includes business leaders, union bosses, and 
+other “privileged groups.” 
+Indeed, when it came to pinpointing the main cause of their coun- 
+try’s economic downturn, most Argentines reached the same conclusion: 
+it was the politicians’ fault, not a particular leader or specific party or ide- 
+ology. The people’s indictment was rendered in the now internationally 
+famous slogan iQue se vayan todos! (Let’s get rid of them all!), sometimes 
+coupled, as if to make sure the point was clear, with iQue no quede 
+ninguno! (Don’t let a single one stay!). The political parties, and particu- 
+larly the politicians, were perceived as having blatantly failed to respond 
+to society’s needs and demands. In this sense, the people’s indictment of 
+the “ruling class” was not a misguided or delusional sentiment, even if it 
+was based, as we will see, on exculpatory self-victimization. 
+The forms of contention that characterized the public sphere in the 
+late 1990s-from 
+the puebladas (townwide riots) and the piquetes to the 
+escraches (public shaming) and the teachers’ “white tent” in front of the 
+National Congress-conveyed a highly critical discourse of government 
+officials, “old-style politics,” and established authorities in general (see 
+Laufer and Spiguel 1999; Kaiser 2002; Giarracca and Bidaseca 2001).2 In 
+this context, mobilized groups performed a social “reappropriation” of 
+public spaces, institutions, and even symbols, claiming a preeminence 
+of legitimacy over legality when, in their view, the bond of trust 
+between the citizenry and those who hold power had been broken. As 
+a Piquetero leader argued in the midst of the looting that shook the city 
+of Rosario in December 2001, those who broke the law were not the 
+desperate citizens who ransacked several supermarkets but the elected 
+politicians who plundered the country (Armony and Bessa 2002). 
+In contrast with the social mobilization in the 1960s and 1970s, the 
+actors of the 1990s rarely categorized themselves as members of a par- 
+ticular class, political group, or ideological tendency. Indeed, the most 
+recent cycle of social mobilization was characterized by a relative blur- 
+ring of class frontiers, not in terms of a multiclass alliance but through 
+ad hoc convergence and mutual reinforcement. For example, the tactics 
+
+36 
+LATIN AMERICAN POLITICS AND SOCIETY 
+47: 4 
+of the Piqueteros and, in some ways, even their identity markers were 
+adopted by other groups, such as shopkeepers, pensioners, health 
+workers, schoolteachers, public servants, university students, street 
+venders, day laborers, and household workers. Most protesters, regard- 
+less of social origin, used universalistic notions such as “citizen,” 
+“person,” or even “human being,” and they demanded to be “seen,” to 
+be “heard, ” and to be “recognized.” The emphasis was on pressure tac- 
+tics-sometimes 
+including civil disobedience-rather 
+than political vio- 
+lence; on gaining public sympathy-particularly through the deliberate 
+use of the media-rather 
+than deepening social conflict; and on a more 
+pragmatic and individualistic stance rather than an ideological, class 
+warfare perspective. Interviews consistently revealed the protesters’ aim 
+to force the authorities to look at them “in a different way” and to “make 
+the authorities listen” (Armony and Bessa 2002). 
+Some analysts have pondered the real meaning of the phrase Let’s 
+get rid of them all, Were Argentines calling for the ousting of every “old- 
+school” politician in order to make room for new, unspoiled leaders? Or 
+were they expressing their out-and-out dismissal of all figures of author- 
+ity, from elected representatives to judges, union bosses to clergy? The 
+ambiguity of the charge bred different interpretations. A few observers 
+acknowledged the slogan’s relevance as a legitimate expression of the 
+citizens’ rage and desperation but maintained that it could not be under- 
+stood at face value (Aguinis 2003). Others interpreted the wave of mobi- 
+lization that spread out in late 2001 as an attempt to broaden the public 
+space in order to “fill in” for the unresponsive and unrepresentative 
+political parties by creating new forms of citizen engagement (Cheresky 
+2002). The intensity of the social upheaval, however, made many Argen- 
+tines take the slogan rather seriously. As some social commentators sug- 
+gested, the apparent call for anarchy could also be construed as an invi- 
+tation to authoritarian responses (see Feinman 2003). Some voices 
+among the radical left saw the slogan as a first step in the creation of 
+innovative forms of direct democracy that would replace traditional 
+mechanisms of political representation. 
+Still, most of these interpretations were based on purely impres- 
+sionistic accounts rather than on systematic analysis of data. Public opin- 
+ion polls have provided ample evidence of the growing political alien- 
+ation and cynicism in Argentina. They have shown that confidence in 
+political institutions reached record lows during this period. But sur- 
+veys-though based on representative samples-are 
+thin when it comes 
+to understanding the nuances of people’s discourse. An untapped 
+source of information is Internet forums; they are a rich data source 
+because they attract actors with some level of civic engagement, ask 
+meaningful questions (in the sense that they provoke complex reactions 
+in the subjects), and provide enough information for multilevel analysis. 
+
+ARMONY AND ARMOW: CITIZEN MOBILIZATION 
+37 
+Obviously, this source has important limitations: these actors are self- 
+selected; they belong to a specific social sector; they are, by definition, 
+computer literate; and they tend to hold what could be called middle-class 
+values.3 In spite of these restrictions, the discourse collected in Internet 
+forums is particularly interesting, in that it usually conveys ideas and 
+cliches that stem from a “common wisdom.” Like call-in radio talk shows, 
+Internet forums pull in contradictory perspectives and socially dominant 
+narratives. Unlike talk shows, however, no outspoken, opinionated hosts 
+regulate the flow of discourse. An Internet forum allows a more diverse, 
+unrestricted, and spontaneous interaction between participants. 
+This discourse analysis focuses on the middle class, a social stratum 
+that played a decisive role in triggering the crisis. Even though the 
+middle class is quantitatively a minority in Argentina, it is by no means 
+an elite cut from the lower strata in terms of identity and aspirations. 
+Regardless of objective indicators, most Argentines (about 70 percent of 
+them in the 1970s; see Minujin and Kessler 1995) feel that they belong- 
+or should belong-to 
+the middle class. The upward mobility of immi- 
+grants in the first decades of the twentieth century and the redistributive 
+policies of populism in the 1940s and 1950s created a widespread sense 
+of entitlement that persisted well into the 1980s and 1990s. This aspira- 
+tion to lead a “normal life” appears clearly in the Piquetero movement’s 
+discourse-for 
+instance, the emphasis on the right to earn a salary, to 
+receive decent pay, and to “live like any other citizen” (Armony and 
+Bessa 2002). Therefore the kind of analysis proposed in this study has 
+implications for a broader segment of society. 
+A PUBLIC FORUM 
+A discourse analysis of nearly a thousand messages sent to an Internet 
+forum in May 2002 reveals the extent to which the “bad politicians” 
+argument framed the perception of the crisis, particularly by middle- 
+class Argentines. The forum was held by Argentina’s most widely read 
+newspaper, Clamiz, a mainstream voice in the public arena.* Clarin 
+readers were asked for their reactions to the following question: lusted, 
+a pesar de todo, se siente orgulloso de ser argentino? iPor qug? (In spite 
+of the current situation, do you feel proud to be Argentine? Why?). This 
+question itself is quite revealing: readers were invited to assess their 
+attachment to the country rather than, for example, to evaluate their 
+own responsibility as citizens in the country’s decline. Ironically, one 
+can infer that many of those who responded to Clarin’s call were 
+among the direct beneficiaries of the convertibility model: the middle- 
+class sector that traveled around the world, consumed imported goods, 
+and obtained improved services, including computer and telecommuni- 
+cations technology, thanks to the dollar-to-peso parity. 
+
+38 
+LATIN AMERICAN POLITICS AND SOCIETY 
+47: 4 
+While some participants sent straightforward responses (Yes, I’m 
+proud; No, I’m not proud-the 
+kind of response obtained in public 
+opinion surveys), many others used different expressions or chose 
+alternative wordings. The analysis began by estimating the overall dis- 
+tribution of responses, with four main options: Very proud (10 percent); 
+Proud (59 percent); Not proud (20 percent); Ashamed (11 per~ent).~ 
+Seven out of 10 of those who sent messages to the Clarin forum 
+remained attached to their national identity, stating in one way or 
+another that they felt proud of their country. These results coincide with 
+public opinion data. For example, in a poll conducted in March 2002, 
+82 percent of the individuals said that they were proud to be Argentine.6 
+The next step in the analysis involved a description of the “average” 
+person’s discourse. For this, the study looked at the most frequently 
+used words (or sets of words having a common root) that are semanti- 
+cally “full” (nouns, adjectives, or nonauxiliary verbs that denote entities, 
+ideas, qualities, or actions). Table 1 shows the keyword frequency index 
+for the 20 most frequent words in the messages. This list portrays the 
+average person’s discourse, which was likely to express a personal bond 
+with the country by means of terms such as lije, soil, children, love, and 
+born. Examples reveal this tendency to relate to the national identity 
+mainly through the subjective experience, rather than by a reference to 
+shared values or a common destiny: “adoro y adorark toda mi vida mi 
+paif; “nacl; me crik y morire en mipaif; “aqui nacimos y vivimos nues- 
+tra infancia, nuestra adolescencia, aqui tuvimos nuestros hijof; “a 
+pesar de todo, amo mi tiema, tengo aca mis afectos, el aire que respiro.” 
+Some participants even made an analogy with filial love, thereby stress- 
+ing their emotional, unquestionable commitment to the country: 
+“luchemos por nuestra patria como lo hariamos por nuestra madre“; 
+“patria, mi como madre, jhay una sola?‘ 
+To examine the concrete way that keywords are used, the analysis 
+applied a statistical procedure that retrieves their significant collocates. This 
+technique allowed us to observe patterns of word association, along with 
+“semantic networks”; that is, some recurrent word combinations that sus- 
+tain relatively structured representations. Table 2 shows the main results of 
+this procedure. The objective of this analysis was to trace the main types 
+of representations contained in the messages sent to the forum. 
+The analysis of the data reveals that the Participants’ discourse 
+essentially conveyed three distinct representations: Argentina as a dearly 
+loved, beautiful, richly endowed country; the “ordinary people,” who 
+are honest, hard-working, and generous; and the “ruling class,” which 
+includes all those who hold power in political, labor, judicial, and cor- 
+porate matters. The sets of representations are summarized in table 3. 
+The first category results from a strong correlation between Argentina 
+and words conveying positive attributes. In this respect, we found that 
+
+ARMONY AND ARMONY: CITIZEN MOBILIZATION 
+39 
+Table 1. Keyword Frequency Index 
+Word 
+Frequency 
+argentino-s / argentina-s 
+1,722 
+orgullo / orgulloso-s / orgullosa-s 
+1,599 
+pais 
+1,510 
+Argentina 
+538 
+gente 
+501 
+politico-s / politica-s 
+49 1 
+vida / vivir / viviendo 
+384 
+sentir / sentirse / sentirme / sentirnos / sentimiento-s 
+360 
+mundo 
+302 
+trabajo / trabajar 
+240 
+pueblo 
+224 
+patria 
+217 
+dirigente-s / dirigencia 
+215 
+tierra 
+206 
+hijo-s 
+177 
+nacional / naci6n / nacionalidad 
+168 
+amo / amor 
+165 
+culpa / culpables 
+152 
+corrupto-s / corrupci6n 
+151 
+nacido / naci / nacer 
+150 
+the crisis did not affect the general perception of Argentina as a “great 
+country.” This correlation shows the endurance of the idea that 
+Argentina is meant to become a successful nation. As one participant in 
+the forum explained, “Having had the opportunity to travel abroad, I 
+can assure you that Argentina is the best country in the world because 
+of its climate, landscapes, soil, fauna, forests, deserts, and anything else 
+you could think of.” 
+If Argentines believed that their country was destined to fulfill an 
+original promise of greatness, then the bursting of that bubble could 
+easily lead to high levels of frustration. The target of this frustration was 
+the political class. A statistical analysis of word associations confirms a 
+strikingly coherent and utterly negative perception of the “ruling class.” 
+Words such as corrupt, thieves, guilv, inept, and caste were recurrent in 
+the participants’ discourse. Some granted, though, that all Argentines 
+shared the blame, “because we all voted for these politicians,” or 
+because they “are the reflection of who we are as a people.” For these 
+individuals, the main concern was about the contradiction between an 
+idealized nation and a people that did not deserve it.’ However, most 
+participants drew a clear opposition between a victimized society and a 
+
+40 
+LATIN AMERICAN POLITICS AND SOCIETY 
+47: 4 
+Table 2. Keyword Collocations 
+Keyword 
+Main Collocates 
+argentinos+ 
+orgulloso+ 
+pais 
+Argentina 
+gente 
+politicos+ 
+vida+ 
+sentir+ 
+mundo 
+trabajo+ 
+pueblo 
+patria 
+dirigentes+ 
+tierra 
+hijos+ 
+national+ 
+amo+ 
+culpa+ 
+corruptos+ 
+nacido+ 
+orgullo, siento, verguenza, muerte, pueblo, nacido, Dios 
+siento, argentinos, pertenecer, arrogancia, nacido, pais 
+hermoso, rico, bendito, querido, amo, pertenecer, salga, 
+nacido 
+nueva, aguante, viva, querida, ayuda, nacido, hermosa, 
+amo, quiero 
+honesta, costumbres, buena, capaz, inteligente, ayudar, 
+merece, trabaja 
+sindicalistas, sindical-es, dirigentes, corruptos, 
+empresarios, culpa 
+dignamente, digna, extranjero, casa, dignidad, trabajo, 
+mejor, afuera 
+orgullo, argentinos, verguenza, nacional, tierra 
+primer, tercer, resto, ante, mejor, todo, parte, mejores, 
+6nico, pais 
+dignamente, cultura, vida, tener 
+solidario, gran, hambre, parte, argentino 
+viva, defendido, traidores, amo, grande, 6nica, futuro 
+clase, empresarios, sindicalistas, politicos, corrupta, 
+nuevos, culpa 
+bendita, nacido, amar, hermosa, amo, propia, orgulloso, 
+patria, siento 
+criar, futuro, padres, espero, nacido 
+himno, sentido, sentir, orgullo 
+patria, libertad, tierra, pais, Argentina, argentinos, 
+orgulloso 
+echarle, politicos, todos, nosotros, toda, otros 
+ladrones, ineptos, politicos, jueces, justicia, dirigentes, 
+grandes, clase 
+tierra, pais, orgullo, Argentina, siento, argentinos, hijos, 
+siempre 
++Includes word variations 
+culpable minority-as the last two categories (the “ordinary people” and 
+the “ruling class”) show.8 
+A PRESIDENT’S 
+STATEMENTS 
+Paradoxically, President Carlos Menem himself advocated a harshly crit- 
+ical attitude toward the “political class” in the 1990s. His discourse, 
+
+ARMONY AND ARMONY: CITIZEN MOBILIZATION 
+41 
+Table 3. Representations of Argentina: People and Politicians 
+Representations 
+Word Association 
+Argentina as a dearly loved, 
+beautiful, richly endowed 
+country 
+The “ordinary people,” who 
+are honest, hardworking, and 
+generous 
+The “ruling class,” which 
+includes politicians, union 
+bosses, judges 
+Argentina: nueva, aguante, viva, 
+querida, ayuda, nacido, hermosa, 
+amo, quiero 
+gente honesta, costumbres, 
+buena, capaz, inteligente, ayudar, 
+merece, trabaja 
+politicos: sindicalistas, sindical-es, 
+dirigentes, corruptos, 
+empresarios, culpa 
+crafted as an indictment of the state, was actually oriented against the 
+political class, which he constantly denounced as an obstacle for a 
+country that, in his words, “deserves a future of happiness and glory.” 
+Antipolitical discourse was, of course, not without precedent in 
+Argentina. Populists, revolutionaries, and nationalists had strongly criti- 
+cized representative democracy, particularly from the 1920s to the 
+1970s. The return to constitutional rule under Radl Alfonsin in the 1980s 
+attenuated this ideological strain. But Menem’s rhetoric-though 
+nur- 
+tured by the neoliberal assault on “big spending” and “white elephant” 
+government-undoubtedly 
+contributed to the rise of an antipolitical 
+mood. His representation of a nation choked by the state did not differ 
+much from that of the infuriated Argentines who joined Clarin’s forum. 
+Soon after taking office, Menem promised to build a different type of 
+capitalism, “a ‘capitalism that is no longer tied to a welfare state (welfare 
+for a privileged few), the occasional prebend, the artificial manipulation 
+of economic variables, bureaucratic obstacles, the spurious relationship 
+between politicians and businessmen, [and] the lobby that always creates 
+pressure to obtain a privilege” (1990b). He promised to transform a state 
+from which only a few extracted benefits into one that would serve the 
+entire Argentine community. His goal was to see Argentina become “a 
+nation that its people could be proud of.” To do so, it was necessary to 
+dismantle the political class: “It is time to free the political system from 
+cuciquismos, oligarchies, and bureaucracies that preserve privileges and 
+prebends and restrain the popular will at the same time” (April 19, 1993; 
+quoted in V. Armony 2001b). Responding to increased public cynicism 
+toward the capacity of politicians to solve the major political problems 
+confronting society, Menem echoed the anger and frustration of the aver- 
+age citizen with a discourse centered on a “common sense” (rather than 
+ideological or bureaucratic) approach to problem solving. 
+
+42 
+LATIN AMERICAN POLITICS AND SOCIETY 
+47: 4 
+For decades now, each president, constitutional or military, has 
+promised to put Argentina back on track “the way it was supposed to 
+be.” Menem masterfully played on this collective belief by placing the 
+blame for all Argentina’s woes on the state (“the Argentine state buried 
+us. It went bankrupt and bankrupted all Argentines.” 1990a) and by 
+using the sudden and far-reaching effects of the Convertibility Plan as 
+proof of the revival of the Great Argentina. 
+Our country is the leader of a new order. A new, home-grown 
+Argentina will join the First World as a number-one country. The 
+leader of new changes. The leader of a leap toward the future. We 
+have joined the Brady Plan, which shows the world that it is possi- 
+ble to invest in our country today. Because our currency has the 
+weight of stability, because investors enjoy all possible guarantees, 
+and because there is more employment and well-being for all 
+Argentines. (1992) 
+The psychological impact of the economic stability brought by the 
+pegged peso cannot be exaggerated. The “engine” actually started, and 
+Argentina seemed to be moving again in the right direction. The coun- 
+try was praised by the powers that be (the Wall StreetJournal hailed 
+the “Argentine Miracle” on its front page).’ It was portrayed as a close 
+friend of the U.S. government (the so-called carnal relations with the 
+superpower; Rock 2002). Shaken by the rapid modernization and 
+Americanization of infrastructures (airports, toll highways, five-star 
+hotels, shopping malls) and services (telephones, banking, cable TV, 
+and others), Argentina did seem to be waking up after a long sleep. 
+The country’s strong currency, the access to foreign consumer goods, 
+and the ability to travel abroad gave the middle classes a taste of a First 
+World lifestyle. 
+The mythic narrative appeared to be validated: the obstacle had 
+been estatismo, and once it was removed, Argentina could join the ranks 
+of the “best countries in the world.” Although we can smile now at this 
+preposterous claim, we must remember that in the mid-l990s, it might 
+have been considered a bit immoderate but not completely unfounded. 
+As the most elementary psychology tells us, however, the higher that 
+hopes are raised, the harder frustration will hit. The end of convertibil- 
+ity and the rebound of Argentina back to the reality of the Third World 
+brought about-once again-the 
+crisis of the myth. In brief, middle- 
+class citizens who took to the streets to demand the resignation of all 
+political representatives under the slogan “Let’s get rid of them all;” who 
+flooded virtual forums to express their anger at politicians, and who fled 
+the country en masse were reacting not only to the deficits of democ- 
+racy but also to the end of a dream that, for almost a decade, appeared 
+to have become reality. 
+
+ARMONY AND ARMONY: CITIZEN MOBILIZATION 
+43 
+“A GREAT ARGENTINA” 
+The other contextual element that should be considered regarding the 
+crisis of social cohesion is a cognitive dimension that underlies and 
+determines to some extent the actors’ perceptions and behavior. Current 
+events in Argentina cannot be fully apprehended outside the paradigm 
+of national identity and the collective representations that sustain it. This 
+approach emphasizes the role of ideological narratives in the analysis of 
+social and political phenomena. While individuals are capable of 
+rational judgments based on their own interests, they are also open to 
+emotional appeals and exalting images. Evidence can be summoned to 
+suggest the idea that the Argentine Dream was suddenly shattered (but 
+not for good) by the crisis of 2001 and that the wave of extensive and 
+vehement mobilization was, at least partly, a sign of this disillusion. 
+To speak of an Argentine Dream might seem odd to a US. American, 
+who associates this kind of expression with the promise of freedom and 
+prosperity embodied in the United States and its Manifest Destiny. How- 
+ever, the American Dream-understood 
+more broadly as the New World 
+dream-is 
+a constitutive element of many Latin American national identi- 
+ties, particularly among those countries that received a significant influx of 
+immigrants during the late nineteenth and early twentieth centuries (such 
+as Argentina, Brazil, Chile, and Uruguay). It goes without saying that this 
+“dream” is framed in a larger cultural matrix. Latin American national iden- 
+tities are embedded in the Catholic worldview of Mediterranean Europe, 
+coupled with a strong positivistic and republican influence from the 
+French Enlightenment. The propensity to establish centralized govern- 
+ment, or to link patriotism to both religion and civic education (creating a 
+sort of “civic religion”; Devoto 1992), can be traced to these origins. 
+In Argentina, however, this cultural background encountered a very 
+particular geographic and demographic setting: immense fertile farm- 
+lands, extremely low population density, very small and scattered 
+indigenous and black minorities, early and intense financial linkages to 
+Great Britain, and a powerful elite with a penchant for liberal ideas. 
+Rather than thinking of itself as a peripheral enclave, as Polish writer 
+Witold Gombrowicz observed in the 1940s, this frontier society had 
+much bigger dreams. 
+There is a nebulous premonition of empire in the Argentine, the 
+premonition that one day he will be powerful, that the weight of 
+power, struggle, and responsibility will fall onto his shoulders; and 
+each of them, despite their provincial amiability, cherishes that 
+imperialist dream. (Quoted in Lanata 2002, 440) 
+Millions of European immigrants settled in Argentina, then seen as a 
+young, rich, and progressive “American” country, one that many compared 
+
+44 
+LATIN AMERICAN POLITICS AND SOCIETY 
+47: 4 
+to Canada. These immigrants and their descendants would form the core 
+of the middle classes, but they would also join the ranks of a nascent 
+working class that soon adhered-through Peronist redistribution poli- 
+cies-to middle-class values, lifestyle, and aspirations. Along with 
+Argentina’s decadence during the second half of the twentieth century, a 
+myth of past and future national grandeur definitely shaped public dis- 
+course. The relentless failure to achieve such grandeur engendered a nar- 
+rative of victimization, which became the staple of almost every political 
+point of view: there is someone who is liable for robbing Argentina’s 
+wealth, and worse, for steering the country away from its glorious destiny. 
+To be sure, the belief that one’s country is somehow unique is not 
+exclusive to Argentina. Even the notion of greatness is quite widespread 
+in Latin America; Brazil and Mexico are clear illustrations of this pattern. 
+However, the Argentine idea of exceptionality has been built on the idea 
+of potential. In this sense, Argentina illustrates, perhaps as no other 
+country in the region does, the tension between the New World prom- 
+ise of recreating the positive and rational potentials of human society 
+and the reality that this promise remains continually unfulfilled (V. 
+Armony 2004). 
+If there is an “exceptionality” in the case of Argentina, it has been 
+the capacity to preserve-ver 
+coups, economic debacles, genocide, 
+and outlandish government corruption-the 
+belief in the country’s 
+potential to achieve a superior destiny. This type of nationalistic stance 
+entailed the promotion of “the vision [ofl the Argentine nation as a 
+unique ethnocultural community” and the legitimation of the “concept 
+of Argentina’s unique historical destiny” (DeLaney 2002). Argentine 
+political discourse and popular perceptions consistently assigned the 
+blame for the country’s failure to achieve its potential to specific social 
+groups, successively construed as “the other.” These included, at differ- 
+ent points in time, the intemperate immigrants, the “oligarchy,” the left- 
+ist “subversives,” the patria flnuncieru, the armed forces, the state 
+bureaucracy, and more recently, the “political class.” 
+The myth of a Great Argentina has deep roots. In the nineteenth 
+century, Argentina perceived itself as an aspiring power in the hemi- 
+sphere. As the Buenos Aires newspaper La Prensa asserted in the early 
+1890s, Argentina was destined to play “a great civilizing mission in the 
+New World (quoted in Smith 2000). Doming0 F. Sarmiento, one of 
+Argentina’s leading political figures of the nineteenth century, imagined 
+a future of greatness for his country. As he wrote in 1888, “We shall 
+reach the level of the United States. We shall be America as the sea is 
+the ocean. We shall be the United States” (quoted in Smith 2000). 
+“Argentines refuse to accept any truth which makes them inferior to 
+anyone else,” commented President Marcel0 T. de Alvear in the 1920s. 
+“Theirs is the greatest city in the world, their frontier mountains the 
+
+ARMONY AND ARMONY: CITIZEN MOBILIZATION 
+45 
+highest and their pampas the widest; theirs the most beautiful lakes, the 
+best cattle, the richest vineyards, and the loveliest women.” Pointing out 
+a view of their own country that has permeated the Argentine experi- 
+ence, even to the very forum analyzed above, Alvear stressed, “They 
+accept no qualifications nor the fact that there might be some other 
+country which surpasses them in anything” (quoted in Bruce 1953, 7). 
+At the end of World War 11, the perception was that Argentina, once 
+again, could achieve its destiny. As Juan PerBn said on October 10, 
+1945, “These achievements are the goals that will place our nation at the 
+lead of all nations in the world.” Five years later, Per6n reasserted the 
+idea of Argentina’s manifest destiny when he claimed, “Today the 
+Argentine people, having now recovered their dignity, march toward a 
+destiny whose greatness they recognize” (May 1, 1950, both quoted in 
+Per6n 1973). And almost a decade later, during which Argentina expe- 
+rienced high levels of political and social instability, civilian president 
+Arturo Frondizi referred to the myth of the Great Argentina: “The 
+second, fundamental objective was to overcome recession and eco- 
+nomic backwardness, defeat the impediments that had slowed down 
+national development, and unleash all the country’s creative forces to 
+turn Argentina into the great nation it deserves to be, because of its 
+people and natural wealth” (May 1, 1959). This trend would continue 
+throughout the twentieth century, keeping alive the idea of a country 
+destined to join the club of the world’s most powerful nations. 
+It is interesting to note that for the United States, “the charm of 
+anticipated success” (using the words of Alexis de Tocqueville in 
+Democracy in America) became, in spite of periods of trouble and 
+uncertainty, a palpable reality (Cullen 2003). In contrast, an intriguing 
+dimension of Argentina’s sense of manifest destiny is that the promise 
+of success failed, systematically, to materialize. Indeed, Argentina’s 
+greatness can be found only in the future or in a mythical past. Accord- 
+ingly, the question is not why such a myth exists but why it has lasted 
+so long. It is interesting that the same question can be asked about the 
+Convertibility Plan. Why was it maintained in light of abundant signs 
+that it had run out of steam? One may point out the discretionary nature 
+of the policymaking process, which translated into low capacity to 
+absorb information, assess alternative scenarios, and make timely deci- 
+sions in response to changes in global markets and domestic conditions 
+(Armony and Schamis 2003,8142). 
+A different answer, however, can be found in political discourse. 
+The idea that the country’s greatness was intimately tied to convertibil- 
+ity was sustained primarily by Menem’s discourse, which was built 
+“around constant but unexamined invocations of the need for ‘stability”’ 
+(Schamis 2002)-especially as the president worked on his reelection 
+campaign. Menem’s discourse concurred with the voters’ demand for 
+
+46 
+LATIN AMERICAN POLITICS AND SOCIElY 
+47: 4 
+stability. In the presidential discourse, however, this stability was tied- 
+by necessity-to 
+the fixed exchange rate. In this way, Menem’s dis- 
+course contributed to the process of redefining people’s perceptions 
+about their country and reconstituting the conceptual universe that sus- 
+tained the myth of Argentina’s manifest destiny. 
+A statistical analysis of 310 speeches Menem delivered during his 
+presidency reveals a depiction of Argentina in terms of “spiritual 
+grandeur” and glory (data and analysis from V. Armony 2001b). This 
+success was presented as intimately linked to economic liberalization 
+and a particular type of insertion into a “new world being born.” Statis- 
+tically significant collocations associated with the term Argentina in 
+Menem’s discourse included words such as change, great, greatness, 
+history, new, and transformation. The presidential discourse systemati- 
+cally suggested a dichotomy between the Argentina of the future- 
+“coherent,” “powerful,” “glorious,” “transcendent”-and the Argentina of 
+the past-‘‘chaotic,’’ 
+“closed,” “sleeping,” “isolated.” Menem’s pro- 
+nouncements advanced especially the idea of an Argentina capable of 
+realizing its potential: “I want to tell you once again that Argentina and 
+its people were born to triumph, they were born to win, they were born 
+to become a great nation, a powerful state” (1989). This promise 
+became intertwined with the stability of an economic plan that allowed 
+Argentina, in Menem’s words before his reelection in 1994, to become 
+“the most powerful country in Latin America and in some parts of the 
+world” (1993). On March 1, 1999, Menem said, “the global prestige that 
+our country enjoys today lies in our transformation into a nation that 
+rises to the face of the earth proud of its predictability and credibility” 
+(1999). As this quotation illustrates, Menem, at the end of his second 
+term, reasserted his legacy in terms of a core value: stability. 
+But national myths, like all collective representations, do not simply 
+vanish. The “original promise” of success appeared to persist even after 
+the dramatic collapse of the economy at the turn of the twenty-first cen- 
+tury, when Argentina’s cumulative fall in output (1998-2002) was nearly 
+twice the fall experienced by the United States in the Great Depression 
+of the 1930s (according to IMF 2002). In the midst of the most serious 
+crisis to hit the country, caretaker president Eduardo Duhalde declared, 
+“Argentina is ‘doomed to succeed.’’’ This kind of talk should not be dis- 
+missed as mere political bravado or as masterful Peronist rhetoric. 
+The promise of a destiny of greatness was conveyed even by the 
+center-right candidate in the 2003 presidential elections, Ricardo L6pez 
+Murphy, a technocrat running on an unpretentious, “common sense” 
+platform. His full-page advertisement in one of the country’s leading 
+newspapers, La Nacidn, listed many of Argentina’s shortcomings and 
+acknowledged the need to accept a more modest, normal, even periph- 
+eral future for the country. But that was not his real message. At the 
+
+ARMONY AND ARMONY: CITIZEN MOBILIZATION 
+47 
+bottom of the page, in small print, the candidate alerted readers that to 
+unveil his actual message, the ad had to be read from bottom to top. 
+The “real” message stated that Argentina had an unequivocal path to 
+follow; namely, the destiny to unleash its true potential to become one 
+of the greatest countries in the world. In other words, the solution to 
+the crisis was entwined with the pursuit of the dream. 
+CONCLUSIONS 
+Many new, unconventional forms of protest emerged in the 1990s and 
+early 2000s, and the events of 2001 must be seen as the climax of a rel- 
+atively long process of social mobilization in Argentina. While it is obvi- 
+ous that an acute economic downturn provoked the popular protests of 
+December 2001 that deposed President De la ROa, this study has shown 
+that an analysis with a broader focus offers a much more comprehen- 
+sive picture. The citizens’ rage has been seen by a number of econo- 
+mists and political scientists as either purely emotional and defensive 
+(Argentines were understandably outraged) or misguided (they sought 
+to “personalize” the blame), or as the result of a crisis of political rep- 
+resentation involving a lack of correspondence between the public 
+demand for accountability and the elected authorities’ unresponsive- 
+ness, along with the political practices stemming from a powerful exec- 
+utive (Menemismo). These are, however, incomplete explanations. Situ- 
+ating its analysis among those that look at actors’ choices and subjective 
+goals, this study has asserted that the crisis should be explained in the 
+context of enduring conceptions of national identity and their interac- 
+tion with political and economic factors. 
+This analysis considered the apparent demise of the Argentine 
+Dream a key factor in the way Argentines frame their national identity 
+and conceive social bonds. This is a controversial issue, and this article 
+puts it forward to provoke a twofold debate. On one hand, the myth of 
+Great Argentina arguably has played a significant role throughout the 
+country’s history, and the middle classes have been particularly attached 
+to it. To understand why they took to the streets, we have to understand 
+what made them tick. On the other hand, the study of social mobiliza- 
+tion must focus on perceptions and beliefs, seen as both subjectively 
+construed and objectively shaped by public discourse and institutions. 
+Both leaders and citizens held on to an ideal of Argentina that hardly 
+corresponded to the reality of most citizens’ everyday lives. Nor did it 
+fit a country that continued to undergo sharp cycles of boom and bust 
+in both politics and economics. When citizens challenge an existing 
+social and political situation, their demands respond, at least in part, to 
+collective notions of their potential as a nation. Shared myths, memo- 
+ries, and dreams are vital components of this cultural framework. 
+
+48 
+LATIN AMERICAN POLITICS AND SOCIETY 
+47: 4 
+The caretaker presidents who followed De la RGa continued to 
+express a discourse based on the myth of a Great Argentina (in his inau- 
+guration speech, Adolfo Rodriguez Sa4 expressed his wish to give 
+Argentina back its grandeza). NCstor Kirchner, however, surprised most 
+analysts by breaking with this longstanding tradition. For instance, in his 
+speech before the Legislative Assembly, he made no references to the 
+nation’s or its people’s greatness. In contrast, he spoke about a “dream” 
+of an “ordinary” Argentina: “I want a normal Argentina. I want a serious 
+country. But also a more just country” (Kirchner 2003). These words 
+sound distant from the traditional Argentine aspiration of becoming a 
+new United States, a regional power, or a First World country. 
+It is interesting that once the “normalcy” of the crisis becomes part 
+of everyday life, the maintenance of the myth can rapidly steer people 
+toward blind optimism. This could explain why Kirchner’s election 
+expressed an apparent “reconciliation” between citizens and (at least 
+parts of) the political establishment. The sense of a quick economic 
+improvement during the first months of Kirchner’s tenure-still 
+a very 
+modest improvement in relation to the downfall of recent years-fueled 
+an incredible 88 percent rate of approval (see Clarin 2003). How to 
+explain this dramatic reversal in public opinion? If the surge of social 
+mobilization was mainly a reaction to worsening economic conditions, 
+the slightly better current situation hardly justifies so sheer a turnaround 
+in the collective mood. If the main reason for the citizens’ revolt was a 
+deep crisis of political representation, it is difficult to explain the strong 
+support for certain politicians, including Kirchner himself, a long-time 
+Peronist chieftain; or the turnaround that some spontaneous leaders of 
+the social rebellion later ran as candidates for traditional parties. 
+The people’s indictment of the political class in 2001 was not 
+simply the expression of a divide between citizens and their represen- 
+tatives. That phenomenon is by no means exclusive to Argentina; not 
+even to Latin America. In fact, citizens in almost every Western democ- 
+racy have denounced the political class as being concerned only with 
+advancing particular interests (especially those of the rich and power- 
+ful) rather than the common good and as generally corrupt and morally 
+decadent (Schnapper 2002). It has been suggested that the growing use 
+of references such as “political class” implies an alienation of people 
+from their political institutions and the perception of politicians “as a 
+distinct category of beings” (Cox 1996). Public cynicism toward politi- 
+cal leaders and politicians in well-established democracies steadily 
+increased in the last quarter of the twentieth century. In Austria, Britain, 
+Canada, Denmark, Finland, Germany, Italy, Japan, the Netherlands, 
+Norway, Sweden, and the United States, disillusionment with politicians 
+became a key aspect of the political landscape (Pharr and Putnam 
+2000; Pharr et al. 2000). 
+
+ARMONY AND ARMONY: CITIZEN MOBILIZATION 
+49 
+In the case of Argentina, the revolt against the “political class” 
+reflected the mutual reinforcement between an antipolitical attitude- 
+strongly encouraged by Menemismo-and the belief that Argentina had 
+once again been steered away from its destiny. If Menem succeeded in 
+placing the blame for the country’s decadence on the state bureaucracy 
+and entrenched interests, Menemismo (viewed as a paradigm of dis- 
+honesty, pretension, excess, and frivolity) itself became the main culprit 
+in the eyes of most Argentines once the convertibility model collapsed. 
+Kirchner embodied the anti-Menem sentiment by stressing the opposite 
+values: honesty, humility, moderation, dignity. Kirchner has been care- 
+ful to emphasize his willingness to listen to the people (as if he were 
+responding to the last wave of civic mobilization). He also has built a 
+discourse with few references to the legacy of Per6n (usually read as a 
+mark of populism) but with repeated allusions to a new generation of 
+political leaders (as if he were stressing his distance from the political 
+class “indicted” by the people). 
+Even though Kirchner has generally played down the myth of Great 
+Argentina, he became, ironically, the focus of a revived hope in the 
+country’s future. Recently, some observers have wondered whether 
+Argentines are “living a fantasy” because of their belief, fueled by Kirch- 
+ner’s rhetoric, that their country is on a fast track to recovery “from 
+domestic despair and international disgrace” (Alan Stoga, vice chairman 
+of the Americas Society, quoted in Miami Herald 2003). During his 
+second year in office, Kirchner increasingly asserted his authority-even 
+resorting to some controversial gestures to curb criticism in the 
+media-and 
+his public discourse acquired some distinctive nationalist 
+overtones, albeit focused on patriotic sentiment rather than on militant 
+nationalism: “I want us to feel fanatically Argentine” (CZamiz 2005.) 
+Does this mean that Argentina has returned to politics as usual, with 
+its accustomed penchant for charismatic leaders and dreams of salva- 
+tion? Not necessarily. There are many indications that although social 
+mobilization has clearly subsided, a heightened citizen awareness still 
+permeates Argentine society. Moreover, the residue of the recent wave 
+of mobilization (such as the decision of grassroots movements to create 
+new political coalitions that challenge traditional forms of leadership) 
+may have a favorable impact on Argentina’s democracy. 
+Myths, though, are hard to kill. It might be argued that, embedded 
+as they are in the national identity, they are subject to cyclical revivals 
+and periods of latency, correlated to economic, political, and social 
+trends. The ostensible reconciliation between citizens and the political 
+establishment (which is difficult to understand from traditional eco- 
+nomic and institutional perspectives) gives support to this analysis. The 
+indictment of politics as usual was more a response to a shock of real- 
+ity than a firmly rooted desire to renew the nature of the political game 
+
+50 
+LATIN AMERICAN POLITICS AND SOCIETY 
+47: 4 
+in Argentina. With the myth of national success in the background-a 
+myth that experiences surges and decays-it 
+is possible to understand 
+why Argentines were ready to trust politicians again as the unprece- 
+dented crisis subsided. Indeed, it would seem that many Argentines still 
+expect-perhaps 
+now more than ever-that 
+the promise of a Great 
+Argentina will finally come true. 
+1. On October 14, 2001, Argentines voted to renew half the seats in the 
+Cimara de Diputados and the whole Senate. The voto bronca (rage vote), cast 
+by inscribing a protest legend on the ballot or by including a foreign object in 
+the ballot envelope (for example, an image of the popular cartoon character 
+Clemente or a picture of Che Guevara), finished second, receiving almost 4 mil- 
+lion votes (more than 20 percent of the national total). Moreover, 90.8 percent 
+of those who cast the voto bronca said they wanted to express their anger at the 
+“political class.” See Clarin 2001. 
+2. The white tent was set up on April 2, 1997, by the teachers’ union 
+CTERA (Confederaci6n de Trabajadores de la Educaci6n de la RepGblica 
+Argentina) on a public square in front of the National Congress in Buenos Aires. 
+The huge tent stood there for almost three years as a means of pressuring the 
+federal government to enact a new law on education funding. Different groups 
+of teachers would go on a hunger strike for a week inside the tent. This form 
+of citizen protest attracted much media attention and was later used by other 
+actors elsewhere in the country (Giarracca and Bidaseca 2001). 
+. 
+3. Even though they do not belong exclusively to the upper strata. Indeed, 
+13 percent of lower-middle-class households in Argentina have an Internet con- 
+nection. Data from Carrier y Asociados 2002. 
+4. A computer-assisted analysis was performed on 1,078 messages (totaling 
+146,792 words) sent to Claniz’s website from May 12 to 19, 2002, by 651 differ- 
+ent individuals. 
+5. The procedure entailed detecting all instances of these phrases: estoy 
+muy orgulloso-a, me siento muy orgulloso-a, me siento orgulloso-a, estoy orgul- 
+loso-a, siento orgullo, podemos estar orgullosos, c6mo no estar orgulloso-a, no me 
+siento orgulloso-a, no estoy orgulloso-a, no me puedo sentir orgulloso-a, me da 
+verguenza, me averguenza, siento verguenza, como no sentir uerguenza, me 
+averguenzo . 
+6. The survey was conducted by Cuore Consumer Research (CCR) (N = 
+4,500). 
+7. As one message noted, “The problem here is another one: this poor 
+country has nothing to do with the garbage that walks on it.” 
+8. The following message illustrates this pattern: “The current chaos is not 
+the responsibility of. . . 37 million Argentines, but of a few crooks in’the ruling 
+and political class.” 
+9. “That is what is being called the Argentine Miracle. Under President 
+Carlos Menem and his economy minister, Doming0 Cavallo, Argentina is experi- 
+
+ARMONY AND ARMONY: CITIZEN MOBILIZATION 
+51 
+encing a spectacular revival. [. . .I Argentina-mired 
+during ‘the lost decade’ of 
+the 1980s in inflation, stagnation, debt and deficitsis becoming something of a 
+showcase of Latin America’s free-market revolution” (Wall Street Journal 1992). 
+REFERENCES 
+Aguinis, Marcos. 2003. En busca del enemigo que es precis0 vencer. La Naci6n 
+(Buenos Aires), January 12. 
+Altamirano, Carlos. 2002. iQue se vayan todos! La Ciudad Futura 51 (August): 
+8-10, 
+Armony, Ariel C. 2004. 7he Dubious Link: Civic Engagement and Democratiza- 
+tion. Stanford: Stanford University Press. 
+Armony, Ariel C., and Hector E. Schamis. 2003. Repensando la Argentina: antes 
+de diciembre de 2001 y mas alla de muyo de 2003. Washington, DC: 
+Woodrow Wilson International Center for Scholars. 
+Armony, Victor. 2001a. Is There an Ideological Link Between Neopopulism and 
+Neoliberalism? Brazilian Journal of Political Economy 21, 2: 62-77. 
+-. 
+2001b. National Identity and State Ideology in Argentina. In National Iden- 
+tities and Sociopolitical Changes in Latin America, ed. Mercedes F. Durgn- 
+Cogan and Antonio Gomez-Moriana. New York: Routledge. 293-319. 
+-. 
+2004. Lsnigme argentine. Images d’une soci@t@ 
+en crise. Montreal: Athens. 
+Armony, Victor, and Elena Bessa. 2002. Emerging Social and Ethnic Identities in 
+Latin America. Paper presented at the 15th World Congress of Sociology, 
+Brisbane, Australia, July 7-13. 
+Auyero, Javier. 2002. La protesta: retratos de la beligerancia popular en la 
+Argentina democrutica. Buenos Aires: Centro Cultural Rojas-UBA. 
+Braun, Maria. 2000. Society and Politics. Mercado (Buenos Aires) 993 (August). 
+Bruce, James. 1953. nose Perpllexing Argentines. New York: Longmans and Green. 
+Carrier y Asociados (Buenos Aires). 2002. Informe telecomunicaciones residen- 
+ciales. June. 
+Cheresky, Isidoro. 2002. La bancarrota. La Ciudad Futura (Buenos Aires) 51 
+(August): 6-8. 
+-. 
+2003. En nombre del pueblo y de las convicciones. Posibilidades y limites 
+del gobierno sustentado en la opini6n publica. Paper presented at the con- 
+ference “Building the Americas,” University of Quebec, Montreal, Novem- 
+ber 5-7. 
+Clarin (Buenos Aires). 2001. El voto bronca Ilego a casi cuatro millones. Octo- 
+ber 16. 
+-. 
+2003. Los Kirchner, a1 tope de las preferencias de la gente. December 1. 
+-. 
+2005. Kirchner encabez6 10s actos por el Dia de la Independencia. August 
+Corrales, Javier. 2002. The Politics of Argentina’s Meltdown. World Policy Jour- 
+Cox, Robert. 1996. A Perspective on Globalization. In Globalization: Critical 
+Cullen, Jim. 2003. n e American Dream: A Short History ofan Idea that Shaped 
+9. 
+nal 19, 3 (Fall):.2942. 
+Reflections, ed. James H. Mittelman. Boulder: Lynne Rienner. 21-33. 
+a Nation. New York: Oxford University Press. 
+
+52 
+LATIN AMERICAN POLITICS AND SOCIETY 
+47: 4 
+Cuore Consumer Research (CCR). 2002. Survey (N = 4,500). March. Cited in 
+De Ipola, Emilio. 2002. Debate. La Ciudud Futura 51 (August): 17-30. 
+DeLaney, Jeane H. 2002. Imagining El Ser Argentino: Cultural Nationalism and 
+Romantic Concepts of Nationhood in Early Twentieth-Century Argentina. 
+Journal of Latin American Studies 35: 625-58. 
+Devoto, Fernando. 1992. Idea de nacibn, inmigraci6n y “cuesti6n social” en la 
+historiografia academica y en 10s libros de texto de Argentina (1912-1974). 
+Estudios Sociales 2, 3: 9-30. 
+Sociedad: el impact0 de la crisis, Clanit, August 19. 
+Feinman, Jose Pablo. 2003. Poder y contrapoder. Pugina 12. 
+Filmus, Daniel, ed. 1999. Los noventa: polftica, sociedad y cultura en A m k c a 
+Latina y Argentina deljn de siglo. Buenos Aires: Eudeba/FLACSO. 
+Frondizi, Arturo. 1959. Desarrollo econ6mico y unidad nacional. Buenos Aires: 
+Servicio de Prensa de la Presidencia de la Naci6n. November 5. 
+Gayol, Silvia, and Kessler, Gabriel. 2002. Wolencias, delitos y justicias en la 
+Apentina. Buenos Aires: UNGS-Manantial. 
+Giarracca, Norma, and Karina Bidaseca. 2001. Introducci6n. In Laprotesta social 
+en la Argentina. Transformaciones econ6micas y crisis social en el interior 
+delpak, ed. Norma Giarraca et al. Buenos Aires: Alianza Editorial. 19-40. 
+Guemureman, Silvia. 2002. Argentina: la “medicibn” de la inseguridad ciu- 
+dadana. Una lectura de la encuesta victimol6gica a travks de 10s indicadores 
+sociales. Paper presented at the Canadian Association for Latin American 
+and Caribbean Studies Conference, Montreal, October 24-26. 
+Hanke, Steve H. 2002. Argentina: Caveat Lector. Paper prepared for the Cat0 
+Institute’s 20th Annual Monetary Conference cosponsored with The Econo- 
+mist, New York City, October 17. 
+Ifiigo Carrera, Nicolas, and Maria Celia Cotarelo. 2003. Social Struggles in Pre- 
+sent-Day Argentina. Bulletin of Latin American Research 22, 2: 201-13. 
+International Monetary Fund (IMF). 2002. World Economic Outlook. Washington, 
+DC: IMF. September. 
+Jozami, Angel. 2003. Argentina. La destrucci6n de una naci6n. Buenos Aires: 
+Mondadori. 
+Kaiser, Susana. 2002. Escraches: Demonstrations, Communication, and Political 
+Memory in Post-dictatorial Argentina. Medfu, Culture andSociety 24: 499-516. 
+Kirchner, Nkstor. 2003. Inaugural address. May 25. Presidencia de la Naci6n 
+Argentina. <www. presidencia .gov. ar> 
+Krueger, Anne. 2002. Crisis Prevention and Resolution: Lessons from Argentina. 
+Paper presented at the conference “The Argentina Crisis,” Cambridge, MA, 
+July 17. 
+Lanata, Jorge. 2002. Argentinos. Desde Pedro de Mendozu basta la Argentina del 
+centenario. Buenos Aires: Ediciones B. 
+Laufer, Ruben, and Claudib Spiguel. 1999. Las “puebladas” argentinas a partir del 
+“santiaguefiazo” de 1993. TradiciBn hist6rica y nuevas formas de lucha. In 
+Lucha popular, democracia, neoliberalismo: protesta popular en Amhrica 
+Latina en 10s afios de ajuste, ed. Margarita L6pez Maya. Caracas: Nueva 
+Sociedad. 15-44. 
+Levitsky, Steven, and Maria Victoria Murillo. 2003. Argentina Weathers the Storm. 
+Journal of Democracy 14, 4 (October): 152-66. 
+
+ARMONY AND ARMONY: CITIZEN MOBILIZATION 
+53 
+Mahon, James E., Jr., and Javier Corrales. 2002. Pegged for Failure? Argentina’s 
+Menem, Carlos. 1989. Discursos del presidente. Buenos Aires: Secretaria de 
+-. 
+1990a. March 8. 
+-. 
+1990b. September 3. 
+-. 
+1992. April 14. 
+-. 
+1993. May 1. 
+-. 
+1999. March 1. 
+Miami Herald. 2003. It’s too early to judge Kirchner’s “miracle.” November 30. 
+Minujin, Alberto, and Gabriel Kessler. 1995. La nueva pobreza. Buenos Aires: 
+Mocca, Edgardo. 2002. Debate. La Ciudad Futura 51 (August): 17-30. 
+O’Donnell, Guillermo. 1994. Delegative Democracy. Journal of Democracy 5, 1 
+(January): 56-69. 
+Ollier, Maria Matilde. 2003a. Argentina: Up a Blind Alley Once Again. Bulletin 
+of Latin American Research 22, 2: 170-86. 
+-. 
+2003b. De la bipolaridad maltrecha a las inc6gnitas de la dispersibn. 
+Textos (Buenos Aires) 2, 2 (April): 4-1 1. 
+Oviedo, Luis. 2001. Una historia del movimiento piquetero. Buenos Aires: Edi- 
+ciones Rumbos. 
+Perez-LiiiPn, Anibal S. 2003. Pugna de poderes y crisis de gobernabilidad: ihacia 
+un nuevo presidencialismo? Latin American Research Review 38, 3 (Octo- 
+ber): 149-64. 
+Crisis. Current History (February): 72-75. 
+Medios de Comunicaci6n. December 9. 
+Planeta. 
+PerBn, Juan. 1973. Habla Pe76n. Buenos Aires: Editorial Freeland. 
+Peruzzotti, Enrique. 2002. Civic Engagement in Argentina: From the Human 
+Rights Movement to the Cacerolazos. Washington, DC: Woodrow Wilson 
+International Center for Scholars. 
+Pharr, Susan J., and Robert D. Putnam, eds. 2000. Disaffected Democracies: What’s 
+Troubling the Trilateral Countries? Princeton: Princeton University Press. 
+Pharr, Susan J., Robert D. Putnam, and Russell J. Dalton. 2000. A Quarter-Cen- 
+tury of Declining Confidence. Journal of Democracy 11, 2 (April): 5-25. 
+Portantiero, Juan Carlos. 2002. Los desafios de la democracia. TodavIA (Fun- 
+daci6n OSDE, Buenos Aires), September. <www.revistatodavia.com.ar/ 
+notas2/Portantiero/textoportantiero. htm> 
+Rock, David. 1992. Racking Argentina. New Left Review 17 (September-October): 
+55-86. 
+Schamis, Hector E. 2002. Argentina: Crisis and Democratic Consolidation. Jour- 
+nal of Democracy 13, 2 (April): 81-94. 
+-. 
+2003. Requiem para el menemismo. La Nacih, May 19. 
+Schnapper, Dominique. 2002. La dhocratie providentielle. Essai sur l’kgalitk 
+Smith, Peter H. 2000 (1996). Talons of the Eagle: Dynamics 0fU.S.-Latin Ameri- 
+Stiglitz, Joseph. 2002. Argentina, Shortchanged. Washington Post, May 12. 
+Svampa, Maristella. 2002. Las nuevas urbanizaciones privadas. Sociabilidad y 
+socializaci6n: la integraci6n social “hacia arriba.” In Sociedad y sociabilidad 
+en la Argentina de 10s 90, 
+ed. Luis Beccaria et al. Buenos Aires: Biblos. 55-96. 
+contemporaine. Paris: Gallimard. 
+can Relations. 2nd ed. New York: Oxford University Press. 
+
+54 
+LATIN AMERICAN POLITICS AND SOCIETY 
+47: 4 
+Taddei, Emilio. 2002. Crisis econbmica, protesta social y ”neoliberalismo 
+armado” en AmCrica Latina. Revista del Obseruatorio Social de Amkrica 
+Latina 3, 7 (June). 
+Tedesco, Laura. 2002. Argentina’s Turmoil: The Politics of Informality and the 
+Roots of Economic Meltdown. Cambridge R m ’ w of International Affairs 
+15. 3 (October): 469-81. 
+Wall StreetJournal. 1992. Argentine “Miracle”: Talk of Buenos Aires is that Latest 
+Revival in Economy Is for Real. September 11: 1.

@@ -1,0 +1,2037 @@
+NUNO GAROUPA AND TOM GINSBURG* 
+Guarding the Guardians: Judicial Councils and 
+Judicial Independence 
+This Article uses comparative evidence to inform the ongoing de-
+bate about the selection and discipline of judges. In recent decades, 
+many countries around the world have created judicial councils, insti-
+tutions designed to maintain an appropriate balance between judicial 
+independence and accountability. Our Article has two aims. First, we 
+provide a theory of the formation of judicial councils and identify 
+some of the dimensions along which they differ. Second, we test the 
+extent to which different designs of judicial council affect judicial 
+quality. We find that there is little relationship between councils and 
+quality. We also offer a positive explanation for why judicial councils 
+nevertheless remain attractive 
+institutions. 
+I. 
+INTRODUCTION 
+The selection of judges is a central factor in most theories of judi-
+cial independence.1 Judges who are dependent in some way upon the 
+* Nuno Garoupa is Professor of Law, University of Illinois and Research Profes-
+sor of Law, IMDEA (Madrid); Tom Ginsburg is Professor at the University of Chicago 
+Law School. We thank Luciana Gross Cunha, Emilio Gerelli, James Gordley, F. An-
+drew Hanssen, Richard McAdams, Maria Angela Oliveira, Limor Riza, Larry Solum, 
+Alexi Trochev, Stefan Van Hemmen, and seminar participants at the American Eco-
+nomic Association meetings in Chicago (ISNIE Special Session on the Economics of 
+the Judiciary), the Taormina International Conference in Searching for New Methods 
+in Law and Economics, the Latin American and Caribbean Law and Economics Asso-
+ciation meetings in Brasilia, the Royal Economic Society meetings in Coventry, and at 
+the workshops in UAB Barcelona, University of Illinois College of Law, the University 
+of Southern California Gould School of Law and the Hamburg Institute of Law and 
+Economics. We are grateful to Rebecca Crouse, Sofia Garcia, Christopher Minelli, and 
+Antonio Porto for research assistantship. The usual disclaimers apply. 
+1. There is a large body of literature on judicial independence and quality. See, 
+e.g., Richard Epstein, The Independence of Judges: The Uses and Limitations of Pub-
+lic Choice, BYU L. REV., at 827 (1990); Paul Fenn & Eli Salzberger, 
+Judicial 
+Independence: Some Evidence from the English Court of Appeal, 42 J.L. & ECON. 831 
+(1999); F. Andrew Hannsen, Is There a Politically Optimal Level of Judicial Indepen-
+dence?, 94 AM. ECON. REV. 712 (2004); Irving Kaufman, The Essence of Judicial 
+Independence, 80 COLUM. L. REV. 671 (1980); Daniel Klerman & Paul Mahoney, The 
+Value of Judicial Independence: Evidence from 18th Century England, 7 AM. L & 
+ECON. REV. 1 (2005); William Landes & Richard Posner, The Independent Judiciary in 
+an Interest-Group Perspective, 18 J.L. & ECON. 875 (1975); J. Mark Ramseyer, The 
+Puzzling (Independence of Courts, 23 J. LEGAL STUD. 721 (1994); J. Mark Ramseyer & 
+Eric Rasmusen, Judicial Independence in Civil Law Regimes: Econometrics from Ja-
+pan, 
+13 J.L. ECON. & ORG. 259 (1997); McNollgast, Conditions for 
+Judicial 
+103 
+
+104 
+THE AMERICAN JOURNAL OF COMPARATIVE LAW 
+[Vol. 57 
+person who appoints them cannot be relied upon to deliver neutral, 
+legitimate, high-quality decisions. While there is near-universal con-
+sensus on this as a matter of theory, legal systems have devised a 
+wide range of selection mechanisms in practice, often trying to bal-
+ance independence with accountability through institutional design. 
+The diversity of systems of judicial selection suggests that there is no 
+consensus on the best manner to guarantee independence.2 
+At the same time, there is a trend toward insulating judicial se-
+lection from partisan politics. In the United States, this is reflected in 
+the growing scholarly consensus in favor of "merit selection."3 In 
+other countries, it is reflected in the adoption of judicial councils, an 
+international "best practice" designed to help ensure judicial indepen-
+dence and external accountability. We thus see the emergence of a 
+new orthodoxy—merit selection is good and other methods are retro-
+Independence, 15 J. CONTEMP. LEGAL ISSUES 105 (2006); William H. Rehnquist, See in 
+a Glass Darkly: The Future of the Federal Courts, Wis. L. REV. 1 (1993). For a more 
+comparative perspective, see Josefina Calca de Temeltas, Commentary: 
+Comparative 
+Constitutional Approaches to the Rule of Law and Judicial Independence, 40 ST. 
+LOUIS U. L. J. 1997 (1996). 
+2. See generally APPOINTING JUDGES IN AN AGE OF JUDICIAL POWER (Kate Mal-
+leson & Peter H. Russell eds., 2006). 
+3. Malia Reddick, Merit Selection: A Review of the Social Scientific 
+Literature, 
+106 DICKERSON L. REV. 729 (2002) (providing summary of empirical evidence); Luke 
+Bierman, Preserving Power in Picking Judges: Merit Selection for the New York Court 
+of Appeals, 60 ALB. L. REV. 339 (1996) (advocating merit system for New York); Nor-
+man L. Greene, Perspectives on Judicial Selection Reform: The Need to Develop a 
+Model Appointive Selection Plan for Judges in Light of Experience, 68 ALB. L. REV. 
+459 (2005) (merit system superior); Steven Zeidman, Keynote Address, Judicial Polit-
+ics: Making the Case for Merit Selection, 68 ALB. L. REV. 713 (2005); Lawrence H. 
+Avrill, Jr., Observations on the Wyoming Experience with Merit Selection of Judges: A 
+Model for Arkansas, 17 U. ARK. LITTLE ROCK L.J. 281 (1995) (Arkansas); Sara S. 
+Greene, et al., On the Validity and Vitality of Arizona's Judicial Merit Selection Sys-
+tem: Past, Present, and Future, 34 FORDHAM URB. L.J. 239 (2007) (Arizona); Victoria 
+Cecil, Merit Selection and Retention: The Great Compromise? Not Necessarily, 39 
+COURT REV. 20 (2002) (Florida); Jason J. Czarnezki, Essay, A Call for Change: Im-
+proving Judicial Selection Methods, OR. L. REV. 459 (2005) (Wisconsin); Lenore L. 
+Prather, Judicial Selection: What is Right for Mississippi?, 72 MISS. C.L. REV. 459 
+(2002) (Mississippi); Jona Goldschmidt, Merit Selection: Current Status Procedures, 
+and Issues, 49 U. MIAMI L. REV. 1 (1994) (providing extensive history of merit selec-
+tion and arguing for the merit plan); Joseph A. Colquitt, Rethinking 
+Judicial 
+Nominating 
+Commissions: Independence, Accountability, and Public Support, 34 
+FORDHAM URB. LJ. 78 (2007); Mark A. Behrens & Cary Silverman, The Case for 
+Adopting Appointive Judicial Selection Systems for State Court Judges, 1 CORNELL J. 
+L. & PUB. POL'Y 273 (2002) (arguing for appointment over election); Norman L. 
+Greene, A Critical Appraisal of Appointive Selection for State Court Judges: The Judi-
+cial Independence Through Fair Appointments Act, 34 FORDHAM URB. L.J. 13 (2007) 
+(same); G. Alan Tarr, Designing an Appointive System: The Key Issues, 34 FORDHAM 
+URB. L.J. 291 (2007) (same); Jeffery D. Jackson, Beyond Quality: First Principles in 
+Judicial Selection and Their Application to a Commission-Based Selection System, 34 
+FORDHAM URB. L.J. 459 (2007); Steven P. Croley, The Majoritarian Difficulty: Elective 
+Judiciaries and the Rule of Law, 62-U. CHI. L. REV. 689 (1995) (judicial elections 
+undermine rule of law); Paul R. Brace & Melinda Gann Hall, The Interplay of Prefer-
+ences, Case Facts, Context, and Rules in the Politics of Judicial Choice, 59 J. POL. 
+1206 (1997). 
+
+2009] 
+JUDICIAL COUNCILS AND JUDICIAL INDEPENDENCE 
+105 
+grade. Because there are few common metrics to evaluate the 
+comparative independence or quality of judiciaries, the new scholarly 
+consensus is largely theoretical, built on anecdotal rather than sys-
+tematic evidence.4 
+This Article describes the global spread of judicial councils and 
+provides a theory of their formation and features. By our estimate, 
+over sixty percent of countries have some form of judicial council, up 
+from ten percent thirty years ago.5 We also provide some evidence as 
+to whether different designs of judicial council affect judicial quality. 
+Although we find that there is little relationship between council 
+adoption and quality, the Article argues that the eternal struggle for 
+a balance between independence and accountability ensures that ju-
+dicial councils will continue to be a locus of institutional reform. Yet 
+there are limits to the efficacy of institutional solutions to problems of 
+judicial independence. Although councils serve as an arena for con-
+testation for various groups with an interest in judicial performance, 
+they do not by themselves guarantee the substantive outputs of inde-
+pendence and quality. 
+The Article is organized as follows. First, we discuss the emer-
+gence of judicial councils. We then provide a theory of the formation 
+of judicial councils and identify some of the dimensions along which 
+they differ. Next, we test the extent to which different designs of judi-
+cial council affect judicial quality. We find that there is little 
+relationship between council design and quality. Our theory never-
+theless offers a positive explanation for why judicial councils remain 
+attractive institutions. Finally, we conclude with a discussion of the 
+implications of the analysis. 
+II. 
+THE TENSION BETWEEN ACCOUNTABILITY AND INDEPENDENCE 
+A long and established literature argues that the ideal of judicial 
+independence is a crucial quality of legal systems, and indeed inher-
+ent in the notion of judging.6 Naturally, the ideal is not always met, 
+for it remains the case that in every legal system judges are ap-
+pointed and employed by the state. It would be unusual indeed if 
+judges did not have a role in implementing social policy, broadly con-
+ceived.7 In democracies, this implies the need for some accountability 
+4. But see Stephen J. Choi et al., Judicial Independence, Judicial Quality and 
+the Countermajoritarian 
+Difficulty: An Empirical Test Using Data from State Su-
+preme Courts (2007), available at http://papers.ssrn.com/sol3/papers.cfm?abstract_id= 
+998536 (rinding that judges in partisan systems are more productive in terms of num-
+ber of opinions, but that appointed judges are cited more frequently). 
+5. Diffusion data on file with authors. 
+6. See the recent volume JUDICIAL INDEPENDENCE AT THE CROSSROADS: AN INTER-
+DISCIPLINARY APPROACH (Stephen B. Burbank & Barry Friedman eds., 2003). 
+7. 
+MARTIN SHAPIRO, COURTS: A COMPARATIVE AND POLITICAL ANALYSIS (1981). 
+
+106 
+THE AMERICAN JOURNAL OF COMPARATIVE LAW 
+[Vol. 57 
+of judges. While judicial independence is widely studied,8 accounta-
+bility has been the subject of much less inquiry. It requires that the 
+judiciary as a whole maintain some level of responsiveness to society, 
+as well as a high level of professionalism and quality on the part of its 
+members. This section discusses judicial councils as devices to ensure 
+both independence and accountability. 
+A. 
+Judicial Councils in Civil Law and Common Law Systems 
+Judicial councils are bodies that are designed to insulate the 
+functions of appointment, promotion, and discipline of judges from 
+the partisan political process while ensuring some level of accounta-
+bility. Judicial councils lie somewhere in between the polar extremes 
+of letting judges manage their own affairs and the alternative of com-
+plete political control of appointments, promotion, and discipline. The 
+first model of judicial self-management arguably errs too far on the 
+side of independence, while pure political control may make judges 
+too accountable in the sense that they will consider the preferences of 
+their political principals in the course of deciding specific cases. There 
+are a wide variety of models of councils, in which the composition and 
+competences reflect the concern about the judiciary in a specific con-
+text, 
+balancing 
+between 
+demands 
+for 
+accountability 
+and 
+independence. 
+France established the first High Council of the Judiciary (Con-
+seil Superieur de la Magistrature) 
+in 1946.9 It was in charge of 
+managing judicial personnel but only a minority of members were 
+8. See, e.g., Sanford Levinson, Identifying "Independence," 86 B.U. L. REV. 1297 
+(2006) (identifying formal and informal pressure on the judiciary); Stephen B. Bur-
+bank, The Architecture of Judicial Independence, 
+72 S. CAL. L. REV. 315 (1999) 
+(explaining judicial independence in contemporary American history); Archibald Cox, 
+The Independence of Judiciary: History and Purposes, 21 U. DAYTON L. REV. 565 
+(1996) (discussing historical reasons for judicial independence); John Ferejohn & 
+Larry Kramer, Independent Judges, Dependent Judiciary: Institutionalizing 
+Judicial 
+Restraint, 77 N.Y.U. L.REV. 962 (2002) (arguing that independence and accountability 
+aim at a well-functioning system of adjudication); John Ferejohn, Judicializing Polit-
+ics, Politicizing 
+the Law, 65 LAW & CONT. PROBS. 45 (2002); John Ferejohn, 
+Independent Judges, Dependent Judiciary: Explaining Judicial Independence, 72 S. 
+CAL. L. REV. 353 (1999) (discussing institutional protections forjudges and the judici-
+ary and explaining interest theories of judicial independence); Gordon Bermant & 
+Russell Wheeler, Federal Judges and the Judicial Branch: Their Independence and 
+Accountability, 
+46 MERCER L. REV. (1995) (identifying different levels of indepen-
+dence, including decisional independence, personal independence, procedural 
+independence, administrative independence; and different levels of accountability, 
+namely internal vs. external accountability); Frank Kahn Zemans, The Accountable 
+Judge: Guardian of Judicial Independence, 72 S. CAL. L. REV. 625-56 (1999) (discuss-
+ing institutional versus decisional independence); also Burbank & Friedman, supra 
+note 6. 
+9. A precursor for judicial councils can be seen in the use of formal nominations 
+committees composed of various governmental officials. See, e.g., Constitution of Alba-
+nia, 1925 (judicial nominations from special committee of judges, prosecutors, and 
+Minister of Justice). 
+
+2009] 
+JUDICIAL COUNCILS AND JUDICIAL INDEPENDENCE 
+107 
+themselves magistrates elected directly by fellow judges.10 Italy's ju-
+dicial council (Consiglio Superiore della Magistratura), 
+created in 
+1958, was the first to fully insulate the entire judiciary from political 
+control, a model that has been followed in other judicial reforms.11 
+Spain12 and Portugal13 have slightly different models introduced af-
+ter the fall of the dictatorships in the mid 1970s, in which judges 
+constitute a significant proportion of the members. These councils 
+have final decision-making in all cases of promotion, tenure, and re-
+moval. Judicial salaries are also technically within their authority 
+but usually tempered by the department in charge of the budget (typ-
+ically the Ministry of Finance). The power of high-ranking 
+magistrates has been dramatically reduced in most of these countries 
+(as a consequence of junior-ranking judges being appointed to the ju-
+dicial council) and strong unions or judicial associations have 
+emerged.14 
+The French and Italian cases were motivated by a concern about 
+excessive politicization and consequently granted extensive indepen-
+dence to the judicial power. After some time, however, courts became 
+more extensively involved in politics and accountability issues came 
+10. In the Fifth Republic, the President of the Republic took over the appoint-
+ments of all the members and reinstated most of the traditional powers of the 
+Minister of Justice and higher-ranking judges. The cohabitation period in the 1980s 
+eventually led to another reform (Loi Constitutionnelle 
+of July 1993 and Loi Or-
+ganique of Feb. 1994). The Council has two committees, one for judges and another 
+one for prosecutors. The Council has a total of sixteen members. Each committee has 
+one administrative judge chosen by the administrative judges (Conseil d'Etat) and 
+three individuals chosen by the President, the Senate, and the National Assembly 
+each. For the judicial committee, it has also five judges elected by the fellow judges 
+and one prosecutor chosen by the fellow prosecutors; for the prosecutorial committee, 
+it has one judge elected by the fellow judges and five prosecutors for the prosecutorial 
+formation. The President and the Minister of Justice sit ex officio. See Cheryl Thomas, 
+Judicial Appointments 
+in Continental Europe, Lord Chancellor's Department, Re-
+search Series 6/97, 1997. 
+11. The Italian Council was made up of thirty-three members, twenty magis-
+trates elected directly by the judges, ten lawyers or law professors nominated by the 
+Parliament, and the President, the Chief-Justice, and the Chief-Prosecutor all serving 
+ex officio. It has been reformed recently to include only twenty-four members, sixteen 
+ordinary magistrates and prosecutors and eight lawyers or law professors with fifteen 
+years experience in the legal profession, all of whom are appointed by the Parliament. 
+See Thomas, supra note 10. 
+12. The Spanish Council (Consejo General del Poder Judicial) has twenty mem-
+bers, twelve judges and eight lawyers all appointed by the Parliament and the Chief-
+Justice ex officio. For prosecutors, there is a council made up of twelve prosecutors 
+(Consejo Fiscal). 
+13. There are three councils in Portugal, one for judicial courts (Conselho Supe-
+rior da Magistratura), one for administrative courts (Conselho Superior dos Tribunals 
+Administrativos 
+e Fiscais), and one for prosecutors (Conselho Superior do Ministerio 
+Publico). 
+14. A good summary can be found in Thierry-Serge Renoux, 2000, Les Conseils 
+Superieurs de la Magistrature en Europe, Documentation Francaise (Coll. Perspec-
+tives sur la justice). About the unionization of the judiciary, see Willem de Haan et al., 
+Radical French Judges: Syndicat de la Magistrature, 16 J.L. & SOC'Y 477-82 (1989) 
+(explaining the role of the union of judges). 
+
+1 0 8 
+THE AMERICAN JOURNAL OF COMPARATIVE LAW 
+[Vol. 5 7 
+to the fore. For example, in France, reforms in the 1990s were clearly 
+driven by political events that have empowered the judiciary. Al-
+though the Fifth Republic maintained the traditional subordination 
+of the French judiciary to the executive and the legislature, and the 
+rather docile judiciary exercised individual and collective judicial 
+self-restraint, conflicts began to develop in the late 1960s and 
+1970s.15 The consolidation of judicial review by the Constitutional 
+Council in the mid-1970s had a major and enduring impact. The 
+sharp increase in litigation, both civil and administrative, the 
+criminalization of many activities, and the extension of the scope of 
+application of the European Convention of Human Rights, all served 
+to increase the influence of the French judiciary. At the same time, 
+several political scandals gave the judiciary an important influence 
+over politics. France, with its tradition of viewing the judiciary as a 
+faceless collectivity dispensing justice, was now faced with a new 
+kind of celebrity.16 Though the judiciary as a whole is still quite self-
+restrained, a number of individual judges gained notoriety because of 
+their role in investigating political scandals. This in turn has led to 
+the introduction of a debate about the lack of external accountability 
+of judges.17 
+The pattern in Italy is similar. The Italian judicial system is no-
+table for its extreme independence, in which the judicial council 
+controls virtually all aspects of judicial appointment and promotion 
+for the ordinary judiciary.18 The balance of power on the council is 
+clearly in the hands of the judiciary, and since the internal hierarchy 
+of the judiciary has largely been undermined, all decisions on the sta-
+tus of magistrates are taken by the council. Prominent scandal 
+investigations related to businessmen, politicians, and bureaucrats 
+marked the period from 1992 to 1997, raising questions about judicial 
+accountability.19 Consequently, the composition of the council was al-
+tered in 2002 to increase the influence of the Parliament. 
+15. See Michael. H. Davis, A Government 
+of Judges: An Historical 
+Re-View, 
+35 
+AM. J. COMP. L. 559 (1987) (explaining why the American government of judges is 
+disliked by the French legal scholars); John Bell, Principles 
+and Methods of 
+Judicial 
+Selection 
+in France, 61 S. CAL. L. REV. 1757 (1988); ALEC STONE, T H E BIRTH O F JUDI-
+CIAL POLITICS IN FRANCE (1992); Vincent Wright, The Fifth Republic: 
+From the Droit 
+d'Etat to the Etat de Droit?, 22 W. EUR. POL. 92 (1999), and Dories Marie Provine & 
+Antoine Garapon, The Selection 
+of Judges in France: Searching 
+for a New 
+Legitimacy, 
+in APPOINTING JUDGES IN AN A G E OF JUDICIAL POWER 176 (Kate Malleson & Peter H. 
+Russell eds., 2006). 
+16. See Doris Marie Provine, Courts in the Political Process in France, in COURTS, 
+LAW AND POLITICS IN COMPARATIVE PERSPECTIVE, at 203-04 (Herbert Jacob et al., eds., 
+1996). 
+17. 
+VALERY TURCEY, L E CONSEIL SUPERIEUR DE LA MAGISTRATURE FRANCAIS: BI-
+LAN ET PERSPECTIVES (2005). 
+18. See Thomas, supra note 10. 
+19. Patrizia Pederzoli, The Reform 
+of the Judiciary 
+in ITALIAN POLITICS: Q U O 
+VADIS 153-71 (Carlo Guarnieri & James Newell eds., 2004); David Nelken, The 
+Judges 
+and Political 
+Corruption 
+in Italy, in T H E CORRUPTION OF POLITICS AND THE 
+
+2009] 
+JUDICIAL COUNCILS AND JUDICIAL INDEPENDENCE 
+109 
+The French-Italian model has been exported to Latin America 
+and other developing countries.20 Indeed, the World Bank and other 
+multilateral donor agencies have made judicial councils part of the 
+standard package of institutions associated with judicial reform and 
+rule of law programming.21 Efforts to produce model "best practices" 
+have ensured much replication and refinement of the judicial council 
+model. For example, the Association of European Magistrates for De-
+mocracy and Freedom (MEDEL) produced a Draft Additional 
+Protocol to the European Convention on Human Rights, called the 
+Elements of European Statute on the Judiciary (known as the "Pa-
+lermo Declaration"). This model statute states that there shall be a 
+supreme council of magistracy, at least half of whom are judges and 
+also including appointees of the parliament.22 The model statute also 
+declares that the supreme council will produce a budget for the 
+courts, manage the administration, and control recruitment, assign-
+ment23 and discipline of judges,24 thus guaranteeing judicial 
+independence. The Council of Europe made a similar recommenda-
+POLITICS OF CORRUPTION 95-112 (Michael Levi & David Nelken eds., 1996); Carlo 
+Guarnieri, Judicial Independence in Latin Countries in Western Europ, in JUDICIAL 
+INDEPENDENCE IN THE AGE OF DEMOCRACY, CRITICAL PERSPECTIVES AROUND THE 
+WORLD (Peter Russell & David M. O'Brien eds., 2001). 
+20. See, e.g., Rebecca Bill Chavez, The Appointment 
+and Removal Process for 
+Judges in Argentina: The Role of Judicial Councils and Impeachment Juries in Pro-
+moting Judicial Independence, 49 LATIN AMERICAN POL. & Soc. 33 (2005) (Argentina). 
+Some refer to a distinction between a "Northern European Model" more focused on 
+management concerns and a "Southern European Model" that is constitutionalized 
+and focusing on structural independence. Wim Voermans & Pirn Albers, Councils for 
+the Judiciary in EU Countries, European Council for the Efficiency of Justice, CEPEJ 
+(2003). We reject this distinction as unhelpful, but rather develop an index of powers 
+and competences discussed infra, section V. 
+21. See Linn Hammergren, Do Judicial Councils Further Judicial Reform? Les-
+sons from Latin America (Working-Paper Series Democracy and Rule of Law Project 
+28, 2002). See also Pedro C. Magalhaes, The Politics of Judicial Reform in Eastern 
+Europe, 32 COMP. POL. 43-62 (1999) (discussing the judicial institutional design in 
+Bulgaria, Hungary, and Poland and how it relates to the bargaining process between 
+the different political actors);); Pilar Domingo, Judicial Independence: The Politics of 
+the Supreme Court of Mexico, 32 J. LAT. AMER. STUD. 705 (2000) (arguing that specific 
+constitutional reforms and the politics of co-optation subordinated the judiciary to the 
+dominant party until 1994); Peter H. Solomon, Putin's Judicial Reform: Making 
+Judges Accountable as well as Independent, 
+11 E. EUR. CONST. REV. 117-23 (2002) 
+(discussing the reforms to the Judicial Qualification Commission); Lauren Castaldi, 
+Judicial Independence Threatened in Venezuela: The Removal of Venezuelan Judges 
+and the Complications of Rule of Law Reform, 37 GEORGETOWN J. INT'L L. 477 (2006) 
+(discussing the current situation in Venezuela). 
+22. Art. 3.2. 
+23. Art. 3.1. 
+24. Subject to review by the Supreme Court. Art. 3.4. 
+
+110 
+THE AMERICAN JOURNAL OF COMPARATIVE LAW 
+[Vol. 57 
+tion in a document published in 1994.25 Other international 
+organizations have followed suit.26 
+The motivating concern for adoption of councils in the French-
+Italian tradition was ensuring independence of the judiciary after pe-
+riods of undemocratic rule. To entrench judicial independence, most 
+of these countries enshrined the judicial council in their constitution. 
+Independence, however, is a complex and multifaceted phenomenon. 
+Even though judges may be independent from political control, they 
+may become dependent on other forces, such as senior judges in a 
+judicial hierarchy—with just as much potential to distort individual 
+decision-making as more conventional political influence.27 In civil 
+law countries, in particular, a large proportion of judges are recruited 
+directly from law school using some form of public examination, with 
+no or limited requirements of previous professional experience.28 
+This model emphasizes socialization within the ranks of the judicial 
+profession and creates the potential for institutional pressures on 
+judges to decide individual cases in ways that are at odds with their 
+own conscience or reading of the law. 
+Perhaps because of concerns over this structural problem, exter-
+nal accountability has emerged as a second goal of councils. This is 
+exemplified by the judicial councils in some civil law countries, such 
+as Germany, Austria, and the Netherlands, that enjoy fewer compe-
+tences than do those in the French-Italian model. These councils are 
+limited to playing a role in selection (rather than promotion or disci-
+pline) of judges, or are heavily influenced by regional and federal 
+governments. The political impact of these councils on the judiciary 
+has been less clear than in the four European countries utilizing the 
+French-Italian model.29 
+Consider the Dutch case. Important reforms were recently intro-
+duced to ensure more transparency and accountability but were not 
+due to high profile political scandals. The Dutch judiciary was histori-
+cally very restrained, with a tradition of deference and a strong 
+concept of parliamentary sovereignty. The 1956 constitutional re-
+form, designed to accommodate the nascent European legal order, 
+paved the way for more judicial activism and judges gradually be-
+25. Recommendation No.R (94) 12 of the Committee of Ministers to Member 
+States on the Independence, Efficiency and Role of Judges (1994) (Council of Europe 
+Recommendation), art. I.2.C 
+26. Violane Autheman & Sandra Elena, Global Best Practices-Judicial 
+Councils: 
+Lessons Learned from Europe and Latin America, IFES, 2004 (arguing that judicial 
+councils should be composed of a majority of judges elected by their peers and should 
+be tasked with selection, promotion, discipline, and training). 
+27. See Owen Fiss, The Right Degree of Independence, in TRANSITIONS TO DEMOC-
+RACY IN LATIN AMERICA: THE ROLE OF THE JUDICIARY 55-72 (Irwin Stotzky ed., 1993) 
+(focusing on independence within the judicial hierarchy). 
+28. Nicholas L. Georgakopoulos, Discretion in the Career and Recognition Judici-
+ary, 7 CHI L. SCH. ROUNDTABLE 205 (2000). 
+29. See Thomas, supra note 10. 
+
+2009] 
+JUDICIAL COUNCILS AND JUDICIAL INDEPENDENCE 
+111 
+came more active in enforcing the European Convention of Human 
+Rights.30 In 2002, a Council for the Judiciary (Raad voor de Recht-
+spraak) 
+was created to take primary responsibility for the 
+organization and financing of the Dutch Judiciary.31 The primary im-
+petus for reforms has not been the judicialization of politics but 
+rather a perceived need for more accountability and better allocation 
+of resources. 
+The councils in civil law jurisdictions vary in their relationship 
+with the Supreme Court. In some countries, such as Costa Rica and 
+Austria, the judicial council is a subordinate organ of the Supreme 
+Court tasked with judicial management.32 In other countries, judicial 
+councils are independent bodies with constitutional status. Further, 
+in some countries councils govern the entire judiciary, while in others 
+they only govern lower courts.33 
+The case of Brazil is of special interest in this context. The Bra-
+zilian judiciary has traditionally been considerably decentralized, 
+very much influenced by the United States model.34 Although there 
+are serious administrative and financial advantages of decentraliza-
+tion, it has also created serious drawbacks in terms of effective 
+disciplinary action and accountability. Brazil's first judicial council 
+was created in 1977. The primary function of the council was discipli-
+nary and it had no budgetary or administrative functions. Though 
+formally designed to provide the appearance of independence, the 
+1977 version of the judicial council did little to constrain potential 
+military interference with the courts. Indeed, judicial independence 
+was in one sense greatest between 1988 and 2004, when judges en-
+joyed a vastly expanded domain of governance but had little 
+oversight. The association between the council and the dictatorship 
+was the likely reason for its abolition in 1988 with the return to de-
+mocracy. Nevertheless, in 2004, Brazil passed a constitutional 
+amendment to introduce a new judicial council with a very different 
+structure from its predecessor.35 Only with the recent reforms is 
+30. See THIJMAN KOOPMANS, COURTS AND POLITICAL INSTITUTIONS, 76-84 (2003) 
+(describing the growth of power of the Dutch judiciary). 
+31. The creation of the Council for the Judiciary followed the Leemhuis Commis-
+sion's advice to the Minister of Justice by the report "Updating the Administration of 
+Justice", in 1998. 
+32. The 1977 Brazilian council (Conselho Nacional da Magistratura) was another 
+good example. However, the 2004 council (Conselho Nacional de Justica) has nine 
+judges from different courts, including the Chief-Justice ex officio, two prosecutors, 
+two lawyers (representatives of the bar association) and two laymen appointed by the 
+Senate and the House respectively. 
+33. Voermans & Albers, supra note 20, provide the examples of Guatemala and 
+Argentina. 
+34. See the discussion by Maria Angela Oliveira, Reforming the Brazilian Su-
+preme Federal Court: A Comparative Approach, 5 WASH. U. GLOBAL STUDIES L. REV. 
+99 (2006). 
+35. The new model includes nine judges, two prosecutors, two lawyers, and two 
+laymen appointed by the legislature. 
+
+112 
+THE AMERICAN JOURNAL OF COMPARATIVE LAW 
+[Vol. 57 
+there a promise of a strong but politically accountable judiciary. It 
+remains, of course, to be seen whether this materializes. 
+Recruitment of the judiciary in common law countries has tradi-
+tionally drawn from more senior lawyers who have a wider range of 
+previous experience and socialization than do judges in the civil law 
+jurisdictions.36 Therefore, external accountability has been a major 
+motivating factor in shaping the design of judicial appointment sys-
+tems. Compared to the civil law judiciaries, common law judges have 
+relatively few opportunities for advancement, and hence there is less 
+capacity for political authorities to use the promise of higher office to 
+influence judicial decision-making.37 Accordingly, 
+appointments 
+processes have received serious attention since judges are fairly im-
+mune from pressures once appointed. In the United Kingdom, the 
+Constitutional Reform Act 2005 has created the Judicial Appoint-
+ments Commission responsible for appointments based solely on 
+merit.38 There is nevertheless a good deal of discussion as to how to 
+balance the merit principle with other functionalist goals such as af-
+firmative action and the Commission is anticipated to be able to 
+produce a judiciary that is both higher quality and more diverse.39 
+36. See Georgakopoulos, supra note 28. Debate in common law countries tends to 
+focus on the merits of the appointees and diversity concerns. See, e.g., Kate Malleson, 
+Selecting Judges in the Era of Devolution and Human Rights, in Building the UK's 
+New Supreme Court, in NATIONAL AND COMPARATIVE PERSPECTIVES (Andrew Le Sueur 
+ed., 2004). 
+37. Cf J. MARK RAMSEYER & ERIC RASMUSEN, MEASURING JUDICIAL INDEPENDENCE 
+(2004) (documenting political manipulation of judicial career structures in Japan). 
+However, see David M. O'Brien & Yasou Ohkoshi, Shifting Judicial 
+Independence 
+from Within: The Japanese Judiciary, in JUDICIAL INDEPENDENCE IN THE AGE OF DE-
+MOCRACY, CRITICAL PERSPECTIVES AROUND THE WORLD (Peter Russell & David M. 
+O'Brien eds., 2001) (arguing that Ramseyer and Rasmusen have misunderstood the 
+manipulation of the judiciary in Japan as political by the LDP when it is merely bu-
+reaucratic by the faceless General Secretariat of the Supreme Court). 
+38. The composition of the JAC is fifteen, seven are judges and magistrates, two 
+lawyers (one barrister and one solicitor), and six are laymen (including the chairman). 
+It started selecting judges in Apr. 2006. KATE MALLESON, THE LEGAL SYSTEM ch. 17.40 
+(2005), argues that the JAC is effectively dominated by the judiciary. The fact that the 
+council is chaired by a non-lawyer does not seem to counter a strong judicial member-
+ship. The traditional role of the Lord Chancellor in judicial appointments has been 
+the object of study by Anthony Bradney, THE JUDICIAL ACTIVITY OF THE LORD CHAN-
+CELLOR 1946-1987: A PELLET, 16 J.L. & SOC'Y 360 (1989). 
+39. For a discussion on the extent to which merit selection is consistent with af-
+firmative action in the judiciary, see Kate Malleson, Rethinking the Merit Principle in 
+Judicial Selection, 33 J.L. & SOC'Y 126-40 (2006); see also Kathleen A. Bratton & 
+Rorie L. Spill, Existing Diversity and Judicial Selection: The Role of Appointment 
+Method in Establishing Gender Diversity in State Supreme Courts, 83 SOCIAL SCIENCE 
+QUARTERLY 504 (2002) (presenting empirical evidence that appointed systems of judi-
+cial selection produce more diversity than election systems). The Canadian experience 
+of provincial and federal advisory committees has been appraised as a good model to 
+promote women and minorities within the judiciary. There are wide different models 
+in Canada, but usually judges are not a majority in the council. The federal committee 
+has seven members, three laymen, three lawyers, and one judge. See Kate Malleson, 
+The Use of Judicial Appointment 
+Commissions: A Review of the US and Canadian 
+Models, Lord Chancellor's Department, Research Series 6/97, 1997. 
+
+2009] 
+JUDICIAL COUNCILS AND JUDICIAL INDEPENDENCE 
+113 
+The advantages of a Judicial Appointment Commission have also 
+been at the heart of the debate in New Zealand and in Australia, 
+where judicial appointments are still in the competence of the Attor-
+ney-General. Currently, judicial appointment protocols have been 
+developed to enhance independence and external accountability (by 
+including mandatory consultation with several office holders).40 
+Within the common law world, the case of Singapore is also an 
+interesting one that illustrates the dangers of assuming that judicial 
+involvement in appointments ensures complete independence. There 
+is a Legal Service Commission in Singapore, but its role is somewhat 
+limited.41 The president appoints judges of the Supreme Court on the 
+recommendation of the prime minister after consultation with the 
+Chief Justice. The Legal Service Commission supervises and assigns 
+the placement of the subordinate court judges and magistrates who 
+have the status of civil servants; however, the president appoints 
+subordinate court judges on the recommendation of the Chief Jus-
+tice.42 The Chief Justice in Singapore is probably the most well-paid 
+judge in the world, with a salary of well over one million U.S. dollars, 
+and the judiciary is widely praised for its quality and independence. 
+Nevertheless, it is also known for its docility in cases of great impor-
+tance to the ruling party. One might characterize this situation as 
+being one in which the bribes are legalized in the form of salaries, 
+and in which the person of the Chief Justice operates to ensure that 
+lower judges do not stray from the formula of independence in com-
+mercial cases but docility in political ones.43 
+B. 
+The American 
+Experience 
+In many American states, concern over traditional methods of ju-
+dicial selection (either appointment by politicians or direct election by 
+the public) led to the adoption of "Merit Commissions" to remove par-
+tisan politics from judicial appointments and base selection on merit. 
+40. Empirical analysis is provided by Mita Bhattacharya & Russell Smyth, 30 
+THE DETERMINANTS OF JUDICIAL PRESTIGE AND INFLUENCE: SOME EMPIRICAL EVIDENCE 
+FROM THE HIGH COURT OF AUSTRALIA, J. LEGAL STUD. 223-52 (2001) and Pushkar Mai-
+tra & Russell Smyth, Judicial Independence, Judicial Promotion and the Enforcement 
+of Legislative Wealth Transfers - An Empirical Study of the New Zealand High Court, 
+EUR. J.L. & ECON., at 17 (2004). See also discussion by John M Williams, Judicial 
+Independence in Australia, in JUDICIAL INDEPENDENCE IN THE AGE OF DEMOCRACY, 
+CRITICAL PERSPECTIVES AROUND THE WORLD ( Peter Russell & David M. O'Brien eds., 
+2001) (showing that while the structural guarantees are quite robust and few at-
+tempts have made to remove judges, there are serious proposals for reform). 
+41. See Kim Teck Kim Seah, The Origins and Present Constitutional Position of 
+Singapore's Legal Service Commission, SING. ACAD. L.J., at 2 (1990). 
+42. The judicial branch of the Legal Service Commission is headed by the Regis-
+trar of the Supreme Court but the ultimate responsibility for managing lies with the 
+Chief Justice. 
+43. Gordon Silverstein, Singapore: The Exception that Proves Rules Matter, in 
+RULE BY LAW: THE POLITICS OF COURTS IN AUTHORITARIAN REGIMES (Tom Ginsburg & 
+Tamir Moustafa eds., 2008). 
+
+114 
+THE AMERICAN JOURNAL OF COMPARATIVE LAW 
+[Vol. 57 
+Merit Commissions can be seen as analogous to judicial councils, 
+though their scope of activity is more limited. Because in common law 
+systems, the judiciary is not a "career judiciary" in the civil law sense, 
+there is less interest in having independent commissions handle dis-
+cipline, promotions, and reassignments, and greater emphasis on 
+initial appointments. The basic institutional design, however— 
+namely setting up non-partisan mixed bodies to screen and select ju-
+dicial candidates—is similar to the judicial commission. 
+Sometimes called the "Missouri Plan" (although some assert that 
+it was first adopted in California) or "Merit Plan," this system fea-
+tures a non-partisan judicial selection commission composed of 
+judges, lawyers, and political appointees.44 The inspiration for this 
+institution was a famous 1906 speech by Roscoe Pound and can be 
+seen as consistent with early twentieth century view in the value of 
+technocracy and administrative insulation from politics.45 The Merit 
+Commission is responsible for nominating judges, exclusively in some 
+states and in other states sending a set of candidates from which the 
+Governor chooses appointees. Merit Plan judges are typically subject 
+to uncontested retention elections but judges rarely lose these elec-
+tions.46 As of 1990, twenty-three states used the Merit Plan for initial 
+appointment. Most states adopted these institutions in the 1960s and 
+1970s.47 
+A general assumption in the literature is that Merit Plan sys-
+tems will expand independence.48 For example, Hanssen tests the 
+effect of partisan division on appointment and retention systems, as-
+suming that Merit Plan correlates with independence.49 He finds 
+that, broadly speaking, states using merit plans tend to correlate 
+with higher levels of political competition (and hence presumed de-
+mand 
+for judicial independence) 
+than 
+those using 
+partisan 
+elections.50 Hanssen also finds that states switch to merit plans when 
+they have increased party competition and policy differences between 
+44. In Missouri, the Commission has seven members: the Chief Justice, three 
+lawyers elected by the bar from different appellate districts, and three laypersons 
+appointed by the Governor. For an analysis, see Hanssen, supra note 1. 
+45. Roscoe Pound, The Causes of Popular Dissatisfaction With the 
+Administration 
+of Justice, 20 J. AM. JUD. SOC'Y 178 (1937). 
+46. Peter Webster, Selection and Retention of Judges: Is There one Best Method?, 
+23 FLA. ST. U. L. REV. 1 (1995); Reddick, supra note 3, at 10 (noting only thirty-three 
+judges lost retention elections in the entire United States between 1942 and 1978). 
+47. F. Andrew Hannsen, Learning About Judicial Independence: 
+Institutional 
+Change in State Courts, 33 J. LEGAL STUD. 431-62 (2004). 
+48. 
+See, e.g., Reddick, supra note 3 (reviewing literature). 
+49. Hanssen, supra note 1, at 721. 
+50. For at least one indicator, both these methods have less political competition 
+on some indicators than the residual category of "other" appointment methods (such 
+as legislative or gubernatorial appointment. Id. at 720 ("In 95 percent of partisan 
+election states the same party controlled both houses of the legislature, versus in 87 
+percent of merit plan states and 81 percent of other states"). 
+
+2009] 
+JUDICIAL COUNCILS AND JUDICIAL INDEPENDENCE 
+115 
+parties. This is consistent with literature that emphasizes the role of 
+partisan competition in incentivizing judicial independence.51 
+Nevertheless, we know of no study that has demonstrated an ac-
+tual improvement in judicial independence or quality after adoption 
+of the Merit Plan, and the actual impact on quality is debatable.52 In 
+a comprehensive review of the social scientific literature, Reddick 
+concludes that there is little support for "proponents' claims that 
+merit selection insulates judicial selection from political forces, 
+makes judges accountable to the public, and identifies judges who are 
+substantially different from judges chosen through other systems."53 
+However, as Hanssen put it "(t)here is today a strong consensus that, 
+of all the procedures, the merit plan best insulates the state judiciary 
+from partisan political pressure."54 
+The nominating commission under the Merit Plan is essentially 
+a judicial council by another name, with its function limited to selec-
+tion of judges. As a common law country with judges that tend to be 
+appointed relatively late in life, the United States has little need for 
+independent bodies to engage in promotion of judges. Thus the com-
+missions play a relatively limited role, but focus on the crucial locus 
+of partisan pressure. This illustrates the importance of understand-
+ing institutional variation in conditioning demand for the judicial 
+council model. 
+C. The British 
+Experience 
+The British case is of particular significance given its recent reforms 
+to a venerable system. In 2003, Prime Minister Blair's Government 
+announced its intention to modify the system for judicial appoint-
+ments in England and Wales. The reform was justified as advancing 
+the twin goals of improving judicial independence and enhancing ac-
+countability and public confidence. Although the independence of the 
+judiciary was confirmed in the Act of Settlement 1701, and since then 
+strong norms of judicial immunity have made it quite difficult to re-
+move judges, appointments remained in the hands of the Lord 
+Chancellor, a senior government official.55 The traditional view was 
+51. J. Mark Ramseyer, The Puzzling (Independence 
+of Courts, 23 J. LEG. STUD. 
+721 (1994); see also Tom Ginsburg, JUDICIAL REVIEW IN NEW DEMOCRACIES (2003); 
+Mathew Stephenson, When the Devil Turns . . . The Political Foundations of Indepen-
+dent Judicial Review 32 J. LEG. STUD. 59 (2003); Lee Epstein et al., Selecting Selection 
+Systems, in JUDICIAL INDEPENDENCE AT THE CROSSROADS: AN INTERDISCIPLINARY AP-
+PROACH 191-226 (Stephen B. Burbank & Barry Friedman, eds., 2002). 
+52. Webster, supra note 46; Henry Glick, The Promise and Performance of the 
+Missouri Plan: Judicial Selection in the Fifty States, 32 U. MIAMI L. REV. 519 (1978). 
+See further discussion in Choi et al., supra note 4. 
+53. Reddick, supra note 3, at 15 of manuscript. 
+54. Hanssen, supra note 47, at 452. 
+55. For example, Stevens mentions several important episodes of political inter-
+ference with the judiciary (including the right of the Crown not to reappoint judges on 
+the change of a monarch) but notes the declining role of the judiciary until the 1960s. 
+
+116 
+THE AMERICAN JOURNAL OF COMPARATIVE LAW 
+[Vol. 57 
+that the Lord Chancellor was the judiciary's representative in the 
+government and the government's representative to the judiciary, 
+hence a unique office well placed to represent the view of each side.56 
+The English judiciary was never perceived to be a separate branch of 
+government in the American sense.57 Furthermore, a system depen-
+dent on the Lord Chancellor created a unified and hierarchical 
+judiciary. This structure did not promote diversity of opinions since 
+someone who did not conform to the views of the establishment was 
+not likely to be chosen by the Lord Chancellor for a judicial post. 
+The increasing profile of the English judiciary in recent years has 
+led to pressures for more judicial accountability. The Pinochet case in 
+1999 raised serious questions about having the most senior judiciary 
+sitting at the House of Lords.58 There have been conflicts over sen-
+tencing in the aftermath of the Human Rights Act 1998. Finally, the 
+case of McGonnell v. UK (2000) in the European Court of Human 
+Rights concerning the office of bailiff of the island of Guernsey had an 
+important impact.59 In that case, the Court decided that a single offi-
+cial who serves as both a judge and in an administrative role violates 
+Article 6 of the European Convention of Human Rights (although in 
+practice, in England and Wales, the Lord Chancellor has tradition-
+ally avoided sitting on cases where there might be a conflict of 
+interest). Another source of pressure for more accountability has been 
+the growth of judicial review and the perception that judicial interfer-
+ence has increased significantly.60 
+One important concern is the lack of minorities and women in 
+the bench, thus providing a sense of gender and racial bias in the 
+appointments mechanism. Some have expressed concern that a small 
+He argues that the development of high formalism that protected the English judici-
+ary from possible political interference made the judiciary increasingly irrelevant. See 
+ROBERT STEVENS, THE ENGLISH JUDGES: THEIR ROLE IN THE CHANGING CONSTITUTION 
+(2005), chs. 1 and 2. See also the recent volume BUILDING THE UK'S SUPREME COURT: 
+NATIONAL AND COMPARATIVE PERSPECTIVES (Andrew Le Seur ed., 2004). 
+56. See J. Steyn, The Case for a Supreme Court, 118 L. Q. R. 382 (contesting this 
+view and emphasizing that in practice the Lord Chancellor delegates to the Law 
+Lords judicial business). 
+57. See J.A.G. GRIFFITH, THE POLITICS OF THE JUDICIARY (5th ed. 1999), at chs. 8 
+and 9, where he argues that the myth of neutrality has undermined the building-up of 
+a strong judiciary. The author defends a political role of the judiciary in areas such as 
+law and order or social issues. See also Stevens, supra note 55, at chs. 6 and 7, and 
+ROBERT J. MARTINEAU, APPELLATE JUSTICE IN ENGLAND AND THE UNITED STATES: A 
+COMPARATIVE APPROACH (1990). 
+58. The contradictory decisions taken by different panels of three Law Lords were 
+not easily understood by the public. For a detailed account, see Stevens, supra note 
+55, at ch. 8. 
+59. McGonnell v. UK (2000) 30 EHRR 289. 
+60. See, among others, Robert Stevens, A Loss of Innocence? Judicial 
+Indepen-
+dence and the Separation of Powers, 19 OXFORD J. LEG. STUD. 365 (1999) and Matthew 
+Flinders, Mechanisms of Judicial Accountability in British Central Government, 54 
+PARLIAMENTARY AFFAIRS 54 (2001). 
+
+2009] 
+JUDICIAL COUNCILS AND JUDICIAL INDEPENDENCE 
+117 
+clique from Oxford and Cambridge dominates the appointments.61 
+Furthermore, there have been indications of personal and corporate 
+bias injudicial profiles.62 The demands for more diversity in the judi-
+ciary called for a new method of judicial selection. 
+In 2003, Prime Minister Blair's Government announced its in-
+tention to change the system for making appointments to the 
+judiciary in England and Wales.63 The Constitutional Reform Act 
+2005 introduced several substantive changes in England and Wales, 
+including a statutory duty on government members not to influence 
+judicial decisions. The most far-reaching reforms were the abolish-
+ment of the Lord Chancellor with the transfer of his judicial functions 
+(as the most senior judge in England and Wales) to the President of 
+the Courts of England and Wales (formerly known as Lord Chief Jus-
+tice of England and Wales),64 and the creation of a new Supreme 
+Court, with twelve judges independent of and removed from the 
+House of Lords with their own independent appointment system.65 
+And crucially, a Judicial Appointments Commission was created, re-
+sponsible for recommending candidates for judicial appointments on 
+a more transparent basis and based solely on merit. 
+D. 
+Balancing Independence and Accountability 
+This brief survey illustrates that it is clearly impossible to elimi-
+nate political pressure on the judiciary. While adequate institutions 
+might enhance judicial independence and minimize the problems of a 
+politicized judiciary, increasing the powers and independence enjoyed 
+by judges risks creating the opposite problem of over-judicializing 
+public policy.66 It is our view that the periodic reforms of judicial ap-
+pointments and management that we observe within and across 
+61. For an empirical analysis, see Jordi Blanes & Clare Leaver, An Economic 
+Analysis of Judicial Diversity Part I: Judicial Promotions, Oxford University mimeo-
+graph (2007). See also Griffith, supra note 57, at 18-21 and Herbert M. Kritzer, 
+Courts, Justice and Politics in England, in COURTS, LAW AND POLITICS IN COMPARA-
+TIVE PERSPECTIVE 91, at 92 (Herbert Jacob et al. eds., 1996). 
+62. See GRIFFITH, supra note 57, at chs. 3 to 6. 
+63. In the case of Scotland, judicial appointments were under review since Sept. 
+1999 and an independent Judicial Appointments Board was established in June 2002. 
+64. The President of the Courts of England and Wales sits in the Court of Appeal, 
+the High Court and the Crown Court, among others, is responsible for expressing the 
+views of the judiciary and for welfare, training, and guidance of the English judiciary. 
+He is not the President of the Supreme Court. 
+65. The new Supreme Court is to be launched in 2008 with the current twelve 
+Law Lords (the Lords of Appeal in Ordinary). There will be a Supreme Court ad hoc 
+selection committee presided by the President of the Supreme Court for future ap-
+pointments. The remaining Lords of Appeal who are members of the House of Lords 
+and eligible to hear and decide judicial business under the Appellate Jurisdiction Act 
+1876 will not be moved to the Supreme Court (in Jan. 2007, there were thirteen in-
+cluding three former Lord Chancellors). 
+66. Stephen Burbank, Judicial Independence, Judicial Accountability and Inter-
+branch Relations (U. Pa. L. Sch., Working Paper No. 102, 2006), available at http://lsr. 
+nellco.org/upenn/wps/papers/102 (arguing that judicial independence in the United 
+
+118 
+THE AMERICAN JOURNAL OF COMPARATIVE LAW 
+[Vol. 57 
+countries reflect a dialectic tension between the need to de-politicize 
+the judiciary and the trend toward judicializing politics. Indepen-
+dence is needed to provide the benefits of judicial decision-making; 
+once given independence, judges are useful for resolving a wider 
+range of more important disputes; but as more and more tasks are 
+given to the judiciary, there is pressure for greater accountability be-
+cause the judiciary takes over more functions from democratic 
+processes. 
+Figure 1 presents a stylized summary of the recurrent calibra-
+tion between independence and external accountability, synthesizing 
+the different experiences discussed above. Begin in the upper right 
+corner, a judiciary that has little independence or influence. When 
+judges carry little weight over public policy and politics, concerns 
+over independence tend to dominate and reformers may push for a 
+move from a politically dependent weak judiciary to a strong self-reg-
+ulated judiciary (e.g., the French-Italian experience in the 1950s, or 
+Spain and Portugal in the 1970s). This shift gives rise to a judiciary 
+that has some control over its own affairs. Frequently, though not 
+inevitably, judges use this independence to increase their influence 
+over public policy (perhaps as a result of exogenous events). This is 
+represented by a shift to the lower left corner of Figure 1. However, 
+once politics is judicialized in a significant way, pressures arise for 
+greater political accountability. The judiciary remains strong but is 
+more subject to oversight and control. As accountability becomes di-
+rected only to a small group of principals and assaults on judicial 
+independence are too successful, we may in some circumstances ob-
+serve a move from a politically accountable strong judiciary back to 
+politically dependent weak judiciary, as in a rising authoritarian re-
+gime. This dynamic framework provides a tool for understanding the 
+various institutional adjustments observed in different countries. 
+Note that we are not asserting that movement across the various 
+zones of the figure is inevitable. Institutional configurations can be 
+stable for long periods of time, and there is no necessary condition 
+that judiciaries shift their location in the figure. What we believe the 
+figure does capture, however, is the potential for cycling among dif-
+ferent models of judicial governance and the nature of the pressures 
+that judiciaries will face in particular configurations. We return to 
+these dynamics later in this Article. 
+States is at a tipping point because of a characterization of judicial politics as ordi-
+nary politics). 
+
+2009] 
+JUDICIAL COUNCILS AND JUDICIAL INDEPENDENCE 
+119 
+FIGURE 1: CONTROLLING THE JUDICIARY 
+POLITICIZED JUDICIARY 
+MIN 
+MIN 
+JUDICIALIZED 
+POLITICS 
+SELF-REGULATED 
+JUDICIARY 
+ft 
+CONFLICTS 
+BETWEEN 
+JUDICIARY AND 
+GOVERNMENT. 
+PRESSURE FOR 
+JUDICIAL 
+REFORMS. 
+JUDICIAL 
+REFORMS FOR 
+INDEPENDENCE 
+Y. 
+POLITICALLY 
+INDEPENDENT 
+STRONG JUDICIARY 
+JUDICIAL 
+REFORMS FOR 
+ACCOUNTABILITY 
+: > 
+MAX 
+-*\ MAX 
+POLITICALLY 
+DEPENDENT 
+WEAK 
+JUDICIARY 
+ft 
+/ 
+ASSAULTS ON 
+JUDICIAL 
+INDEPENDENCE 
+WITH FOCUSED 
+ACCOUNTABILITY 
+V 
+POLITICALLY 
+ACCOUNTABLE 
+STRONG 
+JUDICIARY 
+III. 
+WHAT DO COUNCILS DO? 
+A. 
+Competences 
+Academic work on judicial councils has been so far quite limited. 
+There are very few empirical studies67 and there has been no eco-
+nomic or statistical analysis to date that we know of. We have 
+observed that judicial councils operate in very different legal environ-
+ments and, therefore, we need to understand the particularities 
+before we can compare the role and the powers of judicial councils 
+across countries. 
+Broadly speaking, judicial councils have three 
+important 
+competences: 
+(i) 
+Housekeeping functions (managing budget, material re-
+sources, operations); 
+(ii) Appointment of judges; and 
+(iii) Performance evaluation (promotion, discipline, removal and 
+retention of judges, and judicial salaries). 
+For all of these functions, the key factor is effective calibration be-
+tween judicial independence and external accountability. This 
+calibration will be achieved, for example, by the composition or mem-
+bership of the council, by the appointment mechanism, or by sharing 
+certain functions with other branches of the government or other bod-
+ies (even the public in the case of elected judges). We do not assert 
+that there is a universally optimal balance between independence 
+67. But see Hammergren, supra note 21. 
+
+120 
+THE AMERICAN JOURNAL OF COMPARATIVE LAW 
+[Vol. 57 
+and accountability, but understand that there is a limit to how far 
+one can move in either direction within democracies.68 Moving too far 
+in either direction may trigger pressures for a shift as idealized in 
+Figure 1. 
+Whereas the first competence, housekeeping, is purely manage-
+rial, the second and third competences are related to career 
+incentives and more directly contribute to judicial quality. House-
+keeping functions deal with practical questions concerning the 
+organization and the running of the judiciary.69 These functions can, 
+of course, potentially affect judicial independence—for example, if 
+material incentives are used to reward certain types of judges. Obvi-
+ously managerial competences are also important for the efficiency of 
+courts and, in that respect, shape the quality of the legal system. 
+Nevertheless, the other two competences (appointment and perform-
+ance evaluation) are more directly related to judicial career 
+incentives. If institutions matter for judicial quality, they matter be-
+cause of their impact on judicial incentives. 
+B. 
+Composition 
+Councils also vary in composition. The council is composed of 
+three possible types of members, (i) judges, (ii) members of other gov-
+ernment bodies or their appointees, and (iii) lawyers. Judges on the 
+Council are typically appointed by the Supreme Court or by other 
+courts, while lawyers are appointed by the law society/bar associa-
+tion. Members of government bodies are typically appointed by their 
+organizations. 
+A general assumption in the literature is that a judicial majority 
+on the council will ensure independence. However, even when the 
+judges are not a numerical majority in the council, they might have a 
+dominant or preponderant role for three reasons. First, most mem-
+bers of a judicial council must rely on information provided by the 
+judiciary itself. Second, a judicial council does not exert direct control 
+over the judiciary (which would hurt the independence of judiciary) 
+but exercises a configuration of powers that mix authority and ac-
+countability. This configuration is usually complex and full of 
+uncertainties that usually call for expertise by judges. Third, judges 
+may have particularly strong incentives to represent judicial inter-
+ests on the council: after their service on the council, judges will 
+return to their professional careers inside the judiciary whereas the 
+non-judges will go back to their careers outside of the judiciary, 
+68. Hanssen, supra note 1. 
+69. We believe the primary rationale to be considered in assigning the task to a 
+council is economies of scale and specialization vis-a-vis alternative managers, such 
+as the Ministry of Justice (arguably better able to do things like purchasing supplies 
+etc.) or the Supreme Court (a body that typically has little time or expertise for 
+management). 
+
+2009] 
+JUDICIAL COUNCILS AND JUDICIAL INDEPENDENCE 
+121 
+which may or may not have any relationship with judicial manage-
+ment issues. 
+C. The Interaction of Competence and Composition 
+We are particularly interested in whether composition correlates 
+with powers. One hypothesis is that judges will resist external regu-
+lation and control. Therefore if non-judges are the majority on the 
+council, we might observe that the Council is given less substantive 
+powers, but when judges are the majority, powers are high. A compet-
+ing hypothesis is that judicial councils (a relatively late historical 
+development) have been set up to control judges and ensure account-
+ability. If this were the case, we should see the percent of judges on 
+the council negatively correlated with the extent of powers.70 
+We can frame this as the question of whether judicial councils 
+are set up to ensure independence of judges from the principals or 
+accountability to the principals (see Figure 1). If judges are a majority 
+on the council, the assumption is that judges utilize the council to 
+exercise self-government and maintain independence. If judges are a 
+minority on the council, the assumption is that the council is a device 
+to constrain the judges and render them more accountable. These two 
+types of councils reflect quite different goals.71 
+To summarize, judicial councils will vary in terms of their compe-
+tencies 
+and 
+their 
+structures. 
+Interacting 
+competences 
+with 
+composition, we can imagine different configurations. We view exten-
+sive competence of a judicial council as enhancing judicial 
+accountability. We follow the conventional wisdom that assumes that 
+judicial majorities on the judicial council promote independence. In-
+teracting these two dimensions, we can see that there are several 
+possible configurations (see Figure 2). Extensive competences create 
+strong councils whereas those limited to housekeeping functions are 
+considered weak councils. Judicial dominance of the council means 
+that they are less likely to be politicized. Nevertheless, the shape of 
+the council will depend on whether or not the judges in the council 
+behave as a homogeneous body. That is easily achieved when judges 
+come from superior courts since these judges will tend to reinforce 
+the judicial hierarchy. If the judges come from various different 
+courts, there may be intra-judicial politics that prevent the judiciary 
+from acting in unified fashion: we may sometime observe the emer-
+70. On the other hand, the politics of setting up the councils may vary greatly 
+depending on local circumstances, in particular the historical balance of power be-
+tween government and Supreme Court. For example, the extent to which the justices 
+are easily captured by the government will result in different models of judicial 
+council. 
+71. Hanssen's data from the United States suggests that the timing of the adop-
+tion of council-type mechanisms reflects these motivations. 
+
+122 
+THE AMERICAN JOURNAL OF COMPARATIVE LAW 
+[Vol. 57 
+gence of judicial associations or unions that provide a solution to 
+collective action problems. 
+Figure 2 displays the various models, along with some examples 
+of their operation. 
+FIGURE 2: COMPETENCE AND COMPOSITION: TYPOLOGY OF JUDICIAL 
+COUNCILS COMPOSITION 
+COMPETENCES 
+EXTENSIVE 
+(DISCIPLINE, 
+REMOVAL, 
+PROMOTION, 
+APPOINTMENTS) 
+INTERMEDIATE 
+(APPOINTMENTS 
+ONLY) 
+MINIMAL 
+(HOUSEKEEPING 
+FUNCTIONS) 
+JUDGES FROM 
+SUPREME 
+COURT 
+DOMINATE 
+STRONG 
+HIERARCHICAL 
+JUDICIAL 
+COUNCIL (JAPAN, 
+MEXICO, 
+THAILAND) 
+HIERARCHICAL 
+SELF-
+REGULATING 
+JUDICIAL 
+APPOINTMENTS 
+COMMISSION 
+(BANGLADESH) 
+WEAK JUDICIAL 
+COUNCIL 
+(PANAMA) 
+JUDGES FROM 
+LOWER COURTS 
+DOMINATE 
+STRONG NON-
+HIERARCHICAL 
+JUDICIAL 
+COUNCIL (ITALY, 
+FRANCE) 
+NON-
+HIERARCHICAL 
+SELF-
+REGULATING 
+JUDICIAL 
+APPOINTMENTS 
+COMMISSION 
+(BELGIUM) 
+WEAK JUDICIAL 
+COUNCIL(BRAZIL, 
+HUNGARY) 
+NON-JUDGES 
+DOMINATE 
+POLITICIZED 
+JUDICIAL 
+COUNCIL 
+(ECUADOR, 
+BARBADOS, 
+SINGAPORE) 
+JUDICIAL 
+APPOINTMENTS 
+COMMISSION 
+(USA, UK, 
+CANADA, 
+NETHERLANDS, 
+GERMANY) 
+WEAK JUDICIAL 
+COUNCIL 
+(PARAGUAY) 
+This discussion suggests that councils are not all of a same type. Lo-
+cal institutional problems, represented by the location in Figure 1, 
+will produce pressures for different types of councils in different cir-
+cumstances. Even within a country, we may see variation over time 
+as different institutional problems arise. 
+IV. 
+EMPIRICAL DATA ON COUNCILS 
+We have developed a small database on Judicial Councils (see 
+Appendix). The sample consists of the councils in 121 different na-
+tion-states. Data was gathered for the most recent iteration of the 
+judicial council available. For ninety-three countries, the Judicial 
+Council is mentioned and described in the country's constitution, so 
+we gathered our information from there.72 For twenty-eight other 
+countries, the Judicial Council is not mentioned in the Constitution, 
+or it provides no detail on the composition and powers of the Judicial 
+Council. In these countries, the Judicial Council is left to ordinary 
+72. This data is from the Comparative Constitutions Project at the University of 
+Illinois; available at www.comparativeconstitutionsproject.org 
+
+2009] 
+JUDICIAL COUNCILS AND JUDICIAL INDEPENDENCE 
+123 
+law. We gathered data on these countries from an array of sources, 
+including the 2002 study of Hammergren73 and a number of country-
+specific sources. Figures 3a and 3b provide some indication of the 
+trends over time and space. 
+FIGURE 3A: CONSTITUTIONALIZED JUDICIAL COMMISSIONS OVER TIME 
+"i 
+r 
+1900 
+1920 
+1940 
+1960 
+1980 
+2000 
+Year 
+Source: 
+University 
+of 
+Illinois 
+Comparative 
+Constitutions 
+Project, 
+www.constitutionmaking.org 
+Note that the issue of whether or not a council is constitutional-
+ized is itself interesting. If the composition and powers of the council 
+are left to ordinary law, they are subject to enhanced manipulation 
+by the government and other actors and hence less of a guarantee of 
+independence. Presumably those councils lean more toward the ac-
+countability pole than the independence pole. Conversely, when the 
+council structure is entrenched in the constitution, it is beyond the 
+reach of ordinary politics and hence likely to reflect a desire for 
+greater levels of judicial independence and insulation. In the results 
+that follow, we predict and find systematically lower independence 
+scores for countries with non-constitutionalized councils.74 
+73. Hammergren, supra note 21. 
+74. Judicial independence on every measure is lower for these countries. Coun-
+tries with constitutionalized judicial councils have a mean De Facto Independence 
+(Voigt) score of .51, while those with nonconstitutionalized councils have score .41, 
+though the n is too low to determine a significant difference in means. Using Howard 
+and Carey's measure of judicial independence, the means are .47 and .16 respectively, 
+significant at the .01 level. 
+
+124 
+THE AMERICAN JOURNAL OF COMPARATIVE LAW 
+[Vol. 5 7 
+FIGURE 3B: CONSTITUTIONALIZED JUDICIAL COMMISIONS BY 
+REGION IN 2000 
+§ •* 
+o 
+O 
+CI <M 
+PL, 
+t 
+^ 
+^ 
+^ 
+^ 
+<V 
+V 
+^ 
+I I I I 
+llll 
+& 
+%> 
+S? 
+<? 
+& & $? 
+^ 
+First, we developed a simple ordinal index of powers/compe-
+tences ("Power Index"). Each judicial council was rated depending on 
+the extent of its competences. A council that had purely administra-
+tive or housekeeping functions council was coded as 1; a council with 
+a role in appointment, transfer, and discipline of judges was rated a 
+3. The intermediate rating of 2 was given to councils that had a lim-
+ited role either because they could appoint but not discipline judges, 
+or their role was limited in performance-relevant variables. For ex-
+ample, a council that only had a role in recommending judges for 
+appointment or minimal role in discipline would be rated a 2. We also 
+include information on countries without judicial councils, an impor-
+tant control group. These are denoted by power index 0. A complete 
+coding of countries with judicial councils is in the Appendix. 
+Our first prediction was that competences would vary systemati-
+cally depending on the institutional problem that is faced. Extensive 
+competences correlate with stronger councils. Stronger councils, how-
+ever, 
+can 
+reflect 
+demands 
+for 
+strong 
+political 
+control 
+and 
+accountability—or judicial self-regulation effectuated by capture of 
+the council. Sorting out which motivation exists in particular con-
+texts is difficult. To evaluate this issue, we use the working 
+assumption that a majority of judges on the council indicates a 
+greater degree of judicial self-regulation. 
+
+2009] 
+JUDICIAL COUNCILS AND JUDICIAL INDEPENDENCE 
+125 
+A. 
+Power of Judges and Institutional 
+Structure 
+When judges have extensive powers, judicialization of public pol-
+icy is likely to follow. In such environments the judicial council may 
+reflect demands for control and accountability. We expect this will be 
+more likely in common law countries as well as any country in which 
+ordinary judges can engage in the power of judicial review. By con-
+trast, where judicial review is limited to a specially designated 
+constitutional court, we do not expect to observe the same level of 
+demand for accountability of the ordinary judiciary, of the type asso-
+ciated with judicial councils. This is because the major issues of social 
+policy will more likely be constitutionalized, so the constitutional 
+court will insulate the ordinary judiciary from politicization, to some 
+degree. 
+We find only partial support for these conjectures in the descrip-
+tive data. Where judicial review is conducted by ordinary courts, 
+competences are less likely to be extensive. In general, common law 
+judicial councils are more likely to have extensive powers, not less. 
+On the other hand, both common law systems and those in which 
+ordinary courts have the power of judicial review are less likely to 
+have a majority of judges on the council, indicating some desire for 
+external control of judges. (Note that the last column ofFigure 4 is 
+based on a smaller sample of countries because data on Council com-
+position was unavailable for some systems.) 
+FIGURE 4: JUDICIAL POWERS, COUNCIL COMPETENCE 
+AND COMPOSITION 
+Feature of Court 
+System 
+Judicial Review by 
+ordinary courts? 
+Common Law? 
+Judicial Council Power Index 
+1 
+9% 
+8% 
+2 
+44% 
+34% 
+3 
+47% 
+58% 
+Judicial Majority 
+on Council? 
+40% 
+42% 
+To understand the relationship between composition and compe-
+tence, we divide our sample into three groups using to the power 
+index. We then examine whether an assignment of more extensive 
+powers is associated with a higher percentage of judges on the coun-
+cil. Our results exclude cases for which all information is not 
+available; this leaves seventy-four cases. In addition, we can ignore 
+the small number of councils with purely managerial functions. 
+Councils with the full array of powers have, at the mean, a (bare) 
+majority of judges; councils with reduced powers have a minority of 
+
+126 
+THE AMERICAN JOURNAL OF COMPARATIVE LAW 
+[Vol. 57 
+judges.75 Using the median rather than mean levels illustrates the 
+difference more starkly: the median council with the full array of 
+powers has sixty percent judges; the median council with reduced 
+powers has twenty-nine percent judges. 
+FIGURE 5: PERCENTAGE OF JUDGES ON COUNCIL, BY POWER INDEX 
+Power index 
+1 
+2 
+3 
+Total 
+Mean % of judges 
+.75 
+.39 
+.50 
+.47 
+N 
+5 
+31 
+38 
+74 
+Std. Deviation 
+.28 
+.32 
+.29 
+.31 
+In short, powers and composition go together, but in two differ-
+ent configurations. When councils are very weak (power index 1), 
+judicial involvement is extensive. When powers are extensive (power 
+index 3), judicial involvement is also relatively high. In the interme-
+diate situation, judicial involvement is lower. We interpret this 
+finding as reflecting the upper right and lower left quadrants of Fig-
+ure 1. Judicial involvement can be extensive when it does not matter 
+much; but it can also reflect a very powerful and independent judici-
+ary that is extensively involved in politics. 
+B. 
+Regime Type 
+It is possible that regime type can play some role in sorting out 
+the various configurations we observe. We predict that autocracies 
+will feature councils with weak competences (ineffectual council) or 
+strong competences/fewer judges (for greater political control).76 For 
+democracies, we predict greater variety, depending on other elements 
+of the institutional configuration. To explore this, we divide constitu-
+tions containing provisions on judicial councils into three categories: 
+those that are written in autocracies, those written in established de-
+mocracies, and those written in transitions between autocracy and 
+democracy.77 We use data available from political scientist Carles 
+Boix, who uses other generally available data to make binary charac-
+terizations of countries as autocracies or democracies in a large time-
+series.78 We find that the percentage of judges tends to be lower in 
+75. A difference of means test gives a t-stat of-1.48 (85% confidence level), indi-
+cating close to statistical significance. 
+76. Logit regression confirms the direction of this relationship, although not at 
+statistically significant levels. 
+77. There are no cases in our sample of democracies transitioning to autocracies. 
+78. 
+CARLES BOIX, DEMOCRACY AND REDISTRIBUTION (2000); Carles Boix, Constitu-
+tions and Democratic Breakdowns, paper presented at Comparative Law and 
+Economics Forum, Chicago (Oct. 2005). For each constitution, the country's autocracy/ 
+
+2009] 
+JUDICIAL COUNCILS AND JUDICIAL INDEPENDENCE 
+127 
+autocracies rather than democracies, although t-tests indicate the 
+difference of means is not quite significant. Still, the crude data indi-
+cates a mild tendency of autocracies to distrust judges. 
+FIGURE 6: PERCENTAGE OF JUDGES ON COUNCIL, BY REGIME TYPE 
+Regime type 
+Autocracy 
+New Democracy 
+Established democracy 
+Total 
+Mean % of judges 
+.38 
+.48 
+.47 
+.43 
+N 
+29 
+25 
+30 
+84 
+Std. Deviation 
+.30 
+.33 
+.30 
+.32 
+C. Councils and Independence 
+Finally, we wish to examine whether the variables of composition 
+and competence correlate with variables such as judicial quality and 
+independence. This is an important question given that judicial coun-
+cils are offered as a "best practice" to promote judicial independence. 
+As an initial step, we use the Judicial Independence scores produced 
+by Howard and Carey (2004).79 They analyzed the U.S. Department 
+of State's Annual Human Rights Reports for a series of years in the 
+1990s to produce dummy variables for individual, collective, and 
+overall judicial independence. We used the last year available (typi-
+cally 1999).80 
+Here again we see a trend toward more independence with 
+greater competences of the judicial council, suggesting that perhaps 
+councils do increase independence as their proponents assert. There 
+is a potential problem, however: any index that draws on formal 
+structures for the definition of judicial independence raises en-
+dogeneity problems. It is possible, for example, that the State 
+Department's assessment is itself affected by whether or not a coun-
+try has a judicial council. To overcome this problem, we need to 
+examine judicial independence as exists on the ground, rather than 
+relying on formal or structural independence. While this is somewhat 
+difficult to assess, we are fortunate that Professor Voigt and his co-
+authors have developed separate indices for de facto and de jure inde-
+democracy status was considered for the five years preceding the constitution and 
+immediately afterwards. If the country was rated a democracy in the year of or imme-
+diately following the promulgation of the constitution, and had been an autocracy at 
+any time in the five preceding years without an intervening constitution, it was con-
+sidered to have undergone a transition from autocracy to democracy. 
+79. Robert Howard & Henry A. Carey, Courts and Political Freedom: A Measure 
+of Judicial Independence, 87 JUDICATURE 285 (2004). 
+80. We focus on their "individual independence" score, which exhibits much more 
+variance than their collective independence indicator. 
+
+128 
+THE AMERICAN JOURNAL OF COMPARATIVE LAW 
+[Vol. 57 
+FIGURE 7: JUDICIAL INDEPENDENCE (HOWARD-CAREY "INDIVIDUAL 
+INDEPENDENCE"), BY POWER INDEX 
+Power index 
+1 
+2 
+3 
+Total 
+Mean 
+.57 
+.55 
+.67 
+.61 
+N 
+7 
+40 
+51 
+98 
+Std. Deviation 
+.53 
+.50 
+.47 
+.49 
+pendence.81 Voigt's de facto index is composed of a number of 
+variables that are likely to impact actual levels of independence, such 
+as the number of times rules governing appointment or court struc-
+ture have changed, whether judicial budgets and income have 
+remained constant, whether judges have been removed from office, 
+and instances of non-implementation of judicial decisions. Using this 
+more refined index, it does not appear obvious that de facto judicial 
+independence scores increase with the level of powers for the judicial 
+council. 
+FIGURE 8: JUDICIAL INDEPENDENCE DE FACTO (VOIGT), BY 
+POWER INDEX 
+Power index 
+1 
+2 
+3 
+Total 
+Mean 
+.56 
+.51 
+.50 
+.51 
+N 
+5 
+15 
+26 
+46 
+Std. Deviation 
+.24 
+•25 
+.23 
+.23 
+We also can consider the effect of various features of judicial 
+councils on metrics of judicial independence. Figure 9 presents four 
+models using different dependent variables measuring different as-
+pects of judicial independence and quality. In each case, we examine 
+the effects of two different features of judicial councils widely be-
+lieved to enhance independence: strong powers and a majority of 
+judges on the council. In no case do either of these indicators ap-
+proach statistical significance when controlling for common law and 
+GDP. These results are robust to alternative specifications when each 
+81. Lars Feld & Stefan Voigt, Economic Growth and Judicial 
+Independence: 
+Cross-Country Evidence Using a new set of Indicators, 19(3) EUR. J. POL. ECON. 497-
+527 (2003); Bernd Hayo & Stefan Voigt, Explaining De Facto Judicial 
+Independence, 
+Marburg Papers on Economics No. 07-2005 (2005), available at http://www.uni-mar-
+burg.de/fb02/makro/forschung/gelbereihe/artikel/2005-07-hayo.pdf 
+(last visited Aug. 
+10, 2007). 
+
+2009] 
+JUDICIAL COUNCILS AND JUDICIAL INDEPENDENCE 
+129 
+feature is included on its own. We find no evidence in support of the 
+presumed relationship between council structure and judicial inde-
+pendence or quality. 
+A final bit of evidence comes from preliminary analysis of World 
+Bank Rule of Law data on those countries which appear to have 
+adopted a judicial council after 1996. This data shows that more 
+countries suffered a decline in quality of rule of law than an increase. 
+Thirty-nine countries suffered a decline in Rule of Law rating be-
+tween adoption and 2005, whereas only twenty-seven countries 
+showed an increase.82 It seems that the emergence of judicial councils 
+as an international "best practice" for promoting judicial indepen-
+dence and quality may be unjustified. 
+FIGURE 9: COUNCIL FEATURES AS PREDICTORS OF 
+JUDICIAL INDEPENDENCE 
+Dependent Variable 
+Constant 
+Percent of judges on 
+council 
+Strong powers of 
+council 
+Common law dummy 
+GDP per capita 
+R2 
+Rule of Law 
+Index83 
+-1.08 
+0.21 
+0.08 
+.22* 
+Q-j ##* 
+.78 
+De Facto 
+Judicial 
+Independence 
+0.41 
+0.15 
+0.00 
+-0.16** 
+.01* 
+.23 
+Judicial 
+Independence 
+0.31 
+0.08 
+0.10 
+0.18 
+QQ*#* 
+.45 
+Judicial Quality/ 
+Formalism86 
+0.25 
+0.10 
+0.05 
+0.16 
+.01** 
+.19 
+* = significant at the 10% confidence level; ** = significant at the 5% confidence level; 
+*** = significant at the 1% confidence level 
+The above results suggest the need to focus on a more dynamic 
+model of council structure. Clearly the effects are not linear. Rather, 
+there is a complex relationship between council structure and politi-
+cal incentives of the various actors at the time of adoption. Ideally, we 
+would be able to model the decision to adopt a judicial council as a 
+product of the political factors we identify. However, we face two 
+daunting data challenges that prevent us from specifying such a 
+model. First, we would need comprehensive data on the judicial ap-
+pointment systems of all countries, including those without a council, 
+82. Data on file with authors. 
+83. World Bank, Worldwide Governance Indicators 1996-2006, available at http:// 
+web.worldbank.org/WBSITE/EXTERNAL/WBI/EXTWBIGOVANTCOR/0„content 
+MDK:20771165~menuPK:1866365~pagePK:64168445~piPK:64168309~theSitePK:l 
+740530,00.html. 
+84. See supra note 81. 
+85. See Howard & Carey, supra note 79 
+86. Simeon Djankov et al., Courts: The Lex Mundi Project, CEPR Discussion 
+Papers 3344 (2002). 
+
+130 
+THE AMERICAN JOURNAL OF COMPARATIVE LAW 
+[Vol. 57 
+before and after the adoption. Although Hanssen was able to gather 
+some such data in the United States, we have found no comparable 
+sources across a large number of countries.87 Second, we would need 
+refined indicators of political variation across countries over time. We 
+are not convinced that any one indicator would serve as an ideal 
+proxy for the myriad conditions that lead countries to adopt judicial 
+councils. Our preliminary conclusion, then, is that there is no evi-
+dence that judicial councils promote independence. 
+V. 
+CONCLUSION 
+This Article is a first examination of judicial councils, a relatively 
+new institution associated with attempts to enhance judicial indepen-
+dence. We began by providing a comprehensive view of common-law 
+judicial appointment commissions and civil-law high judicial coun-
+cils. We have argued that the different designs aim at achieving the 
+appropriate balance between independence and accountability in the 
+face of two recurrent phenomena: the politicization of the judiciary 
+and the judicialization of politics. We provide a typology of judicial 
+councils by looking at two crucial elements, composition and compe-
+tences, and test their interactions. 
+Our empirical observation of patterns of institutional design 
+show that competence and composition interact in complex ways to 
+respond to particular institutional problems. We also found little evi-
+dence in favor of the widespread assumption that councils increase 
+quality or independence in the aggregate. Therefore, we emphasize 
+the complexity of the role of a judicial council and reject the simplistic 
+view that importing or transplanting certain types of judicial council 
+is likely to have a decisive impact on the quality of the judiciary. We 
+thus reject the view of international organizations that assert that 
+judges should always and everywhere form the majority of members 
+on the Council.88 
+Our framework also explains why it is that councils persist as 
+institutions. Because they involve actors from multiple different are-
+nas, the council itself promises that no one institution can easily 
+dominate the judiciary. The councils, once created, provide an arena 
+for competition and the eternal struggle to calibrate independence 
+and accountability. We thus predict that councils themselves will fre-
+quently become the targets of institutional reform, as examples from 
+Italy, Brazil and elsewhere demonstrated.89 We also can understand 
+87. Cf. Hannsen, supra note 47. 
+88. Autheman & Elena, supra note 26. 
+89. Autheman & Elena, supra note 26, provide a very interesting report of survey 
+data from five Central American countries. Respondents in those countries that had a 
+judicial council reported that the Council had had a negative impact on judicial inde-
+pendence. Respondents in those countries that did not have a judicial council felt that 
+adopting a judicial council would increase judicial independence. Id. at 4. These two 
+
+2009] 
+JUDICIAL COUNCILS AND JUDICIAL INDEPENDENCE 
+131 
+why they have been widely adopted, notwithstanding little support 
+for claims that they enhance independence: councils allow a wide 
+number of stakeholders to participate in discussions of judicial 
+governance. 
+Finally, we introduce the notion of the politically accountable but 
+strong judiciary. In many ways, this ideal type is more desirable than 
+the conventional view that judicial independence is an unqualified 
+good. Those who emphasize judicial independence too often do not ar-
+ticulate the need for accountability, which provides the crucial other 
+side of the proverbial coin. 
+These findings have important implications for the ongoing de-
+bate on judicial appointments in the United States. Rather than 
+assume that merit commissions, the American counterpart to judicial 
+councils, always enhance independence, scholars should conduct 
+more thorough empirical research to understand the precise determi-
+nants of independence and accountability. Our case studies suggest 
+that these determinants are highly context-specific and not suscepti-
+ble to one-size-fits-all solutions. 
+results are not contradictory from our point of view. First, the two sets of countries 
+have different starting places and are likely to vary systematically. Second, the coun-
+tries that have adopted judicial councils may have done so to enhance accountability 
+rather than independence, in which case, respondents are observing a successful 
+institution. 
+
+1 3 2 
+THE AMERICAN JOURNAL OF COMPARATIVE LAW 
+[Vol. 
+57 
+APPENDIX: DATA ON JUDICIAL COUNCILS 
+Country 
+Number of Members 
+Proportion of Judges 
+Power Index 
+Albania 
+Algeria 
+Andorra 
+Angola 
+Argentina 
+Armenia 
+Bahamas 
+Bahrain 
+Bangladesh 
+Barbados 
+Belgium 
+Belize 
+Benin 
+Bolivia 
+Bosnia-Herzegovina 
+Botswana 
+Brazil 
+Bulgaria 
+Burkina Faso 
+Burundi 
+Cameroon 
+Cape Verde 
+Central African Republic 
+Chad 
+Chile 
+China 
+Colombia 
+Comoros 
+Costa Rica 
+Cote D'lvoire 
+Croatia 
+Cyprus 
+Democratic Republic of 
+Congo 
+Dominica 
+East Timor 
+Ecuador 
+Egypt 
+El Salvador 
+Equatorial Guinea 
+Eritrea 
+Ethiopia 
+Fiji 
+France 
+Gabon 
+Gambia 
+Guatemala 
+Ghana 
+Greece 
+Guyana 
+Hungary 
+Indonesia 
+Iraq 
+Israel 
+Italy/Sardinia 
+Jamaica 
+Kazakhstan 
+15 
+5 
+19 
+14 
+3 
+5 
+4 
+8 
+3 
+5 
+25 
+15 
+9 
+13 
+8 
+5 
+5 
+8 
+6 
+7 
+3 
+17 
+7 
+9 
+5 
+5 
+5 
+3 
+9 
+6 
+0.67 
+0.2 
+0.58 
+0.25 
+0.64 
+1 
+0.2 
+0.5 
+0.25 
+0.2 
+0 
+0.5 
+1 
+0.52 
+0.47 
+0.33 
+0 
+1 
+0.6 
+1 
+0.29 
+0.4 
+0.13 
+0 
+0 
+0.33 
+0.46 
+0.57 
+0.38 
+0.6 
+0.8 
+1 
+1 
+0 
+1 
+0.33 
+0.6 
+0.33 
+0 
+
+2 0 0 9 ] 
+JUDICIAL COUNCILS AND JUDICIAL INDEPENDENCE 
+133 
+Kenya 
+Kuwait 
+Latvia 
+Lebanon 
+Lesotho 
+Lithuania 
+Macedonia 
+Madagascar 
+Malawi 
+Malaysia 
+Mali 
+Malta 
+Marshall Islands 
+Mauritius 
+Mexico 
+Moldova 
+Mongolia 
+Morocco 
+Mozambique 
+Namibia 
+Nepal 
+Niger 
+Nigeria 
+Pakistan 
+Palau 
+Panama 
+Papua New Guinea 
+Paraguay 
+Peru 
+Philippines 
+Poland 
+Portugal 
+Republic of Congo 
+Romania 
+Rwanda 
+Saint Vincent 
+Samoa 
+Senegal 
+Seychelles 
+Sierra Leone 
+Singapore 
+Slovakia 
+Slovenia 
+Solomon 
+Somalia 
+South Africa 
+Spain 
+Sri Lanka 
+Sudan 
+Syria 
+Tajikistan 
+Tanzania 
+Thailand 
+Togo 
+Trinidad 
+Tunisia 
+Turkey 
+Uganda 
+Ukraine 
+Uruguay 
+Vanuatu 
+5 
+15 
+4 
+7 
+2 
+10 
+3 
+4 
+4 
+11 
+16 
+4 
+5 
+3 
+5 
+7 
+8 
+5 
+8 
+7 
+15 
+17 
+19 
+3 
+3 
+4 
+6 
+11 
+4 
+23 
+22 
+3 
+6 
+15 
+9 
+7 
+20 
+7 
+4 
+0.6 
+0.53 
+0.25 
+3 
+3 
+0 
+3 
+1 
+3 
+0 
+2 
+0.5 
+2 
+0.33 
+3 
+0.5 
+2 
+1 
+3 
+0.55 
+3 
+2 
+0.86 
+2 
+0.56 
+2 
+0.25 
+2 
+0.6 
+3 
+1 
+2 
+1 
+0.14 
+0.63 
+1 
+0.4 
+0.13 
+2 
+0.14 
+2 
+0.22 
+2 
+2 
+0.47 
+3 
+3 
+0.79 
+3 
+1 
+2 
+2 
+0.33 
+3 
+2 
+0 
+2 
+0.5 
+2 
+0.4 
+3 
+3 
+0.55 
+2 
+0.25 
+2 
+2 
+0.13 
+0.59 
+1 
+3 
+1 
+3 
+0 
+2 
+0.5 
+3 
+0.87 
+3 
+0.78 
+3 
+0.4 
+3 
+0 
+3 
+0 
+3 
+0.20 
+3 
+0.43 
+3 
+0.25 
+2 
+
+134 
+THE AMERICAN JOURNAL OF COMPARATIVE LAW 
+[Vol. 57 
+Venezuela 
+8 
+0.5 
+3 
+Zambia 
+3 
+Zimbabwe 
+6 
+0.17 
+2 
+Key: Power Index has value 1 for purely administrative functions, value 2 for involvement 
+in appointments, and value 3 for roles in both appointment and discipline, removal or 
+promotion of judges.

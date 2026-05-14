@@ -1,0 +1,995 @@
+Todo o conteúdo deste periódico, exceto onde está identificado, está 
+licenciado sob uma Licença Creative Commons 
+ All the contents of this journal, except where otherwise noted, is 
+licensed under a Creative Commons Attribution License 
+Fonte: http://www.scielo.br/scielo.php?script=sci_serial&pid=1808-2432&lng=pt&nrm=iso. 
+Acesso em: 24 jul. 2014. 
+REFERÊNCIA 
+AKUTSU, Luiz; GUIMARAES, Tomás de Aquino. Dimensões da governança judicial e sua 
+aplicação ao sistema judicial brasileiro. Revista Direito GV, São Paulo, v. 8, n. 1, jun. 2012. 
+Disponível em: <http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1808-
+24322012000100008&lng=pt&nrm=iso>. Acesso em: 24 jul. 2014. 
+http://dx.doi.org/10.1590/S1808-24322012000100008. 
+
+REVISTA DIREITO GV, SÃO PAULO
+8(1) | P. 183-202 | JAN-JUN 2012
+183
+:
+15
+RESUMO
+A ADMINISTRAÇÃO DA JUSTIÇA BRASILEIRA ENFRENTA DIFICULDADES
+CRÔNICAS DE ACESSIBILIDADE DA POPULAÇÃO DE MENOR RENDA À
+JUSTIÇA, DE MOROSIDADE E DE BAIXA EFICÁCIA DAS DELIBERAÇÕES
+JUDICIAIS. O PRESENTE ESTUDO BUSCA CONTRIBUIR PARA O EXAME
+DE SOLUÇÕES PARA TAIS DIFICULDADES, TENDO COMO OBJETIVOS
+IDENTIFICAR
+DIMENSÕES
+RELACIONADAS
+AO
+CONCEITO
+DE
+GOVERNANÇA
+JUDICIAL
+ESTUDADAS
+EM
+PESQUISAS
+EMPÍRICAS
+RECENTES E DISCUTIR COMO TAIS DIMENSÕES PODEM INFLUENCIAR O
+DESEMPENHO
+DO
+SISTEMA
+JUDICIAL
+BRASILEIRO. AS
+SEGUINTES
+DIMENSÕES
+FORAM
+IDENTIFICADAS: INDEPENDÊNCIA
+JUDICIAL;
+ACCOUNTABILITY; ACESSIBILIDADE À JUSTIÇA; ESTRUTURA DO PODER
+JUDICIÁRIO; RECURSOS ESTRATÉGICOS DO PODER JUDICIÁRIO; E
+DESEMPENHO DO SISTEMA JUDICIAL. ANTE A ESCASSEZ DE ESTUDOS
+EMPÍRICOS SOBRE GESTÃO DO JUDICIÁRIO EM GERAL E DO BRASIL
+EM PARTICULAR, FORAM FORMULADAS PROPOSTAS DE PESQUISAS
+PARA AVALIAR, ENTRE OUTROS ASPECTOS: (A) A INFLUÊNCIA DO
+DESENVOLVIMENTO DOS RECURSOS ESTRATÉGICOS NO DESEMPENHO
+DO PODER JUDICIÁRIO; E (B) O
+IMPACTO, NA
+DIMINUIÇÃO
+DA
+CORRUPÇÃO DO SISTEMA JUDICIAL BRASILEIRO, DO AUMENTO DA
+INDEPENDÊNCIA JUDICIAL E DA GARANTIA DE QUE OS JUÍZES SEJAM
+ACCOUNTABLES PERANTE A SOCIEDADE.
+PALAVRAS-CHAVE
+ACCOUNTABILITY; ADMINISTRAÇÃO DA JUSTIÇA; DESEMPENHO;
+INDEPENDÊNCIA; GOVERNANÇA JUDICIAL.
+Luiz Akutsu e Tomás de Aquino Guimarães
+DIMENSÕES DA GOVERNANÇA JUDICIAL E SUA
+APLICAÇÃO AO SISTEMA JUDICIAL BRASILEIRO
+ABSTRACT
+THE BRAZILIAN JUSTICE MANAGEMENT FACES CHRONIC
+DIFFICULTIES OF ACCESSIBILITY OF LOWER INCOME POPULATION
+TO JUSTICE, THE SLOWNESS AND LOW EFFECTIVENESS OF THE
+JUDICIAL DECISIONS. IN ORDER TO CONTRIBUTE TO THE ANALYSIS
+OF SOLUTIONS TO THESE DIFFICULTIES, THE OBJECTIVES OF THIS
+PAPER ARE TO IDENTIFY DIMENSIONS RELATED TO THE CONCEPT
+OF JUDICIAL GOVERNANCE STUDIED IN RECENT EMPIRICAL
+RESEARCHES, AND DISCUSS HOW THESE DIMENSIONS CAN PUSH
+THE PERFORMANCE OF THE BRAZILIAN JUDICIAL SYSTEM. THE
+FOLLOWING DIMENSIONS WERE IDENTIFIED: JUDICIAL
+INDEPENDENCE, ACCOUNTABILITY, ACCESSIBILITY TO JUSTICE;
+STRUCTURE OF THE JUDICIARY; STRATEGIC RESOURCES OF
+THE JUDICIARY, AND JUDICIARY’S PERFORMANCE. FACED WITH
+THE SCARCITY OF EMPIRICAL STUDIES ON MANAGEMENT OF THE
+JUDICIARY, SPECIALLY ON BRAZILIAN COURTS, RESEARCH
+PROPOSALS ARE MADE, INCLUDING THE FOLLOWING: (A) TO
+EVALUATE THE INFLUENCE OF THE DEVELOPMENT OF STRATEGIC
+RESOURCES IN THE PERFORMANCE OF THE JUDICIARY; AND (B) 
+TO EVALUATE THE IMPACT OF INCREASED JUDICIAL INDEPENDENCE
+AND ACCOUNTABILITY ON REDUCING CORRUPTION OF THE BRAZILIAN
+JUDICIAL SYSTEM.
+KEYWORDS
+ACCOUNTABILITY; JUDICIAL MANAGEMENT; PERFORMANCE;
+INDEPENDENCE; JUDICIAL GOVERNANCE.
+JUDICIAL GOVERNANCE DIMENSIONS AND THEIR APPOINTMENT TO
+THE BRAZILIAN JUDICIAL SYSTEM
+INTRODUÇÃO
+A baixa acessibilidade da população de menor renda à Justiça e a morosidade e a baixa
+eficácia das decisões judiciais são algumas das dificuldades crônicas enfrentadas pelos
+
+cidadãos que buscam o sistema judicial brasileiro. Essas dificuldades podem ser mini-
+mizadas tanto com medidas mais estreitamente relacionadas à área do direito
+propriamente dito – como alterações na legislação processual – quanto com medidas
+relacionadas à administração do Judiciário. O escopo desta pesquisa relaciona-se jus-
+tamente a essa última área: a governança judicial.
+Embora a discussão sobre governança seja relevante e atual, o conceito não é
+novo. Segundo Kauffmann e Kraay (2008), há notícias de discussões sobre o tema
+que remontam ao ano 400 a. C., quando Kautilya, suposto ministro-chefe do rei da
+Índia, teria apresentado o Arthashastra, um tratado sobre a arte da governança, enfa-
+tizando a justiça, a ética e as tendências antiautocráticas. Os autores destacam que,
+embora o conceito tenha sido mencionado em relatos tão antigos, não há consenso
+acerca de uma definição sobre governança e apontam para a importância de, para
+analisar e interpretar esse fenômeno, se levar em conta as principais dimensões asso-
+ciadas às inúmeras definições do termo.
+Ao revisar a literatura sobre o tema, Claessens (2006) evidencia que uma boa
+governança corporativa está associada a custos de capital mais baixos e a retornos
+mais expressivos em termos de equidade, eficiência e tratamento mais favorável
+aos stakeholders. Andrade e Rossetti (2009, p. 552) corroboram o argumento de
+Claessens (2006) destacando que “a amplitude dos impactos positivos dos princí-
+pios, dos propósitos e das práticas de boa governança é [...] uma das raras
+unanimidades que se estabeleceram nos últimos anos nos campos da economia, das
+finanças e da administração” e argumentam que o conceito de governança corpora-
+tiva pode ser transposto para a gestão do Estado. Para os autores, a questão-chave
+do Estado não é de governabilidade, mas de governança: “enquanto a primeira é
+uma conquista circunstancial e geralmente efêmera do poder estabelecido, a segun-
+da é uma conquista da sociedade, estrutural e duradoura” (Andrade e Rossetti,
+2009, p. 562).
+Deve-se destacar, contudo, que a governança pode existir sem governo, confor-
+me argumenta Rosenau (2010, p. 14): “presumir a existência da governança sem um
+governo significa conceber funções que precisam ser executadas para dar viabilidade
+a qualquer sistema humano, mesmo que o sistema não tenha produzido organizações
+e instituições incumbidas explicitamente de exercê-las”. O autor refere-se à intera-
+ção entre os Estados, num contexto de globalização econômica e de crescente
+interação da política mundial, o qual demanda entender como pode existir uma
+governança na ausência de um governo. Ao estudar o conceito de governança nesse
+contexto, Czempiel (2010, p. 335) concorda que o sistema internacional é um siste-
+ma de governança: “entendo ‘governança’ como a capacidade de fazer coisas sem a
+competência legal para ordenar que elas sejam feitas”. 
+As definições mais comuns para os termos governança corporativa e governança do
+Estado trazem pressupostos similares aos expostos por Rosenau (2010) e Czempiel
+DIMENSÕES DA GOVERNANÇA JUDICIAL E SUA APLICAÇÃO AO SISTEMA JUDICIAL BRASILEIRO
+:
+184
+REVISTA DIREITO GV, SÃO PAULO
+8(1) | P. 183-202 | JAN-JUN 2012
+
+(2010). Rabelo e Silveira (1999, p. 6) definem governança corporativa como “um
+conjunto de questões relativas aos mecanismos de controle utilizados nas grandes
+corporações”. A governança está relacionada, assim, tanto para o setor público quan-
+to para o setor privado, aos mecanismos de controle nas organizações, utilizados para
+a consecução de seus objetivos. Em consonância com tais referências, adota-se neste
+trabalho a seguinte definição para o termo governança: “ferramenta analítica para
+compreensão dos fatores que organizam a interação dos atores, a dinâmica dos pro-
+cessos e as regras do jogo” (Ibanhes et al., 2007, p. 577).
+Justifica-se a escolha do tema “governança judicial” em face de o estudo do
+sistema judicial brasileiro ter sido colocado em destaque na agenda política do
+país nos últimos anos, com o “Pacto de Estado em favor de um Judiciário mais
+rápido e republicano” (Brasil, 2004), firmado pelos presidentes dos poderes
+Executivo, Judiciário e Legislativo, destinado a aprimorar a gestão do sistema
+judicial brasileiro. Uma das premissas desse pacto é que “poucos problemas nacio-
+nais possuem tanto consenso no tocante aos diagnósticos quanto à questão
+judiciária” e que os principais problemas relacionados à administração da Justiça
+relacionam-se à morosidade das ações judiciais e à baixa eficácia de suas decisões
+(Brasil, 2004, p. 8). Em 2009 houve o “II pacto republicano de Estado por um sis-
+tema de Justiça mais acessível, ágil e efetivo”, reiterando o compromisso de
+buscar soluções para os problemas relacionados à morosidade e à baixa efetivida-
+de das deliberações judiciais, tendo o novo documento destacado outro problema:
+a necessidade de um sistema de Justiça mais acessível, especialmente aos mais
+necessitados (Brasil, 2009). Além disso, são escassos os estudos relacionados com
+administração do Judiciário.
+O estudo da área temática “governança judicial” encontra amparo também em
+proposta recente de Ng (2011), cujo estudo propõe a criação da referida disciplina,
+por entender que a abordagem do ponto de visto estritamente jurídico é insuficien-
+te para a compreensão de questões que envolvem a crescente cobrança por maior
+accountability por parte dos inúmeros atores com interesse no funcionamento das
+cortes. O autor defende, assim, uma abordagem interdisciplinar para a disciplina de
+governança judicial, que leve em conta teorias relacionadas às ciências do direito, da
+política, da economia e da administração.
+Assim, levando em consideração esse contexto, a presente pesquisa busca, por
+meio do estudo de dimensões relacionadas ao conceito de governança judicial, con-
+tribuir para o exame de soluções para melhorar o sistema judicial brasileiro e tem
+como objetivos identificar dimensões relacionadas ao conceito de governança judi-
+cial estudadas em pesquisas empíricas recentes e discutir como tais dimensões
+podem influenciar o desempenho do sistema judicial brasileiro. Além da presente
+introdução, este artigo está divido em quatro seções. A seção 1 traz a metodologia
+adotada para levantamento de dados da pesquisa. A seção 2 descreve o estado da arte
+185
+:
+LUIZ AKUTSU E TOMÁS DE AQUINO GUIMARÃES
+15
+REVISTA DIREITO GV, SÃO PAULO
+8(1) | P. 183-202 | JAN-JUN 2012
+
+a respeito de governança judicial e as principais conclusões da revisão teórica reali-
+zada. A revisão teórica à luz do sistema judicial brasileiro é discutida na seção 3. Ao
+final, é proposta uma agenda de pesquisa e são apresentadas as considerações finais
+deste trabalho.
+1 METODOLOGIA
+Quanto aos aspectos metodológicos, este estudo pode ser caracterizado como des-
+critivo e analítico, fundamentado em literatura e em conclusões de artigos sobre o
+tema “governança judicial”, em revisão do estado da arte de periódicos brasileiros e
+estrangeiros. O estudo pode ser caracterizado também como de natureza explorató-
+ria, dada a escassez de estudos sobre o tema que tratem, em especial, sobre o sistema
+judicial brasileiro.
+Para a identificação do estado da arte sobre o tema “governança judicial”, foi rea-
+lizada uma busca nas seguintes bases de dados: Academic Search Premier; Cambridge
+Journals Online; Emerald Fulltext; JSTOR Arts & Sciences I Collection; OECD
+iLibrary; Oxford Journals; Project Muse; SAGE Journals Online; ScienceDirect
+(Elsevier); SpringerLink (MetaPress); Wiley Online Library e Scielo. Foram utiliza-
+das as palavras-chave judicial e governance, utilizadas simultaneamente para
+preenchimento do critério “assunto” nos respectivos campos dos mecanismos de
+busca. Em seguida, foi feita a leitura dos resumos dos textos indicados pelos meca-
+nismos de busca, visando identificar se os artigos tinham como objeto de estudo o
+sistema judicial. Para os artigos em que a leitura do resumo não deixava claro o obje-
+to de estudo, procedeu-se à análise do restante de seu conteúdo.
+Entre os artigos recuperados na busca, foram selecionados aqueles que: (a) foram
+publicados no período de janeiro de 2005 a janeiro de 2011; (b) tratavam do tema
+“governança judicial”; e (c) constituíam um relato de pesquisa empírica. Esses pro-
+cedimentos foram repetidos utilizando-se, simultaneamente, as palavras-chave court
+e governance; judicial e organisation; court e management; judiciary e governance; justice e
+governance, judicial e performance; court e performance; justice e performance; justice e
+administration; judicial e administration, bem como as palavras-chave correspondentes
+em português.
+Foram selecionados 23 artigos empíricos, sendo quatro publicados em periódi-
+cos brasileiros e 19 em periódicos estrangeiros. Referidos artigos foram agrupados
+segundo as dimensões de governança judicial estudadas. Buscou-se, por meio da lei-
+tura dos respectivos títulos, resumos e palavras-chave, identificar as principais
+dimensões abordadas em cada artigo. Os artigos que abordaram mais de uma dimen-
+são foram classificados na dimensão cujas conclusões foram consideradas mais
+relevantes. A distribuição desses artigos é apresentada no quadro 1 (ver apêndice) e
+descrita na seção 2, a seguir.
+DIMENSÕES DA GOVERNANÇA JUDICIAL E SUA APLICAÇÃO AO SISTEMA JUDICIAL BRASILEIRO
+:
+186
+REVISTA DIREITO GV, SÃO PAULO
+8(1) | P. 183-202 | JAN-JUN 2012
+
+2 GOVERNANÇA JUDICIAL: DIMENSÕES IDENTIFICADAS NO ESTADO DA ARTE
+Dos 23 estudos coletados, a dimensão “desempenho do sistema judicial” é a que
+contém a maior proporção de artigos, com nove textos, representando 39% do
+total. Em seguida, foram identificadas as seguintes dimensões: “independência
+judicial”, com cinco artigos (22% do total); “accountability1 e recursos estratégi-
+cos do Poder Judiciário”, com três artigos cada (13% do total); “acessibilidade à
+Justiça”, com dois artigos (9% do total); por fim, “estrutura do Poder Judiciário”,
+com um artigo (4% do total). Apresentam-se, nas subseções 2.1 a 2.6 a seguir, as
+principais conclusões desses artigos relacionadas às dimensões de governança de
+sistemas judiciais.
+2.1 DESEMPENHO DO SISTEMA JUDICIAL
+Staats et al. (2005) compararam o desempenho de sistemas judiciários de dezessete
+países da América Latina, com base em percepção de acadêmicos e profissionais liga-
+dos ao Poder Judiciário. Os autores mediram cinco dimensões: “independência
+judicial”, “accountability”, “eficiência”, “efetividade” e “acessibilidade à Justiça”. Os
+resultados do estudo evidenciaram a importância de avaliações efetivas e confiáveis
+do desempenho de sistemas judiciais as quais, baseadas em múltiplos critérios, per-
+mitam entender e comparar as reformas judiciais nos diversos países da América
+Latina, identificando-se em especial as reformas efetivas e as causas do sucesso ou do
+fracasso dessas reformas.
+Van Montfort et al. (2005) estudaram fatores que influenciam o tempo de julga-
+mento em cortes distritais na Holanda. Os autores partiram de duas abordagens
+teóricas: (a) abordagem racional: o tempo de julgamento é influenciado pelo interes-
+se das partes em acelerar ou retardar o andamento da causa; e (b) abordagem
+sistêmica: o tempo de julgamento é influenciado por características gerenciais das
+cortes. Os resultados evidenciaram que: (a) as partes que preferem retardar a solu-
+ção do litígio ficam mais satisfeitas com a duração do procedimento que as partes que
+têm preferência por procedimentos mais rápidos; (b) tanto a conduta dos litigantes
+no nível micro quanto características gerenciais das cortes distritais influenciam na
+duração dos procedimentos judiciais; (c) três fatores (o número de casos não julga-
+dos nas cortes distritais, a complexidade dos casos e o tempo que o réu demora para
+apresentar a defesa) têm influência estatística significativa na duração dos procedi-
+mentos. Desses três fatores, a pesquisa mostrou que o estoque de processos sem
+julgamento é uma causa importante para a demora no julgamento de recursos.
+Beer (2006) analisou o sistema judicial mexicano destacando a importância de se
+separar o desempenho judicial em vários componentes. Fazendo remissão a estudos
+anteriores, destaca o estudo das dimensões “independência judicial”, “efetividade” e
+“acessibilidade à Justiça”, argumentando que diversas forças influenciam tais dimen-
+sões. Os resultados da pesquisa indicam que: (a) estados que são mais dependentes
+187
+:
+LUIZ AKUTSU E TOMÁS DE AQUINO GUIMARÃES
+15
+REVISTA DIREITO GV, SÃO PAULO
+8(1) | P. 183-202 | JAN-JUN 2012
+
+de exportações têm sistemas judiciais menos efetivos e menos acessíveis; (b) o
+número de organizações que defendem direitos humanos em cada estado não é um
+bom preditor do desempenho judicial; (c) a competição política leva à maior inde-
+pendência judicial: estados com eleições mais competitivas gastam mais com seus
+judiciários; e (d) a pobreza tem um impacto negativo no comportamento das insti-
+tuições judiciais: quanto maior a pobreza, maior a corrupção.
+Kahan (2006) estudou fatores determinantes que levam firmas norte-americanas
+a escolher determinado estado como sua sede principal. Tal decisão é importante
+para empresas dos Estados Unidos porque, independentemente de onde a empresa
+conduza seus negócios, esta pode escolher como sede principal qualquer estado da
+federação e seguir a legislação comercial do seu domicílio. Os resultados do estudo
+evidenciaram que as firmas estão mais propensas a se instalarem em estados com
+legislação comercial que lhes oferece flexibilidade para escolher seus mecanismos de
+governança e em estados com sistemas judiciais de melhor qualidade.
+Rosales-López (2008) estudou o desempenho de juizados de primeira instância
+da Espanha, buscando responder às seguintes questões: (a) por que a produção de
+algumas cortes é maior que a de outras? (b) as cortes podem produzir mais justiça
+usando os mesmos recursos? e (c) as cortes que têm maior produtividade têm um
+percentual maior de suas deliberações alteradas pelos tribunais? Para as duas primei-
+ras questões, os resultados da pesquisa evidenciaram que: (a) as cortes podem
+produzir mais deliberações com os recursos atuais; (b) as variáveis tamanho da corte,
+disponibilidade de serviços de apoio e reforço de serventuários têm um efeito posi-
+tivo significativo no desempenho das cortes; e (c) o rodízio de juízes tem um efeito
+negativo significativo no desempenho das cortes. Para a terceira questão, o estudo
+concluiu que obter maior produtividade e uma menor taxa de reversão das delibera-
+ções não são objetivos incompatíveis no Poder Judiciário.
+Mendelski (2009) investigou a variação na qualidade administrativa e judicial da
+governança nos países pós-comunistas que ingressaram na Comunidade Europeia no
+final da década de 1990. Os resultados evidenciaram que a variação no desenvolvi-
+mento institucional não se deve somente a legados estruturais ou históricos. A
+variação pode ser igualmente explicada por fatores mais recentes e fatores externos,
+tais como o impacto das condicionalidades da Comunidade Europeia.
+O estudo de Boniface e Legg (2010) discute reformas no sistema judicial austra-
+liano que buscaram adequar os custos à matéria em disputa, reduzir atrasos e
+reconhecer que os tribunais devem se preocupar não meramente com a justiça entre
+as partes em um caso particular, mas distribuir justiça a todos os seus usuários. Os
+autores argumentam que essa concepção estendida de justiça, que não se limita à jus-
+tiça entre as partes e inclui os interesses de outros usuários de um sistema judicial,
+traz como pressuposto o reconhecimento de que os recursos disponíveis aos admi-
+nistradores da Justiça não são ilimitados. Defendem os autores que os gestores do
+DIMENSÕES DA GOVERNANÇA JUDICIAL E SUA APLICAÇÃO AO SISTEMA JUDICIAL BRASILEIRO
+:
+188
+REVISTA DIREITO GV, SÃO PAULO
+8(1) | P. 183-202 | JAN-JUN 2012
+
+sistema judicial devem ter como objetivo a justiça em termos amplos, conciliando
+três dimensões de uma sentença efetiva: uma decisão tempestiva, com custo adequa-
+do e justa. Ressaltam que nenhuma das dimensões pode ser maximizada de forma
+separada, sem considerar as demais, sob pena de inefetividade do sistema judicial:
+quanto maior for a precisão almejada numa sentença judicial, maiores serão os cus-
+tos processuais e maior será o tempo despendido. Além disso, os recursos gastos num
+caso não estarão disponíveis para os demais.
+Caplan (2010) destaca a ausência de pesquisas que tratem da avaliação da quali-
+dade da atuação de juízes e advogados, na forma sugerida por Richard Posner: a
+“autópsia judicial”. Argumenta que algumas vantagens das autópsias praticadas pelos
+médicos legistas poderiam ser estendidas à avaliação de julgamentos encerrados: a
+autópsia permitiria identificar erros, avaliar desempenho e fornecer feedback para
+promover mudanças em um ensino do direito que tende a se distanciar das práticas
+dos tribunais. O estudo examina o desempenho de advogados e juízes norte-ameri-
+canos em julgamentos de litígios contratuais e destaca que erros de juízes são tão
+corriqueiros como diagnósticos e prescrições de tratamentos incorretos por parte
+dos médicos. O autor propõe que futuras pesquisas sejam feitas com base em meto-
+dologia de pesquisa de ciências sociais, começando não com casos únicos ou mesmo
+um conjunto de casos, mas com proposições específicas a serem testadas por meio
+do exame de amostras representativas de casos com características semelhantes.
+Chemin (2010) estudou a influência do tempo de julgamento no comportamen-
+to de firmas ao celebrarem contratos, partindo dos seguintes pressupostos: (a)
+incentivos a cooperar num acordo contratual podem diminuir, porque cortes mais
+lentas fazem com que o valor presente de possíveis punições decorrentes de desvios
+seja menor; (b) os incentivos a investir podem diminuir se houver uma possibilidade
+de comportamento pós-contratual oportunista por uma parceira após o investimen-
+to de recursos em custos irrecuperáveis; e (c) a lentidão na execução aumenta o
+comportamento oportunista dos tomadores de empréstimo – em contrapartida, os
+credores podem responder a esse comportamento estratégico reduzindo a disponi-
+bilidade de crédito. Ao estudar o impacto da reforma do Código de Processo Civil
+da Índia realizada em 2002, a qual simplificou os procedimentos das cortes e redu-
+ziu em cerca de 50% o número de casos pendentes por juiz, o autor conclui que a
+reforma reduziu o número de violações de contrato, encorajou o investimento e faci-
+litou o acesso aos financiamentos. As conclusões desse estudo ratificam a importância
+de um modelo de governança judicial que leve em consideração a avaliação do tempo
+de julgamento como uma das medidas da efetividade do sistema judicial.
+As conclusões dos artigos relacionadas à dimensão “desempenho do sistema judi-
+cial” podem ser agrupadas em duas perspectivas. Os estudos de Staats et al. (2005),
+Beer (2006), Kahan (2006) e Mendelski (2009) abordaram a dimensão “desempenho
+dos sistemas judiciais” como um todo. Uma segunda perspectiva buscou avaliar o
+189
+:
+LUIZ AKUTSU E TOMÁS DE AQUINO GUIMARÃES
+15
+REVISTA DIREITO GV, SÃO PAULO
+8(1) | P. 183-202 | JAN-JUN 2012
+
+desempenho dos sistemas judiciais por meio do exame de aspectos específicos, tais
+como: tempo de julgamento, custos judiciais, qualidade das sentenças e produtivida-
+de das cortes judiciais (Van Montfort et al., 2005; Rosales-López, 2008; Boniface e
+Legg, 2010; Caplan, 2010; Chemin, 2010).
+Contudo, independentemente da perspectiva utilizada, todos os estudos que ava-
+liaram a dimensão “desempenho do sistema judicial” buscaram correlacionar os
+resultados do sistema como um todo ou aspectos específicos desses resultados com as
+demais dimensões identificadas neste estudo – “independência judicial”, “accountabili-
+ty”, “acessibilidade à Justiça”, “estrutura do Poder Judiciário” e “recursos estratégicos
+do Poder Judiciário”, apresentadas a seguir.
+2.2 INDEPENDÊNCIA JUDICIAL
+O estudo de Klerman e Mahoney (2005) buscou correlacionar mudanças significati-
+vas em fatores que afetam a dimensão “independência judicial” (aumentos de salários
+e mandatos de juízes) com a valorização de ativos no mercado de capitais. Ao estu-
+darem dados relativos ao mercado de capitais inglês no século XVIII, os autores
+concluíram que aumentos da independência dos juízes estão correlacionados com
+aumentos nos valores de ativos financeiros, e vice-versa.
+Peerenboom (2006) estudou a tensão entre as dimensões “independência judicial”
+e “accountability” dos juízes, examinando o procedimento de Supervisão Individual de
+Casos (ICS) da China. Por meio desse procedimento, decisões de juízes podem ser
+revistas em processos distintos dos recursos de apelação aos tribunais superiores. Os
+defensores de tal procedimento argumentam que sua implantação decorre do baixo
+nível de competência profissional dos juízes, da existência de corrupção judicial e da
+influência indesejável de autoridades locais. Os opositores argumentam que o ICS
+impede a independência judicial, dificulta a consolidação de cortes com maior auto-
+ridade e aumenta o conflito entre as cortes e os órgãos estatais. O autor conclui pela
+necessidade do ICS, enquanto problemas com a competência dos juízes e a corrupção
+persistirem, concluindo que a supervisão poderá ser eliminada quando tais questões
+forem resolvidas.
+Cordis (2009) correlacionou variáveis que medem a dimensão “independência judi-
+cial” (remuneração, métodos de seleção e duração dos mandatos dos juízes) com o
+número de servidores condenados por atos de corrupção em estados norte-americanos
+e concluiu que, em geral, estados com maiores níveis de independência judicial apresen-
+tam menores níveis de corrupção per capita que estados com características opostas.
+Canes-Wrone et al. (2010) estudaram a independência de juízes de supremas
+cortes estaduais norte-americanas que passam pelo processo de eleições confirmató-
+rias. Concluíram que os votos desses juízes são influenciados pela opinião pública.
+Destacam, como uma das principais contribuições do trabalho, o fato de que os
+resultados obtidos contrariam o senso comum e os argumentos dos que defendem as
+DIMENSÕES DA GOVERNANÇA JUDICIAL E SUA APLICAÇÃO AO SISTEMA JUDICIAL BRASILEIRO
+:
+190
+REVISTA DIREITO GV, SÃO PAULO
+8(1) | P. 183-202 | JAN-JUN 2012
+
+eleições confirmatórias como meio de promover a independência dos juízes ante
+questões políticas.
+Rosenbloom (2010) estudou o processo de escolha, pelo presidente da República,
+dos magistrados da Suprema Corte dos Estados Unidos, no tocante à lealdade desses
+magistrados à agenda dos presidentes que os conduziram à Suprema Corte. Os resul-
+tados indicam que os magistrados têm sido leais aos ideais e às perspectivas daqueles
+que os nomearam e que o poder da escolha dos magistrados da Suprema Corte é um
+fator relevante na política de pessoal do governo norte-americano.
+Os artigos recuperados na revisão da dimensão “independência judicial” eviden-
+ciaram, também, que essa dimensão guarda estreita relação com a dimensão
+“accountability”, cujos estudos são apresentados na subseção 2.3.
+2.3 ACCOUNTABILITY
+Oliveira (2005) estudou a influência do Judiciário brasileiro nas privatizações de
+empresas estatais realizadas na década de 1990. Para isso, baseou-se no conceito de
+judicialização da política, definido pela autora como “a utilização de procedimentos
+judiciais para a resolução de conflitos de ordem política, tais como controvérsias a
+respeito de normas, resoluções e políticas públicas em geral, adotadas/ implemen-
+tadas pelos Poderes Executivo e Legislativo” (Oliveira, 2005, p. 559). Referido
+conceito inclui os julgamentos de ações que envolvam políticas governamentais e a
+utilização de procedimentos jurídicos na ordenação do mundo político e tem como
+pressuposto uma postura politicamente ativa dos juízes, envolvendo, assim, o contro-
+le de ações do Poder Executivo pelo Poder Judiciário. A pesquisa evidencia que
+nenhuma das ações conseguiu barrar a venda de uma empresa estatal e, portanto, não
+se reproduziu no país o fenômeno da judicialização da política.
+A mesma autora (Oliveira, 2009) avaliou a influência do Poder Judiciário no
+federalismo brasileiro, quanto à forma pela qual o Supremo Tribunal Federal (STF)
+tem julgado ações diretas de inconstitucionalidade (ADIs) impetradas por estados
+contra a União, ou pela União contra os estados, no período de 1988 a 2002. O estu-
+do evidenciou que as ADIs impetradas pela União contra os estados têm maiores
+chances de sucesso do que aquelas impetradas pelos estados contra a União. Além de
+aspectos relacionados ao papel do STF como árbitro dos conflitos entre unidades da
+Federação, o estudo de Oliveira (2009) discute a independência desse tribunal em
+relação ao Poder Executivo, já que seus membros são nomeados por este.
+Oliveira (2009) pondera, contudo, que essa eventual subordinação não produz,
+necessariamente, um mau governo, assim como, em contraponto, a independência
+do Poder Judiciário não produziria, a priori, um bom governo, podendo inclusive
+gerar, no extremo, uma tirania dos juízes.
+Mollah (2010) analisou o papel do Judiciário em assegurar accountability legal de
+servidores do governo de Bangladesh e seu impacto na governança no contexto
+191
+:
+LUIZ AKUTSU E TOMÁS DE AQUINO GUIMARÃES
+15
+REVISTA DIREITO GV, SÃO PAULO
+8(1) | P. 183-202 | JAN-JUN 2012
+
+daquele país. O termo “accountability legal” é definido como o “processo judicial
+pelo qual ações e decisões de servidores do governo podem ser submetidas a revi-
+são judicial” (Mollah, 2010, p. 310). O estudo evidencia que o Judiciário é muito
+efetivo em assegurar accountability judicial, contribuindo assim para a proteção dos
+direitos humanos e para a boa governança; não obstante, o estudo constatou tam-
+bém que o Judiciário somente pode agir se a parte prejudicada por alguma
+autoridade impetrar uma ação judicial e apontou ainda casos em que a sentença não
+foi implementada pelo Poder Executivo. Tais situações tornam ineficaz a atuação do
+Judiciário (Mollah, 2010).
+O percentual significativo de estudos que tratam das dimensões “independência
+judicial” (22% do total) e “accountability” (13% do total) evidenciam não somente a rele-
+vância dessas dimensões para os pesquisadores que estudam o Poder Judiciário, como
+também a relação entre as referidas dimensões e a efetividade das deliberações judiciais.
+A importância de um Poder Judiciário independente dos poderes Executivo e
+Legislativo decorre da necessidade de salvaguarda da liberdade individual dos cidadãos,
+que podem recorrer ao Judiciário contra abusos de autoridades de quaisquer dos três
+poderes. Caso a premissa da independência dos juízes e tribunais não se concretize, o
+desempenho do Judiciário pode ser afetado, uma vez que os juízes teriam dificuldade
+em proferir sentenças que contrariassem as autoridades dos demais poderes.
+Colocando tal argumento em outros termos, é desejável que os juízes sejam
+independentes em relação àqueles que os nomearam, em relação às partes e aos
+demais interessados nos litígios judiciais e até mesmo em relação a pressões popula-
+res que podem levar a decisões de cunho populista. Contudo, os juízes não podem
+ser independentes em relação aos princípios e às normas da Constituição e em rela-
+ção aos interesses do país: os juízes devem ser ao mesmo tempo independentes e
+accountables perante os cidadãos.
+A governança do sistema judicial depende não somente das dimensões “indepen-
+dência judicial” e “accountability”, mais especificamente relacionadas à conduta dos
+juízes, mas, ainda, das seguintes dimensões, relacionadas às características e circuns-
+tâncias dos órgãos do Poder Judiciário: “recursos estratégicos do Poder Judiciário”,
+“acessibilidade à Justiça” e “estrutura do Poder Judiciário”, cujos estudos encontram-
+se apresentados nas subseções 2.4 a 2.6, a seguir.
+2.4 RECURSOS ESTRATÉGICOS DO PODER JUDICIÁRIO
+Schneider (2005) investigou a relação entre a carreira de magistrados alemães e o
+desempenho das cortes judiciais. Foram estudadas duas variáveis de avaliação de
+desempenho: a taxa de confirmação de sentenças de um juiz de 1º grau pelo respec-
+tivo tribunal federal e a produtividade, medida por indicadores que incluem o número
+de casos encerrados e o número de deliberações publicadas. A análise evidenciou que:
+(a) as cortes que empregam mais juízes com doutorado são mais produtivas, mas suas
+DIMENSÕES DA GOVERNANÇA JUDICIAL E SUA APLICAÇÃO AO SISTEMA JUDICIAL BRASILEIRO
+:
+192
+REVISTA DIREITO GV, SÃO PAULO
+8(1) | P. 183-202 | JAN-JUN 2012
+
+deliberações têm menor taxa de confirmação pelos respectivos tribunais federais; e
+(b) as cortes que empregam juízes com maior probabilidade de promoção são menos
+produtivas e produzem deliberações com menor taxa de confirmação.
+O estudo de Rottman et al. (2007) descreve a implementação de um sistema de
+informações judiciais integrado, a partir do exame das abordagens alternativas de
+desenvolvimento de um sistema de gestão judicial em um município norte-america-
+no de grande porte, utilizando o caso para ilustrar as forças que se contrapõem para
+implementar uma solução abrangente, eficiente e que integre informações em todo
+o estado.
+Motsaathebe e Mnjama (2009) examinaram questões relativas à gestão de regis-
+tros judiciais em Botswana e concluíram que no passado a gestão de registros
+judiciais do país recebeu pouca atenção, mas atualmente a Suprema Corte imple-
+mentou medidas para automatizar a gestão dos documentos judiciais. Os autores
+destacaram ainda que uma gestão efetiva de registros judiciais é crucial para a admi-
+nistração da Justiça.
+Cotejando-se os estudos coletados que trataram da dimensão “recursos estraté-
+gicos”, verifica-se que todos buscam respostas à mesma questão, colocada de forma
+implícita: como melhorar o desempenho de tribunais com os mesmos recursos?
+Indicadores que medem tempestividade, acessibilidade, eficiência e efetividade
+do sistema judicial podem trazer algumas respostas a essa questão. Referidos indica-
+dores podem ser utilizados para avaliar o desenvolvimento de recursos estratégicos
+do Poder Judiciário – em processos de seleção, promoção, avaliação e treinamento
+de juízes – e a implementação de sistemas de informação que promovam a accounta-
+bility dos juízes e do Poder Judiciário. Pressupõe-se que tais indicadores serão
+melhores em sistemas judiciais com recursos estratégicos valiosos, raros, não substi-
+tuíveis e difíceis de serem imitados, nos termos propostos por Barney (1991) para
+empresas em geral. A gestão adequada da dimensão “recursos estratégicos do Poder
+Judiciário” pode, assim, contribuir para o incremento da dimensão “acessibilidade à
+Justiça”, cujos estudos são apresentados na subseção 2.5, a seguir.
+2.5 ACESSIBILIDADE À JUSTIÇA
+Sinhoreto (2007) realizou observação etnográfica da gestão estatal de conflitos em
+Centros de Integração da Cidadania (CICs), na cidade de São Paulo. Os CICs foram
+implantados em decorrência de críticas ao formalismo excessivo dos rituais judiciais
+e buscam aproximar a linguagem e os valores dos operadores jurídicos, oriundos das
+classes altas, à realidade dos conflitos vividos pelos cidadãos das classes populares, e
+permitir acesso à Justiça fácil e satisfatório para as partes. O estudo evidenciou que
+a ampliação da oferta de serviços de Justiça diversificados e informais, sob o mode-
+lo da governança pelo pluralismo jurídico, expande o escopo da gestão estatal dos
+conflitos; contudo, tais serviços não necessariamente têm como resultado a expansão
+193
+:
+LUIZ AKUTSU E TOMÁS DE AQUINO GUIMARÃES
+15
+REVISTA DIREITO GV, SÃO PAULO
+8(1) | P. 183-202 | JAN-JUN 2012
+
+do Estado de Direito ou a expansão de rituais de resolução pautados na igualdade de
+tratamento diante das leis.
+Veronese (2007) analisou dois projetos de assistência jurídica no Brasil conduzi-
+dos por tribunais, buscando entender a assunção da agenda de oferta de serviços
+jurídicos e sociais por tribunais em um contexto de legitimidade do Poder Judiciário
+no Brasil e discutir as questões políticas implicadas nesse problema em relação à
+sociedade civil organizada e a questão dos métodos alternativos de resolução de con-
+flitos. O estudo conclui que existem relações complexas entre esses projetos e a
+sociedade civil, as quais decorrem do ambiente reformista no qual está assentado o
+Poder Judiciário brasileiro e geram duas possibilidades de relacionamento futuro:
+a primeira é colaborativa e pode aumentar as possibilidades de atuação das organi-
+zações da sociedade; a segunda é competitiva e pode significar, ao contrário, o
+aumento da disputa por espaços sociais. Na perspectiva do aumento da competição,
+as organizações mais frágeis tenderão a ser absorvidas pela atuação dos projetos
+sociais e jurídicos do Poder Judiciário e as entidades remanescentes colocarão em
+risco suas agendas independentes para se agregarem na luta por legitimidade social
+dos tribunais.
+A literatura revisada indica que a dimensão “acessibilidade à Justiça” está relaciona-
+da não somente à dimensão “recursos estratégicos do Poder Judiciário” como também
+à dimensão “estrutura do Poder Judiciário”, conforme se descreve na subseção 2.6.
+2.6 ESTRUTURA DO PODER JUDICIÁRIO
+Bybee e Pincock (2011) estudaram razões e argumentos de estados norte-america-
+nos para atrair indivíduos a seu judiciário em detrimento de sistemas de Justiça locais
+operando fora do controle dos estados. Os autores destacaram que todas as cortes
+são triádicas em sua estrutura: elas existem porque duas partes engajadas num con-
+flito buscam julgamento de uma terceira; uma instabilidade crítica ocorre nessa
+relação triádica quando a terceira parte favorece um dos litigantes. A resposta para
+esse problema seria maximizar o consenso: se ambas as partes envolvidas numa dis-
+puta podem selecionar a lei aplicável ao litígio e escolher o juiz, então o eventual
+perdedor será colocado numa posição em que consentiu com o julgamento em vez
+de ter sido obrigado a participar dele. É nesse contexto que se coloca a possibilida-
+de de os cidadãos norte-americanos optarem por cortes locais ou estaduais: os
+estados somente podem “vender” suas cortes centralizadas aos potenciais litigantes se
+eles tiverem essa opção. O estudo descreve vantagens e desvantagens de cada uma
+das opções (cortes locais e cortes estaduais), mas não traz nenhuma conclusão sobre
+a superioridade de uma ou outra opção. Não obstante, a pesquisa contribui para a
+discussão do conceito de governança judicial proposto neste artigo ao destacar que
+as questões centrais que têm sido divulgadas pelas cortes estaduais para atrair indiví-
+duos ao seu judiciário se referem à afirmação de que tais cortes “são mais eficientes
+DIMENSÕES DA GOVERNANÇA JUDICIAL E SUA APLICAÇÃO AO SISTEMA JUDICIAL BRASILEIRO
+:
+194
+REVISTA DIREITO GV, SÃO PAULO
+8(1) | P. 183-202 | JAN-JUN 2012
+
+e promovem maior equidade que as cortes locais” e, ainda, que as sentenças das cor-
+tes locais são incompreensíveis (Bybee e Pincock, 2011, p. 23).
+O estado da arte identificado indica que as dimensões “acessibilidade à Justiça” e
+“estrutura do Poder Judiciário” estão estreitamente relacionadas entre si, uma vez
+que a acessibilidade depende não somente da tempestividade da prestação jurisdicio-
+nal, como também da gama de serviços judiciais ofertados, os quais dependem da
+estrutura e das competências atribuídas ao Poder Judiciário. Estudos que avaliem o
+impacto na qualidade dos serviços judiciais decorrente das mudanças legislativas que
+autorizaram a criação dos juizados e do Conselho Nacional de Justiça (Ribeiro, 2008)
+poderão trazer contribuições para a compreensão dos indicadores relacionados à
+acessibilidade à Justiça e da relação dessa dimensão com a dimensão “estrutura do
+Poder Judiciário”.
+Além de eventuais mudanças na estrutura do Poder Judiciário, a melhoria de
+indicadores relacionados à dimensão “acessibilidade à Justiça” depende de outros
+fatores, tais como o equilíbrio entre o número de conflitos que surgem na socieda-
+de e da capacidade do sistema judicial de julgar tais conflitos. Os dois estudos
+coletados nesta revisão tratam de um aspecto desse equilíbrio: a ampliação da ofer-
+ta de serviços judiciais estatais. A ampliação da oferta de serviços de Justiça pode
+facilitar o acesso dos cidadãos às varas judiciais, conforme evidenciaram os estudos
+de Sinhoreto (2007) e Veronese (2007). Contudo, referida ampliação de serviços
+oferecidos pelos tribunais deve ser conduzida com cautela, conforme destacou
+Veronese (2007), uma vez que essas inovações, embora ampliem as possibilidades de
+acesso à Justiça, podem trazer consequências indesejáveis, como o aumento da dis-
+puta por espaços sociais.
+A ampliação do acesso à Justiça, no sistema judicial brasileiro, não está limitado
+à Justiça enquanto instituição estatal. Mascarenhas (2009) destaca que no sistema
+judicial brasileiro existem dois mecanismos de solução extrajudicial de conflitos: a
+autocomposição e a arbitragem. Muito embora tais mecanismos de solução extraju-
+dicial de conflitos não sejam acessíveis às camadas mais pobres da população, pode-se
+pressupor que a ampliação do uso da autocomposição e da arbitragem poderá tam-
+bém trazer benefícios aos mais necessitados, uma vez que parte dos litígios não mais
+será submetida ao Poder Judiciário, diminuindo a demanda a esse poder.
+Além das três possibilidades mencionadas – ampliação do uso de mecanismos
+extrajudiciais; mudanças na estrutura do Poder Judiciário e ampliação da oferta de
+serviços de Justiça –, a melhoria da acessibilidade à Justiça está relacionada ao desa-
+fio de obter melhor desempenho com os mesmos recursos disponíveis. Esse desafio
+remete-nos ao objetivo central deste trabalho: discutir como as dimensões identifi-
+cadas na revisão de literatura podem influenciar o desempenho do sistema judicial
+brasileiro. A seção 3, a seguir, busca contextualizar, à luz da realidade brasileira, a
+discussão sobre as dimensões que influenciam a governança dos sistemas judiciais.
+195
+:
+LUIZ AKUTSU E TOMÁS DE AQUINO GUIMARÃES
+15
+REVISTA DIREITO GV, SÃO PAULO
+8(1) | P. 183-202 | JAN-JUN 2012
+
+3 DISCUSSÃO DA REVISÃO TEÓRICA À LUZ DO SISTEMA JUDICIAL BRASILEIRO
+Os traços característicos do sistema judicial brasileiro foram detalhados por Ribeiro
+(2008) em artigo que teve como objetivo discutir em que medida a Emenda
+Constitucional nº 45 (Brasil, 2011a) pode alterar o acesso à Justiça por meio da modi-
+ficação de normas relativas ao funcionamento do Judiciário. A autora relata que, em
+face da influência da colonização portuguesa, no Judiciário brasileiro ocorre a distin-
+ção “entre o ‘país formal’, cuja existência se verifica na constituição e nos códigos
+legais, e o ‘país real’, que segue alheio dos direitos preconizados pelas leis” (Ribeiro,
+2008, p. 467).
+Para Ribeiro (2008), a partir da década de 1990, várias mudanças legislativas –
+como a criação dos Juizados Especiais Cíveis e Criminais, a publicação da Emenda
+Constitucional nº 22 e da Emenda Constitucional nº 45 e a criação dos Juizados de
+Violência Doméstica e Familiar – tiveram como finalidade dotar o sistema judicial
+brasileiro de requisitos que lhe permitissem atuar de maneira mais ágil, menos com-
+plexa e mais transparente. Dessas mudanças, a mais relevante, segundo a autora, foi
+a Emenda Constitucional nº 45, que procurou não apenas ampliar, mas, ainda, con-
+solidar os processos de reforma já iniciados, por meio dos seguintes objetivos: 
+(i) razoável duração do processo; (ii) proporcionalidade entre o número de
+juízes na unidade jurisdicional e a efetiva demanda judicial e a respectiva
+população; (iii) funcionamento ininterrupto da atividade jurisdicional; (iv)
+distribuição imediata dos processos em todos os graus de jurisdição; e (v)
+criação do Conselho Nacional de Justiça (Ribeiro, 2008, p. 469-470). 
+Partindo-se do pressuposto de que as mudanças legislativas enumeradas pela
+autora são relevantes e necessárias, mas dependem de implementação para se torna-
+rem efetivas, o contexto de reforma do sistema judicial brasileiro retratado por
+Ribeiro (2008) torna relevante a discussão do papel da administração da Justiça para
+que os objetivos almejados pela Emenda Constitucional nº 45 sejam alcançados. No
+sistema judicial brasileiro, tais mudanças dependem não somente da administração
+do Poder Judiciário como também dos demais poderes da República, conforme evi-
+denciam o “Pacto de Estado em favor de um Judiciário mais rápido e republicano”
+(Brasil, 2004) e o “II pacto republicano de Estado por um sistema de Justiça mais
+acessível, ágil e efetivo” (Brasil, 2009).
+Dessa forma, trazendo as questões colocadas na agenda política dos três poderes
+da República para o contexto do presente estudo, cabe discutir como as dimensões
+relacionadas ao conceito de governança judicial, identificadas nesta pesquisa, aplicá-
+veis a contextos específicos relacionados a cada um dos estudos empíricos
+conduzidos em diversos países, podem influenciar a efetividade da governança do sis-
+tema judicial brasileiro.
+DIMENSÕES DA GOVERNANÇA JUDICIAL E SUA APLICAÇÃO AO SISTEMA JUDICIAL BRASILEIRO
+:
+196
+REVISTA DIREITO GV, SÃO PAULO
+8(1) | P. 183-202 | JAN-JUN 2012
+
+Do estudo dessas dimensões, sobressai que a efetividade da governança judicial
+depende do equilíbrio entre as dimensões “independência do Poder Judiciário” e
+“accountability”, uma vez que a qualidade da prestação jurisdicional depende da inde-
+pendência dos juízes; não obstante, a independência, sem a accountability, pode levar
+à judicialização do poder político. Ao estudar a evolução do sistema judicial brasilei-
+ro após a Constituição de 1988, Santiso (2003) destaca que o desafio, para o Brasil,
+reside em fortalecer a accountability do Judiciário perante a sociedade e perante o sis-
+tema político do país, uma vez que, paradoxalmente, a questão que deve ser posta
+para o Judiciário brasileiro envolve avaliar não se esse poder é suficientemente inde-
+pendente, mas sim se ele se tornou excessivamente independente.
+A agenda de pesquisa proposta na seção 4 a seguir propõe discutir como as dimen-
+sões identificadas neste estudo podem influenciar a governança do sistema judicial
+brasileiro. Referida agenda foi formulada pressupondo-se que os fatores que influen-
+ciam a acessibilidade e o desempenho dos sistemas judiciais de outros países também
+influenciam a acessibilidade e o desempenho do sistema judicial brasileiro.
+CONSIDERAÇÕES FINAIS E AGENDA DE PESQUISA
+Neste artigo foram identificadas as principais dimensões relacionadas ao conceito de
+governança judicial estudadas em pesquisas empíricas recentes. Pela discussão da
+influência dessas dimensões na governança do sistema judicial brasileiro, constatou-se
+a escassez de estudos empíricos que corroborem, para o sistema judicial brasileiro, as
+conclusões dos estudos realizados em outros países.
+A proposição dessa agenda de pesquisa justifica-se ainda em face do pequeno núme-
+ro de grupos de pesquisa tratando do tema. De acordo com dados disponíveis no sítio
+do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) (Brasil,
+2011b), existem 51 grupos de pesquisa cadastrados para o tema “Poder Judiciário”.
+Destes, somente quatro grupos são da área de administração.
+O pequeno número de grupos de pesquisa que estuda a administração do Poder
+Judiciário foi refletido na escassa literatura produzida no Brasil sobre o tema: apenas
+quatro dos 23 artigos coletados na revisão bibliográfica foram publicados em periódicos
+brasileiros. Dessa lacuna de pesquisa sobre o tema sobressai a ausência de trabalhos
+empíricos que avaliem o desempenho do sistema judicial brasileiro e identifiquem as
+principais causas tanto da morosidade e da baixa efetividade das deliberações judiciais
+quanto da dificuldade de acesso da população de menor renda à Justiça. As investigações
+empíricas poderão trazer contribuições teóricas e de cunho prático, tais como sugestões
+para os atores interessados no aperfeiçoamento do Poder Judiciário brasileiro.
+Assim, considerando-se o contexto do sistema judicial brasileiro em face das
+conclusões trazidas por artigos coletados na revisão de literatura, formulam-se as
+propostas de pesquisa enumeradas a seguir.
+197
+:
+LUIZ AKUTSU E TOMÁS DE AQUINO GUIMARÃES
+15
+REVISTA DIREITO GV, SÃO PAULO
+8(1) | P. 183-202 | JAN-JUN 2012
+
+Uma primeira proposta de pesquisa poderia avaliar a relação entre as dimensões
+relacionadas à governança judicial identificadas neste estudo e o desempenho do siste-
+ma judicial brasileiro, pressupondo-se que o desempenho do sistema judicial brasileiro
+é função da independência judicial, da accountability, da acessibilidade à Justiça, da estru-
+tura do Poder Judiciário e de recursos estratégicos do Poder Judiciário. Essa pesquisa
+permitiria, por meio de uma visão global do referido sistema, aprofundar a relação entre
+as dimensões identificadas neste estudo e a governança do sistema judicial brasileiro.
+Para examinar aspectos mais específicos que podem influenciar a efetividade do
+sistema judicial brasileiro, propõe-se que uma segunda pesquisa avalie a influência do
+desenvolvimento dos recursos estratégicos do Poder Judiciário sobre as variáveis da
+dimensão “desempenho do Sistema Judicial” relacionadas a tempo de julgamento,
+custo processual e qualidade da sentença, com as seguintes premissas: (a) a avaliação
+do desempenho do sistema judicial brasileiro deve levar em conta, simultaneamen-
+te, as variáveis tempo de julgamento, custo processual e qualidade da sentença; e (b)
+o desenvolvimento de recursos estratégicos do Poder Judiciário está associado à
+melhoria de processos de seleção, promoção, avaliação e treinamento de juízes e à
+implementação de sistemas de informação que supram juízes, partes litigantes e a
+sociedade com informações precisas e tempestivas.
+Propõe-se que uma terceira pesquisa explore a busca de equilíbrio entre as dimen-
+sões “independência judicial” e “accountability”. Essa pesquisa teria como objetivo avaliar
+o impacto do aumento da independência judicial e da garantia de que os juízes sejam
+accountables perante a sociedade na diminuição da corrupção do sistema judicial brasilei-
+ro, partindo-se dos seguintes pressupostos: (a) o aumento da independência judicial é
+uma condição necessária, mas não suficiente, para a diminuição da corrupção; (b) para
+que a corrupção diminua, é necessário que os juízes motivem suas decisões (sejam
+accountables); e (c) uma vez assegurada a accountability dos juízes, níveis mais altos de
+independência judicial estarão correlacionados a níveis mais baixos de corrupção.
+Uma quarta pesquisa poderia identificar os principais fatores que influenciam a
+acessibilidade ao sistema judicial brasileiro, pressupondo que a melhoria da acessibi-
+lidade a esse sistema é função: (a) do equilíbrio entre o número de litígios que são
+submetidos ao Poder Judiciário e a capacidade do sistema judicial de julgar tais con-
+flitos; (b) da ampliação de mecanismos de solução extrajudicial de conflitos (por
+exemplo, autocomposição e arbitragem); (c) de alterações na estrutura do Poder
+Judiciário; (d) da ampliação da oferta de serviços de Justiça diversificados; e (e) do
+desenvolvimento de recursos estratégicos do Poder Judiciário.
+Embora as pesquisas propostas tenham tomado como referência o sistema judi-
+cial brasileiro como um todo, as relações identificadas entre as principais dimensões
+da governança judicial podem ser investigadas em estudos que tenham como objeto
+órgãos específicos do Judiciário brasileiro, tais como tribunais estaduais ou federais.
+Pesquisas que tenham como objetivo comparar tribunais com desempenho abaixo da
+DIMENSÕES DA GOVERNANÇA JUDICIAL E SUA APLICAÇÃO AO SISTEMA JUDICIAL BRASILEIRO
+:
+198
+REVISTA DIREITO GV, SÃO PAULO
+8(1) | P. 183-202 | JAN-JUN 2012
+
+média nacional a tribunais com desempenho acima dessa média poderão enriquecer
+a discussão sobre os fatores que determinam a morosidade e a baixa efetividade das
+deliberações judiciais.
+Por fim, dada a importância das dimensões “independência judicial” e “accounta-
+bility” na efetividade dos mecanismos de governança dos sistemas judiciais – e
+considerando-se o mandato atribuído pela Constituição ao Conselho Nacional de
+Justiça (CNJ), criado pela Emenda Constitucional nº 45 para, entre outros objetivos,
+fortalecer tais dimensões mediante o controle da atuação administrativa e financeira
+do Poder Judiciário e do cumprimento dos deveres funcionais dos juízes (Brasil,
+2011a) –, sugere-se pesquisar, também, a contribuição do CNJ para assegurar a efe-
+tividade da governança do sistema judicial brasileiro.
+199
+:
+LUIZ AKUTSU E TOMÁS DE AQUINO GUIMARÃES
+15
+REVISTA DIREITO GV, SÃO PAULO
+8(1) | P. 183-202 | JAN-JUN 2012
+: ARTIGO APROVADO (01/06/2012) : RECEBIDO EM 26/04/2011
+NOTAS
+1
+Adota-se neste artigo a seguinte definição de Pinho e Sacramento (2009, p. 1348) para o termo
+accountability: “... não existe um termo único em português que defina a palavra accountability, havendo que
+trabalhar com uma forma composta. Buscando uma síntese, accountability encerra a responsabilidade, a
+obrigação e a responsabilização de quem ocupa um cargo em prestar contas segundo os parâmetros da lei,
+estando envolvida a possibilidade de ônus, o que seria a pena para o não cumprimento dessa diretiva.”
+REFERÊNCIAS BIBLIOGRÁFICAS
+ANDRADE, A; ROSSETTI, J. P. Governança corporativa: fundamentos, desenvolvimento e tendências. 
+4. ed. São Paulo: Atlas, 2009.
+BARNEY, J. Firm resources and competitive advantage. Journal of Management, v. 7, n. 1. p. 99-120, 1991.
+BEER, C. C. Judicial performance and the rule of law in the Mexican states. Latin American Politics & Society,
+Miami, v. 48, n. 3, p. 33-61, 2006.
+BONIFACE, D.; LEGG, M. Cost, delay and justice: the High Court of Australia recognizes the importance of
+case management in civil litigation — Aon Risk Services Australia Limited vs Australian National University.
+Common Law World Review, v. 39, p. 157–180, 2010.
+BRASIL. Pacto de Estado em favor de um Judiciário mais rápido e republicano. Diário Oficial da União. Brasília,
+16 dez. 2004. n. 241, seção 1, p. 8-9.
+______. II pacto republicano de Estado por um sistema de Justiça mais acessível, ágil e efetivo. Diário
+Oficial da União, Brasília, 26 maio 2009. n. 98, seção 1, p. 1-2.
+______. Constituição da República Federativa do Brasil de 1988. Disponível em:
+<http://www.planalto.gov.br>. Acesso em: 23 jan. 2011.
+
+______. Emenda Constitucional 45, de 30 de dezembro de 2004. Disponível em:
+<http://www.planalto.gov.br>. Acesso em: 23 jan. 2011.
+______. Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq). Disponível em:
+<http://dgp.cnpq.br/buscaoperacional>. Acesso em: 2 fev. 2011.
+BYBEE, K.; PINCOCK, H. Efficient, fair, and incomprehensible: how the State “sells” its Judiciary. Law
+& Policy, University of Denver, Colorado, v. 33, n. 1, p. 1-26, Jan. 2011.
+CANES-WRONE, B.; CLARK, T. S.; PARK, J. K. Judicial independence and retention elections. Journal
+of Law, Economics, and Organization, p. 1-24, Sep. 2010.
+CAPLAN, G. Legal autopsies: assessing the performance of judges and lawyers through the window of
+leading contract cases. Albany Law Review, Albany, v. 73, n. 1, p. 1-54, 2010.
+CHEMIN, M. Does court speed shape economic activity? Evidence from a court reform in India. The
+Journal of Law, Economics, & Organization, p. 1-26, Nov. 2010.
+CLAESSENS, S. Corporate governance and development. The World Bank Research Observer, v. 21, n. 1,
+Spring 2006.
+CORDIS, A. Judicial checks on corruption in the United States. Economics of Governance, v. 10, n. 4, p.
+375-401, 2009.
+CZEMPIEL, Ernst-Otto. Governança e democratização. In: ROSENAU, James; CZEMPIEL, Ernst-Otto.
+Governança sem governo: ordem e transformação na política mundial. Brasília: Editora Universidade de
+Brasília, p. 335-362, 2000.
+EISENHARDT, K. M. Agency theory: an assessment and review. Academy of Management Review, v. 14, n.
+1, p. 57-74, 1989.
+IBANHES, Lauro César et al. Governança e regulação na saúde: desafios para a gestão na região
+metropolitana de São Paulo, Brasil. Cadernos de Saúde Pública, Rio de Janeiro, v. 23, n. 3, p. 575-584, 2007.
+KAHAN, M. The demand for corporate law: statutory flexibility, judicial quality, or takeover
+protection? The Journal of Law, Economics, & Organization, v. 22, n. 2, p. 340-365, 2006.
+KAUFMANN, D; KRAAY, A. Governance indicators: where are we, where should we be going? The
+World Bank Research Observer, v. 23, n. 1, p. 1-30, 2008.
+KLERMAN, Daniel. M.; MAHONEY, Paul. G. The value of judicial independence: evidence from
+eighteenth century England. American Law and Economics Review, Oxford, v. 7, n. 1, p. 1-27, 2005.
+MASCARENHAS, A. C. F. Autonomia privada e autocomposição extrajudicial dos litígios. 2009. 174 fl. Dissertação
+(Mestrado em Direito) – Faculdade de Direito da Universidade Federal da Bahia, Salvador, 2009.
+MENDELSKI, M. The Impact of EU on governance reforms in post-communist Europe: a
+comparison between first and second-wave candidates. Romanian Journal of Political Science, v. 9, 
+n. 2, p. 42-64, 2009.
+MOLLAH, M. A. Does the Judiciary matter for accountability of administration in Bangladesh?
+International Journal of Law and Management, v. 52, n. 4, p. 309-331, 2010.
+MOTSAATHEBE, L.; MNJAMA, N. The management of High Court Records in Botswana. Records
+Management Journal, v. 19, n. 3, p. 173-189, 2009.
+NG, G. Y. A discipline of judicial governance? Utrecht Law Review, v. 7, n. 1, p. 102-116, 2011.
+OLIVEIRA, Vanessa Elias de. Judiciário e privatizações no Brasil: existe uma judicialização da política?
+Dados, Rio de Janeiro, v. 48, n. 3, p. 559-587, 2005.
+______. Poder Judiciário: árbitro dos conflitos constitucionais entre Estados e União. Lua Nova, São
+Paulo, n. 78, p. 223-250, 2009.
+PEERENBOOM, Randall. Judicial independence and judicial accountability: an empirical study of
+individual case supervision. The China Journal, n. 55, p. 67-92, Jan. 2006.
+PINHO, J. A. G.; SACRAMENTO, A. R. S. Accountability: já podemos traduzi-la para o
+português? Revista de Administração Pública, Rio de Janeiro, v. 43, n. 6, p. 1343-1368, 2009.
+RABELO, F.; SILVEIRA, J. M. Estruturas de governança e governança corporativa: avançando na
+direção da integração entre as dimensões competitivas e financeiras. Campinas: IE/Unicamp, 1999.
+RIBEIRO, L. A Emenda Constitucional 45 e o acesso à Justiça. Revista Direito GV, São Paulo, v. 4, n. 2,
+p. 465-492, 2008.
+ROSALES-LÓPEZ, V. Economics of court performance: an empirical analysis. European Journal of Law
+and Economics, Maastricht, v. 25, p. 231-251, 2008.
+ROSENAU, James. Governança, ordem e transformação na política mundial. In: ROSENAU, James;
+CZEMPIEL, Ernst-Otto. Governança sem governo: ordem e transformação na política mundial. Brasília:
+Editora Universidade de Brasília, p. 11-46, 2000.
+ROSENBLOOM, D. George W. Bush, the Supreme Court, and the pursuit of “Big Government Conservatism”
+DIMENSÕES DA GOVERNANÇA JUDICIAL E SUA APLICAÇÃO AO SISTEMA JUDICIAL BRASILEIRO
+:
+200
+REVISTA DIREITO GV, SÃO PAULO
+8(1) | P. 183-202 | JAN-JUN 2012
+
+in Federal personnel management. Review of Public Personnel Administration, v. 30, n. 4. p. 467–485, 2010.
+ROTTMAN, J. W.; SMITH, L. D.; LONG, D. A. Implementing judicial management systems within an
+integrated Justice information framework: a case study on information systems development in the
+public sector. The American Review of Public Administration, v. 37, n. 4, p. 436-457, Dec. 2007.
+SANTISO, C. Economic reform and judicial governance in Brazil: balancing independence with
+accountability. Democratization, v. 10, n. 4, p. 161-180, Nov. 2003.
+SCHNEIDER, Martin R. Judicial career incentives and court performance: an empirical study of the German
+Labour Courts of Appeal. European Journal of Law and Economics, Maastricht, v. 20, n. 2, p. 127-144, 2005.
+SINHORETO, J. Reforma da Justiça (estudo de caso). Tempo Social, São Paulo, v. 19, n. 2, p. 157-177, 2007.
+STAATS, Joseph L.; BOWLER, Shaun; HISKEY, Jonathan. T. Measuring judicial performance in Latin
+America. Latin American Politics & Society, Miami, v. 47, n. 4, p. 77-106, 2005.
+VAN MONTFORT, A. J. G. M.; JONG, P. O.; HERWEIJER, M.; MARSEILLE, A. T. The sooner the better:
+management of time in district courts. International Journal of the Sociology, Portsmouth, v. 33, p. 35-51, 2005.
+VERONESE, A. Projetos judiciários de acesso à Justiça: entre assistência social e serviços legais. Revista
+Direito GV, São Paulo, v. 3, n. 1, p. 13-34, 2007.
+APÊNDICE
+QUADRO 1: ARTIGOS EMPÍRICOS SOBRE GOVERNANÇA JUDICIAL PUBLICADOS ENTRE JAN/2005 E JAN/2011
+DIMENSÃO
+PERCENTUAL
+TEMAS ABORDADOS NO(S) ESTUDO(S)
+N.
+CUSTO, TEMPESTIVIDADE E QUALIDADE DAS SENTENÇAS
+2
+TEMPO DE JULGAMENTO
+2
+DESEMPENHO DO
+QUALIDADE DA GOVERNANÇA E DOS SISTEMAS JUDICIAIS
+2
+SISTEMA JUDICIAL
+39%
+DESEMPENHO DO JUDICIÁRIO – FATORES DETERMINANTES
+3
+PROCESSO DE SELEÇÃO DOS MAGISTRADOS
+1
+ELEIÇÕES CONFIRMATÓRIAS PARA REELEIÇÃO DE JUÍZES
+1
+INDEPENDÊNCIA E CORRUPÇÃO DE JUÍZES
+2
+INDEPENDÊNCIA JUDICIAL
+22%
+IMPACTO DA INDEPENDÊNCIA JUDICIAL NO MERCADO DE CAPITAIS
+1
+IMPACTO DAS DECISÕES JUDICIAIS NA ACCOUNTABILITY DOS
+ACCOUNTABILITY
+13%
+GESTORES PÚBLICOS E EM OUTROS PODERES
+3
+RECURSOS ESTRATÉGICOS
+GESTÃO DE DOCUMENTOS E INFORMAÇÕES JUDICIAIS
+2
+DO PODER JUDICIÁRIO
+13%
+CARREIRA DOS MAGISTRADOS
+1
+OFERTA DE SERVIÇOS JUDICIAIS COM RITUAIS SIMPLIFICADOS
+1
+ACESSIBILIDADE À JUSTIÇA
+9%
+NOVAS FORMAS DE RESOLUÇÃO DE CONFLITOS
+1
+ESTRUTURA DO
+PODER JUDICIÁRIO
+4%
+DISTRIBUIÇÃO DE COMPETÊNCIAS ENTRE JUÍZES E TRIBUNAIS
+1
+TOTAL
+100%
+23
+Fonte: dados da pesquisa.
+201
+:
+LUIZ AKUTSU E TOMÁS DE AQUINO GUIMARÃES
+15
+REVISTA DIREITO GV, SÃO PAULO
+8(1) | P. 183-202 | JAN-JUN 2012
+
+DIMENSÕES DA GOVERNANÇA JUDICIAL E SUA APLICAÇÃO AO SISTEMA JUDICIAL BRASILEIRO
+:
+202
+REVISTA DIREITO GV, SÃO PAULO
+8(1) | P. 183-202 | JAN-JUN 2012
+UnB – PPGA
+Instituto Central de Ciências, Ala Norte,
+Subsolo, Módulo 25
+70910–900
+Brasília – DF – Brasil
+tomas.aquino.guimaraes@gmail.com
+Tomás de Aquino Guimarães
+PROFESSOR TITULAR DA UNIVERSIDADE DE BRASÍLIA (UNB)
+DOUTOR EM SOCIOLOGIA PELA UNIVERSIDADE DE SÃO PAULO (USP),
+COM PERÍODO COMO STUDY FELLOW NO SCIENCE AND TECHNOLOGY
+POLICY RESEARCH (SPRU), REINO UNIDO
+MESTRE EM ADMINISTRAÇÃO PELA
+FUNDAÇÃO GETULIO VARGAS (FGV)
+GRADUADO EM ADMINISTRAÇÃO PELA ASSOCIAÇÃO
+DE ENSINO UNIFICADO DO DISTRITO FEDERAL
+SQS 210, Bloco A, apartamento 503
+CEP: 70273–010
+Brasília – DF – Brasil
+luiz_akutsu@yahoo.com.br
+Luiz Akutsu
+DOUTORANDO EM ADMINISTRAÇÃO
+PELA UNIVERSIDADE DE BRASÍLIA (UNB)
+MESTRE EM ADMINISTRAÇÃO
+PELA UNIVERSIDADE FEDERAL DA BAHIA (UFBA)
+BACHAREL EM DIREITO PELA UNIVERSIDADE DE BRASÍLIA (UNB)
+ENGENHEIRO MECÂNICO-AERONÁUTICO
+PELO INSTITUTO TECNOLÓGICO DA AERONÁUTICA (ITA)

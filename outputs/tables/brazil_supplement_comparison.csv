@@ -1,0 +1,7 @@
+﻿metric,n,note
+corpus_principal_total,4926,Corpus congelado atual
+corpus_principal_nuclear,115,CORE_EX atual
+suplemento_br_candidatos,285,Itens rastreaveis filtrados por termos/instituicoes brasileiras
+suplemento_br_ja_no_corpus,1,Mesma chave DOI ou titulo+ano+periodico
+suplemento_br_novos,284,Exigem curadoria antes de incorporar ao corpus principal
+suplemento_br_nuclear_estimado,214,Classificacao automatica exploratoria

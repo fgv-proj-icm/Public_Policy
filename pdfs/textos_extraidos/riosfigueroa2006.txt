@@ -1,0 +1,1340 @@
+Journal of Latin American Studies
+http://journals.cambridge.org/LAS
+Additional services for Journal of Latin American
+Studies:
+Email alerts: Click here
+Subscriptions: Click here
+Commercial reprints: Click here
+Terms of use : Click here
+Institutional Determinants of the Judicialisation
+of Policy in Brazil and Mexico
+JULIO RIOS-FIGUEROA and MATTHEW M. TAYLOR
+Journal of Latin American Studies / Volume 38 / Issue 04 / November 2006, pp 739 - 766
+DOI: 10.1017/S0022216X06001593, Published online: 24 October 2006
+Link to this article: http://journals.cambridge.org/abstract_S0022216X06001593
+How to cite this article:
+JULIO RIOS-FIGUEROA and MATTHEW M. TAYLOR (2006). Institutional
+Determinants of the Judicialisation of Policy in Brazil and Mexico. Journal of Latin
+American Studies, 38, pp 739-766 doi:10.1017/S0022216X06001593
+Request Permissions : Click here
+Downloaded from http://journals.cambridge.org/LAS, IP address: 128.172.10.194 on 13 Mar 2015
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+Institutional Determinants of the
+Judicialisation of Policy in Brazil
+and Mexico*
+JULIO RIOS-FIGUEROA and MATTHEW M. TAYLOR
+Abstract. This article oﬀers a comparative perspective on judicial involvement
+in policy change in Latin America during the last decade and a half. Drawing
+on the literature on new institutionalism and the judicialisation of politics,
+and on case studies from Latin America’s two largest countries, we propose a
+comparative framework for analysing the judicialisation of policy in the region.
+On the basis of this framework, we argue that institutional structure is a primary
+determinant of patterns of the judicialisation of policy. In particular, institutional
+characteristics of the legal system aﬀect the way political actors ﬁght to achieve
+their policy objectives and the kinds of public justiﬁcations used to defend policy
+reform.
+Introduction
+Decisions on whether re-election should be permitted, the civil service
+should be reformed or public hospitals should provide medication to AIDS
+patients used to be the primary province of presidents and legislators,
+working in conjunction with party leaders, bureaucrats and interest groups.
+Recently, however, in countries as diverse as Brazil, Colombia, Costa Rica
+and Mexico, decisions on these matters have been heavily inﬂuenced by
+judges. The list of issues and countries in which courts now intervene in
+areas historically reserved for other branches of government continues to
+Julio Rı´os-Figueroa is Assistant Professor in the Political Science Department at CIDE,
+Mexico City and is a Hauser Research Scholar at the New York University School of
+Law; Matthew M. Taylor is Assistant Professor at the Department of Political Science,
+University of Sa˜o Paulo.
+* The authors would like to thank Rogerio Arantes, John Bailey, Rachel Bowen, Luciana
+Gross Cunha, Linn Hammergren, Diana Kapiszewski, Andrei Koerner, Gerald Mara,
+Andrea Pozas-Loyo, Arturo Valenzuela and the editors and reviewers at the Journal of Latin
+American Studies for helpful comments on earlier drafts of this paper. Portions of Matthew
+Taylor’s research were made possible by a Fulbright-Hays fellowship and a post-doctoral
+fellowship from the Fundac¸a˜o de Amparo a` Pesquisa do Estado de Sa˜o Paulo, for which he is
+grateful.
+J. Lat. Amer. Stud. 38, 739–766
+f 2006 Cambridge University Press
+739
+doi:10.1017/S0022216X06001593
+Printed in the United Kingdom
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+grow, with judicial inﬂuence on policy emerging as one of the most
+important new trends in post-transition Latin American politics.1
+It is diﬃcult to know if this phenomenon is here to stay or precisely
+what its long term consequences will be, but the increasing use of courts
+is already changing how political actors ﬁght to achieve their policy
+objectives and the kinds of public justiﬁcations used to defend policy reform.
+Not all recourse to the courts has the eﬀect of directly enhancing policy:
+some plaintiﬀs seek out the courts and the legal instruments that oﬀer the
+best chances of policy victory, while others seek the legal instruments that
+oﬀer the greatest publicity, even when the chances of a legal victory are slim.
+That said, court involvement in policy making has widened the scope of
+public deliberation over policy to include not only legislative and political
+considerations but also new issues, such as debates over clashing rights
+claims and constitutionality concerns, and new actors, such as opposition
+parties and minority groups with little direct inﬂuence on the legislative
+process.
+This article develops a framework for understanding how court structure
+has shaped the judiciary’s inﬂuence on policy reforms undertaken in much
+of Latin America over the past decade and a half. Just as bicameralism or
+the structure of the committee system aﬀect the substance of bills that
+legislatures produce, we argue that the institutional structure of the legal
+system shapes policy outcomes. Drawing on the experience of the region’s
+two largest countries, Brazil and Mexico, we show how the federal judiciary’s
+institutional structure in each country shapes political actors’ legal and
+political strategies, which in turn aﬀect the federal judiciary’s relevance
+to policy formation. In other words, we signal how the institutional structure
+of the federal courts shapes the patterns of the ‘judicialisation’ of public
+policy choices and may thus also inﬂuence policy outcomes.
+Two deﬁnitions are essential at the outset. First, ‘public policy’ is deﬁned
+rather loosely as ‘whatever governments choose to do or not to do’,2 but
+with the implicit assumption that a public policy includes a particular object
+or goal, a line of action, and the declaration and implementation of intent.3
+‘Policy reform’ is a change in the intended goals, lines of action, and intent
+1 For useful country case studies on the increasing post-transition role of courts in policy
+debates across Latin America, see Rachel Sieder, Line Schjolden and Alan Angell (eds.),
+The Judicialisation of Politics in Latin America (New York, 2006) and Siri Gloppen, Roberto
+Gargarella and Elin Skaar (eds.), Democratization and the Judiciary: The Accountability Function of
+Courts in New Democracies (London, 2004).
+2 Thomas R. Dye, Understanding Public Policy (Englewood Cliﬀs, 1972), p. 2.
+3 Austin Ranney, ‘The Study of Policy Content: A Framework for Choice’ in Austin Ranney
+(ed.), Political Science and Public Policy (Chicago, 1968), cited in Daniel C. McCool, Public Policy
+Theories, Models, and Concepts: An Anthology (Englewood Cliﬀs, 1995).
+740
+Julio Rios-Figueroa and Matthew M. Taylor
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+of a given public policy, and is used interchangeably with ‘policy change.’
+Although we focus on the most contentious forms of policy change – major
+state reforms – this is because they illustrate patterns of policy behaviour
+in higher relief; the arguments made here can be extended to more mundane
+policy debates as well. Second, we deﬁne the ‘judicialisation of policy’ as the
+increasing displacement of policy conﬂicts from their traditional arenas in
+the executive and legislative branches to the judiciary,4 with the important
+consequence of ‘changing the kinds of considerations – the kind of delib-
+erative justiﬁcations – that go into choosing among policies’.5 Due to space
+constraints, we do not directly address the ﬂipside of judicialisation – the
+politicisation of the judiciary – except in our closing comments.
+Our focus is on the manner by which policy reaches the courts, and
+thus, the extent to which court structure channels some policy conﬂicts into
+judges’ hands more than others. We do not attempt to explain a second
+element of court involvement – that is, decision-making by individual
+judges – other than to suggest that long before any judge rules on a particular
+policy, institutional structures inﬂuence the likelihood and the particular
+channels by which that policy arrives at and is accepted for review by the
+courts.
+Courts are limited in what policy issues they hear by the ‘raw material’
+that arrives on their doorstep: they cannot pick and choose between policy
+engagements as presidents or assemblies do. But this provides a particularly
+good reason to study more closely the institutional rules governing
+courts, especially in Latin America, where institutional diversity abounds.
+We illustrate here how variations in judicial independence and judicial
+review inﬂuence the patterns by which policy debates arrive (or fail to arrive)
+at the doorsteps of courts, thus widening the scope of policy debates to
+include not only pragmatic and political reasons but also rights-based and
+constitutional considerations.
+This paper compares Brazilian and Mexican experiences in two stages.
+First, we propose a tentative framework for the comparative analysis of the
+inﬂuence of institutional diﬀerences on patterns of the judicialisation of
+policy. Second, we analyse recent case studies of similarly contentious state
+reforms in both countries to illustrate how judicial involvement in policy
+reform is inﬂuenced by underlying institutional rules and structures.
+4 For further deﬁnition of ‘judicialisation’, see C. Neal Tate and Torbjo¨rn Vallinder (eds.),
+The Global Expansion of Judicial Power (New York, 1995), p. 5. For a bibliography on judi-
+cialisation, see Pilar Domingo, ‘Judicialisation of Politics or Politicization of the Judiciary:
+Recent Trends in Latin America’, Democratization vol. 11, no. 1 (February 2004): 107, fn. 4.
+5 John A. Ferejohn, ‘Judicializing Politics, Politicizing Law.’ Law and Contemporary Problems
+65, no. 3 (Summer 2002), p. 45.
+Judicialisation of Policy in Brazil and Mexico
+741
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+Judicial Structure and Political Strategies
+What determines the judicialisation of policy? A ﬁrst explanation is
+motivational and is driven by the contentiousness of the policy itself and,
+especially, whether or not a plaintiﬀ(be they an individual or a group) is
+suﬃciently exercised by the policy to go to the trouble of contesting it in the
+courts. A second explanation is the institutional structure of the judiciary,
+which shapes the political and/or legal strategies of policy opponents. In this
+section we focus on these institutional factors.
+Once a policy is contentious enough to drive at least one plaintiﬀto court,
+what determines the legal strategies they use in their attempt to thwart
+policy change? The likely costs and beneﬁts of legal action are central in
+this respect: the cost of ﬁling suit, the access policy players have to the
+courts, the likelihood of overturning policy, the speed with which courts act,
+and the political as well as the legal repercussions of court action are all
+implicit in the decision to challenge policy. Courts can thus be evaluated
+across several cross-nationally comparable dimensions that shape the
+patterns of policy contestation. The most important factors ﬁt into two
+groups:6 First, the structure of judicial independence, which we divide along
+three axes: the autonomy of the judiciary, the external independence of
+Supreme Court judges from other branches of government, and the internal
+independence of lower court judges from their superiors in the judicial
+hierarchy. Second, the structure of judicial review, which includes consti-
+tutional arrangements, the scope of juridical power, and diﬀerences in the
+formal standing granted to diverse political actors.
+The Structure of Judicial Independence
+Without a certain degree of judicial independence from other branches of
+government, courts cannot be credibly used to contest policy reforms.
+Judicial independence is thus a sine qua non for the judicialisation of policy.
+Scholars who have used a legal framework to analyse judicial indepen-
+dence face the criticism that their de jure assessments may not accurately
+reﬂect political reality.7 To avoid this problem, scholars carrying out
+6 The list we rely upon is necessarily partial, as there are numerous other factors that may
+aﬀect the generation of the ‘raw material’ facing the courts. Space here is too limited to do
+these justice here, but a few stand out as subjects for future research: the fragmentation of
+power between the executive and legislative branches; the strength and independence
+of the prosecutorial body; the political engagement of civil society; the history of court
+institutionalisation; the degree to which the courts use a political doctrine question, which
+might limit their involvement in some cases; a country’s tradition of judicial activism; and
+the prevalence or acceptability of corruption.
+7 Christopher M. Larkins, ‘Judicial Independence and Democratization: A Theoretical and
+Conceptual Analysis,’ American Journal of Comparative Law, vol. 44 (1996), pp. 605–625.
+742
+Julio Rios-Figueroa and Matthew M. Taylor
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+single-country studies have sometimes used judicial decisions against the
+government as a proxy for judicial independence.8 Yet independent courts
+can decide in favour of the government, and there is also a problem of
+generalising results from single country studies. Measures of independence,
+however, tend to be even less precise in multi-country studies which use
+expert surveys, personal classiﬁcations or other indices that frequently
+overlook the relations between the three branches of government or fail to
+diﬀerentiate between diﬀerent types of courts or levels of judges.9
+So what exactly matters about judicial independence? Two clear distinc-
+tions exist in the literature: (1) between the judiciary and other branches
+of government; and (2) between pressures on judges that originate either
+inside or outside the judiciary.10 For the sake of clarity, we label the ﬁrst
+‘autonomy,’ and the second as either internal or external ‘independence.’
+Our overall measure of independence is therefore based on three compo-
+nents: (a) autonomy, or the relation between the judiciary as an institution
+and the elected branches of government; (b) the external independence
+of Supreme Court judges, that is, their relation with elected branches of
+government; and (c) the internal independence of lower court judges,
+deﬁned as their relation with high court judges.
+(a) Autonomy
+The judiciary can be described as fully autonomous if its general structure
+and budget is self-regulated, freeing it from potential pressures from other
+branches of government. The degree of autonomy is highest where the
+judiciary itself decides on issues such as its budget, the numbers and
+jurisdictions of courts and judges. It is lowest when these decisions are in
+8 For example, Gretchen Helmke, ‘The Logic of Strategic Defection: Court-Executive
+Relations in Argentina Under Democracy and Dictatorship,’ American Political Science Review,
+vol. 96, no.2 (June 2002), pp. 291–303; Matias Iaryczower, Pablo T. Spiller and Mariano
+Tommasi, ‘Judicial Independence in Unstable Environments, Argentina 1935–1998,’
+American Journal of Political Science vol. 46, no. 4 (October 2002), pp. 699–716.
+9 For example, Lars P. Feld and Stephen Voigt, ‘Economic Growth and Judicial
+Independence: Cross Country Evidence Using a New Set of Indicators,’ European Journal of
+Political Economy, vol. 19 (2003), pp. 497–527; and Rafael La Porta et al., ‘Judicial Checks
+and Balances’, Journal of Political Economy, vol. 112, no. 2 (2004).
+10 For example, S. Burbank and B. Friedman, ‘Reconsidering Judicial Independence,’ in
+Stephen B. Burbank and Barry Friedman (eds.), Judicial Independence at the Crossroads: An
+Interdisciplinary Approach (California: 2002), pp. 9–44; John Ferejohn, ‘Independent Judges,
+Dependent Judiciary: Explaining Judicial Independence,’ Southern California Law Review, vol.
+7 (1995), pp. 353–385; Linn Hammergren, ‘Diagnosing Judicial Performance: Toward a
+Tool to Help Guide Judicial Reform Programs,’ paper presented at the 9th International
+Anti-Corruption Conference, Durban, South Africa (1999); and Owen Fiss, ‘The Right
+Degree of Independence,’ in Irwin Stotsky (ed.) Transition to Democracy in Latin America: The
+Role of the Judiciary (Boulder: 1993), pp. 55–72.
+Judicialisation of Policy in Brazil and Mexico
+743
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+the hands of the executive and/or legislative branches through statutes or
+decrees. The autonomy of the judiciary also depends on whether it has the
+capacity to regulate and control the arbitrary exercise of power and
+the capacity to strike down unconstitutional laws. Thus, if these powers are
+closely held within the judiciary (for instance, in the Supreme Court), we can
+say that the judiciary is more autonomous from the other branches of
+government than if such power lies outside the judiciary (for instance, in a
+constitutional tribunal).
+In the Brazilian case, major reforms to the judicial structure must be made
+via constitutional amendment, thereby complicating blatantly political eﬀorts
+to impose direct control over courts and judges. One such constitutional
+amendment – which, among other things, created a judicial council com-
+posed of both judges and external nominees to oversee the judiciary – was
+approved after ample debate (which included judges) in December 2004.
+At the time of writing this article, the amendment was still being im-
+plemented. Although we expect it will do little to alter the patterns described
+here, our analysis of Brazil formally focuses solely on the period prior to
+this implementation of this measure, namely 1988–2004.
+During this period, decisions on internal administrative aﬀairs have been
+tightly centralised in the hands of judges and, indeed, the 1988 Constitution
+guarantees the judiciary ‘administrative and ﬁnancial autonomy’, grant-
+ing it so much authority that accountability has been sorely lacking on
+occasion.11 Although the Constitution does not establish a ﬁxed judicial
+budget, other constitutional guarantees of funding and the bargaining
+strength of the federal judiciary have combined to produce a judicial budget
+that has grown nearly eight-fold over the past two decades.12 Brazil’s federal
+courts remain the best funded federal court system in the hemisphere out-
+side the United States.13 Meanwhile, the power of constitutional adjudication
+remains ﬁrmly ensconced by constitutional mandate in the Supreme Federal
+Tribunal (STF).
+Our analysis of the Mexican case focuses on the period between 1994
+and the present, during which autonomy was improved through a number
+of institutional changes. The 1994 judicial reform not only concentrated
+11 Several recent scandals have raised questions about the judiciary’s ability to police its own
+members eﬀectively: in 2003, for example, a senior federal judge was found to have sold
+favourable sentences to criminals.
+12 L. Sant’Anna, ‘Gasto da Unia˜o sobe 57% em uma de´cada,’ O Estado de Sa˜o Paulo,
+20 February 2005.
+13 The number of federal judges in Brazil is tied to ‘eﬀective judicial demand and population’
+(Art. 93, 1988 Constitution) and although legislative approval and executive sanction is
+required to create new judgeships, once created, these are nearly impossible to eliminate. In
+practice, the expansion of judgeships has not been a serious concern vis-a`-vis judicial
+autonomy.
+744
+Julio Rios-Figueroa and Matthew M. Taylor
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+constitutional adjudication in the Supreme Court, but also created a powerful
+Judicial Council (with judges in the majority) that was charged with managing
+the entire structure and budget of the judiciary, as well as the careers of all
+federal judges.14 Like Brazil’s Constitution, the Mexican Constitution of 1917
+does not establish a ﬁxed judicial budget. However, the budget proposed
+each year by the Judicial Council has not been altered by Congress since 1994
+and in fact has never reduced.
+In sum, over the last decade these two federal judiciaries have shared
+relatively high levels of autonomy. While both face the prospect of reduced
+funding, such a move would require a signiﬁcant change in executive and
+legislative stances toward the courts. Meanwhile, courts in both countries
+beneﬁt from both strong control over their own internal operations, robust
+powers of constitutional adjudication as well as (like many countries in the
+region) a high degree of budgetary autonomy. However, our comparative
+analysis suggests that it is vital to acknowledge the consequences any
+possible curtailment of autonomy might have with respect to the future
+policy impact of the Mexican and Brazilian courts.
+(b) External Independence
+‘External independence’ reﬂects the relation between Supreme Court judges
+and other branches of government, and can be deﬁned as ‘the extent to
+which justices can reﬂect their preferences in their decisions without facing
+retaliation measures’ from the executive or legislative branches.15 Over the
+last decade Brazilian and Mexican high court judges have enjoyed similarly
+high levels of external independence, as assessed by the rules and arrange-
+ments regarding justices’ appointment, tenure, impeachment and salaries.
+The external independence of ministers on the Brazilian Supreme Federal
+Tribunal (STF) has been guaranteed since 1988 by the appointment by
+the President of ministers who are then approved by the Senate. It is also
+guaranteed by judges’ life tenure (to age 70) and by salary protections written
+into the Constitution (these also apply to judges in the Superior Tribunal
+de Justic¸a, STJ, and lower federal courts). The divided appointment-
+conﬁrmation process and the relative professional longevity of judicial
+appointees contribute to external independence, as STF ministers tend
+to outlast their nominators in the elected branches. Furthermore, in order
+14 It must be noted that the ﬁrst delegation of authority to the judiciary over courts’ structure
+and jurisdiction took place in 1987 during the administration of Miguel de la Madrid.
+He´ctor Fix-Fierro, ‘La reforma judicial en Me´xico, ¿de do´nde viene? ¿a do´nde va?’ Reforma
+Judicial. Revista Mexicana de Justicia, no. 2 (July-Dec. 2003), p. 278.
+15 Iaryczower et al., ‘Judicial Independence in Unstable Environments,’ p. 699.
+Judicialisation of Policy in Brazil and Mexico
+745
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+to impeach members of the STF, a tough two-thirds majority in the Senate
+is needed. In order to remove judges on the STJ, a two-thirds vote by the
+judge’s peers is required.
+Supreme Court judges in Mexico were largely PRI loyalists until the
+mid-1990s, with the advancement of constitutional rights often subjugated
+to short-term political interests.16 The judicial reform of 1994 provided
+judges with a constitutionally-protected salary and tenure of 15 years, long
+enough for them to become independent from their appointing authorities
+(the executive with Senate approval). The only feature that makes Supreme
+Court judges susceptible to undue interference from the legislative is that
+the accusation part of the impeachment process is contingent on a simple
+majority in the House (although the ﬁnal judgement of these cases lies
+with a two-thirds majority in the Senate). However, increased political
+competition since the 1990s permitted the courts to take important decisions
+that checked PRI interests without provoking retaliation, suggesting the
+emergence of a good degree of external independence.17
+(c) Internal Independence
+‘Internal independence’ refers to the extent to which lower court judges
+can make decisions without taking into account the preferences of their
+hierarchical superiors. Internal independence is determined by the extent
+and location of administrative controls, the institutional culture of the
+judiciary, and the extent to which judges’ decisions are constrained by their
+peers (rather than by legal rules regarding bindingness).
+The Brazilian judicial system is marked by a remarkable degree of
+internal independence. Each court below the STF and STJ ﬁlls its judgeship
+vacancies using rigorous civil service examinations and/or strict rules of
+seniority and merit speciﬁed in the 1988 Constitution.18 Lower court judges
+at all levels also enjoy strong guarantees of their tenure and have considerable
+latitude in their day-to-day decision-making.
+Institutional culture can sometimes moderate the internal independence
+of lower court judges, as Hilbink has pointed out in the Chilean case.19
+16 Pilar Domingo, ‘Rule of Law, Citizenship, and Access to Justice in Mexico,’ Mexican
+Studies – Estudios Mexicanos, vol. 15, no. 1 (1999), pp. 151–191.
+17 Julio Rios-Figueroa, ‘The Emergence of an Eﬀective Judiciary in Mexico, 1994–2002,’
+Latin American Politics & Society, vol. 45, no. 1 (2007).
+18 For the STF, the President nominates a candidate of his choosing for subsequent Senate
+conﬁrmation; and for the STJ, the President nominates a judge from a list of three
+candidates proposed by the court itself.
+19 Lisa Hilbink, ‘An Exception to Chilean Exceptionalism?,’ in Susan E. Eckstein and
+Timothy P. Wickham-Crowley (eds.), What Justice? Whose Justice?: Fighting for Fairness in Latin
+America (Berkeley, 2003), pp. 64–97.
+746
+Julio Rios-Figueroa and Matthew M. Taylor
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+This phenomenon is also at play in Mexico, where lower court judges are
+subordinated to their hierarchical superiors by both institutional rules
+and informal institutional culture. Brazil lies at the other extreme whereby
+relatively weak hierarchical constraints are further limited by customary
+respect for each judge’s independence, contributing to fragmented decision-
+making. Furthermore, because promotion is based primarily on tenure,
+upper courts have little inﬂuence over the professional development of
+lower court judges. When combined with the relative absence of binding
+mechanisms (described below), this system of recruitment and promotion
+has the eﬀect of generating a large degree of internal independence in
+Brazil. This contributes to an ‘atomisation’ of the judicial process: ‘at least
+potentially, there can be as many diﬀerent decisions as there are judicial
+bodies activated’.20
+Hierarchical control over lower court judges’ careers engenders a low
+degree of internal independence in Mexico. The Mexican Judicial Council
+controls appointments and promotions as well as disciplinary matters for
+all federal lower court judges, permitting the kind of top-down control by
+senior judges seen in Chile. Although life tenure may ensure a little more
+internal independence among judges than in Chile, the Mexican Council ﬁlls
+lower court judgeships. Life tenure is also granted only to those judges
+who have served a six-year term and been ratiﬁed by the Council. Since the
+Council is dominated by the Supreme Court,21 Mexican lower court judges
+have little independence from their hierarchical superiors.
+To summarise, both Brazil and Mexico show signs of judicial indepen-
+dence in the aggregate, but with an important diﬀerence in its components.
+While both countries rate high on autonomy and on external independence,
+they diﬀer signiﬁcantly on internal independence. The high degree of
+internal independence among Brazilian judges (as compared to the strong
+top-down organisational control imposed on Mexican judges) suggests
+that the Brazilian federal courts can be used as either a means of delaying
+deﬁnitive policy choices or of muddying the certainty of policy choices, as
+our case studies will illustrate.
+The Structure of Judicial Review
+We turn now to what we term the ‘structure of judicial review’ – the legal
+and constitutional rules that determine who can activate courts to play a
+role in the policy game, and the constraints they face in doing so. The
+20 Rogerio B. Arantes, Judicia´rio e Polı´tica No Brasil, (Sa˜o Paulo, 1997), p. 33.
+21 A 1999 constitutional reform established Supreme Court control of the Council. Before
+this, the Council was ﬁlled by judges selected randomly from diﬀerent levels of the
+judiciary. See He´ctor Fix-Fierro, ‘La reforma judicial en Me´xico’.
+Judicialisation of Policy in Brazil and Mexico
+747
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+structure of judicial review has two main implications for the judicialisation
+of policy. The ﬁrst relates to how quickly the average case is likely to come
+to a conclusive judgement and, in particular, whether some plaintiﬀs can
+expect expedited decisions. A plaintiﬀwho can leap the queue to appeal
+against a policy in the high court is more likely to be active in contesting
+policy, other things being equal, than a plaintiﬀwho faces an interminable
+appeals process in lower courts. A second implication relates to the eﬀec-
+tiveness of judicial resolutions and, in particular, whether some plaintiﬀs
+have access to decisions that are more binding and/or more widely appli-
+cable than those available to other plaintiﬀs. A plaintiﬀwith such access
+would be more likely to use the courts whenever their policy preferences
+were not met; and such access would likely provide a greater potential
+Brazil
+5 Federal Regional Tribunals (TRFs)
+Supreme Justice Tribunal
+(STJ)
+Supreme Federal Tribunal
+(STF)
+560 “Varas Federais” and 48 “Juizados 
+Especiais Federais Autônomos”
+Mexico
+63 Unitary Tribunals
+Direction of appeals
+Supreme Court of
+Justice 
+264 Federal District Courts
+165 Collegial Circuit Tribunals
+ 
+Fig. 1. Comparative Federal Judicial Structures, Brazil and Mexico. Note: Figure based on numbers of
+courts in 2002. Brazil’s STF and STJ are, by the wording of the 1988 Constitution, not strictly part of the
+‘‘federal’’ court system, which formally encompasses only the TRFs and federal judges, according to Article 106
+of the Constitution. But the STF and STJ have national jurisdiction (Article 92, §2), meaning that they can
+hear cases rising from both the federal courts and state courts. Because cases appealed from the TRFs rise to the
+STJ and STF, and therefore aﬀect federal policies, they are included in this diagram. Brazil has separate
+labour, electoral and military courts, although these are excluded from our analysis because of their highly
+speciﬁc policy arenas.
+Mexico also has separate ﬁscal, labour, agrarian and military courts, not shown here. The Judicial Council
+is also formally part of the Federal Judiciary in Mexico, although it is not shown in either country because it is
+not a party to actual judicial decision-making. The Mexican line of appeals refers to non-electoral cases;
+electoral cases are heard at the Electoral Courts and the Electoral Tribunal (which are also formally a part of
+the Federal Judiciary). The Mexican Supreme Court can review cases from anywhere in the federal court system
+if it deems them important (all other non-appealed cases it hears arrive under original jurisdiction).
+748
+Julio Rios-Figueroa and Matthew M. Taylor
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+inﬂuence over policy. We discuss here three major factors inﬂuencing
+the structure of judicial review: constitutional arrangements, the scope of
+juridical power and the rules governing standing.
+(a) Constitutional arrangements
+Constitutional arrangements that inﬂuence how policy can be contested
+in the courts include the breadth of constitutional rights and the breadth of
+original jurisdiction at the high court. The breadth of constitutional rights
+is fundamental to understanding the judiciary’s role in Brazilian policy
+debates, especially in light of the extraordinarily broad, 250-article-long
+Constitution, and the wave of constitutional reforms undertaken in that
+country since the early 1990s. Mexico’s Constitution was ﬁrst written in
+1917; despite recent reforms, it remains less expansive in delineating rights
+than its Brazilian counterpart. This alone suggests diﬀerent levels of court
+activation: if rights as diﬀuse as a right to health care or salary guarantees for
+civil servants are contained in the constitutional text, this makes it more
+plausible that high courts will be obliged to hear cases about policies that
+allegedly threaten these rights.
+A second factor is the existence of a constitutional court and the breadth
+of its original jurisdiction. Although neither Mexico nor Brazil has a consti-
+tutional court that operates independently of the court system (in the manner
+of the French Constitutional Council or Chile’s Constitutional Tribunal),
+the fact that both countries’ high courts merge a constitutional function
+with the function of highest appeals court allows the same institution to
+be activated in diﬀerent ways on the same issue. In such a way, the same
+contentious policy may reach the high court via appeals or via a speciﬁc
+legal remedy such as an ‘action of unconstitutionality’ or a ‘constitutional
+controversy’ suit.
+The Brazilian STF hears all cases related to constitutional issues, arising
+either through appeal from lower courts or through legal cases brought
+directly under its original jurisdiction. Yet, given the large caseloads that
+make their way to the STF under the guise of constitutional questions, the
+manner in which cases arrive at the STF aﬀects the time it takes to secure a
+resolution. A case challenging policy that arrives via the direct action of
+unconstitutionality (ADIN) mechanism will be heard several years prior to a
+case challenging policy that rises to the STF via repeated appeal. Although
+only one in every 13 cases (7.7%) is brought to the STF using case types
+of original jurisdiction like the ADIN, this is a far more signiﬁcant number
+in both absolute and proportional terms than in Mexico (where only one
+in every 59 cases – 1.7% – comes under the court’s original jurisdiction).
+Although the large numbers suggest that constitutional cases under original
+Judicialisation of Policy in Brazil and Mexico
+749
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+STF jurisdiction are a rather humdrum aﬀair, nonetheless, having one’s case
+heard under the STF’s original jurisdiction – which leapfrogs the lower
+courts – is far preferable to being part of the great mass of appeals. The fact
+that more cases are heard does not imply more consequential decisions,
+but the breadth of cases that can be challenged on constitutional grounds
+does explain why there appear to be more policy challenges in the STF than
+in the Mexican Supreme Court.
+Mexico’s Supreme Court is more typical of the regional pattern, with
+original jurisdiction in only two types of constitutional challenges (controversias
+constitucionales and acciones de inconstitucionalidad, of which there were a com-
+bined total of 133 cases in 2003), and appellate jurisdiction in only some
+types of cases heard by district and circuit courts. Unlike the Brazilian
+STF, the Mexican Supreme Court’s appellate jurisdiction is largely at the
+discretion of the Court itself. In addition, the considerably narrower scope
+of the Mexican Constitution also limits the number of potential appeals on
+constitutional grounds.
+In sum, the Brazilian high court is more likely to be activated under
+its original jurisdiction: it hears a far greater proportion of cases under its
+original jurisdiction; the 1988 Constitution facilitates a wide-range of con-
+stitutionally-grounded suits; and, as we will see in the question of standing,
+a far greater number of policy actors are able directly to access the STF.
+(b) Scope of juridical power
+The scope of juridical power can be determined by a country’s placement
+along three axes: a priori versus a posteriori judgement of laws; abstract versus
+concrete review; and rules of bindingness and universality.22 As we will see
+here, Brazil and Mexico share similar characteristics regarding two of the
+three axes.
+A priori versus a posteriori: Unlike some countries, including Chile, where a
+decision by the constitutional tribunal is handed down before the law
+in question goes into eﬀect, thereby allowing the legislature, if necessary,
+to revise the law prior to implementation, a posteriori consideration may
+occur weeks, months, or even years later in Brazil. Mexico tempers the
+potential for this type of post hoc policy upheaval somewhat by placing
+a time limit for ﬁling Acciones de Inconstitucionalidad, which must be entered
+no more than thirty days after a law goes into eﬀect.
+Abstract versus concrete: A court’s decisions can be based on either
+concrete cases, such as a plaintiﬀ’s grievance against the eﬀects of a
+22 Patricio Navia and Julio Rı´os-Figueroa, ‘The Constitutional Adjudication Mosaic of Latin
+America,’ Comparative Political Studies, vol. 38, no. 2 (2005), pp. 189–217; Donald W. Jackson
+and C. Neal Tate (eds.) Comparative Judicial Review and Public Policy (Westport, 1992).
+750
+Julio Rios-Figueroa and Matthew M. Taylor
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+particular government programme, or on abstract cases, such as a plaintiﬀ’s
+grievances about a particular law or executive order even before the law’s
+concrete eﬀects are visible. In both countries, both forms of review are
+possible, allowing policy to be contested in some cases even if the plaintiﬀ’s
+interests are not directly aﬀected by the policy.
+Bindingness and universality: A ﬁrst signiﬁcant dimension of any court
+decision is whether it sets a precedent, and is therefore binding on any
+similar future cases; a second is the degree to which the decision is uni-
+versiﬁable, meaning whether it applies to everyone aﬀected by a given policy
+(erga omnes eﬀects) or only to the parties to the suit (inter partes).
+The extreme of binding precedent is found in common law systems,
+where the doctrine of stare decisis binds all future judges in the same or
+lower court to the same decision in similar cases. Although Mexico does
+not adhere to stare decisis, both the Mexican Supreme Court and Mexican
+circuit courts are able to set binding precedents. In amparo suits23 they may
+establish jurisprudencia by publishing ﬁve consecutive and consistent decisions
+on a given point of law. The established jurisprudence has a binding eﬀect
+on the court that created it, as well as on all lower courts. The Supreme Court
+can also issue tesis sobresalientes of jurisprudence, guidelines for interpret-
+ation that are not binding on lower courts but can nonetheless be highly
+inﬂuential.
+In contrast, the weakness of precedent in Brazil means that many cases
+are ﬁled up the judicial hierarchy until they reach the STF on appeal for
+its constitutional judgement. The 1988 Constitution attempted to limit
+the use of the STF as a court of appeal by creating the STJ, which would
+23 The amparo suit is an instrument of individual constitutional complaint; although some-
+times translated as habeas corpus, it encompasses more than what the term implies in
+English. Unlike countries like Spain or Germany where such complaints can be heard only
+by the Constitutional Tribunal, in Mexico an amparo can be ﬁled in any federal court and
+then appealed all the way to the Supreme Court, provided it is deemed important enough
+to review. However, sentences in amparo suits only aﬀect the particular plaintiﬀ(unless
+there are ﬁve similar rulings on the same issue). An amparo can be ﬁled only by the
+aggrieved party and only when ‘an act or law of the authority’ (Article 103, Mexican
+Constitution) has violated a constitutional right; thus, amparos cannot be ﬁled against in-
+dividuals. See He´ctor Fix-Zamudio, Ensayos Sobre el Derecho de Amparo (Mexico, 1999).
+There is no equally ubiquitous Brazilian parallel to the amparo suit. The mandado de
+seguranc¸a is perhaps the most similar, in that it seeks to guarantee individual or collective
+rights against an illegal or unconstitutional act by an authority. But there is no similar rule
+regarding precedent setting, and while a successful ﬁling in the STF would be likely to stop
+a policy or government activity in its tracks, the STF does not have original jurisdiction in
+these cases unless the case has been rejected by all other courts. Furthermore, mandados de
+seguranc¸a are proportionally seldom used, representing fewer than 0.5% of all STF cases
+heard per year, and there are a number of other legal instruments – ranging from the Ac¸a˜o
+Civil Pu´blica to the ADIN – that permit similar legal contestation on a variety of grounds.
+Judicialisation of Policy in Brazil and Mexico
+751
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+function as a ﬁnal court of appeal in non-constitutional cases. However,
+this intention has been foiled by the fact that most legal arguments can be
+couched in constitutional terms so as to be heard in the STF, and by the
+absence, even after the 2004 reform, of strong binding mechanisms that
+might prevent otherwise similar cases from working their way up through the
+court hierarchy.
+Partly as a result of stronger forms of bindingness, the Mexican Supreme
+Court hears fewer than 7.5% as many cases per year as the STF. Meanwhile,
+the Mexican lower court system shows relatively greater uniformity in case
+decisions. In policy terms, this distinction is very important. It eliminates
+judicial uncertainty earlier in the legal process and, in the aggregate, it means
+that policy questions may be resolved more quickly and deﬁnitively than in
+Brazil.
+In terms of universality, both countries give erga omnes eﬀects to some but
+not all review cases by their high court. (In Mexico, such eﬀects are limited to
+cases on which a super-majority of justices agree.) While the erga omnes eﬀect
+avoids much of the potential chaos of conﬂicting decisions, it also provides
+an incentive to use high courts over lower courts whenever possible. When
+combined with weak binding mechanisms and/or low internal indepen-
+dence, this tends to funnel judicial decisions to the top of the judicial
+pyramid, centralising judicial review in the high courts of the two
+countries, increasing the likelihood of delays, and keeping policy choices
+under challenge longer than might otherwise be the case.
+The absence of strong binding mechanisms in Brazil allows individual
+lower court judges to occasionally make a big political splash with a decision
+that temporarily overturns policy until it is overruled. The multiple oppor-
+tunities to appeal trial court judgements mean that lower judges’ decisions
+are likely to be revisited repeatedly by upper courts. The value of lower
+court decisions thus decreases relative to high court decisions for all but
+strategically-motivated litigants such as those seeking delay (often the
+government itself) or those seeking temporary judicial victory, no matter
+in what court (such as political parties seeking to make a political point
+observable to their constituents). Lower courts otherwise are of very little
+tactical or strategic utility to groups with privileged standing in the high
+court. In combination, these factors all imbue the Brazilian high court with
+extraordinary importance, while diminishing the policy relevance of lower
+courts.24 While the Mexican Supreme Court is extremely important to policy
+opponents, the relative imbalance between the policy relevance of decisions
+24 Matthew M. Taylor, ‘Citizens against the State: The Riddle of High Impact, Low
+Functionality Courts in Brazil,’ Brazilian Journal of Political Economy, vol. 25, no. 4
+(October–December 2005).
+752
+Julio Rios-Figueroa and Matthew M. Taylor
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+by Mexico’s lower courts and the Supreme Court is much smaller than in the
+Brazilian case.
+(c) Standing
+Standing is perhaps the most inﬂuential means by which institutional struc-
+ture can predetermine the judicial inﬂuence of speciﬁc policy actors.
+Diﬀerences in standing have an impact not only on the types of plaintiﬀs
+heard but also – and this is important because it directly aﬀects strategies of
+policy judicialisation – in the number of ways the same topic can be raised in
+the courts. The only individual citizens with standing to ﬁle suit directly in
+the Mexican and Brazilian high courts are those permitted to ﬁle amparo or
+habeas corpus suits. However, since the eﬀects of such suits are strictly indi-
+vidual, their broader policy eﬀect is very limited (unless, in the Mexican case,
+jurisprudencia is created).25 This severely limits individual impacts on policy:
+individuals ‘can only question the constitutionality of laws but cannot aspire
+to produce erga omnes eﬀects in case the judiciary positively hears their
+case’.26
+Standing in the Brazilian courts is determined by the type of case at hand:
+not all members of society are entitled to ﬁle the same sorts of cases. A broad
+range of policy actors have special access to legal instruments that are heard
+directly at the STF, notably via the ADIN mechanism, which provides, ar-
+guably, one of the broadest grant of group standing in the world. More
+speciﬁc policy actors in Brazil are able to bring cases before the courts than
+in most other Latin American nations (save Costa Rica and Colombia) or, for
+that matter, in almost anywhere in Europe. Nonetheless, standing is still
+limited to speciﬁc groups, and therefore not every citizen is able to directly
+contest constitutionality at the high court. Since these constitutional review
+instruments have erga omnes eﬀects and are usually heard more rapidly than
+others that arrive on appeal, privileged standing therefore guarantees these
+groups considerable potential policy leverage.27
+One further element to consider is how the various groups are given
+standing: in Mexico, although political parties are allowed to ﬁle actions of
+unconstitutionality, they are only permitted to use this standing to challenge
+electoral laws. Brazilian political parties, by contrast, have been able to ﬁle
+25 In 2002, a bill was approved that gave cabinet ministers a special forum in the STF for suits
+against them as individuals. While suits against ministers often have a public policy mo-
+tivation, we do not consider these here, given their relatively indirect eﬀect on policy.
+26 Patricio Navia and Julio Rı´os-Figueroa, ‘The Constitutional Adjudication Mosaic of Latin
+America.’
+27 Matthew M. Taylor, ‘Veto and Voice in the Courts: Policy Implications of Institutional
+Design in the Brazilian Judiciary,’ Comparative Politics, vol. 38, no. 3 (April 2006).
+Judicialisation of Policy in Brazil and Mexico
+753
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+Table 1. Standing in High Courts
+BRAZIL
+MEXICO
+Do certain groups have
+greater formal standing
+than others?
+Yes
+Yes
+In what cases?
+A number of cases, including the ADIN and cases
+involving senior members of the government, among
+others
+1. The Accion de la Inconstitucionalidad, which must be brought
+by speciﬁc plaintiﬀs 30 days after law passed, and requires
+8 of 11 justices to have general eﬀects.
+2. Constitutional controversies between 3 branches of
+federation or 3 branches of government at any level.
+3. The Supreme Court can also opt to take on the role of
+an appellate court to get involved in cases, or can be
+activated by lower courts or by the Attorney General.
+Which groups?
+In ADINs, for example:
+– President
+– Senate; Chamber of Deputies
+– State governors and legislative assemblies
+– Prosecutor General (Ministe´rio Pu´blico)
+– Brazilian bar association (OAB)
+– Political parties represented in Congress
+– Unions or ‘class entities’ with national reach,
+including industrial and commercial federations.
+1. In Acciones de Inconstitucionalidad, federal laws may be
+contested by 1/3 of either house of Congress, or by the
+Prosecutor General. State law may be contested by 1/3 of
+state legislators. Electoral law may be contested by political
+parties.
+2. In constitutional controversies, all three levels of the
+federation, and all three branches of government, are
+allowed to contest their counterparts.
+Individual standing against
+constitutionality of laws?
+Yes, but without erga omnes eﬀects.
+Yes, but without erga omnes eﬀects.
+Proportion of cases
+decided under high court’s
+original jurisdiction, 2003
+7.7%
+1.7%
+754
+Julio Rios-Figueroa and Matthew M. Taylor
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+ADINs contesting legislation across a wide range of policy arenas,
+occasionally to great eﬀect. In the absence of privileged standing, the
+Brazilian high court would be less of an instrument of policy contestation or,
+at the very least, would have been used in a very diﬀerent form, by diﬀerent
+policy actors.
+It is equally important to note that diﬀerent rules of formal standing allow
+the same issue to be brought to the courts in diﬀerent ways: via diverse
+actors with standing in the high court, through diverse legal remedies, or
+via appeals. In Mexico, for instance, the same contentious issue may be
+challenged in the high court on some grounds by a governor, who enjoys
+formal standing in constitutional controversy cases, and on diﬀerent grounds
+by one-third of legislators taking advantage of their formal standing in action
+of unconstitutionality cases. In other words, within the same country and
+even in regard to the same policy, rules of standing have important
+implications in shaping the legal-political tactics adopted by diﬀerent political
+actors and in broadening the scope of deliberative justiﬁcations used in
+choosing among policies.
+The Judicialisation of Reform
+Having laid out a framework explaining how judicial structure may inﬂuence
+patterns of the judicialisation of policy, we now turn to concrete case studies
+to illustrate how the variables we identiﬁed may inﬂuence the use of the
+courts in policy debates. We compare two pairs of cases: Brazil’s pension
+reform during the 1990s and the reform of civil service pension beneﬁts
+in Mexico which occurred in the early 2000s; and the distinct experience of
+state ownership transformation of the two countries. Before investigating
+these case studies, we summarise here the criteria for selecting the cases, then
+present two propositions concerning the inﬂuence of court structure on
+patterns of judicialisation.
+Selection Criteria
+Our selection criteria focus on policy changes that took place only after
+courts in both countries showed a high degree of independence. Critics
+may argue that the very diﬀerent timing and sequence of policy change in
+Mexico and Brazil, and the appraisal of dissimilar policy topics, complicate
+comparison between the two countries. We recognise that no comparison
+of the patterns of judicialisation across countries will be perfectly parallel
+or rigorously predictive. However, we have drawn on a common logic in
+selecting our cases.
+Judicialisation of Policy in Brazil and Mexico
+755
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+To restrict the universe of comparable cases, we have relied here on
+Lowi’s insight that ‘policy determines politics’. That is, it is possible
+to compare the political deliberations surrounding policies that are quite
+diﬀerent in terms of substantive content if they share common patterns
+of contentiousness.28 Wilson suggests four combinations of the diﬀusion
+or concentration of costs and beneﬁts that may determine a policy’s
+‘politics’.29 Adopting these categories, we focus here on policy cases in
+which the costs of the policy are highly concentrated among speciﬁc
+groups, while the beneﬁts are widely dispersed.
+This combination of concentrated costs and diﬀuse beneﬁts means that
+the policy reforms analysed here are likely to have received backing from a
+majority prior to implementation and also to have evinced strong reactions
+from minority groups aﬀected by them.30 Our reasoning is that the logic of
+collective action applies in courts as much as it does in other political venues:
+policies with highly concentrated costs are likely to lead to more intense
+opposition, thus permitting us to study the resulting patterns of judicial-
+isation in an environment in which all possible legal instruments and tactics
+are likely to be brought to bear.
+Expected Patterns of Judicialisation
+The ﬁrst section of this article sketched out several components of judicial
+structure which inﬂuence the comparative use of the courts in policy debates.
+We recognise that it is not possible – at least not in a two country study – to
+make strong and deﬁnitive claims about the eﬀects of each variable described
+here. Nonetheless, the brief case studies below are useful on at least two
+levels. First, the speciﬁcation of the variables involved in the judicialisation
+of policy hopefully will provide at least a baseline to illustrate the potential
+gains of this paper’s comparative framework. Second, we provide empirical
+grounding that illustrates how court structure inﬂuences legal-political
+strategies, and as a result, how court structure inﬂuences patterns of policy
+contestation.
+Table 2 summarises areas of similarity and diﬀerence in the two countries’
+judicial structures. Brazil and Mexico diﬀer on ﬁve variables: (1) internal
+independence; (2) the bindingness of judicial decisions; (3) the breadth
+of constitutional rights; (4) the breadth of the Supreme Court’s original
+28 Theodore Lowi, ‘American Business, Public Policy, Case-Studies, and Political Science,’
+World Politics, vol. 16 (July): pp. 677–715.
+29 James Q. Wilson, Political Organizations (Princeton, 1995).
+30 Matthew M. Taylor, ‘Activating Judges: Courts, Institutional Structure, and the
+Judicialisation of Policy Reform in Brazil, 1988–2002,’ unpubl. PhD dissertation,
+Georgetown University, 2004, pp. 188–246.
+756
+Julio Rios-Figueroa and Matthew M. Taylor
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+jurisdiction; and (5) the breadth of standing. Our ﬁrst proposition,
+drawn from Variables (3), (4), and (5), is that – other things being equal –
+contentious policies are likely to be more easily contested in Brazil’s STF
+than they are in Mexico’s Supreme Court. This is simply because in Brazil
+there are more justiciable rights in the constitution, the Supreme Court’s
+original jurisdiction is broader, and more political actors have standing
+before the high court to challenge policies in a politically visible manner
+with erga omnes eﬀects.
+Our second proposition regards the interaction between variables (1) and
+(2). Where internal independence is high and bindingness is low, as in Brazil,
+plaintiﬀs will be inclined to either head directly to the high court for a
+deﬁnitive ruling or, if they lack standing or doubt the high court’s sympathy
+to their cause, they may attempt to create delay and uncertainty through
+tactics that take advantage of the internal independence of lower court
+judges. If internal independence is low and the degree of bindingness is
+moderate to high, as in Mexico, we would expect to see more use of the
+high court (relative to use of the lower courts) for those plaintiﬀs with
+standing. Those without standing may still try to delay the process using
+amparo suits, but these delaying tactics will not be as eﬀective as they might be
+under high internal independence. The ultimate goal thus becomes obtaining
+a ﬁnal and binding legal decision by the Supreme Court. With these two
+propositions in mind, we turn now to our ﬁrst pair of case studies.
+Pension Reforms
+Pension reforms undertaken by democratically elected governments in Brazil
+and Mexico diﬀered signiﬁcantly in scope and content, yet they shared the
+common challenge of reducing rights granted to a privileged group of civil
+Table 2. Key Variables in Brazil and Mexico
+Brazil (B), Mexico (M)
+1. Judicial Independence
+a. Autonomy
+b. External independence
+c. Internal independence
+BBM
+BBM
+B>M
+2. Judicial Review
+a1. Constitutional rights
+B>M
+a2. Original jurisdiction
+B>M
+b1. A priori/posteriori
+BBM
+b2. Abstract/concrete
+BBM
+b3. Bindingness
+B<M
+c. Standing
+B>M
+Judicialisation of Policy in Brazil and Mexico
+757
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+servants. The purported beneﬁts accrued to no one speciﬁc group: they
+ranged from ﬁscal and eﬃciency goals to greater equality between public and
+private pensioners. The costs in both cases were to be borne primarily by
+civil servants. We turn ﬁrst to Brazil.
+Pension reform was a top policy priority for Brazil’s reformers in the
+1990s, given the large drain that the pension system represented for the
+Treasury. The pension budget, including both National Social Security
+Institute (INSS) payments to private sector retirees and the government’s
+payments to public sector retirees, grew rapidly from 1988 through the 1990s
+due to the generous terms laid out in the new 1988 Constitution. The system
+functioned precariously, running annual deﬁcits because of generous beneﬁt
+payouts untied to real contributions into the system.31 The system was also
+patently unbalanced, with public sector pensions accounting for a majority
+of the spending.32
+Pension reform was initiated in March 1995, two months after President
+Cardoso’s inauguration, with a constitutional amendment proposal that
+was to face a turbulent, nearly four-year uphill battle in Congress. The
+administration’s three successive policy initiatives on pensions (passage of
+this constitutional reform package, civil service pension tax legislation, and
+a tax on public sector pensions above a certain limit) all led to major use of
+the courts.
+The courts joined in the fray early on. Responding to a request from the
+Communist Party of Brazil (PCdoB), STF minister Marco Aure´lio de Mello
+issued an injunction to suspend congressional hearings on the reform in
+April 1996. Supporters defended Mello’s decision by arguing that the
+Chamber had already rejected the proposed report once, and the Con-
+stitution establishes that no rejected bill can be newly submitted during
+the same congressional session.33 Critics argued that the case for judicial
+suspension of congressional hearings was weak, given that there was no
+imminent risk. The editorial page of one newspaper – no friend of the
+Cardoso administration – commented, ‘reforms face obstacles that come
+from where, a priori, one would least expect them’.34 One month after
+the injunction was issued, it was overturned in a 10-1 vote by the full STF,
+31 The pension deﬁcit totalled 1.9% of GDP in 1996.
+32 In 1996, 48% of pension spending went to 16.6 million private sector workers, while 52%
+went to 2.9 million public sector retirees. Public sector employees paid in contributions
+equivalent to only 17% of total public sector pension outlays in 1996, as compared to 94%
+in the INSS system. P. Godoy, ‘SOS Prevideˆncia,’ Folha de Sa˜o Paulo, 2 January 1998, p. 2–2;
+Ministe´rio da Prevideˆncia e Assisteˆncia Social, Livro Branco da Prevideˆncia Social (Brası´lia,
+1997).
+33 I. G. Silva Martins, ‘Decisa˜o foi eminentemente te´cnica,’ Folha de Sa˜o Paulo, 13
+April 1996, p. 1–5.
+34 ‘No Mı´nimo, Surpresa,’ Folha de Sa˜o Paulo, 13 April 1996, p. 1–2.
+758
+Julio Rios-Figueroa and Matthew M. Taylor
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+which argued that it unjustiﬁably interfered with a matter internal to the
+legislature.
+Judicial contestation became even more heated with the ﬁnal con-
+gressional approval of the reform package between November 1998
+and January 1999. Constitutional challenges ﬂew fast and furious, with an
+unprecedented number (33 in total) of ADINs ﬁled against the Cardoso
+administration’s pension laws. One ADIN in particular, however, would
+have a spectacular eﬀect. In September 1999, the STF approved an injunc-
+tion requested in an ADIN ﬁled by the Brazilian Bar Association (OAB),
+suspending the tax on civil service pensioners and the increased pension
+contribution by active civil servants, in a decision estimated to cost R$2.4
+billion (US$ 1.26 billion). The rapporteur of the STF decision, who was not
+generally viewed as antagonistic to Cardoso’s policy reforms, argued that the
+law should have been implemented via constitutional amendment. More fuel
+was added to the ﬁre at the end of October 1999, when the president of the
+STF argued publicly that a new government proposal that would enact the
+tax on civil service pensions through a constitutional amendment – created
+in the wake of the ﬁrst defeat – was also likely to be unconstitutional. The
+government took the warning to heart, and no further reform was pushed
+by the Cardoso administration.
+In Mexico, pension reform was a longstanding part of the structural
+reform programme that began soon after the debt crisis of 1982. We focus
+here on a single portion of this comprehensive transformation: the reform
+of pension systems for public sector employees of the pension bureaucracy.
+All wage-earning and salaried workers in Mexico are guaranteed access to
+basic welfare services provided by public institutions. The Mexican Social
+Security Institute (IMSS) addresses the needs of all wage earners, except
+those who work in the public sector. The reform in question here aﬀected
+the pensions of the employees of the IMSS, who are represented by their
+union, the SNTSS (Sindicato Nacional de Trabajores del Seguro Social ).
+In August 2004 the Mexican Congress passed a law modifying the pension
+system for these IMSS employees, making new employees responsible
+for their future pension payments through a system of obligatory salary
+deductions. This contrasted with the old system, in which generous IMSS
+pensions were paid by compulsory contributions from businesses and
+non-IMSS workers. According to its supporters, this reform constituted the
+ﬁrst step towards reforming the civil service pension systems. The law was
+passed in both houses of Congress by a centre-right coalition of the PRI and
+PAN parties, against the opposition of the centre-left PRD party.
+The SNTSS union has ﬁercely fought the reform, organising a series
+of political protests, including street demonstrations and the closing of
+buildings, as well as a legal campaign against the law. In the courts, the
+Judicialisation of Policy in Brazil and Mexico
+759
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+union ﬁled an amparo suit to ‘suspend immediately the eﬀects of the law.’35
+The union anticipated this suit would be a cheap and expedient legal weapon
+with which it could win some time while continuing the battle on other
+grounds (recall that all citizens have standing in amparo suits, and although
+decisions in these cases have only inter partes eﬀects, if the amparo is granted
+the law is temporarily suspended until a ﬁnal decision is reached). In this
+case, however, the amparo suit was dismissed in district and circuit courts.
+The SNTSS asked the Supreme Court to directly hear its case, but this
+was denied. Instead the case was subsequently re-heard from scratch by an
+administrative judge who dismissed it.36 The SNTSS’ ﬁnal attempt to have
+its case heard at the Supreme Court also failed, at which point it threatened
+a massive strike, an action which enabled it to achieve some of its demands,
+including the resignation of the Director of the IMSS.37
+The SNTSS was not the only group to challenge the modiﬁcation of
+the pension system. Entrepreneurs and individual workers also ﬁled amparos,
+arguing that their fees should not be used to ﬁnance overly generous pension
+beneﬁts. These were at ﬁrst dismissed by a district judge. The Supreme Court
+used its power of selective review to hear the amparos because of their
+salience, but ultimately ruled against both entrepreneurs and workers.38
+The biggest diﬀerence in these two cases lies in the avenues of access to
+each country’s high court. In both countries, individual challenges to the
+pension reforms were ﬁled in the lower courts, with little success and no
+binding, broader implications. In both countries, opponents of reform also
+tried to halt change by appealing directly to the high court. Here our ﬁrst
+proposition becomes apparent, with a far greater degree of access for policy
+contestation in the Brazilian STF than in the Mexican Supreme Court,
+inﬂuencing the degree of policy contestation regardless of prospect for
+success. The reasons for this diﬀering level of contestation stem largely from
+the breadth of constitutional grounds which permit policy to be contested
+in Brazil, especially when compared with Mexico. Diﬀerentiated standing
+enabled a Brazilian opposition political party to directly contest congressional
+deliberations on the reform, and by hitting on Minister Mello (a particularly
+anti-reform STF judge), to generate considerable uncertainty by obtaining an
+injunction suspending the hearings. Under the rules governing standing in
+Mexico, such a case would not have been permitted (while the Brazilian STF
+minister was ultimately overturned, this was because he was considered to
+35 ‘Busca Sindicato amparo a reforma de IMSS,’ Reforma, 8 August 2004; ‘Advierte SNTSS
+lucha contra ley del IMSS,’ Reforma, 27 September 2004.
+36 ‘Desechan amparo contra reforma al IMSS’, Reforma 29 Sept. 2005.
+37 ‘Tropieza el SNTSS en Ca´mara y Corte’, Reforma 12 Oct. 2005.
+38 ‘Usa bien IMSS coutas – Corte’, Reforma 26 May 2005. At the time of this writing the
+SNTSS is preparing another legal challenge.
+760
+Julio Rios-Figueroa and Matthew M. Taylor
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+have intervened a priori, not because of a problem with the party’s standing).
+Once the reform had passed Congress, the rules also permitted more than
+thirty constitutional challenges from a variety of diﬀerent groups, in sharp
+contrast to the Mexican case, where only one such suit was ﬁled.
+The Mexican SNTSS might have been granted standing in the STF if it
+were ﬁling its constitutional challenge in Brazil; it is, after all, a national
+union which would grant it standing under Brazilian rules. But even
+supposing the SNTSS were ﬁling in Brazil with no standing of its own in the
+STF, it might still have been able to turn to political party allies for legal
+assistance, much as Brazilian civil servants were able to rely on opposition
+political parties as surrogates in their legal battle against pension reform.
+In this case, the SNTSS was unable to access the Mexican high court directly
+on its own and was forced to resort (unsuccessfully) to an amparo, just as
+an individual citizen would have had to. The Mexican centre-left party
+opposed to the reform, the PRD, was also of no help because it held less
+than one-third of the seats in either chamber of Congress. In other words,
+both of these potential Brazilian avenues of access to the high court were
+unavailable to the SNTSS in Mexico.
+To summarise, without getting into the substantive aspects of the two
+cases, what we see here is that long before any judge became involved
+in pension reform, institutional rules and structure inﬂuenced the patterns
+of policy contestation in the judiciary. Furthermore, institutional structure
+inﬂuenced the legal-political tactics of policy opponents, and in the Brazilian
+case, even helped to forge the strategic alliance between civil servants and
+political parties opposed to reform.
+Altering State Property Ownership
+State ownership of property is always a contentious topic, with concentrated
+losses among some groups likely at moments of transition away from or
+toward state ownership. This pair of cases illustrates the eﬀects of court
+structure at two such moments of transition: the privatisation of mining
+giant Companhia Vale do Rio Doce (CVRD) in Brazil, where costs were
+concentrated among its public-sector employees; and the expropriation
+of sugar mills in Mexico, where costs were highly concentrated amongst
+private-sector owners. These cases illustrate our second proposition regard-
+ing the relationship between bindingness and internal independence.
+The privatisation of CVRD engendered strong opposition from a host
+of public sector unions, political parties and opponents of the Cardoso
+government who argued that the costs of the privatisation would be borne
+by broad sectors of the population. They also denounced the fact that the
+new owners would be allowed to exploit an unknown quantity of ‘national’
+Judicialisation of Policy in Brazil and Mexico
+761
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+mineral resources. The Cardoso administration counter-argued that the
+public sector and the economy as a whole would gain from the sales
+revenues, which would reduce levels of debt that cost substantially more
+than the lacklustre net proﬁts provided by CVRD. The direct and immediate
+costs, meanwhile, were largely concentrated in the public sector workforce.
+Signiﬁcant judicialisation of the privatisation process ensued almost as
+soon as the sale was announced, in a sequence one investor described as
+a ‘tragic comedy.’39 The auction of the voting shares of the federal govern-
+ment was originally set for April 1997, but this was delayed by a ﬂurry of
+more than 120 suits which ﬂooded the lower courts. While most of the
+injunction requests in these suits were rejected, at least two were upheld
+in federal regional courts. Frantic government attempts to call a special court
+session to suspend the injunctions failed and as a result the auction was
+postponed indeﬁnitely.
+Trying desperately to proceed, the government appealed to the Supremo
+Tribunal de Justic¸a (STJ), where 27 pending injunction requests were thrown
+out and a single federal court was chosen to hear all cases related to the
+privatisation. Simultaneously, the government was defending itself –
+ultimately successfully – against a single ADIN ﬁled in the STF by oppos-
+ition parties. After a number of legal manoeuvres, the sale was rescheduled
+for 7 May 1997. Seven minutes into the bidding, a new injunction suspended
+the auction. This injunction was struck down ﬁve hours later, and the sale
+was quickly consummated, fetching R$3.2bn for the government coﬀers. But
+even when all this heart-stopping legal action was over, the auction was still
+not oﬃcial. A handful of further injunction requests were upheld in the wake
+of the sale, questioning the legitimacy of the buyers, the legitimacy of a
+shareholders meeting, and so forth. All have since been resolved, and CVRD
+is no longer in government hands, but the path to this end was an arduous one.
+The Mexican experience was equally arduous, even though the country
+was moving in an opposite direction on state ownership. In September
+2001, President Fox (PAN) signed a decree that expropriated 27 of the 59
+Mexican sugar mills. The stated goal was to keep sugar production aﬂoat
+after a decade of economic complications. This reform directly aﬀected
+a small group of sugar mill owners (with close ties to PRI politicians).40
+According to the government, the expropriation would beneﬁt all Mexicans
+by reducing production costs.
+Mill owners quickly began legal proceedings, relying largely on amparos
+intended to delay and/or suspend the expropriations.41 In addition, largely at
+39 C. Rossi, ‘Fundo Soros veˆ ‘tragicomedia’,’ Folha de Sa˜o Paulo, 8 May 1997, p. 1–8.
+40 ‘Encabeza Madrazo marcha azucarera,’Reforma, 9 March 2002, p; ‘Aﬁrman azucareros:
+fracasa expropiacio´n,’Reforma, 31 August 2004.
+41 ‘Machado, la o´ptica tras su expropiacio´n,’ Reforma, 12 December 2001.
+762
+Julio Rios-Figueroa and Matthew M. Taylor
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+the owners’ behest, PRI senators created a special congressional committee
+to analyse and monitor the expropriation process. The committee concluded
+that the major problem facing the sugar industry was the unfavourable trade
+conditions Mexico had accepted in negotiating the North American Free
+Trade Agreement.
+In response, in December 2001, Congress imposed a value-added tax
+on high-fructose corn syrup (HFCS) products, forcing the consumption of
+Mexican sugar. Besides protecting national industry, the objective of the
+special tax was to force the government to re-initiate negotiations with the
+USA on its protected sugar market. The tax was implemented in the face
+of vigorous objections from the executive branch.
+In March of 2002, President Fox tried to revoke the legislative decision by
+issuing an executive order that voided the special HFCS tax. This motivated
+PRI legislators to ﬁle a constitutional controversy suit against the executive
+arguing that it was encroaching on Congress. In June the Supreme Court
+ruled that the executive does not have the constitutional privilege to exempt
+or create taxes via executive order.
+Two years after the expropriation, as sugar production failed to meet
+demand, the original sugar mill owners re-launched their legal battle against
+the government, relying again mainly on the amparo suit. Circuit courts have
+decided in favour of the mill owners in more than half of the cases.42 At
+the time of writing, out of the twenty-seven expropriated sugar mills, only
+thirteen remain in the hands of the government. Fourteen sugar mills have
+been lost by the government in amparo cases that were ﬁrst decided by district
+judges, then aﬃrmed by circuit courts, and ﬁnally upheld by the Supreme
+Court after the Attorney General himself, in a losing gamble, asked the
+Court to rule on the remaining amparos.43
+These two cases diﬀer both in the direction of state ownership trans-
+formation and in the use of lower courts by policy opponents. In the
+Brazilian case, use of the lower courts was a tactical recognition of the fact
+that the government had insulated the privatisation process quite well against
+legal challenge, and that the STF would not be sympathetic to constitutional
+challenges in light of the growing jurisprudential support for privatisation.
+In contrast to the scepticism of senior judges about pension reform, the
+STF had already failed to overturn past privatisations. In light of the signs
+that high court legal tactics were unlikely to succeed, the opposition instead
+adopted political-legal tactics aimed at slowing privatisation and casting
+privatisation results in doubt, rather than halting sales permanently.44
+42 ‘Ilegal, la expropiacio´n azucarera’, Reforma, 16 January 2006.
+43 ‘Piden a Corte revise caso sobre ingenios’, Reforma, 25 April 2004.
+44 Matthew M. Taylor, ‘El Partido De Los Trabajadores y El Uso Polı´tico Del Poder Judicial,’
+Ame´rica Latina Hoy Vol. 37 (August 2004).
+Judicialisation of Policy in Brazil and Mexico
+763
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+These tactics were devised to take advantage of the internal independence
+of judges at the lower levels of the judiciary. Moreover, the high number of
+suits ﬁled was part of a numbers’ game, aimed at distributing suits as widely
+as possible in the hopes of hitting on at least a few sympathetic judges.
+In other words, rather than risk a defeat in the STF, the opposition
+preferred to use the ‘atomisation’ of decision-making at the lower end of the
+judicial pyramid to sow uncertainty for as long as possible, conscious of the
+fact that these suits would probably be overturned as they rose up the judicial
+ladder.
+A few diﬀerences are immediately evident in the use of the Mexican
+courts. With low internal independence and moderate to high bindingness,
+the possibility of hitting on sympathetic low court judges in a broad-based
+legal campaign waged by mill owners and their allies was unlikely to succeed.
+As a result, the residual strategy was to turn to the high court for a deﬁnitive
+decision as often as possible. While the mill owners’ absence of standing
+prevented a direct appeal, as soon as the opportunity presented itself in
+the executive tax decree, the mill owners enlisted the PRI to ﬁle a direct
+high court challenge. While this succeeded, it represented only a very
+partial victory for the mill owners who were forced to continue the con-
+siderably lengthier and less certain battle of amparos higher up the judicial
+hierarchy in order to overturn the expropriation. The ongoing legal battle
+over the expropriations continues to be fought by the old mill owners,
+who are now on their own in the lower courts, without the direct legal
+support of political parties. Although the mill owners seem to be advancing
+their case before the courts, what is evident from these examples is that
+Mexico’s judicial rules tend to provide fewer centripetal forces that ally
+individual constituent interests to political parties who can act as plaintiﬀs
+in the courts. This contrasts with the strong bonds that existed between
+the losers in both pension reform and privatisation there, and political
+actors with standing in Brazil’s high court, such as unions and political
+parties.
+Conclusion
+While we agree with studies that argue judicial independence is a necessary
+condition for eﬀective judicial review, we attempt to go further by identifying
+the particular ways in which judicial independence and judicial review
+structures interact and shape patterns of policy judicialisation in Brazil and
+Mexico. We have shown here that the patterns by which the judiciary
+becomes involved in policy reform depend on the structure of judicial
+independence, the structure of judicial review, and the relation between
+the two.
+764
+Julio Rios-Figueroa and Matthew M. Taylor
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+This article has illustrated how courts have had concrete policy eﬀects in
+the two largest countries in Latin America and, as a result, why it is
+important to incorporate courts into mainstream accounts of politics and
+policy reform in the region. Our brief case studies suggest that patterns of
+judicialisation can be compared to illustrate the eﬀects of diﬀerent structures
+of judicial independence and judicial review on policymaking and, in
+particular, to illustrate how institutional structure may shape political actors’
+strategies and their legal and political tactics. The degree of internal inde-
+pendence of lower court judges from high court judges, the breadth of
+original jurisdiction in the high courts, and the degree of bindingness
+of higher court decisions all play a determinative role in patterns of judicial
+involvement in policy reforms in Brazil and Mexico, through their eﬀect on
+policy actors’ legal tactics.
+The article also aimed to highlight an important consequence of the
+increasing participation of courts in the policy debate; namely, the shift in
+the kinds of deliberative justiﬁcations that go into choosing between policies.
+We have argued broadly that patterns of judicial involvement in policy
+change depend on the number of diﬀerent ways the same issue can reach the
+courts; these avenues of access also inﬂuence the justiﬁcations presented for
+any policy. In the case of the expropriation of the Mexican sugar mills, for
+example, the deliberative justiﬁcations surrounding the policy were expanded
+by policy contestation in the courts. These took place via numerous legal
+mechanisms including the amparo suit, a constitutional controversy and an
+action of unconstitutionality. Each one of these legal instruments implied
+diﬀerent deliberative justiﬁcations: amparo suits brought with them dis-
+cussion of individual rights (property rights, in this case); the constitutional
+controversy engendered a public discussion on the appropriate roles of dif-
+ferent branches of government; and the action of unconstitutionality raised
+the broader topic of the correct mix of incentives for agro-industry. One
+single policy, the mill’s expropriation, challenged with three diﬀerent legal
+instruments, thus produced multiple deliberative justiﬁcations that went
+beyond those oﬀered in the legislative debate over the policy.
+A third contribution here is the recognition that the wider the range
+of judicial review channels available, the greater the likelihood that judicial
+review will be used as a policy tactic. In such cases, the judicialisation of
+policy deliberations may be less likely to lead to the eﬃcient resolution
+of policy debates, because courts will be activated in multiple ways to decide
+on the same issue. This is especially clear in our Brazilian examples, where
+the ‘atomisation’ of judicial decision-making meant that the same policy was
+contested in an almost unlimited gamut of judicial venues, leading to delays
+in establishing the legality of policy choices and the remarkable challenge –
+seen in the privatisation case – of trying to ﬁnd out where in the court
+Judicialisation of Policy in Brazil and Mexico
+765
+
+http://journals.cambridge.org
+Downloaded: 13 Mar 2015
+IP address: 128.172.10.194
+system policy was being challenged. In such an environment, access to
+the high court becomes an even stronger potential policy instrument in the
+hands of those actors privileged with access to the STF’s mechanisms of
+original jurisdiction.
+Finally, our research raises two important questions about the relationship
+between courts and democratic development which should be added to the
+growing research agenda on Latin American courts. First, the increasing
+displacement of policy conﬂicts from their traditional arenas in the executive
+and legislative branches to the judiciary can produce healthy public deliber-
+ation on issues surrounding important public policies, but also delays and
+ineﬃciency in resolving pressing public needs. Is the judiciary’s role in the
+increased public deliberation of policy choices desirable from the standpoint
+of democratic regime stability? Second, we did not have space here to touch
+on the vitally important mirror concept of the judicialisation of policy:
+namely, the ‘politicisation of the judiciary’, or the notion that as the courts’
+power expands, groups seeking particular policy outcomes may attempt to
+place politically friendly judges on the courts or otherwise inﬂuence court
+behaviour to further their political objectives. As a result of the growing
+emphasis on the judiciary as a vital deliberative site, the stakes surrounding
+judicial nominations, rule changes and other forms of external inﬂuence are
+likely to increase. As the judiciary is increasingly politicised, the key question
+will be how new democracies can strike the right balance between judicial
+independence and accountability. This politicisation of the judiciary thus
+points also to the need for more research on the outcomes of our analysis,
+and not only on the process itself: in particular, how do judicial rules and
+judicial behaviour aﬀect broader public decisions on governance, distri-
+bution, and access to justice? What are the implications of courts’ increasing
+policy role for the political system as a whole? These questions suggest the
+need for further cross-national study of the patterns of interaction between
+judicial institutions and political actors. Such research, in turn, promises to
+increase our understanding of the role of courts in shaping policy outcomes,
+political legitimacy and regime sustainability in Latin America’s ﬂedgling
+democracies.
+766
+Julio Rios-Figueroa and Matthew M. Taylor

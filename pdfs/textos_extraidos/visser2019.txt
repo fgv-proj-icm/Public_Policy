@@ -1,0 +1,948 @@
+Full Terms & Conditions of access and use can be found at
+https://www.tandfonline.com/action/journalInformation?journalCode=ujsj20
+Justice System Journal
+ISSN: 0098-261X (Print) 2327-7556 (Online) Journal homepage: https://www.tandfonline.com/loi/ujsj20
+Controlling the Courts: New Public Management
+and the Dutch Judiciary
+Max Visser, Roel Schouteten & Josje Dikkers
+To cite this article: Max Visser, Roel Schouteten & Josje Dikkers (2019): Controlling the
+Courts: New Public Management and the Dutch Judiciary, Justice System Journal, DOI:
+10.1080/0098261X.2018.1539645
+To link to this article: https://doi.org/10.1080/0098261X.2018.1539645
+© 2018 National Center for State Courts
+Published online: 12 Jan 2019.
+Submit your article to this journal 
+Article views: 166
+View Crossmark data
+
+Controlling the Courts: New Public Management and the
+Dutch Judiciary
+Max Vissera
+, Roel Schoutetena
+, and Josje Dikkersb
+aInstitute for Management Research, Radboud University, Nijmegen, The Netherlands; bInstitute for Work and
+Organization, University of Applied Sciences Utrecht, Utrecht, The Netherlands
+ABSTRACT
+Like many public sector organizations, in the past decades the Dutch judi-
+ciary has come to adopt New Public Management (NPM) practices and
+processes. In this article, we analyze this adoption from a management
+and organizational control perspective. Using data from a large survey
+among Dutch judges, we see a “mismatch” between the nature of the
+NPM-inspired management control systems and the work-related experien-
+ces of the judges and inquire into the consequences thereof for judicial
+work and organization.
+KEYWORDS
+New Public Management;
+management control; Dutch
+judiciary; quality; job
+demands; job resources
+Among public sector organizations in Western democracies, the judiciary (trial courts, appellate
+courts, supreme courts, and specialized courts, law tribunals, and boards) traditionally has occu-
+pied a special position. Shielded from direct legislative and executive intervention by their inde-
+pendent position in the “trias politica” constitutional frameworks governing most Western
+democracies, for a long time the courts have remained insulated from public and political
+demands for more effectiveness, efficiency, and transparency (De Santis and Emery 2017; Holvast
+and Doornbos 2015; Schauffler 2007).
+This all changed when, in the late 1980s and early 1990s, courts in many Western countries
+were confronted with increasing caseloads, while a concomitant economic recession necessitated
+budget cuts, which prompted a renewed interest in court delay and litigation costs. This coin-
+cided with the rise of movements such as “Reinventing Government” (Osborne and Gaebler
+1992) and “New Public Management” (NPM) (Diefenbach 2009; Hood 1995), according to which
+public sector organizations should become more “business-like,” efficient, and transparent.
+In the United States, these developments led to the creation by the National Center for State
+Courts and the U.S. Department of Justice of the Trial Court Performance Standards (TCPS),
+later CourTools (Fox, Yamagata, and Harris 2014; Keilitz 2014; Schauffler 2007), a development
+applauded on various pages in the influential book by Osborne and Gaebler (1992, 142, 350,
+353). A decade later, the European Commission for the Efficiency of Justice (CEPEJ) of the
+Council of Europe launched a comparable policy stream, directed at improving judicial account-
+ability, not only for the provision of a fair trial under the rule of law but also for the provision of
+good-quality judicial services and an efficient and effective administrative organization of trial
+capacity and services (Ng, Velicogna, and Dallara 2008; Mak 2008; Piana 2017). This led to a new
+view of judges, no longer “exclusively as an independent decision-maker, but also as an actor
+CONTACT Max Visser
+m.visser@fm.ru.nl
+Institute for Management Research, Radboud University, PO Box 9108, 6500 HK
+Nijmegen, The Netherlands.
+ 2018 National Center for State Courts
+This is an Open Access article distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives License (http://
+creativecommons.org/licenses/by-nc-nd/4.0/), which permits non-commercial re-use, distribution, and reproduction in any medium, provided the
+original work is properly cited, and is not altered, transformed, or built upon in any way.
+JUSTICE SYSTEM JOURNAL
+https://doi.org/10.1080/0098261X.2018.1539645
+
+with a role to play as part of a public organization delivering services to the public” (Contini and
+Mohr 2007, 27–28; Mohr and Contini 2007).
+Among European countries, the Netherlands in particular adopted important aspects of NPM
+in its judicial system, in which a part of the judiciary played an active supportive role (Sterk and
+Van Dijk 2016; Stroink 1998; Van den Knaap and Van den Broek 2000). However, after a decade
+of working under the new system, resistance reared its head. In 2012 and again in 2015, judges
+issued manifestos and surveys criticizing the new system, which in both years were signed and
+supported by one third of all judges (Berendsen et al. 2015). In 2016 judges even used the survey
+results to directly petition Dutch Parliament and in 2018 actively supported a bill to change the
+budgeting rules for the judiciary (Berendsen et al. 2018). All these constitute major signals and
+rather unprecedented moves from a normally quiet and detached group of public-sector profes-
+sionals (Ng, Velicogna, and Dallara 2008; Visser 2016).
+In this article, we analyze the development toward NPM ways and means in the Dutch judiciary
+from a management and organizational control perspective. In particular, we inquire into the ques-
+tion of how judges could become disenchanted with the concrete results of these NPM-inspired
+developments, in spite of the active role of a number of them in the whole process leading to those
+results. Corroborating more general stories of disenchantment with data from a large survey among
+Dutch judges (Fruytier et al. 2013), we see a “mismatch” between the nature of the NPM-inspired
+management control systems and the work-related experiences of the judges and inquire into the
+nature of this possible mismatch and into the consequences thereof for judicial work experiences.
+Toward these purposes, we first describe the main features of NPM as a form of management
+and organizational control and how these have been developing in the Dutch judiciary over the
+past decades. Second, we present and analyze the survey data from Fruytier et al., after which this
+article is rounded off with conclusions, discussion, limitations, and implications for practice
+and theory.
+NPM and management and organizational control: theory
+NPM generally implies that public-sector organizations should become more efficient and effect-
+ive in their public services delivery, and more transparent and accountable in their administrative
+processes. Specifically, they should increase their ability to detect and correct societal problems,
+and thus improve the quality and quantity of public services delivery (Osborne et al. 2015; Van
+Dooren 2011; Visser and Van der Togt 2016). Further, public-sector organizations should be
+made publicly accountable for their performance and achievements, and thus increase their
+responsiveness to social and political demands and deliver “value for money” to the taxpayers
+(Bovens, Schillemans, and ’t Hart 2008; Sabel 2004; Sabel and Simon 2011).
+To accomplish this, under the influence of NPM public-sector organizations have become “flat”
+and “accountable” (Hood 1995; Sabel 2004). Flat implies that policy executing agencies at “street lev-
+el” are administratively separated from the central policy-making and political authorities. Instead of
+the existing departmental pyramidal structure and hierarchical forms of governance, a flatter struc-
+ture with contractual forms of governance has been instituted, sometimes reducing the scope of gov-
+ernment by contracting out to private parties. Accountable implies that these street-level
+bureaucratic instances are contractually obliged to achieve the general goals, set by central political
+and bureaucratic authorities, by having those goals translated into detailed administrative targets, by
+having their compliance with those targets quantitatively measured by numerous performance indi-
+cators, and by being subject to financial incentive and sanction systems, designed in the service of
+these targets (Bevan and Hood 2006; Bovens, Schillemans, and ’t Hart 2008; Visser 2016).
+NPM implies an approach to management and organizational control as a cybernetic model,
+connoting a “process in which a feedback loop is represented by using standards of performance,
+measuring system performance, comparing that performance with standards, feeding back
+2
+M. VISSER ET AL.
+
+information about unwanted variances in the system, and modifying the system” (Green and
+Welsh 1988, 289). Preconditions for such a system are that objectives of performance activities
+are relatively unambiguous, that outputs of activities are relatively easily measurable, that effects
+of management interventions in those activities are relatively well known, and that activities are
+repetitive (Jansen 2008; Hofstede 1978, 1981; Verbeeten 2008).
+As evidenced in NPM practices, cybernetic control in this vein mostly takes on a distinctive
+form of management “by the numbers,” characterized by a fascination with “objective,” simple
+quantifiable performance criteria and an overemphasis on highly visible and observable behaviors
+to the detriment of less visible and observable behaviors (which, however, may be equally or even
+more important for the organization) (Diefenbach 2009; Kerr 1995). As such, it is only suited for
+the control of routine industrial production and manufacturing processes. When objectives of
+performance activities are more ambiguous, outputs of activities are difficult or impossible to
+measure, effects of management interventions in those activities are relatively unknown and activ-
+ities are nonrepetitive, the routine-type control should be replaced by more intuitive, judgmental,
+or political types of control (Hofstede 1981; Noordegraaf and Abma 2003).
+Problems arise when there is a mismatch between the nature of the activities to be controlled
+and the nature of the management and organizational control system. Application of routine-type
+control to other than industrial manufacturing activities may lead to “gaming,” following which
+employees “tinker” with the control system by changing performance objectives, changing output
+measurements, making unintended interventions, by withdrawing from the control system
+altogether, or by goal displacement, whereby the organization’s objectives are replaced by the
+measurements (Hofstede 1981; Kerr 1995). Many dysfunctional and perverse effects of gaming
+have been assessed in the literature, among them additional “red tape,” tunnel vision, risk avoid-
+ance, symbolic compliance, short-termism, and a lack of interorganizational responsibility for
+cross-cutting problems (e.g., Bevan and Hood 2006; Diefenbach 2009; Noordegraaf and Abma
+2003; Osborne et al. 2015; Pidd 2005; Sabel 2004; Teelken 2012; Van Dooren 2011; Van Thiel
+and Leeuw 2002; Verbeeten 2008).
+However, managers want to make routine control systems work, and often react to instances
+of gaming by intensifying this type of control. This, by virtue of its increasing inappropriateness
+to the situation at hand, may lead to an illusion of control, in which the theories on which con-
+trol is based increasingly tend to replace the real world. The illusion of control often only can be
+maintained in a punitive atmosphere, in which accountability tends to take an instrumental form:
+vertical and hierarchical, centered on individuals who are believed to be driven by self-interest
+and opportunism, in a context of legitimate mistrust, hard controls, and disciplining (Visser
+2016; Vosselman 2016).
+NPM and developments in the dutch judiciary
+Historically, the Dutch judiciary has been deeply influenced by the so-called French period
+(1795–1813), during which the Netherlands (like most of northern Europe) indirectly and later
+directly was ruled by the French. Among others, this period brought a strong French influence
+on the development of Dutch civil and criminal law, and it inspired a geographical organization
+into 19 “arrondissementen” (trial courts) and five “ressorten” (appellate courts) that was to last
+for 175 years (Langbroek 2010).
+In terms of legal philosophy, the Dutch judiciary also inherited some typical French character-
+istics. First, Dutch courts do not have the power of judicial review, and thus cannot make judg-
+ments about the constitutionality of actions of the executive and legislative branches of
+government. This is particularly visible in the role of the Dutch Supreme Court (“Hoge Raad”)
+that functions as a court of cassation in the French mold, rather than an authoritative interpreter
+of the constitution as “supreme law of the land” like the U.S. Supreme Court (Grossman and
+JUSTICE SYSTEM JOURNAL
+3
+
+Wells 1988, 96; Langbroek 2010). Second, and related, in their interpretation and application of
+laws Dutch judges in general consider themselves bound to the goals and intentions of the legisla-
+tive and executive branches passing those laws, in a manner reminiscent of Montesquieu’s famous
+dictum that “les juges de la nation ne sont, … que la bouche qui prononce les paroles de la loi;
+des ^etres inanimes, qui n’en peuvent moderer ni la force ni la rigueur” (cited in Mohr and
+Contini 2007, 287; Merryman 1996). It has led to a generally low political profile of Dutch judges,
+who
+only
+reluctantly
+decide
+on
+cases
+having
+strong
+political
+implications
+or
+impact
+(Langbroek 2010).
+In terms of selection and tenure, the Netherlands has a mixed recruitment system, following
+which prospective judges are recruited not only among recent law graduates, but also among
+experienced members of the legal profession. Contrary to the U.S., Dutch judges are never
+elected, and contrary to many European countries, Dutch judges are almost all full-time
+employed professional judges. They are appointed for life, and although they can be dismissed by
+the Dutch Supreme Court, this has almost never occurred. Selection, training, and career develop-
+ment
+are
+managed
+internally
+by
+the
+judicial
+branch
+(Holvast
+and
+Doornbos
+2015;
+Langbroek 2010).
+In terms of culture and management, until the mid-1990s Dutch judges generally worked as
+independent professionals, having much autonomy and leeway in determining their judicial work
+and not paying much attention to matters of management, organization, money, or production,
+providing a working culture combining “individual autonomy and administrative passivity … fre-
+quently justified by reference to the constitutional doctrine of the separation of powers”
+(Bunjevac 2017, 815; Langbroek 2010). Judges in those times tended to form an informally oper-
+ating “corps” of generally like-minded individuals with often comparable, middle- to upper-class
+backgrounds, habits, and interests, hierarchically on a different level from the judicial assistants
+and law clerks (De Groot-Van Leeuwen 1991). Internal court organization, case assignment, and
+work division were informally arranged on a collegial, consensual basis by all judges working in a
+particular court (“gerechtsvergadering”) (Ingelse 1996). Court funding was input-based: courts
+received yearly budgets from the Department of Justice, based on departmental norms for person-
+nel, housing, and other costs. Court presidents could negotiate directly with the Department
+about these budgets, and often extra budgets were obtained by the more astute or demanding
+presidents (Holvast and Doornbos 2015; Langbroek 2010).
+Many of these long-term characteristics of the Dutch judiciary have changed in the past two
+decades under the influence of four important NPM-inspired developments. The first develop-
+ment pertains to judicial organization, control, and governance. In the course of the 1990s a
+steady increase in caseloads necessitated an increase in the scale and professionalization of court
+organization, while also increasingly criticism was being leveled at the judiciary for being
+“archaic, inefficient and fragmented” (Holvast and Doornbos 2015, 54). Many judges felt that
+these criticisms had some merit; subsequently, a number of them became actively involved in
+thinking how they could manage and organize themselves more efficiently and effectively. Partly
+their involvement was motivated by a fear of being managed and organized by the executive
+branch, and thus running the risk of losing much of their judicial independence (Sterk and Van
+Dijk 2016). In the late 1990s, for a brief period of time experiments were conducted with dual
+structures for the management of support administrative functions and the management of the
+judicial work itself. In 2002, however, a fully integrated management structure was introduced,
+with each court now having one executive board responsible for all administrative and manage-
+ment functions. From 2002 to 2013, these boards consisted of judges who performed these board
+duties on a part-time basis, but from 2013 onward boards consist of full-time “managing judges.”
+All court boards in their turn since 2002 are overseen by a national Council for the Judiciary
+(“Raad voor de Rechtspraak,” hereafter the Council), which has two main functions. First, in
+many aspects it operates as a “corporate board” for a “holding” of courts. Courts are accountable
+4
+M. VISSER ET AL.
+
+to the Council for achieving the norms and standards the Council sets for the quality of judicial
+work, for the quantity of cases adjudicated, and for the budgets. Second, the Council intends to
+safeguard the independence of the judiciary from interventions by the executive and political state
+powers (“trias politica”). The Council is accountable to the Dutch Department of Justice for the
+administration and management of the judiciary as a whole, and, consequently, the Dutch
+Minister of Justice no longer can intervene in the management of single courts (Frissen et al.
+2014; Holvast and Doornbos 2015; Langbroek 2010).
+Related to this, the second development pertains to a changing division of labor within the
+courts. The increase in caseloads during the 1990s necessitated some division of labor and delega-
+tion of tasks to the supporting staff. Currently, judicial assistants and clerks play an important
+role in preparing cases and writing draft sentences and judgments, leading to courts being organ-
+ized “less as professional organizations in which professional and supportive (administrative and
+managerial) duties are conducted separately, and more as businesses, in which labor is divided
+based on the principle of efficiency” (Holvast and Doornbos 2015, 58; Bunjevac 2017; Frissen
+et al. 2014).
+The third development pertains to a change of emphasis on judicial quality to an emphasis on
+court quality. From the 1990s onward, quality considerations have come to play an important
+role in the transformation of the Dutch judicial organization (Ten Berge 1998). At the turn of the
+century, drawing on the U.S. experience with TCPS, a small project group of judges, support staff,
+external consultants, and specialists from the Department of Justice developed the first essential
+indicators for court quality (“INK” system). Later on, this has been enlarged into the current,
+more encompassing, quality system “RechtspraaQ.” This system comprises, mostly quantitative,
+quality norms and standards for the yearly hours of training, reflection, and education for judges
+and judicial assistants, for the correct motivation of sentences in criminal cases (“Promis” pro-
+ject), and for case throughput times (Court of Audit 2016; Langbroek, Van der Velde, and Van
+der Linden 2015). However, for important quality criteria such as collegial intervision, learning
+from appeals, and keeping up with recent developments in legislation and case law, no agreed
+norms and standards have been developed yet. The Council acknowledges that judges themselves
+should determine the quality standards for their work, but these professional standards are slow
+to evolve (Albers 2009; Court of Audit 2016; Frissen et al. 2014). A related quality and innovation
+program with the purpose of digitalizing and streamlining judicial procedures (“KEI”) has been
+put on hold after four years, due to high costs and a lack of concrete results (Van Raalte 2018).
+The fourth development pertains to a transition from input to output budgeting. In 2002 a
+new output-based budget system was established, first based on estimated production and from
+2005 onward on realized production. Since then, judicial work is being divided into ten “product
+groups,” consisting of a total of 53 case categories (e.g., civil, tax, criminal, administrative). For
+each case category, the “production time” is periodically assessed in units of minutes per full-time
+equivalent, different for judges and non-judges, on the basis of the “Lamicie” system (Sterk and
+Van Dijk 2016; Van der Knaap and Van der Broek 2000). The basic “minute price” is every three
+years renegotiated between the Council and the Department of Justice. The “products” involved
+are sentences, judgments, court orders, hearings, and so on. Every year the Council negotiates
+with each individual court a budget and an expected production volume, based on the formula:
+number of cases decided per category  minutes per case  minute price. When a court produces
+less than this agreed volume, it has to pay back 70 percent of the budget that was appropriated
+for the failed amount of production (be it that a court can never go “bankrupt”). When a court
+produces more than this agreed volume, it receives 70 percent of the budget that was appropri-
+ated for the extra amount of production. The specific sums involved in these fines and compensa-
+tions for specific courts are part of a special “leveling fund” (“vereveningsfonds”) of the Council.
+Courts are allowed to keep up to five percent of the money, obtained by extra production, as
+strategic reserves. Most courts also use this national allocation model for internal purposes,
+JUSTICE SYSTEM JOURNAL
+5
+
+translating the “minute prices” and production volumes into internal production goals for court
+sections and, ultimately, individual judges (Court of Audit 2016; Frissen et al. 2014; Holvast and
+Doornbos 2015; Langbroek 2010).
+In spite of the active involvement of a number of judges in the process, these four develop-
+ments appear to have taken the Dutch judiciary in a direction increasingly contested by many
+judges. This is most pronounced in a Manifesto of seven appellate court judges of December
+2012, signed two months later by 700 of around 2,400 Dutch judges:
+We are deeply concerned about the organization of the judiciary and the adverse consequences for the
+internal independence of judges and the quality of the administration of justice. ( … ) Increasingly, courts
+are managed like large companies, in which output figures are leading, the Council for the Judiciary acts as
+a “Board” and court managers as “Divisional Boards.” ( … ) Over the past few years, output norms and
+budgets have become dominant. Every year a greater production has to be realized with the same persons
+and means. ( … ) As a consequence, the quality of the administration of justice is under pressure, many
+cases do not receive the attention they deserve, and irresponsible choices have been made to meet outcome
+criteria. The judiciary is not a place for production workers, but for professionals instead. (Holvast and
+Doornbos 2015, 49; Frissen et al. 2014)
+Methods
+Sample and procedure
+In response to the discontent visible from the broad support of the Manifesto, in 2013 the Dutch
+Society for the Judiciary (“NVvR”) commissioned a large survey on the nature and development
+of judicial work among its 2,661 members, which includes almost all Dutch judges and public
+prosecutors. The survey was completed by 684 members (a response rate of 25.7 percent), of
+which 615 respondents gave information on their job type or function level. Among these there
+were 483 judges (364 trial court and 119 appellate court), who constitute the definitive sample for
+this article, representing around 20 percent of all judges in the Netherlands.
+In addition, interviews were held with judges and public prosecutors to gain a better under-
+standing of the survey data. The interviewees were selected from different geographical districts
+(i.e., North, Central, West, and South Netherlands), organizational levels (trial and appellate
+courts), and areas of expertise (e.g., civil, tax, or criminal law). Since this article focuses on
+judges, we only included the interviews with judges. These six semi-structured interviews were
+held face-to-face by two researchers and were recorded with permission of the judges to improve
+(inter-rater) reliability.
+The survey questionnaire and follow-up interviews centered on the nature of the psychosocial
+demands and resources in judges’ work as a result of NPM, and their effects on judges’ work
+experiences. Theoretically and methodologically, the prime source of inspiration of the research
+was the Job Demands-Resources (JD-R) model. This is a widely used model, originating from
+industrial and organizational psychology, which focuses on the work-related predictors job
+demands and job resources in explaining psychological well-being. More specifically, job demands
+refer in this context to physical, psychological, social, or organizational aspects of the job that
+require sustained physical and/or psychological (cognitive and emotional) effort or skills and are
+associated with certain physiological and/or psychological costs (e.g., work pressure, emotional
+stressors at work). The underlying notion of the JD-R model is that work-related resources—such
+as job autonomy and social support—have the potential to buffer job demands and, subsequently,
+can help in maintaining or improving one’s psychological well-being (Bakker and Demerouti
+2007, Demerouti et al. 2001; Karasek et al. 1998). It has been estimated that the JD-R model has
+been applied in thousands of organizations and has scientifically inspired hundreds of empirical
+articles (Bakker and Demerouti 2017).
+6
+M. VISSER ET AL.
+
+Measures
+Based on the goal of the survey and the underlying JD-R model, the survey questionnaire con-
+tained four sets of indicators (for a more detailed description, see Table 1). The first set pertained
+to symptoms of (increased) workload and contained the indicators balance between workload and
+job resources, primary tasks in allocated time, and perceived workload. The second set pertained to
+symptoms of concessions to the quality of adjudication, indicative of possible detrimental out-
+comes of NPM in the judiciary, and contained the indicators concessions to quality of work and
+actual-desired quality. The third set pertained to psychosocial demands and contained the indica-
+tors feelings of time pressure, worrying/frustration about the work, and increased production pres-
+sure. The fourth set pertained to psychosocial resources and contained the indicators satisfaction
+with work environment, social support from management, social support from colleagues, autonomy,
+and use of development opportunities.
+Analyses
+In the quantitative analysis, first preliminary analyses were performed in SPSS to check for out-
+liers (frequency analyses and central tendency measures), and to check Cronbach’s alpha for the
+subscales described above. In addition, a factor analysis (PAF) was performed to test the number
+of dimensions underlying the subscales. Second, descriptive analyses were performed to determine
+the frequencies, mean scores, and standard deviations of the central variables mentioned in the
+Table 1. Description of variables (N ¼ 483).
+Variables
+Item(s)
+Cronbach’s Alpha
+(Example) item(s)
+Balance between workload and
+job resources
+1
+–
+My workload is currently higher than my
+resources to cope with these demands.
+Primary tasks in allocated time
+1
+–
+Can you perform your primary tasks (i.e., the
+essential tasks of your job for the productiv-
+ity and quality of the job) within the allo-
+cated time for these tasks?
+Perceived workload
+1
+–
+On a scale from 1 to 10 (10 being high), can
+you indicate the level of your cur-
+rent workload?
+Concessions to quality of work
+1
+–
+In order to execute my primary tasks within
+the allocated time, I have to make conces-
+sions to the quality of my work.
+Actual – desired quality
+2
+NA
+(1) On a scale from 1 to 10, 10 being best,
+how would you grade the current quality of
+your work? (2) On a scale from 1 to 10, 10
+being best, how would you want to grade
+the quality of your work?
+Feelings of time pressure
+5
+0.70
+The number of hours available for preparing
+assizes is sufficient.
+Worrying/frustration about
+the work
+5
+0.63
+Worries about possible miscarriages of justice
+keep me occupied.
+Increased production pressure
+6
+0.65
+I notice that the number of cases per week I
+have to deal with have increased over the
+last couple of years.
+Satisfaction with work
+environment
+3
+0.64
+On a scale from 1 (very dissatisfied) to 10
+(very satisfied), how satisfied are you about
+the ICT support at work?
+Social support
+from management
+3
+0.88
+My supervisor/board helps finding solutions
+to problems.
+Social support from colleagues
+2
+0.61
+If necessary, my colleagues help to finish
+my work.
+Autonomy
+4
+0.70
+I have a lot of freedom in deciding how to do
+my work.
+Use of development
+opportunities
+2
+0.66
+I use the available development opportunities.
+JUSTICE SYSTEM JOURNAL
+7
+
+previous paragraph. In the qualitative analysis, first the interview data were anonymized and gen-
+erally transcribed. Subsequently, the data were analyzed using the following steps in the frame-
+work approach (e.g., Pope, Ziebland, and Mays 2000): (1) familiarization with the raw data using
+the transcripts and audio tapes; (2) identifying a thematic framework by which the data can be
+examined (in this study NPM and JD-R theories); (3) indexing by applying this theoretical frame-
+work to the interview data; (4) charting or rearranging the data (synthesis) resulting in charts
+reflecting condensed views and experiences of the six respondents with regard to, for example,
+their workload; and (5) mapping and interpretation of the charts to map the range and nature of
+the central variables studied and arrive at central underlying themes (e.g., workload, psychosocial
+demands). These central themes are described in the next section and supported by citations.
+Results
+Descriptive analyses of the survey data reveal that most judges experienced a high level of work-
+load (Table 2). A full 73.5 percent of the judges answered “sometimes” or “often” to the question
+whether the workload was higher than the resources to cope with these demands (mean is 2.97
+on a scale from 1 to 4). In a follow-up question, 76.4 percent indicated that this workload
+increased during the previous year. Further, 72 percent replied that they cannot execute their
+assigned primary tasks within the allocated time. The most important reasons are the high num-
+ber of cases or tasks (58 percent), the complexity of the cases or tasks (49 percent), and the add-
+itional tasks to be executed that deviate from the primary tasks (31 percent). To compensate for
+this shortage of allocated time, 69.8 percent work overtime. Also, 71.2 percent of the judges indi-
+cated that they “often” or “sometimes” make concessions to the quality of the work in order to
+execute the assigned tasks within the allocated time (mean score 2.15 on a scale from 1 to 4).
+When asked about the quality the judges deliver currently and what they would like to deliver
+(on a scale from 1 to 10), the mean difference score is -1.13, meaning that on average the judges
+feel that they deliver lower quality than desired. Finally, the judges’ mean experienced workload,
+on a scale from 1 (low) to 10 (high), is 7.79. Based on these indicators of workload, we conclude
+that the judges experience high levels of workload, that this increased over the last couple of
+years, and that it has detrimental effects on the quality of their work.
+Table 2. Descriptive statistics of main variables in the study (N ¼ 483).
+Variables
+Mean
+SD
+Possible range
+Balance between workload and
+job resources
+2.97
+0.81
+1 (job resources match work-
+load) – 4 (workload higher
+than job resources)
+Primary tasks in allocated time
+0.72
+0.45
+0 (yes) – 1 (no)
+Perceived workload
+7.79
+1.47
+1 (low) – 10 (high)
+Concessions to quality of work
+2.15
+0.86
+1 (often) – 4 (never)
+Actual – desired quality
+1.13
+0.94
+4 (actual quality lower than
+desired) – 3 (actual quality
+higher than desired)
+Feelings of time pressure
+3.59
+0.68
+1 (low) – 5 (high)
+Worrying/frustration about
+the work
+3.05
+0.58
+1 (low) – 5 (high)
+Increased production pressure
+3.64
+0.61
+1 (low) – 5 (high)
+Satisfaction with work
+environment
+6.44
+1.15
+1 (low) – 10 (high)
+Social support
+from management
+3.41
+0.85
+1 (low) – 5 (high)
+Social support from colleagues
+3.93
+0.63
+1 (low) – 5 (high)
+Autonomy
+3.52
+0.68
+1 (low) – 5 (high)
+Use of development
+opportunities
+3.95
+0.58
+1 (low) – 5 (high)
+8
+M. VISSER ET AL.
+
+Regarding the psychosocial demands in the work, the survey data reveal that the feelings of
+time pressure and increased production pressure are rather high (respectively, 3.6 and 3.7 on a
+scale from 1 to 5). The level of frustration about the work is somewhat lower (3) but indicates
+that quite a few judges do worry about their work.
+The psychosocial resources are also quite high (3.4 or higher). Especially social support from
+colleagues and the use of development opportunities are highly valued resources, with which
+judges can deal with psychosocial demands. However, the high levels of workload and the extent
+to which the judges need to make concessions to the quality of their work suggest that these
+resources are not sufficient to deal with the high demands.
+A comparison of the mean scores for trial and appellate court judges (see Table 3) shows only
+a limited number of significantly different mean scores. Appellate court judges experience a
+greater imbalance between job demands and job resources, they perceive a higher workload, and
+they are less capable of using the development opportunities than trial court judges. But the
+appellate court judges complain less about being able to conduct their primary tasks in the allo-
+cated time, and they are more satisfied with their working environment. The data and additional
+analyses using other control variables (e.g., gender, age, tenure) offer no explanation for these
+differences.
+These quantitative results are corroborated by the qualitative data gathered from the interviews
+with six judges. The following quote from a senior judge specialized in civil law may shed some
+light on the job demands currently experienced in the judiciary sector.
+There is a feeling that our work is becoming increasingly bureaucratic. There is too little influence to exert.
+There are a lot of obligations such as meetings that one has to attend and study points one has to gain. The
+internal rules touch the content of judiciary work and when this happens this is detrimental. As a judge,
+you should not feel pressured by these procedures and rules thereby altering your handling of a
+case’s content.
+This sentiment of increasing rules and procedures and decreasing influence and focus on the
+content of judiciary work was echoed by other experienced judges. Some judges focused on the
+quantitative workload by, for example, comparing the number of cases that they had to process
+ten years ago with the current number. Others emphasized more qualitative aspects, such as the
+increasing complexity of cases due to—among others—new European or Dutch law.
+An additional job demand consisted of the quantitative production goals that judges are eval-
+uated by. As expressed by a senior judge of family law:
+Table 3. Differences between trial and appellate court judges
+Variables
+Trial court
+judges (Mean)
+Appellate court
+judges (Mean)
+Significance
+of difference
+Balance between workload and job resources
+2.93
+3.08
+#
+Primary tasks in allocated time
+.74
+.66
+#
+Perceived workload
+7.72
+8.02
+#
+Concessions to quality of work
+2.14
+2.18
+Actual – desired quality
+1.16
+1.03
+Feelings of time pressure
+3.59
+3.57
+Worrying/frustration about the work
+3.05
+3.05
+Increased production pressure
+3.63
+3.67
+Satisfaction with work environment
+6.37
+6.66
+
+Social support from management
+3.38
+3.51
+Social support from colleagues
+3.91
+3.96
+Autonomy
+3.49
+3.61
+Use of development opportunities
+3.99
+3.83
+
+N
+364
+119
+#p < .1; p < .05.
+JUSTICE SYSTEM JOURNAL
+9
+
+I also see this bureaucratization, when you are constantly being judged by your numbers [of cases, ed.], you
+start acting like it.
+Regarding job resources, the decrease of autonomy and influence was frequently mentioned by
+the judges. As one judge of criminal law put it:
+Because of this you have less influence on your own schedule, which can be perceived as demanding by
+people who cherish autonomy.
+This closely related to a more focal change in the appreciation of judges’ work. As mentioned
+by several of the interviewed judges, they felt less acknowledged by managers in their professional
+expertise because this was not, and probably cannot be, taken into account when evaluating
+their work:
+With criminal law, this means that the work almost is not a craft any longer. This should not be the case.
+All six judges who were interviewed experienced high levels of work pressure. Most of them
+also mentioned that they (or their colleagues) often considered lowering their quality standards to
+deal with their job demands. Most used the metaphor of grades (“from 10 to 8” or from “8 to 6”
+on a 10-point scale) to express these feelings. In addition, all judges mentioned their profound
+honor and loyalty to their work and emphasized the effect of this personal factor on their work
+pressure. “No” simply is not an option for most judges—their work is a vocation to them.
+Finally, although the six judges were not specifically queried about their initial support for the
+NPM-related changes, some of them looked back on the ways things have developed over time.
+Reflecting on the development of “production targets,” the senior judge who specialized in civil
+law said:
+For how long have these production targets been trendy? Even before that there were norms, but they were
+generally not adhered to. Only since a few years we have this financial thinking at our court. Some sort of
+cost-benefit analysis is being performed, giving the number of cases you have to produce. This feels strange
+for all of us. On the one hand it provides a clear financial picture, but on the other hand it should not
+influence our daily work. We are not a company.
+Another judge working in civil and criminal law reflected on the different perceptions of pro-
+duction targets:
+The transition from a situation of almost no feedback to a situation of concrete production figures has led
+to two groups. One group that understands that the judiciary is in fact some sort of company. If you have
+budgets and costs, then you want to use them for management purposes. The other group sees only one
+task and that is to adjudicate in the best possible way. They refuse to be influenced by production demands
+and Lamicie norms.
+Conclusion and discussion
+In this article we sketched how over the past two decades the Netherlands adopted important
+aspects of NPM in its traditional judicial system. Specifically, the Dutch judiciary saw important
+changes in judicial organization, control and governance, changes in the division of labor within
+the courts, a change of emphasis from judicial quality to court quality, and a transition from
+input to output budgeting. While a number of judges played an active role in this adoption pro-
+cess, in the end there appeared to be a widespread disenchantment with its outcomes, specifically
+contesting the strong increase in experienced workload, the concomitant decrease in the perceived
+quality of adjudication, and the creeping violation of constitutional independence. On the basis of
+a secondary analysis of data from a large survey among Dutch judges, we found empirical corrob-
+oration of these subjective experiences of increasing workload and decreasing quality, which were
+significantly related to job demands such as time pressure and production pressure and not suffi-
+ciently buffered by job resources.
+10
+M. VISSER ET AL.
+
+The question of how the judges could become dissatisfied about a management and organ-
+izational control system that they themselves partly helped to develop may be discussed along
+two lines. A first line of discussion points at a possible mismatch between the nature of the
+NPM-inspired control system and the nature of judicial work, to the extent that that system
+involves the application of routine-type control to performance activities that to a great extent
+are not of the routine industrial manufacturing type. In principle, it is possible to measure the
+output of judges quantitatively, i.e., in terms of their numbers of judgments and verdicts and
+the amounts of time spent on crafting these, and thus to assess (and possibly increase) their
+“production” (Ten Berge 1998). However, only a minority of judicial verdicts really is routine
+and fully standardized; the great majority involves the application of rules and regulations to
+cases of varying complexity that always contain some non-repetitive, case-specific elements
+(De Groot-Van Leeuwen 1991, 62–63; Hol 1998; Ingelse 1996; Schneider 2004). These qualita-
+tive elements require different, more evaluative or judgmental forms of control of judicial
+work,
+less
+based
+on
+quantitative
+production
+norms
+and
+more
+on
+qualitative
+profes-
+sional standards.
+A second (and related) line of discussion points at the violation of two important expectations
+judges held when becoming involved in these developments. First, judges should determine in
+principle the amount of time necessary for a qualitatively good and effective adjudication of cases,
+based on an objective workload measurement system. Second, budgeting of the judiciary should
+in principle be open-ended and thus not infringe on the first expectation and on the much-valued
+independence of the judiciary in the “trias politica” system (Sterk and Van Dijk 2016). The judges
+felt that both expectations had been violated by the Department of Justice, which included the
+budget for the judiciary in its overall budget and started to cut back spending when economic
+times went dire after 2010. Less money became available for the judiciary, which had to do more
+cases in less time. Since the workload measurement system measured only the actual amount of
+time spent on cases and not the desirable amount of time, for the judges both developments de
+facto have led to a strong increase in experienced workload, a concomitant decrease in the per-
+ceived quality of adjudication, and a creeping violation of their constitutional independence
+(Berendsen et al. 2015; Court of Audit 2016).
+Dutch judges, probably accustomed to work with case facts and laws that are as objective as
+possible, may have overestimated the “objective” nature of the workload measurement system
+they partly helped to form, and underestimated the political nature of such systems, once they
+are put into action and become subjected to organizational and political pressures toward more
+efficiency. Their reaction to the new control system, however, did show a high degree of profes-
+sional integrity. For a decade they did their best to work with and under the new system. Only
+after discovering its negative sides and experiencing increasing job demands and pressures did
+they openly and politely contest the system, instead of covertly “gaming” the system and subvert-
+ing its purposes, as the literature would predict (Visser 2016).
+Further, although our empirical results and conclusions present a representative picture
+regarding work-related experiences following the introduction of NPM principles in the Dutch
+judiciary, the underlying survey suffers from some limitations (Fruytier et al. 2013). First, the
+data, although interpreted here in a historical context, are cross-sectional in nature, hence limit-
+ing the possibilities for inferring causality. A more longitudinal approach, stretching to the pre-
+sent, would have enabled stronger conclusions on cause (NPM) and effect (workload). Also, the
+survey did not provide sufficient data that could account for the score differences between trial
+and appellate court judges that emerged from the analysis. This could be an interesting subject
+for future research.
+Second, it was difficult to maintain a truly scientific position when designing the survey.
+The constructs were derived from relevant scientific literature, and the items were based on
+existing and validated instruments. However, the Dutch Society for the Judiciary (“NvVR”) that
+JUSTICE SYSTEM JOURNAL
+11
+
+commissioned the study also influenced the exact composition of the survey. This may have
+induced a focus on negative aspects of introducing NPM. Nevertheless, the final scales in the
+study show satisfying reliability scores. Future research including operationalizations more closely
+connected to the academic constructs (e.g., on job demands, job resources, and NPM) may enable
+comparisons and generalization of the conclusions to the judiciary in other countries and more in
+general to other public sector organizations inside and outside the Netherlands.
+Finally, in spite of these limitations, our results do seem to correspond to a more commonly
+accepted and presented picture of increasing workload and discontent among the Dutch judiciary
+in the period after this survey was conducted. When the Manifesto of 2012 did not have the
+desired effects from the judges’ point of view, in November 2015 nine other trial and appellate
+court judges wrote a critical article in a well-read Dutch law journal, denouncing the financial cut-
+backs, never-ceasing organizational change projects, and increasing economization (Berendsen et al.
+2015). Subsequently, they sent this article out as a kind of survey to all judges; in January 2016, a
+full third of them had responded, with a large majority supporting the concerns of the nine judges.
+When the Department of Justice proved to be unresponsive, the nine used the survey results to
+directly petition Dutch Parliament in June 2016. This resulted in the introduction of a bill by
+Member of Parliament Van Nispen to separate the budget for the judiciary from the budget for
+the Department of Justice as a whole, in an effort to support constitutional independence by a
+form of budgetary independence. Although the initiative was applauded by the same nine judges
+in an opinion piece in a Dutch national newspaper (Berendsen et al. 2018) and supported by the
+Council of the Judiciary, in March 2018 the bill was rejected by a majority of Dutch Parliament,
+mainly on grounds of budgetary efficiency and with an eye on the Department’s overall responsi-
+bility for the whole system of Dutch law enforcement.
+Long ago, U.S. Supreme Court Justice Oliver Wendell Holmes deplored the proclivity of his
+brethren on the bench to steer clear of anything smacking of societal or political issues:
+judges are apt to be naif, simple-minded men, and they need something of Mephistopheles. We too need
+education in the obvious—to learn to transcend our own convictions and to leave room for much that we
+hold dear to be done away with … (Holmes 1920, 295)
+Almost a century later, it appears that at least his Dutch brethren and sisters on the bench
+have taken his message to heart and shed their naivety in social and political matters.
+Acknowledgments
+We thank the editor and reviewers of this journal for their constructive and inspiring comments on earlier drafts
+of the article. This article is dedicated to our former colleague dr. Ben Fruytier, who headed the research team that
+collected the original data on which this article is based, and who passed away under tragic circumstances in
+July 2014.
+ORCID
+Max Visser
+http://orcid.org/0000-0002-2515-9259
+Roel Schouteten
+http://orcid.org/0000-0002-6078-1529
+References
+Albers, P. 2009. “The Assessment of Court Quality: Hype or Global Trend?” Hague Journal on the Rule of Law
+1(1): 53–60. doi:10.1017/S1876404509000530.
+Bakker, A. B., and E. Demerouti. 2007. “The Job Demands-Resources Model: State of the Art.” Journal of
+Managerial Psychology 22(3): 309–28. doi:10.1108/02683940710733115.
+12
+M. VISSER ET AL.
+
+Bakker, A. B., and E. Demerouti. 2017. “Job Demands-Resources Theory: Taking Stock and Looking Forward.”
+Journal of Occupational Health Psychology 22(3): 273–85.
+Berendsen, R. M., A. R. Creutzberg, A. Van Holten, S. M. Van Lieshout, H. Phaff, J. A. Schuman, M. J. Slootweg,
+H. M. M. Steenberghe, and G. V. M. Veldhoen. 2015. “Tegenlicht: De Rechterlijke Organisatie Tegen het Licht.”
+Nederlands Juristenblad 90(40): 2800–03.
+Berendsen, R. M., A. R. Creutzberg, A. Van Holten, S. M. Van Lieshout, H. Phaff, J. A. Schuman, M. J. Slootweg,
+H. M. M. Steenberghe, and G. V. M. Veldhoen 2018. “Geef Rechtspraak Eigen Begroting.” Volkskrant, 27
+March: p. 22.
+Bevan, G., and C. Hood. 2006. “What’s Measured Is What Matters: Targets and Gaming in the English Public
+Health Care System.” Public Administration 84(3): 517–38. doi:10.1111/j.1467-9299.2006.00600.x.
+Bovens, M., T. Schillemans, and P. ’t Hart. 2008. “Does Public Accountability Work? An Assessment Tool.” Public
+Administration 86(1): 225–42. doi:10.1111/j.1467-9299.2008.00716.x.
+Bunjevac, T. 2017. “From Individual Judge to Judicial Bureaucracy: The Emergence of Judicial Councils and the
+Changing Nature of Judicial Accountability in Court Administration.” University of New South Wales Law
+Journal 40(2): 806–41.
+Contini, F., and R. Mohr. 2007. “Reconciling Independence and Accountability in Judicial Systems.” Utrecht Law
+Review 3(2): 26–43. doi:10.18352/ulr.46.
+Court of Audit [Algemene Rekenkamer]. 2016. Bekostiging Rechtspraak: Gevolgen voor Doelmatigheid. The Hague: Sdu.
+De Groot-Van Leeuwen, L. E. 1991. De Rechterlijke Macht in Nederland: Samenstelling en Denkbeelden van de
+Zittende en Staande Magistratuur. Arnhem: Gouda Quint.
+Demerouti, E., A. B. Bakker, F. Nachreiner, and W. B. Schaufeli. 2001. “The Job Demands-Resources Model of
+Burnout.” Journal of Applied Psychology 86(3): 499–512. doi:10.1037/0021-9010.86.3.499.
+De Santis, L. G., and Y. Emery. 2017. “Comparing Stakeholders’ Expectations of ‘Good Justice’ in Switzerland:
+Toward a ‘Hybrid’ Judicial Culture.” Justice System Journal 38(1): 78–111. doi:10.1080/0098261X.2016.1169960.
+Diefenbach, T. 2009. “New Public Management in Public Sector Organizations: The Dark Sides of Managerialistic
+‘Enlightenment.’” Public Administration 87(4): 892–909. doi:10.1111/j.1467-9299.2009.01766.x.
+Fox, D., H. Yamagata, and P. Harris. 2014. “From Performance Measurement to Performance Management:
+Lessons from a Maryland Circuit Court.” Justice System Journal 35(1): 87–103.
+Frissen, P., P. ‘t Hart, J. De Hoog, K. Van Oorschot, and N. Chin-A-Fat. 2014. Governance in de Rechtspraak. The
+Hague: Sdu.
+Fruytier, B., J. Dikkers, M. Keesen, J. Janssen, I. Van den Berg, N. Valeton, and R. Schouteten. 2013. Werkdruk
+Bewezen: Eindrapport Werkdrukonderzoek Rechterlijke Macht. Utrecht: Hogeschool Utrecht.
+Green, S. G., and M. A. Welsh. 1988. “Cybernetics and Dependence: Reframing the Control Concept.” Academy of
+Management Review 13(2): 287–301. doi:10.5465/amr.1988.4306891.
+Grossman, J. B., and R. S. Wells. 1988. Constitutional Law and Judicial Policy Making (3rd ed.). New York:
+Longman.
+Hofstede, G. H. 1978. “The Poverty of Management Control Philosophy.” Academy of Management Review 3(3):
+450–61. doi:10.5465/amr.1978.4305727.
+Hofstede, G. H. 1981. “Management Control of Public and Not-for-Profit Activities.” Accounting, Organizations,
+and Society 6(3): 193–211.
+Hol, A. M. 1998. “Wijsheid of Efficientie: Over de Spanning tussen Rechtspraak en Management.” In Kwaliteit van
+Rechtspraak op de Weegschaal, edited by P. M. Langbroek, K. Lahuis, and J. B. J. M. Ten Berge, 255–67.
+Deventer: Tjeenk Willink.
+Holmes, O. W. 1920. Collected Legal Papers. New York: Harcourt, Brace & Howe.
+Holvast, N. L., and N. Doornbos. 2015. “Exit, Voice, and Loyalty within the Judiciary: Judges’ Responses to New
+Managerialism in the Netherlands.” Utrecht Law Review 11(2): 49–63. doi:10.18352/ulr.317.
+Hood, C. 1995. “The ‘New Public Management’ in the 1980s: Variations on a Theme.” Accounting, Organizations,
+and Society 20(2–3): 93–109. doi:10.1016/0361-3682(93)E0001-W.
+Jansen, E. P. 2008. “NPM: Cybernetics and Styles of Dealing with Performance Information—Do Performance
+Measures Matter?” Local Government Studies 34(1): 39–60. doi:10.1080/03003930701770439.
+Karasek, R., C. Brisson, N. Kawakami, I. Houtman, P. Bongers, and B. Amick. 1998. “The Job Content
+Questionnaire (JCQ): An Instrument for Internationally
+Comparative Assessment of Psychosocial Job
+Characteristics.” Journal of Occupational Health Psychology 3(4): 322–55. doi:10.1037/1076-8998.3.4.322.
+Keilitz, I. 2014. “Judicial Leadership and Performance.” In Encyclopedia of Criminology and Criminal Justice, edited
+by G. Bruinsma and D. Weisburd, 2707–16. New York: Springer.
+Kerr, S. 1995. “On the Folly of Rewarding A, while Hoping for B.” Academy of Management Executive 9(1): 7–14.
+doi:10.5465/ame.1995.9503133466.
+Ingelse, P. 1996. “Rechterlijke Onafhankelijkheid Heeft Haar Prijs.” In De Eerbied Waardig? Een Bezinning op de
+Positie van de Rechter en de Officier van Justitie, edited by M. Fiege, H. A. Gerritse, A. M. Koene, D. Radder,
+M. P. M. Reinders, W. A. M. Van Schendel, and R. M. Van Vuure, 65–84. Arnhem: Gouda Quint.
+JUSTICE SYSTEM JOURNAL
+13
+
+Langbroek, P. M. 2010. “Organization Development of the Dutch Judiciary: Between Accountability and Judicial
+Independence.” International Journal for Court Administration 2(2): 21–30. doi:10.18352/ijca.39.
+Langbroek, P. M., M. Van der Velde, and T. Van der Linden. 2015. “Written Justifications of Judgments of
+Utrecht District Court: An Empirical Study on the Relationship between Case Characteristics and Text
+Characteristics.” Justice System Journal 36(2): 138–62. doi:10.1080/0098261X.2013.872587.
+Mak, E. 2008. “The European Judicial Organization in a New Paradigm: The Influence of Principles of ‘New
+Public Management’ on the Organization of the European Courts.” European Law Journal 14(6): 718–34. doi:
+10.1111/j.1468-0386.2008.00437.x.
+Merryman, J. H. 1996. “The French Deviation.” American Journal of Comparative Law 44(1): 109–19. doi:10.2307/
+840522.
+Mohr, R., and Contini, F. 2007. “Judicial Evaluation in Context: Principles, Practices and Promise in Nine
+European Countries.” European Journal of Legal Studies 1(2): 254–91.
+Ng, G. Y., M. Velicogna, and C. Dallara. 2008. “Monitoring and Evaluation of Courts Activities and Performance.”
+International Journal for Court Administration 1(1): 58–64. doi:10.18352/ijca.129.
+Noordegraaf, M., and T. Abma. 2003. “Management by Measurement? Public Management Practices amidst
+Ambiguity.” Public Administration 81(4): 853–71. doi:10.1111/j.0033-3298.2003.00374.x.
+Osborne, D., and Gaebler, T. 1992. Reinventing Government: How the Entrepreneurial Spirit Is Transforming the
+Public Sector. Reading, MA: Addison-Wesley.
+Osborne, S. P., Z. Radnor, T. Kinder, and I. Vidal. 2015. “The SERVICE Framework: A Public-Service-Dominant
+Approach to Sustainable Public Services.” British Journal of Management 26(3): 424–38. doi:10.1111/1467-
+8551.12094.
+Piana, D. 2017. “Reforming the Judiciary through Standards: Agency Empowerment and Center (Re)building in
+Italy, 2001–2015.” International Review of Administrative Sciences 83(4): 757–72. doi:10.1177/0020852315592022.
+Pidd, M. 2005. “Perversity in Public Service Performance Measurement.” International Journal of Productivity and
+Performance Management 54(5–6): 482–93. doi:10.1108/17410400510604601.
+Pope, C., S. Ziebland, and N. Mays. 2000. “Qualitative Research in Health Care: Analyzing Qualitative Data.”
+British Medical Journal 320(7227): 114–16. doi:10.1136/bmj.320.7227.114.
+Sabel,
+C.
+F.
+2004.
+“Beyond
+Principal-Agent
+Governance:
+Experimentalist
+Organizations,
+Learning
+and
+Accountability.” In De staat van de Democratie: Democratie voorbij de Staat, edited by E. R. Engelen and M. Sie
+Dhian Ho, 173–95. Amsterdam: Amsterdam University Press.
+Sabel, C. F., and W. H. Simon. 2011. “Minimalism and Experimentalism in the Administrative State.” Georgetown
+Law Journal 100(1): 53–93.
+Schauffler, R. Y. 2007. “Judicial Accountability in the U.S. State Courts: Measuring Court Performance.” Utrecht
+Law Review 3(1): 112–28. doi:10.18352/ulr.40.
+Schneider, M. 2004. “Performance Management by Culture in the National Labor Relations Board and the German
+Labor Courts of Appeal.” Journal of Public Administration Research and Theory 14(1): 19–32. doi:10.1093/
+jopart/muh002.
+Sterk, K., and F. Van Dijk. 2016. “Financiering van de Rechtspraak in Rechtsstatelijk Kader.” Nederlands
+Juristenblad 91(24): 1683–88.
+Stroink, F. A. M. 1998. “De Verantwoording voor Rechtspraak aan de Politiek.” In Kwaliteit van Rechtspraak op de
+Weegschaal, edited by P. M. Langbroek, K. Lahuis, and J. B. J. M. Ten Berge, 281–91. Deventer: Tjeenk Willink.
+Teelken, J. C. 2012. “Compliance or Pragmatism: How Do Academics Deal with Managerialism in Higher
+Education? A Comparative Study in Three Countries.” Studies in Higher Education 37(3): 271–90. doi:10.1080/
+03075079.2010.511171.
+Ten Berge, J. B. J. M. 1998. “Contouren van een Kwaliteitsbeleid voor de Rechtspraak.” In Kwaliteit van
+Rechtspraak op de Weegschaal, edited by P. M. Langbroek, K. Lahuis, and J. B. J. M. Ten Berge, 21–40.
+Deventer: Tjeenk Willink.
+Van der Knaap. P., and R. Van den Broek. 2000. “Recht van Spreken: Een Resultaatgericht Sturingsmodel voor de
+Rechtsprekende Macht.” Bestuurskunde 9(7): 313–25.
+Van Dooren, W. 2011. “Better Performance Management: Some Single- & Double-loop Strategies.” Public
+Performance and Management Review 34(3): 420–33. doi:10.2753/PMR1530-9576340305.
+Van Raalte, J. 2018. “Rechtspraak Stelt Digitale Ambities bij.” Volkskrant, 11 April: p. 16.
+Van Thiel, S., and F. Leeuw. 2002. “The Performance Paradox in the Public Sector.” Public Performance and
+Management Review 25(3): 267–81. doi:10.2307/3381236.
+Verbeeten, F. H. M. 2008. “Performance Management Practices in Public Sector Organizations: Impact on
+Performance.” Accounting, Auditing, and Accountability Journal 21(3): 427–54. doi:10.1108/09513570810863996.
+Visser, M. 2016. “Management Control, Accountability, and Learning in Public Sector Organizations: A Critical
+Analysis.” In Governance and Performance in Public and Non-Profit Organizations (Studies in Public and Non-
+Profit Governance, Vol.5), edited by L. Gnan, A. Hinna, and F. Monteduro, 75–93. Bingley: Emerald.
+14
+M. VISSER ET AL.
+
+Visser, M., and K. Van der Togt. 2016. “Learning in Public Sector Organizations: A Theory of Action Approach.”
+Public Organization Review 16(2): 235–49. doi:10.1007/s11115-015-0303-5.
+Vosselman, E. 2016. “Accounting, Accountability, and Ethics in Public Sector Organizations: Toward a Duality
+between Instrumental Accountability and Relational Response-ability.” Administration & Society 48(5): 602–27.
+doi:10.1177/0095399713514844.
+JUSTICE SYSTEM JOURNAL
+15
