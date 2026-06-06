@@ -1,0 +1,21 @@
+\usepackage{titling}
+\usepackage{titlesec}
+\usepackage{caption}
+
+\setmonofont{Times New Roman}
+
+\pretitle{\begin{center}\bfseries\normalsize}
+\posttitle{\par\end{center}\vspace{0.5em}}
+\preauthor{\begin{center}\normalsize}
+\postauthor{\par\end{center}\vspace{0.5em}}
+\predate{}
+\postdate{}
+
+\titleformat{\section}{\bfseries\normalsize}{\thesection}{1em}{}
+\titleformat{\subsection}{\bfseries\normalsize}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\bfseries\normalsize}{\thesubsubsection}{1em}{}
+\titleformat{name=\section,numberless}{\bfseries\normalsize}{}{0pt}{}
+\titleformat{name=\subsection,numberless}{\bfseries\normalsize}{}{0pt}{}
+\titleformat{name=\subsubsection,numberless}{\bfseries\normalsize}{}{0pt}{}
+
+\captionsetup{font=normalsize}

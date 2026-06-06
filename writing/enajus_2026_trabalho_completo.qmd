@@ -1,0 +1,1217 @@
+---
+title: "Política Judiciária como Campo Emergente: Da Cartografia Bibliométrica à Avaliação das PJNP"
+lang: pt-BR
+abstract: |
+  Este estudo investiga como delimitar conceitualmente a acepção programática de "política judiciária" (*judicial policy*) e aplicá-la à avaliação observável das Políticas Judiciárias Nacionais Programáticas (PJNP) do Conselho Nacional de Justiça. O desenho combina análise bibliométrica multibase, com protocolo PRISMA adaptado, e análise empírica do Índice de Maturidade Observável das PJNP (IMO-PJNP), construído com pesos normativos, teoricamente informados e auditáveis. A coleta em quatro bases de dados (OpenAlex, Scopus, Semantic Scholar, Crossref) identificou 7.161 registros, dos quais 4.926 foram incluídos após deduplicação e triagem, organizados em anel nuclear (115 registros) e anel estendido (4.811 registros). Os resultados bibliométricos mostram produção dispersa por 78 periódicos no anel nuclear, mediana de citações zero e polissemia persistente, com três acepções principais: programática, comportamental e doutrinária. A etapa aplicada analisa 40 PJNP, 253 iniciativas e 96 colegiados registrados. O portfólio apresenta média de 1,70 no índice base de 0 a 4 e 55,97 no IMO-PJNP de 0 a 100, calculado a partir de monitoramento (40%), governança formal (35%) e alinhamento estratégico (25%). As associações entre maturidade observável e outputs administrativos são descritivas e limitadas: o IMO-PJNP se associa ao número de iniciativas, sem associação estatisticamente detectável com percentual de produtos e iniciativas concluídas. A contribuição do artigo é transformar a cartografia do campo em diagnóstico avaliativo aplicado às PJNP e separar observabilidade administrativa de efetividade e impacto.
+keywords:
+  - política judiciária
+  - análise bibliométrica
+  - governança judicial
+  - políticas judiciárias nacionais programáticas
+  - avaliação de políticas
+  - políticas públicas
+  - PRISMA
+bibliography: ../references.bib
+csl: apa.csl
+format:
+  pdf:
+    pdf-engine: xelatex
+    documentclass: article
+    papersize: a4
+    mainfont: "Times New Roman"
+    fontsize: 12pt
+    geometry:
+      - top=3cm
+      - left=3cm
+      - right=2cm
+      - bottom=2cm
+    linestretch: 1
+    fig-format: png
+    fig-dpi: 300
+    toc: false
+    number-sections: true
+    colorlinks: false
+    include-in-header: enajus_header.tex
+  docx:
+    toc: false
+    number-sections: true
+    reference-doc: enajus_reference.docx
+execute:
+  echo: false
+  warning: false
+  message: false
+  cache: false
+---
+
+**Palavras-chave:** política judiciária, análise bibliométrica, governança judicial, políticas judiciárias nacionais programáticas, avaliação de políticas, PRISMA
+
+**Tipo de trabalho:** Trabalho empírico
+
+**Tema de interesse:** 9) Políticas Públicas de Justiça. Formulação, Implementação e Avaliação
+
+```{r setup}
+#| label: setup
+#| include: false
+
+packages <- c(
+  "bibliometrix", "tidyverse", "knitr", "scales",
+  "patchwork", "ggrepel", "igraph", "RColorBrewer"
+)
+if (knitr::is_html_output()) packages <- c(packages, "kableExtra")
+
+for (pkg in packages) {
+  if (!requireNamespace(pkg, quietly = TRUE)) install.packages(pkg)
+  library(pkg, character.only = TRUE)
+}
+
+if (.Platform$OS.type == "windows") {
+  windowsFonts(`Times New Roman` = windowsFont("TT Times New Roman"))
+}
+
+theme_set(theme_minimal(base_size = 12, base_family = "Times New Roman") +
+  theme(
+    plot.title = element_text(face = "bold", size = 14),
+    plot.subtitle = element_text(color = "grey40"),
+    legend.position = "bottom"
+  ))
+
+pal_nuclear  <- "#2563eb"
+pal_extended <- "#059669"
+pal_excluded <- "#dc2626"
+
+fmt_kable <- function(data, align = NULL, font_size = NULL, full_width = FALSE, ...) {
+  tbl <- knitr::kable(data, align = align, ...)
+  if (knitr::is_html_output() && requireNamespace("kableExtra", quietly = TRUE)) {
+    tbl <- kableExtra::kable_styling(tbl, bootstrap_options = c("striped", "hover"),
+                                      full_width = full_width, font_size = font_size)
+  }
+  tbl
+}
+
+fmt_n <- function(x) format(x, big.mark = ".", decimal.mark = ",", scientific = FALSE, trim = TRUE)
+fmt_num <- function(x, digits = 2) {
+  ifelse(is.na(x), "", formatC(x, format = "f", digits = digits, decimal.mark = ","))
+}
+fmt_pct <- function(x, digits = 1) paste0(fmt_num(x, digits), "%")
+is_valid <- function(x) !is.na(x) & x != "" & tolower(trimws(as.character(x))) != "nan"
+```
+
+```{r load-data}
+#| label: load-data
+#| include: false
+
+corpus   <- read.csv("../data/final/corpus_complete.csv", stringsAsFactors = FALSE, fileEncoding = "UTF-8")
+nuclear  <- read.csv("../data/final/corpus_nuclear.csv",  stringsAsFactors = FALSE, fileEncoding = "UTF-8")
+extended <- read.csv("../data/final/corpus_extended.csv",  stringsAsFactors = FALSE, fileEncoding = "UTF-8")
+merged   <- read.csv("../data/interim/01_merged_all_sources.csv", stringsAsFactors = FALSE, fileEncoding = "UTF-8")
+deduped  <- read.csv("../data/interim/02_deduplicated.csv", stringsAsFactors = FALSE, fileEncoding = "UTF-8")
+excluded <- read.csv("../data/interim/04_excluded_update.csv", stringsAsFactors = FALSE, fileEncoding = "UTF-8")
+meta_comp <- read.csv("../data/interim/08_metadata_completeness.csv", stringsAsFactors = FALSE, fileEncoding = "UTF-8")
+
+cocit_file         <- "../data/interim/07_cocitation_matrix_edges.csv"
+enriched_file      <- "../data/interim/07_nuclear_enriched.csv"
+refs_file          <- "../data/interim/07_nuclear_references.csv"
+prisma_log_file    <- "../logs/prisma_flow.csv"
+dedup_impact_file  <- "../logs/dedup_impact.csv"
+brazil_supp_file   <- "../outputs/tables/brazil_supplement_comparison.csv"
+
+has_cocitation   <- file.exists(cocit_file)
+has_enriched     <- file.exists(enriched_file)
+has_refs         <- file.exists(refs_file)
+has_prisma_log   <- file.exists(prisma_log_file)
+has_dedup_impact <- file.exists(dedup_impact_file)
+has_brazil_supp  <- file.exists(brazil_supp_file)
+
+if (has_cocitation) cocit_edges    <- read.csv(cocit_file, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
+if (has_enriched)   nuclear_enriched <- read.csv(enriched_file, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
+if (has_refs)       nuclear_refs   <- read.csv(refs_file, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
+if (has_prisma_log) prisma_log     <- read.csv(prisma_log_file, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
+if (has_dedup_impact) dedup_impact <- read.csv(dedup_impact_file, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
+if (has_brazil_supp)  brazil_supp  <- read.csv(brazil_supp_file, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
+
+corpus$publication_year   <- as.numeric(corpus$publication_year)
+corpus$cited_by_count     <- as.numeric(corpus$cited_by_count)
+nuclear$publication_year  <- as.numeric(nuclear$publication_year)
+nuclear$cited_by_count    <- as.numeric(nuclear$cited_by_count)
+extended$publication_year <- as.numeric(extended$publication_year)
+extended$cited_by_count   <- as.numeric(extended$cited_by_count)
+
+n_identified  <- nrow(merged)
+n_deduplicated <- nrow(deduped)
+n_duplicates  <- n_identified - n_deduplicated
+n_excluded    <- nrow(excluded)
+n_included <- nrow(corpus)
+n_nuclear     <- nrow(nuclear)
+n_extended <- nrow(extended)
+n_journals_nuclear <- length(unique(nuclear$journal[is_valid(nuclear$journal)]))
+n_journals_total   <- length(unique(corpus$journal[is_valid(corpus$journal)]))
+
+if (has_enriched) {
+  n_with_refs  <- sum(as.numeric(nuclear_enriched$n_references) > 0, na.rm = TRUE)
+  n_with_abs_e <- sum(is_valid(nuclear_enriched$abstract_enriched), na.rm = TRUE)
+} else {
+  n_with_refs <- 0
+  n_with_abs_e <- 0
+}
+
+pjnp_tables_dir <- "../../pjnp-avaliacao/outputs/tables"
+pjnp_figures_dir <- "../../pjnp-avaliacao/outputs/figures"
+pjnp_required <- file.path(
+  pjnp_tables_dir,
+  c("pjnp_policy_features.csv", "pjnp_indices_all.csv", "index_summary.csv",
+    "pjnp_clusters.csv", "cluster_diagnostics.csv", "models_association_results.csv",
+    "missingness_by_table.csv")
+)
+has_pjnp <- all(file.exists(pjnp_required))
+
+if (has_pjnp) {
+  pjnp_features <- read.csv(file.path(pjnp_tables_dir, "pjnp_policy_features.csv"),
+                            stringsAsFactors = FALSE, fileEncoding = "UTF-8", check.names = FALSE)
+  pjnp_indices <- read.csv(file.path(pjnp_tables_dir, "pjnp_indices_all.csv"),
+                           stringsAsFactors = FALSE, fileEncoding = "UTF-8", check.names = FALSE)
+  pjnp_index_summary <- read.csv(file.path(pjnp_tables_dir, "index_summary.csv"),
+                                 stringsAsFactors = FALSE, fileEncoding = "UTF-8", check.names = FALSE)
+  pjnp_clusters <- read.csv(file.path(pjnp_tables_dir, "pjnp_clusters.csv"),
+                            stringsAsFactors = FALSE, fileEncoding = "UTF-8", check.names = FALSE)
+  pjnp_diag <- read.csv(file.path(pjnp_tables_dir, "cluster_diagnostics.csv"),
+                        stringsAsFactors = FALSE, fileEncoding = "UTF-8", check.names = FALSE)
+  pjnp_models <- read.csv(file.path(pjnp_tables_dir, "models_association_results.csv"),
+                          stringsAsFactors = FALSE, fileEncoding = "UTF-8", check.names = FALSE)
+  pjnp_missing <- read.csv(file.path(pjnp_tables_dir, "missingness_by_table.csv"),
+                           stringsAsFactors = FALSE, fileEncoding = "UTF-8", check.names = FALSE)
+
+  pjnp_num_cols <- c("ano_resolucao", "n_iniciativas", "pct_iniciativas_concluidas",
+                     "pct_iniciativas_com_produto", "n_colegiados", "n_tipos_colegiado",
+                     "indice_base_0_4", "indice_ponderado_0_100",
+                     "indice_governanca_formal_0_100", "indice_monitoramento_0_100",
+                     "indice_alinhamento_estrategico_0_100", "cluster", "cluster_k")
+  for (col in intersect(pjnp_num_cols, names(pjnp_features))) {
+    pjnp_features[[col]] <- as.numeric(pjnp_features[[col]])
+  }
+  for (col in intersect(pjnp_num_cols, names(pjnp_clusters))) {
+    pjnp_clusters[[col]] <- as.numeric(pjnp_clusters[[col]])
+  }
+  for (col in c("count", "mean", "std", "min", "25%", "50%", "75%", "max")) {
+    if (col %in% names(pjnp_index_summary)) pjnp_index_summary[[col]] <- as.numeric(pjnp_index_summary[[col]])
+  }
+  for (col in c("k", "inertia", "silhouette")) {
+    if (col %in% names(pjnp_diag)) pjnp_diag[[col]] <- as.numeric(pjnp_diag[[col]])
+  }
+  for (col in c("n", "estimate", "robust_se", "p_value", "ci95_low", "ci95_high", "effect_size_std_beta")) {
+    if (col %in% names(pjnp_models)) pjnp_models[[col]] <- as.numeric(pjnp_models[[col]])
+  }
+
+  n_pjnp_policies <- nrow(pjnp_features)
+  n_pjnp_initiatives <- sum(pjnp_features$n_iniciativas, na.rm = TRUE)
+  n_pjnp_colegiados <- sum(pjnp_features$n_colegiados, na.rm = TRUE)
+  pjnp_area_top <- pjnp_features |>
+    count(`Área Temática`, sort = TRUE) |>
+    slice(1)
+  pjnp_area_top_name <- pjnp_area_top$`Área Temática`
+  pjnp_area_top_n <- pjnp_area_top$n
+  pjnp_k_selected <- pjnp_diag |>
+    arrange(desc(silhouette)) |>
+    slice(1) |>
+    pull(k)
+  pjnp_best_sil <- max(pjnp_diag$silhouette, na.rm = TRUE)
+  pjnp_base_mean <- pjnp_index_summary |>
+    filter(indice == "indice_base_0_4") |>
+    pull(mean)
+  pjnp_weighted_mean <- pjnp_index_summary |>
+    filter(indice == "indice_ponderado_0_100") |>
+    pull(mean)
+  pjnp_prod_mean <- mean(pjnp_features$pct_iniciativas_com_produto, na.rm = TRUE)
+  pjnp_conc_mean <- mean(pjnp_features$pct_iniciativas_concluidas, na.rm = TRUE)
+  pjnp_zero_base <- sum(pjnp_features$indice_base_0_4 == 0, na.rm = TRUE)
+  pjnp_full_base <- sum(pjnp_features$indice_base_0_4 == 4, na.rm = TRUE)
+} else {
+  n_pjnp_policies <- n_pjnp_initiatives <- n_pjnp_colegiados <- NA
+  pjnp_k_selected <- pjnp_best_sil <- pjnp_base_mean <- pjnp_weighted_mean <- NA
+  pjnp_prod_mean <- pjnp_conc_mean <- pjnp_zero_base <- pjnp_full_base <- NA
+  pjnp_area_top_name <- pjnp_area_top_n <- NA
+}
+```
+
+# Introdução
+
+A governança dos sistemas judiciais passou a receber maior atenção científica e institucional nas últimas três décadas. A expansão do papel dos tribunais na vida democrática, fenômeno identificado como judicialização da política [@tate1995], as pressões por eficiência e *accountability* derivadas das reformas gerencialistas [@osborne2006] e a emergência de conselhos judiciais como órgãos de governança [@garoupa2009] tornaram mais visível o Judiciário como organização que demanda gestão, planejamento estratégico e coordenação institucional.
+
+No Brasil, esse processo encontrou expressão institucional na criação do Conselho Nacional de Justiça (CNJ) pela Emenda Constitucional n. 45/2004. A partir daí, resoluções, metas de desempenho, programas de resolução adequada de conflitos e estratégias de governança passaram a compor o repertório de instrumentos de ação pública no setor justiça [@sadek2004; @lascoumes2007]. Nesse enquadramento, o Judiciário pode ser analisado como *ator de política pública*, ao formular, implementar e avaliar políticas no interior do sistema de justiça com instrumentos normativos e gerenciais próprios.
+
+Um exemplo recente dessa atuação programática é o Projeto ELO, lançado pelo CNJ em 26 de março de 2026 como iniciativa voltada ao aprimoramento da governança e da gestão das Políticas Judiciárias Nacionais Programáticas (PJNP) [@cnjElo2026]. A Instrução Normativa CNJ n. 113/2026 disciplina a estrutura de governança colaborativa dessas políticas, prevendo alinhamento com a Estratégia Nacional do Poder Judiciário, coordenação interinstitucional e tomada de decisão baseada em evidências [@cnjIN113].
+
+Essa trajetória tornou a expressão *política judiciária* mais frequente como categoria operacional no vocabulário institucional brasileiro. A estabilização prática ainda carece de ancoragem teórica equivalente. A literatura internacional sobre o sistema de justiça é fragmentada em tradições disciplinares que operam com gramáticas conceituais distintas. A ciência política investiga *judicial policy-making* como comportamento decisório [@segal2002]. A economia institucional analisa eficiência judicial e custos de transação [@voigt2016]. A administração pública aborda *court administration* como problema organizacional [@aikman2007]. A tradição russa e pós-soviética desenvolveu uma concepção doutrinária própria de política judicial como teoria geral da função jurisdicional.
+
+Este estudo responde a essas questões por meio de análise bibliométrica multibase combinada com revisão narrativa dos principais trabalhos com texto completo disponível e análise aplicada do portfólio de Políticas Judiciárias Nacionais Programáticas do CNJ. A contribuição central é propor um caminho para transformar um conceito ainda polissêmico em objeto avaliável: a bibliometria delimita o campo e a etapa PJNP operacionaliza a acepção programática por meio de maturidade observável no painel.
+
+A pergunta integradora é: **como delimitar conceitualmente a acepção programática de "política judiciária" e aplicá-la à avaliação observável das PJNP do CNJ?** Os objetivos são: (i) dimensionar e periodizar a produção que emprega explicitamente o rótulo "política judiciária", (ii) diagnosticar a configuração do campo, (iii) delimitar a acepção programática do conceito e (iv) aplicar essa acepção às PJNP por meio do Índice de Maturidade Observável das PJNP (IMO-PJNP), agrupamento exploratório e associações descritivas com outputs administrativos.
+
+# Política Judiciária: Polissemia e Delimitação Conceitual
+
+O ponto de partida do artigo é que "política judiciária" não designa um objeto único. A expressão circula em pelo menos três acepções, e a ausência de explicitação conceitual dificulta comparar estudos, construir indicadores e avaliar políticas concretas.
+
+```{r tbl-three-acceptions}
+#| label: tbl-three-acceptions
+#| tbl-cap: "Três acepções de 'política judiciária' adotadas como delimitação conceitual"
+tribble(
+  ~Acepção, ~Definição, ~`Tradição`, ~`Uso neste artigo`,
+  "Programática", "Governança institucional: planejamento, coordenação, políticas nacionais, monitoramento e instrumentos de ação pública", "Brasileira (CNJ), políticas públicas e governança judicial", "Acepção adotada para analisar as PJNP",
+  "Comportamental", "Conteúdo das decisões judiciais: como juízes produzem política por sentenças, precedentes e preferências decisórias", "Ciência política judicial anglo-saxã", "Objeto delimitado como distinto da avaliação PJNP",
+  "Doutrinária", "Teoria geral do papel do Judiciário no Estado: princípios, funções e limites da ação jurisdicional", "Russa / pós-soviética e dogmática institucional", "Objeto reconhecido como tradição paralela"
+) |> fmt_kable(align = "llll", full_width = TRUE, font_size = 10)
+```
+
+Este artigo adota a acepção **programática**. Nela, política judiciária é tratada como política pública formulada, coordenada, monitorada ou induzida no interior do sistema de justiça. A cartografia bibliométrica funciona como etapa de delimitação: identifica a polissemia e permite isolar a acepção que torna as PJNP avaliáveis como ações públicas institucionais.
+
+# Revisão Bibliográfica: Tensões Analíticas do Campo {#sec-revisao}
+
+Esta seção apresenta revisão narrativa dos trabalhos identificados na curadoria bibliográfica como centrais ao campo. A seleção incluiu 12 obras de alta prioridade segundo o manifesto de download. A leitura é organizada por tensões analíticas: governança judicial, gerencialismo judicial e Judiciário como ator de política pública. Para 9 obras foi possível obter o texto completo em acesso aberto ou repositório institucional e extrair os trechos analíticos discutidos a seguir.
+
+## Governança judicial e conselhos: o debate comparado
+
+### Garoupa e Ginsburg (2009): a teoria política dos conselhos
+
+O artigo de @garoupa2009, publicado no *American Journal of Comparative Law*, formula a primeira teoria sistemática da formação de conselhos judiciais a partir de uma perspectiva de economia política comparada. Os autores argumentam que conselhos judiciais emergem em processos de redistribuição de poder entre atores políticos. A independência judicial funciona como compromisso crível de contenção do Executivo e também restringe a capacidade de accountability do Legislativo.
+
+O estudo testa empiricamente, com dados de mais de 50 países, se diferentes configurações institucionais dos conselhos, incluindo composição, modo de seleção e escopo de atribuições, correlacionam-se com indicadores de qualidade judicial. O achado central é que **não há relação sistemática entre o design do conselho e a qualidade da justiça**, o que conduz os autores a uma conclusão relevante para a análise institucional: conselhos judiciais persistem e se difundem globalmente porque oferecem soluções políticas aceitáveis para múltiplos atores com interesses divergentes.
+
+Para o campo de política judiciária, esse resultado implica cautela quanto à exportação irrefletida de modelos institucionais. A criação do CNJ em 2004, por exemplo, deve ser compreendida como resultado de uma negociação política que redistribuiu competências entre o Executivo, o Legislativo e o próprio Judiciário.
+
+### Kosař (2018): além dos conselhos e a autogovernança judicial como sistema
+
+O artigo de @kosar2018, publicado no *German Law Journal*, representa uma inflexão conceitual importante: propõe substituir a categoria "conselho judicial" pela noção mais abrangente de **autogovernança judicial** (*judicial self-governance*, JSG). Enquanto a literatura anterior focava nos conselhos como instituições singulares, Kosař mapeia uma rede mais complexa de atores e arranjos institucionais que participam da governança do Judiciário: conselhos judiciais, comissões de nomeação, comitês de promoção, presidentes de tribunais e painéis disciplinares.
+
+A análise comparada de países europeus, com ênfase em sistemas de JSG "forte" (como França e Itália), "moderado" (como Alemanha) e "fraco" (como Reino Unido e Países Baixos), mostra que as formas, as justificativas e os impactos da autogovernança variam significativamente, contrariando qualquer pretensão de modelo universal. O conceito-chave introduzido é o de **natureza "líquida"** da JSG: ela reúne arranjos responsivos a mudanças políticas, sociais e culturais.
+
+O argumento mais provocador de Kosař é que o crescimento da autogovernança judicial pode produzir efeitos institucionais ambíguos. Em vários países europeus do leste, os próprios conselhos criados para proteger o Judiciário da política tornaram-se canais de politização interna, favorecendo grupos de interesse dentro da magistratura. Essa crítica tem ressonância direta para o debate brasileiro sobre o papel do CNJ: a questão central é *como* o Conselho governa internamente o sistema judicial.
+
+### Ng (2011): a governança judicial como disciplina científica
+
+O artigo de @ng2011, publicado na *Utrecht Law Review*, propõe que a governança judicial seja reconhecida como um campo disciplinar autônomo, com objetos, métodos e perguntas específicas. O autor distingue entre *judicial governance* (como o sistema judicial se governa a si mesmo) e *court administration* (a gestão operacional dos tribunais), argumentando que a literatura tende a confundir os dois conceitos.
+
+Ng identifica quatro dimensões da governança judicial: independência, *accountability*, eficiência e acesso à justiça. Essas dimensões estão frequentemente em tensão. Aumentar a eficiência por meio de metas de produtividade pode comprometer a qualidade das decisões. Ampliar a independência pode reduzir a *accountability* democrática. A contribuição central é a proposta de uma tipologia analítica para comparar sistemas judiciais que supera o binômio independência/dependência.
+
+## Reforma gerencial e Nova Gestão Pública no Judiciário
+
+### Visser, Schouteten e Dikkers (2019): o custo humano do NPM nos tribunais
+
+O estudo de @visser2019, publicado no *Justice System Journal*, examina a adoção de práticas de Nova Gestão Pública (NPM, *New Public Management*) no judiciário holandês com base em survey de larga escala aplicado a juízes. O contexto é a implementação, a partir dos anos 2000, de normas de produtividade, padrões de tempo por tipo de processo e indicadores de desempenho, adaptados do modelo gerencial da iniciativa privada.
+
+O achado central é a identificação de um **"descasamento" (*mismatch*)** entre os sistemas de controle gerencial de inspiração NPM e as experiências de trabalho dos juízes. As demandas de trabalho aumentaram, com pressão por volume, metas de clearance e relatórios de desempenho. Os recursos que sustentam o trabalho judicial, como autonomia decisória, tempo de deliberação e suporte administrativo, foram reduzidos. O resultado é um estado de tensão estrutural que os autores associam a risco de *burnout*, queda de qualidade e comprometimento da independência de facto dos juízes.
+
+Esse achado tem implicações diretas para o modelo brasileiro de metas do Poder Judiciário, introduzido pelo CNJ a partir da Resolução n. 70/2009. A literatura nacional ainda investiga pouco em que medida as Metas Nacionais do CNJ replicam o padrão de *mismatch* identificado por Visser et al.
+
+### Koerner, Inatomi e Barreira (2015): dez anos de racionalização no Brasil
+
+O artigo de @koerner2015, publicado na *Revista Direito e Práxis*, oferece um balanço crítico da primeira década de atuação do CNJ (2004–2014), com foco específico na política de racionalização da gestão judicial. Os autores reconstroem a trajetória das Metas Nacionais, dos indicadores de desempenho e dos programas de gestão estratégica, avaliando seus efeitos sobre o sistema de justiça.
+
+A análise identifica dois movimentos simultâneos e parcialmente contraditórios. De um lado, há ganhos de eficiência operacional: aumento da taxa de congestionamento controlado, redução dos estoques de processos em algumas áreas, padronização de procedimentos. De outro lado, há evidências de que a pressão quantitativa por produção deslocou o foco para tipos mais simples de demandas, postergando processos complexos e reduzindo o tempo médio de deliberação judicial.
+
+O argumento central dos autores é que o modelo de gerencialismo adotado pelo CNJ importou ferramentas desenvolvidas para organizações privadas sem adequação suficiente às especificidades da função jurisdicional, especialmente a exigência de adequada fundamentação das decisões e o princípio do juiz natural. Essa tensão entre eficiência gerencial e garantias processuais emerge como o nó analítico central para a avaliação da política judiciária brasileira.
+
+## A experiência brasileira: governança, reforma e investigação empírica
+
+### Santiso (2003): reforma econômica e governança judicial no Brasil
+
+O artigo de @santiso2003, publicado na *Democratization*, conecta a reforma judicial brasileira dos anos 1990 ao contexto mais amplo das reformas de segunda geração do ajuste estrutural. O argumento é que a independência judicial funciona como um dispositivo de *commitment* crível para atores econômicos e investidores estrangeiros: um Judiciário independente reduz o risco de expropriação e aumenta a previsibilidade das relações contratuais.
+
+Santiso analisa as pressões de organismos internacionais (FMI, Banco Mundial) por reformas judiciais no Brasil e outros países da América Latina, documentando como o programa de governança judicial se entrelaçou com o programa macroeconômico de liberalização. A contribuição é situar a reforma judicial brasileira em um contexto de difusão de políticas transnacional, antecipando, em certo sentido, o que o CNJ institucionalizaria a partir de 2004.
+
+Uma limitação importante do argumento de Santiso é seu viés econômico: a boa governança judicial é instrumentalizada como condição para o crescimento econômico, deixando em segundo plano os valores intrínsecos do acesso à justiça, da isonomia processual e da proteção dos direitos. Essa perspectiva instrumentalista encontra tensão com as abordagens de políticas públicas que tratam o sistema de justiça como fim em si mesmo e atribuem menor centralidade à função de infraestrutura para o mercado.
+
+### Akutsu e Guimarães (2012): dimensões da governança judicial no contexto brasileiro
+
+O artigo de @akutsu2012, publicado na *Revista Direito GV*, propõe um quadro de referência para analisar a governança judicial no Brasil a partir de revisão da literatura empírica internacional. Os autores identificam cinco dimensões analíticas: independência judicial, *accountability*, transparência, acesso à justiça e eficiência. Cada dimensão é operacionalizada com indicadores passíveis de mensuração e comparação.
+
+A contribuição central é adaptar o léxico da governança pública, desenvolvido predominantemente para organizações executivas, à especificidade do sistema judicial brasileiro. Os autores observam que a criação do CNJ introduziu instrumentos de governança antes ausentes (metas, relatórios, indicadores). A operacionalização das cinco dimensões permanece desigual: transparência e eficiência avançaram mais do que independência e acesso.
+
+O artigo funciona como referência fundacional para pesquisas empíricas posteriores sobre o CNJ: oferece uma linguagem comum e uma grade analítica que permite comparar tribunais, áreas do direito e períodos distintos.
+
+### Taylor (2007): o Judiciário como ator de política pública
+
+O trabalho de @taylor2007, publicado na revista *Dados*, representa um ponto de inflexão na literatura brasileira ao propor explicitamente que o Judiciário seja analisado como *ator* das políticas públicas. O argumento central é que tribunais brasileiros, especialmente o STF e os tribunais superiores, passaram a participar ativamente da formulação e implementação de políticas por meio de decisões liminares, ações diretas de inconstitucionalidade e mandados de segurança coletivos.
+
+Taylor documenta como o Judiciário brasileiro tornou-se ponto de veto e, simultaneamente, ponto de entrada para grupos de interesse na disputa por políticas públicas. Esse duplo papel, de bloqueio e de promoção de mudanças, complexifica a análise, pois o mesmo tribunal pode obstruir políticas redistributivas e promover direitos individuais em contextos distintos.
+
+## Judicialização de políticas públicas: perspectiva institucional comparada
+
+### Ríos-Figueroa e Taylor (2006): determinantes institucionais da judicialização
+
+O artigo de @riosfigueroa2006, publicado no *Journal of Latin American Studies*, propõe um framework comparativo para analisar a judicialização de políticas em Brasil e México com base no novo institucionalismo. O argumento central é que o grau e o padrão de judicialização dependem de **variáveis institucionais estruturais**: a configuração dos sistemas eleitorais, o número de pontos de veto, as regras de acesso ao Judiciário e o grau de independência formal dos tribunais.
+
+Os autores mostram que o Brasil, com sua combinação de sistema federativo, múltiplos veto players, acesso amplo ao STF (especialmente via ADI) e alta fragmentação partidária, apresenta um padrão de judicialização mais intenso e diversificado do que o México. A comparação atribui a judicialização à estrutura de incentivos institucional que canaliza conflitos políticos para o Judiciário.
+
+Para o campo de política judiciária, esse trabalho é central porque demonstra que as políticas produzidas pelo e para o Judiciário dependem de variáveis exógenas ao próprio sistema judicial, como fragmentação política, federalismo e design do sistema de controle de constitucionalidade.
+
+### Staats, Bowler e Hiskey (2005): mensurando o desempenho judicial na América Latina
+
+O trabalho de @staats2005, publicado no *Latin American Politics and Society*, representa um esforço pioneiro de mensuração comparada do desempenho judicial em países latino-americanos. Os autores criticam a dependência excessiva de indicadores formais (presença de conselho judicial, garantias de mandato) e propõem indicadores de desempenho efetivo, como taxas de congestionamento, tempo de resolução e percepção de independência pelos litigantes.
+
+Mesmo sem acesso ao texto completo, o trabalho serve como referência metodológica importante: a separação entre *institutional design* e *performance* que os autores propõem é exatamente o tipo de distinção analítica que o campo de política judiciária precisa incorporar para superar avaliações normativas e construir uma base empírica comparável entre jurisdições.
+
+## Síntese: eixos analíticos, interseções e lacunas {#sec-sintese-revisao}
+
+A @tbl-obras-revisao sintetiza os trabalhos revisados segundo dimensão analítica, nível de análise e contribuição principal.
+
+```{r tbl-obras-revisao}
+#| label: tbl-obras-revisao
+#| tbl-cap: "Principais obras do campo: síntese analítica"
+tribble(
+  ~Obra, ~`Eixo temático`, ~`Nível`, ~`Contribuição central`, ~`Lacuna`,
+  "Garoupa & Ginsburg (2009)", "Conselhos/Governança", "Comparado", "Teoria política da formação de conselhos judiciais", "Dados de qualidade judicial limitados",
+  "Kosař (2018)", "Autogovernança", "Europeu", "Tipologia da JSG e risco de politização interna", "Foco europeu, sem dados de América Latina",
+  "Ng (2011)", "Governança judicial", "Conceitual", "Distinção entre governança e administração", "Não operacionaliza as dimensões empiricamente",
+  "Visser et al. (2019)", "NPM/Reforma gerencial", "Países Baixos", "Mismatch NPM × trabalho judicial (survey)", "País único, sem comparação",
+  "Koerner et al. (2015)", "NPM/Reforma gerencial", "Brasil (CNJ)", "Balanço crítico da racionalização pós-CNJ", "Foco em 2004-2014, sem cobertura do período pós-2020",
+  "Santiso (2003)", "Reforma/Governança", "Brasil comparado", "Governança judicial como credibilidade econômica", "Viés economicista, com baixa centralidade dos direitos",
+  "Akutsu & Guimarães (2012)", "Governança judicial", "Brasil (CNJ)", "Framework dimensional para o sistema judicial BR", "Pouco desenvolvimento empírico",
+  "Taylor (2007)", "Judicialização", "Brasil", "Judiciário como ator de políticas públicas", "Período anterior à consolidação do CNJ",
+  "Ríos-Figueroa & Taylor (2006)", "Judicialização", "Brasil/México", "Determinantes institucionais da judicialização", "Limitado ao controle de constitucionalidade",
+  "Staats et al. (2005)", "Desempenho judicial", "América Latina", "Mensuração comparada do desempenho judicial", "Dados datados, sem texto integral disponível"
+) |> fmt_kable(align = "lllll", font_size = 9, full_width = TRUE)
+```
+
+A leitura cruzada dos trabalhos permite identificar três eixos de tensão que estruturam o campo:
+
+**Independência e *accountability***: presente em Garoupa e Ginsburg (2009), Kosař (2018), Ng (2011) e Santiso (2003). Essa tensão depende de configurações institucionais específicas. Diferentes arranjos geram diferentes equilíbrios, e o ponto ótimo depende de valores políticos e critérios de eficiência.
+
+**Eficiência quantitativa e qualidade decisória**: central em Visser et al. (2019) e Koerner et al. (2015). A adoção de métricas de produtividade nos tribunais, sem mecanismos adequados de proteção da qualidade, tende a gerar incentivos perversos, como priorização de casos simples, redução do tempo de deliberação e pressão sobre o juiz natural.
+
+**Reforma formal e mudança efetiva**: em Staats et al. (2005) e Ríos-Figueroa e Taylor (2006), o diagnóstico é que reformas institucionais formais têm tradução variável em desempenho ou padrão de judicialização. A distância entre *institutional design* e *performance* permanece como problema analítico central.
+
+Quanto às lacunas: nenhum dos trabalhos revisados aborda sistematicamente a **dimensão material e espacial** da prestação jurisdicional, incluindo edifícios, salas de audiência, acessibilidade física, infraestrutura tecnológica e logística dos fluxos processuais. Essa ausência é coerente com o achado bibliométrico central: termos como *infrastructure*, *building*, *facility* e *physical space* não aparecem entre os mais frequentes em nenhum dos anéis.
+
+# Quadro Teórico-Conceitual
+
+## Políticas judiciárias como subcampo de políticas públicas
+
+A noção de "política judiciária" pode ser conceitualmente situada no campo de políticas públicas a partir de três eixos.
+
+O primeiro é o reconhecimento do **Judiciário como ator de política pública** (*policy actor*). A literatura brasileira permite tratar o CNJ e os tribunais como formuladores e indutores de políticas, operando com instrumentos normativos (resoluções, metas, recomendações) e gerenciais (programas, protocolos, indicadores de desempenho) que se aproximam da tipologia de instrumentos de ação pública proposta por @lascoumes2007. Nessa perspectiva, política judiciária designa o conjunto de políticas públicas produzidas e implementadas no interior do sistema de justiça [@taylor2007]. A literatura sobre capacidades estatais e governança também ajuda a observar como arranjos institucionais, coordenação e instrumentos condicionam a implementação de programas públicos [@pires2016].
+
+O segundo eixo é a leitura do **CNJ como instância de regulação e governança**. A atuação normativa do Conselho é compatível com um padrão de regulação setorial aplicada ao Judiciário, articulando coordenação federativa entre tribunais, padronização de procedimentos e indução comportamental. Essa leitura conecta o objeto ao debate sobre governança pública e instrumentos de coordenação [@osborne2006].
+
+O terceiro eixo envolve a **implementação como problema analítico**. Políticas judiciárias vão além da produção normativa do CNJ e envolvem cadeias de implementação que mobilizam recursos, rotinas, capacidades estatais e atores de linha de frente como magistrados, servidores, conciliadores e oficiais de justiça. A literatura sobre burocracia de nível de rua [@lipsky2010] e sobre capacidades estatais oferece ferramentas analíticas para investigar como políticas formuladas no vértice do sistema chegam às práticas nas pontas.
+
+Esta ancoragem teórica delimita o escopo do mapeamento e da aplicação empírica. O estudo investiga a produção que se situa nessa tríplice interseção (Judiciário como ator, instrumentos de governança, implementação institucional) e que se nomeia explicitamente como "política judiciária". Em seguida, usa esse enquadramento para analisar as PJNP como políticas públicas judiciais observáveis por meio de registros administrativos.
+
+# Métodos e Técnicas
+
+## Desenho de pesquisa
+
+O estudo adota desenho em duas etapas. A primeira usa análise bibliométrica como método de mapeamento de campos [@aria2017; @donthu2021], com protocolo PRISMA adaptado como dispositivo de transparência [@page2021]. A estratégia de busca utiliza dois anéis concêntricos [@zupic2015]. O **anel nuclear** compreende registros onde a expressão exata "política judiciária" / "judicial policy" / "política judicial" (e flexões) aparece no título ou resumo. O **anel estendido** compreende registros sobre governança, administração e reforma do sistema de justiça, usando termos cognatos. A proporção entre os anéis é tratada como indicador descritivo de consolidação lexical, sem inferência causal sobre institucionalização do campo.
+
+A segunda etapa aplica a acepção programática identificada na cartografia ao portfólio das PJNP. A unidade de análise passa a ser a política judiciária nacional programática registrada no Painel PJNP do CNJ. Essa etapa tem finalidade diagnóstica: medir **maturidade observável no painel**, definida como o grau em que atributos de governança, monitoramento, alinhamento estratégico, iniciativas, produtos e colegiados aparecem documentados nas bases administrativas disponíveis. A distinção é importante porque ausência de registro pode significar lacuna cadastral, diferença de desenho institucional ou ausência de institucionalização visível.
+
+```{r tbl-rotulos-cognatos}
+#| label: tbl-rotulos-cognatos
+#| tbl-cap: "Rótulos, campos cognatos e riscos de polissemia"
+tribble(
+  ~Rótulo, ~`Campo/tradição típica`, ~`Risco de polissemia/overlap`,
+  "política judiciária", "Políticas públicas no Judiciário, CNJ e gestão de conflitos", "Pode significar política pública institucional ou diretriz jurisdicional",
+  "judicial policy", "Ciência política judicial, administração judicial e reformas", "Alterna entre governança institucional e preferências decisórias de juízes",
+  "court administration", "Administração de tribunais", "Captura gestão sem necessariamente adotar o rótulo política judiciária",
+  "judicial governance", "Governança judicial e conselhos judiciais", "Aproxima-se do objeto, com risco de excluir produção dogmática local",
+  "judicial reform", "Reforma judicial comparada", "Abrange mudanças institucionais amplas e pode superincluir reformas constitucionais"
+) |> fmt_kable(align = "lll", font_size = 10)
+```
+
+## Adaptação do PRISMA para bibliometria
+
+O PRISMA é usado aqui como dispositivo de *reporting* da seleção de registros. Foram preservados seus componentes de transparência: identificação, deduplicação, triagem, elegibilidade e inclusão [@page2021]. A adaptação responde à natureza bibliométrica e cartográfica da pergunta.
+
+## Coleta de dados
+
+A coleta principal foi realizada via API programática em quatro bases, selecionadas para maximizar cobertura com redundância controlada. A @tbl-parametros resume o desenho geral e a @tbl-search-rounds explicita strings, filtros, data de coleta e endpoint por base.
+
+```{r tbl-parametros}
+#| label: tbl-parametros
+#| tbl-cap: "Parâmetros do protocolo de busca"
+tribble(
+  ~Parâmetro, ~Especificação,
+  "Bases de dados", "OpenAlex, Scopus, Semantic Scholar, Crossref",
+  "Campos pesquisados", "Título, resumo e palavras-chave",
+  "Recorte temporal", "2000–2026",
+  "Tipos documentais", "Artigos, reviews e papers",
+  "Idiomas priorizados", "Inglês, português e espanhol",
+  "Critério do anel nuclear", "Expressão exata em título ou resumo",
+  "Critério do anel estendido", "Termos cognatos sobre governança judicial",
+  "Data da coleta", "22–23 de abril de 2026",
+  "Seed para amostras e layout", "42",
+  "Repositório", "Omitido para revisão cega"
+) |> fmt_kable(align = "ll")
+```
+
+```{r tbl-search-rounds}
+#| label: tbl-search-rounds
+#| tbl-cap: "Rodadas, strings, filtros e endpoints da coleta principal"
+tribble(
+  ~Base, ~Rodada, ~`Strings/blocos`, ~Filtros, ~`Data da coleta`, ~`Endpoint/API`,
+  "OpenAlex", "Nuclear + estendido", "\"judicial policy\", \"política judiciária\", \"judicial governance\", \"court administration\", \"judicial reform\", \"CNJ\"", "2000-2026, article/review, en/pt/es quando disponível", "22-23 abr. 2026", "https://api.openalex.org/works",
+  "Scopus", "Nuclear + estendido", "TITLE-ABS-KEY com os blocos nuclear e estendido", "PUBYEAR > 1999 AND PUBYEAR < 2027", "22-23 abr. 2026", "Scopus Search API",
+  "Semantic Scholar", "Nuclear + estendido", "\"judicial policy\", \"judicial governance\", \"court administration\", termos PT/ES equivalentes", "year:2000-, ordenação por citationCount", "22-23 abr. 2026", "/graph/v1/paper/search/bulk",
+  "Crossref", "Nuclear + estendido", "query.bibliographic com blocos nuclear e estendido", "from-pub-date:2000-01-01, type:journal-article, paginação 100", "22-23 abr. 2026", "https://api.crossref.org/works"
+) |> fmt_kable(align = "llllll", font_size = 9)
+```
+
+## Completude de metadados
+
+A qualidade dos dados condiciona as análises possíveis. A @tbl-metadata reporta a cobertura por campo.
+
+```{r tbl-metadata}
+#| label: tbl-metadata
+#| tbl-cap: "Completude de metadados por corpus e campo"
+meta_comp |>
+  filter(corpus %in% c("Corpus completo", "Anel nuclear", "Anel estendido")) |>
+  select(Corpus = corpus, Campo = campo, Preenchidos = preenchidos, Total = total, `%` = pct_preenchido) |>
+  mutate(`%` = paste0(`%`, "%")) |>
+  fmt_kable(align = "llccc", font_size = 11)
+```
+
+## Triagem e reclassificação (PRISMA)
+
+O fluxo documenta a passagem de 7.161 registros identificados para 4.926 registros incluídos, separando explicitamente o pequeno anel nuclear do conjunto estendido. A distinção preserva a rastreabilidade da triagem e evita interpretar literatura cognata como evidência direta de adoção do rótulo "política judiciária".
+
+```{r fig-prisma-flow}
+#| label: fig-prisma-flow
+#| fig-cap: "Diagrama PRISMA-flow adaptado para análise bibliométrica com dois anéis"
+#| fig-width: 8
+#| fig-height: 10
+prisma_data <- tibble(
+  x = c(0, 0, 0, 1.5, -0.8, 0.8, 0),
+  y = c(6, 5, 4, 3, 1.5, 1.5, 0.5),
+  color = c("grey60", "grey40", "grey60", pal_excluded, pal_nuclear, pal_extended, "grey20"),
+  label = c(
+    paste0("Registros identificados\n(4 bases)\nn = ", fmt_n(n_identified)),
+    paste0("Duplicatas removidas\nn = ", fmt_n(n_duplicates)),
+    paste0("Registros triados\nn = ", fmt_n(n_deduplicated)),
+    paste0("Excluídos\nn = ", fmt_n(n_excluded)),
+    paste0("Anel Nuclear\n\"política judiciária\"\nn = ", fmt_n(n_nuclear)),
+    paste0("Anel Estendido\ntermos cognatos\nn = ", fmt_n(n_extended)),
+    paste0("Total incluído\nn = ", fmt_n(n_included))))
+ggplot(prisma_data, aes(x, y)) +
+  geom_label(aes(label = label, fill = color), size = 3.5, color = "white",
+             fontface = "bold", label.padding = unit(0.6, "lines")) +
+  annotate("segment", x=0, xend=0, y=5.7, yend=5.3, arrow=arrow(length=unit(.2,"cm")), color="grey50") +
+  annotate("segment", x=0, xend=0, y=4.7, yend=4.3, arrow=arrow(length=unit(.2,"cm")), color="grey50") +
+  annotate("segment", x=.3, xend=1.2, y=3.5, yend=3.2, arrow=arrow(length=unit(.2,"cm")), color=pal_excluded) +
+  annotate("segment", x=-.2, xend=-.7, y=3.5, yend=2, arrow=arrow(length=unit(.2,"cm")), color=pal_nuclear) +
+  annotate("segment", x=.2, xend=.7, y=3.5, yend=2, arrow=arrow(length=unit(.2,"cm")), color=pal_extended) +
+  annotate("segment", x=-.6, xend=-.2, y=1.1, yend=.8, arrow=arrow(length=unit(.2,"cm")), color="grey50") +
+  annotate("segment", x=.6, xend=.2, y=1.1, yend=.8, arrow=arrow(length=unit(.2,"cm")), color="grey50") +
+  scale_fill_identity() + xlim(-2, 2.5) + ylim(0, 6.5) + theme_void() +
+  labs(title = "PRISMA Flow Diagram")
+```
+
+```{r tbl-exclusion}
+#| label: tbl-exclusion
+#| tbl-cap: "Motivos de exclusão na triagem (N = registros excluídos)"
+excluded |>
+  count(exclusion_reason, sort = TRUE) |>
+  mutate(
+    pct = percent(n / sum(n), accuracy = 0.1),
+    motivo = case_when(
+      exclusion_reason == "sem_relacao_sistema_justica" ~ "Sem relação com o sistema de justiça",
+      exclusion_reason == "judicial_review_constitucionalista" ~ "Judicial review (constitucionalista)",
+      exclusion_reason == "periódico_ou_título_fora_escopo" ~ "Periódico ou título fora do escopo",
+      exclusion_reason == "judicializacao_politicas" ~ "Judicialização de políticas públicas",
+      exclusion_reason == "tema_fora_escopo" ~ "Tema fora do escopo",
+      exclusion_reason == "metadados_insuficientes" ~ "Metadados insuficientes",
+      TRUE ~ exclusion_reason)
+  ) |>
+  select(Motivo = motivo, N = n, `%` = pct) |>
+  fmt_kable(align = "lrc")
+```
+
+Os motivos de exclusão mostram que a delimitação combinou critérios lexicais e substantivos. Foram retirados registros sem relação substantiva com o sistema de justiça, estudos constitucionalistas de *judicial review* e documentos com metadados insuficientes. Essa combinação reduz falsos positivos, embora dependa de julgamento semântico.
+
+## Dados PJNP e estratégia aplicada
+
+A etapa aplicada utiliza três planilhas exportadas do Painel de Políticas Judiciárias Nacionais Programáticas do CNJ: base de políticas, iniciativas e colegiados [@cnj_painel_pjnp; @cnj_pjnp_portal]. O desenho normativo recente reforça a pertinência do caso. A IN n. 112/2026 explicita ciclo de formulação, implementação, monitoramento e avaliação das PJNP, enquanto a IN n. 113/2026 disciplina sua governança colaborativa [@cnj_in112_2026; @cnjIN113]. Assim, as PJNP são tratadas como caso empírico da acepção programática de política judiciária.
+
+```{r tbl-pjnp-bases}
+#| label: tbl-pjnp-bases
+#| tbl-cap: "Bases usadas na análise aplicada das PJNP"
+if (has_pjnp) {
+  tibble(
+    Base = c("Base de políticas", "Iniciativas", "Colegiados"),
+    Registros = c(n_pjnp_policies, n_pjnp_initiatives, n_pjnp_colegiados),
+    `Uso analítico` = c(
+      "Unidade de análise, área, macrodesafio e atributos de maturidade",
+      "Conclusão de iniciativas e registro de produtos",
+      "Densidade institucional e tipos de colegiado por política"
+    )
+  ) |>
+    mutate(Registros = fmt_n(Registros)) |>
+    fmt_kable(align = "lcl", font_size = 10)
+} else {
+  cat("Bases PJNP não encontradas no caminho esperado.")
+}
+```
+
+Foram calculadas três famílias de medidas. A primeira é um índice base de 0 a 4, que soma quatro atributos observáveis no painel: coordenador, supervisor, gerente e link de monitoramento. A segunda é o **Índice de Maturidade Observável das PJNP (IMO-PJNP)**, em escala de 0 a 100. A terceira separa os componentes do índice em governança formal, monitoramento e alinhamento estratégico.
+
+O IMO-PJNP adota pesos normativos, teoricamente informados e auditáveis. A literatura de indicadores compostos recomenda que pesos expressem o quadro teórico e a finalidade do índice. Também recomenda explicitar escolhas de ponderação e interpretar resultados com cautela [@oecdJRC2008; @decancqLugo2013; @greco2019]. Aqui, os pesos seguem uma lógica multicritério em sentido fraco. Não houve elicitação formal por painel de especialistas, AHP ou estimação empírica. A regra é transparente, reproduzível e orientada pela finalidade de medir observabilidade administrativa. A gestão do desempenho público sustenta o peso maior do monitoramento, porque medidas só são úteis quando produzem informação para acompanhar, aprender e corrigir rotas [@behn2003; @moynihan_pandey2010; @pandey2015]. A literatura de instrumentos, capacidades e governança judicial sustenta a presença de papéis formais e alinhamento institucional [@lascoumes2007; @pires2016; @ng2011; @akutsu2012].
+
+```{r tbl-imo-pjnp-weights}
+#| label: tbl-imo-pjnp-weights
+#| tbl-cap: "Composição do Índice de Maturidade Observável das PJNP (IMO-PJNP)"
+tribble(
+  ~Dimensão, ~`Variáveis observáveis`, ~Peso, ~Justificativa,
+  "Monitoramento e rastreabilidade", "Link de monitoramento", "40%",
+  "Dimensão mais diretamente ligada a acompanhamento, transparência, avaliação e uso gerencial da informação.",
+  "Governança formal", "Coordenador, supervisor e gerente", "35%",
+  "Papéis designados tornam a política mais coordenável, responsabilizável e auditável.",
+  "Alinhamento estratégico", "Meta nacional, ODS, macrodesafio e objetivo estratégico", "25%",
+  "Conecta a política a prioridades institucionais, com alcance dependente de validação posterior."
+) |> fmt_kable(align = "llll", full_width = TRUE, font_size = 10)
+```
+
+Formalmente, o índice é calculado como:
+
+$$
+\text{IMO-PJNP} = 40 \times M + 35 \times G + 25 \times A
+$$
+
+em que $M$ é a presença de link de monitoramento, $G$ é a média dos três atributos de governança formal e $A$ é a média dos quatro atributos de alinhamento estratégico. Produtos, conclusão, número de iniciativas e colegiados ficam fora do índice principal para evitar circularidade com os outputs administrativos analisados posteriormente. Esses elementos são tratados como densidade institucional observável e usados apenas em análises exploratórias.
+
+Como o componente de monitoramento é observado pela presença de link de monitoramento, sua interpretação se limita à rastreabilidade mínima no painel. Qualidade, periodicidade e uso efetivo do monitoramento ficam fora do escopo do índice.
+
+A análise de sensibilidade compara o IMO-PJNP atual com duas especificações alternativas: pesos iguais e governança maior. A tabela reporta a correlação de Spearman com o escore atual e o número de políticas que mudam mais de 10 posições no ranking. O exercício funciona como checagem de estabilidade da classificação. A validação empírica dos pesos continua dependente de estudos específicos.
+
+```{r tbl-imo-sensitivity}
+#| label: tbl-imo-sensitivity
+#| tbl-cap: "Sensibilidade do IMO-PJNP a especificações alternativas de pesos"
+if (has_pjnp) {
+  sensitivity_scores <- pjnp_indices |>
+    mutate(
+      atual = indice_ponderado_0_100,
+      pesos_iguais = (
+        indice_monitoramento_0_100 +
+          indice_governanca_formal_0_100 +
+          indice_alinhamento_estrategico_0_100
+      ) / 3,
+      governanca_maior = (
+        0.30 * indice_monitoramento_0_100 +
+          0.40 * indice_governanca_formal_0_100 +
+          0.30 * indice_alinhamento_estrategico_0_100
+      )
+    ) |>
+    mutate(
+      rank_atual = rank(-atual, ties.method = "average"),
+      rank_pesos_iguais = rank(-pesos_iguais, ties.method = "average"),
+      rank_governanca_maior = rank(-governanca_maior, ties.method = "average")
+    )
+
+  tibble(
+    Especificação = c("Pesos iguais", "Governança maior"),
+    `Pesos M/G/A` = c("33,3/33,3/33,3", "30/40/30"),
+    `Correlação Spearman` = c(
+      cor(sensitivity_scores$atual, sensitivity_scores$pesos_iguais, method = "spearman"),
+      cor(sensitivity_scores$atual, sensitivity_scores$governanca_maior, method = "spearman")
+    ),
+    `Mudanças acima de 10 posições` = c(
+      sum(abs(sensitivity_scores$rank_atual - sensitivity_scores$rank_pesos_iguais) > 10),
+      sum(abs(sensitivity_scores$rank_atual - sensitivity_scores$rank_governanca_maior) > 10)
+    )
+  ) |>
+    mutate(`Correlação Spearman` = fmt_num(`Correlação Spearman`, 3)) |>
+    fmt_kable(align = "lccc", font_size = 10)
+} else {
+  cat("Sensibilidade não disponível.")
+}
+```
+
+A estabilidade dos rankings sugere que, no conjunto analisado, a classificação das políticas é pouco sensível às variações moderadas de pesos testadas, possivelmente em razão da estrutura discreta dos componentes e da distribuição dos atributos observáveis.
+
+O agrupamento das PJNP é exploratório. Ele combina área temática, macrodesafio, densidade institucional, outputs administrativos e índices de maturidade para organizar políticas similares e selecionar casos para validação institucional. Os modelos de associação são regressões bivariadas descritivas com erro-padrão HC1, usando três outputs administrativos: percentual de iniciativas com produto, percentual de iniciativas concluídas e número de iniciativas por política. A inferência é deliberadamente restrita: produtos e conclusão são registros administrativos, sem medir impacto social ou implementação real nos tribunais.
+
+# Resultados
+
+## RQ1: Existe um campo que se nomeia como política judiciária?
+
+A @tbl-overview sintetiza os indicadores gerais. O anel nuclear representa `r sprintf("%.1f", n_nuclear/n_included*100)`% do corpus total. A mediana de citações do anel nuclear é zero, em contraste com a média do corpus completo.
+
+```{r tbl-overview}
+#| label: tbl-overview
+#| tbl-cap: "Visão geral do corpus (N = registros, citações conforme metadados das bases)"
+tibble(
+  Indicador = c("Total de registros", "Anel nuclear", "Anel estendido",
+    "Período coberto", "Periódicos distintos",
+    "Total de citações", "Média de citações", "Mediana de citações"),
+  `Corpus completo` = c(
+    fmt_n(n_included), fmt_n(n_nuclear), fmt_n(n_extended),
+    paste0(min(corpus$publication_year, na.rm=T), "–", max(corpus$publication_year, na.rm=T)),
+    fmt_n(n_journals_total),
+    fmt_n(sum(corpus$cited_by_count, na.rm=T)),
+    sprintf("%.1f", mean(corpus$cited_by_count, na.rm=T)),
+    fmt_n(median(corpus$cited_by_count, na.rm=T))),
+  `Anel nuclear` = c(
+    fmt_n(n_nuclear), "–", "–",
+    paste0(min(nuclear$publication_year, na.rm=T), "–", max(nuclear$publication_year, na.rm=T)),
+    fmt_n(n_journals_nuclear),
+    fmt_n(sum(nuclear$cited_by_count, na.rm=T)),
+    sprintf("%.1f", mean(nuclear$cited_by_count, na.rm=T)),
+    fmt_n(median(nuclear$cited_by_count, na.rm=T)))
+) |> fmt_kable(align = "lcc")
+```
+
+## RQ2: Que tipo de campo é esse?
+
+A @fig-temporal mostra a evolução da produção por anel. No anel estendido, observa-se crescimento contínuo de registros associados a governança, administração e reforma judicial [@hammergren2007]. No anel nuclear, a produção permanece residual até 2014 e aumenta a partir de 2015.
+
+```{r fig-temporal}
+#| label: fig-temporal
+#| fig-cap: "Evolução temporal da produção por anel (N = registros publicados entre 2000 e 2025)"
+#| fig-height: 5
+yearly <- corpus |>
+  filter(!is.na(publication_year), publication_year >= 2000, publication_year <= 2025) |>
+  count(publication_year, ring) |>
+  complete(publication_year = 2000:2025, ring = c("nuclear","extended"), fill = list(n=0))
+p1 <- ggplot(yearly, aes(publication_year, n, fill = ring)) +
+  geom_col(position="stack", alpha=.85) +
+  scale_fill_manual(values=c("nuclear"=pal_nuclear,"extended"=pal_extended),
+                    labels=c("nuclear"="Nuclear","extended"="Estendido")) +
+  scale_x_continuous(breaks=seq(2000,2025,5)) +
+  labs(x="Ano", y="Publicações", fill="", title="Corpus completo")
+yearly_n <- nuclear |>
+  filter(!is.na(publication_year), publication_year>=2000, publication_year<=2025) |>
+  count(publication_year) |>
+  complete(publication_year=2000:2025, fill=list(n=0))
+p2 <- ggplot(yearly_n, aes(publication_year, n)) +
+  geom_col(fill=pal_nuclear, alpha=.85) +
+  geom_smooth(method="loess", se=FALSE, color="grey30", linewidth=.8) +
+  scale_x_continuous(breaks=seq(2000,2025,5)) +
+  labs(x="Ano", y="Publicações", title="Anel nuclear")
+p1 / p2
+```
+
+```{r tbl-quinquenio}
+#| label: tbl-quinquenio
+#| tbl-cap: "Produção por quinquênio (N = registros, 2000-2025)"
+corpus |>
+  filter(!is.na(publication_year), publication_year>=2000, publication_year<=2025) |>
+  mutate(q = cut(publication_year, breaks=c(1999,2004,2009,2014,2019,2025),
+                 labels=c("2000–04","2005–09","2010–14","2015–19","2020–25"))) |>
+  count(q, ring) |>
+  pivot_wider(names_from=ring, values_from=n, values_fill=0) |>
+  mutate(total=nuclear+extended, pct=percent(nuclear/total, accuracy=.1)) |>
+  select(Quinquênio=q, Nuclear=nuclear, Estendido=extended, Total=total, `% Nuclear`=pct) |>
+  fmt_kable(align="ccccc")
+```
+
+## Dispersão de periódicos (Lei de Bradford)
+
+A distribuição de Bradford aponta ausência de núcleo editorial concentrado. Para reunir terços sucessivos da produção nuclear, é necessário incorporar muitos periódicos, o que reforça a interpretação de um campo disperso e ainda sem veículo de convergência claramente estabelecido.
+
+```{r fig-bradford}
+#| label: fig-bradford
+#| fig-cap: "Lei de Bradford no anel nuclear (N = periódicos com metadado preenchido)"
+#| fig-height: 5
+jf <- nuclear |>
+  filter(is_valid(journal)) |>
+  count(journal, sort=TRUE) |>
+  mutate(rank=row_number(), cum_n=cumsum(n), cum_pct=cum_n/sum(n),
+    zone=case_when(cum_pct<=1/3~"Zona 1 (núcleo)", cum_pct<=2/3~"Zona 2", TRUE~"Zona 3"))
+ggplot(jf, aes(rank, cum_pct, color=zone)) +
+  geom_point(size=2, alpha=.7) + geom_line(color="grey50", alpha=.5) +
+  geom_hline(yintercept=c(1/3,2/3), linetype="dashed", color="grey60") +
+  scale_y_continuous(labels=percent) +
+  scale_color_manual(values=c("Zona 1 (núcleo)"=pal_nuclear,"Zona 2"="#f59e0b","Zona 3"="grey60")) +
+  labs(x="Ranking do periódico", y="% acumulada de artigos", color="")
+```
+
+## Análise complementar: autores mais produtivos no anel nuclear
+
+A @tbl-top-authors lista os autores com maior número de contribuições no anel nuclear. A produção é altamente dispersa, com a maioria dos autores contribuindo com apenas um artigo.
+
+```{r tbl-top-authors}
+#| label: tbl-top-authors
+#| tbl-cap: "Autores mais produtivos no anel nuclear (top 15, N = artigos por autor)"
+nuclear |>
+  filter(is_valid(authors)) |>
+  mutate(autor_list = str_split(authors, "\\x3b|,")) |>
+  unnest(autor_list) |>
+  mutate(autor = str_trim(autor_list)) |>
+  filter(nchar(autor) > 3) |>
+  count(autor, sort = TRUE) |>
+  head(15) |>
+  mutate(rank = row_number()) |>
+  select(Rank = rank, Autor = autor, `N artigos` = n) |>
+  fmt_kable(align = "cll")
+```
+
+## Análise complementar: periódicos do anel nuclear (top 20)
+
+O ranking de periódicos confirma a dispersão observada na curva de Bradford: mesmo os veículos mais produtivos reúnem parcelas pequenas do anel nuclear. A ausência de concentração dificulta a formação de uma comunidade citacional estável em torno do rótulo investigado.
+
+```{r tbl-top-journals}
+#| label: tbl-top-journals
+#| tbl-cap: "Periódicos mais frequentes no anel nuclear (top 20)"
+nuclear |>
+  filter(is_valid(journal)) |>
+  count(journal, sort = TRUE) |>
+  head(20) |>
+  mutate(
+    rank = row_number(),
+    pct = percent(n / nrow(nuclear), accuracy = 0.1)
+  ) |>
+  select(Rank = rank, Periódico = journal, N = n, `%` = pct) |>
+  fmt_kable(align = "clcc")
+```
+
+## Análise complementar: distribuição por idioma e tipo documental
+
+A distribuição por idioma evidencia a coexistência de tradições linguísticas distintas no anel nuclear, enquanto o perfil documental do corpus completo confirma a predominância de produção científica compatível com a análise bibliométrica. Como o idioma é um dos campos de menor completude, essa leitura é descritiva e não representa integralmente o corpus.
+
+```{r fig-lang-type}
+#| label: fig-lang-type
+#| fig-cap: "Distribuição por idioma (nuclear) e tipo documental (corpus completo)"
+#| fig-width: 9
+#| fig-height: 4
+
+p_lang <- nuclear |>
+  filter(is_valid(language)) |>
+  count(language, sort = TRUE) |>
+  mutate(
+    pct = n / sum(n),
+    lang_label = case_when(
+      language == "en" ~ "Inglês",
+      language == "pt" ~ "Português",
+      language == "es" ~ "Espanhol",
+      language == "fr" ~ "Francês",
+      language == "ru" ~ "Russo",
+      TRUE ~ language
+    )
+  ) |>
+  ggplot(aes(fct_reorder(lang_label, n), n, fill = lang_label)) +
+  geom_col(alpha = .85) +
+  coord_flip() +
+  scale_fill_viridis_d(option = "D", begin = 0.2, end = 0.9) +
+  labs(x = "", y = "Artigos", title = "Idioma (anel nuclear)", fill = "") +
+  theme(legend.position = "none")
+
+p_type <- corpus |>
+  filter(is_valid(type)) |>
+  count(type, sort = TRUE) |>
+  head(5) |>
+  ggplot(aes(fct_reorder(type, n), n)) +
+  geom_col(fill = pal_extended, alpha = .85) +
+  coord_flip() +
+  scale_y_continuous(
+    breaks = c(0, 1000, 2000),
+    labels = scales::label_number(big.mark = ".", decimal.mark = ",")
+  ) +
+  labs(x = "", y = "Registros", title = "Tipo documental")
+
+p_lang + p_type + plot_layout(widths = c(1, 1.15))
+```
+
+## Análise complementar: fontes de indexação e cobertura cruzada
+
+A @tbl-sources analisa quantos registros do anel nuclear aparecem em múltiplas bases, o que é indicador de visibilidade do campo.
+
+```{r tbl-sources}
+#| label: tbl-sources
+#| tbl-cap: "Cobertura cruzada no anel nuclear (N = bases onde o artigo foi indexado)"
+nuclear |>
+  mutate(n_bases_num = as.numeric(n_bases)) |>
+  filter(!is.na(n_bases_num)) |>
+  count(n_bases_num) |>
+  arrange(n_bases_num) |>
+  mutate(
+    pct = percent(n / sum(n), accuracy = 0.1),
+    label = paste0(n_bases_num, " base(s)")
+  ) |>
+  select(`Indexado em` = label, `N artigos` = n, `%` = pct) |>
+  fmt_kable(align = "lcc")
+```
+
+## Artigos mais citados no anel nuclear
+
+A lista de trabalhos mais citados mostra que a visibilidade se concentra em poucos documentos e que parte relevante dos registros possui impacto citacional reduzido. O padrão é coerente com a mediana zero do anel nuclear e recomenda cautela ao tratar citações como indicador de consolidação do campo.
+
+```{r tbl-most-cited-nuclear}
+#| label: tbl-most-cited-nuclear
+#| tbl-cap: "Artigos mais citados no anel nuclear (top 15, citações conforme metadados das bases)"
+nuclear |> arrange(desc(cited_by_count)) |> head(15) |>
+  mutate(title=str_trunc(title,70),
+         journal=ifelse(!is_valid(journal),"N/D",str_trunc(journal,30))) |>
+  select(Título=title, Ano=publication_year, Periódico=journal, Cit.=cited_by_count) |>
+  fmt_kable(align="llcc", font_size=11)
+```
+
+## Polissemia como achado bibliométrico
+
+A classificação conceitual apresentada no início do artigo também aparece nos metadados e títulos recuperados. O mesmo rótulo aproxima estudos sobre governança institucional, comportamento decisório e doutrina da função jurisdicional. Esse achado confirma que a delimitação da acepção programática é condição para transformar o campo em objeto avaliável sem misturar objetos substantivamente distintos.
+
+## Análise exploratória de co-citação
+
+A co-citação foi examinada para identificar possíveis bases intelectuais compartilhadas. Como referências recuperáveis estavam disponíveis apenas para parte do anel nuclear, os resultados descrevem aproximações entre obras e comunidades. Inferências sobre toda a estrutura intelectual do campo exigem cobertura mais ampla de referências.
+
+```{r tbl-cocitation-top}
+#| label: tbl-cocitation-top
+#| tbl-cap: "Obras mais citadas pelo anel nuclear (top 15, subconjunto com referências OpenAlex)"
+#| eval: !expr has_refs
+top_cited <- nuclear_refs |>
+  distinct(citing_title, cited_openalex_id) |>
+  count(cited_openalex_id, sort = TRUE, name = "n_citing") |>
+  head(20) |>
+  left_join(
+    nuclear_refs |>
+      distinct(cited_openalex_id, .keep_all = TRUE) |>
+      select(cited_openalex_id, ref_title, ref_first_author, ref_year, ref_journal),
+    by = "cited_openalex_id") |>
+  filter(is_valid(ref_title) & is_valid(ref_first_author)) |>
+  head(15) |>
+  mutate(ref_title = str_trunc(ref_title, 55),
+         ref_journal = ifelse(!is_valid(ref_journal), "N/D", str_trunc(ref_journal, 25))) |>
+  select(Obra = ref_title, Autor = ref_first_author, Ano = ref_year,
+         Periódico = ref_journal, `Citado por` = n_citing)
+top_cited |> fmt_kable(align = "llccc", font_size = 11)
+```
+
+```{r fig-cocitation}
+#| label: fig-cocitation
+#| fig-cap: "Rede de co-citação do anel nuclear (pares citados por 2+ artigos, componente principal, top 50 nós)"
+#| fig-height: 8
+#| eval: !expr has_cocitation
+cocit_filtered <- cocit_edges |> filter(weight >= 2)
+if (nrow(cocit_filtered) > 0) {
+  g <- graph_from_data_frame(cocit_filtered, directed = FALSE)
+  E(g)$weight <- cocit_filtered$weight
+  comp <- components(g)
+  giant <- which.max(comp$csize)
+  g_giant <- induced_subgraph(g, which(comp$membership == giant))
+  max_nodes <- 50
+  if (vcount(g_giant) > max_nodes) {
+    deg <- degree(g_giant)
+    top_nodes <- names(sort(deg, decreasing = TRUE))[1:max_nodes]
+    g_giant <- induced_subgraph(g_giant, top_nodes)
+  }
+  comm <- cluster_louvain(g_giant)
+  if (has_refs) {
+    ref_labels <- nuclear_refs |>
+      filter(is_valid(ref_first_author)) |>
+      distinct(cited_openalex_id, .keep_all = TRUE) |>
+      mutate(label = paste0(str_trunc(ref_first_author, 15), " (", ifelse(is.na(ref_year), "?", ref_year), ")"))
+    label_map <- setNames(ref_labels$label, ref_labels$cited_openalex_id)
+  } else { label_map <- c() }
+  V(g_giant)$label <- ifelse(V(g_giant)$name %in% names(label_map), label_map[V(g_giant)$name], "")
+  V(g_giant)$size <- scales::rescale(degree(g_giant), to = c(4, 15))
+  n_comm <- length(unique(membership(comm)))
+  V(g_giant)$color <- RColorBrewer::brewer.pal(max(3, min(n_comm, 9)), "Set2")[membership(comm)]
+  set.seed(42)
+  old_par <- par(no.readonly = TRUE)
+  par(family = "Times New Roman")
+  plot(g_giant, layout = layout_with_fr(g_giant),
+       vertex.label.cex = 0.55, vertex.label.color = "grey20", vertex.frame.color = NA,
+       edge.width = E(g_giant)$weight * 0.4,
+       edge.color = adjustcolor("grey60", alpha.f = 0.3),
+       main = paste0("Co-citação (", vcount(g_giant), " nós, ", ecount(g_giant), " arestas, ", n_comm, " comunidades)"))
+  par(old_par)
+} else { cat("Nenhum par com peso >= 2 encontrado.") }
+```
+
+## Análise temática por palavras do título
+
+A frequência de palavras nos títulos diferencia o vocabulário explicitamente associado à política judiciária daquele empregado pelo campo estendido. O contraste confirma que o anel nuclear possui identidade lexical própria, embora ainda compartilhe termos amplos sobre tribunais, governança, reforma e administração.
+
+```{r fig-word-freq}
+#| label: fig-word-freq
+#| fig-cap: "Termos mais frequentes nos títulos (N = registros por anel, stopwords removidas)"
+#| fig-height: 6
+sw <- c("the","of","and","in","a","to","for","on","an","is","by","with","from",
+        "as","at","its","that","this","it","or","be","are","was","were","has",
+        "have","been","not","but","can","will","do","does","their","they","them",
+        "which","who","how","between","through","sobre","uma","como","para","das",
+        "dos","nas","nos","com","por","sua","seu","mais","entre","após","desde",
+        "del","los","las","una","caso","hacia","sobre")
+wf <- function(df, label) {
+  df |> mutate(t=str_to_lower(title)) |> pull(t) |> str_split("\\s+") |>
+    unlist() |> str_remove_all("[^a-záéíóúâêôãõçñü]") |>
+    (\(x) tibble(word = x))() |> filter(nchar(word)>3, !word %in% sw) |>
+    count(word, sort=TRUE) |> head(25) |> mutate(ring=label)
+}
+bind_rows(wf(nuclear,"Nuclear"), wf(extended,"Estendido")) |>
+  mutate(word=fct_reorder(word,n)) |>
+  ggplot(aes(word,n,fill=ring)) + geom_col(alpha=.85) + coord_flip() +
+  facet_wrap(~ring, scales="free_y") +
+  scale_fill_manual(values=c("Nuclear"=pal_nuclear,"Estendido"=pal_extended)) +
+  labs(x="",y="Frequência",fill="") + theme(legend.position="none")
+```
+
+## Marcos institucionais e evolução temporal
+
+Os marcos institucionais oferecem contexto para interpretar o crescimento observado, especialmente no Brasil. A comparação temporal funciona como hipótese de alinhamento entre formalização institucional do vocabulário e maior uso do rótulo na literatura científica.
+
+```{r tbl-timeline-cnj}
+#| label: tbl-timeline-cnj
+#| tbl-cap: "Marcos institucionais usados para interpretar a evolução temporal"
+tribble(
+  ~Ano, ~Marco, ~Fonte, ~`Uso analítico no estudo`,
+  2010, "Resolução CNJ n. 125 institui a Política Judiciária Nacional de Tratamento Adequado dos Conflitos", "@cnj125", "Marco programático associado a mediação, conciliação e resolução adequada",
+  2014, "Resolução CNJ n. 198 dispõe sobre Planejamento e Gestão Estratégica no Poder Judiciário", "@cnj198", "Marco para o ciclo estratégico 2015-2020",
+  2020, "Resolução CNJ n. 325 institui a Estratégia Nacional do Poder Judiciário 2021-2026", "@cnj325", "Atualização do modelo de estratégia, macrodesafios e indicadores",
+  2026, "Projeto ELO e IN CNJ n. 113/2026 reorganizam a governança das PJNP", "CNJ ELO 2026 e IN CNJ n. 113/2026", "Exemplo recente de formalização da linguagem programática"
+) |> fmt_kable(align = "clll", font_size = 10)
+```
+
+## RQ3: Como a acepção programática aparece nas PJNP?
+
+A etapa bibliométrica mostra que "política judiciária" é um rótulo polissêmico e ainda pouco consolidado. A aplicação às PJNP conecta a cartografia à avaliação ao observar como a acepção programática do conceito aparece documentada em um portfólio nacional de políticas coordenadas pelo CNJ. O Painel PJNP registra `r fmt_n(n_pjnp_policies)` políticas, `r fmt_n(n_pjnp_initiatives)` iniciativas e `r fmt_n(n_pjnp_colegiados)` colegiados. A área temática mais frequente é `r pjnp_area_top_name`, com `r fmt_n(pjnp_area_top_n)` políticas.
+
+```{r tbl-pjnp-overview}
+#| label: tbl-pjnp-overview
+#| tbl-cap: "Indicadores gerais da análise PJNP"
+if (has_pjnp) {
+  tibble(
+    Indicador = c(
+      "Políticas analisadas",
+      "Iniciativas registradas",
+      "Colegiados registrados",
+      "Área temática mais frequente",
+      "Média do índice base (0-4)",
+      "Média do IMO-PJNP (0-100)",
+      "Média de iniciativas concluídas",
+      "Média de iniciativas com produto"
+    ),
+    Valor = c(
+      fmt_n(n_pjnp_policies),
+      fmt_n(n_pjnp_initiatives),
+      fmt_n(n_pjnp_colegiados),
+      paste0(pjnp_area_top$`Área Temática`, " (", pjnp_area_top$n, " políticas)"),
+      fmt_num(pjnp_base_mean),
+      fmt_num(pjnp_weighted_mean),
+      fmt_pct(pjnp_conc_mean),
+      fmt_pct(pjnp_prod_mean)
+    )
+  ) |>
+    fmt_kable(align = "ll")
+} else {
+  cat("Bases PJNP não encontradas no caminho esperado.")
+}
+```
+
+```{r tbl-pjnp-index-summary}
+#| label: tbl-pjnp-index-summary
+#| tbl-cap: "Resumo dos índices de maturidade observável no Painel PJNP"
+if (has_pjnp) {
+  pjnp_index_summary |>
+    filter(indice %in% c(
+      "indice_base_0_4", "indice_ponderado_0_100",
+      "indice_governanca_formal_0_100", "indice_monitoramento_0_100",
+      "indice_alinhamento_estrategico_0_100"
+    )) |>
+    transmute(
+      Índice = recode(indice,
+        "indice_base_0_4" = "Base (0-4)",
+        "indice_ponderado_0_100" = "IMO-PJNP (0-100)",
+        "indice_governanca_formal_0_100" = "Governança formal (0-100)",
+        "indice_monitoramento_0_100" = "Monitoramento (0-100)",
+        "indice_alinhamento_estrategico_0_100" = "Alinhamento estratégico (0-100)"
+      ),
+      Média = fmt_num(mean),
+      Mediana = fmt_num(`50%`),
+      Mínimo = fmt_num(min),
+      Máximo = fmt_num(max)
+    ) |>
+    fmt_kable(align = "lcccc", font_size = 10)
+} else {
+  cat("Resumo PJNP não disponível.")
+}
+```
+
+![Distribuição do IMO-PJNP no Painel PJNP.](../../pjnp-avaliacao/outputs/figures/index_weighted_distribution.png){#fig-pjnp-indice}
+
+O índice base tem média `r fmt_num(pjnp_base_mean)` e o IMO-PJNP tem média `r fmt_num(pjnp_weighted_mean)`. Na especificação simples, `r fmt_n(pjnp_zero_base)` políticas aparecem sem nenhum dos quatro atributos do índice base, enquanto `r fmt_n(pjnp_full_base)` aparecem com todos eles. Esse contraste reforça que a comparação entre políticas judiciárias nacionais exige estratificação. Baixo registro indica menor observabilidade no painel e demanda validação cadastral antes de inferências sobre capacidade institucional.
+
+## Agrupamento exploratório para validação institucional
+
+O agrupamento selecionou k = `r fmt_n(pjnp_k_selected)`, com silhouette de `r fmt_num(pjnp_best_sil, 4)`. Esse valor indica baixa separação entre grupos. Por isso, os clusters são usados como instrumento heurístico de organização do portfólio. Eles ajudam a diferenciar políticas com baixa documentação de governança, políticas com maior densidade de colegiados, políticas com mais iniciativas e políticas com maior registro de produtos.
+
+```{r tbl-pjnp-clusters}
+#| label: tbl-pjnp-clusters
+#| tbl-cap: "Perfis médios dos agrupamentos exploratórios PJNP"
+if (has_pjnp) {
+  pjnp_clusters |>
+    group_by(cluster) |>
+    summarise(
+      Políticas = n(),
+      `IMO-PJNP médio` = mean(indice_ponderado_0_100, na.rm = TRUE),
+      `% médio com produto` = mean(pct_iniciativas_com_produto, na.rm = TRUE),
+      `% médio concluído` = mean(pct_iniciativas_concluidas, na.rm = TRUE),
+      `Iniciativas médias` = mean(n_iniciativas, na.rm = TRUE),
+      `Colegiados médios` = mean(n_colegiados, na.rm = TRUE),
+      .groups = "drop"
+    ) |>
+    arrange(cluster) |>
+    mutate(
+      Cluster = paste0("Cluster ", cluster),
+      `IMO-PJNP médio` = fmt_num(`IMO-PJNP médio`),
+      `% médio com produto` = fmt_pct(`% médio com produto`),
+      `% médio concluído` = fmt_pct(`% médio concluído`),
+      `Iniciativas médias` = fmt_num(`Iniciativas médias`),
+      `Colegiados médios` = fmt_num(`Colegiados médios`)
+    ) |>
+    select(Cluster, Políticas, `IMO-PJNP médio`, `% médio com produto`,
+           `% médio concluído`, `Iniciativas médias`, `Colegiados médios`) |>
+    fmt_kable(align = "lcccccc", font_size = 10)
+} else {
+  cat("Clusters PJNP não disponíveis.")
+}
+```
+
+![Perfis relativos dos agrupamentos exploratórios PJNP.](../../pjnp-avaliacao/outputs/figures/cluster_profiles.png){#fig-pjnp-clusters}
+
+O resultado substantivo do agrupamento está na possibilidade de orientar validação institucional. Políticas com baixa documentação pedem auditoria cadastral e reconstrução da teoria de mudança. Políticas com muitos colegiados pedem análise de coordenação. Políticas com muitas iniciativas e baixo registro de produtos pedem revisão de rotinas de documentação. Políticas com alto registro de produtos podem funcionar como casos-piloto para entender práticas de monitoramento.
+
+## RQ4: Maturidade observável se associa a outputs administrativos?
+
+Os modelos bivariados indicam relação restrita entre o IMO-PJNP e os três outputs administrativos. O IMO-PJNP se associa ao número de iniciativas, sem associação estatisticamente detectável com percentual de iniciativas com produto e percentual de iniciativas concluídas. Esse resultado é coerente com a distinção entre documentação e implementação: uma política pode estar bem documentada no painel e ainda assim apresentar poucos produtos registrados, ou pode ter muitas entregas administrativas sem que seus atributos formais estejam completos no painel.
+
+```{r tbl-pjnp-models}
+#| label: tbl-pjnp-models
+#| tbl-cap: "Associações bivariadas entre IMO-PJNP e outputs administrativos"
+if (has_pjnp) {
+  pjnp_models |>
+    filter(predictor == "indice_ponderado_0_100") |>
+    transmute(
+      Outcome = recode(outcome,
+        "pct_iniciativas_com_produto" = "% iniciativas com produto",
+        "pct_iniciativas_concluidas" = "% iniciativas concluídas",
+        "n_iniciativas" = "Número de iniciativas"
+      ),
+      N = n,
+      Estimativa = fmt_num(estimate, 4),
+      `EP HC1` = fmt_num(robust_se, 4),
+      `p-valor` = fmt_num(p_value, 4),
+      `IC95%` = paste0("[", fmt_num(ci95_low, 4), ", ", fmt_num(ci95_high, 4), "]"),
+      `Beta padronizado` = fmt_num(effect_size_std_beta, 4)
+    ) |>
+    fmt_kable(align = "lcccccc", font_size = 10)
+} else {
+  cat("Modelos PJNP não disponíveis.")
+}
+```
+
+![Associação descritiva entre IMO-PJNP e percentual de iniciativas com produto.](../../pjnp-avaliacao/outputs/figures/scatter_maturity_vs_products.png){#fig-pjnp-produtos}
+
+Nos modelos completos, os sinais estatisticamente mais fortes aparecem apenas em componentes específicos, especialmente monitoramento e alinhamento estratégico associados ao número de iniciativas. A leitura substantiva é cautelosa: esses sinais podem refletir maior capacidade de registro, maior densidade real de ação ou as duas coisas. Em qualquer cenário, a análise recomenda tratar o Painel PJNP como instrumento de monitoramento e aprendizagem institucional. Medidas diretas de efetividade dependem de estudos próprios.
+
+```{r tbl-pjnp-missing}
+#| label: tbl-pjnp-missing
+#| tbl-cap: "Campos com maior ausência de registro nas bases PJNP"
+if (has_pjnp) {
+  pjnp_missing |>
+    mutate(pct_missing = as.numeric(pct_missing)) |>
+    arrange(desc(pct_missing)) |>
+    head(6) |>
+    transmute(
+      Base = table,
+      Campo = column,
+      Ausentes = n_missing,
+      `% ausente` = fmt_pct(pct_missing)
+    ) |>
+    fmt_kable(align = "llcc", font_size = 10)
+} else {
+  cat("Diagnóstico de missingness PJNP não disponível.")
+}
+```
+
+# Discussão
+
+## Campo emergente com sinais de aceleração
+
+O anel nuclear de `r n_nuclear` registros por `r n_journals_nuclear` periódicos é compatível com um campo em baixa consolidação paradigmática: há dispersão de periódicos, baixa densidade citacional e fronteiras lexicais instáveis [@zupic2015]. A produção do quinquênio 2020–25 é superior à de 2000–04, sugerindo maior uso recente da categoria. Essa aceleração acompanha o crescimento do campo mais amplo, com proporção nuclear/estendido ainda reduzida.
+
+A ausência de periódico nuclear contrasta com o *International Journal for Court Administration* (133 artigos no estendido), sugerindo que tradições cognatas já possuem espaços de convergência mais estáveis [@donthu2021].
+
+## Temporalidade e marcos institucionais
+
+A inflexão posterior a 2014 deve ser lida como hipótese de alinhamento institucional. A Resolução CNJ n. 198/2014 vinculou planejamento e gestão estratégica do Judiciário ao ciclo 2015–2020 [@cnj198]. A Resolução CNJ n. 325/2020 atualizou a Estratégia Nacional 2021–2026 e definiu política judiciária nacional como política instituída pelo CNJ voltada à efetivação da estratégia [@cnj325]. Os marcos oferecem um mecanismo plausível: a formalização institucional do vocabulário pode ampliar a produção científica. O desenho bibliométrico mostra covariação temporal. A análise das PJNP complementa esse ponto ao mostrar como a linguagem programática se materializa em registros administrativos, colegiados, iniciativas e instrumentos de monitoramento.
+
+## Polissemia como problema de avaliação
+
+A polissemia do termo, sintetizada na Seção de Resultados, sugere ausência de um marco teórico unificador. As três acepções coexistem com baixa evidência de interlocução no subconjunto de referências recuperadas. Para o campo de políticas públicas, essa polissemia dificulta a acumulação de conhecimento, a comparação entre jurisdições e a construção de indicadores transversais. Ao mesmo tempo, ela cria uma oportunidade analítica: uma vez explicitada a acepção programática, torna-se possível converter "política judiciária" de rótulo amplo em objeto empírico delimitado.
+
+A revisão bibliográfica, apresentada na Seção 3, aprofunda essa interpretação. Os trabalhos de Garoupa e Ginsburg (2009), Kosař (2018) e Ng (2011) dialogam entre si na tradição anglófona de *judicial governance*. Os trabalhos brasileiros, como Akutsu e Guimarães (2012, 2015), Koerner et al. (2015, 2017) e Taylor (2007), operam com referências e problemáticas parcialmente distintas, raramente citando a literatura comparada internacional de forma sistemática. A etapa PJNP responde a essa fragmentação com uma estratégia pragmática: isola uma acepção relevante para avaliação de políticas públicas de justiça.
+
+## O custo humano das reformas gerencialistas
+
+Um achado da revisão bibliográfica merece atenção especial: o "descasamento" (*mismatch*) identificado por @visser2019 entre controles de NPM e experiências dos juízes holandeses tem paralelo direto no argumento de @koerner2015 sobre a tensão entre gerencialismo e garantias processuais no Brasil pós-CNJ. A convergência desses dois estudos, de países distintos e em contextos institucionais muito diferentes, sugere que esse "descasamento" pode ser um padrão estrutural da aplicação de NPM ao trabalho judicial.
+
+Essa convergência, ainda que exploratória, oferece uma hipótese comparativa relevante para pesquisas futuras: a adoção de métricas de produtividade nos tribunais, sem mecanismos de proteção da qualidade decisória, tende a gerar incentivos perversos independentemente do sistema jurídico ou do contexto político nacional.
+
+## A dimensão institucional: independência como constrangimento e recurso
+
+A revisão bibliográfica revela que a independência judicial é simultaneamente um recurso e um constrangimento para a política judiciária. Como recurso: permite ao CNJ e aos tribunais adotar posições proativas sobre gestão sem interferência do Executivo. Como constrangimento: limita a possibilidade de *accountability* externa e cria riscos de captura corporativa, problema documentado por Kosař (2018) para os países europeus do leste e com ressonância potencial no contexto brasileiro.
+
+## Observabilidade e efetividade
+
+A contribuição aplicada é reposicionar o Painel PJNP como instrumento de ação pública. O painel define o que fica visível, auditável e comparável. Nessa chave, campos como coordenador, supervisor, gerente, link de monitoramento, produtos, iniciativas e colegiados funcionam como dispositivos que organizam expectativas de responsabilização, coordenação e aprendizagem institucional [@lascoumes2007].
+
+Esse enquadramento também previne uma leitura ingênua do IMO-PJNP. Maturidade observável mede documentação, rastreabilidade e coordenação visível no painel. A qualidade de implementação na ponta, os resultados e o impacto social exigem desenhos avaliativos próprios. A ausência de registro pode decorrer de desenho institucional, lacuna cadastral ou baixa formalização. A implicação prática é que o diagnóstico quantitativo deve orientar validação institucional e seleção de estudos de caso.
+
+## Limitações
+
+A ausência do Web of Science pode subestimar periódicos de alto impacto. A cobertura parcial de metadados (47,5% com idioma, 14,8% com abstract e 52,7% com autores) afeta indicadores descritivos e restringe análises textuais. A análise de co-citação é exploratória, baseada em 27% do anel nuclear. A rodada complementar brasileira identificou candidatos fora do corpus principal que dependem de curadoria antes de alterar as estatísticas. A triagem semântica não contou com dupla codificação independente. A revisão bibliográfica narrativa, apresentada na Seção 3, baseia-se em 9 dos 12 trabalhos prioritários identificados no manifesto. Para 3 obras (Taylor 2007, Akutsu e Guimarães 2015 e Staats et al. 2005), o texto integral não foi obtido via acesso aberto no momento da análise.
+
+Na etapa PJNP, as limitações decorrem da natureza administrativa dos dados. A análise usa um censo pequeno de políticas. Os modelos são bivariados e descritivos. Os pesos do IMO-PJNP são normativos, teoricamente informados e auditáveis, ainda sem validação empírica como medida de maturidade observável. Sua interpretação se limita à composição do escore. Efetividade exige estudos próprios. Produtos administrativos não equivalem a resultados sociais. A baixa separação dos clusters reforça o uso heurístico do agrupamento exploratório. Por isso, os achados aplicados devem orientar auditoria cadastral, monitoramento e seleção de casos para investigação qualitativa.
+
+# Conclusões e Recomendações
+
+Este estudo realizou um mapeamento bibliométrico do campo que se nomeia como "política judiciária" e conectou esse mapeamento à análise empírica das Políticas Judiciárias Nacionais Programáticas do CNJ.
+
+Os resultados convergem para cinco conclusões. Primeiro, **o campo existe como rótulo bibliométrico e permanece pouco consolidado**: `r n_nuclear` registros por `r n_journals_nuclear` periódicos, mediana de citações zero e ausência de periódico nuclear. Segundo, **a polissemia exige explicitação conceitual**: três acepções coexistem com baixa evidência de base intelectual comum, e a acepção programática permite construir objeto avaliativo. Terceiro, **as reformas gerencialistas produzem tensões estruturais** entre eficiência quantitativa e qualidade decisória, fenômeno documentado tanto no contexto europeu quanto no brasileiro. Quarto, **as PJNP oferecem caso empírico privilegiado da política judiciária programática**: o portfólio registra `r fmt_n(n_pjnp_policies)` políticas, `r fmt_n(n_pjnp_initiatives)` iniciativas e `r fmt_n(n_pjnp_colegiados)` colegiados, com IMO-PJNP médio de `r fmt_num(pjnp_weighted_mean)` em escala de 0 a 100. Quinto, **maturidade observável mede documentação e rastreabilidade**: o índice, o agrupamento exploratório e os modelos bivariados ajudam a organizar monitoramento e priorizar validação. Estudos de implementação, processo, resultado e impacto continuam necessários.
+
+A contribuição é cartográfica (mapeamento empírico do campo), conceitual (formalização da polissemia), substantiva (revisão crítica dos trabalhos-chave) e avaliativa (proposta de diagnóstico replicável para PJNP). Para o ENAJUS, o avanço principal está na pergunta operacional: como avaliar políticas judiciárias programáticas quando seus próprios registros administrativos tornam visíveis apenas parte da implementação?
+
+# Referências {.unnumbered}
+
+::: {#refs}
+:::
+
+# Apêndice A: Strings de Busca por Base {.unnumbered}
+
+**OpenAlex.** Bloco nuclear: `"judicial policy"`, `"judicial policies"`, `"política judiciária"`, `"políticas judiciárias"`, `"política judicial"`. Bloco estendido: `"judicial governance"`, `"judicial administration"`, `"court administration"`, `"court governance"`, `"judicial reform"`, `"reforma judicial"`, `"governança judicial"`, `"administração judiciária"`, `"Conselho Nacional de Justiça"`. Filtros: `publication_year:2000-2026`, `type:article|review`, `language:en|pt|es` quando disponível.
+
+**Scopus.** Queries TITLE-ABS-KEY com `PUBYEAR > 1999 AND PUBYEAR < 2027`.
+
+**Semantic Scholar.** Endpoint `/graph/v1/paper/search/bulk`, campos `title, year, abstract, citationCount, venue, externalIds, authors`, filtro `year:2000-`, ordenação `citationCount:desc`.
+
+**Crossref.** Endpoint `/works`, campo `query.bibliographic`, filtro `from-pub-date:2000-01-01, type:journal-article`, 100 por página.
+
+Scripts e materiais de reprodução serão disponibilizados após a etapa de revisão cega.
+
+# Apêndice B: Corpus de Texto Completo (PDFs curados) {.unnumbered}
+
+Para a revisão bibliográfica narrativa (Seção [-@sec-revisao]), foram obtidos textos completos de 9 obras por meio de acesso aberto, repositórios institucionais e arquivos de pesquisa. A extração de texto foi realizada com PyMuPDF 1.27 a partir dos PDFs disponíveis em `pdfs/`. A @tbl-corpus-pdf sintetiza o corpus de texto completo.
+
+```{r tbl-corpus-pdf}
+#| label: tbl-corpus-pdf
+#| tbl-cap: "Corpus de texto completo: obras com PDF disponível para análise"
+tribble(
+  ~Obra, ~Revista, ~Ano, ~`Palavras (est.)`, ~`Acesso`,
+  "Garoupa & Ginsburg (2009)", "Am. J. Comparative Law", 2009, "~13.200", "Arquivo de pesquisa",
+  "Kosař (2018)", "German Law Journal", 2018, "~19.600", "Acesso aberto (Cambridge)",
+  "Visser et al. (2019)", "Justice System Journal", 2019, "~9.000", "Acesso aberto (T&F)",
+  "Koerner et al. (2015)", "Revista Direito e Práxis", 2015, "~13.000", "Acesso aberto (UERJ)",
+  "Santiso (2003)", "Democratization", 2003, "~10.900", "Arquivo de pesquisa",
+  "Akutsu & Guimarães (2012)", "Revista Direito GV", 2012, "~9.300", "Repositório UnB / SciELO",
+  "Ríos-Figueroa & Taylor (2006)", "J. Latin American Studies", 2006, "~12.800", "Arquivo de pesquisa"
+) |> fmt_kable(align = "llccl", font_size = 10)
+```
+
+# Apêndice C: Reprodutibilidade {.unnumbered}
+
+Pipeline: scripts Python em `src/pipelines/`. Corpus congelado: `data/interim/06_frozen_corpus.csv`. Logs: `logs/prisma_flow.csv` e `logs/dedup_impact.csv`. Seed: 42. Download de PDFs: `pdfs/download_pipeline_scielo.py`. Extração de texto: `pdfs/extrair_texto_pdfs.py`. Reprodução principal:
+
+```powershell
+$env:PYTHONIOENCODING='utf-8'
+python src\pipelines\14_rebuild_full_pipeline.py --offline --skip-enrich
+python pdfs\download_pipeline_scielo.py
+python pdfs\extrair_texto_pdfs.py
+quarto render relatorio_bibliometrico_politica_judiciaria_v2.qmd --to docx
+```
+

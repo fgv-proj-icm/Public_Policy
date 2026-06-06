@@ -1,0 +1,48 @@
+---
+title: "Política Judiciária como Campo Emergente: Da Cartografia Bibliométrica à Maturidade Observável das PJNP"
+lang: pt-BR
+bibliography: ../references.bib
+csl: apa.csl
+format:
+  pdf:
+    pdf-engine: xelatex
+    documentclass: article
+    papersize: a4
+    mainfont: "Times New Roman"
+    fontsize: 12pt
+    geometry:
+      - top=3cm
+      - left=3cm
+      - right=2cm
+      - bottom=2cm
+    linestretch: 1
+    toc: false
+    colorlinks: false
+    include-in-header: enajus_header.tex
+  docx:
+    toc: false
+    reference-doc: enajus_reference.docx
+---
+
+**Tipo de submissão:** Resumo expandido
+
+**Tipo de trabalho:** Trabalho empírico
+
+**Tema de interesse:** 9) Políticas Públicas de Justiça. Formulação, Implementação e Avaliação
+
+**Palavras-chave:** política judiciária, análise bibliométrica, governança judicial, políticas judiciárias nacionais programáticas, avaliação de políticas, PRISMA
+
+A expressão "política judiciária" ganhou presença institucional no Brasil como categoria associada à formulação, coordenação, monitoramento e avaliação de políticas públicas no interior do sistema de justiça. Seu uso na literatura científica permanece fragmentado entre tradições que estudam governança de tribunais, administração judicial, comportamento decisório, reforma institucional e judicialização de políticas públicas. Essa fragmentação cria um problema prático para a Administração da Justiça: antes de avaliar políticas judiciárias concretas, é preciso explicitar qual acepção do conceito está sendo mobilizada. O objetivo deste trabalho é delimitar conceitualmente a acepção programática de "política judiciária" e aplicá-la à avaliação observável das Políticas Judiciárias Nacionais Programáticas (PJNP) do Conselho Nacional de Justiça.
+
+A pesquisa é empírica, concluída e adota desenho em duas etapas. A primeira etapa realiza cartografia bibliométrica multibase, com protocolo PRISMA adaptado, para mapear a produção que utiliza expressamente os termos "política judiciária", "política judicial" e *judicial policy*. A coleta programática foi realizada em OpenAlex, Scopus, Semantic Scholar e Crossref, cobrindo publicações de 2000 a 2026. Foram identificados 7.161 registros. Após deduplicação, triagem semântica e aplicação dos critérios de exclusão, 4.926 registros compuseram o corpus final, organizado em dois anéis: o anel nuclear, com 115 registros que empregam explicitamente o vocabulário investigado, e o anel estendido, com 4.811 registros sobre governança, administração, reforma, gestão e desempenho judicial [@aria2017; @donthu2021; @page2021; @zupic2015].
+
+A segunda etapa aplica a acepção programática ao portfólio PJNP. Foram analisadas 40 políticas, 253 iniciativas e 96 colegiados registrados no Painel PJNP. Para isso, foi construído o Índice de Maturidade Observável das PJNP (IMO-PJNP), em escala de 0 a 100, com pesos normativos, teoricamente informados e auditáveis. O índice segue a literatura de indicadores compostos, segundo a qual pesos devem refletir o quadro teórico e a finalidade do indicador [@oecdJRC2008; @decancqLugo2013; @greco2019]. A composição adotada atribui 40% a monitoramento e rastreabilidade, 35% a governança formal e 25% a alinhamento estratégico. Como o monitoramento é observado por link de monitoramento, esse componente expressa rastreabilidade mínima no painel. Produtos, conclusão, número de iniciativas e colegiados ficam fora do índice principal, para evitar circularidade com os outputs administrativos usados na análise descritiva.
+
+Os resultados bibliométricos indicam que o campo existe como objeto delimitável e permanece pouco consolidado: o anel nuclear representa cerca de 2,3% do corpus, distribui-se por 78 periódicos e apresenta mediana de citações zero. A análise também confirma polissemia persistente em três acepções: programática, comportamental e doutrinária. A etapa PJNP mostra que o portfólio é heterogêneo: a média do índice base de 0 a 4 é 1,70, enquanto a média do IMO-PJNP é 55,97. As associações bivariadas são descritivas e cautelosas. O IMO-PJNP se associa ao número de iniciativas, sem associação estatisticamente detectável com percentual de produtos e iniciativas concluídas. Esse achado reforça a tese central do artigo: maturidade observável mede documentação, rastreabilidade e capacidade de monitoramento no painel. Efetividade e impacto social dependem de avaliações próprias.
+
+A contribuição do trabalho é transformar a cartografia de um campo conceitualmente instável em diagnóstico avaliativo aplicado às PJNP. Para o ENAJUS, o resultado principal é uma proposta replicável para usar registros administrativos como diagnóstico de governança e monitoramento. O Painel PJNP deve ser lido como instrumento de ação pública: torna políticas mais visíveis, auditáveis e comparáveis. Validação cadastral, estudos de caso e avaliações de processo, resultado e impacto continuam necessários para examinar implementação real.
+
+# Referências {.unnumbered}
+
+::: {#refs}
+:::
