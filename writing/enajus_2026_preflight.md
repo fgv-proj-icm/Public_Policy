@@ -83,19 +83,30 @@ codificação, tratamento de ausência documental, limites de inferência e aná
 sensibilidade. O depósito acrescenta detalhe de **reprodução**, não substitui
 informação necessária à leitura.
 
+**Publicado em 01/08/2026** em repositório público dedicado:
+`https://github.com/fgv-proj-icm/enajus-2026-537601-supplementary`
+
+Contém os 4 materiais suplementares, o pipeline (`src/`), a documentação
+metodológica (`docs/`) e os testes. Licenças CC BY 4.0 (documentação) e MIT
+(código). Auditado antes da publicação: nenhum PDF de terceiro, nenhum e-mail real,
+nenhum caminho local, nenhuma chave. `Public_Policy` e `pjnp-avaliacao` permanecem
+**privados**.
+
 O artigo cita o depósito como `@machado2026supl` e traz a seção *Disponibilidade de
 Dados, Códigos e Materiais Suplementares* (p. 26).
 
-> ⚠️ **Pendência bloqueante para a submissão final.** O DOI ainda não foi emitido.
-> Ver `supplementary/PUBLICAR.md`. Sem o DOI, a referência resolve apenas para o
-> repositório GitHub, que é mutável.
+> ⚠️ **Pendência: DOI ainda não emitido.** A referência resolve hoje para o
+> repositório GitHub, que é mutável. Emitir via integração Zenodo–GitHub (release
+> `v1.0`), acrescentar `doi = {...}` à entrada `machado2026supl` em `references.bib`
+> e re-renderizar. **Não é bloqueante para submeter** — a referência já resolve para
+> material público e versionado —, mas é o que torna a citação permanente.
 
 ## Integridade
 
 | Arquivo | SHA-256 |
 | --- | --- |
-| `enajus_2026_trabalho_completo.pdf` | `CBDED900B0DFFDB560ABA515DB919CA35DFF3DA087DA944702C59A2D33AC7782` |
-| `enajus_2026_trabalho_completo.docx` | `D3127F388CAACBDE3165F31154B816BB250A03A674989256707767ACDE90594D` |
+| `enajus_2026_trabalho_completo.pdf` | `FF500338964FAD47551E86D2A2F52A418A12D9AB17357F15A6C7DC1EA44EC626` |
+| `enajus_2026_trabalho_completo.docx` | `6A5030B511C0773A41758934A6F97A34917DDE33F6FDDC1EB0EFE894AD9878D8` |
 
 ## Reprodução
 
