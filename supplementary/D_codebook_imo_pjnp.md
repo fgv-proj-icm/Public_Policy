@@ -173,7 +173,7 @@ O índice **não mede**:
 ## 12. Reprodução
 
 ```powershell
-cd C:\PROJETOS\GITHUB\LAB-LEPP\pjnp-avaliacao
+cd <raiz-do-workspace>/pjnp-avaliacao   # repositório privado: solicitar acesso aos autores
 git switch chore/enajus-2026
 python -m pjnp.run --input data/raw --out outputs --seed 42
 ```

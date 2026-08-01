@@ -111,7 +111,7 @@ Dados, Códigos e Materiais Suplementares* (p. 26).
 ## Reprodução
 
 ```powershell
-cd C:\PROJETOS\GITHUB\LAB-LEPP\Public_Policy
+cd C:\Users\Adm\OneDrive\02_Academico\Producao_Cientifica\GitHub\Lab Lepp\02_pesquisa\Public_Policy
 $env:PATH = "C:\Program Files\R\R-4.6.1\bin\x64;$env:PATH"
 .\writing\build_enajus.ps1
 ```
