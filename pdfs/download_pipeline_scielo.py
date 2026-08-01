@@ -24,7 +24,7 @@ from typing import Optional
 MANIFESTO  = Path(__file__).parent / "manifesto_download_politica_judiciaria.csv"
 PASTA_OUT  = Path(__file__).parent          # salva PDFs na própria pasta pdfs/
 RELATORIO  = Path(__file__).parent / "relatorio_download.csv"
-EMAIL      = "cairesmachado@gmail.com"      # obrigatório para Unpaywall
+EMAIL      = os.getenv("EMAIL_POLITE", "")  # obrigatório para Unpaywall; definir no .env
 DELAY_S    = 2                              # pausa entre requisições (segundos)
 
 HEADERS = {
