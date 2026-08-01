@@ -50,8 +50,8 @@ Consequência: o texto foi reduzido para caber no critério mais estrito.
 | Título idêntico ao do resumo aceito | diff vazio | OK |
 | Título — extensão | 13 palavras | Acima de 12; **prevalece a identidade com o resumo selecionado** |
 | Autores | 4 | OK: até 5 |
-| Trabalho completo — **com tabelas** | **8.908 palavras** | **OK: 4.000–9.000** (margem 92) |
-| Trabalho completo — só parágrafos | 7.003 palavras | OK (critério antigo, informativo) |
+| Trabalho completo — **com tabelas** | **8.956 palavras** | **OK: 4.000–9.000** (margem 44) |
+| Trabalho completo — só parágrafos | 7.049 palavras | OK (critério antigo, informativo) |
 | Resumo do trabalho completo | 222 palavras | OK: até 250 |
 | Palavras-chave | 5, com ponto-e-vírgula | OK |
 | Estrutura empírica | Introdução; Quadro Teórico-Conceitual; Métodos e Técnicas; Resultados; Discussão; Conclusões e Recomendações | OK |
@@ -94,8 +94,8 @@ Dados, Códigos e Materiais Suplementares* (p. 26).
 
 | Arquivo | SHA-256 |
 | --- | --- |
-| `enajus_2026_trabalho_completo.pdf` | `C72D0EA9028A65F4C460B74749F6481AAC31B4394D5455522BF0E3293108968F` |
-| `enajus_2026_trabalho_completo.docx` | `9CD889868210B135652C818C138D5BE62E07D4A51662BA9EA6F8B039EA416454` |
+| `enajus_2026_trabalho_completo.pdf` | `CBDED900B0DFFDB560ABA515DB919CA35DFF3DA087DA944702C59A2D33AC7782` |
+| `enajus_2026_trabalho_completo.docx` | `D3127F388CAACBDE3165F31154B816BB250A03A674989256707767ACDE90594D` |
 
 ## Reprodução
 
