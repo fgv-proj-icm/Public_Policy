@@ -1,6 +1,6 @@
 # EnAJUS 2026 — Preflight da Submissão (ID 537601)
 
-**Data da verificação:** 1 de agosto de 2026
+**Data da verificação:** 17 de agosto de 2026
 **Etapa:** Trabalho completo (2ª etapa — versão identificada)
 **ID ENAJUS:** 537601
 **Prazo:** 25/09/2026
@@ -11,6 +11,12 @@
 > Substitui o preflight de 04/06/2026, que registrava o título anterior
 > ("Uma Análise Bibliométrica Multibase", 9 palavras) e um critério de contagem
 > diferente — ver §"Mudança de critério de contagem".
+>
+> **Rodada de 17/08/2026.** Fecha o ponto do parecer sobre as três acepções, que a
+> rodada de 01/08 havia registrado como atendido apenas no plano conceitual. A
+> subseção *Polissemia como achado bibliométrico* passou de 58 palavras sem
+> evidência para classificação medida do corpus, com tabela e codebook próprio
+> (suplemento item E). Ver §"Classificação por acepção".
 
 ## Metadados congelados
 
@@ -50,15 +56,16 @@ Consequência: o texto foi reduzido para caber no critério mais estrito.
 | Título idêntico ao do resumo aceito | diff vazio | OK |
 | Título — extensão | 13 palavras | Acima de 12; **prevalece a identidade com o resumo selecionado** |
 | Autores | 4 | OK: até 5 |
-| Trabalho completo — **com tabelas** | **8.956 palavras** | **OK: 4.000–9.000** (margem 44) |
-| Trabalho completo — só parágrafos | 7.049 palavras | OK (critério antigo, informativo) |
+| Trabalho completo — **com tabelas** | **8.970 palavras** | **OK: 4.000–9.000** (margem 30) |
+| Trabalho completo — só parágrafos | 7.167 palavras | OK (critério antigo, informativo) |
 | Resumo do trabalho completo | 222 palavras | OK: até 250 |
 | Palavras-chave | 5, com ponto-e-vírgula | OK |
 | Estrutura empírica | Introdução; Quadro Teórico-Conceitual; Métodos e Técnicas; Resultados; Discussão; Conclusões e Recomendações | OK |
 | Notas | Sem notas de rodapé ou de fim | OK |
 | Sumário | Ausente | OK |
 | Referências e citações | APA por `apa.csl`; 43 entradas, todas as chaves resolvem | OK |
-| Apêndices | Externalizados como material suplementar citável | Ver §"Material suplementar" |
+| Apêndices | Externalizados como material suplementar citável (A–E) | Ver §"Material suplementar" |
+| Classificação por acepção | 170 registros do anel lexical, soma confere | Ver §"Classificação por acepção" |
 | Fonte dos PDFs | Times New Roman (4 variantes) + LatinModernMath na equação do índice | OK |
 | Layout | A4; Times New Roman 12; espaço simples; margens 3 cm superior/esquerda e 2 cm inferior/direita | OK |
 | Trabalho completo PDF | 29 páginas; sem senha | OK |
@@ -74,6 +81,7 @@ suplementar citável, em `supplementary/`:
 | B | Manifesto do corpus de texto completo |
 | C | Protocolo de reprodução dos dois pipelines |
 | D | Codebook completo do IMO-PJNP |
+| E | Codebook da classificação por acepção: padrões, precedência, resultado e limites |
 
 **Justificativa metodológica.** A externalização segue a recomendação da extensão
 PRISMA-S, que admite as estratégias de busca como material suplementar. O que é
@@ -101,12 +109,60 @@ Dados, Códigos e Materiais Suplementares* (p. 26).
 > e re-renderizar. **Não é bloqueante para submeter** — a referência já resolve para
 > material público e versionado —, mas é o que torna a citação permanente.
 
+## Classificação por acepção
+
+Atende à exigência do parecer de explorar as acepções programática, comportamental e
+doutrinária **encontradas** — ponto que o avaliador ligou ao objetivo geral.
+
+A classificação incide sobre duas populações, e a distinção é o que a torna
+informativa. O **anel lexical** (170) reúne os registros que empregam o rótulo antes
+da restrição à acepção programática aplicada por `08c_reclassify_nuclear.py`; o **anel
+nuclear final** (115) é o resultado dessa restrição. Classificar apenas o anel final
+não demonstraria polissemia, porque os registros comportamentais já foram movidos para
+o anel estendido.
+
+| Acepção | Anel lexical | % | Periódicos | Anel nuclear |
+| --- | ---: | ---: | ---: | ---: |
+| programática | 38 | 22,4% | 28 | 38 |
+| comportamental | 41 | 24,1% | 23 | 1 |
+| doutrinária | 14 | 8,2% | 9 | 13 |
+| indeterminado | 77 | 45,3% | 53 | 63 |
+| **total** | **170** | **100%** | **112** | **115** |
+
+| Verificação | Resultado | Status |
+| --- | --- | --- |
+| Soma das acepções = anel lexical | 170 = 170 | OK |
+| Anel final é subconjunto do lexical | 115 de 170, 0 órfãos | OK |
+| Determinismo (duas execuções) | SHA-256 idêntico nas 3 saídas | OK |
+| Testes unitários | 78 (47 anteriores + 31 novos) | OK |
+| Schema do corpus congelado | 0 erros, 0 duplicatas, 0 inconsistências PRISMA | OK |
+| Composição do anel nuclear | Inalterada — nenhum arquivo de `data/` modificado | OK |
+
+**Salvaguarda.** As listas `PROGRAMMATIC_PATTERNS`, `BEHAVIORAL_PATTERNS` e
+`PENAL_PATTERNS` foram extraídas de `08c_reclassify_nuclear.py` para
+`src/utils/acepcoes.py` sem alteração. A equivalência da decisão de anel foi verificada
+registro a registro contra `data/interim/05_reclassification_log.csv`: **170 registros,
+zero divergências** nos quatro motivos de reclassificação. `DOCTRINAL_PATTERNS` é
+acréscimo desta rodada e não participa da decisão de anel.
+
+**Duas correções de precisão** foram introduzidas apenas no classificador novo, sem
+retroagir ao corpus congelado: as regex passam a ser avaliadas dentro de cada campo
+(antes, `judicial policy.*administration` atravessava título → periódico e lia um
+estudo de *policy-making* na *Public Administration Review* como programático); e a
+pontuação tipográfica é normalizada (o HYPHEN U+2010 em "Judicial Policy‐Making"
+impedia o casamento com `policy[\s-]?making`). O primeiro caso permanece no anel
+nuclear como vazamento residual declarado — é o único registro comportamental entre os
+115.
+
 ## Integridade
 
 | Arquivo | SHA-256 |
 | --- | --- |
-| `enajus_2026_trabalho_completo.pdf` | `FF500338964FAD47551E86D2A2F52A418A12D9AB17357F15A6C7DC1EA44EC626` |
-| `enajus_2026_trabalho_completo.docx` | `6A5030B511C0773A41758934A6F97A34917DDE33F6FDDC1EB0EFE894AD9878D8` |
+| `enajus_2026_trabalho_completo.pdf` | `7570F8AC2A929E698DD06B93FFB252445DB38930CAA02B0FC60BF88403B39136` |
+| `enajus_2026_trabalho_completo.docx` | `759A426D510905FD5BEA6E8A14AE9160147D16237E49B071EFF3F5F069AB39E6` |
+
+Hashes anteriores (rodada de 01/08/2026), para rastreabilidade:
+`FF50…C626` (PDF) e `6A50…78D8` (DOCX).
 
 ## Reprodução
 
@@ -115,6 +171,16 @@ cd C:\Users\Adm\OneDrive\02_Academico\Producao_Cientifica\GitHub\Lab Lepp\02_pes
 $env:PATH = "C:\Program Files\R\R-4.6.1\bin\x64;$env:PATH"
 .\writing\build_enajus.ps1
 ```
+
+A tabela das acepções é lida de `outputs/tables/acepcoes_summary.csv`, versionado. Para
+regerá-la a partir do corpus:
+
+```powershell
+python src/pipelines/10b_classify_acepcoes.py
+python -m pytest tests/ -q
+```
+
+O passo integra `make pipeline` (em `PIPELINE_STEPS`, após `10_export_bibliometrix.py`).
 
 Requisitos verificados em 01/08/2026: Quarto 1.10.18; R 4.6.1 com `bibliometrix`,
 `tidyverse`, `knitr`, `scales`, `patchwork`, `ggrepel`, `igraph`, `RColorBrewer`;

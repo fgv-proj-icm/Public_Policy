@@ -32,6 +32,7 @@ PIPELINE_STEPS = [
     ("08d_final_nuclear_adjustment.py", "Ajuste final do nuclear"),
     ("09_prisma_flow.py", "PRISMA flow e logs"),
     ("10_export_bibliometrix.py", "Exportacao corpus final"),
+    ("10b_classify_acepcoes.py", "Classificacao por acepcao"),
     ("16_brazil_supplement_compare.py", "Comparacao suplemento Brasil"),
     ("17_export_network_snapshot.py", "Exportacao offline da rede de co-citacao"),
 ]

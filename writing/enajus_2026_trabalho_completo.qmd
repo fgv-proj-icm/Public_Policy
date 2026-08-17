@@ -3,7 +3,7 @@ title: "Política Judiciária como Campo Emergente: Da Cartografia Bibliométric
 author: "Igor Caires Machado; Marina Brazil Bonani; Antonio Ferreira de Melo Filho; Juliana Almeida Costa Cronemberger"
 lang: pt-BR
 abstract: |
-  Este estudo investiga como delimitar conceitualmente a acepção programática de "política judiciária" (*judicial policy*) e aplicá-la à avaliação observável das Políticas Judiciárias Nacionais Programáticas (PJNP) do Conselho Nacional de Justiça. O desenho combina análise bibliométrica multibase, com protocolo PRISMA adaptado, e análise empírica do Índice de Maturidade Observável das PJNP (IMO-PJNP), construído com pesos normativos, teoricamente informados e auditáveis. A coleta em quatro bases de dados (OpenAlex, Scopus, Semantic Scholar, Crossref) identificou 7.161 registros, dos quais 4.926 foram incluídos após deduplicação e triagem, organizados em anel nuclear (115 registros) e anel estendido (4.811 registros). Os resultados bibliométricos mostram produção dispersa por 78 periódicos no anel nuclear, mediana de citações zero e polissemia persistente, com três acepções principais: programática, comportamental e doutrinária. A etapa aplicada analisa 40 PJNP, 253 iniciativas e 96 colegiados registrados. O portfólio apresenta média de 1,70 no índice base de 0 a 4 e 55,97 no IMO-PJNP de 0 a 100, calculado a partir de monitoramento (40%), governança formal (35%) e alinhamento estratégico (25%). As associações entre maturidade observável e outputs administrativos são descritivas e limitadas: o IMO-PJNP se associa ao número de iniciativas, sem associação estatisticamente detectável com percentual de produtos e iniciativas concluídas. A contribuição do artigo é transformar a cartografia do campo em diagnóstico avaliativo aplicado às PJNP e separar observabilidade administrativa de efetividade e impacto.
+  Este estudo investiga como delimitar conceitualmente a acepção programática de "política judiciária" (*judicial policy*) e aplicá-la à avaliação observável das Políticas Judiciárias Nacionais Programáticas (PJNP) do Conselho Nacional de Justiça. O desenho combina análise bibliométrica multibase, com protocolo PRISMA adaptado, e análise empírica do Índice de Maturidade Observável das PJNP (IMO-PJNP), construído com pesos normativos, teoricamente informados e auditáveis. A coleta em quatro bases de dados (OpenAlex, Scopus, Semantic Scholar, Crossref) identificou 7.161 registros, dos quais 4.926 foram incluídos após deduplicação e triagem, organizados em anel nuclear (115 registros) e anel estendido (4.811 registros). Os resultados bibliométricos mostram produção dispersa por 78 periódicos no anel nuclear e mediana de citações zero. A classificação dos registros que empregam o rótulo distribui-os em três acepções de peso comparável — programática, comportamental e doutrinária —, com uma fração residual em que a acepção não é recuperável dos metadados, o que sustenta o diagnóstico de polissemia. A etapa aplicada analisa 40 PJNP, 253 iniciativas e 96 colegiados registrados. O portfólio apresenta média de 1,70 no índice base de 0 a 4 e 55,97 no IMO-PJNP de 0 a 100, calculado a partir de monitoramento (40%), governança formal (35%) e alinhamento estratégico (25%). As associações entre maturidade observável e outputs administrativos são descritivas e limitadas: o IMO-PJNP se associa ao número de iniciativas, sem associação estatisticamente detectável com percentual de produtos e iniciativas concluídas. A contribuição do artigo é transformar a cartografia do campo em diagnóstico avaliativo aplicado às PJNP e separar observabilidade administrativa de efetividade e impacto.
 keywords:
   - política judiciária
   - análise bibliométrica
@@ -115,6 +115,7 @@ refs_file          <- "../data/interim/07_nuclear_references.csv"
 prisma_log_file    <- "../logs/prisma_flow.csv"
 dedup_impact_file  <- "../logs/dedup_impact.csv"
 brazil_supp_file   <- "../outputs/tables/brazil_supplement_comparison.csv"
+acepcoes_file      <- "../outputs/tables/acepcoes_summary.csv"
 
 has_cocitation   <- file.exists(cocit_file)
 has_enriched     <- file.exists(enriched_file)
@@ -122,6 +123,7 @@ has_refs         <- file.exists(refs_file)
 has_prisma_log   <- file.exists(prisma_log_file)
 has_dedup_impact <- file.exists(dedup_impact_file)
 has_brazil_supp  <- file.exists(brazil_supp_file)
+has_acepcoes     <- file.exists(acepcoes_file)
 
 if (has_cocitation) cocit_edges    <- read.csv(cocit_file, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
 if (has_enriched)   nuclear_enriched <- read.csv(enriched_file, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
@@ -129,6 +131,38 @@ if (has_refs)       nuclear_refs   <- read.csv(refs_file, stringsAsFactors = FAL
 if (has_prisma_log) prisma_log     <- read.csv(prisma_log_file, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
 if (has_dedup_impact) dedup_impact <- read.csv(dedup_impact_file, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
 if (has_brazil_supp)  brazil_supp  <- read.csv(brazil_supp_file, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
+
+if (has_acepcoes) {
+  acepcoes_summary <- read.csv(acepcoes_file, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
+  acepcoes_summary$n <- as.numeric(acepcoes_summary$n)
+  acepcoes_summary$pct <- as.numeric(acepcoes_summary$pct)
+  acepcoes_summary$periodicos_distintos <- as.numeric(acepcoes_summary$periodicos_distintos)
+
+  acep_get <- function(populacao, acepcao, campo = "n") {
+    row <- acepcoes_summary[acepcoes_summary$populacao == populacao &
+                              acepcoes_summary$acepcao == acepcao, ]
+    if (nrow(row) == 0) NA else row[[campo]][1]
+  }
+
+  n_acep_lex        <- acep_get("lexical", "total")
+  n_acep_prog       <- acep_get("lexical", "programática")
+  n_acep_comp       <- acep_get("lexical", "comportamental")
+  n_acep_dout       <- acep_get("lexical", "doutrinária")
+  n_acep_indet      <- acep_get("lexical", "indeterminado")
+  pct_acep_prog     <- acep_get("lexical", "programática", "pct")
+  pct_acep_comp     <- acep_get("lexical", "comportamental", "pct")
+  pct_acep_dout     <- acep_get("lexical", "doutrinária", "pct")
+  pct_acep_indet    <- acep_get("lexical", "indeterminado", "pct")
+  n_acep_dout_final <- acep_get("final", "doutrinária")
+  n_acep_comp_final <- acep_get("final", "comportamental")
+  n_acep_comp_saiu  <- n_acep_comp - n_acep_comp_final
+  n_acep_removidos  <- n_acep_lex - acep_get("final", "total")
+} else {
+  n_acep_lex <- n_acep_prog <- n_acep_comp <- n_acep_dout <- n_acep_indet <- NA
+  pct_acep_prog <- pct_acep_comp <- pct_acep_dout <- pct_acep_indet <- NA
+  n_acep_dout_final <- n_acep_comp_final <- n_acep_comp_saiu <- NA
+  n_acep_removidos <- NA
+}
 
 corpus$publication_year   <- as.numeric(corpus$publication_year)
 corpus$cited_by_count     <- as.numeric(corpus$cited_by_count)
@@ -266,39 +300,33 @@ tribble(
 
 Este artigo adota a acepção **programática**. Nela, política judiciária é tratada como política pública formulada, coordenada, monitorada ou induzida no interior do sistema de justiça — a Resolução CNJ n. 125/2010, que institui a política nacional de tratamento adequado de conflitos, é o caso fundador dessa gramática no Brasil [@cnj125]. A cartografia bibliométrica funciona como etapa de delimitação: identifica a polissemia e permite isolar a acepção que torna as PJNP avaliáveis como ações públicas institucionais.
 
-A última coluna do quadro delimita o que o índice capta. O IMO-PJNP mede a acepção programática porque apenas ela se manifesta em atributos cadastrais registrados no painel. A acepção comportamental exigiria observar rotinas e decisões nos tribunais; a doutrinária exigiria interpretar o conteúdo normativo das políticas. Nenhuma das duas é redutível a presença ou ausência de registro, e tratá-las como se fossem produziria exatamente a confusão entre documentação e efeito que o artigo procura evitar. Um portfólio pode ter maturidade programática alta e efeito comportamental nulo — e o índice, sozinho, não distingue os dois casos.
+O quadro não é estipulação conceitual: a distribuição dos registros do corpus pelas três acepções é reportada na @tbl-acepcoes-empirico, e nenhuma delas domina o uso do rótulo. A última coluna do quadro delimita o que o índice capta. O IMO-PJNP mede a acepção programática porque apenas ela se manifesta em atributos cadastrais registrados no painel. A acepção comportamental exigiria observar rotinas e decisões nos tribunais; a doutrinária exigiria interpretar o conteúdo normativo das políticas. Nenhuma das duas é redutível a presença ou ausência de registro, e tratá-las como se fossem produziria exatamente a confusão entre documentação e efeito que o artigo procura evitar. Um portfólio pode ter maturidade programática alta e efeito comportamental nulo — e o índice, sozinho, não distingue os dois casos.
 
 # Revisão Bibliográfica: Tensões Analíticas do Campo {#sec-revisao}
 
-Esta seção revisa os trabalhos identificados na curadoria bibliográfica como centrais ao campo, organizados por tensões analíticas. Das 12 obras de alta prioridade do manifesto de download, 9 tiveram texto completo obtido em acesso aberto ou repositório institucional.
+Esta seção revisa por tensões analíticas os trabalhos identificados na curadoria como centrais ao campo: das 12 obras de alta prioridade do manifesto, 9 tiveram texto completo obtido.
 
 ## Governança judicial e conselhos: o debate comparado
 
-@garoupa2009 formulam a primeira teoria sistemática da formação de conselhos judiciais em perspectiva de economia política comparada: conselhos emergem de processos de redistribuição de poder, e a independência judicial opera como compromisso crível de contenção do Executivo. Testando mais de 50 países, os autores não encontram relação sistemática entre o desenho do conselho e a qualidade da justiça — conselhos se difundem porque oferecem solução política aceitável a atores com interesses divergentes. A implicação é de cautela quanto à exportação de modelos institucionais: a criação do CNJ em 2004 é mais bem lida como negociação política que redistribuiu competências do que como adoção de um desenho ótimo. @kosar2018 desloca a categoria "conselho judicial" para a noção mais abrangente de autogovernança judicial (*judicial self-governance*), que reúne conselhos, comissões de nomeação, comitês de promoção, presidências de tribunais e painéis disciplinares. A comparação entre sistemas europeus de autogovernança forte, moderada e fraca mostra variação de formas, justificativas e efeitos, contrariando qualquer pretensão de modelo universal; em vários países do leste europeu, conselhos criados para blindar o Judiciário da política tornaram-se canais de politização interna. @ng2011 propõe reconhecer a governança judicial como campo disciplinar autônomo, distinguindo-a da administração de tribunais e organizando-a em quatro dimensões frequentemente em tensão: independência, *accountability*, eficiência e acesso à justiça.
+@garoupa2009 formulam a primeira teoria sistemática da formação de conselhos judiciais: conselhos emergem de redistribuição de poder, e a independência opera como compromisso crível de contenção do Executivo. Testando mais de 50 países, não encontram relação sistemática entre desenho do conselho e qualidade da justiça — o que recomenda cautela quanto à exportação de modelos e sugere ler a criação do CNJ em 2004 como negociação política, não como desenho ótimo. @kosar2018 amplia a categoria para autogovernança judicial (*judicial self-governance*) e mostra, na comparação europeia, que conselhos criados para blindar o Judiciário da política tornaram-se canais de politização interna. @ng2011 propõe reconhecer a governança judicial como campo autônomo, em quatro dimensões frequentemente em tensão: independência, *accountability*, eficiência e acesso à justiça.
 
 ## Reforma gerencial e Nova Gestão Pública no Judiciário
 
-@visser2019 examinam a adoção de práticas de Nova Gestão Pública no judiciário holandês por survey de larga escala e identificam um descasamento (*mismatch*) entre os sistemas de controle gerencial e a experiência de trabalho dos juízes: as demandas cresceram — volume, metas de *clearance*, relatórios de desempenho — enquanto autonomia decisória, tempo de deliberação e suporte administrativo se reduziram, com risco associado de *burnout* e de comprometimento da independência de facto. @koerner2015 produzem balanço equivalente para a primeira década do CNJ (2004–2014): há ganhos de eficiência operacional e padronização de procedimentos, mas também evidências de que a pressão quantitativa por produção deslocou o foco para demandas mais simples e postergou processos complexos. O argumento comum é que o gerencialismo importou ferramentas desenvolvidas para organizações privadas sem adequação suficiente às especificidades da função jurisdicional, sobretudo a exigência de fundamentação adequada das decisões. Em que medida as Metas Nacionais do CNJ replicam esse padrão permanece pouco investigado.
+@visser2019 identificam, por survey de larga escala no judiciário holandês, um descasamento (*mismatch*) entre os sistemas de controle gerencial e a experiência de trabalho dos juízes: as demandas cresceram enquanto autonomia decisória, tempo de deliberação e suporte administrativo se reduziram. @koerner2015 produzem balanço equivalente para a primeira década do CNJ (2004–2014): ganhos de eficiência operacional e padronização convivem com evidências de que a pressão quantitativa deslocou o foco para demandas mais simples. Em que medida as Metas Nacionais do CNJ replicam esse padrão permanece pouco investigado.
 
 ## A experiência brasileira: governança, reforma e investigação empírica
 
-@santiso2003 situa a reforma judicial brasileira dos anos 1990 no contexto das reformas de segunda geração do ajuste estrutural, tratando a independência judicial como dispositivo de *commitment* crível para atores econômicos e documentando o entrelaçamento entre o programa de governança judicial e a agenda de liberalização promovida por organismos internacionais. A limitação do argumento é seu viés instrumental: a boa governança aparece como condição do crescimento econômico, e não como valor associado ao acesso à justiça e à proteção de direitos. @akutsu2012 propõem quadro de referência para a governança judicial brasileira em cinco dimensões — independência, *accountability*, transparência, acesso à justiça e eficiência —, cada uma operacionalizada por indicadores comparáveis, e observam que essa operacionalização permanece desigual, com transparência e eficiência mais avançadas do que independência e acesso. @taylor2007 marca a inflexão ao propor que o Judiciário seja analisado como *ator* de política pública: tribunais superiores participam da formulação e da implementação por liminares, ações diretas de inconstitucionalidade e mandados de segurança coletivos, funcionando simultaneamente como ponto de veto e como ponto de entrada para grupos de interesse.
+@santiso2003 situa a reforma judicial brasileira dos anos 1990 nas reformas de segunda geração do ajuste estrutural, tratando a independência como *commitment* crível para atores econômicos. @akutsu2012 propõem quadro de referência para a governança judicial brasileira em cinco dimensões — independência, *accountability*, transparência, acesso à justiça e eficiência — e observam operacionalização desigual, com transparência e eficiência mais avançadas do que independência e acesso. @taylor2007 marca a inflexão ao propor o Judiciário como *ator* de política pública: tribunais superiores participam da formulação e da implementação, funcionando como ponto de veto e como ponto de entrada para grupos de interesse.
 
 ## Judicialização de políticas públicas: perspectiva institucional comparada
 
-@riosfigueroa2006 comparam Brasil e México sob o novo institucionalismo e mostram que o grau e o padrão de judicialização dependem de variáveis institucionais estruturais: sistema eleitoral, número de pontos de veto, regras de acesso ao Judiciário e independência formal dos tribunais. O Brasil, com federalismo, múltiplos *veto players*, acesso amplo ao STF e alta fragmentação partidária, apresenta judicialização mais intensa e diversificada que o México. O achado é central para o campo porque indica que políticas produzidas pelo e para o Judiciário dependem de variáveis exógenas ao próprio sistema judicial. @staats2005 acrescentam a contribuição metodológica: criticam a dependência de indicadores formais de desenho institucional e propõem medidas de desempenho efetivo, como taxas de congestionamento, tempo de resolução e percepção de independência pelos litigantes. A separação entre *institutional design* e *performance* que propõem é precisamente a distinção que este artigo incorpora ao separar maturidade observável de efetividade.
+@riosfigueroa2006 comparam Brasil e México sob o novo institucionalismo e mostram que o grau e o padrão de judicialização dependem de variáveis institucionais estruturais — sistema eleitoral, pontos de veto, regras de acesso ao Judiciário e independência formal. O achado indica que políticas produzidas pelo e para o Judiciário dependem de variáveis exógenas ao próprio sistema judicial. @staats2005 acrescentam a contribuição metodológica: criticam a dependência de indicadores formais de desenho institucional e propõem medidas de desempenho efetivo, como taxas de congestionamento e tempo de resolução. A separação entre *institutional design* e *performance* que propõem é precisamente a distinção que este artigo incorpora ao separar maturidade observável de efetividade.
 
 ## Síntese: eixos analíticos, interseções e lacunas {#sec-sintese-revisao}
 
-A leitura cruzada dos trabalhos permite identificar três eixos de tensão que estruturam o campo:
+A leitura cruzada identifica três eixos de tensão que estruturam o campo: **independência e *accountability*** (Garoupa e Ginsburg, 2009; Kosař, 2018; Ng, 2011; Santiso, 2003), em que arranjos distintos geram equilíbrios distintos; **eficiência quantitativa e qualidade decisória** (Visser et al., 2019; Koerner et al., 2015), em que métricas de produtividade sem proteção da qualidade geram incentivos perversos; e **reforma formal e mudança efetiva** (Staats et al., 2005; Ríos-Figueroa e Taylor, 2006), em que a distância entre *institutional design* e *performance* permanece problema analítico central.
 
-**Independência e *accountability***: presente em Garoupa e Ginsburg (2009), Kosař (2018), Ng (2011) e Santiso (2003). Essa tensão depende de configurações institucionais específicas. Diferentes arranjos geram diferentes equilíbrios, e o ponto ótimo depende de valores políticos e critérios de eficiência.
-
-**Eficiência quantitativa e qualidade decisória**: central em Visser et al. (2019) e Koerner et al. (2015). A adoção de métricas de produtividade nos tribunais, sem mecanismos adequados de proteção da qualidade, tende a gerar incentivos perversos, como priorização de casos simples, redução do tempo de deliberação e pressão sobre o juiz natural.
-
-**Reforma formal e mudança efetiva**: em Staats et al. (2005) e Ríos-Figueroa e Taylor (2006), o diagnóstico é que reformas institucionais formais têm tradução variável em desempenho ou padrão de judicialização. A distância entre *institutional design* e *performance* permanece como problema analítico central.
-
-Quanto às lacunas: nenhum dos trabalhos revisados aborda sistematicamente a **dimensão material e espacial** da prestação jurisdicional, incluindo edifícios, salas de audiência, acessibilidade física, infraestrutura tecnológica e logística dos fluxos processuais. Essa ausência é coerente com o achado bibliométrico central: termos como *infrastructure*, *building*, *facility* e *physical space* não aparecem entre os mais frequentes em nenhum dos anéis.
+Quanto às lacunas: nenhum dos trabalhos revisados aborda sistematicamente a **dimensão material e espacial** da prestação jurisdicional — edifícios, salas de audiência, acessibilidade física e infraestrutura tecnológica. Essa ausência é coerente com o achado bibliométrico: termos como *infrastructure*, *building*, *facility* e *physical space* não aparecem entre os mais frequentes em nenhum dos anéis.
 
 # Quadro Teórico-Conceitual
 
@@ -446,7 +474,7 @@ excluded |>
 
 Os motivos de exclusão mostram que a delimitação combinou critérios lexicais e substantivos. Foram retirados registros sem relação substantiva com o sistema de justiça, estudos constitucionalistas de *judicial review* e documentos com metadados insuficientes. Essa combinação reduz falsos positivos, embora dependa de julgamento semântico.
 
-## Da cartografia bibliométrica ao índice: a cadeia de derivação
+## Da cartografia bibliométrica ao índice: a cadeia de derivação {#sec-cadeia}
 
 A passagem entre as duas etapas do estudo não é uma justaposição de métodos. Ela segue uma cadeia explícita, em quatro elos, cada um com um produto verificável:
 
@@ -659,12 +687,12 @@ Quatro leituras complementares confirmam o mesmo padrão de dispersão. A autori
 
 ## Artigos mais citados no anel nuclear
 
-A lista de trabalhos mais citados mostra que a visibilidade se concentra em poucos documentos e que parte relevante dos registros possui impacto citacional reduzido. O padrão é coerente com a mediana zero do anel nuclear e recomenda cautela ao tratar citações como indicador de consolidação do campo.
+A visibilidade se concentra em poucos documentos, e parte relevante dos registros tem impacto citacional reduzido. O padrão é coerente com a mediana zero e recomenda cautela ao tratar citações como indicador de consolidação.
 
 ```{r tbl-most-cited-nuclear}
 #| label: tbl-most-cited-nuclear
-#| tbl-cap: "Artigos mais citados no anel nuclear (top 15, citações conforme metadados das bases)"
-nuclear |> arrange(desc(cited_by_count)) |> head(15) |>
+#| tbl-cap: "Artigos mais citados no anel nuclear (top 10, citações conforme metadados das bases)"
+nuclear |> arrange(desc(cited_by_count)) |> head(10) |>
   mutate(title=str_trunc(title,70),
          journal=ifelse(!is_valid(journal),"N/D",str_trunc(journal,30))) |>
   select(Título=title, Ano=publication_year, Periódico=journal, Cit.=cited_by_count) |>
@@ -673,15 +701,40 @@ nuclear |> arrange(desc(cited_by_count)) |> head(15) |>
 
 ## Polissemia como achado bibliométrico
 
-A classificação conceitual apresentada no início do artigo também aparece nos metadados e títulos recuperados. O mesmo rótulo aproxima estudos sobre governança institucional, comportamento decisório e doutrina da função jurisdicional. Esse achado confirma que a delimitação da acepção programática é condição para transformar o campo em objeto avaliável sem misturar objetos substantivamente distintos.
+O quadro das três acepções apresentado na @tbl-three-acceptions não é tipologia estipulada de fora: descreve o uso efetivo do rótulo no corpus. Para tornar a afirmação verificável, os registros que empregam expressamente a expressão investigada foram classificados por regra determinística, aplicada a título, resumo e periódico nessa ordem de prioridade, com codebook depositado como material suplementar [@machado2026supl]. A classificação incide sobre o **anel lexical** — os `r fmt_n(n_acep_lex)` registros identificados pelo vocabulário antes da restrição à acepção programática descrita na @sec-cadeia.
+
+```{r tbl-acepcoes-empirico}
+#| label: tbl-acepcoes-empirico
+#| tbl-cap: "Distribuição das acepções no anel lexical e efeito da restrição programática"
+if (has_acepcoes) {
+  lex <- acepcoes_summary[acepcoes_summary$populacao == "lexical", ]
+  fin <- acepcoes_summary[acepcoes_summary$populacao == "final", ]
+  lex <- lex[lex$acepcao != "total", ]
+  tibble(
+    Acepção = lex$acepcao,
+    `N (anel lexical)` = fmt_n(lex$n),
+    `%` = fmt_pct(lex$pct),
+    `Periódicos` = fmt_n(lex$periodicos_distintos),
+    `N (anel nuclear)` = fmt_n(fin$n[match(lex$acepcao, fin$acepcao)])
+  ) |> fmt_kable(align = "lcccc", font_size = 10)
+} else {
+  cat("Classificação por acepção não disponível.")
+}
+```
+
+As três acepções aparecem em proporções comparáveis, sem que nenhuma domine: a programática responde por `r fmt_pct(pct_acep_prog)` do anel lexical, a comportamental por `r fmt_pct(pct_acep_comp)` e a doutrinária por `r fmt_pct(pct_acep_dout)`. É esse equilíbrio que sustenta o diagnóstico de polissemia. O mesmo rótulo organiza três literaturas que não compartilham objeto: políticas institucionais coordenadas por conselhos, comportamento decisório de tribunais e teoria geral da função jurisdicional — esta concentrada nas tradições chinesa, russa e islâmica, praticamente ausente do debate anglófono e brasileiro.
+
+A categoria residual é o achado mais incômodo e não deve ser suprimida. Em `r fmt_pct(pct_acep_indet)` dos registros o rótulo é empregado sem que título, resumo ou periódico permitam recuperar qual acepção está em jogo. Essa indeterminação não é falha de codificação: é a manifestação mais direta da instabilidade lexical diagnosticada nas seções anteriores, e um campo com vocabulário consolidado não a produziria nessa magnitude.
+
+A restrição descrita na @sec-cadeia remove do anel nuclear `r fmt_n(n_acep_comp_saiu)` dos `r fmt_n(n_acep_comp)` registros comportamentais, `r fmt_n(n_acep_removidos)` no total. Este é o elo 2 da cadeia de derivação observado empiricamente: a cartografia não valida o índice, ela restringe o que ele pode medir. O que a regra lexical não isola permanece declarado: `r fmt_n(n_acep_dout_final)` registros doutrinários e `r fmt_n(n_acep_comp_final)` comportamental seguem no anel nuclear, limite retomado na Seção de Limitações.
 
 ## Análise exploratória de co-citação
 
-A co-citação foi examinada para identificar possíveis bases intelectuais compartilhadas. Como referências recuperáveis estavam disponíveis apenas para parte do anel nuclear, os resultados descrevem aproximações entre obras e comunidades. Inferências sobre toda a estrutura intelectual do campo exigem cobertura mais ampla de referências.
+A co-citação foi examinada para identificar bases intelectuais compartilhadas. Como referências recuperáveis existem só para parte do anel nuclear, os resultados descrevem aproximações entre obras e comunidades, não a estrutura intelectual do campo.
 
 ```{r tbl-cocitation-top}
 #| label: tbl-cocitation-top
-#| tbl-cap: "Obras mais citadas pelo anel nuclear (top 15, subconjunto com referências OpenAlex)"
+#| tbl-cap: "Obras mais citadas pelo anel nuclear (top 10, subconjunto com referências OpenAlex)"
 #| eval: !expr has_refs
 top_cited <- nuclear_refs |>
   distinct(citing_title, cited_openalex_id) |>
@@ -693,7 +746,7 @@ top_cited <- nuclear_refs |>
       select(cited_openalex_id, ref_title, ref_first_author, ref_year, ref_journal),
     by = "cited_openalex_id") |>
   filter(is_valid(ref_title) & is_valid(ref_first_author)) |>
-  head(15) |>
+  head(10) |>
   mutate(ref_title = str_trunc(ref_title, 55),
          ref_journal = ifelse(!is_valid(ref_journal), "N/D", str_trunc(ref_journal, 25))) |>
   select(Obra = ref_title, Autor = ref_first_author, Ano = ref_year,
@@ -745,7 +798,7 @@ if (nrow(cocit_filtered) > 0) {
 
 ## Análise temática por palavras do título
 
-A frequência de palavras nos títulos diferencia o vocabulário explicitamente associado à política judiciária daquele empregado pelo campo estendido. O contraste confirma que o anel nuclear possui identidade lexical própria, embora ainda compartilhe termos amplos sobre tribunais, governança, reforma e administração.
+A frequência de palavras nos títulos diferencia o vocabulário do anel nuclear daquele do campo estendido, confirmando identidade lexical própria, ainda que com termos amplos compartilhados sobre tribunais, governança e administração.
 
 ```{r fig-word-freq}
 #| label: fig-word-freq
@@ -963,19 +1016,13 @@ A inflexão posterior a 2014 deve ser lida como hipótese de alinhamento institu
 
 ## Polissemia como problema de avaliação
 
-A polissemia do termo, sintetizada na Seção de Resultados, sugere ausência de um marco teórico unificador. As três acepções coexistem com baixa evidência de interlocução no subconjunto de referências recuperadas. Para o campo de políticas públicas, essa polissemia dificulta a acumulação de conhecimento, a comparação entre jurisdições e a construção de indicadores transversais. Ao mesmo tempo, ela cria uma oportunidade analítica: uma vez explicitada a acepção programática, torna-se possível converter "política judiciária" de rótulo amplo em objeto empírico delimitado.
+A polissemia do termo, medida na @tbl-acepcoes-empirico, sugere ausência de um marco teórico unificador. As três acepções coexistem em proporções próximas e com baixa evidência de interlocução no subconjunto de referências recuperadas. A fração de registros cuja acepção não é recuperável dos metadados indica que a instabilidade não se resume à concorrência entre três tradições: parte do uso do rótulo não se filia a nenhuma delas de forma identificável. Para o campo de políticas públicas, essa polissemia dificulta a acumulação de conhecimento, a comparação entre jurisdições e a construção de indicadores transversais. Ao mesmo tempo, ela cria uma oportunidade analítica: uma vez explicitada a acepção programática, torna-se possível converter "política judiciária" de rótulo amplo em objeto empírico delimitado.
 
 A revisão bibliográfica, apresentada na Seção 3, aprofunda essa interpretação. Os trabalhos de Garoupa e Ginsburg (2009), Kosař (2018) e Ng (2011) dialogam entre si na tradição anglófona de *judicial governance*. Os trabalhos brasileiros, como Akutsu e Guimarães (2012, 2015), Koerner et al. (2015, 2017) e Taylor (2007), operam com referências e problemáticas parcialmente distintas, raramente citando a literatura comparada internacional de forma sistemática. A etapa PJNP responde a essa fragmentação com uma estratégia pragmática: isola uma acepção relevante para avaliação de políticas públicas de justiça.
 
-## O custo humano das reformas gerencialistas
+## Gerencialismo e independência como tensões estruturais
 
-Um achado da revisão bibliográfica merece atenção especial: o "descasamento" (*mismatch*) identificado por @visser2019 entre controles de NPM e experiências dos juízes holandeses tem paralelo direto no argumento de @koerner2015 sobre a tensão entre gerencialismo e garantias processuais no Brasil pós-CNJ. A convergência desses dois estudos, de países distintos e em contextos institucionais muito diferentes, sugere que esse "descasamento" pode ser um padrão estrutural da aplicação de NPM ao trabalho judicial.
-
-Essa convergência, ainda que exploratória, oferece uma hipótese comparativa relevante para pesquisas futuras: a adoção de métricas de produtividade nos tribunais, sem mecanismos de proteção da qualidade decisória, tende a gerar incentivos perversos independentemente do sistema jurídico ou do contexto político nacional.
-
-## A dimensão institucional: independência como constrangimento e recurso
-
-A revisão bibliográfica revela que a independência judicial é simultaneamente um recurso e um constrangimento para a política judiciária. Como recurso: permite ao CNJ e aos tribunais adotar posições proativas sobre gestão sem interferência do Executivo. Como constrangimento: limita a possibilidade de *accountability* externa e cria riscos de captura corporativa, problema documentado por Kosař (2018) para os países europeus do leste e com ressonância potencial no contexto brasileiro.
+O "descasamento" que @visser2019 identificam entre controles de NPM e a experiência dos juízes holandeses tem paralelo no argumento de @koerner2015 sobre gerencialismo e garantias processuais no Brasil pós-CNJ. A convergência entre contextos institucionais tão distintos sugere padrão estrutural, e não idiossincrasia nacional. No mesmo registro, a independência judicial opera como recurso e como constrangimento: permite ao CNJ posições proativas de gestão, mas limita a *accountability* externa e cria risco de captura corporativa (Kosař, 2018).
 
 ## Observabilidade e efetividade
 
@@ -985,7 +1032,7 @@ Esse enquadramento também previne uma leitura ingênua do IMO-PJNP. Maturidade 
 
 ## Limitações
 
-A ausência do Web of Science pode subestimar periódicos de alto impacto. A cobertura parcial de metadados (47,5% com idioma, 14,8% com abstract e 52,7% com autores) afeta indicadores descritivos e restringe análises textuais. A análise de co-citação é exploratória, baseada em 27% do anel nuclear. A rodada complementar brasileira identificou candidatos fora do corpus principal que dependem de curadoria antes de alterar as estatísticas. A triagem semântica não contou com dupla codificação independente. A revisão bibliográfica narrativa, apresentada na Seção 3, baseia-se em 9 dos 12 trabalhos prioritários identificados no manifesto. Para 3 obras (Taylor 2007, Akutsu e Guimarães 2015 e Staats et al. 2005), o texto integral não foi obtido via acesso aberto no momento da análise.
+A ausência do Web of Science pode subestimar periódicos de alto impacto. A cobertura parcial de metadados (47,5% com idioma, 14,8% com abstract e 52,7% com autores) afeta indicadores descritivos e restringe análises textuais. A análise de co-citação é exploratória, baseada em 27% do anel nuclear. A rodada complementar brasileira identificou candidatos fora do corpus principal que dependem de curadoria antes de alterar as estatísticas. A triagem semântica não contou com dupla codificação independente. A classificação por acepção herda esse limite e acrescenta outros dois: opera sobre título, resumo e periódico — com a cobertura de abstract acima, a maioria das decisões recai sobre o título — e é regra determinística por padrões lexicais, que não capta acepção enunciada apenas no corpo do texto. Por isso `r fmt_n(n_acep_dout_final)` registros doutrinários e `r fmt_n(n_acep_comp_final)` comportamental permanecem no anel nuclear, e a fração indeterminada deve ser lida como limite de observação, e não como categoria substantiva. A revisão bibliográfica narrativa, apresentada na Seção 3, baseia-se em 9 dos 12 trabalhos prioritários identificados no manifesto. Para 3 obras (Taylor 2007, Akutsu e Guimarães 2015 e Staats et al. 2005), o texto integral não foi obtido via acesso aberto no momento da análise.
 
 Na etapa PJNP, as limitações decorrem da natureza administrativa dos dados. A análise usa um censo pequeno de políticas. Os modelos são bivariados e descritivos. Os pesos do IMO-PJNP são normativos, teoricamente informados e auditáveis, ainda sem validação empírica como medida de maturidade observável. Sua interpretação se limita à composição do escore. Efetividade exige estudos próprios. Produtos administrativos não equivalem a resultados sociais. A baixa separação dos clusters reforça o uso heurístico do agrupamento exploratório. Por isso, os achados aplicados devem orientar auditoria cadastral, monitoramento e seleção de casos para investigação qualitativa.
 
@@ -1001,7 +1048,7 @@ A contribuição é cartográfica (mapeamento empírico do campo), conceitual (f
 
 Em conformidade com a recomendação PRISMA-S de disponibilizar as estratégias de busca exatamente como executadas, e para manter o artigo dentro do limite de extensão do evento, os materiais de reprodução são depositados em repositório público com identificador persistente e versão congelada, citável de forma independente [@machado2026supl].
 
-O depósito reúne: (A) as strings de busca por base, com filtros, data de coleta e *endpoint*; (B) o manifesto do corpus de texto completo curado; (C) o protocolo de reprodução dos dois pipelines, com sementes e comandos; e (D) o codebook completo do IMO-PJNP, com a regra de codificação variável a variável, o tratamento de ausência documental, a especificação de pesos versionada e a agenda de validação. Os elementos necessários à avaliação crítica dos resultados — desenho da busca, fluxo PRISMA, dimensões, pesos, fórmula do índice, regra de codificação, limites de inferência e análise de sensibilidade — permanecem no corpo do artigo, nas seções de Métodos e Técnicas e de Discussão. O depósito acrescenta detalhe de reprodução, não substitui informação necessária à leitura do artigo.
+O depósito reúne: (A) as strings de busca por base, com filtros, data de coleta e *endpoint*; (B) o manifesto do corpus de texto completo curado; (C) o protocolo de reprodução dos dois pipelines, com sementes e comandos; (D) o codebook completo do IMO-PJNP, com regra de codificação variável a variável, tratamento de ausência documental, pesos versionados e agenda de validação; e (E) o codebook da classificação por acepção, com as listas de padrões, a ordem de precedência e o tratamento do resíduo. Os elementos necessários à avaliação crítica — desenho da busca, fluxo PRISMA, dimensões, pesos, fórmula, regras de codificação, limites de inferência e análise de sensibilidade — permanecem no corpo do artigo. O depósito acrescenta detalhe de reprodução.
 
 # Referências {.unnumbered}
 

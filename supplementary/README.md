@@ -29,6 +29,7 @@ copiadas exatamente como executadas.
 | [`B_corpus_texto_completo.md`](B_corpus_texto_completo.md) | Apêndice B | Manifesto do corpus de texto completo curado para a revisão narrativa |
 | [`C_protocolo_reproducao.md`](C_protocolo_reproducao.md) | Apêndice C | Comandos, sementes e ordem de execução dos dois pipelines |
 | [`D_codebook_imo_pjnp.md`](D_codebook_imo_pjnp.md) | Apêndice D | Codebook completo do IMO-PJNP, variável a variável |
+| [`E_codebook_acepcoes.md`](E_codebook_acepcoes.md) | Apêndice E | Codebook da classificação por acepção: listas de padrões, precedência, resultado e limites |
 
 ## Como citar
 
@@ -38,8 +39,9 @@ materiais no momento da publicação.
 
 > Machado, I. C., Bonani, M. B., Melo Filho, A. F., & Cronemberger, J. A. C. (2026).
 > *Materiais suplementares de "Política Judiciária como Campo Emergente": strings de
-> busca, manifesto do corpus, protocolo de reprodução e codebook do IMO-PJNP*
-> (v1.0) [Conjunto de dados e código]. Zenodo. https://doi.org/[A EMITIR]
+> busca, manifesto do corpus, protocolo de reprodução e codebooks do IMO-PJNP e da
+> classificação por acepção* (v1.0) [Conjunto de dados e código]. Zenodo.
+> `https://doi.org/[A EMITIR]`
 
 BibTeX correspondente: chave `machado2026supl` em `references.bib`.
 
